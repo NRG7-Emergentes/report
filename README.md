@@ -262,4 +262,6 @@ del ABET – EAC - Student Outcome 3.
 
 ## Bibliografía
 
+Lazo, R. V. H., & Quispe, Y. C. (2024). *Trastornos musculoesqueléticos asociados al teletrabajo en abogados peruanos: un estudio transversal.* Medicina y Seguridad del Trabajo, 70(275), 103-112. [https://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0465-546X2024000400005](https://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0465-546X2024000400005)
+
 ## Anexos
