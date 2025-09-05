@@ -166,6 +166,58 @@ del ABET – EAC - Student Outcome 3.
 
 #### 1.2.1 Antecedentes y problemática
 
+**What**
+
+- ¿Cuál es el problema?
+
+El problema principal es la adopción prolongada de posturas incorrectas y la proximidad excesiva a la pantalla durante actividades frente a la computadora, conductas que, al ser imperceptibles para el usuario en el momento,  afectan negativamente la salud y productividad a largo plazo
+
+- ¿Cuál es la relación con la persona en cuestión?
+
+La relación con el usuario es la de un asistente preventivo y pasivo que monitorea de forma continua e individual, proporcionando retroalimentación inmediata para fomentar la autoconciencia y la autocorrección de los malos hábitos posturales.
+
+**When**
+
+- ¿Cuándo sucede el problema?
+
+El problema ocurre durante prolongadas horas de uso de la computadora de sobremesa, específicamente en los momentos de máxima concentración donde el usuario, absorto en sus tareas, adopta de manera inconsciente y mantenida una postura ergonómicamente incorrecta.
+
+- ¿Cuándo utiliza el cliente el producto?
+
+El cliente utiliza el producto de forma activa y constante durante toda su jornada laboral o de estudio frente al computador. La aplicación funciona en segundo plano, monitorizando de manera ininterrumpida desde el momento en que se inicia la sesión hasta que finaliza.
+
+**Where**
+
+- ¿Dónde está el cliente cuando usa el producto?
+
+El cliente utiliza el producto en su espacio fijo de trabajo o estudio, específicamente frente al computador en una oficina doméstica o escritorio personal. 
+
+- ¿Dónde surge el problema?
+
+**Who**
+
+- ¿Quienes se ven involucrados en el problema?
+
+El problema surge en el entorno inmediato de trabajo del usuario, específicamente en su estación de computadora personal ubicada en el hogar u oficina. Se manifiesta en la interacción física entre el usuario y su puesto de trabajo, donde la disposición del espacio y los hábitos individuales propician las malas posturas.
+
+**Why**
+
+- ¿Cuáles son las causas del problema?
+
+Las causas principales del problema radican en la falta de conciencia postural inmediata y la ausencia de retroalimentación correctiva en tiempo real, agravadas por entornos de trabajo no ergonómicos y la inmersión mental en las tareas digitales.
+
+**How**
+
+- ¿En qué condiciones los clientes usan nuestro producto?
+
+Los clientes usan nuestro producto bajo condiciones de iluminación ambiental normal y con la cámara posicionada de manera lateral en su espacio de trabajo, manteniéndose sentados frente al computador durante sus actividades. La aplicación opera de forma discreta integrada en su rutina digital, sin requerir interacción activa más allá de la configuración inicial.
+
+**How Much**
+
+- ¿Cuál es la magnitud del problema?
+
+La magnitud del problema es considerable, dado que un estudio reciente sobre el teletrabajo en Perú encontró que el 75% de los participantes reportaron haber sufrido dolores en cuello, espalda y extremidades superiores. Esto evidencia una alta prevalencia de dolencias musculoesqueléticas directamente asociadas a posturas incorrectas y forzadas durante largos períodos frente a la computadora.
+
 #### 1.2.2 Lean UX Process
 
 ##### 1.2.2.1 Lean UX Problem Statements
