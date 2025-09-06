@@ -222,6 +222,12 @@ La magnitud del problema es considerable, dado que un estudio reciente sobre el 
 
 ##### 1.2.2.1 Lean UX Problem Statements
 
+En el contexto actual, millones de personas trabajan o estudian frente a una computadora durante largas jornadas, lo que conlleva la adopción inconsciente de posturas inadecuadas. Este problema se ha intensificado con el teletrabajo y la educación remota, generando un aumento en los casos de dolor músculo-esquelético y fatiga asociada.
+
+Si bien existen recomendaciones ergonómicas y soluciones tradicionales (sillas especiales, escritorios ajustables, pausas activas), estas dependen de la disciplina del usuario y no ofrecen un monitoreo en tiempo real. La falta de retroalimentación inmediata hace que las correcciones posturales sean poco frecuentes y lleguen demasiado tarde.
+
+ErgoVision surge como una propuesta innovadora basada en tecnologías emergentes: un sistema que emplea visión por computadora y análisis inteligente para identificar posturas inadecuadas y proximidad excesiva a la pantalla, ofreciendo alertas discretas y recomendaciones en tiempo real. Su objetivo es fomentar la autoconciencia, prevenir dolores y mejorar tanto la salud como la productividad de los usuarios en entornos digitales.
+
 ##### 1.2.2.2 Lean UX Assumptions
 
 ##### 1.2.2.3 Lean UX Hypothesis Statements
