@@ -414,7 +414,9 @@ Validación continua con usuarios reales (profesionales, estudiantes) mediante p
 - Sabremos que estamos en lo correcto cuando el análisis competitivo confirme coincidencia de mercado con este tipo de aplicaciones.  
 
 ##### 1.2.2.4 Lean UX Canvas
+<img src="images/cap-1/Lean UX Canvas.png">
 
+Link del Lean UX Canvas: [Link Lean UX Canvas](https://miro.com/app/board/uXjVJLxX2xg=/?share_link_id=737970760824)
 ### 1.3 Segmentos objetivo
 
 ## Capítulo II: Requirements Elicitation & Analysis
