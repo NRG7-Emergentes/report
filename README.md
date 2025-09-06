@@ -23,7 +23,7 @@
 |-------------------------------------------|------------|
 | **Astonitas Díaz Juan Diego**             | U202110237 |
 | **Casas Sanchez Gabriel Alexander**       | U202220033 |
-| **Espinoza Delgado BárbaraAntonella**     | U201911727 |
+| **Espinoza Delgado Bárbara Antonella**     | U201911727 |
 | **Godofredo Quispe Tipon**                | u202120772 |
 | **Pasquale Barrenechea Gianluca Santino** | U202112078 |
 
@@ -225,6 +225,86 @@ La magnitud del problema es considerable, dado que un estudio reciente sobre el 
 ##### 1.2.2.2 Lean UX Assumptions
 
 ##### 1.2.2.3 Lean UX Hypothesis Statements
+
+**Hypothesis Statement 01:**  
+- Creemos que los usuarios de nuestra aplicación son trabajadores y estudiantes remotos que buscan mantener una postura saludable durante largas jornadas frente al computador.  
+- Sabremos que estamos en lo correcto cuando veamos comentarios positivos sobre el impacto en su postura y un aumento en usuarios activos semanales.  
+
+**Hypothesis Statement 02:**  
+- Creemos que nuestra aplicación encaja en la rutina diaria al monitorear automáticamente la postura mientras el usuario trabaja o estudia.  
+- Sabremos que estamos en lo correcto cuando veamos un uso recurrente de la aplicación durante más de 4 horas al día en sesiones continuas.  
+
+**Hypothesis Statement 03:**  
+- Creemos que nuestra aplicación resuelve el problema de malas posturas prolongadas y cercanía excesiva a la pantalla.  
+- Sabremos que estamos en lo correcto cuando veamos una disminución en las alertas repetidas y un aumento en los reportes de corrección de postura.  
+
+**Hypothesis Statement 04:**  
+- Creemos que los usuarios emplearán la aplicación principalmente en horarios de trabajo y estudio (mañana y tarde).  
+- Sabremos que estamos en lo correcto cuando el 70% del uso de la aplicación ocurra en franjas de 8:00–13:00 y 14:00–20:00.  
+
+**Hypothesis Statement 05:**  
+- Creemos que las características clave incluyen monitoreo en tiempo real, alertas visuales/sonoras y reportes de hábitos posturales.  
+- Sabremos que estamos en lo correcto cuando los usuarios valoren estas funciones en encuestas y se incremente la tasa de retención mensual.  
+
+**Hypothesis Statement 06:**  
+- Creemos que el diseño debe ser simple, discreto y fácil de configurar para que al usuario no le tome mucho tiempo en empezar a usar la aplicación.  
+- Sabremos que estamos en lo correcto cuando recibamos comentarios positivos sobre la facilidad de uso y una tasa de abandono inicial menor al 10%.  
+
+**Hypothesis Statement 07:**  
+- Creemos que nuestros usuarios necesitan saber rápidamente cuándo están encorvados o demasiado cerca de la pantalla.  
+- Sabremos que estamos en lo correcto cuando la app emita alertas inmediatas y los usuarios reporten mejoras en su conciencia postural.  
+
+**Hypothesis Statement 08:**  
+- Creemos que estas necesidades se pueden resolver con IA de visión computacional que analice en tiempo real la postura mediante la webcam.  
+- Sabremos que estamos en lo correcto cuando logremos una precisión de detección superior al 90% en pruebas con usuarios reales.  
+
+**Hypothesis Statement 09:**  
+- Creemos que nuestros usuarios iniciales serán personas entre 18 y 45 años que trabajan o estudian más de 5 horas frente al computador.  
+- Sabremos que estamos en lo correcto cuando al menos el 70% de los registros pertenezcan a este rango etario.  
+
+**Hypothesis Statement 10:**  
+- Creemos que el valor número uno para el usuario es prevenir dolores y lesiones musculoesqueléticas mediante recordatorios oportunos.  
+- Sabremos que estamos en lo correcto cuando recibamos retroalimentación positiva sobre reducción de molestias y mejor concentración.  
+
+**Hypothesis Statement 11:**  
+- Creemos que los usuarios también valorarán beneficios adicionales como reportes semanales y recomendaciones ergonómicas.  
+- Sabremos que estamos en lo correcto cuando al menos el 50% de usuarios activen estas funciones adicionales.  
+
+**Hypothesis Statement 12:**  
+- Creemos que adquiriremos la mayoría de nuestros usuarios a través de marketing digital en redes sociales, comunidades estudiantiles y coworkings virtuales.  
+- Sabremos que estamos en lo correcto cuando estas fuentes representen más del 60% de los nuevos registros.  
+
+**Hypothesis Statement 13:**  
+- Creemos que generaremos ingresos mediante un modelo freemium, cobrando por planes premium con funciones avanzadas (reportes, personalización de alertas).  
+- Sabremos que estamos en lo correcto cuando al menos el 15% de usuarios migre al plan premium en los primeros seis meses.  
+
+**Hypothesis Statement 14:**  
+- Creemos que nuestra principal competencia serán apps de ergonomía, recordatorios de descanso y herramientas de productividad.  
+- Sabremos que estamos en lo correcto cuando el análisis competitivo confirme coincidencia de mercado con este tipo de aplicaciones.  
+
+**Hypothesis Statement 15:**  
+- Creemos que superaremos a la competencia con nuestro enfoque en IA en tiempo real, personalización de alertas y bajo consumo de recursos del PC.  
+- Sabremos que estamos en lo correcto cuando veamos comentarios positivos en estos aspectos y usuarios cambiando desde apps competidoras.  
+
+**Hypothesis Statement 16:**  
+- Creemos que podemos implementar la aplicación con tecnologías actuales de visión por computadora, IA ligera y frameworks.  
+- Sabremos que estamos en lo correcto cuando logremos un prototipo funcional sin problemas críticos de rendimiento.    
+
+**Hypothesis Statement 17:**  
+- Creemos que la solución escalará para manejar cientos de usuarios concurrentes con baja latencia en la detección (menos de 200 ms).  
+- Sabremos que estamos en lo correcto cuando las pruebas de carga confirmen el rendimiento estable.  
+
+**Hypothesis Statement 18:**  
+- Creemos que existe una gran cantidad de potenciales usuarios interesados en soluciones de salud digital y ergonomía laboral.  
+- Sabremos que estamos en lo correcto cuando alcancemos un crecimiento sostenido de registros mensuales superiores al 20%.  
+
+**Hypothesis Statement 19:**  
+- Creemos que el mercado de salud digital y bienestar laboral está en expansión debido al auge del teletrabajo y la educación remota.  
+- Sabremos que estamos en lo correcto cuando estudios de mercado y retroalimentación de usuarios confirmen esta tendencia, reflejada en la adopción de la app.  
+
+**Hypothesis Statement 20:**  
+- Creemos que nuestra principal competencia serán apps de ergonomía, recordatorios de descanso y herramientas de productividad.  
+- Sabremos que estamos en lo correcto cuando el análisis competitivo confirme coincidencia de mercado con este tipo de aplicaciones.  
 
 ##### 1.2.2.4 Lean UX Canvas
 
