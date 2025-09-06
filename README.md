@@ -232,6 +232,105 @@ ErgoVision surge como una propuesta innovadora basada en tecnologías emergentes
 
 ##### 1.2.2.2 Lean UX Assumptions
 
+_**User Assumptions (Suposiciones de Usuario)**_
+
+**¿Quién es el usuario?**
+Profesionales, estudiantes y trabajadores remotos que pasan largas horas frente a una computadora y desean mejorar su postura y cuidar su bienestar.
+
+**¿Dónde encaja nuestro producto en su trabajo o vida?**
+Encaja directamente en su rutina diaria de estudio o trabajo frente al computador, en espacios como oficinas domésticas, escritorios personales y entornos laborales.
+
+**¿Qué problemas resuelve nuestro producto?**
+* Posturas incorrectas mantenidas de forma inconsciente.
+* Dolor de cuello, espalda y fatiga visual.
+* Falta de conciencia y retroalimentación en tiempo real.
+* Ambientes de trabajo poco ergonómicos.
+
+**¿Cuándo y cómo se usa nuestro producto?**
+Se usa de manera continua y pasiva durante toda la jornada frente a la computadora. ErgoVision opera en segundo plano, monitoreando con una cámara lateral y/o frontal, enviando alertas discretas cuando detecta proximidad excesiva o malas posturas.
+
+**¿Qué características son importantes?**
+* Detección automática de posturas incorrectas.
+* Alertas no invasivas (visuales/sonoras suaves).
+* Recomendaciones de corrección simples y claras.
+* Integración discreta en la rutina sin interrumpir la concentración.
+
+**¿Cómo debe verse y comportarse nuestro producto?**
+Debe ser minimalista, intuitivo y amigable, con un diseño discreto que no sature al usuario. El comportamiento debe ser pasivo, no intrusivo, con retroalimentación clara, rápida y de fácil interpretación.
+
+**_Business Assumptions (Suposiciones de Negocio)_**
+
+**Necesidades y problemas:** 
+Los usuarios necesitan una solución preventiva y accesible que los ayude a cuidar su salud postural sin invertir en equipos costosos (sillas ergonómicas, escritorios ajustables) o terapias correctivas.
+
+**Plataforma:** 
+Aplicación de escritorio y expansión a aplicaciones móviles de acompañamiento para métricas y reportes.
+
+**Segmentación:**
+* Profesionales de oficina y teletrabajadores.
+* Estudiantes universitarios o de posgrado.
+
+**Comportamientos:** 
+Los usuarios valoran la discreción, la facilidad de uso y la integración sin fricciones en su rutina diaria. Prefieren soluciones simples que no requieran aprendizaje complejo.
+
+**Beneficios:**
+* Prevención de dolores y lesiones.
+* Incremento de la productividad y concentración.
+* Mejora en la salud y bienestar a largo plazo.
+* Conciencia ergonómica incorporada en la rutina.
+
+**Captación de clientes:** 
+Estrategias de inbound marketing, marketing digital enfocado en salud y productividad, alianzas con universidades, coworkings y empresas de teletrabajo.
+
+**Modelo de ingresos:**
+* Versión gratuita con funciones básicas de alerta.
+* Modelo SaaS con suscripción mensual/anual para reportes avanzados, estadísticas de uso y personalización.
+
+**Competencia:** 
+Aplicaciones de recordatorio de pausas o dispositivos wearables que monitorean postura, aunque con menor precisión o mayor costo.
+
+**Ventaja competitiva:** 
+Monitoreo pasivo en tiempo real con visión por computadora, accesibilidad multiplataforma y retroalimentación inmediata sin hardware adicional.
+
+**_Technical Assumptions (Suposiciones Técnicas)_**
+
+**Tecnología utilizada:** 
+Visión por computadora e inteligencia artificial (modelos de pose estimation). Desarrollo en frameworks multiplataforma (Flutter Desktop/Angular/Flutter Mobile) para garantizar compatibilidad.
+
+**Integraciones:** 
+Posibilidad de integrar notificaciones con sistemas operativos, apps de productividad (Google Workspace, Microsoft Teams) en fases futuras.
+
+**Escalabilidad:** 
+Arquitectura en la nube para el almacenamiento de estadísticas, con procesamiento local en el dispositivo para garantizar privacidad y bajo consumo de recursos.
+
+**_Market Assumptions (Suposiciones de Mercado)_**
+
+**Tamaño del mercado:** 
+Alta demanda en el sector del teletrabajo y la educación online. Según tendencias post-pandemia, millones de personas buscan mejorar sus espacios y hábitos de trabajo desde casa.
+
+**Competencia:** 
+Herramientas de ergonomía tradicionales (sillas, escritorios ajustables, accesorios) y aplicaciones simples de recordatorio. Ninguna ofrece monitoreo postural inteligente continuo a bajo costo.
+
+**Tendencias:** 
+Creciente interés en salud digital, ergonomía, bienestar en el trabajo y uso de tecnologías emergentes (IA + visión por computadora) aplicadas al cuidado personal.
+
+**_Design Assumptions (Suposiciones de Diseño)_**
+
+**Interacción del usuario:** 
+La experiencia debe ser clara y no intrusiva, con alertas visuales discretas en pantalla y posibilidad de configurar notificaciones auditivas.
+
+**Experiencia del usuario:** 
+Los usuarios valorarán una experiencia simple, con recomendaciones fáciles de seguir y reportes que motiven la mejora de hábitos.
+
+**Colores y tipografía:** 
+Paleta moderna y calmante (azules, verdes, tonos neutros) que transmitan confianza y bienestar. Tipografía clara y legible.
+
+**Preferencias visuales:** 
+Diseño minimalista, con iconos intuitivos y gráficos simples para mostrar métricas (tiempo en buena postura, alertas recibidas).
+
+**Prototipos y pruebas:** 
+Validación continua con usuarios reales (profesionales, estudiantes) mediante pruebas de usabilidad para asegurar adopción y aceptación de las alertas.
+
 ##### 1.2.2.3 Lean UX Hypothesis Statements
 
 **Hypothesis Statement 01:**  
