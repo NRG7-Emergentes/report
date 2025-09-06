@@ -220,6 +220,8 @@ La magnitud del problema es considerable, dado que un estudio reciente sobre el 
 
 #### 1.2.2 Lean UX Process
 
+El lean UX process es un enfoque iterativo centrado en el usuario para el diseño de proyectos y productos. Este enfoque se basa en ciclos rápidos (sprints) de investigación, diseño y pruebas para validar la propuesta o ideas planteadas por el equipo. Estas propuestas estarán siempre orientadas a satisfacer las necesidades de los usuarios.
+
 ##### 1.2.2.1 Lean UX Problem Statements
 
 En el contexto actual, millones de personas trabajan o estudian frente a una computadora durante largas jornadas, lo que conlleva la adopción inconsciente de posturas inadecuadas. Este problema se ha intensificado con el teletrabajo y la educación remota, generando un aumento en los casos de dolor músculo-esquelético y fatiga asociada.
