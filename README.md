@@ -372,35 +372,40 @@ del ABET – EAC - Student Outcome 3.
 
 #### 1. Entrevista para Trabajadores Remotos
 
-**Preguntas principales:**
-1. ¿Podrías contarme un poco sobre ti? (edad, ocupación, lugar de residencia, estado civil)
-2. ¿Qué tipo de trabajo realizas de manera remota y cuánto tiempo pasas frente a la computadora al día?
-3. ¿Has tenido problemas relacionados con la postura o dolores musculares por trabajar largas horas frente al PC?
 
-**Preguntas complementarias:**
-4. ¿En qué momentos del día sueles trabajar más intensamente (mañana, tarde, noche)?
-5. ¿Qué tan consciente eres de tu postura mientras trabajas?
-6. ¿Has usado alguna vez recordatorios, apps o dispositivos para mejorar tu postura o hacer pausas?
-7. ¿Qué dispositivos usas con más frecuencia para trabajar (laptop, PC de escritorio, tablet)?
-8. ¿Qué tipo de aplicaciones usas más a diario (ejemplo: productividad, comunicación, salud)?
-9. ¿Qué valoras más en una aplicación que te acompañe durante tu jornada laboral?
-10. Si una app pudiera corregir tu postura en tiempo real, ¿qué características te parecerían más importantes (alertas, reportes, personalización)?
+## 2.2.1. Diseño de entrevistas
 
-#### 2. Entrevista para Estudiantes que Usan Computadoras
+**Entrevista para Trabajadores Remotos**
 
-**Preguntas principales:**
-1. ¿Podrías contarme un poco sobre ti? (edad, nivel de estudios, lugar de residencia, estado civil)
-2. ¿Cuánto tiempo pasas estudiando frente a la computadora al día?
-3. ¿Has experimentado molestias físicas (dolor de cuello, espalda, fatiga visual) debido al tiempo de estudio?
+**Preguntas:**
+1. ¿Cuál es tu nombre, edad y género?
+2. ¿A qué te dedicas actualmente y desde hace cuánto trabajas de manera remota?
+3. ¿Cuál es tu estado civil y dónde resides actualmente?
+4. ¿Cuántas horas al día pasas frente a la computadora trabajando?
+5. ¿En qué momentos del día sueles trabajar más (mañana, tarde, noche)?
+6. ¿Has experimentado molestias físicas (dolor de cuello, espalda, muñecas, fatiga visual) por el trabajo remoto?
+7. ¿Qué tan consciente eres de tu postura mientras trabajas?
+8. ¿Qué herramientas digitales utilizas para mejorar tu zona de trabajo o tu organización diaria? (ej. Google Calendar, Notion, Slack, Trello)
+9. ¿Qué elementos físicos tienes en tu espacio de trabajo para mejorar tu comodidad? (ej. escritorio amplio, silla ergonómica, reposapiés, lámpara de luz)
+10. ¿Has probado aplicaciones o dispositivos que te recuerden moverte o corregir tu postura? ¿Cómo fue tu experiencia?
+11. ¿Qué características valoras más en una aplicación que te ayude a cuidar tu postura y salud mientras trabajas?
+12. ¿Estarías dispuesto(a) a usar una aplicación de este tipo en tu rutina diaria? ¿Por qué sí o por qué no?
 
-**Preguntas complementarias:**
-4. ¿En qué espacios sueles estudiar más (dormitorio, biblioteca, cafetería)?
-5. ¿Sueles estar consciente de tu postura mientras estudias?
-6. ¿Qué haces actualmente para cuidar tu salud durante tus estudios prolongados?
-7. ¿Qué dispositivos usas más frecuentemente para estudiar (laptop, PC, tablet, celular)?
-8. ¿Qué tipo de aplicaciones académicas o de productividad usas a diario?
-9. ¿Qué características valoras más en una aplicación pensada para estudiantes? (ej: fácil de usar, gratuita, visual, rápida)
-10. ¿Si una aplicación te ayudara a corregir tu postura, en qué momentos la usarías más (clases virtuales, trabajos, sesiones largas de estudio)?
+**Entrevista para Estudiantes que Usan Computadoras** 
+
+**Preguntas:**
+1. ¿Cuál es tu nombre, edad y género?
+2. ¿Qué estudias actualmente y en qué nivel educativo estás (pregrado, posgrado, curso técnico, etc.)?
+3. ¿Cuál es tu estado civil y dónde resides actualmente?
+4. ¿Cuántas horas al día pasas frente a la computadora estudiando o realizando trabajos académicos?
+5. ¿En qué espacios sueles estudiar con más frecuencia? (ej. dormitorio, biblioteca, cafetería, sala de estudios)
+6. ¿Has sentido molestias físicas (dolor de cuello, espalda, fatiga visual) debido a tus sesiones de estudio prolongadas?
+7. ¿Sueles estar pendiente de tu postura mientras estudias?
+8. ¿Qué herramientas digitales utilizas para organizarte o mejorar tu rutina académica? (ej. Google Calendar, Notion, apps de concentración, temporizadores Pomodoro)
+9. ¿Qué elementos físicos usas en tu espacio de estudio para sentirte más cómodo(a)? (ej. mesa amplia, silla acolchada, cojines, lámpara de escritorio)
+10. ¿Has probado alguna aplicación o recurso que te ayude a cuidar tu salud física o postura durante el estudio?
+11. ¿Qué características consideras más importantes en una aplicación pensada para estudiantes que pasan mucho tiempo frente a la computadora?
+12. ¿Te interesaría usar una aplicación que te ayude a mantener una buena postura y reducir molestias durante tus estudios? ¿Por qué sí o por qué no?  
 
 #### 2.2.2 Registro de entrevistas
 
