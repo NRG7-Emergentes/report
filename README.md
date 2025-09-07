@@ -418,6 +418,27 @@ Validación continua con usuarios reales (profesionales, estudiantes) mediante p
 
 Link del Lean UX Canvas: [Link Lean UX Canvas](https://miro.com/app/board/uXjVJLxX2xg=/?share_link_id=737970760824)
 ### 1.3 Segmentos objetivo
+### Segmento Objetivo #1: Trabajadores Remotos
+Personas que trabajan desde casa o espacios de coworking, pasando muchas horas frente a la computadora. Suelen perder la noción del tiempo y descuidar la postura por la carga laboral o la concentración en sus tareas. Buscan una solución tecnológica **discreta y práctica** que les ayude a mantener una buena postura sin interrumpir su productividad.
+
+**Características clave:**
+- **Edad:** 23 a 55 años
+- **Género:** Ambos
+- **Contexto:** Teletrabajo, oficinas en casa, coworkings
+- **Ocupación:** Analistas, programadores, diseñadores, consultores, administrativos, contadores, abogados, freelancers
+- **Uso de tecnología:** Acostumbrados a aplicaciones de productividad (Office, Teams, Zoom, Slack, etc.)
+- **Necesidades:** Prevenir dolores musculares, mantener una postura correcta durante la jornada laboral, mejorar concentración y productividad.
+### Segmento Objetivo #2: Estudiantes que Usan Computadoras
+Jóvenes que dedican largas horas al estudio en computadora, ya sea en clases virtuales, investigaciones, proyectos o preparación de trabajos. Suelen estudiar en espacios poco ergonómicos (dormitorios, bibliotecas, cafeterías), lo que aumenta los riesgos de malas posturas. Buscan una herramienta **fácil de usar y económica** que cuide su salud mientras estudian.
+
+**Características clave:**
+- **Edad:** 15 a 30 años
+- **Género:** Ambos
+- **Contexto:** Educación secundaria, superior y posgrado
+- **Ocupación:** Estudiantes de colegio, universidad, posgrado o cursos online
+- **Uso de tecnología:** Acostumbrados a apps académicas (Moodle, Google Classroom, Zoom, Notion) y redes sociales.
+- **Necesidades:** Prevenir dolores y fatiga por largas jornadas de estudio, contar con alertas sencillas y no invasivas, mejorar hábitos posturales para mantener el rendimiento académico.
+
 
 ## Capítulo II: Requirements Elicitation & Analysis
 
