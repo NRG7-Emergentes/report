@@ -370,9 +370,6 @@ del ABET – EAC - Student Outcome 3.
 
 #### 2.2.1 Diseño de entrevistas
 
-#### 1. Entrevista para Trabajadores Remotos
-
-
 ## 2.2.1. Diseño de entrevistas
 
 **Entrevista para Trabajadores Remotos**
