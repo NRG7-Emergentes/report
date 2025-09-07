@@ -69,190 +69,9 @@ El enlace a github del reporte del proyecto es el siguiente: [https://github.com
       - [1.2.2.4 Lean UX Canvas](#1224-lean-ux-canvas)
   - [1.3 Segmentos objetivo](#13-segmentos-objetivo)
 - [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
-
   - [2.1 Competidores](#21-competidores)
-
-    A continuación, se presenta un análisis competitivo que examina a las principales empresas que rivalizan con nuestra startup. Hemos identificado tanto competidores directos, aquellos que ofrecen una solución de software centralizada en la monitorización y corrección proactiva de la postura mediante el uso de la cámara, como indirectos que, si bien no son idénticos, compiten en áreas clave superpuestas como el bienestar digital en el puesto de trabajo, la ergonomía y la prevención de la fatiga física que impacta la productividad. Este análisis se centra en aquellos que ofrecen soluciones que se superponen con las de **\*\*\*\***.
-
-    1. **Posture Reminder**
-       ![Logo de Posture Reminder](images/P-2/Posture_Reminder.png)
-       **Descripción:**
-       Software de escritorio que utiliza la cámara web para detectar encorvamiento y emitir una alerta sonora inmediata.
-       **Características principales**
-
-    - Monitorización pasiva con la cámara web.
-    - Alerta sonora simple al detectar mala postura.
-    - Personalización de sensibilidad.
-
-    ***
-
-    2.  **Upright Go**
-        ![Logo de Uprigh Go](images/P-2/UPRIGHT.png)
-        **Descripción:**
-        Wearable (sensor portátil) que se adhiere a la espalda y vibra sutilmente al detectar que el usuario se está encorvando.
-        **Características principales**
-
-    - Tecnología de sensor wearable (sin camara).
-    - Vibración discreta como retroalimentación táctil.
-    - App móvil con seguimiento de progreso y métricas.
-    - Solución portátil que funciona fuera del escritorio.
-    - Informes de progreso.
-
-    ***
-
-    3.  **Workpace**
-        ![Logo de Wellnomics](images/P-2/Wellnomincs.png)
-        **Descripción:**
-        Plataforma integral de wellness laboral que gestiona la ergonomía, programa pausas activas y cumple con estándares de seguridad de la información.
-        **Características principales**
-
-    - Recordatorios de pausas y estiramientos basados en la ciencia.
-    - Cumplimiento de normas de seguridad (ISO 27002, RGPD).
-    - Enfoque en la salud y seguridad ambiental (EHS).
-    - Solución corporativa para la gestión del bienestar de equipos.
-
     * [2.1.1 Análisis competitivo](#211-análisis-competitivo)
-
-<table> 
-  <tr>
-    <th colspan="6"> Competitive Analysis Landscape </th>
-  </tr>
-  <tr>
-    <td colspan="2" rowspan="2">¿Por qué llevar acabo este análisis? </td>
-    <td colspan="4"> Pregunta </td>
-  </tr>
-  <tr>
-    <td colspan="4"> Deberíamos llevar a cabo este análisis para conocer el entorno, la competencia, tomar decisiones de desarrollo y construir nuestra propuesta de valor. </td>
-  </tr>
-  <tr>
-    <td colspan="2"> Productos </td>
-    <td> Producto </td>
-    <td> Posture Reminder </td>
-    <td> Upright Go </td>
-    <td> Workpace </td>
-  </tr>
-  <tr>
-    <td rowspan="2">Perfil</td>
-    <td>Overview</td>
-    <td> PRODUCTO </td>
-    <td> Software de monitorización postural mediante cámara web. </td>
-    <td> Wearable (sensor portátil) que vibra al detectar encorvamiento. </td>
-    <td> Plataforma corporativa de wellness laboral con foco en ergonomía y pausas activas. </td>
-  </tr>
-  <tr>
-    <td>Ventaja
-    competitiva
-    ¿Qué valor
-    ofrece a los
-    clientes?</td>
-    <td> Ofrece PRODUCTO. </td>
-    <td> Ofrece solución simple, económica y no invasiva. Procesamiento local garantiza privacidad.</td>
-    <td> Ofrece precisión en la detección y portabilidad para uso en cualquier entorno. </td>
-    <td> Ofrece enfoque integral y normativo (ISO 27002, RGPD) para empresas. </td>
-  </tr>
-  <tr>
-    <td rowspan="2">Perfil de Marketing</td>
-    <td> Mercado Objetivo </td>
-    <td> PRODUCTO. </td>
-    <td> Individuos que buscan una solución simple y económica. </td>
-    <td> Usuarios preocupados por la postura que prefieren una solución portable y discreta. </td>
-    <td> Empresas medianas y grandes que necesitan cumplir normas de bienestar y seguridad laboral. </td>
-  </tr>
-  <tr>
-    <td> Estrategias de Marketing </td>
-    <td> PRODUCTO. </td>
-    <td> Marketing orgánico, versiones freemium y recomendaciones. </td>
-    <td> Marketing digital (redes sociales, influencers), reviews en medios especializados y Amazon. </td>
-    <td> Ventas B2B, ferias sectoriales, partners de RH y demostraciones personalizadas. </td>
-  </tr>
-  <tr>
-    
-  </tr>
-  <tr>
-    <td rowspan="3">Perfil de Producto</td>
-    <td> Productos & Servicios </td>
-    <td> PRODUCTO. </td>
-    <td> App desktop (Windows/macOS) con alertas sonoras y ajustes de sensibilidad. </td>
-    <td> Sensor wearable + app móvil con programas de entrenamiento y tracking de progreso. </td>
-    <td> Software de pausas activas, informes de bienestar y gestión centralizada para empresas. </td>
-  </tr>
-  <tr>
-    <td> Precios & Costos </td>
-    <td> PRODUCTO. </td>
-    <td> Freemium. Versión Pro: $20-30 (pago único). </td>
-    <td> $99-$150 (hardware + app). Modelo de pago único. </td>
-    <td> Modelo de suscripción por usuario. </td>
-  </tr>
-  <tr> 
-    <td>Canales de distribución (Web y/o Móvil)</td>
-    <td> PRODUCTO. </td>
-    <td> Sitio web propio y plataformas de descarga. </td>
-    <td> Ecommerce propio, Amazon y retailers especializados en salud. </td>
-    <td> Ventas directas y partners corporativos. </td>
-  </tr>
-  <tr>
-    <td rowspan="4"> Análisis SWOT </td>
-    <td> Fortalezas </td>
-    <td> PRODUCTO. </td>
-    <td> Bajo costo, fácil implementación, privacidad de datos. </td>
-    <td> Alta portabilidad, retroalimentación táctil inmediata. </td>
-    <td> Cumplimiento normativo, enfoque corporativo, escalabilidad. </td>
-  </tr>
-  <tr>
-    <td> Debilidades </td>
-    <td> PRODUCTO </td>
-    <td> Dependencia de la cámara, alertas básicas que son sonidos. </td>
-    <td> Costo inicial alto, requiere llevar puesto el sensor. </td>
-    <td> Precio elevado para individuos, implementación compleja para pequeñas y medianas empresas. </td>
-  </tr>
-  <tr>
-    <td> Oportunidades </td>
-    <td> PRODUCTO. </td>
-    <td> Integración con apps de productividad (Zoom, Teams) y versiones móviles. </td>
-    <td> Expansión a mercados de wellness corporativo y programas de fisioterapia. </td>
-    <td> Crecimiento del teletrabajo y mayor regulación en salud laboral post-pandemia. </td>
-  </tr>
-  <tr>
-    <td> Amenazas </td>
-    <td> PRODUCTO. </td>
-    <td> Competencia de soluciones gratuitas o integradas en OS. </td>
-    <td> Avances en IA de cámaras que replican la funcionalidad sin hardware. </td>
-    <td> Completencias de grandes empresas (Microsoft,Viva, etc) y soluciones de bajo costo. </td>
-  </tr>
-</table>
-
 - [2.1.2 Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
-
-  **1. Estrategia de Diferenciación por Simplicidad y Usabilidad**
-  **Objetivo:** Ser la solución más intuitiva y fácil de usar para usuarios no técnicos.
-  **Tácticas:**
-
-  - Instalacion en solo 1 clic y con configuracion que no lleve mas de 10 seg.
-  - Diseñar una interfaz limpia y minimalista con solo 3 botones: encender/apagar, ajustar la posicion y ver el progreso.
-  - Alerta no intrusivas: Notificaciones suaves en la esquina de la pantalla más sonido personalizado.
-
-  **2. Estrategia de Enfoque en Nichos Desatendidos**
-  **Objetivo:** Dominar segmentos específicos dentro del mercado de estidantes y trabajadores remotos.
-  **Tácticas:**
-
-  - Descuentos para estudiantes: Verificacion con correo ".edu" para acceso premiun a precio muy bajos.
-  - Pack Equipos Remotos: Para pequeñas empresas con planes grupales.
-
-  **3. Estrategia de Humanización y Cercanía de Marca**
-  **Objetivo:** Crear una comunidad alrededor del bienestar postural, no solo vender software.
-  **Tácticas:**
-
-  - Restos semanales: "7 días de buena postura" con recompensa logros/descuentos.
-  - Testimonios en Redes sociales(Reels): De usuarios reales mostrando cómo el software les ayudo con el dolor de espaldo y mejoro su postura en 30 seg.
-  - Soporte: Chat en vivo para problemas técnicos, no solo correo electrónico.
-
-  **4. Estrategia de Precio Accesible y Transparente**
-  **Objetivo:** Reducir toda friccion finaciera para el usuario individual.
-  **Tácticas:**
-
-  - Plan Gratuito Limitado: Con alertas básicas y estadísticas de 7 días(para mantener el plan debe de contar su experiencia en las redes sociales o en forum de la misma web).
-  - Diseñar una estructura de precios clara, con un plan gratuito funcional y un plan premium económico.
-
 - [2.2 Entrevistas](#22-entrevistas)
   - [2.2.1 Diseño de entrevistas](#221-diseño-de-entrevistas)
   - [2.2.2 Registro de entrevistas](#222-registro-de-entrevistas)
@@ -362,9 +181,184 @@ del ABET – EAC - Student Outcome 3.
 
 ### 2.1 Competidores
 
+A continuación, se presenta un análisis competitivo que examina a las principales empresas que rivalizan con nuestra startup. Hemos identificado tanto competidores directos, aquellos que ofrecen una solución de software centralizada en la monitorización y corrección proactiva de la postura mediante el uso de la cámara, como indirectos que, si bien no son idénticos, compiten en áreas clave superpuestas como el bienestar digital en el puesto de trabajo, la ergonomía y la prevención de la fatiga física que impacta la productividad. Este análisis se centra en aquellos que ofrecen soluciones que se superponen con las de **\*\*\*\***.
+
+1. **Posture Reminder**  
+   ![Logo de Posture Reminder](images/P-2/Posture_Reminder.png)  
+   **Descripción:**  
+   Software de escritorio que utiliza la cámara web para detectar encorvamiento y emitir una alerta sonora inmediata.  
+   **Características principales**
+  - Monitorización pasiva con la cámara web.
+  - Alerta sonora simple al detectar mala postura.
+  - Personalización de sensibilidad.
+
+---
+
+2. **Upright Go**  
+   ![Logo de Uprigh Go](images/P-2/UPRIGHT.png)  
+   **Descripción:**  
+   Wearable (sensor portátil) que se adhiere a la espalda y vibra sutilmente al detectar que el usuario se está encorvando.  
+   **Características principales**
+  - Tecnología de sensor wearable (sin cámara).
+  - Vibración discreta como retroalimentación táctil.
+  - App móvil con seguimiento de progreso y métricas.
+  - Solución portátil que funciona fuera del escritorio.
+  - Informes de progreso.
+
+---
+
+3. **Workpace**  
+   ![Logo de Wellnomics](images/P-2/Wellnomincs.png)  
+   **Descripción:**  
+   Plataforma integral de wellness laboral que gestiona la ergonomía, programa pausas activas y cumple con estándares de seguridad de la información.  
+   **Características principales**
+  - Recordatorios de pausas y estiramientos basados en la ciencia.
+  - Cumplimiento de normas de seguridad (ISO 27002, RGPD).
+  - Enfoque en la salud y seguridad ambiental (EHS).
+  - Solución corporativa para la gestión del bienestar de equipos.
+
 #### 2.1.1 Análisis competitivo
 
+
+<table> 
+  <tr>
+    <th colspan="6"> Competitive Analysis Landscape </th>
+  </tr>
+  <tr>
+    <td colspan="2" rowspan="2">¿Por qué llevar acabo este análisis? </td>
+    <td colspan="4"> Pregunta </td>
+  </tr>
+  <tr>
+    <td colspan="4"> Deberíamos llevar a cabo este análisis para conocer el entorno, la competencia, tomar decisiones de desarrollo y construir nuestra propuesta de valor. </td>
+  </tr>
+  <tr>
+    <td colspan="2"> Productos </td>
+    <td> Producto </td>
+    <td> Posture Reminder </td>
+    <td> Upright Go </td>
+    <td> Workpace </td>
+  </tr>
+  <tr>
+    <td rowspan="2">Perfil</td>
+    <td>Overview</td>
+    <td> PRODUCTO </td>
+    <td> Software de monitorización postural mediante cámara web. </td>
+    <td> Wearable (sensor portátil) que vibra al detectar encorvamiento. </td>
+    <td> Plataforma corporativa de wellness laboral con foco en ergonomía y pausas activas. </td>
+  </tr>
+  <tr>
+    <td>Ventaja
+    competitiva
+    ¿Qué valor
+    ofrece a los
+    clientes?</td>
+    <td> Ofrece PRODUCTO. </td>
+    <td> Ofrece solución simple, económica y no invasiva. Procesamiento local garantiza privacidad.</td>
+    <td> Ofrece precisión en la detección y portabilidad para uso en cualquier entorno. </td>
+    <td> Ofrece enfoque integral y normativo (ISO 27002, RGPD) para empresas. </td>
+  </tr>
+  <tr>
+    <td rowspan="2">Perfil de Marketing</td>
+    <td> Mercado Objetivo </td>
+    <td> PRODUCTO. </td>
+    <td> Individuos que buscan una solución simple y económica. </td>
+    <td> Usuarios preocupados por la postura que prefieren una solución portable y discreta. </td>
+    <td> Empresas medianas y grandes que necesitan cumplir normas de bienestar y seguridad laboral. </td>
+  </tr>
+  <tr>
+    <td> Estrategias de Marketing </td>
+    <td> PRODUCTO. </td>
+    <td> Marketing orgánico, versiones freemium y recomendaciones. </td>
+    <td> Marketing digital (redes sociales, influencers), reviews en medios especializados y Amazon. </td>
+    <td> Ventas B2B, ferias sectoriales, partners de RH y demostraciones personalizadas. </td>
+  </tr>
+  <tr>
+
+  </tr>
+  <tr>
+    <td rowspan="3">Perfil de Producto</td>
+    <td> Productos & Servicios </td>
+    <td> PRODUCTO. </td>
+    <td> App desktop (Windows/macOS) con alertas sonoras y ajustes de sensibilidad. </td>
+    <td> Sensor wearable + app móvil con programas de entrenamiento y tracking de progreso. </td>
+    <td> Software de pausas activas, informes de bienestar y gestión centralizada para empresas. </td>
+  </tr>
+  <tr>
+    <td> Precios & Costos </td>
+    <td> PRODUCTO. </td>
+    <td> Freemium. Versión Pro: $20-30 (pago único). </td>
+    <td> $99-$150 (hardware + app). Modelo de pago único. </td>
+    <td> Modelo de suscripción por usuario. </td>
+  </tr>
+  <tr> 
+    <td>Canales de distribución (Web y/o Móvil)</td>
+    <td> PRODUCTO. </td>
+    <td> Sitio web propio y plataformas de descarga. </td>
+    <td> Ecommerce propio, Amazon y retailers especializados en salud. </td>
+    <td> Ventas directas y partners corporativos. </td>
+  </tr>
+  <tr>
+    <td rowspan="4"> Análisis SWOT </td>
+    <td> Fortalezas </td>
+    <td> PRODUCTO. </td>
+    <td> Bajo costo, fácil implementación, privacidad de datos. </td>
+    <td> Alta portabilidad, retroalimentación táctil inmediata. </td>
+    <td> Cumplimiento normativo, enfoque corporativo, escalabilidad. </td>
+  </tr>
+  <tr>
+    <td> Debilidades </td>
+    <td> PRODUCTO </td>
+    <td> Dependencia de la cámara, alertas básicas que son sonidos. </td>
+    <td> Costo inicial alto, requiere llevar puesto el sensor. </td>
+    <td> Precio elevado para individuos, implementación compleja para pequeñas y medianas empresas. </td>
+  </tr>
+  <tr>
+    <td> Oportunidades </td>
+    <td> PRODUCTO. </td>
+    <td> Integración con apps de productividad (Zoom, Teams) y versiones móviles. </td>
+    <td> Expansión a mercados de wellness corporativo y programas de fisioterapia. </td>
+    <td> Crecimiento del teletrabajo y mayor regulación en salud laboral post-pandemia. </td>
+  </tr>
+  <tr>
+    <td> Amenazas </td>
+    <td> PRODUCTO. </td>
+    <td> Competencia de soluciones gratuitas o integradas en OS. </td>
+    <td> Avances en IA de cámaras que replican la funcionalidad sin hardware. </td>
+    <td> Completencias de grandes empresas (Microsoft,Viva, etc) y soluciones de bajo costo. </td>
+  </tr>
+</table>
+
 #### 2.1.2 Estrategias y tácticas frente a competidores
+
+**1. Estrategia de Diferenciación por Simplicidad y Usabilidad**
+**Objetivo:** Ser la solución más intuitiva y fácil de usar para usuarios no técnicos.
+**Tácticas:**
+
+- Instalacion en solo 1 clic y con configuracion que no lleve mas de 10 seg.
+- Diseñar una interfaz limpia y minimalista con solo 3 botones: encender/apagar, ajustar la posicion y ver el progreso.
+- Alerta no intrusivas: Notificaciones suaves en la esquina de la pantalla más sonido personalizado.
+
+**2. Estrategia de Enfoque en Nichos Desatendidos**
+**Objetivo:** Dominar segmentos específicos dentro del mercado de estidantes y trabajadores remotos.
+**Tácticas:**
+
+- Descuentos para estudiantes: Verificacion con correo ".edu" para acceso premiun a precio muy bajos.
+- Pack Equipos Remotos: Para pequeñas empresas con planes grupales.
+
+**3. Estrategia de Humanización y Cercanía de Marca**
+**Objetivo:** Crear una comunidad alrededor del bienestar postural, no solo vender software.
+**Tácticas:**
+
+- Restos semanales: "7 días de buena postura" con recompensa logros/descuentos.
+- Testimonios en Redes sociales(Reels): De usuarios reales mostrando cómo el software les ayudo con el dolor de espaldo y mejoro su postura en 30 seg.
+- Soporte: Chat en vivo para problemas técnicos, no solo correo electrónico.
+
+**4. Estrategia de Precio Accesible y Transparente**
+**Objetivo:** Reducir toda friccion finaciera para el usuario individual.
+**Tácticas:**
+
+- Plan Gratuito Limitado: Con alertas básicas y estadísticas de 7 días(para mantener el plan debe de contar su experiencia en las redes sociales o en forum de la misma web).
+- Diseñar una estructura de precios clara, con un plan gratuito funcional y un plan premium económico.
 
 ### 2.2 Entrevistas
 
