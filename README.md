@@ -370,6 +370,38 @@ del ABET – EAC - Student Outcome 3.
 
 #### 2.2.1 Diseño de entrevistas
 
+#### 1. Entrevista para Trabajadores Remotos
+
+**Preguntas principales:**
+1. ¿Podrías contarme un poco sobre ti? (edad, ocupación, lugar de residencia, estado civil)
+2. ¿Qué tipo de trabajo realizas de manera remota y cuánto tiempo pasas frente a la computadora al día?
+3. ¿Has tenido problemas relacionados con la postura o dolores musculares por trabajar largas horas frente al PC?
+
+**Preguntas complementarias:**
+4. ¿En qué momentos del día sueles trabajar más intensamente (mañana, tarde, noche)?
+5. ¿Qué tan consciente eres de tu postura mientras trabajas?
+6. ¿Has usado alguna vez recordatorios, apps o dispositivos para mejorar tu postura o hacer pausas?
+7. ¿Qué dispositivos usas con más frecuencia para trabajar (laptop, PC de escritorio, tablet)?
+8. ¿Qué tipo de aplicaciones usas más a diario (ejemplo: productividad, comunicación, salud)?
+9. ¿Qué valoras más en una aplicación que te acompañe durante tu jornada laboral?
+10. Si una app pudiera corregir tu postura en tiempo real, ¿qué características te parecerían más importantes (alertas, reportes, personalización)?
+
+#### 2. Entrevista para Estudiantes que Usan Computadoras
+
+**Preguntas principales:**
+1. ¿Podrías contarme un poco sobre ti? (edad, nivel de estudios, lugar de residencia, estado civil)
+2. ¿Cuánto tiempo pasas estudiando frente a la computadora al día?
+3. ¿Has experimentado molestias físicas (dolor de cuello, espalda, fatiga visual) debido al tiempo de estudio?
+
+**Preguntas complementarias:**
+4. ¿En qué espacios sueles estudiar más (dormitorio, biblioteca, cafetería)?
+5. ¿Sueles estar consciente de tu postura mientras estudias?
+6. ¿Qué haces actualmente para cuidar tu salud durante tus estudios prolongados?
+7. ¿Qué dispositivos usas más frecuentemente para estudiar (laptop, PC, tablet, celular)?
+8. ¿Qué tipo de aplicaciones académicas o de productividad usas a diario?
+9. ¿Qué características valoras más en una aplicación pensada para estudiantes? (ej: fácil de usar, gratuita, visual, rápida)
+10. ¿Si una aplicación te ayudara a corregir tu postura, en qué momentos la usarías más (clases virtuales, trabajos, sesiones largas de estudio)?
+
 #### 2.2.2 Registro de entrevistas
 
 #### 2.2.3 Análisis de entrevistas
