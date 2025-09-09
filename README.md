@@ -639,6 +639,14 @@ Para el segmento de estudiantes remotos, las seis entrevistas revelan que la may
 
 #### 2.3.4 As-is Scenario Mapping
 
+**Segmento 1: Trabajador Remoto**
+
+<img src="./images/chapter-2/As-Is Scenario Mapping Trabajador Remoto.png" alt="as-is trabajador"/>
+
+**Segmento 2: Estudiante con clases virtuales**
+
+<img src="./images/chapter-2/As-Is Scenario Mapping Estudiante.png" alt="as-is estudiante"/>
+
 ### 2.4 Ubiquitous Language
 
 ## Capítulo III: Requirements Specification
