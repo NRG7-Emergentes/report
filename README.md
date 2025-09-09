@@ -184,7 +184,7 @@ del ABET – EAC - Student Outcome 3.
 A continuación, se presenta un análisis competitivo que examina a las principales empresas que rivalizan con nuestra startup. Hemos identificado tanto competidores directos, aquellos que ofrecen una solución de software centralizada en la monitorización y corrección proactiva de la postura mediante el uso de la cámara, como indirectos que, si bien no son idénticos, compiten en áreas clave superpuestas como el bienestar digital en el puesto de trabajo, la ergonomía y la prevención de la fatiga física que impacta la productividad. Este análisis se centra en aquellos que ofrecen soluciones que se superponen con las de **ErgoVision**.
 
 1. **Posture Reminder**  
-   ![Logo de Posture Reminder](images/P-2/Posture_Reminder.png)  
+   ![Logo de Posture Reminder](/images/chapter-2/competidores/Posture_Reminder.png)  
    **Descripción:**  
    Software de escritorio que utiliza la cámara web para detectar encorvamiento y emitir una alerta sonora inmediata.  
    **Características principales**
@@ -196,7 +196,7 @@ A continuación, se presenta un análisis competitivo que examina a las principa
 ---
 
 2. **Upright Go**  
-   ![Logo de Uprigh Go](images/P-2/UPRIGHT.png)  
+   ![Logo de Uprigh Go](/images/chapter-2/competidores/UPRIGHT.png)  
    **Descripción:**  
    Wearable (sensor portátil) que se adhiere a la espalda y vibra sutilmente al detectar que el usuario se está encorvando.  
    **Características principales**
@@ -210,7 +210,7 @@ A continuación, se presenta un análisis competitivo que examina a las principa
 ---
 
 3. **Workpace**  
-   ![Logo de Wellnomics](images/P-2/Wellnomincs.png)  
+   ![Logo de Wellnomics](/images/chapter-2/competidores/Wellnomincs.png)  
    **Descripción:**  
    Plataforma integral de wellness laboral que gestiona la ergonomía, programa pausas activas y cumple con estándares de seguridad de la información.  
    **Características principales**
@@ -411,6 +411,215 @@ A continuación, se presenta un análisis competitivo que examina a las principa
 12. ¿Te interesaría usar una aplicación que te ayude a mantener una buena postura y reducir molestias durante tus estudios? ¿Por qué sí o por qué no?
 
 #### 2.2.2 Registro de entrevistas
+
+En esta sección registramos los puntos e ideas más importantes de las entrevistas realizadas a los trabajadores y estudiantes remotos. Los detalles completos de las entrevistas, incluyendo las grabaciones, se encuentran disponibles en el siguiente enlace: 
+
+A continuación se presentan los detalles clave de las entrevistas realizadas a los trabajadores:
+
+<table cellpadding="8" cellspacing="0">
+  <tbody>
+    <tr>
+      <td>Entrevista 1</td>
+      <td> <img src="./images/chapter-2/entrevistas/trabajador1.png" alt="interview 1" width="400"/> </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Llessuar Romero Rodriguez</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>Los Olivos</td>
+    </tr>
+    <tr>
+      <td>Ocupacion</td>
+      <td>Profesora de Coreano</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td>07:22 </td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td>00:00 - 07:22</td>
+    </tr>
+  </tbody>
+</table>
+
+<table cellpadding="8" cellspacing="0">
+  <tbody>
+    <tr>
+      <td>Entrevista 2</td>
+      <td> <img src="./images/chapter-2/entrevistas/trabajador2.png" alt="interview 2" width="400"/> </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Flavio Gallardo Matos</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>Breña</td>
+    </tr>
+    <tr>
+      <td>Ocupacion</td>
+      <td>Diseñador Grafico</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td>02:32 </td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td>07:23 - 9:54</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<table cellpadding="8" cellspacing="0">
+  <tbody>
+    <tr>
+      <td>Entrevista 3</td>
+      <td> <img src="./images/chapter-2/entrevistas/trabajador3.png" alt="interview 3" width="400"/> </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Carlos Ordaz</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>San Miguel</td>
+    </tr>
+    <tr>
+      <td>Ocupacion</td>
+      <td>Ingeniero de sistemas practicante</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td>04:22 </td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td>09:55 - 14:16</td>
+    </tr>
+  </tbody>
+</table>
+
+
+A continuación se presentan los detalles clave de las entrevistas realizadas a los estudiantes:
+
+
+<table cellpadding="8" cellspacing="0">
+  <tbody>
+    <tr>
+      <td>Entrevista 4</td>
+      <td> <img src="./images/chapter-2/entrevistas/estudiante1.png" alt="interview 4" width="400"/> </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Sebastian Real Calderon</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>La Perla</td>
+    </tr>
+    <tr>
+      <td>Ocupacion</td>
+      <td>Estudiante de Ingenieria de Software</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td>05:44 </td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td>14:17 - 20:00</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table cellpadding="8" cellspacing="0">
+  <tbody>
+    <tr>
+      <td>Entrevista 5</td>
+      <td> <img src="./images/chapter-2/entrevistas/estudiante2.png" alt="interview 5" width="400"/> </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Tyro Sotil</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>San Juan de Lurigancho</td>
+    </tr>
+    <tr>
+      <td>Ocupacion</td>
+      <td>Estudiante</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td>05:44 </td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td>14:17 - 20:00</td>
+    </tr>
+  </tbody>
+</table>
+
+<table cellpadding="8" cellspacing="0">
+  <tbody>
+    <tr>
+      <td>Entrevista 6</td>
+      <td> <img src="./images/chapter-2/entrevistas/estudiante3.png" alt="interview 6" width="400"/> </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Juan Diego Cabrera</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>USA, florida</td>
+    </tr>
+    <tr>
+      <td>Ocupacion</td>
+      <td>Estudiante</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td>09:31</td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td>24:03 - 33:34</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 2.2.3 Análisis de entrevistas
 
