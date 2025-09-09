@@ -210,6 +210,14 @@ del ABET – EAC - Student Outcome 3.
 
 ### 3.1 To-Be Scenario Mapping
 
+**Segmento 1: Trabajador Remoto**
+
+<img src="./images/cap-3/To-Be Scenario Mapping Trabajador Remoto.png" alt="To-Be Trabajador">
+
+**Segmento 2: Estudiante con clases virtuales**
+
+<img src="./images/cap-3/To-Be Scenario Mapping Estudiante.png" alt="To-Be Estudiante">
+
 ### 3.2 User Stories
 
 ### 3.3 Impact Mapping
