@@ -374,8 +374,6 @@ A continuación, se presenta un análisis competitivo que examina a las principa
 
 #### 2.2.1 Diseño de entrevistas
 
-## 2.2.1. Diseño de entrevistas
-
 **Entrevista para Trabajadores Remotos**
 
 **Preguntas:**
@@ -622,6 +620,14 @@ A continuación se presentan los detalles clave de las entrevistas realizadas a 
 </table>
 
 #### 2.2.3 Análisis de entrevistas
+
+**Segmento Objetivo 1: Trabajadores Remotos**
+
+En el segmento de trabajadores remotos, se entrevistaron a tres personas con edades entre 21 y 23 años, dedicadas a actividades como enseñanza virtual, diseño gráfico e ingeniería de sistemas. El 100% trabaja entre 5 y 9 horas diarias frente a la computadora, con un 67% que prefiere trabajar en horarios nocturnos o matutinos según la demanda. El 100% reporta molestias físicas, principalmente fatiga visual (67%) y dolor de espalda (33%). En cuanto a la conciencia postural, el 67% intenta mantener una buena postura, aunque solo uno reconoce que a veces debe cambiarla para evitar cansancio. Ninguno ha utilizado dispositivos físicos para corrección postural, pero todos muestran interés en aplicaciones que les recuerden moverse o mejorar su postura, valorando que sean poco invasivas y con recordatorios prácticos.
+
+**Segmento Objetivo 2: Estudiantes Remotos**
+
+Para el segmento de estudiantes remotos, las seis entrevistas revelan que la mayoría tiene entre 20 y 22 años, con un estudiante residiendo en Estados Unidos. El 100% pasa entre 6 y 12 horas diarias frente a la computadora, principalmente en espacios privados como dormitorios o bibliotecas. El 83% ha experimentado molestias físicas, destacando dolor de espalda y fatiga visual, aunque solo un 33% está consciente de su postura durante el estudio. El 50% utiliza herramientas digitales para organización como Google Calendar, Trello o Notion, y el 67% cuenta con elementos físicos como sillas ergonómicas o escritorios amplios para mejorar la comodidad. Ninguno ha probado aplicaciones específicas para cuidado postural, pero todos manifiestan interés en usar aplicaciones con recordatorios poco invasivos y funciones de gamificación para mantener una buena postura y reducir molestias.
 
 ### 2.3 Needfinding
 
