@@ -635,6 +635,31 @@ Para el segmento de estudiantes remotos, las seis entrevistas revelan que la may
 
 #### 2.3.2 User Task Matrix
 
+**Segmento 1: Trabajadores Remotos:**
+
+| Tarea                                                                             | Frecuencia | Severidad |
+|-----------------------------------------------------------------------------------|------------|-----------|
+| Permanecer sentado frente a la computadora entre 5–9 horas                        | Alta       | Alta      |
+| Mantener concentración en actividades digitales (enseñanza, diseño, programación) | Alta       | Alta      |
+| Intentar corregir su postura de forma consciente                                  | Media      | Media     |
+| Realizar pausas breves o cambios de posición                                      | Baja       | Media     |
+| Monitorear molestias físicas (fatiga visual, dolor de espalda)                    | Media      | Alta      |
+| Utilizar recordatorios o notificaciones de postura                                | Baja       | Alta      |
+| Ajustar su espacio de trabajo (silla, escritorio, luz)                            | Baja       | Media     |
+
+**Segmento 2: Estudiantes Remotos:**
+
+| Tarea                                                                                | Frecuencia | Severidad |
+|--------------------------------------------------------------------------------------|------------|-----------|
+| Estudiar entre 6–12 horas frente a la computadora                                    | Alta       | Alta      |
+| Concentrarse en actividades académicas (lectura, clases, trabajos)                   | Alta       | Alta      |
+| Mantener una postura correcta al estudiar                                            | Baja       | Alta      |
+| Realizar pausas activas o estiramientos                                              | Baja       | Media     |
+| Identificar y atender molestias físicas (dolor de espalda, fatiga visual)            | Media      | Alta      |
+| Usar herramientas digitales de organización (Google Calendar, Notion, Trello)        | Media      | Media     |
+| Ajustar entorno físico (silla ergonómica, escritorio)                                | Media      | Media     |
+| Interesarse en aplicaciones de autocuidado postural con recordatorios y gamificación | Baja       | Alta      |
+
 #### 2.3.3 Empathy Mapping
 
 #### 2.3.4 As-is Scenario Mapping
