@@ -662,6 +662,14 @@ Para el segmento de estudiantes remotos, las seis entrevistas revelan que la may
 
 #### 2.3.3 Empathy Mapping
 
+**Segmento 1: Trabajadores Remotos:**
+
+<img src="images/chapter-2/target-segment-1-empathy-map.png" alt="empathy-map trabajador"/>
+
+**Segmento 2: Estudiantes Remotos:**
+
+<img src="images/chapter-2/target-segment-2-empathy-map.png" alt="empathy-map estudiante"/>
+
 #### 2.3.4 As-is Scenario Mapping
 
 **Segmento 1: Trabajador Remoto**
