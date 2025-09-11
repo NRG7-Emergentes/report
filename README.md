@@ -702,6 +702,19 @@ El siguiente glosario detalla los términos esenciales del Lenguaje Ubiquo que u
 
 ### 3.2 User Stories
 
+**Epics**
+
+| EPIC ID | Título                                    | Descripción                                                                                                              |
+| ------- | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| EP-001  | Monitoreo de postura en tiempo real       | El sistema analice la postura usando la camra web, para brindar retroalimentacion y mejoras de hábitos ergonómicos.      |
+| EP-002  | Gestión de alertas y notificaciones       | Notificar de manera visual/sonora para idicarle al estudinate y trabajador remoto sobre la correción de su postura.      |
+| EP-003  | Configuración inicial y psoterior         | Realizar las configuraciones de manera rapida y sencilla                                                                 |
+| EP-004  | Gestión de perfil de usuario              | Registro, inicio de sesión, edición de perfil y gestión de credenciales. Incluye autenticación y recuperación de acceso. |
+| EP-005  | Ejecucion en segundo plano                | Recibir notificaciones y reportes estando en el entorono de trabajo o estudio.                                           |
+| EP-006  | Gamificación y motivación                 | Dar reto, cumplir reto, premiar por cumplir el reto.                                                                     |
+| EP-007  | Reportes y métricas de hábitos posturales | Aldiquision de datos registrados a lo largo de la semana, indicar su mejora y proyeccion a futuro.                       |
+| EP-008  | Seguridad y privacidad de datos           | Autentificacion por usuario, encriptacion de imagenes procesados y guardado.                                             |
+
 ### 3.3 Impact Mapping
 
 ### 3.4 Product Backlog
