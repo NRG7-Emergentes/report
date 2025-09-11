@@ -480,8 +480,6 @@ A continuación se presentan los detalles clave de las entrevistas realizadas a 
   </tbody>
 </table>
 
-
-
 <table cellpadding="8" cellspacing="0">
   <tbody>
     <tr>
@@ -515,9 +513,7 @@ A continuación se presentan los detalles clave de las entrevistas realizadas a 
   </tbody>
 </table>
 
-
 A continuación se presentan los detalles clave de las entrevistas realizadas a los estudiantes:
-
 
 <table cellpadding="8" cellspacing="0">
   <tbody>
@@ -551,7 +547,6 @@ A continuación se presentan los detalles clave de las entrevistas realizadas a 
     </tr>
   </tbody>
 </table>
-
 
 <table cellpadding="8" cellspacing="0">
   <tbody>
@@ -638,7 +633,7 @@ Para el segmento de estudiantes remotos, las seis entrevistas revelan que la may
 **Segmento 1: Trabajadores Remotos:**
 
 | Tarea                                                                             | Frecuencia | Severidad |
-|-----------------------------------------------------------------------------------|------------|-----------|
+| --------------------------------------------------------------------------------- | ---------- | --------- |
 | Permanecer sentado frente a la computadora entre 5–9 horas                        | Alta       | Alta      |
 | Mantener concentración en actividades digitales (enseñanza, diseño, programación) | Alta       | Alta      |
 | Intentar corregir su postura de forma consciente                                  | Media      | Media     |
@@ -650,7 +645,7 @@ Para el segmento de estudiantes remotos, las seis entrevistas revelan que la may
 **Segmento 2: Estudiantes Remotos:**
 
 | Tarea                                                                                | Frecuencia | Severidad |
-|--------------------------------------------------------------------------------------|------------|-----------|
+| ------------------------------------------------------------------------------------ | ---------- | --------- |
 | Estudiar entre 6–12 horas frente a la computadora                                    | Alta       | Alta      |
 | Concentrarse en actividades académicas (lectura, clases, trabajos)                   | Alta       | Alta      |
 | Mantener una postura correcta al estudiar                                            | Baja       | Alta      |
@@ -681,6 +676,25 @@ Para el segmento de estudiantes remotos, las seis entrevistas revelan que la may
 <img src="./images/chapter-2/As-Is Scenario Mapping Estudiante.png" alt="as-is estudiante"/>
 
 ### 2.4 Ubiquitous Language
+
+El siguiente glosario detalla los términos esenciales del Lenguaje Ubiquo que utilizamos en este proyecto. Este lenguaje común nos permite alinear nuestras conversaciones y asegurar que todos estemos trabajando con una misma comprensión del dominio del problema.
+
+| Término (Inglés)        | Término (Español)                 | Definición                                                                                                                                                                                                                |
+| ----------------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Task**                | Tarea                             | Acción específica asignada a un miembro del grupo para ser completada en un periodo.                                                                                                                                      |
+| **Monitoring**          | Monitoreo                         | Proceso continuo mediante el cual el sistema observa y analiza la postura del usuario en tiempo real.                                                                                                                     |
+| **Notification**        | Notificación                      | Aviso emitido por el sistema (visual o sonoro) para alertar al usuario sobre una postura incorrecta o recordarle una acción.                                                                                              |
+| **Metric**              | Métrica                           | Indicador cuantitativo que mide hábitos posturales, como el tiempo en postura incorrecta o la frecuencia de correcciones.                                                                                                 |
+| **Posture**             | Postura                           | Posición corporal adoptada por el usuario frente a la computadora, que puede ser correcta o incorrecta según criterios ergonómicos.                                                                                       |
+| **Webcam**              | Cámara web                        | Dispositivo que captura imágenes en tiempo real y permite al sistema analizar la postura del usuario.                                                                                                                     |
+| **Remote Student**      | Estudiante remoto                 | Usuario que accede al sistema desde un entorno académico a distancia, como clases en línea, y que utiliza ErgoVision para mantener hábitos posturales saludables mientras estudia desde casa u otro lugar fuera del aula. |
+| **Remote Worker**       | Trabajador remoto                 | Usuario que desempeña sus funciones laborales desde casa u otro lugar fuera de la oficina tradicional, empleando ErgoVision para cuidar su postura durante la jornada laboral a distancia.                                |
+| **MediaPipe**           | MediaPipe                         | Framework de visión por computadora desarrollado por Google, usado para detectar y procesar puntos clave del cuerpo humano.                                                                                               |
+| **Pose Landmark**       | Punto de referencia de la postura | Coordenadas específicas del cuerpo (ej. hombros, cuello, rodillas) detectadas por la IA para evaluar la postura del usuario.                                                                                              |
+| **Postural Biometrics** | Biometría postural                | Conjunto de datos únicos relacionados con la forma en que una persona se sienta, se mueve o mantiene su postura.                                                                                                          |
+| **Workstation**         | Estación de trabajo               | Espacio físico compuesto por escritorio, silla y computadora donde el estudiante y trabajador remoto realiza sus actividades.                                                                                             |
+| **Comfort Threshold**   | Umbral de confort                 | Límite dentro del cual una postura se considera aceptable sin generar molestias o riesgos ergonómicos.                                                                                                                    |
+| **Correction Cycle**    | Ciclo de corrección               | Secuencia de eventos que inicia con una alerta, continúa con el ajuste de la postura por parte del estudiante y trabajador remoto y finaliza con la validación del cambio.                                                |
 
 ## Capítulo III: Requirements Specification
 
