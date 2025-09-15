@@ -273,6 +273,32 @@ El proceso de diseño de ErgoVisión debe considerar restricciones no negociable
 
 #### 4.1.3 Architectural Drivers Backlog
 
+El proceso de identificación de Architectural Drivers se desarrolló de manera iterativa mediante un Quality Attribute Workshop, en el cual el equipo analizó los requisitos funcionales clave, los atributos de calidad prioritarios y las restricciones no negociables que condicionan el diseño de ErgoVisión.
+
+El resultado de este análisis se consolida en un backlog de drivers arquitecturales, el cual sirve como guía estratégica para la definición y evolución de la solución. Dichos drivers se han clasificado según su importancia para los stakeholders y su impacto en la complejidad técnica de la arquitectura, priorizando aquellos con mayor influencia en ambas dimensiones.
+
+Se siguió la siguiente leyenda para los drivers ID: FD = Functional Driver, QD = Quality Driver, TS = Technical Story.
+
+| Driver ID | Título de Driver                         | Descripción                                                                                                                              | Importancia para Stakeholders | Impacto en Architecture Technical Complexity |
+|-----------|------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|----------------------------------------------|
+| FD-01     | Monitoreo postural en tiempo real        | Permite capturar y analizar la postura del usuario mediante IA, identificando desviaciones en hombros, cabeza y distancia a la pantalla. | High                          | High                                         |
+| FD-02     | Sistema de alertas y notificaciones      | Proporciona retroalimentación inmediata (visual, sonora o push) para corregir la postura y prevenir riesgos.                             | High                          | Medium                                       |
+| FD-03     | Personalización y calibración            | Facilita un proceso de configuración inicial y ajustes de sensibilidad según el usuario.                                                 | Medium                        | Medium                                       |
+| FD-04     | Seguimiento de progreso y analytics      | Ofrece paneles con métricas de evolución, hábitos y patrones de error.                                                                   | Medium                        | Medium                                       |
+| FD-05     | Gestión de bienestar y prevención        | Incluye recordatorios de pausas activas y guías de estiramiento.                                                                         | Medium                        | Low                                          |
+| FD-06     | Gestión de usuario y perfil              | Permite registro, login, recuperación de contraseña y preferencias de cuenta.                                                            | High                          | Medium                                       |
+| QD-01     | Performance y baja latencia              | El sistema debe procesar video y emitir alertas en menos de 200 ms.                                                                      | High                          | High                                         |
+| QD-02     | Usabilidad y accesibilidad               | La interfaz debe ser clara, accesible y adaptada a usuarios con diferentes perfiles.                                                     | High                          | Medium                                       |
+| QD-03     | Escalabilidad                            | La plataforma debe soportar un incremento progresivo de usuarios y dispositivos IoT.                                                     | High                          | High                                         |
+| QD-04     | Seguridad de datos                       | Los datos de postura y salud deben almacenarse y transmitirse de forma encriptada.                                                       | High                          | High                                         |
+| QD-05     | Disponibilidad                           | El sistema debe mantener un uptime mínimo de 99.5% en entorno cloud.                                                                     | High                          | Medium                                       |
+| QD-06     | Interoperabilidad IoT                    | La plataforma debe integrarse con sensores IoT heterogéneos.                                                                             | Medium                        | High                                         |
+| TS-01     | Cumplimiento con normativas de seguridad | La solución debe cumplir GDPR e ISO 27001 para datos sensibles.                                                                          | High                          | High                                         |
+| TS-02     | Infraestructura Cloud                    | El sistema debe desplegarse en nube pública.                                                                                             | High                          | Medium                                       |
+| TS-03     | Multiplataforma                          | La aplicación debe estar disponible en navegadores modernos y móviles (Android/iOS).                                                     | High                          | Medium                                       |
+| TS-04     | Límites de presupuesto                   | Se deben priorizar tecnologías open-source o de bajo costo.                                                                              | Medium                        | Medium                                       |
+| TS-06     | Integración con sensores IoT             | El sistema debe procesar datos enviados por hardware externo.                                                                            | High                          | High                                         |
+
 #### 4.1.4 Architectural Design Decisions
 
 #### 4.1.5 Quality Attribute Scenario Refinements
