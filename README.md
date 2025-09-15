@@ -220,6 +220,8 @@ del ABET – EAC - Student Outcome 3.
 
 ### 4.1 Strategic-Level Attribute-Driven Design
 
+El enfoque Attribute-Driven Design (ADD) permite estructurar la arquitectura de una solución priorizando los atributos de calidad que impulsan las decisiones clave de diseño. En esta sección se presenta el proceso a nivel estratégico, donde se establecen los drivers arquitectónicos, se justifican las decisiones de diseño y se ilustran los escenarios de atributos de calidad, concluyendo con una primera vista de la arquitectura de alto nivel.
+
 #### 4.1.1 Design Purpose
 
 #### 4.1.2 Attribute-Driven Design Inputs
