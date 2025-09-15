@@ -248,6 +248,17 @@ La primary user stories se refiere a aquellas historias de usuario que tienen un
 
 ##### 4.1.2.2 Quality attribute Scenarios
 
+Los escenarios de atributos de calidad de ErgoVision constituyen un insumo crítico para el diseño arquitectónico, ya que permiten anticipar cómo debe comportarse el sistema ante condiciones específicas relacionadas con el uso real. Estos escenarios reflejan las propiedades clave que aseguran la efectividad de la solución. 
+
+| **Atributo**       | **Fuente**      | **Estímulo**                                                              | **Artefacto**                | **Entorno**                                      | **Respuesta**                                                               | **Medida**                                                          |
+|--------------------|-----------------|---------------------------------------------------------------------------|------------------------------|--------------------------------------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------|
+| **Rendimiento**    | Usuario         | El usuario habilita la cámara para iniciar monitoreo postural.            | Módulo de IA + Cámara        | Operación normal del sistema.                    | El sistema procesa video y muestra esqueleto en tiempo real.                | Latencia ≤ 200 ms en la visualización del esqueleto.                |
+| **Usabilidad**     | Usuario         | El usuario recibe una notificación de postura incorrecta.                 | Interfaz de Alertas          | Durante el uso continuo del sistema.             | El sistema despliega alerta visual no intrusiva y clara.                    | El 90% de usuarios entiende y actúa en < 3 segundos tras la alerta. |
+| **Disponibilidad** | Usuario         | El usuario utiliza la app en una jornada de 8 horas.                      | Plataforma completa          | Carga de trabajo prolongada.                     | El sistema mantiene el monitoreo sin interrupciones críticas.               | Uptime ≥ 99% durante sesiones de 8h.                                |
+| **Escalabilidad**  | Administrador   | La base de usuarios crece de 100 a 10,000 en 6 meses.                     | Infraestructura en la nube   | Escenario de crecimiento progresivo.             | El sistema mantiene tiempos de respuesta consistentes al aumentar usuarios. | Tiempo de respuesta ≤ 500 ms con 10,000 usuarios concurrentes.      |
+| **Fiabilidad**     | Usuario         | El sistema detecta un fallo en la conexión de cámara.                     | Módulo de Captura de Video   | Cámara desconectada o error de hardware.         | El sistema informa al usuario y permite reconectar automáticamente.         | Reconexión exitosa en < 10 segundos en el 95% de los casos.         |
+| **Privacidad**     | Usuario         | El usuario configura su cuenta para no almacenar imágenes, solo métricas. | Módulo de Persistencia       | Configuración personalizada habilitada.          | El sistema guarda únicamente datos agregados sin imágenes sensibles.        | 100% de cumplimiento con la preferencia del usuario.                |
+
 ##### 4.1.2.3 Constraints
 
 #### 4.1.3 Architectural Drivers Backlog
