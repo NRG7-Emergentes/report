@@ -278,408 +278,408 @@ del ABET – EAC - Student Outcome 3.
   </thead>
   <tbody>
     <tr>
-      <td>US-001</td>
-      <td>Acceso a la Cámara</td>
-      <td>Como usuario, quiero permitir el acceso a mi cámara web para que el sistema pueda comenzar a analizar mi postura.</td>
-      <td>
-        <b>Escenario 1: Permiso concedido</b><br>
-        Dado que el usuario ha iniciado sesión,<br>
-        Cuando inicio el monitoreo,<br>
-        Entonces el navegador solicita permiso para acceder a la cámara y, al concederlo, el feed de video se muestra en la interfaz.<br>
-        <b>Escenario 2: Permiso denegado</b><br>
-        Dado que el navegador solicita acceso a la cámara,<br>
-        Cuando el usuario deniega el permiso,<br>
-        Entonces se muestra un mensaje de error claro con instrucciones para habilitar el acceso manualmente.
-      </td>
-      <td>EP-001</td>
+        <td>US-001</td>
+        <td>Acceso a la Cámara</td>
+        <td>Como usuario, quiere permitir el acceso a su cámara web para que el sistema pueda comenzar a analizar su postura.</td>
+        <td>
+            <b>Escenario 1: Permiso concedido</b><br>
+            Dado que el usuario ha iniciado sesión,<br>
+            Cuando inicia el monitoreo,<br>
+            Entonces el navegador solicita permiso para acceder a la cámara y, al concederlo, el feed de video se muestra en la interfaz.<br>
+            <b>Escenario 2: Permiso denegado</b><br>
+            Dado que el navegador solicita acceso a la cámara,<br>
+            Cuando el usuario deniega el permiso,<br>
+            Entonces se muestra un mensaje de error claro con instrucciones para habilitar el acceso manualmente.
+        </td>
+        <td>EP-001</td>
     </tr>
     <tr>
-      <td>US-002</td>
-      <td>Visualización del Esqueleto en Tiempo Real</td>
-      <td>Como usuario, quiero ver una superposición del esqueleto detectado sobre mi imagen de video para entender cómo el sistema interpreta mi postura.</td>
-      <td>
-        <b>Escenario: Renderizado del modelo</b><br>
-        Dado que la cámara está activa y el usuario está en el campo de visión,<br>
-        Cuando MediaPipe Pose detecta los 33 landmarks,<br>
-        Entonces se dibuja un esqueleto semitransparente que se ajusta en tiempo real a los movimientos del usuario.
-      </td>
-      <td>EP-001</td>
+        <td>US-002</td>
+        <td>Visualización del Esqueleto en Tiempo Real</td>
+        <td>Como usuario, quiere ver una superposición del esqueleto detectado sobre su imagen de video para entender cómo el sistema interpreta su postura.</td>
+        <td>
+            <b>Escenario: Renderizado del modelo</b><br>
+            Dado que la cámara está activa y el usuario está en el campo de visión,<br>
+            Cuando MediaPipe Pose detecta los 33 landmarks,<br>
+            Entonces se dibuja un esqueleto semitransparente que se ajusta en tiempo real a los movimientos del usuario.
+        </td>
+        <td>EP-001</td>
     </tr>
     <tr>
-      <td>US-003</td>
-      <td>Detección de Postura Encorbada</td>
-      <td>Como usuario, quiero que el sistema detecte automáticamente cuando mis hombros están desalineados o encorvados para poder corregirlo.</td>
-      <td>
-        <b>Escenario 1: Detección de encorvamiento</b><br>
-        Dado que el usuario está siendo monitoreado,<br>
-        Cuando la inclinación de mis hombros supera el umbral configurado,<br>
-        Entonces el sistema registra el evento como una "mala postura" y lo almacena para su análisis.<br>
-        <b>Escenario 2: Postura correcta</b><br>
-        Dado que el usuario estaba encorvado,<br>
-        Cuando corrijo mi postura y mis hombros vuelven a estar alineados,<br>
-        Entonces el sistema deja de registrar el evento de "mala postura".
-      </td>
-      <td>EP-001</td>
+        <td>US-003</td>
+        <td>Detección de Postura Encorvada</td>
+        <td>Como usuario, quiere que el sistema detecte automáticamente cuando sus hombros están desalineados o encorvados para poder corregirlo.</td>
+        <td>
+            <b>Escenario 1: Detección de encorvamiento</b><br>
+            Dado que el usuario está siendo monitoreado,<br>
+            Cuando la inclinación de sus hombros supera el umbral configurado,<br>
+            Entonces el sistema registra el evento como una "mala postura" y lo almacena para su análisis.<br>
+            <b>Escenario 2: Postura correcta</b><br>
+            Dado que el usuario estaba encorvado,<br>
+            Cuando corrige su postura y sus hombros vuelven a estar alineados,<br>
+            Entonces el sistema deja de registrar el evento de "mala postura".
+        </td>
+        <td>EP-001</td>
     </tr>
     <tr>
-      <td>US-004</td>
-      <td>Detección de Proximidad a la Pantalla</td>
-      <td>Como usuario, quiero que el sistema me alerte cuando mi rostro está demasiado cerca de la pantalla para prevenir fatiga visual.</td>
-      <td>
-        <b>Escenario 1: Rostro demasiado cerca</b><br>
-        Dado que la cámara está calibrada,<br>
-        Cuando la distancia estimada entre mi rostro y la pantalla es menor a 50 cm,<br>
-        Entonces el sistema activa una alerta de proximidad.<br>
-        <b>Escenario 2: Distancia correcta</b><br>
-        Dado que mi rostro estaba demasiado cerca,<br>
-        Cuando me alejo a una distancia mayor a 50 cm,<br>
-        Entonces la alerta de proximidad se desactiva.
-      </td>
-      <td>EP-001</td>
+        <td>US-004</td>
+        <td>Detección de Proximidad a la Pantalla</td>
+        <td>Como usuario, quiere que el sistema le alerte cuando su rostro está demasiado cerca de la pantalla para prevenir fatiga visual.</td>
+        <td>
+            <b>Escenario 1: Rostro demasiado cerca</b><br>
+            Dado que la cámara está calibrada,<br>
+            Cuando la distancia estimada entre su rostro y la pantalla es menor a 50 cm,<br>
+            Entonces el sistema activa una alerta de proximidad.<br>
+            <b>Escenario 2: Distancia correcta</b><br>
+            Dado que su rostro estaba demasiado cerca,<br>
+            Cuando se aleja a una distancia mayor a 50 cm,<br>
+            Entonces la alerta de proximidad se desactiva.
+        </td>
+        <td>EP-001</td>
     </tr>
     <tr>
-      <td>US-005</td>
-      <td>Detección de Inclinación de Cabeza</td>
-      <td>Como usuario, quiero que el sistema detecte si mi cabeza no está en una posición neutral (demasiado hacia adelante o hacia los lados) para mantener una columna vertebral alineada.</td>
-      <td>
-        <b>Escenario: Cabeza hacia adelante</b><br>
-        Dado que el usuario está siendo monitoreado,<br>
-        Cuando la proyección de mi nariz está significativamente por delante de la línea de mis hombros,<br>
-        Entonces el sistema registra un evento de "postura de avestruz".
-      </td>
-      <td>EP-001</td>
+        <td>US-005</td>
+        <td>Detección de Inclinación de Cabeza</td>
+        <td>Como usuario, quiere que el sistema detecte si su cabeza no está en una posición neutral (demasiado hacia adelante o hacia los lados) para mantener una columna vertebral alineada.</td>
+        <td>
+            <b>Escenario: Cabeza hacia adelante</b><br>
+            Dado que el usuario está siendo monitoreado,<br>
+            Cuando la proyección de su nariz está significativamente por delante de la línea de sus hombros,<br>
+            Entonces el sistema registra un evento de "postura de avestruz".
+        </td>
+        <td>EP-001</td>
     </tr>
     <tr>
-      <td>US-006</td>
-      <td>Toggle de Visualización de Esqueleto</td>
-      <td>Como usuario, quiero poder activar o desactivar la visualización del esqueleto sobre el video para reducir la distracción cuando no la necesito.</td>
-      <td>
-        <b>Escenario: Ocultar superposición</b><br>
-        Dado que el esqueleto se está mostrando,<br>
-        Cuando el esqueleto virtual se oculta,<br>
-        Entonces la superposición gráfica desaparece pero el análisis de postura continúa en segundo plano.
-      </td>
-      <td>EP-001</td>
+        <td>US-006</td>
+        <td>Toggle de Visualización de Esqueleto</td>
+        <td>Como usuario, quiere poder activar o desactivar la visualización del esqueleto sobre el video para reducir la distracción cuando no la necesita.</td>
+        <td>
+            <b>Escenario: Ocultar superposición</b><br>
+            Dado que el esqueleto se está mostrando,<br>
+            Cuando el usuario oculta la visualización del esqueleto,<br>
+            Entonces la superposición gráfica desaparece pero el análisis de postura continúa en segundo plano.
+        </td>
+        <td>EP-001</td>
     </tr>
     <tr>
-      <td>US-007</td>
-      <td>Detección de Ángulo Brazo-Antebrazo</td>
-      <td>Como usuario, quiero que el sistema verifique el ángulo de mi articulación del codo (brazo-antebrazo) para detectar posiciones tensionantes y prevenir lesiones por mal apoyo.</td>
-      <td>
-        <b>Escenario 1: Ángulo correcto (~90 grados)</b><br>
-        Dado que el usuario está sentado frente a la computadora,<br>
-        Cuando mi ángulo de codo se mantiene entre 80-100 grados,<br>
-        Entonces el sistema no emite ninguna alerta.<br>
-        <b>Escenario 2: Ángulo incorrecto (extensión excesiva)</b><br>
-        Dado que el usuario está trabajando,<br>
-        Cuando mi ángulo de codo supera los 120 grados o es menor a 60 grados,<br>
-        Entonces el sistema registra un evento de "mala postura de brazo" y activa la alerta correspondiente.
-      </td>
-      <td>EP-001</td>
+        <td>US-007</td>
+        <td>Detección de Ángulo Brazo-Antebrazo</td>
+        <td>Como usuario, quiere que el sistema verifique el ángulo de su articulación del codo (brazo-antebrazo) para detectar posiciones tensionantes y prevenir lesiones por mal apoyo.</td>
+        <td>
+            <b>Escenario 1: Ángulo correcto (~90 grados)</b><br>
+            Dado que el usuario está sentado frente a la computadora,<br>
+            Cuando su ángulo de codo se mantiene entre 80-100 grados,<br>
+            Entonces el sistema no emite ninguna alerta.<br>
+            <b>Escenario 2: Ángulo incorrecto (extensión excesiva)</b><br>
+            Dado que el usuario está trabajando,<br>
+            Cuando su ángulo de codo supera los 120 grados o es menor a 60 grados,<br>
+            Entonces el sistema registra un evento de "mala postura de brazo" y activa la alerta correspondiente.
+        </td>
+        <td>EP-001</td>
     </tr>
     <tr>
-      <td>US-008</td>
-      <td>Detección de Alineación Pierna-Cadera-Espalda</td>
-      <td>Como usuario, quiero que el sistema monitoree el ángulo entre mis muslos, cadera y hombros para asegurar una posición sentada ergonómicamente correcta.</td>
-      <td>
-        <b>Escenario 1: Postura correcta (ángulos adecuados)</b><br>
-        Dado que el usuario está sentado correctamente,<br>
-        Cuando mis muslos forman un ángulo de 90-110 grados con mi cadera y mi espalda está entre 90-110 grados con mis muslos,<br>
-        Entonces el sistema mantiene el estado de postura correcta.<br>
-        <b>Escenario 2: Postura incorrecta (inclinación pélvica)</b><br>
-        Dado que el usuario está sentado,<br>
-        Cuando el ángulo entre mis muslos y cadera es menor a 80 grados o mayor a 120 grados,<br>
-        Entonces el sistema detecta "mala postura pélvica" y genera la alerta correspondiente.
-      </td>
-      <td>EP-001</td>
-    </tr>
-<tr>
-      <td>US-009</td>
-      <td>Alertas Visuales para Mala Postura</td>
-      <td>Como usuario, quiero recibir alertas visuales no intrusivas cuando mi postura es incorrecta, para corregirla inmediatamente sin interrupciones bruscas.</td>
-      <td>
-        <b>Escenario 1: Alerta visual activa</b><br>
-        Dado que el sistema detecta una mala postura,<br>
-        Cuando se activa el evento de alerta,<br>
-        Entonces aparece un borde de color suave alrededor de la interfaz indicando el tipo de error postural.<br>
-        <b>Escenario 2: Alerta persistente</b><br>
-        Dado que la mala postura continúa,<br>
-        Cuando pasan más de 5 segundos sin corrección,<br>
-        Entonces la alerta visual aumenta ligeramente su intensidad para reforzar la notificación.
-      </td>
-      <td>EP-002</td>
+        <td>US-008</td>
+        <td>Detección de Alineación Pierna-Cadera-Espalda</td>
+        <td>Como usuario, quiere que el sistema monitoree el ángulo entre sus muslos, cadera y hombros para asegurar una posición sentada ergonómicamente correcta.</td>
+        <td>
+            <b>Escenario 1: Postura correcta (ángulos adecuados)</b><br>
+            Dado que el usuario está sentado correctamente,<br>
+            Cuando sus muslos forman un ángulo de 90-110 grados con su cadera y su espalda está entre 90-110 grados con sus muslos,<br>
+            Entonces el sistema mantiene el estado de postura correcta.<br>
+            <b>Escenario 2: Postura incorrecta (inclinación pélvica)</b><br>
+            Dado que el usuario está sentado,<br>
+            Cuando el ángulo entre sus muslos y cadera es menor a 80 grados o mayor a 120 grados,<br>
+            Entonces el sistema detecta "mala postura pélvica" y genera la alerta correspondiente.
+        </td>
+        <td>EP-001</td>
     </tr>
     <tr>
-      <td>US-010</td>
-      <td>Alertas Sonoras Personalizables</td>
-      <td>Como usuario, quiero asignar sonidos diferentes para cada tipo de error postural, para identificar rápidamente el problema específico sin mirar la pantalla.</td>
-      <td>
-        <b>Escenario 1: Sonido de encorvamiento</b><br>
-        Dado que se detecta espalda encorvada,<br>
-        Cuando se activa la alerta,<br>
-        Entonces se reproduce el sonido específico configurado para "encorvamiento".<br>
-        <b>Escenario 2: Sonido de proximidad</b><br>
-        Dado que se detecta proximidad excesiva a la pantalla,<br>
-        Cuando se activa la alerta,<br>
-        Entonces se reproduce un sonido diferente configurado para "proximidad".
-      </td>
-      <td>EP-002</td>
+        <td>US-009</td>
+        <td>Alertas Visuales para Mala Postura</td>
+        <td>Como usuario, quiere recibir alertas visuales no intrusivas cuando su postura es incorrecta, para corregirla inmediatamente sin interrupciones bruscas.</td>
+        <td>
+            <b>Escenario 1: Alerta visual activa</b><br>
+            Dado que el sistema detecta una mala postura,<br>
+            Cuando se activa el evento de alerta,<br>
+            Entonces aparece un borde de color suave alrededor de la interfaz indicando el tipo de error postural.<br>
+            <b>Escenario 2: Alerta persistente</b><br>
+            Dado que la mala postura continúa,<br>
+            Cuando pasan más de 5 segundos sin corrección,<br>
+            Entonces la alerta visual aumenta ligeramente su intensidad para reforzar la notificación.
+        </td>
+        <td>EP-002</td>
     </tr>
     <tr>
-      <td>US-011</td>
-      <td>Personalización de Volumen de Alertas</td>
-      <td>Como usuario, quiero ajustar el volumen de las alertas sonoras para adaptarlas a mi entorno de trabajo y no molestar a otras personas.</td>
-      <td>
-        <b>Escenario 1: Ajuste de volumen</b><br>
-        Dado que estoy en la configuración de sonidos,<br>
-        Cuando muevo el control deslizante de volumen al 50%,<br>
-        Entonces las próximas alertas sonoras se reproducirán a ese nivel de volumen.<br>
-        <b>Escenario 2: Silenciar alertas</b><br>
-        Dado que necesito concentrarme en una tarea,<br>
-        Cuando ajusto el volumen al 0%,<br>
-        Entonces las alertas sonoras se desactivan completamente.
-      </td>
-      <td>EP-002</td>
+        <td>US-010</td>
+        <td>Alertas Sonoras Personalizables</td>
+        <td>Como usuario, quiere asignar sonidos diferentes para cada tipo de error postural, para identificar rápidamente el problema específico sin mirar la pantalla.</td>
+        <td>
+            <b>Escenario 1: Sonido de encorvamiento</b><br>
+            Dado que se detecta espalda encorvada,<br>
+            Cuando se activa la alerta,<br>
+            Entonces se reproduce el sonido específico configurado para "encorvamiento".<br>
+            <b>Escenario 2: Sonido de proximidad</b><br>
+            Dado que se detecta proximidad excesiva a la pantalla,<br>
+            Cuando se activa la alerta,<br>
+            Entonces se reproduce un sonido diferente configurado para "proximidad".
+        </td>
+        <td>EP-002</td>
     </tr>
     <tr>
-      <td>US-012</td>
-      <td>Selección de Alertas Activas</td>
-      <td>Como usuario, quiero elegir qué tipos de alertas quiero recibir (visuales, sonoras o ambas) para personalizar mi experiencia de notificaciones.</td>
-      <td>
-        <b>Escenario 1: Solo alertas visuales</b><br>
-        Dado que estoy en un entorno silencioso,<br>
-        Cuando desactivo las alertas sonoras pero mantengo las visuales,<br>
-        Entonces solo recibiré notificaciones visuales para errores posturales.<br>
-        <b>Escenario 2: Solo alertas sonoras</b><br>
-        Dado que no estoy mirando constantemente la pantalla,<br>
-        Cuando desactivo las alertas visuales pero mantengo las sonoras,<br>
-        Entonces solo recibiré notificaciones sonoras para errores posturales.
-      </td>
-      <td>EP-002</td>
+        <td>US-011</td>
+        <td>Personalización de Volumen de Alertas</td>
+        <td>Como usuario, quiere ajustar el volumen de las alertas sonoras para adaptarlas a su entorno de trabajo y no molestar a otras personas.</td>
+        <td>
+            <b>Escenario 1: Ajuste de volumen</b><br>
+            Dado que el usuario está en la configuración de sonidos,<br>
+            Cuando mueve el control deslizante de volumen al 50%,<br>
+            Entonces las próximas alertas sonoras se reproducirán a ese nivel de volumen.<br>
+            <b>Escenario 2: Silenciar alertas</b><br>
+            Dado que el usuario necesita concentrarse en una tarea,<br>
+            Cuando ajusta el volumen al 0%,<br>
+            Entonces las alertas sonoras se desactivan completamente.
+        </td>
+        <td>EP-002</td>
     </tr>
     <tr>
-      <td>US-013</td>
-      <td>Modo Silencio Temporal</td>
-      <td>Como usuario, quiero pausar temporalmente todas las alertas durante reuniones o llamadas importantes, para evitar interrupciones inoportunas.</td>
-      <td>
-        <b>Escenario: Silencio por 30 minutos</b><br>
-        Dado que tengo una reunión importante,<br>
-        Cuando active el "modo silencio" por 30 minutos,<br>
-        Entonces el sistema no emitirá alertas visuales ni sonoras durante ese período.
-      </td>
-      <td>EP-002</td>
+        <td>US-012</td>
+        <td>Selección de Alertas Activas</td>
+        <td>Como usuario, quiere elegir qué tipos de alertas quiere recibir (visuales, sonoras o ambas) para personalizar su experiencia de notificaciones.</td>
+        <td>
+            <b>Escenario 1: Solo alertas visuales</b><br>
+            Dado que el usuario está en un entorno silencioso,<br>
+            Cuando desactiva las alertas sonoras pero mantiene las visuales,<br>
+            Entonces solo recibirá notificaciones visuales para errores posturales.<br>
+            <b>Escenario 2: Solo alertas sonoras</b><br>
+            Dado que el usuario no está mirando constantemente la pantalla,<br>
+            Cuando desactiva las alertas visuales pero mantiene las sonoras,<br>
+            Entonces solo recibirá notificaciones sonoras para errores posturales.
+        </td>
+        <td>EP-002</td>
     </tr>
     <tr>
-      <td>US-014</td>
-      <td>Panel de Gestión de Alertas</td>
-      <td>Como usuario, quiero acceder a un panel centralizado donde pueda gestionar todas mis preferencias de notificaciones, para tener control completo sobre mi experiencia de alertas.</td>
-      <td>
-        <b>Escenario: Configuración completa</b><br>
-        Dado que accedo al panel de gestión de alertas,<br>
-        Cuando modifico múltiples configuraciones (volumen, tipos, sonidos),<br>
-        Entonces todas las changes se guardan correctamente y se aplican inmediatamente.
-      </td>
-      <td>EP-002</td>
-    </tr>
-        <tr>
-      <td>US-015</td>
-      <td>Calibración Inicial de Postura</td>
-      <td>Como usuario, quiero realizar una calibración inicial de mi postura correcta para que el sistema reconozca mi posición ideal al sentarme.</td>
-      <td>
-        <b>Escenario: Calibración exitosa</b><br>
-        Dado que inicio el wizard de calibración,<br>
-        Cuando mantengo una postura correcta durante 5 segundos,<br>
-        Entonces el sistema registra esta posición como referencia para futuras comparaciones.
-      </td>
-      <td>EP-003</td>
+        <td>US-013</td>
+        <td>Modo Silencio Temporal</td>
+        <td>Como usuario, quiere pausar temporalmente todas las alertas durante reuniones o llamadas importantes, para evitar interrupciones inoportunas.</td>
+        <td>
+            <b>Escenario: Silencio por 30 minutos</b><br>
+            Dado que el usuario tiene una reunión importante,<br>
+            Cuando activa el "modo silencio" por 30 minutos,<br>
+            Entonces el sistema no emitirá alertas visuales ni sonoras durante ese período.
+        </td>
+        <td>EP-002</td>
     </tr>
     <tr>
-      <td>US-016</td>
-      <td>Ajuste de Sensibilidad de Detección</td>
-      <td>Como usuario, quiero ajustar la sensibilidad del detector de espalda encorvada para personalizar qué tan estricto es el sistema con mi postura.</td>
-      <td>
-        <b>Escenario: Ajuste de sensibilidad media</b><br>
-        Dado que accedo a configuraciones de sensibilidad,<br>
-        Cuando muevo el slider a un nivel medio (50%),<br>
-        Entonces el sistema se vuelve moderadamente estricto al detectar encorvamiento.
-      </td>
-      <td>EP-003</td>
+        <td>US-014</td>
+        <td>Panel de Gestión de Alertas</td>
+        <td>Como usuario, quiere acceder a un panel centralizado donde pueda gestionar todas sus preferencias de notificaciones, para tener control completo sobre su experiencia de alertas.</td>
+        <td>
+            <b>Escenario: Configuración completa</b><br>
+            Dado que el usuario accede al panel de gestión de alertas,<br>
+            Cuando modifica múltiples configuraciones (volumen, tipos, sonidos),<br>
+            Entonces todos los cambios se guardan correctamente y se aplican inmediatamente.
+        </td>
+        <td>EP-002</td>
     </tr>
     <tr>
-      <td>US-017</td>
-      <td>Ajuste de Frecuencia de Detección</td>
-      <td>Como usuario, quiero controlar la frecuencia con la que el sistema analiza mi postura para equilibrar precisión y rendimiento.</td>
-      <td>
-        <b>Escenario: Frecuencia moderada</b><br>
-        Dado que necesito optimizar el rendimiento,<br>
-        Cuando ajusto la frecuencia a "moderada" (2 segundos),<br>
-        Entonces el sistema realiza chequeos posturales cada 2 segundos.
-      </td>
-      <td>EP-003</td>
+        <td>US-015</td>
+        <td>Calibración Inicial de Postura</td>
+        <td>Como usuario, quiere realizar una calibración inicial de su postura correcta para que el sistema reconozca su posición ideal al sentarse.</td>
+        <td>
+            <b>Escenario: Calibración exitosa</b><br>
+            Dado que el usuario inicia el wizard de calibración,<br>
+            Cuando mantiene una postura correcta durante 5 segundos,<br>
+            Entonces el sistema registra esta posición como referencia para futuras comparaciones.
+        </td>
+        <td>EP-003</td>
     </tr>
     <tr>
-      <td>US-018</td>
-      <td>Restablecer Configuración Predeterminada</td>
-      <td>Como usuario, quiero poder restablecer todos los ajustes a los valores predeterminados del sistema para comenzar de cero si es necesario.</td>
-      <td>
-        <b>Escenario: Reset completo</b><br>
-        Dado que mis ajustes actuales no funcionan correctamente,<br>
-        Cuando restablezco los valores predeterminados,<br>
-        Entonces todos los parámetros de calibración vuelven a su estado original.
-      </td>
-      <td>EP-003</td>
+        <td>US-016</td>
+        <td>Ajuste de Sensibilidad de Detección</td>
+        <td>Como usuario, quiere ajustar la sensibilidad del detector de espalda encorvada para personalizar qué tan estricto es el sistema con su postura.</td>
+        <td>
+            <b>Escenario: Ajuste de sensibilidad media</b><br>
+            Dado que el usuario accede a configuraciones de sensibilidad,<br>
+            Cuando mueve el slider a un nivel medio (50%),<br>
+            Entonces el sistema se vuelve moderadamente estricto al detectar encorvamiento.
+        </td>
+        <td>EP-003</td>
     </tr>
     <tr>
-      <td>US-020</td>
-      <td>Panel Principal de Estadísticas</td>
-      <td>Como usuario, quiero ver un dashboard con mis métricas principales de postura para tener una visión general de mi progreso diario.</td>
-      <td>
-        <b>Escenario: Visualización de métricas</b><br>
-        Dado que he usado el sistema por más de 1 hora,<br>
-        Cuando accedo al panel principal,<br>
-        Entonces veo porcentaje de postura correcta, tiempo total de uso y número de alertas recibidas.
-      </td>
-      <td>EP-004</td>
+        <td>US-017</td>
+        <td>Ajuste de Frecuencia de Detección</td>
+        <td>Como usuario, quiere controlar la frecuencia con la que el sistema analiza su postura para equilibrar precisión y rendimiento.</td>
+        <td>
+            <b>Escenario: Frecuencia moderada</b><br>
+            Dado que el usuario necesita optimizar el rendimiento,<br>
+            Cuando ajusta la frecuencia a "moderada" (2 segundos),<br>
+            Entonces el sistema realiza chequeos posturales cada 2 segundos.
+        </td>
+        <td>EP-003</td>
     </tr>
     <tr>
-      <td>US-021</td>
-      <td>Gráfico de Progreso Semanal</td>
-      <td>Como usuario, quiero visualizar mi evolución semanal mediante un gráfico de líneas para identificar tendencias en mi mejora postural.</td>
-      <td>
-        <b>Escenario: Gráfico interactivo</b><br>
-        Dado que tengo datos de varios días,<br>
-        Cuando selecciono la vista "semanal",<br>
-        Entonces se muestra un gráfico con mi porcentaje de postura correcta por día de la semana.
-      </td>
-      <td>EP-004</td>
+        <td>US-018</td>
+        <td>Restablecer Configuración Predeterminada</td>
+        <td>Como usuario, quiere poder restablecer todos los ajustes a los valores predeterminados del sistema para comenzar de cero si es necesario.</td>
+        <td>
+            <b>Escenario: Reset completo</b><br>
+            Dado que los ajustes actuales del usuario no funcionan correctamente,<br>
+            Cuando restablece los valores predeterminados,<br>
+            Entonces todos los parámetros de calibración vuelven a su estado original.
+        </td>
+        <td>EP-003</td>
     </tr>
     <tr>
-      <td>US-022</td>
-      <td>Historial Detallado de Sesiones</td>
-      <td>Como usuario, quiero revisar el historial completo de mis sesiones de trabajo para analizar mi comportamiento postural a lo largo del tiempo.</td>
-      <td>
-        <b>Escenario: Filtrado por fecha</b><br>
-        Dado que quiero ver mis datos de ayer,<br>
-        Cuando selecciono la fecha en el calendario,<br>
-        Entonces el sistema muestra mis estadísticas detalladas de postura para ese día específico.
-      </td>
-      <td>EP-004</td>
+        <td>US-020</td>
+        <td>Panel Principal de Estadísticas</td>
+        <td>Como usuario, quiere ver un dashboard con sus métricas principales de postura para tener una visión general de su progreso diario.</td>
+        <td>
+            <b>Escenario: Visualización de métricas</b><br>
+            Dado que el usuario ha usado el sistema por más de 1 hora,<br>
+            Cuando accede al panel principal,<br>
+            Entonces ve porcentaje de postura correcta, tiempo total de uso y número de alertas recibidas.
+        </td>
+        <td>EP-004</td>
     </tr>
     <tr>
-      <td>US-023</td>
-      <td>Recordatorio de Pausas Activas</td>
-      <td>Como usuario, quiero recibir recordatorios automáticos para tomar pausas activas cada cierto tiempo para prevenir la fatiga y mejorar mi bienestar postural.</td>
-      <td>
-        <b>Escenario: Recordatorio cada 45 minutos</b><br>
-        Dado que he estado trabajando continuamente,<br>
-        Cuando transcurren 45 minutos de actividad,<br>
-        Entonces el sistema muestra una notificación sugiriendo una pausa activa de 5 minutos.
-      </td>
-      <td>EP-005</td>
+        <td>US-021</td>
+        <td>Gráfico de Progreso Semanal</td>
+        <td>Como usuario, quiere visualizar su evolución semanal mediante un gráfico de líneas para identificar tendencias en su mejora postural.</td>
+        <td>
+            <b>Escenario: Gráfico interactivo</b><br>
+            Dado que el usuario tiene datos de varios días,<br>
+            Cuando selecciona la vista "semanal",<br>
+            Entonces se muestra un gráfico con su porcentaje de postura correcta por día de la semana.
+        </td>
+        <td>EP-004</td>
     </tr>
     <tr>
-      <td>US-024</td>
-      <td>Personalización de Temporizador de Descansos</td>
-      <td>Como usuario, quiero configurar la frecuencia y duración de mis pausas activas para adaptarlas a mi flujo de trabajo y necesidades personales.</td>
-      <td>
-        <b>Escenario: Configurar pausas personalizadas</b><br>
-        Dado que accedo a la configuración de descansos,<br>
-        Cuando establezco pausas cada 30 minutos con duración de 7 minutos,<br>
-        Entonces el sistema aplica estos nuevos intervalos para mis recordatorios.
-      </td>
-      <td>EP-005</td>
+        <td>US-022</td>
+        <td>Historial Detallado de Sesiones</td>
+        <td>Como usuario, quiere revisar el historial completo de sus sesiones de trabajo para analizar su comportamiento postural a lo largo del tiempo.</td>
+        <td>
+            <b>Escenario: Filtrado por fecha</b><br>
+            Dado que el usuario quiere ver sus datos de ayer,<br>
+            Cuando selecciona la fecha en el calendario,<br>
+            Entonces el sistema muestra sus estadísticas detalladas de postura para ese día específico.
+        </td>
+        <td>EP-004</td>
     </tr>
     <tr>
-      <td>US-025</td>
-      <td>Sugerencias de Ejercicios Generales</td>
-      <td>Como usuario, quiero recibir sugerencias generales de ejercicios durante las pausas activas para realizar estiramientos básicos que beneficien mi postura.</td>
-      <td>
-        <b>Escenario: Sugerencias aleatorias</b><br>
-        Dado que ha iniciado una pausa activa,<br>
-        Cuando el sistema muestra sugerencias de ejercicios,<br>
-        Entonces presenta 3 opciones diferentes de estiramientos generales seleccionados aleatoriamente de un banco predefinido.
-      </td>
-      <td>EP-005</td>
+        <td>US-023</td>
+        <td>Recordatorio de Pausas Activas</td>
+        <td>Como usuario, quiere recibir recordatorios automáticos para tomar pausas activas cada cierto tiempo para prevenir la fatiga y mejorar su bienestar postural.</td>
+        <td>
+            <b>Escenario: Recordatorio cada 45 minutos</b><br>
+            Dado que el usuario ha estado trabajando continuamente,<br>
+            Cuando transcurren 45 minutos de actividad,<br>
+            Entonces el sistema muestra una notificación sugiriendo una pausa activa de 5 minutos.
+        </td>
+        <td>EP-005</td>
     </tr>
     <tr>
-      <td>US-026</td>
-      <td>Registro de Nueva Cuenta</td>
-      <td>Como usuario nuevo, quiero registrarme con mi correo electrónico y contraseña para poder acceder a todas las funcionalidades de la aplicación.</td>
-      <td>
-        <b>Escenario 1: Registro exitoso</b><br>
-        Dado que soy un usuario nuevo,<br>
-        Cuando completo el formulario con email válido y contraseña segura,<br>
-        Entonces recibo un email de verificación y mi cuenta queda creada en estado pendiente.<br>
-        <b>Escenario 2: Email ya registrado</b><br>
-        Dado que intento registrarme con un email existente,<br>
-        Cuando envío el formulario,<br>
-        Entonces recibo un mensaje indicando que el email ya está registrado.
-      </td>
-      <td>EP-006</td>
+        <td>US-024</td>
+        <td>Personalización de Temporizador de Descansos</td>
+        <td>Como usuario, quiere configurar la frecuencia y duración de sus pausas activas para adaptarlas a su flujo de trabajo y necesidades personales.</td>
+        <td>
+            <b>Escenario: Configurar pausas personalizadas</b><br>
+            Dado que el usuario accede a la configuración de descansos,<br>
+            Cuando establece pausas cada 30 minutos con duración de 7 minutos,<br>
+            Entonces el sistema aplica estos nuevos intervalos para sus recordatorios.
+        </td>
+        <td>EP-005</td>
     </tr>
     <tr>
-      <td>US-027</td>
-      <td>Verificación de Correo Electrónico</td>
-      <td>Como usuario registrado, quiero verificar mi dirección de correo electrónico para activar completamente mi cuenta y asegurar su autenticidad.</td>
-      <td>
-        <b>Escenario: Verificación exitosa</b><br>
-        Dado que me he registrado y recibí el email de verificación,<br>
-        Cuando hago clic en el enlace de verificación,<br>
-        Entonces mi cuenta se activa y puedo iniciar sesión normalmente.
-      </td>
-      <td>EP-006</td>
+        <td>US-025</td>
+        <td>Sugerencias de Ejercicios Generales</td>
+        <td>Como usuario, quiere recibir sugerencias generales de ejercicios durante las pausas activas para realizar estiramientos básicos que beneficien su postura.</td>
+        <td>
+            <b>Escenario: Sugerencias aleatorias</b><br>
+            Dado que el usuario ha iniciado una pausa activa,<br>
+            Cuando el sistema muestra sugerencias de ejercicios,<br>
+            Entonces presenta 3 opciones diferentes de estiramientos generales seleccionados aleatoriamente de un banco predefinido.
+        </td>
+        <td>EP-005</td>
     </tr>
     <tr>
-      <td>US-028</td>
-      <td>Inicio de Sesión</td>
-      <td>Como usuario registrado, quiero iniciar sesión con mis credenciales para acceder a mi perfil personalizado y datos de postura.</td>
-      <td>
-        <b>Escenario 1: Login exitoso</b><br>
-        Dado que tengo una cuenta verificada,<br>
-        Cuando ingreso mis credenciales correctas,<br>
-        Entonces accedo a mi dashboard personal.<br>
-        <b>Escenario 2: Credenciales incorrectas</b><br>
-        Dado que ingreso contraseña incorrecta,<br>
-        Cuando intento iniciar sesión,<br>
-        Entonces recibo un mensaje de error sin especificar si el error es en usuario o contraseña.
-      </td>
-      <td>EP-006</td>
+        <td>US-026</td>
+        <td>Registro de Nueva Cuenta</td>
+        <td>Como usuario nuevo, quiere registrarse con su correo electrónico y contraseña para poder acceder a todas las funcionalidades de la aplicación.</td>
+        <td>
+            <b>Escenario 1: Registro exitoso</b><br>
+            Dado que el usuario es nuevo,<br>
+            Cuando completa el formulario con email válido y contraseña segura,<br>
+            Entonces recibe un email de verificación y su cuenta queda creada en estado pendiente.<br>
+            <b>Escenario 2: Email ya registrado</b><br>
+            Dado que el usuario intenta registrarse con un email existente,<br>
+            Cuando envía el formulario,<br>
+            Entonces recibe un mensaje indicando que el email ya está registrado.
+        </td>
+        <td>EP-006</td>
     </tr>
     <tr>
-      <td>US-029</td>
-      <td>Recuperación de Contraseña</td>
-      <td>Como usuario que olvidó su contraseña, quiero restablecerla mediante un enlace enviado a mi email para recuperar el acceso a mi cuenta.</td>
-      <td>
-        <b>Escenario: Restablecimiento exitoso</b><br>
-        Dado que solicité restablecer mi contraseña,<br>
-        Cuando establezco una nueva contraseña,<br>
-        Entonces puedo iniciar sesión con mis nuevas credenciales.
-      </td>
-      <td>EP-006</td>
+        <td>US-027</td>
+        <td>Verificación de Correo Electrónico</td>
+        <td>Como usuario registrado, quiere verificar su dirección de correo electrónico para activar completamente su cuenta y asegurar su autenticidad.</td>
+        <td>
+            <b>Escenario: Verificación exitosa</b><br>
+            Dado que el usuario se ha registrado y recibió el email de verificación,<br>
+            Cuando hace clic en el enlace de verificación,<br>
+            Entonces su cuenta se activa y puede iniciar sesión normalmente.
+        </td>
+        <td>EP-006</td>
     </tr>
     <tr>
-      <td>US-030</td>
-      <td>Edición de Perfil</td>
-      <td>Como usuario registrado, quiero editar mi información personal para mantener mi perfil actualizado.</td>
-      <td>
-        <b>Escenario: Actualización de perfil</b><br>
-        Dado que estoy en mi perfil,<br>
-        Cuando modifico mi nombre y guardo los cambios,<br>
-        Entonces los nuevos datos se almacenan correctamente y se muestran inmediatamente.
-      </td>
-      <td>EP-006</td>
+        <td>US-028</td>
+        <td>Inicio de Sesión</td>
+        <td>Como usuario registrado, quiere iniciar sesión con sus credenciales para acceder a su perfil personalizado y datos de postura.</td>
+        <td>
+            <b>Escenario 1: Login exitoso</b><br>
+            Dado que el usuario tiene una cuenta verificada,<br>
+            Cuando ingresa sus credenciales correctas,<br>
+            Entonces accede a su dashboard personal.<br>
+            <b>Escenario 2: Credenciales incorrectas</b><br>
+            Dado que el usuario ingresa contraseña incorrecta,<br>
+            Cuando intenta iniciar sesión,<br>
+            Entonces recibe un mensaje de error sin especificar si el error es en usuario o contraseña.
+        </td>
+        <td>EP-006</td>
     </tr>
     <tr>
-      <td>US-031</td>
-      <td>Gestión de Preferencias</td>
-      <td>Como usuario, quiero configurar mis preferencias de notificaciones y privacidad para personalizar mi experiencia en la aplicación.</td>
-      <td>
-        <b>Escenario: Cambio de preferencias</b><br>
-        Dado que accedo a configuración,<br>
-        Cuando modifico mis preferencias de notificaciones,<br>
-        Entonces los cambios se aplican inmediatamente en el sistema.
-      </td>
-      <td>EP-006</td>
+        <td>US-029</td>
+        <td>Recuperación de Contraseña</td>
+        <td>Como usuario que olvidó su contraseña, quiere restablecerla mediante un enlace enviado a su email para recuperar el acceso a su cuenta.</td>
+        <td>
+            <b>Escenario: Restablecimiento exitoso</b><br>
+            Dado que el usuario solicita restablecer su contraseña,<br>
+            Cuando establece una nueva contraseña,<br>
+            Entonces puede iniciar sesión con sus nuevas credenciales.
+        </td>
+        <td>EP-006</td>
+    </tr>
+    <tr>
+        <td>US-030</td>
+        <td>Edición de Perfil</td>
+        <td>Como usuario registrado, quiere editar su información personal para mantener su perfil actualizado.</td>
+        <td>
+            <b>Escenario: Actualización de perfil</b><br>
+            Dado que el usuario está en su perfil,<br>
+            Cuando modifica su nombre y guarda los cambios,<br>
+            Entonces los nuevos datos se almacenan correctamente y se muestran inmediatamente.
+        </td>
+        <td>EP-006</td>
+    </tr>
+    <tr>
+        <td>US-031</td>
+        <td>Gestión de Preferencias</td>
+        <td>Como usuario, quiere configurar sus preferencias de notificaciones y privacidad para personalizar su experiencia en la aplicación.</td>
+        <td>
+            <b>Escenario: Cambio de preferencias</b><br>
+            Dado que el usuario accede a configuración,<br>
+            Cuando modifica sus preferencias de notificaciones,<br>
+            Entonces los cambios se aplican inmediatamente en el sistema.
+        </td>
+        <td>EP-006</td>
     </tr>
   </tbody>
 </table>
