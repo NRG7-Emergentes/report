@@ -228,6 +228,8 @@ El propósito del proceso de diseño en ErgoVision es establecer una arquitectur
 
 #### 4.1.2 Attribute-Driven Design Inputs
 
+En esta sección se fundamentará la identificación y análisis de insumos clave que orientan las decisiones arquitectónicas. Estos insumos constituyen la base para garantizar que la solución responda tanto a los requerimientos funcionales como a los atributos de calidad y restricciones que condicionan el diseño. En el caso de ErgoVision, los inputs se organizan en tres categorías: las funcionalidades primarias representadas por las historias de usuario más relevantes, los escenarios de atributos de calidad que reflejan las propiedades críticas de la solución, y las restricciones tecnológicas, organizacionales y de entorno que delimitan el espacio de diseño.
+
 ##### 4.1.2.1 Primary Functionality (Primary User Stories)
 
 ##### 4.1.2.2 Quality attribute Scenarios
