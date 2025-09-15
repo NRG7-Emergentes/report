@@ -224,6 +224,8 @@ El enfoque Attribute-Driven Design (ADD) permite estructurar la arquitectura de 
 
 #### 4.1.1 Design Purpose
 
+El propósito del proceso de diseño en ErgoVision es establecer una arquitectura de solución que aborde de manera integral la problemática de los riesgos ergonómicos derivados del uso prolongado de dispositivos digitales. Este diseño se orienta a garantizar que la plataforma cumpla con los requerimientos de monitoreo postural en tiempo real, retroalimentación inmediata del comportamiento del usuario. De esta manera, se busca responder a las necesidades específicas de los segmentos objetivo, usuarios expuestos a posturas inadecuadas durante jornadas de trabajo o estudio, mediante un sistema que fomente hábitos saludables y prevenga lesiones. Al mismo tiempo, el proceso de diseño asegura la alineación con los objetivos estratégicos del negocio, fortaleciendo la propuesta de valor en el marco de la transformación digital aplicada a la salud y el bienestar.
+
 #### 4.1.2 Attribute-Driven Design Inputs
 
 ##### 4.1.2.1 Primary Functionality (Primary User Stories)
