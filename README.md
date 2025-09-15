@@ -284,7 +284,7 @@ del ABET – EAC - Student Outcome 3.
       <td>
         <b>Escenario 1: Permiso concedido</b><br>
         Dado que el usuario ha iniciado sesión,<br>
-        Cuando hago clic en "Iniciar Monitoreo",<br>
+        Cuando inicio el monitoreo,<br>
         Entonces el navegador solicita permiso para acceder a la cámara y, al concederlo, el feed de video se muestra en la interfaz.<br>
         <b>Escenario 2: Permiso denegado</b><br>
         Dado que el navegador solicita acceso a la cámara,<br>
@@ -356,7 +356,7 @@ del ABET – EAC - Student Outcome 3.
       <td>
         <b>Escenario: Ocultar superposición</b><br>
         Dado que el esqueleto se está mostrando,<br>
-        Cuando hago clic en el botón "Ocultar Esqueleto",<br>
+        Cuando el esqueleto virtual se oculta,<br>
         Entonces la superposición gráfica desaparece pero el análisis de postura continúa en segundo plano.
       </td>
       <td>EP-001</td>
@@ -481,88 +481,56 @@ del ABET – EAC - Student Outcome 3.
       </td>
       <td>EP-002</td>
     </tr>
-    <tr>
+        <tr>
       <td>US-015</td>
-      <td>Acceso a la Cámara para Detección Postural</td>
-      <td>Como usuario, quiero permitir el acceso a mi cámara web para que el sistema pueda analizar mi postura corporal.</td>
+      <td>Calibración Inicial de Postura</td>
+      <td>Como usuario, quiero realizar una calibración inicial de mi postura correcta para que el sistema reconozca mi posición ideal al sentarme.</td>
       <td>
-        <b>Escenario 1: Permiso concedido</b><br>
-        Dado que el usuario ha iniciado sesión,<br>
-        Cuando hago clic en "Iniciar Monitoreo",<br>
-        Entonces el navegador solicita permiso para acceder a la cámara y, al concederlo, el análisis postural comienza.<br>
-        <b>Escenario 2: Permiso denegado</b><br>
-        Dado que el navegador solicita acceso a la cámara,<br>
-        Cuando el usuario deniega el permiso,<br>
-        Entonces se muestra un mensaje de error claro con instrucciones para habilitar el acceso manualmente.
+        <b>Escenario: Calibración exitosa</b><br>
+        Dado que inicio el wizard de calibración,<br>
+        Cuando mantengo una postura correcta durante 5 segundos,<br>
+        Entonces el sistema registra esta posición como referencia para futuras comparaciones.
       </td>
       <td>EP-003</td>
     </tr>
     <tr>
       <td>US-016</td>
-      <td>Visualización del Esqueleto en Tiempo Real</td>
-      <td>Como usuario, quiero ver una superposición del esqueleto detectado para entender cómo el sistema interpreta mi postura.</td>
+      <td>Ajuste de Sensibilidad de Detección</td>
+      <td>Como usuario, quiero ajustar la sensibilidad del detector de espalda encorvada para personalizar qué tan estricto es el sistema con mi postura.</td>
       <td>
-        <b>Escenario: Renderizado del modelo</b><br>
-        Dado que la cámara está activa y el usuario está en el campo de visión,<br>
-        Cuando MediaPipe Pose detecta los landmarks corporales,<br>
-        Entonces se dibuja un esqueleto semitransparente que se ajusta en tiempo real a mis movimientos.
+        <b>Escenario: Ajuste de sensibilidad media</b><br>
+        Dado que accedo a configuraciones de sensibilidad,<br>
+        Cuando muevo el slider a un nivel medio (50%),<br>
+        Entonces el sistema se vuelve moderadamente estricto al detectar encorvamiento.
       </td>
       <td>EP-003</td>
     </tr>
     <tr>
       <td>US-017</td>
-      <td>Detección de Espalda Encorbada</td>
-      <td>Como usuario, quiero que el sistema detecte automáticamente cuando mi espalda está encorvada para poder corregir mi postura.</td>
+      <td>Ajuste de Frecuencia de Detección</td>
+      <td>Como usuario, quiero controlar la frecuencia con la que el sistema analiza mi postura para equilibrar precisión y rendimiento.</td>
       <td>
-        <b>Escenario 1: Detección de encorvamiento</b><br>
-        Dado que el usuario está siendo monitoreado,<br>
-        Cuando la curvatura de mi espalda supera el umbral configurado,<br>
-        Entonces el sistema registra el evento como "mala postura" y lo almacena para análisis.<br>
-        <b>Escenario 2: Postura correcta</b><br>
-        Dado que el usuario estaba encorvado,<br>
-        Cuando enderezo mi espalda y la curvatura vuelve a rangos normales,<br>
-        Entonces el sistema deja de registrar el evento de "mala postura".
+        <b>Escenario: Frecuencia moderada</b><br>
+        Dado que necesito optimizar el rendimiento,<br>
+        Cuando ajusto la frecuencia a "moderada" (2 segundos),<br>
+        Entonces el sistema realiza chequeos posturales cada 2 segundos.
       </td>
       <td>EP-003</td>
     </tr>
     <tr>
       <td>US-018</td>
-      <td>Activación de Alertas por Mala Postura</td>
-      <td>Como usuario, quiero recibir alertas inmediatas cuando mi espalda está encorvada para corregirla oportunamente.</td>
+      <td>Restablecer Configuración Predeterminada</td>
+      <td>Como usuario, quiero poder restablecer todos los ajustes a los valores predeterminados del sistema para comenzar de cero si es necesario.</td>
       <td>
-        <b>Escenario: Alerta por encorvamiento</b><br>
-        Dado que el sistema detecta espalda encorvada,<br>
-        Cuando persiste por más de 3 segundos,<br>
-        Entonces se activa una alerta visual y sonora indicando la necesidad de corregir la postura.
-      </td>
-      <td>EP-003</td>
-    </tr>
-    <tr>
-      <td>US-019</td>
-      <td>Configuración de Umbral de Detección</td>
-      <td>Como usuario, quiero ajustar la sensibilidad de detección de postura encorvada para personalizar según mi comodidad.</td>
-      <td>
-        <b>Escenario: Ajuste de sensibilidad</b><br>
-        Dado que accedo a la configuración de postura,<br>
-        Cuando modifico el slider de "sensibilidad de encorvamiento",<br>
-        Entonces el sistema aplica el nuevo umbral para futuras detecciones.
+        <b>Escenario: Reset completo</b><br>
+        Dado que mis ajustes actuales no funcionan correctamente,<br>
+        Cuando restablezco los valores predeterminados,<br>
+        Entonces todos los parámetros de calibración vuelven a su estado original.
       </td>
       <td>EP-003</td>
     </tr>
     <tr>
       <td>US-020</td>
-      <td>Toggle de Visualización de Esqueleto</td>
-      <td>Como usuario, quiero poder activar o desactivar la visualización del esqueleto para reducir la distracción visual cuando no la necesito.</td>
-      <td>
-        <b>Escenario: Ocultar superposición</b><br>
-        Dado que el esqueleto se está mostrando,<br>
-        Cuando hago clic en el botón "Ocultar Esqueleto",<br>
-        Entonces la superposición gráfica desaparece pero el análisis de postura continúa en segundo plano.
-      </td>
-      <td>EP-003</td>
-    </tr>
-    <tr>
-      <td>US-021</td>
       <td>Panel Principal de Estadísticas</td>
       <td>Como usuario, quiero ver un dashboard con mis métricas principales de postura para tener una visión general de mi progreso diario.</td>
       <td>
@@ -574,7 +542,7 @@ del ABET – EAC - Student Outcome 3.
       <td>EP-004</td>
     </tr>
     <tr>
-      <td>US-022</td>
+      <td>US-021</td>
       <td>Gráfico de Progreso Semanal</td>
       <td>Como usuario, quiero visualizar mi evolución semanal mediante un gráfico de líneas para identificar tendencias en mi mejora postural.</td>
       <td>
@@ -586,7 +554,7 @@ del ABET – EAC - Student Outcome 3.
       <td>EP-004</td>
     </tr>
     <tr>
-      <td>US-023</td>
+      <td>US-022</td>
       <td>Historial Detallado de Sesiones</td>
       <td>Como usuario, quiero revisar el historial completo de mis sesiones de trabajo para analizar mi comportamiento postural a lo largo del tiempo.</td>
       <td>
@@ -598,7 +566,7 @@ del ABET – EAC - Student Outcome 3.
       <td>EP-004</td>
     </tr>
     <tr>
-      <td>US-024</td>
+      <td>US-023</td>
       <td>Recordatorio de Pausas Activas</td>
       <td>Como usuario, quiero recibir recordatorios automáticos para tomar pausas activas cada cierto tiempo para prevenir la fatiga y mejorar mi bienestar postural.</td>
       <td>
@@ -610,7 +578,7 @@ del ABET – EAC - Student Outcome 3.
       <td>EP-005</td>
     </tr>
     <tr>
-      <td>US-026</td>
+      <td>US-024</td>
       <td>Personalización de Temporizador de Descansos</td>
       <td>Como usuario, quiero configurar la frecuencia y duración de mis pausas activas para adaptarlas a mi flujo de trabajo y necesidades personales.</td>
       <td>
@@ -622,7 +590,7 @@ del ABET – EAC - Student Outcome 3.
       <td>EP-005</td>
     </tr>
     <tr>
-      <td>US-027</td>
+      <td>US-025</td>
       <td>Sugerencias de Ejercicios Generales</td>
       <td>Como usuario, quiero recibir sugerencias generales de ejercicios durante las pausas activas para realizar estiramientos básicos que beneficien mi postura.</td>
       <td>
@@ -634,7 +602,7 @@ del ABET – EAC - Student Outcome 3.
       <td>EP-005</td>
     </tr>
     <tr>
-      <td>US-028</td>
+      <td>US-026</td>
       <td>Registro de Nueva Cuenta</td>
       <td>Como usuario nuevo, quiero registrarme con mi correo electrónico y contraseña para poder acceder a todas las funcionalidades de la aplicación.</td>
       <td>
@@ -650,7 +618,7 @@ del ABET – EAC - Student Outcome 3.
       <td>EP-006</td>
     </tr>
     <tr>
-      <td>US-029</td>
+      <td>US-027</td>
       <td>Verificación de Correo Electrónico</td>
       <td>Como usuario registrado, quiero verificar mi dirección de correo electrónico para activar completamente mi cuenta y asegurar su autenticidad.</td>
       <td>
@@ -662,7 +630,7 @@ del ABET – EAC - Student Outcome 3.
       <td>EP-006</td>
     </tr>
     <tr>
-      <td>US-030</td>
+      <td>US-028</td>
       <td>Inicio de Sesión</td>
       <td>Como usuario registrado, quiero iniciar sesión con mis credenciales para acceder a mi perfil personalizado y datos de postura.</td>
       <td>
@@ -678,19 +646,19 @@ del ABET – EAC - Student Outcome 3.
       <td>EP-006</td>
     </tr>
     <tr>
-      <td>US-031</td>
+      <td>US-029</td>
       <td>Recuperación de Contraseña</td>
       <td>Como usuario que olvidó su contraseña, quiero restablecerla mediante un enlace enviado a mi email para recuperar el acceso a mi cuenta.</td>
       <td>
         <b>Escenario: Restablecimiento exitoso</b><br>
         Dado que solicité restablecer mi contraseña,<br>
-        Cuando hago clic en el enlace del email y establezco una nueva contraseña,<br>
+        Cuando establezco una nueva contraseña,<br>
         Entonces puedo iniciar sesión con mis nuevas credenciales.
       </td>
       <td>EP-006</td>
     </tr>
     <tr>
-      <td>US-032</td>
+      <td>US-030</td>
       <td>Edición de Perfil</td>
       <td>Como usuario registrado, quiero editar mi información personal para mantener mi perfil actualizado.</td>
       <td>
@@ -702,7 +670,7 @@ del ABET – EAC - Student Outcome 3.
       <td>EP-006</td>
     </tr>
     <tr>
-      <td>US-033</td>
+      <td>US-031</td>
       <td>Gestión de Preferencias</td>
       <td>Como usuario, quiero configurar mis preferencias de notificaciones y privacidad para personalizar mi experiencia en la aplicación.</td>
       <td>
