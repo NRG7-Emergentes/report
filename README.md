@@ -232,6 +232,20 @@ En esta sección se fundamentará la identificación y análisis de insumos clav
 
 ##### 4.1.2.1 Primary Functionality (Primary User Stories)
 
+La primary user stories se refiere a aquellas historias de usuario que tienen un impacto directo en el cómo se va a estructurar la arquitectura de aplicación. Las primary user stories identificadas son las siguientes:
+
+| User Story ID | Título                                     | Descripción                                                                                                                                                   | Criterios de Aceptación | Epic ID |
+|---------------|--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|---------|
+| US-001        | Acceso a la Cámara                         | Como usuario, quiero permitir el acceso a mi cámara web para que el sistema pueda comenzar a analizar mi postura.                                             |                         | EP-001  |
+| US-002        | Visualización del Esqueleto en Tiempo Real | Como usuario, quiero ver una superposición del esqueleto detectado sobre mi imagen de video para entender cómo el sistema interpreta mi postura.              |                         | EP-001  |
+| US-003        | Detección de Postura Encorvada             | Como usuario, quiero que el sistema detecte automáticamente cuando mis hombros están desalineados o encorvados para poder corregirlo.                         |                         | EP-001  |
+| US-004        | Detección de Proximidad a la Pantalla      | Como usuario, quiero que el sistema me alerte cuando mi rostro está demasiado cerca de la pantalla para prevenir fatiga visual.                               |                         | EP-001  |
+| US-009        | Alertas Visuales para Mala Postura         | Como usuario, quiero recibir alertas visuales no intrusivas cuando mi postura es incorrecta, para corregirla inmediatamente sin interrupciones bruscas.       |                         | EP-002  |
+| US-010        | Alertas Sonoras Personalizables            | Como usuario, quiero asignar sonidos diferentes para cada tipo de error postural, para identificar rápidamente el problema específico sin mirar la pantalla.  |                         | EP-002  |
+| US-015        | Calibración Inicial de Postura             | Como usuario, quiero realizar una calibración inicial de mi postura correcta para que el sistema reconozca mi posición ideal al sentarme.                     |                         | EP-003  |
+| US-020        | Panel Principal de Estadísticas            | Como usuario, quiero ver un dashboard con mis métricas principales de postura para tener una visión general de mi progreso diario.                            |                         | EP-004  |
+| US-023        | Recordatorio de Pausas Activas             | Como usuario, quiero recibir recordatorios automáticos para tomar pausas activas cada cierto tiempo para prevenir la fatiga y mejorar mi bienestar postural.  |                         | EP-005  |
+
 ##### 4.1.2.2 Quality attribute Scenarios
 
 ##### 4.1.2.3 Constraints
