@@ -354,6 +354,8 @@ Los escenarios refinados de atributos de calidad de ErgoVision representan una e
 
 #### 4.3.2 Software Architecture Context Level Diagrams
 
+![nrg7-context.png](images/chapter-4/nrg7-context.png)
+
 #### 4.3.3 Software Architecture Container Level Diagrams
 
 #### 4.3.4 Software Architecture Deployment Diagrams
