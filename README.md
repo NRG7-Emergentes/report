@@ -730,6 +730,8 @@ del ABET – EAC - Student Outcome 3.
 
 #### 4.3.4 Software Architecture Deployment Diagrams
 
+![nrg7-deployment.png](images/chapter-4/nrg7-deployment.png)
+
 ## Conclusiones
 
 ## Bibliografía
