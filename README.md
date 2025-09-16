@@ -303,6 +303,17 @@ Se siguió la siguiente leyenda para los drivers ID: FD = Functional Driver, QD 
 
 #### 4.1.5 Quality Attribute Scenario Refinements
 
+Los escenarios refinados de atributos de calidad de ErgoVision representan una especificación detallada de cómo los atributos deben manifestarse en situaciones de uso concretas. A través de su refinamiento, se convierten en condiciones medibles y verificables, que permiten evaluar de manera objetiva el desempeño del sistema bajo distintos estímulos.
+
+| Atributo de Calidad | Estímulo                                              | Escenario Refinado                                           | Evaluación Esperada                      |
+|---------------------|-------------------------------------------------------|--------------------------------------------------------------|------------------------------------------|
+| Rendimiento         | Usuario habilita la cámara para iniciar monitoreo.    | El sistema procesa video y muestra esqueleto en <200 ms.     | 95% de las pruebas cumplen con ≤200 ms.  |
+| Usabilidad          | Usuario recibe notificación de postura incorrecta.    | El sistema despliega alerta clara y entendible en <3 s.      | 90% de usuarios comprenden y reaccionan. |
+| Disponibilidad      | Usuario utiliza la app durante una jornada de 8 h.    | El sistema mantiene monitoreo continuo sin interrupciones.   | Uptime ≥99.5% en jornadas de 8h.         |
+| Escalabilidad       | La base de usuarios crece de 100 a 10,000 en 6 meses. | El sistema mantiene tiempos de respuesta ≤500 ms.            | Respuesta ≤500 ms con 10k usuarios.      |
+| Fiabilidad          | El sistema detecta un fallo en la conexión de cámara. | El sistema informa al usuario y reconecta en <10 s.          | Reconexión exitosa en ≥95% de casos.     |
+| Privacidad          | Usuario configura su cuenta para no guardar imágenes. | El sistema guarda únicamente datos agregados y no sensibles. | 100% cumplimiento GDPR e ISO 27001.      |
+
 ### 4.2 Strategic-Level Domain-Driven Design
 
 #### 4.2.1 EventStorming
