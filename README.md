@@ -301,6 +301,26 @@ Se siguió la siguiente leyenda para los drivers ID: FD = Functional Driver, QD 
 
 #### 4.1.4 Architectural Design Decisions
 
+Las Architectural Design Decisions de ErgoVision representan una especificación detallada de las elecciones arquitectónicas clave que guiaran el diseño de la solución y las alternativas que se tomaron en cuenta
+
+| Driver ID | Driver                              | Decisión Relacionada                                      | Motivación                                                                 | Alternativas Consideradas                          | Estado       |
+|-----------|-------------------------------------|-----------------------------------------------------------|----------------------------------------------------------------------------|----------------------------------------------------|--------------|
+| FD-01     | Monitoreo postural en tiempo real   | DD1: Uso de Google AI Mediapipe Pose Landmark             | Aprovechar un modelo probado de visión por computadora para detección precisa y rápida | Desarrollar un modelo propio de IA, usar OpenPose   | Aprobada     |
+| FD-02     | Sistema de alertas y notificaciones | DD2: Uso de Firebase Cloud Messaging                      | Permite notificaciones push en tiempo real en múltiples dispositivos       | Socket.io, servicios de terceros de mensajería      | Aprobada     |
+| FD-06     | Gestión de usuario y perfil         | DD3: Base de datos PostgreSQL                             | Ofrece robustez, consistencia ACID y buena integración con Spring Boot     | MySQL, MongoDB                                     | Aprobada     |
+| QD-01     | Performance y baja latencia         | DD4: Arquitectura monolítica con Spring Boot              | Reduce complejidad y overhead, garantizando menor latencia en despliegues iniciales | Arquitectura de microservicios                     | Aprobada     |
+| QD-01     | Performance y baja latencia         | DD10: Uso de Redis como caché en memoria                  | Permite reducir la carga de PostgreSQL y acelerar la respuesta a consultas frecuentes | Memcached, solo acceso directo a Postgres           | Aprobada     |
+| QD-02     | Usabilidad y accesibilidad          | DD5: Frontend en Angular + Tailwind                       | Permite una UI escalable, responsive y de fácil mantenimiento              | React, Vue + Bootstrap                             | Aprobada     |
+| QD-03     | Escalabilidad                       | DD6: Contenerización con Docker y orquestación con Compose | Facilita replicación del servicio en distintos entornos y despliegues ágiles | Kubernetes, despliegue manual sin contenedores     | Aprobada     |
+| QD-04     | Seguridad de datos                  | DD7: Nginx como balanceador + TLS                         | Provee capa de seguridad y manejo eficiente de tráfico entrante            | Apache HTTP Server, Caddy                          | Aprobada     |
+| QD-05     | Disponibilidad                      | DD8: Hosting en Render con autoescalado básico            | Plataforma gestionada que ofrece despliegue sencillo con redundancia mínima| AWS EC2, Azure App Services                        | Aprobada     |
+| QD-06     | Interoperabilidad IoT               | DD9: Uso de webcam externa estándar                       | Garantiza compatibilidad amplia con librerías de visión por computadora    | Cámaras IP propietarias, sensores personalizados   | Aprobada     |
+| TS-01     | Cumplimiento de normativas          | DD7: Cifrado TLS con Nginx                                | Protege los datos y cumple buenas prácticas en privacidad                  | Sin cifrado extremo a extremo                      | Aprobada     |
+| TS-02     | Infraestructura Cloud               | DD8: Render como proveedor de hosting                     | Minimiza costos y facilita despliegue sin infraestructura propia           | Servidores on-premise                              | Aprobada     |
+| TS-03     | Multiplataforma                     | DD2 + DD5: Firebase Cloud Messaging + Angular PWA         | Garantiza disponibilidad en navegador y dispositivos móviles               | Desarrollo nativo Android/iOS                      | Aprobada     |
+| TS-04     | Límites de presupuesto              | DD6 + DD8: Uso de Docker Compose y Render                 | Reduce costos operativos y licencias, aprovecha servicios gratuitos/low-cost| Kubernetes, proveedores cloud empresariales        | Aprobada     |
+
+
 #### 4.1.5 Quality Attribute Scenario Refinements
 
 Los escenarios refinados de atributos de calidad de ErgoVision representan una especificación detallada de cómo los atributos deben manifestarse en situaciones de uso concretas. A través de su refinamiento, se convierten en condiciones medibles y verificables, que permiten evaluar de manera objetiva el desempeño del sistema bajo distintos estímulos.
