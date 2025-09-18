@@ -465,6 +465,73 @@ Vista completa:
 
 #### 4.2.4 Bounded Context Canvases
 
+**Estadísticas**
+
+El diseño del bounded context se centra en proporcionar visibilidad del comportamiento postural de los usuarios a través de métricas y reportes. Al ser parte del dominio Core, el valor del sistema depende en gran medida de la capacidad de ofrecer retroalimentación clara y confiable que permita prevenir problemas de salud relacionados con la ergonomía. La solución está orientada a consolidar datos de monitoreo en información útil y visualizaciones que promuevan la mejora continua.
+
+1. **Propósito (Purpose):**
+
+El contexto está diseñado para gestionar la recolección, procesamiento y visualización de estadísticas posturales, permitiendo a los usuarios conocer su comportamiento a lo largo del tiempo y tomar decisiones que favorezcan una postura saludable.
+
+2. **Clasificación Estratégica (Strategic Classification):**
+
+- **Dominio:** Core, ya que la interpretación de los datos de monitoreo es fundamental para cumplir con el objetivo del sistema: mejorar la salud postural de los usuarios.
+- **Modelo de Negocio:** Funciona como un decision enabler, al transformar datos en información que guía la prevención de riesgos.
+- **Evolución:** Clasificado como custom build, ya que las métricas y reportes deben adaptarse al contexto específico del monitoreo ergonómico y a las necesidades de usuarios remotos.
+
+3. **Roles del Dominio (Domain Roles):**
+
+El contexto actúa bajo el rol de Analytical Context, donde los usuarios consumen reportes y visualizaciones para comprender patrones de comportamiento y tendencias relacionadas con su postura.
+
+4. **Comunicación Entrante (Inbound Communication):**
+
+Los datos provienen principalmente de los módulos de **Monitoreo** e **IAM**.
+Mensajes clave entrantes:
+
+- Posture session data
+- Metrics request
+- User identification
+
+5. **Comunicación Saliente (Outbound Communication):**
+
+El sistema genera salidas hacia el **Frontend** y potencialmente al módulo de **Notificaciones**.
+Mensajes clave salientes:
+
+- Statistics report generated
+- Trend visualization ready
+- Risk pattern identified
+
+6. **Lenguaje Ubicuo (Ubiquitous Language):**
+
+- **Métrica (Metric):** Valor cuantitativo que refleja un aspecto del comportamiento postural.
+- **Reporte (Report):** Resumen visual o textual de las métricas en un período definido.
+- **Tendencia (Trend):** Variación de una métrica en el tiempo.
+- **Sesión (Session):** Intervalo en el que se recopilan datos de monitoreo postural.
+
+7. **Decisiones de Negocio (Business Decisions):**
+
+- Los reportes deben segmentarse en diferentes períodos (día, semana, mes).
+- Los datos históricos se deben preservar para comparación a largo plazo.
+- Solo los usuarios autenticados pueden acceder a sus propias estadísticas.
+- La detección de tendencias de riesgo debe generar recomendaciones preventivas.
+
+8. **Suposiciones (Assumptions):**
+
+- Los datos de monitoreo son confiables y están previamente validados.
+- Los reportes generados son utilizados activamente por los usuarios para mejorar su postura.
+- El sistema debe ser capaz de manejar un volumen creciente de datos históricos.
+
+9. Métricas de Verificación (Verification Metrics):
+
+El éxito del contexto se medirá por:
+
+- El número de reportes generados y consultados por los usuarios.
+- El nivel de interacción de los usuarios con las visualizaciones de tendencias.
+- La reducción de alertas por malas posturas a lo largo del tiempo (como efecto indirecto).
+- La satisfacción de los usuarios con la claridad y utilidad de los reportes generados.
+
+ <img src="../report/images/chapter-4/canvas-estadistica.png" alt="Canvas Estadistica">
+
 #### 4.2.5 Context Mapping
 
 ### 4.3 Software Architecture
