@@ -18,9 +18,8 @@
 
 ## **Integrantes**
 
-
 | **Nombre**                                | **Codigo** |
-|-------------------------------------------|------------|
+| ----------------------------------------- | ---------- |
 | **Astonitas Díaz Juan Diego**             | U202110237 |
 | **Casas Sanchez Gabriel Alexander**       | U202220033 |
 | **Espinoza Delgado BárbaraAntonella**     | U201911727 |
@@ -58,57 +57,57 @@ El enlace a github del reporte del proyecto es el siguiente: [https://github.com
 
 - [Student Outcome](#student-outcome)
 - [Capítulo I: Introducción](#capítulo-i-introducción)
-    - [1.1 Startup Profile](#11-startup-profile)
-        - [1.1.1 Descripción de la Startup](#111-descripción-de-la-startup)
-        - [1.1.2 Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
-    - [1.2 Solution Profile](#12-solution-profile)
-        - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
-        - [1.2.2 Lean UX Process](#122-lean-ux-process)
-            - [1.2.2.1 Lean UX Problem Statements](#1221-lean-ux-problem-statements)
-            - [1.2.2.2 Lean UX Assumptions](#1222-lean-ux-assumptions)
-            - [1.2.2.3 Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
-            - [1.2.2.4 Lean UX Canvas](#1224-lean-ux-canvas)
-    - [1.3 Segmentos objetivo](#13-segmentos-objetivo)
+  - [1.1 Startup Profile](#11-startup-profile)
+    - [1.1.1 Descripción de la Startup](#111-descripción-de-la-startup)
+    - [1.1.2 Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
+  - [1.2 Solution Profile](#12-solution-profile)
+    - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
+    - [1.2.2 Lean UX Process](#122-lean-ux-process)
+      - [1.2.2.1 Lean UX Problem Statements](#1221-lean-ux-problem-statements)
+      - [1.2.2.2 Lean UX Assumptions](#1222-lean-ux-assumptions)
+      - [1.2.2.3 Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
+      - [1.2.2.4 Lean UX Canvas](#1224-lean-ux-canvas)
+  - [1.3 Segmentos objetivo](#13-segmentos-objetivo)
 - [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
-    - [2.1 Competidores](#21-competidores)
-        - [2.1.1 Análisis competitivo](#211-análisis-competitivo)
-        - [2.1.2 Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
-    - [2.2 Entrevistas](#22-entrevistas)
-        - [2.2.1 Diseño de entrevistas](#221-diseño-de-entrevistas)
-        - [2.2.2 Registro de entrevistas](#222-registro-de-entrevistas)
-        - [2.2.3 Análisis de entrevistas](#223-análisis-de-entrevistas)
-    - [2.3 Needfinding](#23-needfinding)
-        - [2.3.1 User Personas](#231-user-personas)
-        - [2.3.2 User Task Matrix](#232-user-task-matrix)
-        - [2.3.3 Empathy Mapping](#233-empathy-mapping)
-        - [2.3.4 As-is Scenario Mapping](#234-as-is-scenario-mapping)
-    - [2.4 Ubiquitous Language](#24-ubiquitous-language)
+  - [2.1 Competidores](#21-competidores)
+    - [2.1.1 Análisis competitivo](#211-análisis-competitivo)
+    - [2.1.2 Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+  - [2.2 Entrevistas](#22-entrevistas)
+    - [2.2.1 Diseño de entrevistas](#221-diseño-de-entrevistas)
+    - [2.2.2 Registro de entrevistas](#222-registro-de-entrevistas)
+    - [2.2.3 Análisis de entrevistas](#223-análisis-de-entrevistas)
+  - [2.3 Needfinding](#23-needfinding)
+    - [2.3.1 User Personas](#231-user-personas)
+    - [2.3.2 User Task Matrix](#232-user-task-matrix)
+    - [2.3.3 Empathy Mapping](#233-empathy-mapping)
+    - [2.3.4 As-is Scenario Mapping](#234-as-is-scenario-mapping)
+  - [2.4 Ubiquitous Language](#24-ubiquitous-language)
 - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
-    - [3.1 To-Be Scenario Mapping](#31-to-be-scenario-mapping)
-    - [3.2 User Stories](#32-user-stories)
-    - [3.3 Impact Mapping](#33-impact-mapping)
-    - [3.4 Product Backlog](#34-product-backlog)
+  - [3.1 To-Be Scenario Mapping](#31-to-be-scenario-mapping)
+  - [3.2 User Stories](#32-user-stories)
+  - [3.3 Impact Mapping](#33-impact-mapping)
+  - [3.4 Product Backlog](#34-product-backlog)
 - [Capítulo IV: Strategic-Level Software Design](#capítulo-iv-strategic-level-software-design)
-    - [4.1 Strategic-Level Attribute-Driven Design](#41-strategic-level-attribute-driven-design)
-        - [4.1.1 Design Purpose](#411-design-purpose)
-        - [4.1.2 Attribute-Driven Design Inputs](#412-attribute-driven-design-inputs)
-            - [4.1.2.1 Primary Functionality (Primary User Stories)](#4121-primary-functionality-primary-user-stories)
-            - [4.1.2.2 Quality attribute Scenarios](#4122-quality-attribute-scenarios)
-            - [4.1.2.3 Constraints](#4123-constraints)
-        - [4.1.3 Architectural Drivers Backlog](#413-architectural-drivers-backlog)
-        - [4.1.4 Architectural Design Decisions](#414-architectural-design-decisions)
-        - [4.1.5 Quality Attribute Scenario Refinements](#415-quality-attribute-scenario-refinements)
-    - [4.2 Strategic-Level Domain-Driven Design](#42-strategic-level-domain-driven-design)
-        - [4.2.1 EventStorming](#421-eventstorming)
-        - [4.2.2 Candidate Context Discovery](#422-candidate-context-discovery)
-        - [4.2.3 Domain Message Flows Modeling](#423-domain-message-flows-modeling)
-        - [4.2.4 Bounded Context Canvases](#424-bounded-context-canvases)
-        - [4.2.5 Context Mapping](#425-context-mapping)
-    - [4.3 Software Architecture](#43-software-architecture)
-        - [4.3.1 Software Architecture System Landscape Diagram](#431-software-architecture-system-landscape-diagram)
-        - [4.3.2 Software Architecture Context Level Diagrams](#432-software-architecture-context-level-diagrams)
-        - [4.3.3 Software Architecture Container Level Diagrams](#433-software-architecture-container-level-diagrams)
-        - [4.3.4 Software Architecture Deployment Diagrams](#434-software-architecture-deployment-diagrams)
+  - [4.1 Strategic-Level Attribute-Driven Design](#41-strategic-level-attribute-driven-design)
+    - [4.1.1 Design Purpose](#411-design-purpose)
+    - [4.1.2 Attribute-Driven Design Inputs](#412-attribute-driven-design-inputs)
+      - [4.1.2.1 Primary Functionality (Primary User Stories)](#4121-primary-functionality-primary-user-stories)
+      - [4.1.2.2 Quality attribute Scenarios](#4122-quality-attribute-scenarios)
+      - [4.1.2.3 Constraints](#4123-constraints)
+    - [4.1.3 Architectural Drivers Backlog](#413-architectural-drivers-backlog)
+    - [4.1.4 Architectural Design Decisions](#414-architectural-design-decisions)
+    - [4.1.5 Quality Attribute Scenario Refinements](#415-quality-attribute-scenario-refinements)
+  - [4.2 Strategic-Level Domain-Driven Design](#42-strategic-level-domain-driven-design)
+    - [4.2.1 EventStorming](#421-eventstorming)
+    - [4.2.2 Candidate Context Discovery](#422-candidate-context-discovery)
+    - [4.2.3 Domain Message Flows Modeling](#423-domain-message-flows-modeling)
+    - [4.2.4 Bounded Context Canvases](#424-bounded-context-canvases)
+    - [4.2.5 Context Mapping](#425-context-mapping)
+  - [4.3 Software Architecture](#43-software-architecture)
+    - [4.3.1 Software Architecture System Landscape Diagram](#431-software-architecture-system-landscape-diagram)
+    - [4.3.2 Software Architecture Context Level Diagrams](#432-software-architecture-context-level-diagrams)
+    - [4.3.3 Software Architecture Container Level Diagrams](#433-software-architecture-container-level-diagrams)
+    - [4.3.4 Software Architecture Deployment Diagrams](#434-software-architecture-deployment-diagrams)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -119,7 +118,7 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 
 **ABET – EAC - Student Outcome 3**
 
-Criterio: *Capacidad de comunicarse efectivamente con un rango de audiencias.*
+Criterio: _Capacidad de comunicarse efectivamente con un rango de audiencias._
 En el siguiente cuadro se describe las acciones realizadas y enunciados de
 conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro
 del ABET – EAC - Student Outcome 3.
@@ -686,7 +685,42 @@ del ABET – EAC - Student Outcome 3.
 
 ### 3.3 Impact Mapping
 
+<img src="../report/images/chapter-3/impact-mapping.png" alt="Impact Mapping">
+
 ### 3.4 Product Backlog
+
+| **Prioridad** | **Story ID** | **Título**                                    | **Descripción**                                                                                                   | **SP** |
+| ------------- | ------------ | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------ |
+| 1             | US-001       | Acceso a la Cámara                            | Como usuario, quiere permitir el acceso a su cámara web para que el sistema pueda comenzar a analizar su postura. | 5      |
+| 4             | US-002       | Visualización del Esqueleto en Tiempo Real    | Como usuario, quiere ver una superposición del esqueleto detectado sobre su imagen de video.                      | 8      |
+| 1             | US-003       | Detección de Postura Encorvada                | Como usuario, quiere que el sistema detecte automáticamente cuando sus hombros están encorvados.                  | 8      |
+| 1             | US-004       | Detección de Proximidad a la Pantalla         | Como usuario, quiere que el sistema le alerte cuando su rostro está demasiado cerca de la pantalla.               | 8      |
+| 2             | US-005       | Detección de Inclinación de Cabeza            | Como usuario, quiere que el sistema detecte si su cabeza no está en posición neutral.                             | 8      |
+| 4             | US-006       | Toggle de Visualización de Esqueleto          | Como usuario, quiere poder activar o desactivar la visualización del esqueleto.                                   | 5      |
+| 5             | US-007       | Detección de Ángulo Brazo-Antebrazo           | Como usuario, quiere que el sistema verifique el ángulo de su codo para prevenir lesiones.                        | 8      |
+| 3             | US-008       | Detección de Alineación Pierna-Cadera-Espalda | Como usuario, quiere que el sistema monitoree el ángulo entre muslos, cadera y hombros.                           | 8      |
+| 1             | US-009       | Alertas Visuales para Mala Postura            | Como usuario, quiere recibir alertas visuales no intrusivas cuando su postura es incorrecta.                      | 5      |
+| 3             | US-010       | Alertas Sonoras Personalizables               | Como usuario, quiere asignar sonidos diferentes para cada tipo de error postural.                                 | 5      |
+| 3             | US-011       | Personalización de Volumen de Alertas         | Como usuario, quiere ajustar el volumen de las alertas sonoras.                                                   | 3      |
+| 2             | US-012       | Selección de Alertas Activas                  | Como usuario, quiere elegir qué tipos de alertas quiere recibir.                                                  | 5      |
+| 3             | US-013       | Modo Silencio Temporal                        | Como usuario, quiere pausar temporalmente todas las alertas.                                                      | 5      |
+| 3             | US-014       | Panel de Gestión de Alertas                   | Como usuario, quiere acceder a un panel para gestionar preferencias de notificaciones.                            | 8      |
+| 1             | US-015       | Calibración Inicial de Postura                | Como usuario, quiere realizar una calibración inicial de su postura correcta.                                     | 5      |
+| 2             | US-016       | Ajuste de Sensibilidad de Detección           | Como usuario, quiere ajustar la sensibilidad del detector de postura.                                             | 5      |
+| 5             | US-017       | Ajuste de Frecuencia de Detección             | Como usuario, quiere controlar la frecuencia del análisis postural.                                               | 5      |
+| 1             | US-018       | Restablecer Configuración Predeterminada      | Como usuario, quiere restablecer todos los ajustes a valores predeterminados.                                     | 3      |
+| 2             | US-020       | Panel Principal de Estadísticas               | Como usuario, quiere ver un dashboard con métricas principales de postura.                                        | 8      |
+| 2             | US-021       | Gráfico de Progreso Semanal                   | Como usuario, quiere visualizar su evolución semanal en un gráfico.                                               | 5      |
+| 3             | US-022       | Historial Detallado de Sesiones               | Como usuario, quiere revisar el historial completo de sus sesiones.                                               | 8      |
+| 2             | US-023       | Recordatorio de Pausas Activas                | Como usuario, quiere recibir recordatorios automáticos de pausas.                                                 | 5      |
+| 2             | US-024       | Personalización de Temporizador de Descansos  | Como usuario, quiere configurar frecuencia y duración de pausas.                                                  | 5      |
+| 3             | US-025       | Sugerencias de Ejercicios Generales           | Como usuario, quiere recibir sugerencias de ejercicios durante pausas.                                            | 3      |
+| 4             | US-026       | Registro de Nueva Cuenta                      | Como usuario nuevo, quiere registrarse con su correo y contraseña.                                                | 5      |
+| 2             | US-027       | Verificación de Correo Electrónico            | Como usuario, quiere verificar su correo electrónico para activar su cuenta.                                      | 3      |
+| 4             | US-028       | Inicio de Sesión                              | Como usuario, quiere iniciar sesión con sus credenciales.                                                         | 5      |
+| 3             | US-029       | Recuperación de Contraseña                    | Como usuario, quiere restablecer su contraseña olvidada.                                                          | 5      |
+| 4             | US-030       | Edición de Perfil                             | Como usuario, quiere editar su información personal.                                                              | 3      |
+| 4             | US-031       | Gestión de Preferencias                       | Como usuario, quiere configurar sus preferencias de notificaciones y privacidad.                                  | 5      |
 
 ## Capítulo IV: Strategic-Level Software Design
 
