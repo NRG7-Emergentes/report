@@ -138,6 +138,7 @@ del ABET – EAC - Student Outcome 3.
       <td>
         <b>TB1:</b><br>
         - Bárbara Antonella Espinoza Delgado: Para esta primera entrega comuniqué oralmente ideas y dudas para la realización la realización del event storming los bounded contexts durante las reuniones grupales en discord, además, comunique activamente sobre la entrega de las tareas que se me asignaron semanalmente.
+       - Gianluca Santino Pasquale Barrenechea: Durante las reuniones grupales en Discord, comuniqué de manera efectiva las ideas y avances relacionados con la realización del Event Storming y los Bounded Contexts. Además, mantuve una comunicación activa sobre la entrega de las tareas asignadas semanalmente, asegurando que todos los miembros del equipo estuvieran informados y alineados con los objetivos del proyecto.
       </td>
       <td>
         -
@@ -148,6 +149,7 @@ del ABET – EAC - Student Outcome 3.
       <td>
          <b>TB1:</b><br>
         - Bárbara Antonella Espinoza Delgado: Para esta primera entrega realicé en el informe la redacción de las hipótesis, el Lean UX Canvas, la entrevista a uno de los segmentos objetivos y el bounded context canvas asignado, además, comuniqué mis avances diarios en el grupo.
+        - Gianluca Santino Pasquale Barrenechea: En la primera entrega del informe, me encargué de redactar las hipótesis, el Lean UX Canvas, la entrevista a uno de los segmentos objetivos y el Bounded Context Canvas asignado. Además, mantuve una comunicación constante sobre mis avances diarios en el grupo, asegurando que todos los miembros estuvieran al tanto del progreso del proyecto.
       </td>
       <td>
         -
