@@ -262,13 +262,91 @@ Los escenarios de atributos de calidad de ErgoVision constituyen un insumo crít
 
 El proceso de diseño de ErgoVisión debe considerar restricciones no negociables que han sido impuestas tanto por las necesidades del negocio como por requerimientos técnicos mínimos para garantizar la viabilidad de la solución. Estas restricciones actúan como guías ineludibles para orientar la arquitectura hacia una plataforma confiable, segura y escalable, asegurando el cumplimiento de normativas y la alineación con las capacidades actuales del equipo de desarrollo y la infraestructura disponible. A continuación, se detallan las principales restricciones identificadas:
 
-| Technical Story ID | Título                                            | Descripción                                                                                                                                                         | Criterios de Aceptación                                                                                                                                                                                                                                                               | Relacionado con (Epic ID) |
-| ------------------ | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| TS-01              | Cumplimiento con normativas de seguridad de datos | La plataforma debe garantizar la protección de los datos de salud y ergonomía de los trabajadores según normativas locales e internacionales (ej. GDPR, ISO 27001). | **Escenario 1: Encriptación de datos** <br> **Dado que** un usuario registra o consulta información personal y de salud, **cuando** el sistema procesa o almacena esos datos, **entonces** los mismos deben estar encriptados y accesibles únicamente por usuarios autorizados.       | EP-01, EP-02              |
-| TS-02              | Infraestructura Cloud                             | La solución debe desplegarse en un entorno de nube pública para asegurar escalabilidad y disponibilidad.                                                            | **Escenario 1: Disponibilidad** <br> **Dado que** el sistema se encuentra en operación, **cuando** se presente una consulta de disponibilidad, **entonces** el sistema debe demostrar un tiempo de actividad de al menos 99.5%.                                                       | EP-03                     |
-| TS-03              | Multiplataforma                                   | El sistema debe ser accesible desde navegadores web modernos y dispositivos móviles (Android/iOS).                                                                  | **Escenario 1: Multiplataforma** <br> **Dado que** un usuario accede a la plataforma, **cuando** lo hace desde un navegador moderno o desde un dispositivo móvil, **entonces** la aplicación debe mostrar y ejecutar correctamente las funcionalidades principales.                   | EP-01, EP-04              |
-| TS-04              | Límites de presupuesto                            | La solución debe desarrollarse utilizando tecnologías open-source o de bajo costo para ajustarse a los recursos económicos del negocio.                             | **Escenario 1: Tecnologias Open Source** <br> **Dado que** el equipo de desarrollo selecciona tecnologías, **cuando** se evalúen opciones de frameworks, librerías o servicios, **entonces** se deben priorizar alternativas open-source o de bajo costo salvo justificación técnica. | EP-03                     |
-| TS-06              | Integración con sensores IoT                      | El sistema debe soportar la conexión con hardware de sensores IoT para captura de métricas ergonómicas.                                                             | **Escenario 1: IoT** <br> **Dado que** un sensor IoT certificado envía datos al sistema, **cuando** se recibe la transmisión, **entonces** la plataforma debe almacenar correctamente al menos un tipo de dato (ej. postura, movimiento).                                             | EP-02                     |
+<table>
+  <thead>
+    <tr>
+      <th>Technical Story ID</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Criterios de Aceptación</th>
+      <th>Relacionado con (Epic ID)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>TS-001</td>
+        <td>Integración de MediaPipe Pose</td>
+        <td>Como developer, debo utilizar exclusivamente MediaPipe Pose para la detección de landmarks corporales, ya que es la tecnología central que define las capacidades de análisis postural del sistema.</td>
+        <td>
+            <b>Escenario: Dependencia tecnológica</b><br>
+            Dado que MediaPipe es el core tecnológico,<br>
+            Cuando se implementa el análisis postural,<br>
+            Entonces no se pueden utilizar alternativas o complementos de otros proveedores de IA.
+        </td>
+        <td>EP-001</td>
+    </tr>
+    <tr>
+        <td>TS-002</td>
+        <td>Manejo de Permisos de Cámara</td>
+        <td>Como developer, debo implementar el acceso a cámara como requisito obligatorio, ya que el sistema no puede funcionar sin este recurso hardware.</td>
+        <td>
+            <b>Escenario: Dependencia de hardware</b><br>
+            Dado que la cámara es esencial,<br>
+            Cuando el usuario deniega el permiso,<br>
+            Entonces la aplicación no puede ofrecer funcionalidad alguna de monitoreo.
+        </td>
+        <td>EP-001</td>
+    </tr>
+    <tr>
+        <td>TS-007</td>
+        <td>Optimización de Rendimiento</td>
+        <td>Como developer, debo garantizar que el consumo de CPU no exceda el 30% en equipos de gama media, ya que es un requisito de performance crítico para la usabilidad.</td>
+        <td>
+            <b>Escenario: Límite de consumo recursos</b><br>
+            Dado que es una aplicación web,<br>
+            Cuando se procesa video en tiempo real,<br>
+            Entonces el uso de CPU debe mantenerse bajo el umbral definido.
+        </td>
+        <td>EP-001</td>
+    </tr>
+    <tr>
+        <td>TS-025</td>
+        <td>Almacenamiento Persistente de Datos</td>
+        <td>Como developer, debo implementar el almacenamiento local para datos de postura, ya que la arquitectura prohibe el envío de video o imágenes a servidores externos por privacidad.</td>
+        <td>
+            <b>Escenario: Restricción de privacidad</b><br>
+            Dado que se procesa video personal,<br>
+            Cuando se almacenan datos,<br>
+            Entonces toda la información debe permanecer en el dispositivo del usuario.
+        </td>
+        <td>EP-004</td>
+    </tr>
+    <tr>
+        <td>TS-032</td>
+        <td>Sistema de Verificación de Email</td>
+        <td>Como developer, debo implementar verificación por email como requisito obligatorio para activar cuentas, ya que es una restricción de seguridad no negociable.</td>
+        <td>
+            <b>Escenario: Constraint de seguridad</b><br>
+            Dado que se manejan datos personales,<br>
+            Cuando un usuario se registra,<br>
+            Entonces debe verificar su email antes de poder usar la aplicación.
+        </td>
+        <td>EP-006</td>
+    </tr>
+    <tr>
+        <td>TS-037</td>
+        <td>Manejo de Sesiones Seguras</td>
+        <td>Como developer, debo implementar autenticación con tokens JWT como estándar obligatorio, ya que es una restricción arquitectural para garantizar seguridad en todas las comunicaciones.</td>
+        <td>
+            <b>Escenario: Standard de seguridad</b><br>
+            Dado que se maneja información sensible,<br>
+            Cuando se autentica un usuario,<br>
+            Entonces todas las comunicaciones deben usar tokens JWT firmados.
+        </td>
+        <td>EP-006</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 4.1.3 Architectural Drivers Backlog
 
@@ -278,32 +356,33 @@ El resultado de este análisis se consolida en un backlog de drivers arquitectur
 
 Se siguió la siguiente leyenda para los drivers ID: FD = Functional Driver, QD = Quality Driver, TS = Technical Story.
 
-| Driver ID | Título de Driver                         | Descripción                                                                                                                              | Importancia para Stakeholders | Impacto en Architecture Technical Complexity |
-| --------- | ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- | -------------------------------------------- |
-| FD-01     | Monitoreo postural en tiempo real        | Permite capturar y analizar la postura del usuario mediante IA, identificando desviaciones en hombros, cabeza y distancia a la pantalla. | High                          | High                                         |
-| FD-02     | Sistema de alertas y notificaciones      | Proporciona retroalimentación inmediata (visual, sonora o push) para corregir la postura y prevenir riesgos.                             | High                          | Medium                                       |
-| FD-03     | Personalización y calibración            | Facilita un proceso de configuración inicial y ajustes de sensibilidad según el usuario.                                                 | Medium                        | Medium                                       |
-| FD-04     | Seguimiento de progreso y analytics      | Ofrece paneles con métricas de evolución, hábitos y patrones de error.                                                                   | Medium                        | Medium                                       |
-| FD-05     | Gestión de bienestar y prevención        | Incluye recordatorios de pausas activas y guías de estiramiento.                                                                         | Medium                        | Low                                          |
-| FD-06     | Gestión de usuario y perfil              | Permite registro, login, recuperación de contraseña y preferencias de cuenta.                                                            | High                          | Medium                                       |
-| QD-01     | Performance y baja latencia              | El sistema debe procesar video y emitir alertas en menos de 200 ms.                                                                      | High                          | High                                         |
-| QD-02     | Usabilidad y accesibilidad               | La interfaz debe ser clara, accesible y adaptada a usuarios con diferentes perfiles.                                                     | High                          | Medium                                       |
-| QD-03     | Escalabilidad                            | La plataforma debe soportar un incremento progresivo de usuarios y dispositivos IoT.                                                     | High                          | High                                         |
-| QD-04     | Seguridad de datos                       | Los datos de postura y salud deben almacenarse y transmitirse de forma encriptada.                                                       | High                          | High                                         |
-| QD-05     | Disponibilidad                           | El sistema debe mantener un uptime mínimo de 99.5% en entorno cloud.                                                                     | High                          | Medium                                       |
-| QD-06     | Interoperabilidad IoT                    | La plataforma debe integrarse con sensores IoT heterogéneos.                                                                             | Medium                        | High                                         |
-| TS-01     | Cumplimiento con normativas de seguridad | La solución debe cumplir GDPR e ISO 27001 para datos sensibles.                                                                          | High                          | High                                         |
-| TS-02     | Infraestructura Cloud                    | El sistema debe desplegarse en nube pública.                                                                                             | High                          | Medium                                       |
-| TS-03     | Multiplataforma                          | La aplicación debe estar disponible en navegadores modernos y móviles (Android/iOS).                                                     | High                          | Medium                                       |
-| TS-04     | Límites de presupuesto                   | Se deben priorizar tecnologías open-source o de bajo costo.                                                                              | Medium                        | Medium                                       |
-| TS-06     | Integración con sensores IoT             | El sistema debe procesar datos enviados por hardware externo.                                                                            | High                          | High                                         |
+| Driver ID | Título de Driver                    | Descripción                                                                                                                                                                                          | Importancia para Stakeholders | Impacto en Architecture Technical Complexity |
+|-----------|-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|----------------------------------------------|
+| FD-01     | Monitoreo postural en tiempo real   | Permite capturar y analizar la postura del usuario mediante IA, identificando desviaciones en hombros, cabeza y distancia a la pantalla.                                                             | High                          | High                                         |
+| FD-02     | Sistema de alertas y notificaciones | Proporciona retroalimentación inmediata (visual, sonora o push) para corregir la postura y prevenir riesgos.                                                                                         | High                          | Medium                                       |
+| FD-03     | Personalización y calibración       | Facilita un proceso de configuración inicial y ajustes de sensibilidad según el usuario.                                                                                                             | Medium                        | Medium                                       |
+| FD-04     | Seguimiento de progreso y analytics | Ofrece paneles con métricas de evolución, hábitos y patrones de error.                                                                                                                               | Medium                        | Medium                                       |
+| FD-05     | Gestión de bienestar y prevención   | Incluye recordatorios de pausas activas y guías de estiramiento.                                                                                                                                     | Medium                        | Low                                          |
+| FD-06     | Gestión de usuario y perfil         | Permite registro, login, recuperación de contraseña y preferencias de cuenta.                                                                                                                        | High                          | Medium                                       |
+| QD-01     | Performance y baja latencia         | El sistema debe procesar video y emitir alertas en menos de 200 ms.                                                                                                                                  | High                          | High                                         |
+| QD-02     | Usabilidad y accesibilidad          | La interfaz debe ser clara, accesible y adaptada a usuarios con diferentes perfiles.                                                                                                                 | High                          | Medium                                       |
+| QD-03     | Escalabilidad                       | La plataforma debe soportar un incremento progresivo de usuarios y dispositivos IoT.                                                                                                                 | High                          | High                                         |
+| QD-04     | Seguridad de datos                  | Los datos de postura y salud deben almacenarse y transmitirse de forma encriptada.                                                                                                                   | High                          | High                                         |
+| QD-05     | Disponibilidad                      | El sistema debe mantener un uptime mínimo de 99.5% en entorno cloud.                                                                                                                                 | High                          | Medium                                       |
+| QD-06     | Interoperabilidad IoT               | La plataforma debe integrarse con sensores IoT heterogéneos.                                                                                                                                         | Medium                        | High                                         |
+| TS-01     | Integración de MediaPipe Pose       | Como developer, debo utilizar exclusivamente MediaPipe Pose para la detección de landmarks corporales, ya que es la tecnología central que define las capacidades de análisis postural del sistema.  | High                          | High                                         |
+| TS-02     | Manejo de Permisos de Cámara        | Como developer, debo implementar el acceso a cámara como requisito obligatorio, ya que el sistema no puede funcionar sin este recurso hardware.                                                      | High                          | Medium                                       |
+| TS-07     | Optimización de Rendimiento         | Como developer, debo garantizar que el consumo de CPU no exceda el 30% en equipos de gama media, ya que es un requisito de performance crítico para la usabilidad.                                   | High                          | Medium                                       |
+| TS-25     | Almacenamiento Persistente de Datos | Como developer, debo implementar el almacenamiento local para datos de postura, ya que la arquitectura prohibe el envío de video o imágenes a servidores externos por privacidad.	                   | Medium                        | Medium                                       |
+| TS-32     | Sistema de Verificación de Email    | Como developer, debo implementar verificación por email como requisito obligatorio para activar cuentas, ya que es una restricción de seguridad no negociable.	                                      | Medium                        | Medium                                       |
+| TS-37     | Manejo de Sesiones Seguras          | Como developer, debo implementar autenticación con tokens JWT como estándar obligatorio, ya que es una restricción arquitectural para garantizar seguridad en todas las comunicaciones.	             | High                          | High                                         |
 
 #### 4.1.4 Architectural Design Decisions
 
 Las Architectural Design Decisions de ErgoVision representan una especificación detallada de las elecciones arquitectónicas clave que guiaran el diseño de la solución y las alternativas que se tomaron en cuenta
 
 | Driver ID | Driver                              | Decisión Relacionada                                       | Motivación                                                                             | Alternativas Consideradas                         | Estado   |
-| --------- | ----------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------- | -------- |
+|-----------|-------------------------------------|------------------------------------------------------------|----------------------------------------------------------------------------------------|---------------------------------------------------|----------|
 | FD-01     | Monitoreo postural en tiempo real   | DD1: Uso de Google AI Mediapipe Pose Landmark              | Aprovechar un modelo probado de visión por computadora para detección precisa y rápida | Desarrollar un modelo propio de IA, usar OpenPose | Aprobada |
 | FD-02     | Sistema de alertas y notificaciones | DD2: Uso de Firebase Cloud Messaging                       | Permite notificaciones push en tiempo real en múltiples dispositivos                   | Socket.io, servicios de terceros de mensajería    | Aprobada |
 | FD-06     | Gestión de usuario y perfil         | DD3: Base de datos PostgreSQL                              | Ofrece robustez, consistencia ACID y buena integración con Spring Boot                 | MySQL, MongoDB                                    | Aprobada |
@@ -314,10 +393,13 @@ Las Architectural Design Decisions de ErgoVision representan una especificación
 | QD-04     | Seguridad de datos                  | DD7: Nginx como balanceador + TLS                          | Provee capa de seguridad y manejo eficiente de tráfico entrante                        | Apache HTTP Server, Caddy                         | Aprobada |
 | QD-05     | Disponibilidad                      | DD8: Hosting en Render con autoescalado básico             | Plataforma gestionada que ofrece despliegue sencillo con redundancia mínima            | AWS EC2, Azure App Services                       | Aprobada |
 | QD-06     | Interoperabilidad IoT               | DD9: Uso de webcam externa estándar                        | Garantiza compatibilidad amplia con librerías de visión por computadora                | Cámaras IP propietarias, sensores personalizados  | Aprobada |
-| TS-01     | Cumplimiento de normativas          | DD7: Cifrado TLS con Nginx                                 | Protege los datos y cumple buenas prácticas en privacidad                              | Sin cifrado extremo a extremo                     | Aprobada |
-| TS-02     | Infraestructura Cloud               | DD8: Render como proveedor de hosting                      | Minimiza costos y facilita despliegue sin infraestructura propia                       | Servidores on-premise                             | Aprobada |
-| TS-03     | Multiplataforma                     | DD2 + DD5: Firebase Cloud Messaging + Angular PWA          | Garantiza disponibilidad en navegador y dispositivos móviles                           | Desarrollo nativo Android/iOS                     | Aprobada |
-| TS-04     | Límites de presupuesto              | DD6 + DD8: Uso de Docker Compose y Render                  | Reduce costos operativos y licencias, aprovecha servicios gratuitos/low-cost           | Kubernetes, proveedores cloud empresariales       | Aprobada |
+| TS-01     | Integración de MediaPipe Pose       |                                                            |                                                                                        |                                                   | Aprobada |
+| TS-02     | Manejo de Permisos de Cámara        |                                                            |                                                                                        |                                                   | Aprobada |
+| TS-07     | Optimización de Rendimiento         |                                                            |                                                                                        |                                                   | Aprobada |
+| TS-25     | Almacenamiento Persistente de Datos |                                                            |                                                                                        |                                                   | Aprobada |
+| TS-32     | Sistema de Verificación de Email    |                                                            |                                                                                        |                                                   | Aprobada |
+| TS-37     | Manejo de Sesiones Seguras          |                                                            |                                                                                        |                                                   | Aprobada |
+
 
 #### 4.1.5 Quality Attribute Scenario Refinements
 
@@ -343,46 +425,46 @@ En esta etapa, se identificaron los eventos clave que representan las acciones s
 1.  Define the Purpose
     En esta fase se generan ideas relacionadas con el objetivo del proyecto, aprovechando la lluvia de ideas como recurso clave.
 
-    <img src="../report/images/chapter-4/paso-1.png" alt="Define the Purpose">
+    <img src="/images/chapter-4/paso-1.png" alt="Define the Purpose">
 
 2.  Timelines
     Durante esta fase, los eventos identificados fueron agrupados en subgrupos liderados por un evento en general que encapsula la función principal del grupo.
 
-    <img src="../report/images/chapter-4/paso-2.png" alt="Timelines">
+    <img src="/images/chapter-4/paso-2.png" alt="Timelines">
 
 3.  Paint Points
     En este proceso, se identificaron paint points o puntos problemáticos, que son áreas donde los usuarios pueden experimentar dificultados o fricciones en su interacción con la aplicación. Estos puntos son cruciales para mejorar la experiencia del usuario y optimizar el diseño del sistema.
 
-    <img src="../report/images/chapter-4/paso-3.png" alt="Paint Points">
+    <img src="/images/chapter-4/paso-3.png" alt="Paint Points">
 
 4.  Pivotal points
     Se señalaron los pivotal points o puntos clave, que son eventos críticos que marcan hitos improtantes en el flujo de la plataforma. Estos eventos tienden a ser significativos en el comportamiento del sistema o en la experiencia del usuario.
 
-    <img src="../report/images/chapter-4/paso-4.png" alt="Pivotal points">
+    <img src="/images/chapter-4/paso-4.png" alt="Pivotal points">
 
 5.  Commands
     Cada evento se asoció a un comando en específico que lo desencadena y un actor que lo realiza. Esto ayudó a tener un mejor reconocimiento de cómo interactúan los diferentes usuarios con el sistema.
 
-    <img src="../report/images/chapter-4/paso-5.png" alt="Commands">
+    <img src="/images/chapter-4/paso-5.png" alt="Commands">
 
 6.  Policies
     Durante esta etapa, se identifican las politicas relevantes para cada contexto del sistema. Estas politicas pueden incluir restricciones de negocio, reglas de validación, etc.
 
-    <img src="../report/images/chapter-4/paso-6.png" alt="Policies">
+    <img src="/images/chapter-4/paso-6.png" alt="Policies">
 
 7.  Read Models
     Durante esta fase, se diseñan y desarrollan lso modelos de lectura para cada contexto de sistema, asegurando que proporcionen la información necesaria de manera eficiente y coherente.
 
-    <img src="../report/images/chapter-4/paso-7.png" alt="Read Models">
+    <img src="/images/chapter-4/paso-7.png" alt="Read Models">
 
 8.  External Systems
     Durante esta etapa, se identifican los sistemas externos relevantes para la plataforma y se establecen las interfaces necesarias para integrarlos de manera efectiva.
 
-    <img src="../report/images/chapter-4/paso-8.png" alt="External Systems">
+    <img src="/images/chapter-4/paso-8.png" alt="External Systems">
 
 9.  Aggregates
     Durante esta etapa, se definen aggregates para cada contexto del sistema, asegurando que representen correctamente las transacciones y operaciones coherentes dentro del sistema.
-    <img src="../report/images/chapter-4/paso-9.png" alt="Aggregates">
+    <img src="/images/chapter-4/paso-9.png" alt="Aggregates">
 
 El enlace al Miro: [https://miro.com/app/board/uXjVJIOOJ5E=/](https://miro.com/app/board/uXjVJIOOJ5E=/).
 
@@ -404,7 +486,7 @@ Posibles responsabilidades del Bounded Context:
 - Proveer un sistema de validación de credenciales utilizando estándares de seguridad como JWT.
 - Facilitar el acceso a la plataforma basado en los roles asignados al usuario al registrarse.
 
-<img src="../report/images/chapter-4/iam.png" alt="iam">
+<img src="/images/chapter-4/iam.png" alt="iam">
 
 **Candidate para Bounded Context: Orquestrador**
 
@@ -416,7 +498,7 @@ Posibles responsabilidades del Bounded Context:
 - Ajustar la iluminación y otros parámetros del entorno que influyen en la detección postural.
 - Coordinar la comunicación entre los distintos módulos (Monitoreo, Notificaciones, Estadísticas).
 
-<img src="../report/images/chapter-4/orquestador.png" alt="orquestador">
+<img src="/images/chapter-4/orquestador.png" alt="orquestador">
 
 **Candidate para Bounded Context: Monitoreo**
 
@@ -429,7 +511,7 @@ Posibles responsabilidades del Bounded Context:
 - Detectar desviaciones o malas posturas de forma continua.
 - Registrar la evolución de la postura del usuario a lo largo de la sesión de trabajo.
 
-<img src="../report/images/chapter-4/monitoreo.png" alt="monitoreo">
+<img src="/images/chapter-4/monitoreo.png" alt="monitoreo">
 
 **Candidate para Bounded Context: Notificaciones**
 
@@ -442,7 +524,7 @@ Posibles responsabilidades del Bounded Context:
 - Adaptar la frecuencia e intensidad de las alertas según la severidad de la desviación postural.
 - Permitir personalización de notificaciones (tono).
 
-<img src="../report/images/chapter-4/notificaciones.png" alt="notificacion">
+<img src="/images/chapter-4/notificaciones.png" alt="notificacion">
 
 **Candidate para Bounded Context: Estadisticas**
 
@@ -455,13 +537,14 @@ Posibles responsabilidades del Bounded Context:
 - Identificar patrones de riesgo o tendencias a lo largo del tiempo.
 - Proveer visualizaciones de datos para el usuario y/o administradores.
 
-<img src="../report/images/chapter-4/estadisticas.png" alt="estadistica">
+<img src="./images/chapter-4/estadisticas.png" alt="estadistica">
 
 Vista completa:
 
-<img src="../report/images/chapter-4/bc-completo.png" alt="BondenContext">
+<img src="/images/chapter-4/bc-completo.png" alt="BondenContext">
 
 #### 4.2.3 Domain Message Flows Modeling
+
 
 #### 4.2.4 Bounded Context Canvases
 
@@ -762,6 +845,8 @@ El diseño del bounded context Notificaciones se centra únicamente en gestionar
 <img src="./images/chapter-4/canvas-Notificaciones.png" alt="Canvas Notificaciones">
 
 #### 4.2.5 Context Mapping
+
+
 
 ### 4.3 Software Architecture
 
