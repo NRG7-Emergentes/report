@@ -532,6 +532,88 @@ El éxito del contexto se medirá por:
 
  <img src="../report/images/chapter-4/canvas-estadistica.png" alt="Canvas Estadistica">
 
+**- Orquestador**
+
+El diseño del bounded context se centra en garantizar que todas las dependencias, configuraciones y recursos necesarios estén alineados y listos antes de iniciar el monitoreo postural en tiempo real. Al ser parte del dominio Core, su valor radica en asegurar la preparación del sistema, evitando fallos operativos y mejorando la fiabilidad del proceso de detección. La solución está orientada a coordinar validaciones previas que permitan un inicio de sesión fluido y sin interrupciones.
+
+1. **Propósito (Purpose):**
+
+El contexto está diseñado para coordinar y validar dependencias, configuraciones y recursos (como cámara y notificaciones) antes de iniciar el monitoreo postural, asegurando que el sistema funcione correctamente desde el primer momento.
+
+2. **Clasificación Estratégica (Strategic Classification):**
+
+- **Dominio:** Core, ya que la preparación del sistema es fundamental para el éxito del monitoreo postural.
+
+- **Modelo de Negocio:** Actúa como un enabler, asegurando que las condiciones previas estén listas y sincronizadas.
+
+- **Evolución:** Clasificado como custom build, porque las validaciones y configuraciones deben adaptarse al contexto específico del sistema.
+
+3. **Roles del Dominio (Domain Roles):**
+
+El contexto cumple el rol de Orchestrator Context, coordinando y confirmando configuraciones antes de que comience el monitoreo en tiempo real.
+
+4. **Comunicación Entrante (Inbound Communication):**
+
+Los mensajes provienen de módulos de soporte y del usuario.
+
+Mensajes clave entrantes:
+
+- Configuration preferences set
+
+- Camera status check
+
+5. **Comunicación Saliente (Outbound Communication):**
+
+El sistema envía información hacia el módulo de Monitoreo y Notificaciones.
+
+Mensajes clave salientes:
+
+- Configurations ready
+
+- Camera enabled
+
+6. **Lenguaje Ubicuo (Ubiquitous Language):**
+
+- Preferencia Sonora (Sound Preference): Configuración de alertas auditivas definidas por el usuario.
+
+- Alineación de Cámara (Camera Alignment): Estado correcto de la cámara frente al esqueleto virtual.
+
+- Esqueleto Virtual (Virtual Skeleton): Representación digital del usuario necesaria para validar la cámara.
+
+- Orquestador (Orchestrator): Módulo que centraliza y confirma las dependencias y configuraciones antes del inicio del monitoreo.
+
+7. **Decisiones de Negocio (Business Decisions):**
+
+- El monitoreo no puede comenzar si la cámara no está alineada.
+
+- Las preferencias del usuario deben estar confirmadas antes de la sesión.
+
+- Todas las dependencias deben estar sincronizadas en tiempo real.
+
+- El sistema debe notificar al usuario cuando todo esté listo para iniciar.
+
+8. **Suposiciones (Assumptions):**
+
+- La cámara estará disponible y alineada.
+
+- El usuario confirma sus configuraciones previas antes de iniciar.
+
+- Los módulos de soporte responden sin fallos.
+
+Métricas de Verificación (Verification Metrics):
+
+9. **El éxito del contexto se medirá por:**
+
+- El porcentaje de sesiones iniciadas sin errores de configuración.
+
+- El tiempo promedio requerido para validar configuraciones y comenzar el monitoreo.
+
+- La reducción de fallos en la ejecución debido a configuraciones incompletas.
+
+- El nivel de satisfacción de los usuarios respecto a la preparación del sistema.
+
+ <img src="./images/chapter-4/canvas-orquestrador.png" alt="Canvas Orquestrador">
+
 #### 4.2.5 Context Mapping
 
 ### 4.3 Software Architecture
