@@ -136,7 +136,8 @@ del ABET – EAC - Student Outcome 3.
     <tr>
       <td><strong>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería.</strong></td>
       <td>
-        -
+        <b>TB1:</b><br>
+        - Bárbara Antonella Espinoza Delgado: Para esta primera entrega comuniqué oralmente ideas y dudas para la realización la realización del event storming los bounded contexts durante las reuniones grupales en discord, además, comunique activamente sobre la entrega de las tareas que se me asignaron semanalmente.
       </td>
       <td>
         -
@@ -145,7 +146,8 @@ del ABET – EAC - Student Outcome 3.
     <tr>
       <td><strong>Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto eningeniería.</strong></td>
       <td>
-        -
+         <b>TB1:</b><br>
+        - Bárbara Antonella Espinoza Delgado: Para esta primera entrega realicé en el informe la redacción de las hipótesis, el Lean UX Canvas, la entrevista a uno de los segmentos objetivos y el bounded context canvas asignado, además, comuniqué mis avances diarios en el grupo.
       </td>
       <td>
         -
