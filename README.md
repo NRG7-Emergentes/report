@@ -530,9 +530,9 @@ El éxito del contexto se medirá por:
 - La reducción de alertas por malas posturas a lo largo del tiempo (como efecto indirecto).
 - La satisfacción de los usuarios con la claridad y utilidad de los reportes generados.
 
- <img src="../report/images/chapter-4/canvas-estadistica.png" alt="Canvas Estadistica">
+ <img src="./images/chapter-4/canvas-estadistica.png" alt="Canvas Estadistica">
 
-**- Orquestador**
+**Orquestador**
 
 El diseño del bounded context se centra en garantizar que todas las dependencias, configuraciones y recursos necesarios estén alineados y listos antes de iniciar el monitoreo postural en tiempo real. Al ser parte del dominio Core, su valor radica en asegurar la preparación del sistema, evitando fallos operativos y mejorando la fiabilidad del proceso de detección. La solución está orientada a coordinar validaciones previas que permitan un inicio de sesión fluido y sin interrupciones.
 
@@ -542,11 +542,11 @@ El contexto está diseñado para coordinar y validar dependencias, configuracion
 
 2. **Clasificación Estratégica (Strategic Classification):**
 
-- **Dominio:** Core, ya que la preparación del sistema es fundamental para el éxito del monitoreo postural.
+ - **Dominio:** Core, ya que la preparación del sistema es fundamental para el éxito del monitoreo postural.
 
-- **Modelo de Negocio:** Actúa como un enabler, asegurando que las condiciones previas estén listas y sincronizadas.
+ - **Modelo de Negocio:** Actúa como un enabler, asegurando que las condiciones previas estén listas y sincronizadas.
 
-- **Evolución:** Clasificado como custom build, porque las validaciones y configuraciones deben adaptarse al contexto específico del sistema.
+ - **Evolución:** Clasificado como custom build, porque las validaciones y configuraciones deben adaptarse al contexto específico del sistema.
 
 3. **Roles del Dominio (Domain Roles):**
 
@@ -558,9 +558,9 @@ Los mensajes provienen de módulos de soporte y del usuario.
 
 Mensajes clave entrantes:
 
-- Configuration preferences set
+ - Configuration preferences set
 
-- Camera status check
+ - Camera status check
 
 5. **Comunicación Saliente (Outbound Communication):**
 
@@ -568,51 +568,198 @@ El sistema envía información hacia el módulo de Monitoreo y Notificaciones.
 
 Mensajes clave salientes:
 
-- Configurations ready
+ - Configurations ready
 
-- Camera enabled
+ - Camera enabled
 
 6. **Lenguaje Ubicuo (Ubiquitous Language):**
 
-- Preferencia Sonora (Sound Preference): Configuración de alertas auditivas definidas por el usuario.
+ - Preferencia Sonora (Sound Preference): Configuración de alertas auditivas definidas por el usuario.
 
-- Alineación de Cámara (Camera Alignment): Estado correcto de la cámara frente al esqueleto virtual.
+ - Alineación de Cámara (Camera Alignment): Estado correcto de la cámara frente al esqueleto virtual.
 
-- Esqueleto Virtual (Virtual Skeleton): Representación digital del usuario necesaria para validar la cámara.
+ - Esqueleto Virtual (Virtual Skeleton): Representación digital del usuario necesaria para validar la cámara.
 
-- Orquestador (Orchestrator): Módulo que centraliza y confirma las dependencias y configuraciones antes del inicio del monitoreo.
+ - Orquestador (Orchestrator): Módulo que centraliza y confirma las dependencias y configuraciones antes del inicio del monitoreo.
 
 7. **Decisiones de Negocio (Business Decisions):**
 
-- El monitoreo no puede comenzar si la cámara no está alineada.
+ - El monitoreo no puede comenzar si la cámara no está alineada.
 
-- Las preferencias del usuario deben estar confirmadas antes de la sesión.
+ - Las preferencias del usuario deben estar confirmadas antes de la sesión.
 
-- Todas las dependencias deben estar sincronizadas en tiempo real.
+ - Todas las dependencias deben estar sincronizadas en tiempo real.
 
-- El sistema debe notificar al usuario cuando todo esté listo para iniciar.
+ - El sistema debe notificar al usuario cuando todo esté listo para iniciar.
 
 8. **Suposiciones (Assumptions):**
 
-- La cámara estará disponible y alineada.
+ - La cámara estará disponible y alineada.
 
-- El usuario confirma sus configuraciones previas antes de iniciar.
+ - El usuario confirma sus configuraciones previas antes de iniciar.
 
-- Los módulos de soporte responden sin fallos.
+ - Los módulos de soporte responden sin fallos.
 
 Métricas de Verificación (Verification Metrics):
 
 9. **El éxito del contexto se medirá por:**
 
-- El porcentaje de sesiones iniciadas sin errores de configuración.
+ - El porcentaje de sesiones iniciadas sin errores de configuración.
 
-- El tiempo promedio requerido para validar configuraciones y comenzar el monitoreo.
+ - El tiempo promedio requerido para validar configuraciones y comenzar el monitoreo.
 
-- La reducción de fallos en la ejecución debido a configuraciones incompletas.
+ - La reducción de fallos en la ejecución debido a configuraciones incompletas.
 
-- El nivel de satisfacción de los usuarios respecto a la preparación del sistema.
+ - El nivel de satisfacción de los usuarios respecto a la preparación del sistema.
 
  <img src="./images/chapter-4/canvas-orquestrador.png" alt="Canvas Orquestrador">
+
+
+**IAM (Identity and Access Management)**
+
+El diseño del bounded context IAM se centra en gestionar la identificación y autenticación de los usuarios de la plataforma, asegurando que cada interacción esté apropiada para cada usuario/contexto. Este contexto maneja identidades verificadas y permisos de acceso.
+
+1. **Propósito (Purpose):** El contexto está diseñado para gestionar la identificación y autenticación de usuarios, asegurando que solo usuarios autorizados puedan acceder a los recursos del sistema y manteniendo la seguridad de las sesiones.
+
+2. **Clasificación Estratégica (Strategic Classification):**
+   - **Dominio:** Support, ya que proporciona servicios de autenticación y autorización necesarios para el funcionamiento del sistema.
+   - **Modelo de Negocio:** Funciona como compliance enforcer, garantizando que el acceso a los recursos se realice de manera segura y controlada.
+   - **Evolución:** Clasificado como commodity, utilizando patrones estándar de autenticación y autorización.
+
+3. **Roles del Dominio (Domain Roles):** El contexto actúa bajo el rol de Gateway Context, controlando el acceso y validando credenciales antes de permitir interacciones con otros contextos del sistema.
+
+4. **Comunicación Entrante (Inbound Communication):** Los datos provienen de las interfaces de usuario y otros contextos que requieren validación. Mensajes clave entrantes:
+   - Login request
+   - Token validation request
+   - User registration request
+
+5. **Comunicación Saliente (Outbound Communication):** El sistema genera tokens de autenticación y respuestas de autorización hacia otros contextos. Mensajes clave salientes:
+   - Authentication token issued
+   - Access granted/denied
+   - User session established
+
+6. **Lenguaje Ubicuo (Ubiquitous Language):**
+   - **Usuario:** Entidad que interactúa con la plataforma (cliente, mecánico, visitante, técnico).
+   - **Rol:** Conjunto de permisos asignados a un usuario (ej. admin, mecánico, cliente).
+   - **Sesión:** Período activo de interacción entre el usuario autenticado y la plataforma.
+   - **Permiso:** Autorización para realizar acciones.
+
+7. **Decisiones de Negocio (Business Decisions):**
+   - Todos los usuarios deben tener una identidad única asociada a un correo o número de referencia.
+   - Un usuario puede decidir si mayor/menor acceso sin restricción.
+   - Los roles determinan los permisos de acceso a cada contexto.
+   - Las sesiones expiran automáticamente por inactividad o al llegar a un tiempo máximo definido.
+
+8. **Suposiciones (Assumptions):**
+   - Los usuarios proporcionan información de registro válida.
+   - Las credenciales se almacenan de forma segura y encriptada.
+   - El sistema debe manejar múltiples sesiones concurrentes por usuario.
+
+9. **Métricas de Verificación (Verification Metrics):** El éxito del contexto se medirá por:
+   - Tiempo de respuesta de autenticación menor a 2 segundos.
+   - Tasa de éxito en la validación de credenciales superior al 99%.
+   - Número de intentos de acceso no autorizado bloqueados.
+   - Disponibilidad del servicio de autenticación superior al 99.9%.
+
+<img src="./images/chapter-4/canvas-IAM.png" alt="Canvas IAM">
+
+**Monitoreo**
+
+El diseño del bounded context Monitoreo se centra en la gestión del usuario durante su sesión de trabajo, mediante el uso de inteligencia artificial (IA) y una cámara web para detectar malas posturas.
+
+1. **Propósito (Purpose):** Monitorear en tiempo real la postura del usuario durante su sesión mediante inteligencia artificial y una cámara web, detectando malas posturas para prevenir problemas de salud relacionados con la ergonomía.
+
+2. **Clasificación Estratégica (Strategic Classification):**
+   - **Dominio:** Core, ya que la detección y análisis de posturas es fundamental para el propósito principal del sistema.
+   - **Modelo de Negocio:** Funciona como innovation differentiator, proporcionando valor único a través de la detección automática de posturas.
+   - **Evolución:** Clasificado como custom build, ya que requiere desarrollo específico de algoritmos de IA para análisis postural.
+
+3. **Roles del Dominio (Domain Roles):** El contexto actúa como Processing Context, donde se procesan datos de video para generar información sobre la postura del usuario en tiempo real.
+
+4. **Comunicación Entrante (Inbound Communication):** Los datos provienen de cámaras web y sensores del dispositivo del usuario. Mensajes clave entrantes:
+   - Video stream data
+   - Session start/stop commands
+   - User calibration data
+
+5. **Comunicación Saliente (Outbound Communication):** El sistema envía resultados del análisis hacia **Notificaciones** y **Estadísticas**. Mensajes clave salientes:
+   - Posture analysis completed
+   - Bad posture detected
+   - Session monitoring data
+
+6. **Lenguaje Ubicuo (Ubiquitous Language):**
+   - **Landmarks Corporales:** Los puntos clave del cuerpo utilizados para detectar posturas (cabeza, hombros, espalda).
+   - **Pausa Activa:** Interrupción manual o programada del monitoreo.
+   - **Sesión de Monitoreo:** Período durante el cual el sistema analiza la postura del usuario.
+   - **Procesamiento Local:** Análisis en el dispositivo sin envío de datos externos.
+   - **Umbral Probabilístico:** Nivel de confianza mínimo para considerar una detección de postura válida.
+
+7. **Decisiones de Negocio (Business Decisions):**
+   - Una sesión de monitoreo solo puede iniciarse con acceso autenticado a la cámara.
+   - Una postura solo será análisis para ser reportada para detectar una incidencia.
+   - El análisis postural debe ser en tiempo real mediante un procesamiento streaming.
+   - El procesamiento de video debe ocurrir localmente por privacidad streaming.
+
+8. **Suposiciones (Assumptions):**
+   - Los usuarios tienen acceso a una cámara web funcional.
+   - La iluminación del entorno es suficiente para el análisis.
+   - Los modelos de IA son precisos en la detección de posturas.
+   - El dispositivo del usuario tiene capacidad de procesamiento suficiente.
+
+9. **Métricas de Verificación (Verification Metrics):** El éxito del contexto se medirá por:
+   - Precisión en la detección de posturas superior al 90%.
+   - Latencia de procesamiento menor a 100ms.
+   - Disponibilidad del servicio de monitoreo superior al 95%.
+   - Satisfacción del usuario con la precisión de las detecciones.
+
+<img src="./images/chapter-4/canvas-Monitoreo.png" alt="Canvas Monitoreo">
+
+**Notificaciones**
+
+El diseño del bounded context Notificaciones se centra únicamente en gestionar la comunicación entre la plataforma y los usuarios, asegurando que reciban alertas, recordatorios y actualizaciones pertinentes en el momento adecuado.
+
+1. **Propósito (Purpose):** Gestionar la comunicación entre la plataforma y los usuarios, enviando notificaciones push, correos electrónicos, SMS y otros métodos de comunicación para mantener a los usuarios informados sobre alertas críticas y recordatorios.
+
+2. **Clasificación Estratégica (Strategic Classification):**
+   - **Dominio:** Support, ya que facilita la comunicación pero no es parte del core business del monitoreo postural.
+   - **Modelo de Negocio:** Funciona como engagement driver, manteniendo a los usuarios conectados y conscientes de su comportamiento postural.
+   - **Evolución:** Clasificado como commodity/product, utilizando servicios estándar de notificación disponibles en el mercado.
+
+3. **Roles del Dominio (Domain Roles):** El contexto actúa como Communication Context, distribuyendo información relevante a los usuarios a través de múltiples canales de comunicación.
+
+4. **Comunicación Entrante (Inbound Communication):** Los datos provienen principalmente de **Monitoreo** y **Estadísticas**. Mensajes clave entrantes:
+   - Bad posture alert triggered
+   - Report generation completed
+   - User threshold exceeded
+
+5. **Comunicación Saliente (Outbound Communication):** El sistema envía notificaciones a través de múltiples canales hacia los usuarios. Mensajes clave salientes:
+   - Push notification sent
+   - Email notification delivered
+
+6. **Lenguaje Ubicuo (Ubiquitous Language):**
+   - **Notificación:** Mensaje enviado a un usuario por la plataforma.
+   - **Alerta:** Notificación de alta prioridad (ej. postura crítica).
+   - **Recordatorio:** Notificación programada para reforzar hábitos (ej. descansar cada 45 min).
+   - **Preferencias:** Configuración elegida por el usuario sobre qué mensajes recibe.
+
+7. **Decisiones de Negocio (Business Decisions):**
+   - Todo mensaje debe estar asociado a un usuario autenticado y activo.
+   - El usuario puede configurar la frecuencia y tipo de notificaciones que desea recibir.
+   - Las alertas críticas tienen prioridad sobre los recordatorios.
+   - Las notificaciones deben personalizarse en el historial del usuario.
+
+8. **Suposiciones (Assumptions):**
+   - Los usuarios tienen dispositivos capaces de recibir notificaciones.
+   - Los servicios de notificación externos están disponibles.
+   - Los usuarios revisan y actúan sobre las notificaciones recibidas.
+   - El sistema puede acceder a los canales de comunicación necesarios.
+
+9. **Métricas de Verificación (Verification Metrics):** El éxito del contexto se medirá por:
+   - Tasa de entrega exitosa de notificaciones superior al 95%.
+   - Tiempo de entrega de notificaciones críticas menor a 30 segundos.
+   - Tasa de apertura de notificaciones por parte de los usuarios.
+   - Reducción en comportamientos de riesgo postural tras recibir alertas.
+
+<img src="./images/chapter-4/canvas-Notificaciones.png" alt="Canvas Notificaciones">
 
 #### 4.2.5 Context Mapping
 
