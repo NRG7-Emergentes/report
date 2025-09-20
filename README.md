@@ -42,10 +42,28 @@
   </thead>
   <tbody>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>0.1</td>
+      <td>05-09-2025</td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipon y Espinoza Delgado Bárbara Antonella </td>
+      <td>Desarrollo de los items: Antecedentes y problemática, Lean UX Process y Segmentos objetivo</td>
+    </tr>
+    <tr>
+      <td>0.2</td>
+      <td>09-09-2025</td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipon y Espinoza Delgado Bárbara Antonella </td>
+      <td>Desarrollo de los items: Competidores, Diseño de entrevistas, Registro de entrevistas, Análisis de entrevistas, Needfinding, y ubiquitous language</td>
+    </tr>
+    <tr>
+      <td>0.3</td>
+      <td>17-09-2025</td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipon y Espinoza Delgado Bárbara Antonella </td>
+      <td>Desarrollo de los items: To-Be scenario Mapping, User Stories, Impact Mapping y Product Backlog</td>
+    </tr>
+    <tr>
+      <td>0.4</td>
+      <td>20-09-2025</td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipon y Espinoza Delgado Bárbara Antonella </td>
+      <td>Desarrollo de los items: Startup Profile, Strategic-Level Attribute-Driven Design, Strategic-Level Domain-Driven Design, Software Architecture y Conclusiones </td>
     </tr>
   </tbody>
 </table>
