@@ -160,6 +160,13 @@ del ABET – EAC - Student Outcome 3.
 
 #### 1.1.1 Descripción de la Startup
 
+**NRG7** es una empresa peruana de tecnología dedicada a la investigación, desarrollo e implementación de herramientas software centradas en la mejora de la productividad. Nos especializamos en crear ecosistemas que combinan inteligencia artificial y análisis de datos para potenciar el desempeño del capital humano.
+
+**Misión:** Proveer soluciones tecnológicas innovadoras que promuevan la productividad de las personas en sus entornos laborales y educativos.
+
+**Visión:** Ser la solución líder en ergonomía digital en el Perú, reconocida por promover entornos laborales y educativos saludables y aumentar la productividad del capital humano.
+
+
 #### 1.1.2 Perfiles de integrantes del equipo
 
 <table>
