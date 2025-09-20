@@ -175,7 +175,7 @@ del ABET – EAC - Student Outcome 3.
   </tr>
   <tr>
     <td> <img src="images/chapter-1/alex-pfp.jpg" alt="Gabriel Casas" style="width: 500px; height: auto;"> </td>
-    <td> - </td>
+    <td> 	Soy estudiante de Ingeniería de Software en quinto ciclo, con habilidades para dirigir y trabajar bien bajo presión. Aunque no disfruto mucho de los trabajos grupales, siempre asumo un rol destacado y sobresaliente en ellos, aprovechando mi capacidad académica y versatilidad. </td>
   </tr>
   <tr>
     <th colspan="2"> Gianluca Santino Pasquale Barrenechea </th>
@@ -188,8 +188,8 @@ del ABET – EAC - Student Outcome 3.
     <th colspan="2">Godofredo Quispe Tipo</th>
   </tr>
   <tr>
-    <td> <img src="images/chapter-1/godo-pfp.jpg" alt="Jose Alejo" style="width: 400px; height: auto;"> </td>
-    <td>  - </td>
+    <td> <img src="images/chapter-1/godo-pfp.jpg" alt="Godofredo quispe tipo" style="width: 400px; height: auto;"> </td>
+    <td>  Mi nombre es Godofredo y actualmente me encuentro cursando la carrera de Ingeniería de Software, un campo que me apasiona profundamente. Mi interés por las nuevas tecnologías es constante, y estoy siempre al tanto de las últimas innovaciones que están redefiniendo el panorama tecnológico. Me considero un entusiasta de la programación, área en la que he adquirido un dominio en diversos lenguajes, tales como Python, C++ y Assembler, lo que me ha permitido abordar una amplia gama de proyectos y desafíos técnicos. </td>
   </tr>
   <tr>
     <th colspan="2">Bárbara Espinoza Delgado</th>
