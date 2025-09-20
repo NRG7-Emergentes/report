@@ -262,6 +262,15 @@ del ABET – EAC - Student Outcome 3.
 
 ## Conclusiones
 
+**TB1:**  
+El proyecto ErgoVision logró desarrollar una solución innovadora para prevenir problemas posturales en trabajadores y estudiantes remotos, integrando tecnologías de visión por computadora y un enfoque centrado en el usuario.
+
+A través del Lean UX se identificaron problemas, supuestos e hipótesis, validando tempranamente las necesidades de los usuarios. El análisis competitivo, entrevistas y herramientas de needfinding aportaron información clave para definir personas, escenarios y tareas.
+
+Posteriormente, se especificaron los requisitos mediante escenarios To-Be, historias de usuario, impact mapping y backlog, alineando funcionalidades con los objetivos del proyecto.
+
+Finalmente, con Attribute-Driven Design y Domain-Driven Design, se estructuró la arquitectura en bounded contexts, context mapping y diagramas de software, asegurando escalabilidad, calidad y mantenibilidad.
+
 ## Bibliografía
 
 Lazo, R. V. H., & Quispe, Y. C. (2024). *Trastornos musculoesqueléticos asociados al teletrabajo en abogados peruanos: un estudio transversal.* Medicina y Seguridad del Trabajo, 70(275), 103-112. [https://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0465-546X2024000400005](https://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0465-546X2024000400005)
