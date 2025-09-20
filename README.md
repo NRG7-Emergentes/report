@@ -264,7 +264,7 @@ del ABET – EAC - Student Outcome 3.
 </table>
 
 **User Stories:**
-
+    
 <table>
   <thead>
     <tr>
@@ -677,6 +677,474 @@ del ABET – EAC - Student Outcome 3.
             Dado que el usuario accede a configuración,<br>
             Cuando modifica sus preferencias de notificaciones,<br>
             Entonces los cambios se aplican inmediatamente en el sistema.
+        </td>
+        <td>EP-006</td>
+    </tr>
+        <tr>
+        <td>TS-001</td>
+        <td>Integración de MediaPipe Pose</td>
+        <td>Como developer, quiero integrar la librería MediaPipe Pose en la aplicación web para poder detectar los 33 landmarks corporales en tiempo real.</td>
+        <td>
+            <b>Escenario: Detección exitosa de landmarks</b><br>
+            Dado que la cámara está activa,<br>
+            Cuando se inicializa MediaPipe Pose,<br>
+            Entonces el sistema debe detectar continuamente los 33 puntos corporales con una tasa de frames mayor a 30fps.
+        </td>
+        <td>EP-001</td>
+    </tr>
+    <tr>
+        <td>TS-002</td>
+        <td>Manejo de Permisos de Cámara</td>
+        <td>Como developer, quiero implementar el sistema de permisos de cámara del navegador para garantizar el acceso al video stream necesario para el análisis.</td>
+        <td>
+            <b>Escenario 1: Permiso concedido</b><br>
+            Dado que el usuario inicia la aplicación,<br>
+            Cuando solicita acceso a la cámara,<br>
+            Entonces el navegador debe mostrar el diálogo de permisos y al aceptar, obtener el stream de video.<br>
+            <b>Escenario 2: Permiso denegado</b><br>
+            Dado que el usuario deniega el permiso,<br>
+            Cuando se intenta acceder a la cámara,<br>
+            Entonces el sistema debe mostrar un mensaje de error apropiado.
+        </td>
+        <td>EP-001</td>
+    </tr>
+    <tr>
+        <td>TS-003</td>
+        <td>Renderizado del Esqueleto en Canvas</td>
+        <td>Como developer, quiero implementar el renderizado del esqueleto detectado sobre el video para visualizar los resultados del análisis postural.</td>
+        <td>
+            <b>Escenario: Visualización en tiempo real</b><br>
+            Dado que MediaPipe detecta los landmarks,<br>
+            Cuando se reciben los puntos corporales,<br>
+            Entonces se debe dibujar un esqueleto semitransparente superpuesto al video con actualización continua.
+        </td>
+        <td>EP-001</td>
+    </tr>
+    <tr>
+        <td>TS-004</td>
+        <td>Algoritmo de Detección de Postura</td>
+        <td>Como developer, quiero implementar los algoritmos de cálculo angular para determinar desviaciones posturales basado en los landmarks detectados.</td>
+        <td>
+            <b>Escenario: Cálculo de ángulos posturales</b><br>
+            Dado que se tienen los landmarks corporales,<br>
+            Cuando se calculan los ángulos de hombros, cadera y columna,<br>
+            Entonces el sistema debe identificar correctamente posturas incorrectas según los umbrales definidos.
+        </td>
+        <td>EP-001</td>
+    </tr>
+    <tr>
+        <td>TS-005</td>
+        <td>Sistema de Alertas en Tiempo Real</td>
+        <td>Como developer, quiero implementar el sistema de notificaciones visuales que se active inmediatamente al detectar posturas incorrectas.</td>
+        <td>
+            <b>Escenario: Activación de alerta visual</b><br>
+            Dado que se detecta una postura incorrecta,<br>
+            Cuando persiste por más de 3 segundos,<br>
+            Entonces se debe mostrar una alerta visual no intrusiva en los bordes de la pantalla.
+        </td>
+        <td>EP-001</td>
+    </tr>
+    <tr>
+        <td>TS-006</td>
+        <td>Manejo de Estados de Monitoreo</td>
+        <td>Como developer, quiero implementar el sistema de gestión de estados (activo/inactivo/pausado) para controlar el ciclo de vida del monitoreo.</td>
+        <td>
+            <b>Escenario: Cambio de estados</b><br>
+            Dado que el usuario inicia una sesión,<br>
+            Cuando cambia entre estados de monitoreo,<br>
+            Entonces el sistema debe responder adecuadamente liberando o asignando recursos según sea necesario.
+        </td>
+        <td>EP-001</td>
+    </tr>
+    <tr>
+        <td>TS-007</td>
+        <td>Optimización de Rendimiento</td>
+        <td>Como developer, quiero optimizar el rendimiento del procesamiento de video para garantizar un funcionamiento fluido sin consumo excesivo de CPU.</td>
+        <td>
+            <b>Escenario: Uso eficiente de recursos</b><br>
+            Dado que la aplicación está en funcionamiento,<br>
+            Cuando se procesa el video en tiempo real,<br>
+            Entonces el uso de CPU no debe exceder el 30% en equipos de gama media.
+        </td>
+        <td>EP-001</td>
+    </tr>
+    <tr>
+        <td>TS-008</td>
+        <td>Manejo de Errores y Excepciones</td>
+        <td>Como developer, quiero implementar un sistema robusto de manejo de errores para gestionar fallos en la detección o procesamiento de video.</td>
+        <td>
+            <b>Escenario: Recuperación de errores</b><br>
+            Dado que ocurre un error en la detección,<br>
+            Cuando el sistema falla temporalmente,<br>
+            Entonces debe recuperarse automáticamente sin requerir intervención del usuario.
+        </td>
+        <td>EP-001</td>
+    </tr>
+       <tr>
+        <td>TS-009</td>
+        <td>Sistema de Alertas Visuales</td>
+        <td>Como developer, quiero implementar un sistema de alertas visuales no intrusivas que se activen al detectar mala postura para proporcionar retroalimentación inmediata al usuario.</td>
+        <td>
+            <b>Escenario: Activación de borde coloreado</b><br>
+            Dado que se detecta una postura incorrecta,<br>
+            Cuando persiste por más de 3 segundos,<br>
+            Entonces se debe mostrar un borde de color suave alrededor de la interfaz indicando el tipo de error.
+        </td>
+        <td>EP-002</td>
+    </tr>
+    <tr>
+        <td>TS-010</td>
+        <td>Reproducción de Sonidos Personalizados</td>
+        <td>Como developer, quiero implementar un sistema de reproducción de sonidos personalizables para cada tipo de error postural que permita identificar problemas sin mirar la pantalla.</td>
+        <td>
+            <b>Escenario: Sonido específico por error</b><br>
+            Dado que se configura un sonido para "encorvamiento",<br>
+            Cuando se detecta este tipo de error postural,<br>
+            Entonces se debe reproducir el sonido específico asignado.
+        </td>
+        <td>EP-002</td>
+    </tr>
+    <tr>
+        <td>TS-011</td>
+        <td>Control de Volumen de Alertas</td>
+        <td>Como developer, quiero implementar un control de volumen ajustable para las alertas sonoras que permita adaptarse a diferentes entornos de trabajo.</td>
+        <td>
+            <b>Escenario: Ajuste de volumen personalizado</b><br>
+            Dado que el usuario ajusta el volumen al 50%,<br>
+            Cuando se activa una alerta sonora,<br>
+            Entonces el sonido debe reproducirse al nivel de volumen configurado.
+        </td>
+        <td>EP-002</td>
+    </tr>
+    <tr>
+        <td>TS-012</td>
+        <td>Sistema de Preferencias de Alertas</td>
+        <td>Como developer, quiero implementar un sistema de gestión de preferencias que permita habilitar/deshabilitar tipos específicos de alertas según las necesidades del usuario.</td>
+        <td>
+            <b>Escenario: Desactivación de alertas sonoras</b><br>
+            Dado que el usuario desactiva las alertas sonoras,<br>
+            Cuando se detecta una mala postura,<br>
+            Entonces solo se deben mostrar alertas visuales sin reproducción de sonido.
+        </td>
+        <td>EP-002</td>
+    </tr>
+    <tr>
+        <td>TS-013</td>
+        <td>Modo Silencio Temporal</td>
+        <td>Como developer, quiero implementar un sistema de modo silencio temporal que permita pausar todas las alertas durante periodos específicos.</td>
+        <td>
+            <b>Escenario: Silencio programado</b><br>
+            Dado que se activa el modo silencio por 30 minutos,<br>
+            Cuando se detecta cualquier error postural,<br>
+            Entonces el sistema no debe emitir alertas visuales ni sonoras durante ese período.
+        </td>
+        <td>EP-002</td>
+    </tr>
+    <tr>
+        <td>TS-014</td>
+        <td>Panel de Configuración de Alertas</td>
+        <td>Como developer, quiero crear un panel centralizado de configuración donde los usuarios puedan gestionar todas sus preferencias de notificaciones.</td>
+        <td>
+            <b>Escenario: Configuración múltiple</b><br>
+            Dado que el usuario accede al panel de configuración,<br>
+            Cuando modifica varias preferencias simultáneamente,<br>
+            Entonces todos los cambios deben guardarse y aplicarse inmediatamente.
+        </td>
+        <td>EP-002</td>
+    </tr>
+    <tr>
+        <td>TS-015</td>
+        <td>Persistencia de Configuraciones</td>
+        <td>Como developer, quiero implementar un sistema de almacenamiento local para guardar las preferencias de alertas y asegurar que persistan entre sesiones.</td>
+        <td>
+            <b>Escenario: Persistencia de configuraciones</b><br>
+            Dado que el usuario configura sus preferencias,<br>
+            Cuando cierra y reabre la aplicación,<br>
+            Entonces todas las configuraciones deben mantenerse igual.
+        </td>
+        <td>EP-002</td>
+    </tr>
+    <tr>
+        <td>TS-016</td>
+        <td>Sincronización de Estados de Alerta</td>
+        <td>Como developer, quiero implementar un sistema que sincronice el estado de las alertas entre diferentes componentes de la aplicación para evitar inconsistencia.</td>
+        <td>
+            <b>Escenario: Sincronización de estados</b><br>
+            Dado que se activa una alerta visual,<br>
+            Cuando el usuario cambia de pestaña o componente,<br>
+            Entonces el estado de la alerta debe mantenerse consistente en toda la aplicación.
+        </td>
+        <td>EP-002</td>
+    </tr>
+    <tr>
+        <td>TS-016</td>
+        <td>Wizard de Calibración Inicial</td>
+        <td>Como developer, quiero implementar un wizard interactivo que guíe al usuario en el proceso de calibración inicial para establecer su postura de referencia correcta.</td>
+        <td>
+            <b>Escenario: Calibración exitosa</b><br>
+            Dado que el usuario inicia el wizard de calibración,<br>
+            Cuando completa todos los pasos y mantiene una postura correcta durante 5 segundos,<br>
+            Entonces el sistema guarda los parámetros de calibración como referencia para futuras comparaciones.
+        </td>
+        <td>EP-003</td>
+    </tr>
+    <tr>
+        <td>TS-017</td>
+        <td>Sistema de Control de Sensibilidad</td>
+        <td>Como developer, quiero implementar un control deslizante ajustable que permita modificar la sensibilidad del detector de postura para adaptarse a las preferencias del usuario.</td>
+        <td>
+            <b>Escenario: Ajuste de sensibilidad</b><br>
+            Dado que el usuario accede a la configuración de sensibilidad,<br>
+            Cuando ajusta el slider a un valor específico (ej: 50%),<br>
+            Entonces el sistema actualiza los umbrales de detección en tiempo real con el nuevo valor.
+        </td>
+        <td>EP-003</td>
+    </tr>
+    <tr>
+        <td>TS-018</td>
+        <td>Control de Frecuencia de Análisis</td>
+        <td>Como developer, quiero implementar un selector de frecuencia que permita configurar el intervalo entre chequeos posturales para optimizar el rendimiento del sistema.</td>
+        <td>
+            <b>Escenario: Cambio de frecuencia</b><br>
+            Dado que el usuario selecciona una frecuencia de 2 segundos,<br>
+            Cuando guarda la configuración,<br>
+            Entonces el sistema ajusta el intervalo de análisis postural a cada 2 segundos.
+        </td>
+        <td>EP-003</td>
+    </tr>
+    <tr>
+        <td>TS-019</td>
+        <td>Función de Restablecimiento de Configuración</td>
+        <td>Como developer, quiero implementar una función que restablezca todas las configuraciones personalizadas a los valores predeterminados del sistema.</td>
+        <td>
+            <b>Escenario: Restablecimiento completo</b><br>
+            Dado que el usuario tiene configuraciones personalizadas,<br>
+            Cuando activa la opción "Restablecer valores predeterminados",<br>
+            Entonces todas las configuraciones vuelven a su estado original de fábrica.
+        </td>
+        <td>EP-003</td>
+    </tr>
+    <tr>
+        <td>TS-020</td>
+        <td>Persistencia de Configuraciones de Usuario</td>
+        <td>Como developer, quiero implementar un sistema de almacenamiento local para guardar las configuraciones de calibración y preferencias del usuario entre sesiones.</td>
+        <td>
+            <b>Escenario: Persistencia de datos</b><br>
+            Dado que el usuario ajusta sus configuraciones,<br>
+            Cuando cierra y reabre la aplicación,<br>
+            Entonces todas las configuraciones personales se mantienen igual.
+        </td>
+        <td>EP-003</td>
+    </tr>
+    <tr>
+        <td>TS-021</td>
+        <td>API de Recolección de Datos de Postura</td>
+        <td>Como developer, quiero implementar una API que capture y almacene los datos de postura en tiempo real para generar análisis históricos.</td>
+        <td>
+            <b>Escenario: Captura de datos exitosa</b><br>
+            Dado que el sistema está monitoreando postura,<br>
+            Cuando se detecta un evento postural (correcto/incorrecto),<br>
+            Entonces los datos se almacenan con marca de tiempo en la base de datos.
+        </td>
+        <td>EP-004</td>
+    </tr>
+    <tr>
+        <td>TS-022</td>
+        <td>Sistema de Dashboard de Métricas</td>
+        <td>Como developer, quiero desarrollar un sistema de dashboard que muestre métricas clave de postura en tiempo real para el usuario.</td>
+        <td>
+            <b>Escenario: Visualización de métricas principales</b><br>
+            Dado que el usuario accede al dashboard,<br>
+            Cuando hay datos de más de 1 hora de uso,<br>
+            Entonces se muestran porcentaje de postura correcta, tiempo total y alertas recibidas.
+        </td>
+        <td>EP-004</td>
+    </tr>
+    <tr>
+        <td>TS-023</td>
+        <td>Gráficos Interactivos de Progreso</td>
+        <td>Como developer, quiero implementar gráficos interactivos que muestren la evolución postural semanal para identificar tendencias de mejora.</td>
+        <td>
+            <b>Escenario: Generación de gráfico semanal</b><br>
+            Dado que existen datos de varios días,<br>
+            Cuando el usuario selecciona "vista semanal",<br>
+            Entonces se genera un gráfico de líneas con el progreso diario de postura correcta.
+        </td>
+        <td>EP-004</td>
+    </tr>
+    <tr>
+        <td>TS-024</td>
+        <td>Sistema de Filtrado por Fechas</td>
+        <td>Como developer, quiero implementar un sistema de filtrado que permita consultar el historial de sesiones por fechas específicas.</td>
+        <td>
+            <b>Escenario: Filtrado por fecha específica</b><br>
+            Dado que el usuario quiere ver datos de ayer,<br>
+            Cuando selecciona la fecha en el calendario,<br>
+            Entonces el sistema muestra solo las estadísticas de ese día.
+        </td>
+        <td>EP-004</td>
+    </tr>
+    <tr>
+        <td>TS-025</td>
+        <td>Exportación de Reportes</td>
+        <td>Como developer, quiero implementar funcionalidad de exportación de datos para permitir generar reportes en formatos comunes.</td>
+        <td>
+            <b>Escenario: Exportación a CSV</b><br>
+            Dado que el usuario quiere exportar sus datos,<br>
+            Cuando selecciona "Exportar a CSV",<br>
+            Entonces se genera y descarga un archivo con todos sus datos históricos.
+        </td>
+        <td>EP-004</td>
+    </tr>
+    <tr>
+        <td>TS-026</td>
+        <td>Sistema de Temporizador de Pausas Activas</td>
+        <td>Como developer, quiero implementar un sistema de temporizador que active recordatorios de pausas activas basado en intervalos configurables para promover hábitos saludables.</td>
+        <td>
+            <b>Escenario: Recordatorio automático</b><br>
+            Dado que el usuario ha estado activo por 45 minutos,<br>
+            Cuando se cumple el intervalo configurado,<br>
+            Entonces el sistema muestra una notificación sugiriendo una pausa activa.
+        </td>
+        <td>EP-005</td>
+    </tr>
+    <tr>
+        <td>TS-027</td>
+        <td>Configuración Personalizada de Intervalos</td>
+        <td>Como developer, quiero implementar un sistema de configuración que permita personalizar la frecuencia y duración de las pausas activas según preferencias del usuario.</td>
+        <td>
+            <b>Escenario: Personalización de intervalos</b><br>
+            Dado que el usuario configura pausas cada 30 minutos,<br>
+            Cuando guarda la configuración,<br>
+            Entonces el sistema programa los recordatorios con el nuevo intervalo.
+        </td>
+        <td>EP-005</td>
+    </tr>
+    <tr>
+        <td>TS-028</td>
+        <td>Banco de Ejercicios de Estiramiento</td>
+        <td>Como developer, quiero crear un banco de ejercicios de estiramiento con instrucciones visuales que pueda ser accedido durante las pausas activas.</td>
+        <td>
+            <b>Escenario: Selección aleatoria de ejercicios</b><br>
+            Dado que el usuario inicia una pausa activa,<br>
+            Cuando solicita sugerencias de ejercicios,<br>
+            Entonces el sistema muestra 3 opciones diferentes del banco de ejercicios.
+        </td>
+        <td>EP-005</td>
+    </tr>
+    <tr>
+        <td>TS-029</td>
+        <td>Sistema de Notificaciones de Bienestar</td>
+        <td>Como developer, quiero implementar un sistema de notificaciones no intrusivas que muestre recordatorios de pausas y sugerencias de ejercicios.</td>
+        <td>
+            <b>Escenario: Notificación de pausa</b><br>
+            Dado que se cumple el intervalo programado,<br>
+            Cuando el sistema está activo,<br>
+            Entonces se muestra una notificación suave sugiriendo una pausa activa.
+        </td>
+        <td>EP-005</td>
+    </tr>
+    <tr>
+        <td>TS-030</td>
+        <td>Gestor de Rutinas de Estiramiento</td>
+        <td>Como developer, quiero desarrollar un sistema que gestione y roté las rutinas de estiramiento para evitar repetir los mismos ejercicios consecutivamente.</td>
+        <td>
+            <b>Escenario: Rotación de ejercicios</b><br>
+            Dado que el usuario ha realizado varios ejercicios,<br>
+            Cuando inicia una nueva pausa activa,<br>
+            Entonces el sistema sugiere ejercicios no recientemente mostrados.
+        </td>
+        <td>EP-005</td>
+    </tr>
+    <tr>
+        <td>TS-031</td>
+        <td>Sistema de Registro de Usuarios</td>
+        <td>Como developer, quiero implementar un sistema de registro seguro que valide credenciales y envíe emails de verificación para crear nuevas cuentas de usuario.</td>
+        <td>
+            <b>Escenario 1: Registro exitoso</b><br>
+            Dado que un nuevo usuario completa el formulario,<br>
+            Cuando los datos son válidos y el email no existe,<br>
+            Entonces se crea la cuenta y se envía email de verificación.<br>
+            <b>Escenario 2: Email duplicado</b><br>
+            Dado que un usuario intenta registrarse con email existente,<br>
+            Cuando envía el formulario,<br>
+            Entonces el sistema muestra error de email ya registrado.
+        </td>
+        <td>EP-006</td>
+    </tr>
+    <tr>
+        <td>TS-032</td>
+        <td>Sistema de Verificación de Email</td>
+        <td>Como developer, quiero implementar un sistema de verificación por email que valide la autenticidad de las cuentas mediante tokens seguros.</td>
+        <td>
+            <b>Escenario: Verificación exitosa</b><br>
+            Dado que el usuario recibe el email de verificación,<br>
+            Cuando hace clic en el enlace con token válido,<br>
+            Entonces la cuenta se activa y puede iniciar sesión.
+        </td>
+        <td>EP-006</td>
+    </tr>
+    <tr>
+        <td>TS-033</td>
+        <td>Sistema de Autenticación</td>
+        <td>Como developer, quiero implementar un sistema de login seguro que valide credenciales y maneje sesiones de usuario.</td>
+        <td>
+            <b>Escenario 1: Login exitoso</b><br>
+            Dado que el usuario ingresa credenciales correctas,<br>
+            Cuando el sistema valida la información,<br>
+            Entonces se inicia sesión y redirige al dashboard.<br>
+            <b>Escenario 2: Credenciales inválidas</b><br>
+            Dado que el usuario ingresa credenciales incorrectas,<br>
+            Cuando el sistema valida la información,<br>
+            Entonces muestra error genérico sin especificar el campo erróneo.
+        </td>
+        <td>EP-006</td>
+    </tr>
+    <tr>
+        <td>TS-034</td>
+        <td>Sistema de Recuperación de Contraseña</td>
+        <td>Como developer, quiero implementar un sistema seguro de recuperación de contraseña que genere tokens temporales y permita restablecer credenciales.</td>
+        <td>
+            <b>Escenario: Recuperación exitosa</b><br>
+            Dado que el usuario solicita restablecer contraseña,<br>
+            Cuando sigue el enlace del email y establece nueva contraseña,<br>
+            Entonces puede iniciar sesión con las nuevas credenciales.
+        </td>
+        <td>EP-006</td>
+    </tr>
+    <tr>
+        <td>TS-035</td>
+        <td>API de Gestión de Perfil</td>
+        <td>Como developer, quiero implementar una API para gestionar perfiles de usuario que permita editar y actualizar información personal.</td>
+        <td>
+            <b>Escenario: Actualización de perfil</b><br>
+            Dado que el usuario modifica su información,<br>
+            Cuando guarda los cambios,<br>
+            Entonces los datos se actualizan inmediatamente en la base de datos.
+        </td>
+        <td>EP-006</td>
+    </tr>
+    <tr>
+        <td>TS-036</td>
+        <td>Sistema de Preferencias de Usuario</td>
+        <td>Como developer, quiero implementar un sistema de gestión de preferencias que almacene y recupere configuraciones personalizadas.</td>
+        <td>
+            <b>Escenario: Cambio de preferencias</b><br>
+            Dado que el usuario modifica sus preferencias,<br>
+            Cuando guarda los cambios,<br>
+            Entonces las configuraciones se aplican inmediatamente y persisten entre sesiones.
+        </td>
+        <td>EP-006</td>
+    </tr>
+    <tr>
+        <td>TS-037</td>
+        <td>Manejo de Sesiones Seguras</td>
+        <td>Como developer, quiero implementar un sistema de manejo de sesiones con tokens JWT seguros y renovación automática.</td>
+        <td>
+            <b>Escenario: Sesión segura</b><br>
+            Dado que el usuario inicia sesión,<br>
+            Cuando navega por la aplicación,<br>
+            Entonces la sesión se mantiene activa y segura con token JWT.
         </td>
         <td>EP-006</td>
     </tr>
