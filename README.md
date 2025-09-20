@@ -188,15 +188,16 @@ del ABET – EAC - Student Outcome 3.
     <th colspan="2">Godofredo Quispe Tipo</th>
   </tr>
   <tr>
-    <td> <img src="images/chapter-1/godo-pfp.jpg" alt="Jose Alejo" style="width: 500px; height: auto;"> </td>
+    <td> <img src="images/chapter-1/godo-pfp.jpg" alt="Jose Alejo" style="width: 400px; height: auto;"> </td>
     <td>  - </td>
   </tr>
   <tr>
     <th colspan="2">Bárbara Espinoza Delgado</th>
   </tr>
   <tr>
-    <td> <img src="images/chapter-1/barbara-pfp.png" alt="Sebastian Pacheco" style="width: 500px; height: auto;"> </td>
-    <td> - </td>
+    <td> <img src="/images/chapter-1/Messo.jpeg" alt="Barbara Espinoza Photo" style="width: 500px; height: auto;"> </td>
+    <td> Mi nombre es Bárbara Antonella Espinoza Delgado, mi código de estudiante es u201911727 ,tengo 23 años, soy estudiante de Ingeniería de Software de 8vo ciclo. Tengo experiencia en trabajos en equipo y me considero una persona puntual con la realización y entrega de las tareas pendientes.
+ </td>
   </tr>
 </table>
 
