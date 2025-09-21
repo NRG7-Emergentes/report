@@ -552,6 +552,8 @@ Vista completa:
 4. El contexto Orquestador emite el evento SesionPreparada para iniciar la experiencia de monitoreo.
 5. El contexto Monitoreo se activa y comienza la captura en tiempo real.
 
+![caso-1.png](images/chapter-4/caso-1.png)
+
 **Caso 2: Detección de mala postura en tiempo real**
 
 1. El contexto Monitoreo detecta que la postura del usuario no es correcta.
@@ -569,7 +571,7 @@ Vista completa:
 3. El contexto Estadísticas procesa la información y genera métricas de evolución.
 4. El usuario recibe un reporte gráfico con patrones y recomendaciones.
 
-
+![caso-3.png](images/chapter-4/caso-3.png)
 
 **Caso 4: Recordatorio de pausa activa**
 
@@ -586,6 +588,8 @@ Vista completa:
 2. El contexto Orquestador recibe los nuevos parámetros de configuración.
 3. El contexto Orquestador envía las configuraciones actualizadas al contexto Monitoreo.
 4. El contexto Monitoreo adapta sus umbrales de IA según las preferencias del usuario.
+
+![caso-5.png](images/chapter-4/caso-5.png)
 
 #### 4.2.4 Bounded Context Canvases
 
