@@ -10,11 +10,11 @@
 
 ### **Ingeniería de software**
 
-## Informe de -
+## Informe de TB1
 
 ### **Nombre del startup:** NRG7
 
-### **Nombre del producto:** -
+### **Nombre del producto:** ErgoVision
 
 ## **Integrantes**
 
@@ -26,7 +26,7 @@
 | **Godofredo Quispe Tipo**                 | u202120772 |
 | **Pasquale Barrenechea Gianluca Santino** | U202112078 |
 
-**Agosto 2025**
+**Septiembre 2025**
 
 ## Registro de Versiones del Informe
 
@@ -70,6 +70,26 @@
 ## Project Report Collaboration Insights
 
 El enlace a github del reporte del proyecto es el siguiente: [https://github.com/NRG7-Emergentes/report](https://github.com/NRG7-Emergentes/report).
+
+![tb1-pulse.png](images/misc/tb1-pulse.png)
+
+![tb1-contributors-1.png](images/misc/tb1-contributors-1.png)
+
+![tb1-contributors-2.png](images/misc/tb1-contributors-2.png)
+
+![tb1-network-1.png](images/misc/tb1-network-1.png)
+
+![tb1-network-2.png](images/misc/tb1-network-2.png)
+
+Para esta primera entrega se desarollaron los cpaítulos del 1 al 4, en la captura adjuntada se evidencia del trabajo colaborativo de github. Todos los integrantes del grupo trabajaron en el proyecto.
+
+Recapitulando los commits se dividieron de la siguiente manera:
+
+- Juan Astonitas (NeoRise456): 18 commits
+- Gabriel Casas (Al3xiel): 10 commits
+- Gianluca Pasquale (cwassointt): 6 commits
+- Godofredo Quispe (GodofredoGT): 6 commits
+- Bárbara Espinoza (MesSobble): 11 commits
 
 ## Contenido
 
