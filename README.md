@@ -544,6 +544,42 @@ Vista completa:
 
 #### 4.2.3 Domain Message Flows Modeling
 
+**Caso 1: Inicio de sesión y preparación del monitoreo**
+
+1. El usuario ingresa sus credenciales en la aplicación.
+2. El contexto IAM valida la identidad del usuario y emite el evento UsuarioAutenticado.
+3. El contexto Orquestador recibe el evento y valida dependencias críticas (cámara, permisos de notificaciones, conexión).
+4. El contexto Orquestador emite el evento SesionPreparada para iniciar la experiencia de monitoreo.
+5. El contexto Monitoreo se activa y comienza la captura en tiempo real.
+
+**Caso 2: Detección de mala postura en tiempo real**
+
+1. El contexto Monitoreo detecta que la postura del usuario no es correcta.
+2. El contexto Monitoreo emite el evento MalaPosturaDetectada.
+3. El contexto Notificaciones recibe el evento y genera un recordatorio visual o sonoro.
+4. El usuario recibe la notificación y corrige su postura.
+5. El contexto Estadísticas registra la detección y actualización del estado postural.
+
+**Caso 3: Generación de reportes de progreso**
+
+1. El usuario consulta su historial de desempeño.
+2. El contexto Estadísticas solicita datos del contexto Monitoreo (posturas detectadas, tiempo de corrección, frecuencia de errores).
+3. El contexto Estadísticas procesa la información y genera métricas de evolución.
+4. El usuario recibe un reporte gráfico con patrones y recomendaciones.
+
+**Caso 4: Recordatorio de pausa activa**
+
+1. El usuario ha permanecido frente a la computadora por un tiempo prolongado.
+2. El contexto Estadísticas detecta el exceso de tiempo y genera el evento PausaRecomendada.
+3. El contexto Notificaciones recibe el evento y envía un recordatorio para realizar ejercicios o un descanso.
+4. El usuario toma la pausa y el contexto Estadísticas registra el cumplimiento.
+
+**Caso 5: Personalización del sistema**
+
+1. El usuario ajusta la sensibilidad de detección en la aplicación.
+2. El contexto Orquestador recibe los nuevos parámetros de configuración.
+3. El contexto Orquestador envía las configuraciones actualizadas al contexto Monitoreo.
+4. El contexto Monitoreo adapta sus umbrales de IA según las preferencias del usuario.
 
 #### 4.2.4 Bounded Context Canvases
 
