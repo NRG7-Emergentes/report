@@ -560,6 +560,8 @@ Vista completa:
 4. El usuario recibe la notificación y corrige su postura.
 5. El contexto Estadísticas registra la detección y actualización del estado postural.
 
+![caso-2.png](images/chapter-4/caso-2.png)
+
 **Caso 3: Generación de reportes de progreso**
 
 1. El usuario consulta su historial de desempeño.
@@ -567,12 +569,16 @@ Vista completa:
 3. El contexto Estadísticas procesa la información y genera métricas de evolución.
 4. El usuario recibe un reporte gráfico con patrones y recomendaciones.
 
+
+
 **Caso 4: Recordatorio de pausa activa**
 
 1. El usuario ha permanecido frente a la computadora por un tiempo prolongado.
 2. El contexto Estadísticas detecta el exceso de tiempo y genera el evento PausaRecomendada.
 3. El contexto Notificaciones recibe el evento y envía un recordatorio para realizar ejercicios o un descanso.
 4. El usuario toma la pausa y el contexto Estadísticas registra el cumplimiento.
+
+![caso-4.png](images/chapter-4/caso-4.png)
 
 **Caso 5: Personalización del sistema**
 
