@@ -543,7 +543,7 @@ Vista completa:
 <img src="/images/chapter-4/bc-completo.png" alt="BondenContext">
 
 #### 4.2.3 Domain Message Flows Modeling
-
+    
 
 #### 4.2.4 Bounded Context Canvases
 
