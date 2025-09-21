@@ -249,7 +249,7 @@ del ABET – EAC - Student Outcome 3.
     <th colspan="2">Bárbara Espinoza Delgado</th>
   </tr>
   <tr>
-    <td> <img src="/images/chapter-1/Messo.jpeg" alt="Barbara Espinoza Photo" style="width: 500px; height: auto;"> </td>
+    <td> <img src="images/chapter-1/barbara-pfp.jpeg" alt="Barbara Espinoza Photo" style="width: 500px; height: auto;"> </td>
     <td> Mi nombre es Bárbara Antonella Espinoza Delgado, mi código de estudiante es u201911727 ,tengo 23 años, soy estudiante de Ingeniería de Software de 8vo ciclo. Tengo experiencia en trabajos en equipo y me considero una persona puntual con la realización y entrega de las tareas pendientes.
  </td>
   </tr>
@@ -540,7 +540,7 @@ Jóvenes que dedican largas horas al estudio en computadora, ya sea en clases vi
 A continuación, se presenta un análisis competitivo que examina a las principales empresas que rivalizan con nuestra startup. Hemos identificado tanto competidores directos, aquellos que ofrecen una solución de software centralizada en la monitorización y corrección proactiva de la postura mediante el uso de la cámara, como indirectos que, si bien no son idénticos, compiten en áreas clave superpuestas como el bienestar digital en el puesto de trabajo, la ergonomía y la prevención de la fatiga física que impacta la productividad. Este análisis se centra en aquellos que ofrecen soluciones que se superponen con las de **ErgoVision**.
 
 1. **Posture Reminder**  
-   ![Logo de Posture Reminder](/images/chapter-2/competidores/Posture_Reminder.png)  
+   ![Logo de Posture Reminder](images/chapter-2/competidores/Posture_Reminder.png)  
    **Descripción:**  
    Software de escritorio que utiliza la cámara web para detectar encorvamiento y emitir una alerta sonora inmediata.  
    **Características principales**
@@ -552,7 +552,7 @@ A continuación, se presenta un análisis competitivo que examina a las principa
 ---
 
 2. **Upright Go**  
-   ![Logo de Uprigh Go](/images/chapter-2/competidores/UPRIGHT.png)  
+   ![Logo de Uprigh Go](images/chapter-2/competidores/UPRIGHT.png)  
    **Descripción:**  
    Wearable (sensor portátil) que se adhiere a la espalda y vibra sutilmente al detectar que el usuario se está encorvando.  
    **Características principales**
@@ -566,7 +566,7 @@ A continuación, se presenta un análisis competitivo que examina a las principa
 ---
 
 3. **Workpace**  
-   ![Logo de Wellnomics](/images/chapter-2/competidores/Wellnomincs.png)  
+   ![Logo de Wellnomics](images/chapter-2/competidores/Wellnomincs.png)  
    **Descripción:**  
    Plataforma integral de wellness laboral que gestiona la ergonomía, programa pausas activas y cumple con estándares de seguridad de la información.  
    **Características principales**
@@ -774,7 +774,7 @@ A continuación se presentan los detalles clave de las entrevistas realizadas a 
   <tbody>
     <tr>
       <td>Entrevista 1</td>
-      <td> <img src="./images/chapter-2/entrevistas/trabajador1.png" alt="interview 1" width="400"/> </td>
+      <td> <img src="images/chapter-2/entrevistas/trabajador1.png" alt="interview 1" width="400"/> </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -807,7 +807,7 @@ A continuación se presentan los detalles clave de las entrevistas realizadas a 
   <tbody>
     <tr>
       <td>Entrevista 2</td>
-      <td> <img src="./images/chapter-2/entrevistas/trabajador2.png" alt="interview 2" width="400"/> </td>
+      <td> <img src="images/chapter-2/entrevistas/trabajador2.png" alt="interview 2" width="400"/> </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -840,7 +840,7 @@ A continuación se presentan los detalles clave de las entrevistas realizadas a 
   <tbody>
     <tr>
       <td>Entrevista 3</td>
-      <td> <img src="./images/chapter-2/entrevistas/trabajador3.png" alt="interview 3" width="400"/> </td>
+      <td> <img src="images/chapter-2/entrevistas/trabajador3.png" alt="interview 3" width="400"/> </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -875,7 +875,7 @@ A continuación se presentan los detalles clave de las entrevistas realizadas a 
   <tbody>
     <tr>
       <td>Entrevista 4</td>
-      <td> <img src="./images/chapter-2/entrevistas/estudiante1.png" alt="interview 4" width="400"/> </td>
+      <td> <img src="images/chapter-2/entrevistas/estudiante1.png" alt="interview 4" width="400"/> </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -908,7 +908,7 @@ A continuación se presentan los detalles clave de las entrevistas realizadas a 
   <tbody>
     <tr>
       <td>Entrevista 5</td>
-      <td> <img src="./images/chapter-2/entrevistas/estudiante2.png" alt="interview 5" width="400"/> </td>
+      <td> <img src="images/chapter-2/entrevistas/estudiante2.png" alt="interview 5" width="400"/> </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -941,7 +941,7 @@ A continuación se presentan los detalles clave de las entrevistas realizadas a 
   <tbody>
     <tr>
       <td>Entrevista 6</td>
-      <td> <img src="./images/chapter-2/entrevistas/estudiante3.png" alt="interview 6" width="400"/> </td>
+      <td> <img src="images/chapter-2/entrevistas/estudiante3.png" alt="interview 6" width="400"/> </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -1025,11 +1025,11 @@ Para el segmento de estudiantes remotos, las seis entrevistas revelan que la may
 
 **Segmento 1: Trabajador Remoto**
 
-<img src="./images/chapter-2/As-Is Scenario Mapping Trabajador Remoto.png" alt="as-is trabajador"/>
+<img src="images/chapter-2/As-Is Scenario Mapping Trabajador Remoto.png" alt="as-is trabajador"/>
 
 **Segmento 2: Estudiante con clases virtuales**
 
-<img src="./images/chapter-2/As-Is Scenario Mapping Estudiante.png" alt="as-is estudiante"/>
+<img src="images/chapter-2/As-Is Scenario Mapping Estudiante.png" alt="as-is estudiante"/>
 
 ### 2.4 Ubiquitous Language
 
@@ -2001,7 +2001,7 @@ El siguiente glosario detalla los términos esenciales del Lenguaje Ubiquo que u
 
 ### 3.3 Impact Mapping
 
-<img src="../report/images/chapter-3/impact-mapping.png" alt="Impact Mapping">
+<img src="images/chapter-3/impact-mapping.png" alt="Impact Mapping">
 
 ### 3.4 Product Backlog
 
@@ -2230,7 +2230,7 @@ Los escenarios refinados de atributos de calidad de ErgoVision representan una e
 | Atributo de Calidad | Estímulo                                              | Escenario Refinado                                           | Evaluación Esperada                      |
 |---------------------|-------------------------------------------------------|--------------------------------------------------------------|------------------------------------------|
 | Rendimiento         | Usuario habilita la cámara para iniciar monitoreo.    | El sistema procesa video y muestra esqueleto en <200 ms.     | 95% de las pruebas cumplen con ≤200 ms.  |
-| Usabilidad          | Usuario recibe notificación de postura incorrecta.    | El sistema despliega alerta clara y entendible en <3 s.      | 90% de usuarios comprenden y reaccionan. |
+| Usabilidad          | Usuario recibe notificación de postura incorrecta.    | El sistema despliega alerta clara y entendible en < 3 s.     | 90% de usuarios comprenden y reaccionan. |
 | Disponibilidad      | Usuario utiliza la app durante una jornada de 8 h.    | El sistema mantiene monitoreo continuo sin interrupciones.   | Uptime ≥99.5% en jornadas de 8h.         |
 | Escalabilidad       | La base de usuarios crece de 100 a 10,000 en 6 meses. | El sistema mantiene tiempos de respuesta ≤500 ms.            | Respuesta ≤500 ms con 10k usuarios.      |
 | Fiabilidad          | El sistema detecta un fallo en la conexión de cámara. | El sistema informa al usuario y reconecta en <10 s.          | Reconexión exitosa en ≥95% de casos.     |
@@ -2247,46 +2247,46 @@ En esta etapa, se identificaron los eventos clave que representan las acciones s
 1.  Define the Purpose
     En esta fase se generan ideas relacionadas con el objetivo del proyecto, aprovechando la lluvia de ideas como recurso clave.
 
-    <img src="/images/chapter-4/paso-1.png" alt="Define the Purpose">
+    <img src="images/chapter-4/paso-1.png" alt="Define the Purpose">
 
 2.  Timelines
     Durante esta fase, los eventos identificados fueron agrupados en subgrupos liderados por un evento en general que encapsula la función principal del grupo.
 
-    <img src="/images/chapter-4/paso-2.png" alt="Timelines">
+    <img src="images/chapter-4/paso-2.png" alt="Timelines">
 
 3.  Paint Points
     En este proceso, se identificaron paint points o puntos problemáticos, que son áreas donde los usuarios pueden experimentar dificultados o fricciones en su interacción con la aplicación. Estos puntos son cruciales para mejorar la experiencia del usuario y optimizar el diseño del sistema.
 
-    <img src="/images/chapter-4/paso-3.png" alt="Paint Points">
+    <img src="images/chapter-4/paso-3.png" alt="Paint Points">
 
 4.  Pivotal points
     Se señalaron los pivotal points o puntos clave, que son eventos críticos que marcan hitos improtantes en el flujo de la plataforma. Estos eventos tienden a ser significativos en el comportamiento del sistema o en la experiencia del usuario.
 
-    <img src="/images/chapter-4/paso-4.png" alt="Pivotal points">
+    <img src="images/chapter-4/paso-4.png" alt="Pivotal points">
 
 5.  Commands
     Cada evento se asoció a un comando en específico que lo desencadena y un actor que lo realiza. Esto ayudó a tener un mejor reconocimiento de cómo interactúan los diferentes usuarios con el sistema.
 
-    <img src="/images/chapter-4/paso-5.png" alt="Commands">
+    <img src="images/chapter-4/paso-5.png" alt="Commands">
 
 6.  Policies
     Durante esta etapa, se identifican las politicas relevantes para cada contexto del sistema. Estas politicas pueden incluir restricciones de negocio, reglas de validación, etc.
 
-    <img src="/images/chapter-4/paso-6.png" alt="Policies">
+    <img src="images/chapter-4/paso-6.png" alt="Policies">
 
 7.  Read Models
     Durante esta fase, se diseñan y desarrollan lso modelos de lectura para cada contexto de sistema, asegurando que proporcionen la información necesaria de manera eficiente y coherente.
 
-    <img src="/images/chapter-4/paso-7.png" alt="Read Models">
+    <img src="images/chapter-4/paso-7.png" alt="Read Models">
 
 8.  External Systems
     Durante esta etapa, se identifican los sistemas externos relevantes para la plataforma y se establecen las interfaces necesarias para integrarlos de manera efectiva.
 
-    <img src="/images/chapter-4/paso-8.png" alt="External Systems">
+    <img src="images/chapter-4/paso-8.png" alt="External Systems">
 
 9.  Aggregates
     Durante esta etapa, se definen aggregates para cada contexto del sistema, asegurando que representen correctamente las transacciones y operaciones coherentes dentro del sistema.
-    <img src="/images/chapter-4/paso-9.png" alt="Aggregates">
+    <img src="images/chapter-4/paso-9.png" alt="Aggregates">
 
 El enlace al Miro: [https://miro.com/app/board/uXjVJIOOJ5E=/](https://miro.com/app/board/uXjVJIOOJ5E=/).
 
@@ -2308,7 +2308,7 @@ Posibles responsabilidades del Bounded Context:
 - Proveer un sistema de validación de credenciales utilizando estándares de seguridad como JWT.
 - Facilitar el acceso a la plataforma basado en los roles asignados al usuario al registrarse.
 
-<img src="/images/chapter-4/iam.png" alt="iam">
+<img src="images/chapter-4/iam.png" alt="iam">
 
 **Candidate para Bounded Context: Orquestrador**
 
@@ -2320,7 +2320,7 @@ Posibles responsabilidades del Bounded Context:
 - Ajustar la iluminación y otros parámetros del entorno que influyen en la detección postural.
 - Coordinar la comunicación entre los distintos módulos (Monitoreo, Notificaciones, Estadísticas).
 
-<img src="/images/chapter-4/orquestador.png" alt="orquestador">
+<img src="images/chapter-4/orquestador.png" alt="orquestador">
 
 **Candidate para Bounded Context: Monitoreo**
 
@@ -2333,7 +2333,7 @@ Posibles responsabilidades del Bounded Context:
 - Detectar desviaciones o malas posturas de forma continua.
 - Registrar la evolución de la postura del usuario a lo largo de la sesión de trabajo.
 
-<img src="/images/chapter-4/monitoreo.png" alt="monitoreo">
+<img src="images/chapter-4/monitoreo.png" alt="monitoreo">
 
 **Candidate para Bounded Context: Notificaciones**
 
@@ -2346,7 +2346,7 @@ Posibles responsabilidades del Bounded Context:
 - Adaptar la frecuencia e intensidad de las alertas según la severidad de la desviación postural.
 - Permitir personalización de notificaciones (tono).
 
-<img src="/images/chapter-4/notificaciones.png" alt="notificacion">
+<img src="images/chapter-4/notificaciones.png" alt="notificacion">
 
 **Candidate para Bounded Context: Estadisticas**
 
@@ -2359,11 +2359,11 @@ Posibles responsabilidades del Bounded Context:
 - Identificar patrones de riesgo o tendencias a lo largo del tiempo.
 - Proveer visualizaciones de datos para el usuario y/o administradores.
 
-<img src="./images/chapter-4/estadisticas.png" alt="estadistica">
+<img src="images/chapter-4/estadisticas.png" alt="estadistica">
 
 Vista completa:
 
-<img src="/images/chapter-4/bc-completo.png" alt="BondenContext">
+<img src="images/chapter-4/bc-completo.png" alt="BondenContext">
 
 #### 4.2.3 Domain Message Flows Modeling
 
@@ -2481,7 +2481,7 @@ El éxito del contexto se medirá por:
 - La reducción de alertas por malas posturas a lo largo del tiempo (como efecto indirecto).
 - La satisfacción de los usuarios con la claridad y utilidad de los reportes generados.
 
- <img src="./images/chapter-4/canvas-estadistica.png" alt="Canvas Estadistica">
+ <img src="images/chapter-4/canvas-estadistica.png" alt="Canvas Estadistica">
 
 **Orquestador**
 
@@ -2563,7 +2563,7 @@ Métricas de Verificación (Verification Metrics):
 
  - El nivel de satisfacción de los usuarios respecto a la preparación del sistema.
 
- <img src="./images/chapter-4/canvas-orquestrador.png" alt="Canvas Orquestrador">
+ <img src="images/chapter-4/canvas-orquestrador.png" alt="Canvas Orquestrador">
 
 
 **IAM (Identity and Access Management)**
@@ -2612,7 +2612,7 @@ El diseño del bounded context IAM se centra en gestionar la identificación y a
    - Número de intentos de acceso no autorizado bloqueados.
    - Disponibilidad del servicio de autenticación superior al 99.9%.
 
-<img src="./images/chapter-4/canvas-IAM.png" alt="Canvas IAM">
+<img src="images/chapter-4/canvas-IAM.png" alt="Canvas IAM">
 
 **Monitoreo**
 
@@ -2662,7 +2662,7 @@ El diseño del bounded context Monitoreo se centra en la gestión del usuario du
    - Disponibilidad del servicio de monitoreo superior al 95%.
    - Satisfacción del usuario con la precisión de las detecciones.
 
-<img src="./images/chapter-4/canvas-Monitoreo.png" alt="Canvas Monitoreo">
+<img src="images/chapter-4/canvas-Monitoreo.png" alt="Canvas Monitoreo">
 
 **Notificaciones**
 
@@ -2710,7 +2710,7 @@ El diseño del bounded context Notificaciones se centra únicamente en gestionar
    - Tasa de apertura de notificaciones por parte de los usuarios.
    - Reducción en comportamientos de riesgo postural tras recibir alertas.
 
-<img src="./images/chapter-4/canvas-Notificaciones.png" alt="Canvas Notificaciones">
+<img src="images/chapter-4/canvas-Notificaciones.png" alt="Canvas Notificaciones">
 
 #### 4.2.5 Context Mapping
 
