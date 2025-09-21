@@ -157,8 +157,9 @@ del ABET – EAC - Student Outcome 3.
         - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta primera entrega comuniqué oralmente ideas y dudas para la realización la realización del event storming los bounded contexts durante las reuniones grupales en discord, además, comunique activamente sobre la entrega de las tareas que se me asignaron semanalmente.<br>
         - <b>Gianluca Santino Pasquale Barrenechea:</b> Durante las reuniones grupales en Discord, comuniqué de manera efectiva las ideas y avances relacionados con la realización del Event Storming y los Bounded Contexts. Además, mantuve una comunicación activa sobre la entrega de las tareas asignadas semanalmente, asegurando que todos los miembros del equipo estuvieran informados y alineados con los objetivos del proyecto.<br>
         - <b>Godofredo Quispe Tipo:</b> Comuniqué oralmente ideas de cómo realizar partes del proyecto y expuse los resultados obtenidos, facilitando la revisión de la información por parte de los diferentes miembros del equipo.<br>
-        -<b>Gabriel Alexander Casas Sanchez:</b> Exposición de los atributos de calidad, el propósito del proyecto y dirigí el proceso de eventstorming, simplifique los términos técnicos a un lenguaje común para la correcta compresión de los asistentes. <br>
-      </td>
+        - <b>Gabriel Alexander Casas Sanchez:</b> Exposición de los atributos de calidad, el propósito del proyecto y dirigí el proceso de eventstorming, simplifique los términos técnicos a un lenguaje común para la correcta compresión de los asistentes. <br>
+        - <b>Juan Diego Astonitas Diaz:</b> Expuse el proyecto en clase para la retroalimentacion del profesor, además de ser lider del proyecto para poder orientarlo al exito <br>
+       </td>
       <td>
         - El equipo ha demostrado un nivel de desarrollo satisfactorio y homogéneo en esta competencia. Todos los miembros participaron activamente en las reuniones de Discord, comunicando ideas, avances y asignaciones de manera clara y efectiva. Se evidencia una comunicación colaborativa que facilitó la alineación del grupo y la revisión de la información.
       </td>
@@ -171,6 +172,7 @@ del ABET – EAC - Student Outcome 3.
         - <b>Gianluca Santino Pasquale Barrenechea:</b> En la primera entrega del informe, me encargué de redactar las hipótesis, el Lean UX Canvas, la entrevista a uno de los segmentos objetivos y el Bounded Context Canvas asignado. Además, mantuve una comunicación constante sobre mis avances diarios en el grupo, asegurando que todos los miembros estuvieran al tanto del progreso del proyecto.<br>
         - <b>Godofredo Quispe Tipo:</b> A través de un análisis de competidores y una serie de entrevistas a usuarios clave, elaboré un informe detallado que presentaba un panorama objetivo del mercado. Con base en esta documentación, formulé y comuniqué estrategias y tácticas frente a competidores, lo que sirvió como guía para la toma de decisiones en el desarrollo del producto.<br>
         - <b>Gabriel Alexander Casas Sanchez:</b> Desarrollé los problem statement assumptions, task matrix, empathy mapping, atribute driven design process. Busque presentar los conceptos de manera clara y estructurada para facilitar la comprensión. <br>
+        - <b>Juan Diego Astonitas Diaz:</b> Desarrolle las user y technical stories describiendo la funcionalidad de nuestra solucion  <br>
       </td>
       <td>
         - En conjunto, las contribuciones escritas fueron fundamentales para sentar una base documental sólida, guiar la toma de decisiones y cumplir efectivamente los objetivos del proyecto.
