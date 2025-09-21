@@ -845,6 +845,8 @@ El diseño del bounded context Notificaciones se centra únicamente en gestionar
 
 #### 4.2.5 Context Mapping
 
+![context-map.png](images/chapter-4/context-map.png)
+
 ### 4.3 Software Architecture
 
 #### 4.3.1 Software Architecture System Landscape Diagram
