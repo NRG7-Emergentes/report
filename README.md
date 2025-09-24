@@ -2714,6 +2714,198 @@ El diseño del bounded context Notificaciones se centra únicamente en gestionar
 
 ![nrg7-deployment.png](images/chapter-4/nrg7-deployment.png)
 
+### Capítulo V: Tactical-Level Software Design
+
+#### 5.1. Bounded Context: Orquestrador
+##### 5.1.1. Domain Layer
+##### 5.1.2. Interface Layer
+##### 5.1.3. Application Layer
+##### 5.1.4. Infrastructure Layer
+###### 5.1.6. Bounded Context Software Architecture Component Level Diagrams
+###### 5.1.7. Bounded Context Software Architecture Code Level Diagrams
+
+#### 5.2. Bounded Context: Monitoreo
+##### 5.2.1. Domain Layer
+##### 5.2.2. Interface Layer
+##### 5.2.3. Application Layer
+##### 5.2.4. Infrastructure Layer
+###### 5.2.6. Bounded Context Software Architecture Component Level Diagrams
+###### 5.2.7. Bounded Context Software Architecture Code Level Diagrams
+
+#### 5.3. Bounded Context: Estadisticas
+##### 5.3.1. Domain Layer
+##### 5.3.2. Interface Layer
+##### 5.3.3. Application Layer
+##### 5.3.4. Infrastructure Layer
+###### 5.3.6. Bounded Context Software Architecture Component Level Diagrams
+###### 5.3.7. Bounded Context Software Architecture Code Level Diagrams
+
+#### 5.4. Bounded Context: Notificaciones
+##### 5.4.1. Domain Layer
+<p>
+  En la <strong>Capa de Dominio</strong> del <strong>Bounded Context de Notificaciones</strong>, los principales agregados son
+  <code>Notification</code> y <code>UserPreferences</code>. Estos encapsulan los conceptos de negocio necesarios para
+  gestionar mensajes en toda la plataforma: creación, validación, priorización y entrega según la configuración del usuario.
+</p>
+
+<p>
+  La lógica de dominio para el envío y validación de notificaciones se concentra en el servicio de dominio
+  <code>NotificationService</code>, que aplica las reglas de negocio (prioridades, preferencias de usuario, persistencia).
+</p>
+
+<hr />
+
+<h5>Agregado: <code>Notification</code></h5>
+<p><strong>Descripción:</strong> Representa una notificación generada por el sistema para un usuario específico.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>id</td><td>Long</td><td>Privado</td><td>Identificador único de la notificación.</td></tr>
+    <tr><td>userId</td><td>Long</td><td>Privado</td><td>Identificador del usuario destinatario.</td></tr>
+    <tr><td>title</td><td>String</td><td>Privado</td><td>Título corto de la notificación.</td></tr>
+    <tr><td>message</td><td>String</td><td>Privado</td><td>Contenido principal de la notificación.</td></tr>
+    <tr><td>type</td><td>NotificationType</td><td>Privado</td><td>Categoría de la notificación (INFO / REMINDER / ALERT).</td></tr>
+    <tr><td>status</td><td>NotificationStatus</td><td>Privado</td><td>Estado de entrega/lectura (PENDING, SENT, FAILED, READ).</td></tr>
+    <tr><td>channel</td><td>DeliveryChannel</td><td>Privado</td><td>Medio de entrega (PUSH, EMAIL, SMS).</td></tr>
+    <tr><td>timestamp</td><td>LocalDateTime</td><td>Privado</td><td>Fecha y hora de creación.</td></tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>send()</td><td>void</td><td>Público</td><td>Inicia el envío de la notificación usando el canal configurado.</td></tr>
+    <tr><td>markAsRead()</td><td>void</td><td>Público</td><td>Marca la notificación como leída por el usuario.</td></tr>
+    <tr><td>isRead()</td><td>Boolean</td><td>Público</td><td>Indica si la notificación ha sido leída.</td></tr>
+    <tr><td>resend()</td><td>void</td><td>Público</td><td>Intenta reenviar una notificación fallida.</td></tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h5>Agregado: <code>UserPreferences</code></h5>
+<p><strong>Descripción:</strong> Encapsula la configuración de entrega de notificaciones personalizable por el usuario.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>userId</td><td>Long</td><td>Privado</td><td>Identificador del usuario.</td></tr>
+    <tr><td>preferredChannels</td><td>List&lt;DeliveryChannel&gt;</td><td>Privado</td><td>Canales de entrega preferidos (PUSH, EMAIL, SMS).</td></tr>
+    <tr><td>frequency</td><td>FrequencyType</td><td>Privado</td><td>Frecuencia de entrega (IMMEDIATE, DAILY, WEEKLY).</td></tr>
+    <tr><td>doNotDisturb</td><td>Boolean</td><td>Privado</td><td>Habilita/deshabilita notificaciones en ciertos horarios.</td></tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>getPreferences()</td><td>UserPreferences</td><td>Público</td><td>Devuelve las preferencias del usuario.</td></tr>
+    <tr><td>updatePreferences()</td><td>void</td><td>Público</td><td>Actualiza las preferencias de notificación del usuario.</td></tr>
+    <tr><td>isChannelAllowed(DeliveryChannel)</td><td>Boolean</td><td>Público</td><td>Verifica si un canal está habilitado.</td></tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h5>Objeto de Valor: <code>NotificationType</code></h5>
+<table>
+  <thead><tr><th>Nombre</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>INFO</td><td>Notificación informativa general.</td></tr>
+    <tr><td>REMINDER</td><td>Recordatorio de pausas, tareas o eventos programados.</td></tr>
+    <tr><td>ALERT</td><td>Notificación de alta prioridad (ej. alerta crítica de postura).</td></tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h5>Objeto de Valor: <code>DeliveryChannel</code></h5>
+<table>
+  <thead><tr><th>Nombre</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>PUSH</td><td>Notificación push a clientes web/móvil.</td></tr>
+    <tr><td>EMAIL</td><td>Entrega por correo electrónico.</td></tr>
+    <tr><td>SMS</td><td>Entrega por SMS.</td></tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h5>Objeto de Valor: <code>NotificationStatus</code></h5>
+<table>
+  <thead><tr><th>Nombre</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>PENDING</td><td>En cola para procesamiento.</td></tr>
+    <tr><td>SENT</td><td>Entregado exitosamente al canal.</td></tr>
+    <tr><td>FAILED</td><td>Entrega fallida (posible reintento).</td></tr>
+    <tr><td>READ</td><td>Marcado como leído por el usuario.</td></tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h5>Servicio de Dominio: <code>NotificationService</code></h5>
+<p><strong>Descripción:</strong> Encapsula las reglas de negocio para construir, validar, priorizar, persistir y despachar notificaciones según las preferencias del usuario y las políticas del sistema.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Tipo de Retorno</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>sendNotification(Notification n)</td><td>void</td><td>Envía la notificación respetando preferencias, prioridad y canales disponibles.</td></tr>
+    <tr><td>validateType(Notification n)</td><td>Boolean</td><td>Verifica que el tipo de notificación sea permitido y esté correctamente formado.</td></tr>
+    <tr><td>applyUserPreferences(UserPreferences up)</td><td>void</td><td>Ajusta la lógica de entrega (canales, frecuencia, DND) antes del despacho.</td></tr>
+    <tr><td>persist(Notification n)</td><td>void</td><td>Almacena la notificación en el historial para auditoría y UI.</td></tr>
+    <tr><td>retryDelivery(Notification n)</td><td>void</td><td>Reintenta la entrega de notificaciones fallidas según la política de reintentos.</td></tr>
+  </tbody>
+</table>
+
+##### 5.4.2. Interface Layer
+##### 5.4.3. Application Layer
+##### 5.4.4. Infrastructure Layer
+###### 5.4.6. Bounded Context Software Architecture Component Level Diagrams
+###### 5.4.7. Bounded Context Software Architecture Code Level Diagrams
+
+#### 5.5. Bounded Context: IAM
+##### 5.5.1. Domain Layer
+##### 5.5.2. Interface Layer
+##### 5.5.3. Application Layer
+##### 5.5.4. Infrastructure Layer
+##### 5.5.6. Bounded Context Software Architecture Component Level Diagrams
+##### 5.5.7. Bounded Context Software Architecture Code Level Diagrams
+###### 5.5.7.1. Bounded Context Domain Layer Class Diagrams
+###### 5.5.7.2. Bounded Context Database Design Diagram
+
+
 ## Conclusiones
 
 **TB1:**  
