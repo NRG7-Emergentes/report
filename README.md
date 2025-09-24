@@ -3285,6 +3285,7 @@ El diseño del bounded context Notificaciones se centra únicamente en gestionar
   Cuando se genera una notificación, el <code>NotificationCommandService</code> delega la tarea de envío al <code>NotificationDispatcher</code>, un componente orquestador que selecciona el canal adecuado según las preferencias de cada usuario. Actualmente, el sistema soporta dos adaptadores de salida: <code>FirebaseNotificationAdapter</code> para el envío de notificaciones push mediante Firebase Cloud Messaging, y <code>SmsNotificationAdapter</code> para el envío de mensajes de texto a través de un <strong>SMS Gateway</strong> externo.
 </p>
 <img src="images/chapter-5/nrg7-notificationcomponent.png" alt="Diagrama de Componentes de Arquitectura de Software - Bounded Context Notificaciones"/>
+
 ###### 5.4.7. Bounded Context Software Architecture Code Level Diagrams
 
 #### 5.5. Bounded Context: IAM
