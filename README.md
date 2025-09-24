@@ -3273,19 +3273,18 @@ El diseño del bounded context Notificaciones se centra únicamente en gestionar
 ###### 5.4.6. Bounded Context Software Architecture Component Level Diagrams
 
 <p>
-  This component diagram represents a monolithic system responsible for managing and sending notifications within the SynHub platform. A <strong>Single-Page Application (SPA)</strong>, implemented with Angular, interacts with a <strong>Web API Application</strong> developed in Spring Boot via HTTP (REST) calls.
+  Este diagrama de componentes representa un sistema monolítico encargado de la gestión y envío de notificaciones dentro de la plataforma <strong>ErgoVision</strong>. Una <strong>Single-Page Application (SPA)</strong>, implementada con Angular, interactúa con una <strong>aplicación Web API</strong> desarrollada en Spring Boot mediante llamadas HTTP (REST).
 </p>
 <p>
-  The SPA communicates with the <code>NotificationController</code>, which exposes REST endpoints to query, create, or update notifications. This controller delegates operations to two main services: <code>NotificationQueryService</code>, responsible for retrieving notifications, and <code>NotificationCommandService</code>, responsible for creating, validating, and sending new notifications.
+  La SPA se comunica con el <code>NotificationController</code>, que expone endpoints REST para consultar, crear o actualizar notificaciones. Este controlador delega las operaciones a dos servicios principales: <code>NotificationQueryService</code>, responsable de la recuperación de notificaciones, y <code>NotificationCommandService</code>, encargado de la creación, validación y envío de nuevas notificaciones.
 </p>
 <p>
-  Both services access the <code>NotificationRepository</code> and <code>UserPreferencesRepository</code>, which use JPA to perform read and write operations on a MySQL database. The managed information includes both notifications and user preferences regarding communication channels.
+  Ambos servicios acceden a los repositorios <code>NotificationRepository</code> y <code>UserPreferencesRepository</code>, que emplean JPA para realizar operaciones de lectura y escritura en una base de datos MySQL. La información gestionada incluye tanto las notificaciones como las preferencias de los usuarios sobre los canales de comunicación.
 </p>
 <p>
-  When a notification is generated, the <code>NotificationCommandService</code> delegates the sending task to the <code>NotificationDispatcher</code>, an orchestrator component that selects the appropriate channel according to each user's preferences. Currently, the system supports two outbound adapters: <code>FirebaseNotificationAdapter</code> for sending push notifications via Firebase Cloud Messaging, and <code>SmsNotificationAdapter</code> for sending text messages through an external <strong>SMS Gateway</strong>.
+  Cuando se genera una notificación, el <code>NotificationCommandService</code> delega la tarea de envío al <code>NotificationDispatcher</code>, un componente orquestador que selecciona el canal adecuado según las preferencias de cada usuario. Actualmente, el sistema soporta dos adaptadores de salida: <code>FirebaseNotificationAdapter</code> para el envío de notificaciones push mediante Firebase Cloud Messaging, y <code>SmsNotificationAdapter</code> para el envío de mensajes de texto a través de un <strong>SMS Gateway</strong> externo.
 </p>
-<img src="images/chapter-5/nrg7-notificationcomponent.png" alt="Bounded Context Software Architecture Component Level Diagrams"/>
-
+<img src="images/chapter-5/nrg7-notificationcomponent.png" alt="Diagrama de Componentes de Arquitectura de Software - Bounded Context Notificaciones"/>
 ###### 5.4.7. Bounded Context Software Architecture Code Level Diagrams
 
 #### 5.5. Bounded Context: IAM
