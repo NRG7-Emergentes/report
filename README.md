@@ -3110,6 +3110,166 @@ El diseño del bounded context Notificaciones se centra únicamente en gestionar
 </ul>
 
 ##### 5.4.4. Infrastructure Layer
+
+<p>
+  En el <strong>Infrastructure Layer</strong> del contexto de <strong>Notificaciones</strong>, se concentran las implementaciones concretas 
+  que permiten al sistema interactuar con la base de datos y con servicios externos de mensajería. 
+  Esta capa materializa los contratos definidos en el <em>Domain Layer</em>, garantizando la persistencia de notificaciones, 
+  el acceso a preferencias de usuario y la entrega real de mensajes (push, SMS o email).
+</p>
+
+<p>
+  Se implementan los repositorios <code>NotificationRepository</code> y <code>UserPreferencesRepository</code>, además de adaptadores 
+  para integrarse con proveedores externos como <strong>Firebase Cloud Messaging</strong>, un servicio de <strong>SMS Gateway</strong>, 
+  y un servicio de <strong>Email SMTP</strong>. 
+  De esta manera, la lógica de negocio en capas superiores se mantiene desacoplada de las dependencias tecnológicas.
+</p>
+
+<h3>Justificación:</h3>
+<p>
+  Separar la infraestructura de la lógica de dominio permite reemplazar motores de base de datos o proveedores externos 
+  sin afectar la lógica central. Esto asegura un sistema modular, mantenible y fácilmente testeable, 
+  donde la infraestructura es intercambiable y configurable según las necesidades del proyecto.
+</p>
+
+<hr>
+
+<h3>Repository: <code>NotificationRepositoryImpl</code></h3>
+<p><strong>Descripción:</strong> Implementación concreta del repositorio de notificaciones, que maneja operaciones de lectura y escritura en la base de datos relacional.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>findByUserId(Long userId)</td>
+      <td>List&lt;Notification&gt;</td>
+      <td>Public</td>
+      <td>Obtiene todas las notificaciones de un usuario desde la base de datos.</td>
+    </tr>
+    <tr>
+      <td>findUnreadByUserId(Long userId)</td>
+      <td>List&lt;Notification&gt;</td>
+      <td>Public</td>
+      <td>Recupera las notificaciones no leídas de un usuario.</td>
+    </tr>
+    <tr>
+      <td>save(Notification notification)</td>
+      <td>void</td>
+      <td>Public</td>
+      <td>Guarda una nueva notificación en la base de datos.</td>
+    </tr>
+    <tr>
+      <td>updateStatus(Long notificationId, String status)</td>
+      <td>void</td>
+      <td>Public</td>
+      <td>Actualiza el estado de una notificación en la base de datos.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Repository: <code>UserPreferencesRepositoryImpl</code></h3>
+<p><strong>Descripción:</strong> Implementación del repositorio que administra las preferencias de notificación de cada usuario.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>findByUserId(Long userId)</td>
+      <td>UserPreferences</td>
+      <td>Public</td>
+      <td>Obtiene las preferencias de notificación configuradas por un usuario.</td>
+    </tr>
+    <tr>
+      <td>update(Long userId, UserPreferences preferences)</td>
+      <td>void</td>
+      <td>Public</td>
+      <td>Actualiza las preferencias de notificación en la base de datos.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Adapter: <code>FirebaseNotificationAdapter</code></h3>
+<p><strong>Descripción:</strong> Adaptador que envía notificaciones push a través de Firebase Cloud Messaging.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sendPush(Notification notification, String deviceToken)</td>
+      <td>void</td>
+      <td>Public</td>
+      <td>Envía una notificación push a un dispositivo registrado.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Adapter: <code>SmsNotificationAdapter</code></h3>
+<p><strong>Descripción:</strong> Adaptador que se encarga de enviar notificaciones por SMS usando un servicio externo de mensajería.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sendSms(Notification notification, String phoneNumber)</td>
+      <td>void</td>
+      <td>Public</td>
+      <td>Envía una notificación vía SMS al número de teléfono del usuario.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Adapter: <code>EmailNotificationAdapter</code></h3>
+<p><strong>Descripción:</strong> Adaptador que permite enviar notificaciones por correo electrónico a través de un servicio SMTP o proveedor externo de email.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sendEmail(Notification notification, String email)</td>
+      <td>void</td>
+      <td>Public</td>
+      <td>Envía la notificación al correo electrónico del usuario.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Adapter: <code>NotificationDispatcher</code></h3>
+<p><strong>Descripción:</strong> Componente orquestador que decide, según las preferencias del usuario, si la notificación se envía por push, SMS o email.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>dispatch(Notification notification, UserPreferences preferences)</td>
+      <td>void</td>
+      <td>Public</td>
+      <td>Determina el canal adecuado (push, SMS o email) y envía la notificación.</td>
+    </tr>
+  </tbody>
+</table>
+
 ###### 5.4.6. Bounded Context Software Architecture Component Level Diagrams
 ###### 5.4.7. Bounded Context Software Architecture Code Level Diagrams
 
