@@ -2890,6 +2890,85 @@ El diseño del bounded context Notificaciones se centra únicamente en gestionar
 </table>
 
 ##### 5.4.2. Interface Layer
+
+<p>
+  En la <strong>Capa de Interfaz</strong> del <strong>Bounded Context de Notificaciones</strong>, se expone el controlador 
+  <code>NotificationController</code>, el cual ofrece endpoints RESTful para la gestión de notificaciones. 
+  Estos incluyen listar notificaciones, consultar detalles, marcar como leídas, reenviar en caso de fallo 
+  y crear nuevas notificaciones respetando las preferencias de usuario. 
+</p>
+
+<h3>Justificación:</h3>
+<p>
+  Esta capa desacopla la lógica de negocio del acceso externo a la plataforma. 
+  Ofrece una API clara, consistente y segura que puede ser consumida por la aplicación móvil, 
+  la interfaz web y otros bounded contexts como <em>Analytics</em> o <em>Monitoring</em>. 
+  Además, facilita la integración de funcionalidades como notificaciones emergentes, 
+  recordatorios configurados y resúmenes personalizados.
+</p>
+
+<h3>Controller: <code>NotificationController</code></h3>
+
+<h4>Atributos</h4>
+<table>
+  <thead>
+    <tr><th>Tipo de dato</th><th>Nombre</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NotificationQueryService</td>
+      <td>notificationQueryService</td>
+      <td>Privado</td>
+      <td>Servicio para consultar notificaciones (listar, filtrar, obtener detalles).</td>
+    </tr>
+    <tr>
+      <td>NotificationCommandService</td>
+      <td>notificationCommandService</td>
+      <td>Privado</td>
+      <td>Servicio para ejecutar comandos de creación, actualización y reenvío de notificaciones.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>Métodos</h4>
+<table>
+  <thead>
+    <tr><th>Método</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>getUserNotifications(Long userId)</td>
+      <td>List&lt;Notification&gt;</td>
+      <td>Público</td>
+      <td>Devuelve todas las notificaciones de un usuario, considerando filtros de estado y tipo.</td>
+    </tr>
+    <tr>
+      <td>getNotificationById(Long notificationId)</td>
+      <td>Notification</td>
+      <td>Público</td>
+      <td>Obtiene los detalles de una notificación específica.</td>
+    </tr>
+    <tr>
+      <td>markAsRead(Long notificationId)</td>
+      <td>void</td>
+      <td>Público</td>
+      <td>Marca una notificación como leída.</td>
+    </tr>
+    <tr>
+      <td>sendNotification(NotificationRequest request)</td>
+      <td>void</td>
+      <td>Público</td>
+      <td>Crea y envía una nueva notificación a un usuario o grupo según sus preferencias.</td>
+    </tr>
+    <tr>
+      <td>resendNotification(Long notificationId)</td>
+      <td>void</td>
+      <td>Público</td>
+      <td>Reintenta enviar una notificación fallida.</td>
+    </tr>
+  </tbody>
+</table>
+
 ##### 5.4.3. Application Layer
 ##### 5.4.4. Infrastructure Layer
 ###### 5.4.6. Bounded Context Software Architecture Component Level Diagrams
