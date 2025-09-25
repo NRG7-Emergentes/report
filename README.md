@@ -3290,6 +3290,127 @@ El diseño del bounded context Notificaciones se centra únicamente en gestionar
 
 #### 5.5. Bounded Context: IAM
 ##### 5.5.1. Domain Layer
+
+<p>
+  En la <strong>Capa de Dominio</strong> del <strong>Bounded Context de Identity and Access Management (IAM)</strong>, 
+  los principales agregados y entidades son <code>User</code> y <code>Role</code>. 
+  Estos encapsulan la lógica de negocio para la gestión de autenticación, autorización y asignación de roles en la aplicación.
+</p>
+
+<hr />
+
+<h5>Agregado: <code>User</code></h5>
+<p><strong>Descripción:</strong> Representa el agregado raíz "Usuario", que contiene los datos de la cuenta y sus roles asociados.</p>
+
+<table>
+  <thead>
+    <tr><th>Atributo</th><th>Tipo</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>email</td><td>String</td><td>Privado</td><td>Correo electrónico del usuario.</td></tr>
+    <tr><td>password</td><td>String</td><td>Privado</td><td>Contraseña del usuario.</td></tr>
+    <tr><td>roles</td><td>Set&lt;Role&gt;</td><td>Privado</td><td>Conjunto de roles asociados al usuario.</td></tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Tipo de Retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>addRole(Role role)</td><td>void</td><td>Público</td><td>Añade un rol al usuario.</td></tr>
+    <tr><td>addRoles(List&lt;Role&gt; roles)</td><td>void</td><td>Público</td><td>Añade múltiples roles al usuario.</td></tr>
+    <tr><td>getSerializedRoles()</td><td>List&lt;String&gt;</td><td>Público</td><td>Devuelve los roles del usuario como lista serializada.</td></tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h5>Entidad: <code>Role</code></h5>
+<p><strong>Descripción:</strong> Representa un rol dentro del sistema, asociado a un objeto de valor <code>Roles</code>.</p>
+
+<table>
+  <thead>
+    <tr><th>Atributo</th><th>Tipo</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>id</td><td>Long</td><td>Privado</td><td>Identificador único del rol.</td></tr>
+    <tr><td>name</td><td>Roles</td><td>Privado</td><td>Nombre del rol como value object.</td></tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Tipo de Retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>getStringName()</td><td>String</td><td>Público</td><td>Obtiene el nombre del rol como texto.</td></tr>
+    <tr><td>getDefaultRole()</td><td>Role</td><td>Público</td><td>Retorna el rol por defecto (ej: ROLE_ADMIN).</td></tr>
+    <tr><td>toRoleFromName(String name)</td><td>Role</td><td>Público</td><td>Crea un rol a partir de un nombre string.</td></tr>
+    <tr><td>validateRoleSet(List&lt;Role&gt; roles)</td><td>List&lt;Role&gt;</td><td>Público</td><td>Valida una lista de roles y asigna uno por defecto si está vacía.</td></tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h5>Objeto de Valor: <code>Roles</code></h5>
+<p><strong>Descripción:</strong> Enumeración que define los roles disponibles en el sistema.</p>
+
+<table>
+  <thead><tr><th>Nombre</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>ROLE_ADMIN</td><td>Administrador del sistema.</td></tr>
+    <tr><td>ROLE_PARKING_OWNER</td><td>Propietario de estacionamiento.</td></tr>
+    <tr><td>ROLE_DRIVER</td><td>Conductor del sistema.</td></tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h5>Servicios de Dominio</h5>
+
+<h6>Servicio: <code>RoleCommandService</code></h6>
+<p><strong>Descripción:</strong> Define operaciones para la creación e inicialización de roles.</p>
+<table>
+  <thead><tr><th>Método</th><th>Tipo de Retorno</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>handle(SeedRolesCommand command)</td><td>void</td><td>Maneja la creación inicial de roles en el sistema.</td></tr>
+  </tbody>
+</table>
+
+<h6>Servicio: <code>RoleQueryService</code></h6>
+<p><strong>Descripción:</strong> Permite consultar información de roles registrados.</p>
+<table>
+  <thead><tr><th>Método</th><th>Tipo de Retorno</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>handle(GetAllRolesQuery query)</td><td>List&lt;Role&gt;</td><td>Obtiene todos los roles registrados.</td></tr>
+    <tr><td>handle(GetRoleByNameQuery query)</td><td>Role</td><td>Busca un rol por su nombre.</td></tr>
+  </tbody>
+</table>
+
+<h6>Servicio: <code>UserCommandService</code></h6>
+<p><strong>Descripción:</strong> Define operaciones para registro y autenticación de usuarios.</p>
+<table>
+  <thead><tr><th>Método</th><th>Tipo de Retorno</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>handle(SignInCommand command)</td><td>User</td><td>Autentica a un usuario y devuelve su información con token.</td></tr>
+    <tr><td>handle(SignUpDriverCommand command)</td><td>User</td><td>Registra un nuevo conductor.</td></tr>
+    <tr><td>handle(SignUpParkingOwnerCommand command)</td><td>User</td><td>Registra un nuevo propietario de estacionamiento.</td></tr>
+  </tbody>
+</table>
+
+<h6>Servicio: <code>UserQueryService</code></h6>
+<p><strong>Descripción:</strong> Permite obtener información y verificar la existencia de usuarios.</p>
+<table>
+  <thead><tr><th>Método</th><th>Tipo de Retorno</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>handle(GetAllUsersQuery query)</td><td>List&lt;User&gt;</td><td>Obtiene todos los usuarios registrados.</td></tr>
+    <tr><td>handle(GetUserByIdQuery query)</td><td>User</td><td>Busca un usuario por ID.</td></tr>
+    <tr><td>handle(GetUserByUsernameQuery query)</td><td>User</td><td>Busca un usuario por nombre de usuario.</td></tr>
+    <tr><td>handle(CheckUserByIdQuery query)</td><td>Boolean</td><td>Verifica si existe un usuario con un ID específico.</td></tr>
+  </tbody>
+</table>
+
 ##### 5.5.2. Interface Layer
 ##### 5.5.3. Application Layer
 ##### 5.5.4. Infrastructure Layer
