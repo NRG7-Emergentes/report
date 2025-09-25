@@ -3567,8 +3567,16 @@ El controlador <code>UsersController</code> gestiona las solicitudes para obtene
 ##### 5.5.6. Bounded Context Software Architecture Component Level Diagrams
 ##### 5.5.7. Bounded Context Software Architecture Code Level Diagrams
 ###### 5.5.7.1. Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases muestra cómo se relacionan las entidades User y Role, así como los objetos de valor asociados a ellas.
+
+<img src="images/chapter-5/IAM-DC.png" alt="Diagrama de Clases - Bounded Context IAM"/>
+
 ###### 5.5.7.2. Bounded Context Database Design Diagram
 
+En el diagrama de base, se observa la tabla users y roles, así como la relación entre estas.
+
+<img src="images/chapter-5/IAM-DB.png" alt="Diagrama de Base de Datos - Bounded Context IAM"/>
 
 ## Conclusiones
 
