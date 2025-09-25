@@ -3467,7 +3467,103 @@ El controlador <code>UsersController</code> gestiona las solicitudes para obtene
 </table>
 
 ##### 5.5.3. Application Layer
+
+<p>
+  El <strong>Application Layer</strong> contiene la lógica necesaria para procesar las operaciones relacionadas con las entidades, 
+  como la creación de roles y usuarios, y la gestión de sus acciones. 
+  Esta capa maneja la lógica del negocio que no forma parte del dominio central, 
+  sino que orquesta las acciones entre diferentes componentes del sistema.
+</p>
+
+<h6>Clase: <code>RoleCommandServiceImpl</code></h6>
+<p><strong>Descripción:</strong> La clase <code>RoleCommandServiceImpl</code> se encarga de manejar los comandos relacionados con los roles.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>handle(SeedRolesCommand command)</td><td>Maneja el comando para crear roles si no existen.</td><td>POST /roles/seed</td><td>Devuelve la lista de roles creados.</td></tr>
+  </tbody>
+</table>
+
+<h6>Clase: <code>UserCommandServiceImpl</code></h6>
+<p><strong>Descripción:</strong> La clase <code>UserCommandServiceImpl</code> maneja los comandos relacionados con los usuarios.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>handle(SignInCommand command)</td><td>Maneja el inicio de sesión de un usuario.</td><td>POST /sign-in</td><td>Devuelve el recurso de usuario autenticado.</td></tr>
+    <tr><td>handle(SignUpStudentCommand command)</td><td>Maneja el registro de un estudiante.</td><td>POST /sign-up/student</td><td>Devuelve el recurso del usuario creado.</td></tr>
+    <tr><td>handle(SignUpWorkerCommand command)</td><td>Maneja el registro de un trabajador.</td><td>POST /sign-up/worker</td><td>Devuelve el recurso del usuario creado.</td></tr>
+  </tbody>
+</table>
+
+<h6>Clase: <code>RoleQueryServiceImpl</code></h6>
+<p><strong>Descripción:</strong> La clase <code>RoleQueryServiceImpl</code> maneja las consultas relacionadas con los roles.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>handle(GetAllRolesQuery query)</td><td>Devuelve todos los roles.</td><td>GET /roles</td><td>Lista de recursos de roles.</td></tr>
+    <tr><td>handle(GetRoleByNameQuery query)</td><td>Devuelve un rol por su nombre.</td><td>GET /roles/{name}</td><td>Recurso de rol.</td></tr>
+  </tbody>
+</table>
+
+<h6>Clase: <code>UserQueryServiceImpl</code></h6>
+<p><strong>Descripción:</strong> La clase <code>UserQueryServiceImpl</code> maneja las consultas relacionadas con los usuarios.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>handle(GetAllUsersQuery query)</td><td>Devuelve todos los usuarios.</td><td>GET /users</td><td>Lista de recursos de usuarios.</td></tr>
+    <tr><td>handle(GetUserByIdQuery query)</td><td>Devuelve un usuario por su ID.</td><td>GET /users/{userId}</td><td>Recurso de usuario por ID.</td></tr>
+    <tr><td>handle(GetUserByUsernameQuery query)</td><td>Devuelve un usuario por su correo electrónico.</td><td>GET /users/username/{email}</td><td>Recurso de usuario.</td></tr>
+    <tr><td>handle(CheckUserByIdQuery query)</td><td>Verifica si un usuario existe por su ID.</td><td>GET /users/check/{userId}</td><td>Boolean (true/false).</td></tr>
+  </tbody>
+</table>
+
 ##### 5.5.4. Infrastructure Layer
+
+<p>
+  La capa de <strong>Infrastructure</strong> se encarga de la interacción con fuentes externas de datos, 
+  como bases de datos, APIs de terceros o cualquier recurso fuera del ámbito de la lógica de negocio del sistema. 
+  En este caso, los repositorios <code>UserRepository</code> y <code>RoleRepository</code> son responsables de la persistencia de los datos.
+</p>
+
+<h6>Repositorio: <code>UserRepository</code></h6>
+<p><strong>Descripción:</strong> Repositorio que maneja las operaciones de persistencia relacionadas con los usuarios en la base de datos.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>findByEmail(String email)</td><td>Busca un usuario en la base de datos utilizando su correo electrónico.</td><td>GET /users/email/{email}</td><td>Devuelve un Optional&lt;User&gt;.</td></tr>
+    <tr><td>existsByEmail(String email)</td><td>Verifica si un usuario con el correo especificado ya existe.</td><td>GET /users/exists/email/{email}</td><td>Devuelve un boolean.</td></tr>
+    <tr><td>existsById(Long userId)</td><td>Verifica si un usuario con el ID especificado ya existe.</td><td>GET /users/exists/{userId}</td><td>Devuelve un boolean.</td></tr>
+  </tbody>
+</table>
+
+<h6>Repositorio: <code>RoleRepository</code></h6>
+<p><strong>Descripción:</strong> Repositorio encargado de gestionar la persistencia de los roles del sistema.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>findByName(Roles name)</td><td>Busca un rol en la base de datos por su nombre.</td><td>GET /roles/{name}</td><td>Devuelve un Optional&lt;Role&gt;.</td></tr>
+    <tr><td>existsByName(Roles name)</td><td>Verifica si un rol con el nombre especificado ya existe.</td><td>GET /roles/exists/{name}</td><td>Devuelve un boolean.</td></tr>
+  </tbody>
+</table>
+
 ##### 5.5.6. Bounded Context Software Architecture Component Level Diagrams
 ##### 5.5.7. Bounded Context Software Architecture Code Level Diagrams
 ###### 5.5.7.1. Bounded Context Domain Layer Class Diagrams
