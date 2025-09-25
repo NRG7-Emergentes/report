@@ -3360,8 +3360,8 @@ El diseño del bounded context Notificaciones se centra únicamente en gestionar
   <thead><tr><th>Nombre</th><th>Descripción</th></tr></thead>
   <tbody>
     <tr><td>ROLE_ADMIN</td><td>Administrador del sistema.</td></tr>
-    <tr><td>ROLE_PARKING_OWNER</td><td>Propietario de estacionamiento.</td></tr>
-    <tr><td>ROLE_DRIVER</td><td>Conductor del sistema.</td></tr>
+    <tr><td>ROLE_WORKER</td><td>Trabajador que utiliza el sistema de monitoreo postural.</td></tr>
+    <tr><td>ROLE_STUDENT</td><td>Estudiante que utiliza el sistema de monitoreo postural.</td></tr>
   </tbody>
 </table>
 
@@ -3394,8 +3394,8 @@ El diseño del bounded context Notificaciones se centra únicamente en gestionar
   <thead><tr><th>Método</th><th>Tipo de Retorno</th><th>Descripción</th></tr></thead>
   <tbody>
     <tr><td>handle(SignInCommand command)</td><td>User</td><td>Autentica a un usuario y devuelve su información con token.</td></tr>
-    <tr><td>handle(SignUpDriverCommand command)</td><td>User</td><td>Registra un nuevo conductor.</td></tr>
-    <tr><td>handle(SignUpParkingOwnerCommand command)</td><td>User</td><td>Registra un nuevo propietario de estacionamiento.</td></tr>
+    <tr><td>handle(SignUpStudentCommand command)</td><td>User</td><td>Registra un nuevo estudiante.</td></tr>
+    <tr><td>handle(SignUpWorkerCommand command)</td><td>User</td><td>Registra un nuevo trabajador.</td></tr>
   </tbody>
 </table>
 
@@ -3412,6 +3412,60 @@ El diseño del bounded context Notificaciones se centra únicamente en gestionar
 </table>
 
 ##### 5.5.2. Interface Layer
+
+<p>
+  El <strong>Interface Layer</strong> sirve como la capa de comunicación entre el mundo exterior 
+  (como los controladores HTTP) y la lógica del dominio. 
+  Este nivel contiene los controladores responsables de gestionar las solicitudes de los usuarios, 
+  como el inicio de sesión, registro y obtención de información de usuarios.
+</p>
+
+<h6>Controlador: <code>AuthenticationController</code></h6>
+<p><strong>Descripción:</strong> 
+El controlador <code>AuthenticationController</code> se encarga de manejar las solicitudes relacionadas con la autenticación de los usuarios. 
+A través de sus métodos, permite realizar el inicio de sesión y registro de usuarios, ya sea estudiantes o trabajadores.
+</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>signIn(SignInResource signInResource)</td><td>Maneja la solicitud de inicio de sesión.</td><td>POST /sign-in</td><td>Devuelve el recurso de usuario autenticado.</td></tr>
+    <tr><td>signUpStudent(SignUpStudentResource signUpStudentResource)</td><td>Maneja la solicitud de registro para estudiantes.</td><td>POST /sign-up/student</td><td>Devuelve el recurso del usuario creado.</td></tr>
+    <tr><td>signUpWorker(SignUpWorkerResource signUpWorkerResource)</td><td>Maneja la solicitud de registro para trabajadores.</td><td>POST /sign-up/worker</td><td>Devuelve el recurso del usuario creado.</td></tr>
+  </tbody>
+</table>
+
+<h6>Controlador: <code>RolesController</code></h6>
+<p><strong>Descripción:</strong> 
+El controlador <code>RolesController</code> permite obtener la lista de todos los roles disponibles en el sistema.
+</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>getAllRoles()</td><td>Devuelve todos los roles.</td><td>GET /roles</td><td>Lista de recursos de roles.</td></tr>
+  </tbody>
+</table>
+
+<h6>Controlador: <code>UsersController</code></h6>
+<p><strong>Descripción:</strong> 
+El controlador <code>UsersController</code> gestiona las solicitudes para obtener información sobre los usuarios registrados en el sistema.
+</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>getAllUsers()</td><td>Devuelve todos los usuarios.</td><td>GET /users</td><td>Lista de recursos de usuarios.</td></tr>
+    <tr><td>getUserById(Long userId)</td><td>Devuelve un usuario por su ID.</td><td>GET /users/{userId}</td><td>Recurso de usuario por ID.</td></tr>
+  </tbody>
+</table>
+
 ##### 5.5.3. Application Layer
 ##### 5.5.4. Infrastructure Layer
 ##### 5.5.6. Bounded Context Software Architecture Component Level Diagrams
