@@ -2913,7 +2913,43 @@ Descripción: Implementación del servicio de consultas encargado de recuperar i
 
 ##### 5.2.4. Infrastructure Layer
 
+En la Capa de Infraestructura del Bounded Context de Posture Monitoring se implementan los repositorios que permiten la persistencia y recuperación de datos relacionados con las sesiones de monitoreo, eventos posturales y pausas activas. Esta capa actúa como puente entre la lógica de dominio y la base de datos, asegurando que los objetos del dominio se almacenen y consulten de manera eficiente y consistente.
 
+**Justificación**
+
+Separar la persistencia en la capa de infraestructura garantiza el desacoplamiento entre la lógica del dominio y la tecnología de almacenamiento. Esto permite flexibilidad en la elección del motor de base de datos (SQL, NoSQL u otro), facilita pruebas unitarias mediante repositorios en memoria y asegura que la lógica de negocio no dependa de detalles técnicos.
+
+`MonitoringSessionRepository`
+
+Descripción: Administra la persistencia y recuperación de entidades relacionadas con sesiones de monitoreo.
+
+| Método                          | Descripción                                          |
+|---------------------------------|------------------------------------------------------|
+| save(MonitoringSession session) | Persiste una nueva sesión o actualiza una existente. |
+| findById(Long sessionId)        | Recupera una sesión por su identificador.            |
+| findByUser(Long userId)         | Obtiene todas las sesiones asociadas a un usuario.   |
+| delete(Long sessionId)          | Elimina una sesión registrada.                       |
+
+`PostureEventRepository`
+
+Descripción: Gestiona la persistencia de los eventos posturales capturados durante las sesiones.
+
+| Método                             | Descripción                                                   |
+|------------------------------------|---------------------------------------------------------------|
+| save(PostureEvent event)           | Persiste un evento postural detectado.                        |
+| findBySession(Long sessionId)      | Recupera todos los eventos asociados a una sesión específica. |
+| findCriticalEvents(Long sessionId) | Obtiene eventos de postura clasificados como críticos.        |
+
+`ActiveBreakRepository`
+
+Descripción: Administra las pausas activas programadas, iniciadas o finalizadas dentro de una sesión de monitoreo.
+
+| Método                        | Descripción                                            |
+|-------------------------------|--------------------------------------------------------|
+| save(ActiveBreak break)       | Registra o actualiza una pausa activa.                 |
+| findById(Long breakId)        | Recupera una pausa activa por su ID.                   |
+| findBySession(Long sessionId) | Lista todas las pausas activas asociadas a una sesión. |
+| delete(Long breakId)          | Elimina una pausa activa de la base de datos.          |
 
 ###### 5.2.6. Bounded Context Software Architecture Component Level Diagrams
 ###### 5.2.7. Bounded Context Software Architecture Code Level Diagrams
