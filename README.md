@@ -2843,6 +2843,30 @@ Descripción: Proporciona operaciones para gestionar sesiones de monitoreo, even
 | endSession(Long sessionId)                                                              | void              | Público     | Finaliza una sesión de monitoreo activa.                     |
 
 ##### 5.2.2. Interface Layer
+
+En la Capa de Interfaz del Bounded Context de Monitoring, se expone el controlador MonitoringController, el cual ofrece endpoints RESTful para la gestión de sesiones de monitoreo, registro de eventos posturales y pausas activas. Estos endpoints permiten iniciar, pausar y finalizar sesiones, registrar eventos de postura detectados en tiempo real desde el frontend, y administrar las pausas activas que contribuyen al bienestar del usuario durante su jornada.
+
+**Justificación:**
+
+Esta capa cumple el propósito de desacoplar la lógica de dominio del acceso externo al sistema, proporcionando una API clara, coherente y segura para que el frontend (web o móvil) pueda interactuar con el backend de manera uniforme. Asimismo, habilita la integración con otros bounded contexts como Orchestrator (para configuraciones iniciales) y Notifications (para emitir alertas de postura o pausas). Gracias a esta capa, se garantiza la trazabilidad de las sesiones de monitoreo, la persistencia confiable de eventos y la gestión adecuada de las interrupciones activas, alineando la experiencia del usuario con los objetivos de ergonomía y salud de la plataforma.
+
+Controlador: `MonitoringController`
+
+| Método            | Verbo HTTP | Ruta                                           | Descripción                              |
+|-------------------|------------|------------------------------------------------|------------------------------------------|
+| startSession      | POST       | /api/v1/monitoring/sessions/{userId}           | Inicia una nueva sesión                  |
+| pauseSession      | PATCH      | /api/v1/monitoring/sessions/{sessionId}/pause  | Pausa la sesión actual                   |
+| resumeSession     | PATCH      | /api/v1/monitoring/sessions/{sessionId}/resume | Reanuda la sesión pausada                |
+| endSession        | PATCH      | /api/v1/monitoring/sessions/{sessionId}/end    | Finaliza la sesión actual                |
+| getSession        | GET        | /api/v1/monitoring/sessions/{sessionId}        | Obtiene detalles de la sesión            |
+| getSessionsByUser | GET        | /api/v1/monitoring/sessions/user/{userId}      | Obtiene todas las sesiones de un usuario |
+| addPostureEvent   | POST       | /api/v1/monitoring/sessions/{sessionId}/events | Registra un evento postural              |
+| getPostureEvents  | GET        | /api/v1/monitoring/sessions/{sessionId}/events | Obtiene eventos posturales de la sesión  |
+| scheduleBreak     | POST       | /api/v1/monitoring/sessions/{sessionId}/breaks | Programa una pausa activa                |
+| getBreaks         | GET        | /api/v1/monitoring/sessions/{sessionId}/breaks | Obtiene pausas activas de la sesión      |
+| startBreak        | PATCH      | /api/v1/monitoring/breaks/{breakId}/start      | Inicia una pausa activa programada       |
+| endBreak          | PATCH      | /api/v1/monitoring/breaks/{breakId}/end        | Finaliza una pausa activa en curso       |
+
 ##### 5.2.3. Application Layer
 ##### 5.2.4. Infrastructure Layer
 ###### 5.2.6. Bounded Context Software Architecture Component Level Diagrams
