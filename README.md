@@ -2726,6 +2726,122 @@ El diseño del bounded context Notificaciones se centra únicamente en gestionar
 
 #### 5.2. Bounded Context: Monitoreo
 ##### 5.2.1. Domain Layer
+En la **Capa de Dominio** del Bounded Context de **Monitoreo (Monitoring)**, los principales agregados son `MonitoringSession`, `PostureEvent`, y `ActiveBreak`. Estos encapsulan los conceptos de negocio necesarios para gestionar la captura estructurada de la actividad postural de los usuarios: seguimiento de sesiones de monitoreo, registro de eventos relevantes sobre la postura y control de pausas activas durante el proceso.
+
+La lógica de dominio para el manejo de sesiones y eventos se concentra en el servicio de dominio `MonitoringService`, que aplica las reglas de negocio relacionadas con el ciclo de vida de una sesión, la validación de eventos posturales y la administración de pausas activas, garantizando que la información se registre de manera coherente y consistente para su posterior análisis y retroalimentación.
+
+Agregado `MonitoringSession`
+
+Descripción: Representa una sesión de monitoreo iniciada por el usuario.
+
+| Atributo  | Tipo               | Visibilidad | Descripción                                                   |
+|-----------|--------------------|-------------|---------------------------------------------------------------|
+| id        | Long               | Privado     | Identificador único de la sesión.                             |
+| userId    | Long               | Privado     | Identificador del usuario asociado a la sesión.               |
+| startTime | LocalDateTime      | Privado     | Fecha y hora de inicio de la sesión.                          |
+| endTime   | LocalDateTime      | Privado     | Fecha y hora de finalización de la sesión.                    |
+| status    | SessionStatus      | Privado     | Estado actual de la sesión (eenum: ACTIVE, PAUSED, FINISHED). |
+| events    | List<PostureEvent> | Privado     | Lista de eventos posturales registrados.                      |
+| breaks    | List<ActiveBreak>  | Privado     | Lista de pausas activas durante la sesión.                    |
+
+| Método                                  | Tipo de Retorno | Visibilidad | Descripción                            |
+|-----------------------------------------|-----------------|-------------|----------------------------------------|
+| startSession()                          | void            | Público     | Inicia una nueva sesión de monitoreo.  |
+| pauseSession()                          | void            | Público     | Pausa la sesión de monitoreo.          |
+| resumeSession()                         | void            | Público     | Reanuda una sesión pausada.            |
+| endSession()                            | void            | Público     | Finaliza la sesión de monitoreo.       |
+| addPostureEvent(PostureEvent event)     | void            | Público     | Agrega un evento postural a la sesión. |
+| addActiveBreak(ActiveBreak activeBreak) | void            | Público     | Agrega una pausa activa a la sesión.   |
+
+Agregado `PostuireEvent`
+
+Descripción: Registra los eventos de postura durante la sesión.
+
+| Atributo    | Tipo                    | Visibilidad | Descripción                                                |
+|-------------|-------------------------|-------------|------------------------------------------------------------|
+| id          | Long                    | Privado     | Identificador único del evento.                            |
+| sessionId   | Long                    | Privado     | Identificador de la sesión asociada.                       |
+| timestamp   | LocalDateTime           | Privado     | Fecha y hora del evento.                                   |
+| postureType | PostureType             | Privado     | Tipo de postura detectada (enum: CORRECT, INCORRECT)       |
+| landmarks   | List<LandmarksSnapshot> | Privado     | Lista de puntos clave del cuerpo en el momento del evento. |
+
+| Método                                             | Tipo de Retorno | Visibilidad | Descripción                            |
+|----------------------------------------------------|-----------------|-------------|----------------------------------------|
+| markAsCorrect()                                    | void            | Público     | Marca el evento como postura correcta. |
+| markAsIncorrect()                                  | void            | Público     | Marca el evento como postura incorrect |
+| attachLandmarks(List<LandmarksSnapshot> landmarks) | void            | Público     | Adjunta puntos clave al evento.        |
+
+Agregado `ActiveBreak`
+
+Descripción: Gestiona pausas activas dentro de una sesión.
+
+| Atributo    | Tipo                    | Visibilidad | Descripción                                               |
+|-------------|-------------------------|-------------|-----------------------------------------------------------|
+| id          | Long                    | Privado     | Identificador único de la pausa activa.                   |
+| sessionId   | Long                    | Privado     | Identificador de la sesión asociada.                      |
+| startTime   | LocalDateTime           | Privado     | Fecha y hora de inicio de la pausa.                       |
+| endTime     | LocalDateTime           | Privado     | Fecha y hora de finalización de la pausa.                 |
+| status      | BreakStatus             | Privado     | Estado de la pausa (enum: ONGOING, SCHEDULED , FINISHED). |
+
+
+| Método       | Tipo de Retorno | Visibilidad | Descripción               |
+|--------------|-----------------|-------------|---------------------------|
+| startBreak() | void            | Público     | Inicia una pausa activa.  |
+| endBreak()   | void            | Público     | Finaliza la pausa activa. |
+
+Objeto de Valor: LandmarksSnapshot
+
+Descripción: Captura de puntos clave del cuerpo en un momento específico.
+
+| Nombre          | Descripción                                                   |
+|-----------------|---------------------------------------------------------------|
+| points          | Mapa de puntos clave (nombre del punto -> coordenadas 2D/3D). |
+| confidenceScore | Nivel de confianza en la detección de puntos (0.0 - 1.0).     |
+
+Objeto de Valor: SessionStatus
+
+Descripción: Enum que define los posibles estados de una sesión de monitoreo.
+
+| Nombre   | Descripción                           |
+|----------|---------------------------------------|
+| ACTIVE   | La sesión está en curso.              |
+| PAUSED   | La sesión está temporalmente pausada. |
+| FINISHED | La sesión ha finalizado.              |
+
+Objeto de Valor: PostureType
+
+Descripción: Enum que define los tipos de postura detectados.
+
+| Nombre    | Descripción                     |
+|-----------|---------------------------------|
+| CORRECT   | Postura considerada correcta.   |
+| INCORRECT | Postura considerada incorrecta. |
+
+Objeto de Valor: BreakStatus
+
+Descripción: Enum que define los estados de una pausa activa.
+
+| Nombre    | Descripción                                    |
+|-----------|------------------------------------------------|
+| ONGOING   | La pausa está en curso.                        |
+| SCHEDULED | La pausa está programada pero no ha comenzado. |
+| FINISHED  | La pausa ha finalizado.                        |
+
+Servicio de Dominio: `MonitoringService`
+
+Descripción: Proporciona operaciones para gestionar sesiones de monitoreo, eventos posturales y pausas activas.
+
+| Método                                                                                  | Tipo de Retorno   | Visibilidad | Descripción                                                  |
+|-----------------------------------------------------------------------------------------|-------------------|-------------|--------------------------------------------------------------|
+| createSession(Long userId)                                                              | MonitoringSession | Público     | Crea e inicia una nueva sesión de monitoreo para un usuario. |
+| getSession(Long sessionId)                                                              | MonitoringSession | Público     | Recupera una sesión de monitoreo por su ID.                  |  
+| addPostureEvent(Long sessionId, PostureEvent event, List<LandmarksSnapshot> landdmarks) | void              | Público     | Agrega un evento postural a una sesión existente.            |
+| scheduleActiveBreak(Long sessionId, LocalDateTime startTime, LocalDateTime endTime)     | ActiveBreak       | Público     | Programa una pausa activa dentro de una sesión.              |
+| getActiveBreaks(Long sessionId)                                                         | List<ActiveBreak> | Público     | Recupera todas las pausas activas asociadas a una sesión.    |
+| startBreak(Long breakId)                                                                | void              | Público     | Inicia una pausa activa programada.                          |
+| endBreak(Long breakId)                                                                  | void              | Público     | Finaliza una pausa activa en curso.                          |
+| endSession(Long sessionId)                                                              | void              | Público     | Finaliza una sesión de monitoreo activa.                     |
+
 ##### 5.2.2. Interface Layer
 ##### 5.2.3. Application Layer
 ##### 5.2.4. Infrastructure Layer
