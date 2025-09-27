@@ -2726,6 +2726,7 @@ El diseño del bounded context Notificaciones se centra únicamente en gestionar
 
 #### 5.2. Bounded Context: Monitoreo
 ##### 5.2.1. Domain Layer
+
 En la **Capa de Dominio** del Bounded Context de **Monitoreo (Monitoring)**, los principales agregados son `MonitoringSession`, `PostureEvent`, y `ActiveBreak`. Estos encapsulan los conceptos de negocio necesarios para gestionar la captura estructurada de la actividad postural de los usuarios: seguimiento de sesiones de monitoreo, registro de eventos relevantes sobre la postura y control de pausas activas durante el proceso.
 
 La lógica de dominio para el manejo de sesiones y eventos se concentra en el servicio de dominio `MonitoringService`, que aplica las reglas de negocio relacionadas con el ciclo de vida de una sesión, la validación de eventos posturales y la administración de pausas activas, garantizando que la información se registre de manera coherente y consistente para su posterior análisis y retroalimentación.
@@ -2827,20 +2828,30 @@ Descripción: Enum que define los estados de una pausa activa.
 | SCHEDULED | La pausa está programada pero no ha comenzado. |
 | FINISHED  | La pausa ha finalizado.                        |
 
-Servicio de Dominio: `MonitoringService`
+Servicio de Dominio: `MonitoringCommandService`
 
-Descripción: Proporciona operaciones para gestionar sesiones de monitoreo, eventos posturales y pausas activas.
+Descripción: Encargado de acciones que cambian el estado del sistema.
 
-| Método                                                                                  | Tipo de Retorno   | Visibilidad | Descripción                                                  |
-|-----------------------------------------------------------------------------------------|-------------------|-------------|--------------------------------------------------------------|
-| createSession(Long userId)                                                              | MonitoringSession | Público     | Crea e inicia una nueva sesión de monitoreo para un usuario. |
-| getSession(Long sessionId)                                                              | MonitoringSession | Público     | Recupera una sesión de monitoreo por su ID.                  |  
-| addPostureEvent(Long sessionId, PostureEvent event, List<LandmarksSnapshot> landdmarks) | void              | Público     | Agrega un evento postural a una sesión existente.            |
-| scheduleActiveBreak(Long sessionId, LocalDateTime startTime, LocalDateTime endTime)     | ActiveBreak       | Público     | Programa una pausa activa dentro de una sesión.              |
-| getActiveBreaks(Long sessionId)                                                         | List<ActiveBreak> | Público     | Recupera todas las pausas activas asociadas a una sesión.    |
-| startBreak(Long breakId)                                                                | void              | Público     | Inicia una pausa activa programada.                          |
-| endBreak(Long breakId)                                                                  | void              | Público     | Finaliza una pausa activa en curso.                          |
-| endSession(Long sessionId)                                                              | void              | Público     | Finaliza una sesión de monitoreo activa.                     |
+| Método                                                                                   | Tipo de Retorno   | Descripción                                                  |
+|------------------------------------------------------------------------------------------|-------------------|--------------------------------------------------------------|
+| `createSession(Long userId)`                                                             | MonitoringSession | Crea e inicia una nueva sesión de monitoreo para un usuario. |
+| `addPostureEvent(Long sessionId, PostureEvent event, List<LandmarksSnapshot> landmarks)` | void              | Registra un evento postural en una sesión activa.            |
+| `scheduleActiveBreak(Long sessionId, LocalDateTime startTime, LocalDateTime endTime)`    | ActiveBreak       | Programa una pausa activa dentro de una sesión de monitoreo. |
+| `startBreak(Long breakId)`                                                               | void              | Inicia una pausa activa previamente programada.              |
+| `endBreak(Long breakId)`                                                                 | void              | Finaliza una pausa activa en curso.                          |
+| `endSession(Long sessionId)`                                                             | void              | Finaliza formalmente una sesión de monitoreo activa.         |
+
+Servicio de Dominio: `MonitoringQueryService`
+
+Descripción: Encargado de consultas y recuperación de datos, sin modificar el estado.
+
+| Método                             | Tipo de Retorno           | Descripción                                                             |
+|------------------------------------|---------------------------|-------------------------------------------------------------------------|
+| `getSession(Long sessionId)`       | MonitoringSession         | Recupera los detalles de una sesión específica.                         |
+| `getSessionsByUser(Long userId)`   | List<MonitoringSession>   | Obtiene todas las sesiones asociadas a un usuario.                      |
+| `getActiveBreaks(Long sessionId)`  | List<ActiveBreak>         | Recupera todas las pausas activas de una sesión determinada.            |
+| `getPostureEvents(Long sessionId)` | List<PostureEvent>        | Consulta los eventos posturales de una sesión.                          |
+| `getUserStatistics(Long userId)`   | MonitoringStatistics (VO) | Calcula métricas agregadas (tiempo en buena/mala postura, pausas, etc.) |
 
 ##### 5.2.2. Interface Layer
 
@@ -2868,7 +2879,42 @@ Controlador: `MonitoringController`
 | endBreak          | PATCH      | /api/v1/monitoring/breaks/{breakId}/end        | Finaliza una pausa activa en curso       |
 
 ##### 5.2.3. Application Layer
+
+En el Application Layer del Bounded Context de Monitoring se implementan los servicios de aplicación que orquestan los casos de uso principales: creación y finalización de sesiones de monitoreo, registro de eventos posturales, programación de pausas activas y consultas sobre sesiones, pausas y métricas. El MonitoringCommandService gestiona las operaciones de modificación del dominio, mientras que el MonitoringQueryService se centra en la recuperación de información estructurada y estadísticas de uso.
+
+**Justificación**
+
+Dividir la lógica en servicios de Command y Query asegura un diseño más claro, mantenible y escalable, siguiendo el patrón CQRS. Esta separación permite optimizar las operaciones de lectura y escritura de manera independiente, facilitar la integración con bounded contexts como Notifications o Statistics, y soportar la evolución futura del sistema con bajo acoplamiento.
+
+`MonitoringCommandServiceImpl`
+
+Descripción: Implementación del servicio de comandos encargado de gestionar el ciclo de vida de las sesiones de monitoreo, los eventos posturales y las pausas activas.
+
+| Método                                 | Descripción                                                  |
+|----------------------------------------|--------------------------------------------------------------|
+| handle(CreateMonitoringSessionCommand) | Crea e inicia una nueva sesión de monitoreo para un usuario. |
+| handle(EndMonitoringSessionCommand)    | Finaliza una sesión de monitoreo activa.                     |
+| handle(AddPostureEventCommand)         | Registra un nuevo evento postural dentro de una sesión.      |
+| handle(ScheduleActiveBreakCommand)     | Programa una pausa activa dentro de una sesión de monitoreo. |
+| handle(StartActiveBreakCommand)        | Inicia una pausa activa programada.                          |
+| handle(EndActiveBreakCommand)          | Finaliza una pausa activa en curso.                          |
+
+`MonitoringQueryServiceImpl`
+
+Descripción: Implementación del servicio de consultas encargado de recuperar información de sesiones de monitoreo, pausas activas y eventos posturales asociados a los usuarios.
+
+| Método                                 | Descripción                                                                                                   |
+|----------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| handle(GetMonitoringSessionByIdQuery)  | Recupera los detalles de una sesión de monitoreo por su ID.                                                   |
+| handle(GetSessionsByUserQuery)         | Obtiene todas las sesiones de monitoreo asociadas a un usuario.                                               |
+| handle(GetActiveBreaksBySessionQuery)  | Lista las pausas activas programadas o finalizadas de una sesión.                                             |
+| handle(GetPostureEventsBySessionQuery) | Recupera todos los eventos posturales registrados durante una sesión.                                         |
+| handle(GetMonitoringStatisticsQuery)   | Obtiene métricas agregadas del historial de sesiones (duración promedio, frecuencia de malas posturas, etc.). |
+
 ##### 5.2.4. Infrastructure Layer
+
+
+
 ###### 5.2.6. Bounded Context Software Architecture Component Level Diagrams
 ###### 5.2.7. Bounded Context Software Architecture Code Level Diagrams
 
