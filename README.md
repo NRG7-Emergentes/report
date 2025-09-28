@@ -2714,18 +2714,19 @@ El diseño del bounded context Notificaciones se centra únicamente en gestionar
 
 ![nrg7-deployment.png](images/chapter-4/nrg7-deployment.png)
 
-### Capítulo V: Tactical-Level Software Design
+## Capítulo V: Tactical-Level Software Design
 
-#### 5.1. Bounded Context: Orquestrador
-##### 5.1.1. Domain Layer
-##### 5.1.2. Interface Layer
-##### 5.1.3. Application Layer
-##### 5.1.4. Infrastructure Layer
-###### 5.1.6. Bounded Context Software Architecture Component Level Diagrams
-###### 5.1.7. Bounded Context Software Architecture Code Level Diagrams
+### 5.1. Bounded Context: Orquestrador
+#### 5.1.1. Domain Layer
+#### 5.1.2. Interface Layer
+#### 5.1.3. Application Layer
+#### 5.1.4. Infrastructure Layer
+##### 5.1.6. Bounded Context Software Architecture Component Level Diagrams
+##### 5.1.7. Bounded Context Software Architecture Code Level Diagrams
+![orquestrator-class-diagram.png](images/chapter-5/orquestrator-class-diagram.png)
 
-#### 5.2. Bounded Context: Monitoreo
-##### 5.2.1. Domain Layer
+### 5.2. Bounded Context: Monitoreo
+#### 5.2.1. Domain Layer
 
 En la **Capa de Dominio** del Bounded Context de **Monitoreo (Monitoring)**, los principales agregados son `MonitoringSession`, `PostureEvent`, y `ActiveBreak`. Estos encapsulan los conceptos de negocio necesarios para gestionar la captura estructurada de la actividad postural de los usuarios: seguimiento de sesiones de monitoreo, registro de eventos relevantes sobre la postura y control de pausas activas durante el proceso.
 
@@ -2853,7 +2854,7 @@ Descripción: Encargado de consultas y recuperación de datos, sin modificar el 
 | `getPostureEvents(Long sessionId)` | List<PostureEvent>        | Consulta los eventos posturales de una sesión.                          |
 | `getUserStatistics(Long userId)`   | MonitoringStatistics (VO) | Calcula métricas agregadas (tiempo en buena/mala postura, pausas, etc.) |
 
-##### 5.2.2. Interface Layer
+#### 5.2.2. Interface Layer
 
 En la Capa de Interfaz del Bounded Context de Monitoring, se expone el controlador MonitoringController, el cual ofrece endpoints RESTful para la gestión de sesiones de monitoreo, registro de eventos posturales y pausas activas. Estos endpoints permiten iniciar, pausar y finalizar sesiones, registrar eventos de postura detectados en tiempo real desde el frontend, y administrar las pausas activas que contribuyen al bienestar del usuario durante su jornada.
 
@@ -2878,7 +2879,7 @@ Controlador: `MonitoringController`
 | startBreak        | PATCH      | /api/v1/monitoring/breaks/{breakId}/start      | Inicia una pausa activa programada       |
 | endBreak          | PATCH      | /api/v1/monitoring/breaks/{breakId}/end        | Finaliza una pausa activa en curso       |
 
-##### 5.2.3. Application Layer
+#### 5.2.3. Application Layer
 
 En el Application Layer del Bounded Context de Monitoring se implementan los servicios de aplicación que orquestan los casos de uso principales: creación y finalización de sesiones de monitoreo, registro de eventos posturales, programación de pausas activas y consultas sobre sesiones, pausas y métricas. El MonitoringCommandService gestiona las operaciones de modificación del dominio, mientras que el MonitoringQueryService se centra en la recuperación de información estructurada y estadísticas de uso.
 
@@ -2911,7 +2912,7 @@ Descripción: Implementación del servicio de consultas encargado de recuperar i
 | handle(GetPostureEventsBySessionQuery) | Recupera todos los eventos posturales registrados durante una sesión.                                         |
 | handle(GetMonitoringStatisticsQuery)   | Obtiene métricas agregadas del historial de sesiones (duración promedio, frecuencia de malas posturas, etc.). |
 
-##### 5.2.4. Infrastructure Layer
+#### 5.2.4. Infrastructure Layer
 
 En la Capa de Infraestructura del Bounded Context de Posture Monitoring se implementan los repositorios que permiten la persistencia y recuperación de datos relacionados con las sesiones de monitoreo, eventos posturales y pausas activas. Esta capa actúa como puente entre la lógica de dominio y la base de datos, asegurando que los objetos del dominio se almacenen y consulten de manera eficiente y consistente.
 
@@ -2951,9 +2952,9 @@ Descripción: Administra las pausas activas programadas, iniciadas o finalizadas
 | findBySession(Long sessionId) | Lista todas las pausas activas asociadas a una sesión. |
 | delete(Long breakId)          | Elimina una pausa activa de la base de datos.          |
 
-###### 5.2.6. Bounded Context Software Architecture Component Level Diagrams
-###### 5.2.7. Bounded Context Software Architecture Code Level Diagrams
-###### 5.2.7.1. Bounded Context Domain Layer Class Diagram
+##### 5.2.6. Bounded Context Software Architecture Component Level Diagrams
+##### 5.2.7. Bounded Context Software Architecture Code Level Diagrams
+##### 5.2.7.1. Bounded Context Domain Layer Class Diagram
 
 <img src="images/chapter-5/monitoring-class-diagram.png" alt="Monitoring Domain Class Diagram">
 
@@ -2961,17 +2962,17 @@ Descripción: Administra las pausas activas programadas, iniciadas o finalizadas
 
 <img src="images/chapter-5/monitoring-database-diagram.png" alt="Monitoring Database Design Diagram">
 
-#### 5.3. Bounded Context: Estadisticas
-##### 5.3.1. Domain Layer
-##### 5.3.2. Interface Layer
-##### 5.3.3. Application Layer
-##### 5.3.4. Infrastructure Layer
-###### 5.3.6. Bounded Context Software Architecture Component Level Diagrams
-###### 5.3.7. Bounded Context Software Architecture Code Level Diagrams
+### 5.3. Bounded Context: Estadisticas
+#### 5.3.1. Domain Layer
+#### 5.3.2. Interface Layer
+#### 5.3.3. Application Layer
+#### 5.3.4. Infrastructure Layer
+##### 5.3.6. Bounded Context Software Architecture Component Level Diagrams
+##### 5.3.7. Bounded Context Software Architecture Code Level Diagrams
 
 
-#### 5.4. Bounded Context: Notificaciones
-##### 5.4.1. Domain Layer
+### 5.4. Bounded Context: Notificaciones
+#### 5.4.1. Domain Layer
 <p>
     En la <strong>Capa de Dominio</strong> del <strong>Bounded Context de Notificaciones</strong>,
     los principales agregados son <code>Notification</code> y <code>UserPreferences</code>.
@@ -3130,7 +3131,7 @@ Descripción: Administra las pausas activas programadas, iniciadas o finalizadas
     </tbody>
   </table>
 
-##### 5.4.2. Interface Layer
+#### 5.4.2. Interface Layer
 
 <p>
   En la <strong>Capa de Interfaz</strong> del <strong>Bounded Context de Notificaciones</strong>, se expone el 
@@ -3195,7 +3196,7 @@ Descripción: Administra las pausas activas programadas, iniciadas o finalizadas
 </table>
 
 
-##### 5.4.3. Application Layer
+#### 5.4.3. Application Layer
 
 <p>
   En el <strong>Application Layer</strong> del <strong>Bounded Context de Notificaciones</strong>, se implementan los servicios 
@@ -3285,7 +3286,7 @@ Descripción: Administra las pausas activas programadas, iniciadas o finalizadas
   <li><strong>DeadlineReminderEventHandler:</strong> Genera recordatorios cuando una tarea está próxima a vencer.</li>
 </ul>
 
-##### 5.4.4. Infrastructure Layer
+#### 5.4.4. Infrastructure Layer
 
 <p>
   En la <strong>Infrastructure Layer</strong> del contexto de <strong>Notificaciones</strong>, se concentran las implementaciones concretas 
@@ -3426,7 +3427,7 @@ Descripción: Administra las pausas activas programadas, iniciadas o finalizadas
   </tbody>
 </table>
 
-###### 5.4.6. Bounded Context Software Architecture Component Level Diagrams
+##### 5.4.6. Bounded Context Software Architecture Component Level Diagrams
 
 <p>
   Este diagrama de componentes representa un sistema monolítico encargado de la gestión y envío de notificaciones dentro de la plataforma <strong>ErgoVision</strong>. Una <strong>Single-Page Application (SPA)</strong>, implementada con Angular, interactúa con una <strong>aplicación Web API</strong> desarrollada en Spring Boot mediante llamadas HTTP (REST).
@@ -3442,10 +3443,10 @@ Descripción: Administra las pausas activas programadas, iniciadas o finalizadas
 </p>
 <img src="images/chapter-5/nrg7-notificationcomponent.png" alt="Diagrama de Componentes de Arquitectura de Software - Bounded Context Notificaciones"/>
 
-###### 5.4.7. Bounded Context Software Architecture Code Level Diagrams
+##### 5.4.7. Bounded Context Software Architecture Code Level Diagrams
 
-#### 5.5. Bounded Context: IAM
-##### 5.5.1. Domain Layer
+### 5.5. Bounded Context: IAM
+#### 5.5.1. Domain Layer
 
 <p>
   En la <strong>Capa de Dominio</strong> del <strong>Bounded Context de Identity and Access Management (IAM)</strong>, 
@@ -3567,7 +3568,7 @@ Descripción: Administra las pausas activas programadas, iniciadas o finalizadas
   </tbody>
 </table>
 
-##### 5.5.2. Interface Layer
+#### 5.5.2. Interface Layer
 
 <p>
   El <strong>Interface Layer</strong> sirve como la capa de comunicación entre el mundo exterior 
@@ -3622,7 +3623,7 @@ El controlador <code>UsersController</code> gestiona las solicitudes para obtene
   </tbody>
 </table>
 
-##### 5.5.3. Application Layer
+#### 5.5.3. Application Layer
 
 <p>
   El <strong>Application Layer</strong> contiene la lógica necesaria para procesar las operaciones relacionadas con las entidades, 
@@ -3685,7 +3686,7 @@ El controlador <code>UsersController</code> gestiona las solicitudes para obtene
   </tbody>
 </table>
 
-##### 5.5.4. Infrastructure Layer
+#### 5.5.4. Infrastructure Layer
 
 <p>
   La capa de <strong>Infrastructure</strong> se encarga de la interacción con fuentes externas de datos, 
