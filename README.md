@@ -2959,6 +2959,7 @@ Descripción: Administra las pausas activas programadas, iniciadas o finalizadas
 
 ###### 5.2.7.2. Bounded Context Database Design Diagram
 
+<img src="images/chapter-5/monitoring-database-diagram.png" alt="Monitoring Database Design Diagram">
 
 #### 5.3. Bounded Context: Estadisticas
 ##### 5.3.1. Domain Layer
