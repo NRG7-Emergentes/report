@@ -3288,16 +3288,15 @@ Descripción: Administra las pausas activas programadas, iniciadas o finalizadas
 ##### 5.4.4. Infrastructure Layer
 
 <p>
-  En el <strong>Infrastructure Layer</strong> del contexto de <strong>Notificaciones</strong>, se concentran las implementaciones concretas 
+  En la <strong>Infrastructure Layer</strong> del contexto de <strong>Notificaciones</strong>, se concentran las implementaciones concretas 
   que permiten al sistema interactuar con la base de datos y con servicios externos de mensajería. 
   Esta capa materializa los contratos definidos en el <em>Domain Layer</em>, garantizando la persistencia de notificaciones, 
-  el acceso a preferencias de usuario y la entrega real de mensajes (push, SMS o email).
+  el acceso a preferencias de usuario y la entrega real de mensajes (push o SMS).
 </p>
 
 <p>
   Se implementan los repositorios <code>NotificationRepository</code> y <code>UserPreferencesRepository</code>, además de adaptadores 
-  para integrarse con proveedores externos como <strong>Firebase Cloud Messaging</strong>, un servicio de <strong>SMS Gateway</strong>, 
-  y un servicio de <strong>Email SMTP</strong>. 
+  para integrarse con proveedores externos como <strong>Firebase Cloud Messaging</strong> y un servicio de <strong>SMS Gateway</strong>. 
   De esta manera, la lógica de negocio en capas superiores se mantiene desacoplada de las dependencias tecnológicas.
 </p>
 
@@ -3410,27 +3409,8 @@ Descripción: Administra las pausas activas programadas, iniciadas o finalizadas
 
 <hr>
 
-<h3>Adapter: <code>EmailNotificationAdapter</code></h3>
-<p><strong>Descripción:</strong> Adaptador que permite enviar notificaciones por correo electrónico a través de un servicio SMTP o proveedor externo de email.</p>
-
-<table>
-  <thead>
-    <tr><th>Método</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>sendEmail(Notification notification, String email)</td>
-      <td>void</td>
-      <td>Public</td>
-      <td>Envía la notificación al correo electrónico del usuario.</td>
-    </tr>
-  </tbody>
-</table>
-
-<hr>
-
 <h3>Adapter: <code>NotificationDispatcher</code></h3>
-<p><strong>Descripción:</strong> Componente orquestador que decide, según las preferencias del usuario, si la notificación se envía por push, SMS o email.</p>
+<p><strong>Descripción:</strong> Componente orquestador que decide, según las preferencias del usuario, si la notificación se envía por push o SMS.</p>
 
 <table>
   <thead>
@@ -3441,7 +3421,7 @@ Descripción: Administra las pausas activas programadas, iniciadas o finalizadas
       <td>dispatch(Notification notification, UserPreferences preferences)</td>
       <td>void</td>
       <td>Public</td>
-      <td>Determina el canal adecuado (push, SMS o email) y envía la notificación.</td>
+      <td>Determina el canal adecuado (push o SMS) y envía la notificación.</td>
     </tr>
   </tbody>
 </table>
