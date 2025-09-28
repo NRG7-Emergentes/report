@@ -3795,6 +3795,11 @@ El controlador <code>UsersController</code> gestiona las solicitudes para obtene
 </table>
 
 ##### 5.5.6. Bounded Context Software Architecture Component Level Diagrams
+
+El diagrama de componentes del sistema ErgoVision representa una arquitectura distribuida basada en Domain-Driven Design (DDD) que utiliza bounded contexts para separar las responsabilidades del negocio de monitoreo postural. La arquitectura incluye tres interfaces de usuario principales: una Landing Page estática desarrollada en HTML/CSS/JavaScript para marketing e información pública, una Web Application en Angular para monitoreo en tiempo real y visualización de estadísticas, y una Mobile Application en Kotlin para recibir notificaciones y consultar métricas personales. El sistema está organizado en cinco bounded contexts independientes: IAM para gestión de identidad y acceso usando Spring Security con JWT, Monitoring para detección postural en tiempo real, Notifications para manejo de alertas, Statistics para analíticas y reportes, y Orchestrator para configuración y gestión de sesiones de monitoreo. La infraestructura incluye un REST API centralizado en Spring Boot que actúa como punto de integración, una base de datos PostgreSQL para persistencia de datos estructurados, y un almacén clave-valor Redis para datos de sesión de acceso frecuente. La arquitectura se integra con dos sistemas externos críticos: Google MediaPipe para detección de landmarks corporales mediante inteligencia artificial, y Firebase Cloud Messaging para entrega de notificaciones push a dispositivos móviles, manteniendo así una separación clara entre el dominio interno del negocio y los servicios externos especializados.
+
+<img src="images/chapter-5/ComponentDiagram.png" alt="Component Diagram">
+
 ##### 5.5.7. Bounded Context Software Architecture Code Level Diagrams
 ###### 5.5.7.1. Bounded Context Domain Layer Class Diagrams
 
