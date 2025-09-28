@@ -3198,123 +3198,73 @@ Descripción: Administra las pausas activas programadas, iniciadas o finalizadas
 ##### 5.4.3. Application Layer
 
 <p>
-  En el <strong>Application Layer</strong> del <strong>Bounded Context de Notificaciones</strong>, se concentran los servicios que 
-  coordinan la lógica de aplicación vinculada a la gestión de notificaciones. Esto incluye el envío, recuperación, 
-  actualización del estado (como leído/no leído), así como la reacción ante eventos relevantes del sistema 
-  (por ejemplo, la asignación de tareas o la incorporación a grupos de trabajo). 
+  En el <strong>Application Layer</strong> del <strong>Bounded Context de Notificaciones</strong>, se implementan los servicios 
+  de aplicación que orquestan los principales casos de uso: creación, envío, reenvío y actualización de notificaciones, 
+  así como su recuperación y filtrado según estado, usuario o prioridad. 
 </p>
 
 <p>
-  El <code>NotificationQueryService</code> se encarga de la recuperación de notificaciones, filtrando por estado, usuario 
-  o prioridad; mientras que el <code>NotificationCommandService</code> administra la creación, validación y envío de nuevas 
-  notificaciones, además de actualizar su estado en base a las acciones del usuario. 
-  A su vez, los <code>Command Handlers</code> y <code>Event Handlers</code> permiten implementar un flujo de trabajo reactivo, 
-  manteniendo bajo acoplamiento con otros módulos de la plataforma.
+  El <code>NotificationCommandService</code> gestiona las operaciones de modificación del dominio, como la creación, 
+  validación y envío de notificaciones, además de marcar como leídas o reenviar en caso de fallo. 
+  Por otro lado, el <code>NotificationQueryService</code> se centra en la recuperación de información estructurada, 
+  devolviendo notificaciones según filtros de estado o tipo. 
+  Adicionalmente, los <code>Command Handlers</code> y <code>Event Handlers</code> permiten mantener un flujo reactivo 
+  y bajo acoplamiento con otros bounded contexts de la plataforma.
 </p>
 
-<h3>Justificación:</h3>
+<p><strong>Justificación</strong></p>
 <p>
-  Dividir las operaciones en servicios de consultas (<em>Query</em>) y comandos (<em>Command</em>) permite mantener 
-  un diseño más claro y escalable. La introducción de <em>handlers</em> asegura la capacidad de respuesta inmediata 
-  ante eventos del dominio y la posibilidad de extender la lógica de negocio sin afectar el núcleo de la aplicación.
+  Dividir la lógica en servicios de Command y Query asegura un diseño más claro, mantenible y escalable, siguiendo 
+  el patrón CQRS. Esta separación permite optimizar las operaciones de lectura y escritura de manera independiente, 
+  responder a eventos del dominio de forma inmediata y extender la lógica de negocio sin afectar el núcleo de la aplicación.
 </p>
 
 <hr>
 
-<h3>Service: <code>NotificationQueryService</code></h3>
-<p><strong>Descripción:</strong> Servicio especializado en consultas de notificaciones para los usuarios.</p>
+<p><code>NotificationCommandServiceImpl</code></p>
+<p><strong>Descripción:</strong> Implementación del servicio de comandos encargado de gestionar el ciclo de vida de las notificaciones.</p>
 
-<h4>Atributos</h4>
 <table>
   <thead>
-    <tr><th>Tipo de dato</th><th>Nombre</th><th>Visibilidad</th><th>Descripción</th></tr>
+    <tr><th>Método</th><th>Descripción</th></tr>
   </thead>
   <tbody>
     <tr>
-      <td>NotificationRepository</td>
-      <td>notificationRepository</td>
-      <td>Privado</td>
-      <td>Acceso a la persistencia de notificaciones almacenadas.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4>Métodos</h4>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>findByUserId(Long userId)</td>
-      <td>List&lt;Notification&gt;</td>
-      <td>Público</td>
-      <td>Obtiene todas las notificaciones de un usuario específico.</td>
+      <td>handle(SendNotificationCommand)</td>
+      <td>Crea y envía una nueva notificación para un usuario o grupo.</td>
     </tr>
     <tr>
-      <td>findUnreadByUserId(Long userId)</td>
-      <td>List&lt;Notification&gt;</td>
-      <td>Público</td>
-      <td>Devuelve únicamente las notificaciones no leídas.</td>
-    </tr>
-    <tr>
-      <td>findByStatus(Long userId, String status)</td>
-      <td>List&lt;Notification&gt;</td>
-      <td>Público</td>
-      <td>Filtra las notificaciones según estado (leídas, enviadas, fallidas, etc.).</td>
-    </tr>
-  </tbody>
-</table>
-
-<hr>
-
-<h3>Service: <code>NotificationCommandService</code></h3>
-<p><strong>Descripción:</strong> Servicio encargado de crear, validar y enviar notificaciones, así como de actualizar su estado.</p>
-
-<h4>Atributos</h4>
-<table>
-  <thead>
-    <tr><th>Tipo de dato</th><th>Nombre</th><th>Visibilidad</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>NotificationRepository</td>
-      <td>notificationRepository</td>
-      <td>Privado</td>
-      <td>Acceso a las entidades de notificación persistidas.</td>
-    </tr>
-    <tr>
-      <td>NotificationService</td>
-      <td>notificationService</td>
-      <td>Privado</td>
-      <td>Servicio de dominio que valida reglas y define estrategias de envío.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4>Métodos</h4>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>send(NotificationRequest request)</td>
-      <td>void</td>
-      <td>Público</td>
-      <td>Crea y envía una nueva notificación en base a la solicitud recibida.</td>
-    </tr>
-    <tr>
-      <td>markAsRead(Long notificationId)</td>
-      <td>void</td>
-      <td>Público</td>
+      <td>handle(MarkNotificationAsReadCommand)</td>
       <td>Actualiza el estado de una notificación a "leída".</td>
     </tr>
     <tr>
-      <td>resend(Long notificationId)</td>
-      <td>void</td>
-      <td>Público</td>
+      <td>handle(ResendNotificationCommand)</td>
       <td>Reintenta el envío de una notificación que falló previamente.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<p><code>NotificationQueryServiceImpl</code></p>
+<p><strong>Descripción:</strong> Implementación del servicio de consultas encargado de recuperar notificaciones.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>handle(GetUserNotificationsQuery)</td>
+      <td>Devuelve todas las notificaciones de un usuario específico.</td>
+    </tr>
+    <tr>
+      <td>handle(GetUnreadNotificationsQuery)</td>
+      <td>Obtiene únicamente las notificaciones no leídas.</td>
+    </tr>
+    <tr>
+      <td>handle(GetNotificationsByStatusQuery)</td>
+      <td>Filtra notificaciones según su estado (leídas, enviadas, fallidas, etc.).</td>
     </tr>
   </tbody>
 </table>
@@ -3323,16 +3273,16 @@ Descripción: Administra las pausas activas programadas, iniciadas o finalizadas
 
 <h3>Command Handlers</h3>
 <ul>
-  <li><strong>SendNotificationCommandHandler:</strong> Ejecuta la lógica de <code>send()</code> en el <code>NotificationCommandService</code> para enviar nuevas notificaciones.</li>
+  <li><strong>SendNotificationCommandHandler:</strong> Ejecuta la lógica de creación y envío de notificaciones.</li>
   <li><strong>MarkNotificationAsReadCommandHandler:</strong> Coordina el marcado de notificaciones como leídas.</li>
   <li><strong>ResendNotificationCommandHandler:</strong> Gestiona el reenvío de notificaciones en estado fallido.</li>
 </ul>
 
 <h3>Event Handlers</h3>
 <ul>
-  <li><strong>TaskAssignedEventHandler:</strong> Envía una notificación automática al usuario asignado a una tarea.</li>
-  <li><strong>GroupJoinedEventHandler:</strong> Notifica a miembros relevantes cuando un usuario se une a un grupo.</li>
-  <li><strong>DeadlineReminderEventHandler:</strong> Genera notificaciones de recordatorio cuando una tarea está próxima a vencer.</li>
+  <li><strong>TaskAssignedEventHandler:</strong> Envía automáticamente una notificación al usuario asignado a una tarea.</li>
+  <li><strong>GroupJoinedEventHandler:</strong> Notifica a los miembros cuando un usuario se une a un grupo.</li>
+  <li><strong>DeadlineReminderEventHandler:</strong> Genera recordatorios cuando una tarea está próxima a vencer.</li>
 </ul>
 
 ##### 5.4.4. Infrastructure Layer
