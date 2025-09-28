@@ -2953,6 +2953,12 @@ Descripción: Administra las pausas activas programadas, iniciadas o finalizadas
 
 ###### 5.2.6. Bounded Context Software Architecture Component Level Diagrams
 ###### 5.2.7. Bounded Context Software Architecture Code Level Diagrams
+###### 5.2.7.1. Bounded Context Domain Layer Class Diagram
+
+<img src="images/chapter-5/monitoring-class-diagram.png" alt="Monitoring Domain Class Diagram">
+
+###### 5.2.7.2. Bounded Context Database Design Diagram
+
 
 #### 5.3. Bounded Context: Estadisticas
 ##### 5.3.1. Domain Layer
@@ -2961,6 +2967,7 @@ Descripción: Administra las pausas activas programadas, iniciadas o finalizadas
 ##### 5.3.4. Infrastructure Layer
 ###### 5.3.6. Bounded Context Software Architecture Component Level Diagrams
 ###### 5.3.7. Bounded Context Software Architecture Code Level Diagrams
+
 
 #### 5.4. Bounded Context: Notificaciones
 ##### 5.4.1. Domain Layer
