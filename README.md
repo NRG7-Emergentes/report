@@ -126,6 +126,52 @@ El enlace a github del reporte del proyecto es el siguiente: [https://github.com
     - [4.3.2 Software Architecture Context Level Diagrams](#432-software-architecture-context-level-diagrams)
     - [4.3.3 Software Architecture Container Level Diagrams](#433-software-architecture-container-level-diagrams)
     - [4.3.4 Software Architecture Deployment Diagrams](#434-software-architecture-deployment-diagrams)
+- [Capítulo V: Tactical-Level Software Design](#capítulo-v-tactical-level-software-design)
+  - [5.1 Bounded Context: Orquestrador](#51-bounded-context-orquestrator)
+    - [5.1.1 Domain Layer](#511-domain-layer)
+    - [5.1.2 Interface Layer](#521-domain-layer)
+    - [5.1.3 Application Layer](#513-application-layer)
+    - [5.1.4 Infrastructure Layer](#514-infrastructure-layer)
+    - [5.1.6 Bounded Context Software Architecture Component Level Diagrams](#516-bounded-context-software-architecture-component-level-diagrams)
+    - [5.1.7 Bounded Context Software Architecture Container Level Diagrams](#517-bounded-context-software-architecture-code-level-diagrams)
+        - [5.1.7.1 Bounded Context Domain Layer Class Diagrams](#5171-bounded-context-domain-layer-class-diagrams)
+        - [5.1.7.2 Bounded Context Database Design Diagram](#5172-bounded-context-database-design-diagram)
+  - [5.2 Bounded Context: Monitoreo](#52-bounded-context-monitoreo)
+      - [5.2.1 Domain Layer](#521-domain-layer)
+      - [5.2.2 Interface Layer](#522-interface-layer)
+      - [5.2.3 Application Layer](#523-application-layer)
+      - [5.2.4 Infrastructure Layer](#524-infrastructure-layer)
+      - [5.2.6 Bounded Context Software Architecture Component Level Diagrams](#526-bounded-context-software-architecture-component-level-diagrams)
+      - [5.2.7 Bounded Context Software Architecture Container Level Diagrams](#527-bounded-context-software-architecture-code-level-diagrams)
+          - [5.2.7.1 Bounded Context Domain Layer Class Diagrams](#5271-bounded-context-domain-layer-class-diagrams)
+          - [5.2.7.2 Bounded Context Database Design Diagram](#5272-bounded-context-database-design-diagram)
+  - [5.3 Bounded Context: Estadísticas](#53-bounded-context-estadísticas)
+      - [5.3.1 Domain Layer](#531-domain-layer)
+      - [5.3.2 Interface Layer](#532-interface-layer)
+      - [5.3.3 Application Layer](#533-application-layer)
+      - [5.3.4 Infrastructure Layer](#534-infrastructure-layer)
+      - [5.3.6 Bounded Context Software Architecture Component Level Diagrams](#536-bounded-context-software-architecture-component-level-diagrams)
+      - [5.3.7 Bounded Context Software Architecture Container Level Diagrams](#537-bounded-context-software-architecture-code-level-diagrams)
+          - [5.3.7.1 Bounded Context Domain Layer Class Diagrams](#5371-bounded-context-domain-layer-class-diagrams)
+          - [5.3.7.2 Bounded Context Database Design Diagram](#5372-bounded-context-database-design-diagram)
+  - [5.4 Bounded Context: Notificaciones](#54-bounded-context-notificaciones)
+      - [5.4.1 Domain Layer](#541-domain-layer)
+      - [5.4.2 Interface Layer](#542-interface-layer)
+      - [5.4.3 Application Layer](#543-application-layer)
+      - [5.4.4 Infrastructure Layer](#544-infrastructure-layer)
+      - [5.4.6 Bounded Context Software Architecture Component Level Diagrams](#546-bounded-context-software-architecture-component-level-diagrams)
+      - [5.4.7 Bounded Context Software Architecture Container Level Diagrams](#547-bounded-context-software-architecture-code-level-diagrams)
+          - [5.4.7.1 Bounded Context Domain Layer Class Diagrams](#5471-bounded-context-domain-layer-class-diagrams)
+          - [5.4.7.2 Bounded Context Database Design Diagram](#5472-bounded-context-database-design-diagram)
+  - [5.5 Bounded Context: Identity Access Management (IAM)](#55-bounded-context-identity-access-managementiam)
+      - [5.5.1 Domain Layer](#551-domain-layer)
+      - [5.5.2 Interface Layer](#552-interface-layer)
+      - [5.5.3 Application Layer](#553-application-layer)
+      - [5.5.4 Infrastructure Layer](#554-infrastructure-layer)
+      - [5.5.6 Bounded Context Software Architecture Component Level Diagrams](#556-bounded-context-software-architecture-component-level-diagrams)
+      - [5.5.7 Bounded Context Software Architecture Container Level Diagrams](#557-bounded-context-software-architecture-code-level-diagrams)
+          - [5.5.7.1 Bounded Context Domain Layer Class Diagrams](#5571-bounded-context-domain-layer-class-diagrams)
+          - [5.5.7.2 Bounded Context Database Design Diagram](#5572-bounded-context-database-design-diagram)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -511,7 +557,6 @@ Jóvenes que dedican largas horas al estudio en computadora, ya sea en clases vi
 - **Ocupación:** Estudiantes de colegio, universidad, posgrado o cursos online
 - **Uso de tecnología:** Acostumbrados a apps académicas (Moodle, Google Classroom, Zoom, Notion) y redes sociales.
 - **Necesidades:** Prevenir dolores y fatiga por largas jornadas de estudio, contar con alertas sencillas y no invasivas, mejorar hábitos posturales para mantener el rendimiento académico.
-
 
 ## Capítulo II: Requirements Elicitation & Analysis
 
@@ -2716,17 +2761,18 @@ El diseño del bounded context Notificaciones se centra únicamente en gestionar
 
 ## Capítulo V: Tactical-Level Software Design
 
-### 5.1. Bounded Context: Orquestrador
-#### 5.1.1. Domain Layer
-#### 5.1.2. Interface Layer
-#### 5.1.3. Application Layer
-#### 5.1.4. Infrastructure Layer
-##### 5.1.6. Bounded Context Software Architecture Component Level Diagrams
-##### 5.1.7. Bounded Context Software Architecture Code Level Diagrams
-![orquestrator-class-diagram.png](images/chapter-5/orquestrator-class-diagram.png)
+### 5.1 Bounded Context: Orquestrator
+#### 5.1.1 Domain Layer
+#### 5.1.2 Interface Layer
+#### 5.1.3 Application Layer
+#### 5.1.4 Infrastructure Layer
+#### 5.1.6 Bounded Context Software Architecture Component Level Diagrams
+#### 5.1.7 Bounded Context Software Architecture Code Level Diagrams
+##### 5.1.7.1 Bounded Context Domain Layer Class Diagrams
+##### 5.1.7.2 Bounded Context Database Design Diagram
 
-### 5.2. Bounded Context: Monitoreo
-#### 5.2.1. Domain Layer
+### 5.2 Bounded Context: Monitoreo
+#### 5.2.1 Domain Layer
 
 En la **Capa de Dominio** del Bounded Context de **Monitoreo (Monitoring)**, los principales agregados son `MonitoringSession`, `PostureEvent`, y `ActiveBreak`. Estos encapsulan los conceptos de negocio necesarios para gestionar la captura estructurada de la actividad postural de los usuarios: seguimiento de sesiones de monitoreo, registro de eventos relevantes sobre la postura y control de pausas activas durante el proceso.
 
@@ -2854,7 +2900,7 @@ Descripción: Encargado de consultas y recuperación de datos, sin modificar el 
 | `getPostureEvents(Long sessionId)` | List<PostureEvent>        | Consulta los eventos posturales de una sesión.                          |
 | `getUserStatistics(Long userId)`   | MonitoringStatistics (VO) | Calcula métricas agregadas (tiempo en buena/mala postura, pausas, etc.) |
 
-#### 5.2.2. Interface Layer
+#### 5.2.2 Interface Layer
 
 En la Capa de Interfaz del Bounded Context de Monitoring, se expone el controlador MonitoringController, el cual ofrece endpoints RESTful para la gestión de sesiones de monitoreo, registro de eventos posturales y pausas activas. Estos endpoints permiten iniciar, pausar y finalizar sesiones, registrar eventos de postura detectados en tiempo real desde el frontend, y administrar las pausas activas que contribuyen al bienestar del usuario durante su jornada.
 
@@ -2879,7 +2925,7 @@ Controlador: `MonitoringController`
 | startBreak        | PATCH      | /api/v1/monitoring/breaks/{breakId}/start      | Inicia una pausa activa programada       |
 | endBreak          | PATCH      | /api/v1/monitoring/breaks/{breakId}/end        | Finaliza una pausa activa en curso       |
 
-#### 5.2.3. Application Layer
+#### 5.2.3 Application Layer
 
 En el Application Layer del Bounded Context de Monitoring se implementan los servicios de aplicación que orquestan los casos de uso principales: creación y finalización de sesiones de monitoreo, registro de eventos posturales, programación de pausas activas y consultas sobre sesiones, pausas y métricas. El MonitoringCommandService gestiona las operaciones de modificación del dominio, mientras que el MonitoringQueryService se centra en la recuperación de información estructurada y estadísticas de uso.
 
@@ -2912,7 +2958,8 @@ Descripción: Implementación del servicio de consultas encargado de recuperar i
 | handle(GetPostureEventsBySessionQuery) | Recupera todos los eventos posturales registrados durante una sesión.                                         |
 | handle(GetMonitoringStatisticsQuery)   | Obtiene métricas agregadas del historial de sesiones (duración promedio, frecuencia de malas posturas, etc.). |
 
-#### 5.2.4. Infrastructure Layer
+#### 5.2.4 Infrastructure Layer
+
 
 En la Capa de Infraestructura del Bounded Context de Posture Monitoring se implementan los repositorios que permiten la persistencia y recuperación de datos relacionados con las sesiones de monitoreo, eventos posturales y pausas activas. Esta capa actúa como puente entre la lógica de dominio y la base de datos, asegurando que los objetos del dominio se almacenen y consulten de manera eficiente y consistente.
 
@@ -2952,22 +2999,23 @@ Descripción: Administra las pausas activas programadas, iniciadas o finalizadas
 | findBySession(Long sessionId) | Lista todas las pausas activas asociadas a una sesión. |
 | delete(Long breakId)          | Elimina una pausa activa de la base de datos.          |
 
-##### 5.2.6. Bounded Context Software Architecture Component Level Diagrams
-##### 5.2.7. Bounded Context Software Architecture Code Level Diagrams
-##### 5.2.7.1. Bounded Context Domain Layer Class Diagram
+#### 5.2.6 Bounded Context Software Architecture Component Level Diagrams
+#### 5.2.7 Bounded Context Software Architecture Code Level Diagrams
+##### 5.2.7.1 Bounded Context Domain Layer Class Diagrams
 
 <img src="images/chapter-5/monitoring-class-diagram.png" alt="Monitoring Domain Class Diagram">
 
-###### 5.2.7.2. Bounded Context Database Design Diagram
+##### 5.2.7.2 Bounded Context Database Design Diagram
 
 <img src="images/chapter-5/monitoring-database-diagram.png" alt="Monitoring Database Design Diagram">
 
-#### 5.3. Bounded Context: Estadisticas
-##### 5.3.1. Domain Layer
- En la capa de dominio del bounded context de Estadísticas, los principales agregados son `Reporte` y `Métrica`. Estos encapsulan la lógica de negocio para la gestión de datos históricos de posturas, el cálculo de métricas relevantes y la generación de reportes visuales para los usuarios.
+### 5.3 Bounded Context: Estadísticas
+#### 5.3.1 Domain Layer
+
+En la capa de dominio del bounded context de Estadísticas, los principales agregados son `Reporte` y `Métrica`. Estos encapsulan la lógica de negocio para la gestión de datos históricos de posturas, el cálculo de métricas relevantes y la generación de reportes visuales para los usuarios.
 
 **Agregado `Reporte`**
- **Descripción:** Representa el agregado raíz “Reporte”, que contiene la información consolidada de un período de monitoreo y las métricas asociadas.
+**Descripción:** Representa el agregado raíz “Reporte”, que contiene la información consolidada de un período de monitoreo y las métricas asociadas.
 
 | Atributo       | Tipo         | Visibilidad | Descripción                                                |
 |----------------|--------------|-------------|------------------------------------------------------------|
@@ -3015,7 +3063,7 @@ Descripción: Administra las pausas activas programadas, iniciadas o finalizadas
 **Servicios de Dominio**
 
 * **Servicio: StudyCommandService**
-**Descripción:** Define operaciones para la creación y gestión de estudios estadísticos.
+  **Descripción:** Define operaciones para la creación y gestión de estudios estadísticos.
 
 | Método                               | Tipo de Retorno | Descripción                        |
 |--------------------------------------|-----------------|------------------------------------|
@@ -3025,7 +3073,7 @@ Descripción: Administra las pausas activas programadas, iniciadas o finalizadas
 ---
 
 * **Servicio: StudyQueryService**
-**Descripción:** Permite consultar información de los estudios estadísticos registrados.
+  **Descripción:** Permite consultar información de los estudios estadísticos registrados.
 
 | Método                           | Tipo de Retorno | Descripción                              |
 |----------------------------------|-----------------|------------------------------------------|
@@ -3034,7 +3082,7 @@ Descripción: Administra las pausas activas programadas, iniciadas o finalizadas
 
 ---
 * **Servicio: DatasetCommandService**
-**Descripción:** Define operaciones sobre la gestión de datasets.
+  **Descripción:** Define operaciones sobre la gestión de datasets.
 
 | Método                               | Tipo de Retorno | Descripción                       |
 |--------------------------------------|-----------------|-----------------------------------|
@@ -3044,14 +3092,14 @@ Descripción: Administra las pausas activas programadas, iniciadas o finalizadas
 ---
 
 * **Servicio: DatasetQueryService**
-**Descripción:** Permite obtener información sobre datasets registrados.
+  **Descripción:** Permite obtener información sobre datasets registrados.
 
 | Método                            | Tipo de Retorno | Descripción                             |
 |-----------------------------------|-----------------|-----------------------------------------|
 | handle(GetAllDatasetsQuery query) | List<Dataset>   | Obtiene todos los datasets registrados. |
 | handle(GetDatasetByIdQuery query) | Dataset         | Busca un dataset por ID.                |
 
-##### 5.3.2. Interface Layer
+#### 5.3.2 Interface Layer
 En la Capa de Interfaz del Bounded Context de Estadística, se expone el controlador StatisticsController, el cual ofrece endpoints RESTful para la gestión de estudios estadísticos, conjuntos de datos y variables. Estos endpoints permiten crear estudios, registrar datasets, añadir variables, y consultar resultados de análisis. También se habilita la ejecución de operaciones estadísticas básicas que integran datos provenientes del frontend (web o móvil) y facilitan la interacción con otros bounded contexts como Reports (para la generación de informes) y Visualization (para la representación gráfica de los resultados).
 
 **Justificación:**
@@ -3073,7 +3121,8 @@ Esta capa cumple el propósito de desacoplar la lógica de dominio del acceso ex
 | runAnalysis        | POST       | /api/v1/statistics/studies/{studyId}/analysis     | Ejecuta un análisis sobre un estudio y sus datasets |
 | getAnalysisResults | GET        | /api/v1/statistics/studies/{studyId}/results      | Obtiene resultados de análisis realizados           |
 
-##### 5.3.3. Application Layer
+#### 5.3.3 Application Layer
+
 En el Application Layer del Bounded Context de **Estadística** se implementan los servicios de aplicación que orquestan los casos de uso principales:
 - creación y gestión de estudios,
 - registro de conjuntos de datos y variables,
@@ -3112,7 +3161,8 @@ Esta separación permite optimizar las operaciones de lectura y escritura de man
 | handle(GetDatasetsByStudyQuery)    | Obtiene todos los datasets asociados a un estudio.           |
 | handle(GetVariablesByDatasetQuery) | Lista las variables pertenecientes a un dataset.             |
 | handle(GetAnalysisResultsQuery)    | Obtiene los resultados de análisis realizados en un estudio. |
-##### 5.3.4. Infrastructure Layer
+
+#### 5.3.4 Infrastructure Layer
 
 En la Capa de Infraestructura del Bounded Context de **Estadística** se implementan los repositorios que permiten la persistencia y recuperación de datos relacionados con los estudios, conjuntos de datos, variables y resultados de análisis. Esta capa actúa como puente entre la lógica de dominio y la base de datos, asegurando que los objetos del dominio se almacenen y consulten de manera eficiente y consistente.
 
@@ -3176,9 +3226,14 @@ Esto permite flexibilidad en la elección del motor de base de datos, facilita p
 ###### 5.3.6. Bounded Context Software Architecture Component Level Diagrams
 ###### 5.3.7. Bounded Context Software Architecture Code Level Diagrams
 
+#### 5.3.6 Bounded Context Software Architecture Component Level Diagrams
+#### 5.3.7 Bounded Context Software Architecture Code Level Diagrams
+##### 5.3.7.1 Bounded Context Domain Layer Class Diagrams
+##### 5.3.7.2 Bounded Context Database Design Diagram
 
-### 5.4. Bounded Context: Notificaciones
-#### 5.4.1. Domain Layer
+### 5.4 Bounded Context: Notificaciones
+#### 5.4.1 Domain Layer
+
 <p>
     En la <strong>Capa de Dominio</strong> del <strong>Bounded Context de Notificaciones</strong>,
     los principales agregados son <code>Notification</code> y <code>UserPreferences</code>.
@@ -3337,7 +3392,7 @@ Esto permite flexibilidad en la elección del motor de base de datos, facilita p
     </tbody>
   </table>
 
-#### 5.4.2. Interface Layer
+#### 5.4.2 Interface Layer
 
 <p>
   En la <strong>Capa de Interfaz</strong> del <strong>Bounded Context de Notificaciones</strong>, se expone el 
@@ -3401,8 +3456,7 @@ Esto permite flexibilidad en la elección del motor de base de datos, facilita p
   </tbody>
 </table>
 
-
-#### 5.4.3. Application Layer
+#### 5.4.3 Application Layer
 
 <p>
   En el <strong>Application Layer</strong> del <strong>Bounded Context de Notificaciones</strong>, se implementan los servicios 
@@ -3492,7 +3546,7 @@ Esto permite flexibilidad en la elección del motor de base de datos, facilita p
   <li><strong>DeadlineReminderEventHandler:</strong> Genera recordatorios cuando una tarea está próxima a vencer.</li>
 </ul>
 
-#### 5.4.4. Infrastructure Layer
+#### 5.4.4 Infrastructure Layer
 
 <p>
   En la <strong>Infrastructure Layer</strong> del contexto de <strong>Notificaciones</strong>, se concentran las implementaciones concretas 
@@ -3651,8 +3705,13 @@ Esto permite flexibilidad en la elección del motor de base de datos, facilita p
 
 ##### 5.4.7. Bounded Context Software Architecture Code Level Diagrams
 
-### 5.5. Bounded Context: IAM
-#### 5.5.1. Domain Layer
+#### 5.4.6 Bounded Context Software Architecture Component Level Diagrams
+#### 5.4.7 Bounded Context Software Architecture Code Level Diagrams
+##### 5.4.7.1 Bounded Context Domain Layer Class Diagrams
+##### 5.4.7.2 Bounded Context Database Design Diagram
+
+### 5.5 Bounded Context: Identity Access Management(IAM)
+#### 5.5.1 Domain Layer
 
 <p>
   En la <strong>Capa de Dominio</strong> del <strong>Bounded Context de Identity and Access Management (IAM)</strong>, 
@@ -3774,7 +3833,7 @@ Esto permite flexibilidad en la elección del motor de base de datos, facilita p
   </tbody>
 </table>
 
-#### 5.5.2. Interface Layer
+#### 5.5.2 Interface Layer
 
 <p>
   El <strong>Interface Layer</strong> sirve como la capa de comunicación entre el mundo exterior 
@@ -3829,7 +3888,7 @@ El controlador <code>UsersController</code> gestiona las solicitudes para obtene
   </tbody>
 </table>
 
-#### 5.5.3. Application Layer
+#### 5.5.3 Application Layer
 
 <p>
   El <strong>Application Layer</strong> contiene la lógica necesaria para procesar las operaciones relacionadas con las entidades, 
@@ -3892,7 +3951,7 @@ El controlador <code>UsersController</code> gestiona las solicitudes para obtene
   </tbody>
 </table>
 
-#### 5.5.4. Infrastructure Layer
+#### 5.5.4 Infrastructure Layer
 
 <p>
   La capa de <strong>Infrastructure</strong> se encarga de la interacción con fuentes externas de datos, 
@@ -3927,24 +3986,32 @@ El controlador <code>UsersController</code> gestiona las solicitudes para obtene
   </tbody>
 </table>
 
-##### 5.5.6. Bounded Context Software Architecture Component Level Diagrams
+#### 5.5.6 Bounded Context Software Architecture Component Level Diagrams
 
 El diagrama de componentes del sistema ErgoVision representa una arquitectura distribuida basada en Domain-Driven Design (DDD) que utiliza bounded contexts para separar las responsabilidades del negocio de monitoreo postural. La arquitectura incluye tres interfaces de usuario principales: una Landing Page estática desarrollada en HTML/CSS/JavaScript para marketing e información pública, una Web Application en Angular para monitoreo en tiempo real y visualización de estadísticas, y una Mobile Application en Kotlin para recibir notificaciones y consultar métricas personales. El sistema está organizado en cinco bounded contexts independientes: IAM para gestión de identidad y acceso usando Spring Security con JWT, Monitoring para detección postural en tiempo real, Notifications para manejo de alertas, Statistics para analíticas y reportes, y Orchestrator para configuración y gestión de sesiones de monitoreo. La infraestructura incluye un REST API centralizado en Spring Boot que actúa como punto de integración, una base de datos PostgreSQL para persistencia de datos estructurados, y un almacén clave-valor Redis para datos de sesión de acceso frecuente. La arquitectura se integra con dos sistemas externos críticos: Google MediaPipe para detección de landmarks corporales mediante inteligencia artificial, y Firebase Cloud Messaging para entrega de notificaciones push a dispositivos móviles, manteniendo así una separación clara entre el dominio interno del negocio y los servicios externos especializados.
 
 <img src="images/chapter-5/ComponentDiagram.png" alt="Component Diagram">
 
-##### 5.5.7. Bounded Context Software Architecture Code Level Diagrams
-###### 5.5.7.1. Bounded Context Domain Layer Class Diagrams
+#### 5.5.7 Bounded Context Software Architecture Code Level Diagrams
+##### 5.5.7.1 Bounded Context Domain Layer Class Diagrams
 
 El diagrama de clases muestra cómo se relacionan las entidades User y Role, así como los objetos de valor asociados a ellas.
 
 <img src="images/chapter-5/IAM-DC.png" alt="Diagrama de Clases - Bounded Context IAM"/>
 
-###### 5.5.7.2. Bounded Context Database Design Diagram
+##### 5.5.7.2 Bounded Context Database Design Diagram
 
 En el diagrama de base, se observa la tabla users y roles, así como la relación entre estas.
 
 <img src="images/chapter-5/IAM-DB.png" alt="Diagrama de Base de Datos - Bounded Context IAM"/>
+
+
+
+
+
+
+
+
 
 ## Conclusiones
 
