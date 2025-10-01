@@ -4076,13 +4076,13 @@ Los wireframes de la aplicación móvil de ErgoVision muestran el flujo completo
 
 <img src="images/chapter-6/WireframesMovil.png" alt="Wireframes Movil">
 
-Figma: [Link de Figma](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
+Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
 
 #### 6.4.2 Applications Wireflow Diagrams
 
 Los wireflow diagrams de ErgoVision representan la secuencia de interacciones y pantallas que los usuarios experimentarán al navegar por la aplicación.
 
-Figma: [Link de Figma](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
+Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
 
 **Edición de Datos de Usuario:** Este wireflow corresponde a cuando un usuario quiere modificar sus datos personales luego de haberse registrado.
 
@@ -4124,16 +4124,26 @@ Figma: [Link de Figma](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoV
 
 <img src="images/chapter-6/Wireflow4Movil.png" alt="Wireflow 4 Movil">
 
+**Inicio de Monitoreo:** Este wireflow corresponde a cuando un usuario quiere iniciar una sesión de monitoreo postural en tiempo real.
+ - **Web:**
+
+<img src="images/chapter-6/Wireflow5Web.png" alt="Wireflow 5 Web">
+
+**Inicio de Pausa Activa:** Este wireflow corresponde a cuando se activa automáticamente o un usuario quiere iniciar una pausa activa con ejercicios sugeridos por la aplicación.
+ - **Web:**
+
+<img src="images/chapter-6/Wireflow6Web.png" alt="Wireflow 6 Web">
+
+**Calibración del Sistema de Cámara:** Este wireflow corresponde a cuando un usuario quiere calibrar el sistema de cámara para mejorar la detección postural.
+ - **Web:**
+
+<img src="images/chapter-6/Wireflow7Web.png" alt="Wireflow 7 Web">
+
 #### 6.4.3 Applications Mock-ups
 
 #### 6.4.4 Applications User Flow Diagrams
 
 ### 6.5 Applications Prototyping
-
-
-
-
-
 
 ## Conclusiones
 
