@@ -4077,8 +4077,7 @@ Esto permite flexibilidad en la elección del motor de base de datos, facilita p
   <thead><tr><th>Método</th><th>Tipo de Retorno</th><th>Descripción</th></tr></thead>
   <tbody>
     <tr><td>handle(SignInCommand command)</td><td>User</td><td>Autentica a un usuario y devuelve su información con token.</td></tr>
-    <tr><td>handle(SignUpStudentCommand command)</td><td>User</td><td>Registra un nuevo estudiante.</td></tr>
-    <tr><td>handle(SignUpWorkerCommand command)</td><td>User</td><td>Registra un nuevo trabajador.</td></tr>
+    <tr><td>handle(SignUpCommand command)</td><td>User</td><td>Registra un nuevo usuario</td></tr>
   </tbody>
 </table>
 
@@ -4087,10 +4086,8 @@ Esto permite flexibilidad en la elección del motor de base de datos, facilita p
 <table>
   <thead><tr><th>Método</th><th>Tipo de Retorno</th><th>Descripción</th></tr></thead>
   <tbody>
-    <tr><td>handle(GetAllUsersQuery query)</td><td>List&lt;User&gt;</td><td>Obtiene todos los usuarios registrados.</td></tr>
     <tr><td>handle(GetUserByIdQuery query)</td><td>User</td><td>Busca un usuario por ID.</td></tr>
     <tr><td>handle(GetUserByUsernameQuery query)</td><td>User</td><td>Busca un usuario por nombre de usuario.</td></tr>
-    <tr><td>handle(CheckUserByIdQuery query)</td><td>Boolean</td><td>Verifica si existe un usuario con un ID específico.</td></tr>
   </tbody>
 </table>
 
@@ -4179,8 +4176,7 @@ El controlador <code>UsersController</code> gestiona las solicitudes para obtene
   </thead>
   <tbody>
     <tr><td>handle(SignInCommand command)</td><td>Maneja el inicio de sesión de un usuario.</td><td>POST /sign-in</td><td>Devuelve el recurso de usuario autenticado.</td></tr>
-    <tr><td>handle(SignUpStudentCommand command)</td><td>Maneja el registro de un estudiante.</td><td>POST /sign-up/student</td><td>Devuelve el recurso del usuario creado.</td></tr>
-    <tr><td>handle(SignUpWorkerCommand command)</td><td>Maneja el registro de un trabajador.</td><td>POST /sign-up/worker</td><td>Devuelve el recurso del usuario creado.</td></tr>
+    <tr><td>handle(SignUpCommand command)</td><td>Maneja el registro de un usuario</td><td>POST /sign-up/</td><td>Devuelve el recurso del usuario creado.</td></tr>
   </tbody>
 </table>
 
@@ -4205,10 +4201,26 @@ El controlador <code>UsersController</code> gestiona las solicitudes para obtene
     <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
   </thead>
   <tbody>
-    <tr><td>handle(GetAllUsersQuery query)</td><td>Devuelve todos los usuarios.</td><td>GET /users</td><td>Lista de recursos de usuarios.</td></tr>
     <tr><td>handle(GetUserByIdQuery query)</td><td>Devuelve un usuario por su ID.</td><td>GET /users/{userId}</td><td>Recurso de usuario por ID.</td></tr>
     <tr><td>handle(GetUserByUsernameQuery query)</td><td>Devuelve un usuario por su correo electrónico.</td><td>GET /users/username/{email}</td><td>Recurso de usuario.</td></tr>
-    <tr><td>handle(CheckUserByIdQuery query)</td><td>Verifica si un usuario existe por su ID.</td><td>GET /users/check/{userId}</td><td>Boolean (true/false).</td></tr>
+  </tbody>
+</table>
+
+<h6>Clase: <code>ApplicationInitializer</code></h6>
+<p><strong>Descripción:</strong> La clase <code>ApplicationInitializer</code> escucha el evento 
+<code>ApplicationReadyEvent</code> y ejecuta procesos de inicialización como la creación de roles por defecto o la carga de configuraciones iniciales.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>Evento</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>onApplicationReady(ApplicationReadyEvent event)</td>
+      <td>Ejecuta procesos de inicialización al arrancar la aplicación.</td>
+      <td>ApplicationReadyEvent</td>
+      <td>Confirma la inicialización (por ejemplo, roles creados, usuario admin creado).</td>
+    </tr>
   </tbody>
 </table>
 
@@ -4249,7 +4261,7 @@ El controlador <code>UsersController</code> gestiona las solicitudes para obtene
 
 #### 5.5.6 Bounded Context Software Architecture Component Level Diagrams
 
-El diagrama de componentes del sistema ErgoVision representa una arquitectura distribuida basada en Domain-Driven Design (DDD) que utiliza bounded contexts para separar las responsabilidades del negocio de monitoreo postural. La arquitectura incluye tres interfaces de usuario principales: una Landing Page estática desarrollada en HTML/CSS/JavaScript para marketing e información pública, una Web Application en Angular para monitoreo en tiempo real y visualización de estadísticas, y una Mobile Application en Kotlin para recibir notificaciones y consultar métricas personales. El sistema está organizado en cinco bounded contexts independientes: IAM para gestión de identidad y acceso usando Spring Security con JWT, Monitoring para detección postural en tiempo real, Notifications para manejo de alertas, Statistics para analíticas y reportes, y Orchestrator para configuración y gestión de sesiones de monitoreo. La infraestructura incluye un REST API centralizado en Spring Boot que actúa como punto de integración, una base de datos PostgreSQL para persistencia de datos estructurados, y un almacén clave-valor Redis para datos de sesión de acceso frecuente. La arquitectura se integra con dos sistemas externos críticos: Google MediaPipe para detección de landmarks corporales mediante inteligencia artificial, y Firebase Cloud Messaging para entrega de notificaciones push a dispositivos móviles, manteniendo así una separación clara entre el dominio interno del negocio y los servicios externos especializados.
+El diagrama de componentes del sistema ErgoVision presenta una arquitectura con cinco bounded contexts, Landing Page en HTML/CSS/JS, Web App en Angular y Mobile App en Kotlin, conectados a través de un REST API en Spring Boot con PostgreSQL e integrando servicios externos de Google MediaPipe para detección postural y Firebase Cloud Messaging para notificaciones push.
 
 <img src="images/chapter-5/ComponentDiagram.png" alt="Component Diagram">
 
