@@ -2761,14 +2761,275 @@ El diseño del bounded context Notificaciones se centra únicamente en gestionar
 
 ## Capítulo V: Tactical-Level Software Design
 
-### 5.1 Bounded Context: Orquestrator
+### 5.1 Bounded Context: Orquestrador
 #### 5.1.1 Domain Layer
+
+En la **Capa de Dominio** del Bounded Context de **Orquestrador (Orchestrator)**, los principales agregados son `AlertSetting`, `PostureSetting`, y `Calibration`. Estos encapsulan los conceptos de negocio necesarios para gestionar la configuración y calibración del sistema de monitoreo postural: configuraciones de alertas, ajustes de detección postural y parámetros de calibración personalizados.
+
+La lógica de dominio para el manejo de configuraciones y calibraciones se concentra en servicios de dominio especializados que aplican las reglas de negocio relacionadas con la gestión de preferencias del usuario, validación de parámetros de calibración y consistencia en las configuraciones del sistema.
+
+Agregado `AlertSetting`
+
+Descripción: Gestiona la configuración de alertas del monitoreo.
+
+| Atributo             | Tipo    | Visibilidad | Descripción                                                   |
+|----------------------|---------|-------------|---------------------------------------------------------------|
+| id                   | Long    | Privado     | Identificador único de la configuración.                      |
+| visualAlertsEnabled  | Boolean | Privado     | Indica si las alertas visuales están habilitadas.             |
+| soundAlertsEnabled   | Boolean | Privado     | Indica si las alertas sonoras están habilitadas.              |
+| alertVolume          | Integer | Privado     | Volumen de las alertas sonoras (0-100).                       |
+| alertInterval        | Integer | Privado     | Intervalo entre alertas consecutivas (segundos).              |
+| createdAt            | Date    | Privado     | Fecha de creación del registro.                               |
+| updatedAt            | Date    | Privado     | Fecha de última actualización.                                |
+
+| Método                             | Tipo de Retorno | Visibilidad | Descripción                        |
+|------------------------------------|-----------------|-------------|------------------------------------|
+| enableVisualAlerts()               | void            | Público     | Habilita las alertas visuales.     |
+| disableVisualAlerts()              | void            | Público     | Deshabilita las alertas visuales.  |
+| enableSoundAlerts()                | void            | Público     | Habilita las alertas sonoras.      |
+| disableSoundAlerts()               | void            | Público     | Deshabilita las alertas sonoras.   |
+| adjustVolume(Integer volume)       | void            | Público     | Ajusta el volumen (0-100).         |
+| setAlertInterval(Integer interval) | void            | Público     | Define el intervalo entre alertas. |
+
+Agregado `PostureSetting`
+
+Descripción: Configura los parámetros de detección postural.
+
+| Atributo               | Tipo    | Visibilidad | Descripción                                                   |
+|------------------------|---------|-------------|---------------------------------------------------------------|
+| id                     | Long    | Privado     | Identificador único de la configuración.                      |
+| postureSensitivity     | Integer | Privado     | Sensibilidad general de detección (0-100).                    |
+| shoulderAngleThreshold | Integer | Privado     | Umbral angular para detección de hombros.                     |
+| headAngleThreshold     | Integer | Privado     | Umbral angular para detección de cabeza.                      |
+| samplingFrequency      | Integer | Privado     | Frecuencia de muestreo (segundos).                            |
+| showSkeleton           | Boolean | Privado     | Muestra/oculta el esqueleto en la interfaz.                   |
+| createdAt              | Date    | Privado     | Fecha de creación del registro.                               |
+| updatedAt              | Date    | Privado     | Fecha de última actualización.                                |
+
+| Método                              | Tipo de Retorno | Visibilidad | Descripción                                      |
+|-------------------------------------|-----------------|-------------|--------------------------------------------------|
+| adjustSensitivity(Integer level)    | void            | Público     | Ajusta la sensibilidad de detección.             |
+| setShoulderThreshold(Integer angle) | void            | Público     | Define umbral angular para hombros.              |
+| setHeadThreshold(Integer angle)     | void            | Público     | Define umbral angular para cabeza.               |
+| setSamplingFrequency(Integer freq)  | void            | Público     | Establece frecuencia de muestreo.                |
+| toggleSkeletonVisibility()          | void            | Público     | Alterna visibilidad del esqueleto.               |
+
+Agregado `Calibration`
+
+Descripción: Almacena y gestiona los resultados de calibración del usuario.
+
+| Atributo           | Tipo               | Visibilidad | Descripción                                                   |
+|--------------------|--------------------|-------------|---------------------------------------------------------------|
+| id                 | Long               | Privado     | Identificador único de la calibración.                        |
+| userId             | Long               | Privado     | Identificador del usuario asociado.                           |
+| calibrationDate    | Date               | Privado     | Fecha de realización de la calibración.                       |
+| referenceLandmarks | ReferenceLandmarks | Privado     | Puntos de referencia corporales establecidos.                 |
+| postureThresholds  | PostureThresholds  | Privado     | Umbrales posturales personalizados.                           |
+| cameraDistance     | Float              | Privado     | Distancia estimada a la cámara.                               |
+| cameraVisibility   | Integer            | Privado     | Nivel de visibilidad de la cámara (0-100).                    |
+| cameraResolution   | String             | Privado     | Resolución de cámara utilizada.                               |
+| calibrationScore   | Integer            | Privado     | Puntuación de calidad de calibración (0-100).                 |
+| createdAt          | Date               | Privado     | Fecha de creación del registro.                               |
+| updatedAt          | Date               | Privado     | Fecha de última actualización.                                |
+
+| Método                                                  | Tipo de Retorno | Visibilidad | Descripción                             |
+|---------------------------------------------------------|-----------------|-------------|-----------------------------------------|
+| updateLandmarks(ReferenceLandmarks landmarks)           | void            | Público     | Actualiza los puntos de referencia.     |
+| adjustThresholds(PostureThresholds thresholds)          | void            | Público     | Modifica los umbrales posturales.       |
+| setCameraParameters(Float distance, Integer visibility) | void            | Público     | Configura parámetros de cámara.         |
+| validateCalibration()                                   | Boolean         | Público     | Valida la integridad de la calibración. |
+
+Entidad `ReferenceLandmarks`
+
+Descripción: Representa los puntos de referencia corporales para calibración.
+
+| Atributo  | Tipo           | Visibilidad | Descripción                           |
+|-----------|----------------|-------------|---------------------------------------|
+| landmarks | List<Landmark> | Privado     | Colección de puntos clave del cuerpo. |
+
+Objeto de Valor `Landmark`
+
+Descripción: Representa un punto clave del cuerpo en el espacio 3D.
+
+| Atributo   | Tipo    | Descripción                             |
+|------------|---------|-----------------------------------------|
+| x          | Integer | Coordenada X en el espacio.             |
+| y          | Integer | Coordenada Y en el espacio.             |
+| z          | Integer | Coordenada Z en el espacio.             |
+| visibility | Integer | Nivel de visibilidad/confianza (0-100). |
+
+Objeto de Valor `PostureThresholds`
+
+Descripción: Define los umbrales angulares para detección de postura.
+
+| Atributo      | Tipo    | Descripción                          |
+|---------------|---------|--------------------------------------|
+| shoulderAngle | Integer | Umbral para ángulo de hombros.       |
+| neckAngle     | Integer | Umbral para ángulo de cuello.        |
+| backAngle     | Integer | Umbral para ángulo de espalda.       |
+| headTilt      | Integer | Umbral para inclinación de cabeza.   |
+
+Servicio de Dominio: `AlertsSettingCommandService`
+
+Descripción: Gestiona las operaciones de escritura para configuraciones de alertas.
+
+| Método                                       | Tipo de Retorno | Descripción                                               |
+|----------------------------------------------|-----------------|-----------------------------------------------------------|
+| handle(CreateAlertsSettingCommand command)   | void            | Crea una nueva configuración de alertas.                  |
+| handle(UpdateAlertsSettingCommand command)   | void            | Actualiza una configuración existente.                    |
+| handle(DeleteAlertsSettingCommand command)   | void            | Elimina una configuración de alertas.                     |
+
+Servicio de Dominio: `PostureSettingCommandService`
+
+Descripción: Gestiona las operaciones de escritura para configuraciones posturales.
+
+| Método                                        | Tipo de Retorno | Descripción                                               |
+|-----------------------------------------------|-----------------|-----------------------------------------------------------|
+| handle(CreatePostureSettingCommand command)   | void            | Crea una nueva configuración postural.                    |
+| handle(UpdatePostureSettingCommand command)   | void            | Actualiza una configuración existente.                    |
+| handle(DeletePostureSettingCommand command)   | void            | Elimina una configuración postural.                       |
+
+Servicio de Dominio: `CalibrationCommandService`
+
+Descripción: Gestiona las operaciones de escritura para calibraciones.
+
+| Método                                   | Tipo de Retorno | Descripción                                       |
+|------------------------------------------|-----------------|---------------------------------------------------|
+| handle(CreateCalibrationCommand command) | void            | Crea una nueva calibración.                       |
+| handle(UpdateCalibrationCommand command) | void            | Actualiza una calibración existente.              |
+| handle(DeleteCalibrationCommand command) | void            | Elimina una calibración.                          |
+
+Servicio de Dominio: `AlertsSettingQueryService`
+
+Descripción: Gestiona las consultas de configuraciones de alertas.
+
+| Método                                 | Tipo de Retorno | Descripción                                       |
+|----------------------------------------|-----------------|---------------------------------------------------|
+| handle(GetUserAlertSettingQuery query) | AlertSetting    | Recupera la configuración de alertas del usuario. |
+
+Servicio de Dominio: `PostureSettingQueryService`
+
+Descripción: Gestiona las consultas de configuraciones posturales.
+
+| Método                                   | Tipo de Retorno | Descripción                                     |
+|------------------------------------------|-----------------|-------------------------------------------------|
+| handle(GetUserPostureSettingQuery query) | PostureSetting  | Recupera la configuración postural del usuario. |
+
+Servicio de Dominio: `CalibrationQueryService`
+
+Descripción: Gestiona las consultas de calibraciones.
+
+| Método                                | Tipo de Retorno | Descripción                          |
+|---------------------------------------|-----------------|--------------------------------------|
+| handle(GetUserCalibrationQuery query) | Calibration     | Recupera la calibración del usuario. |
+
 #### 5.1.2 Interface Layer
+
+En la **Capa de Interfaz** del Bounded Context de **Orquestrador (Orchestrator)**, se exponen los controladores `AlertsSettingController`, `PostureSettingController` y `CalibrationController`, los cuales ofrecen endpoints RESTful para la gestión integral de configuraciones y calibraciones del sistema. Estos endpoints permiten al frontend obtener y modificar las configuraciones personalizadas de alertas, ajustes posturales y parámetros de calibración que son fundamentales para el correcto funcionamiento del monitoreo postural.
+
+**Justificación:**
+
+Esta capa sirve como puente entre la interfaz de usuario y la lógica de negocio del sistema de orquestración, proporcionando una API robusta y segura para la personalización completa de la experiencia de monitoreo. Permite desacoplar la configuración del usuario del núcleo de monitoreo, facilitando la integración con otros bounded contexts como Monitoring (para aplicar configuraciones) y User Management (para la gestión de perfiles). Gracias a esta capa, se garantiza la consistencia en las configuraciones, la trazabilidad de los cambios y la capacidad de personalización que requiere el sistema para adaptarse a las necesidades específicas de cada usuario.
+
+Controlador: `AlertsSettingController`
+
+| Método               | Verbo HTTP | Ruta                                                    | Descripción                                              |
+|----------------------|------------|---------------------------------------------------------|----------------------------------------------------------|
+| getAlertsSetting     | GET        | /api/v1/orchestrator/alerts-settings/{userId}           | Obtiene la configuración de alertas del usuario          |
+| createAlertsSetting  | POST       | /api/v1/orchestrator/alerts-settings                    | Crea una nueva configuración de alertas                  |
+| updateAlertsSetting  | PUT        | /api/v1/orchestrator/alerts-settings/{settingId}        | Actualiza la configuración de alertas existente          |
+| deleteAlertsSetting  | DELETE     | /api/v1/orchestrator/alerts-settings/{settingId}        | Elimina la configuración de alertas                      |
+
+Controlador: `PostureSettingController`
+
+| Método                | Verbo HTTP | Ruta                                                     | Descripción                                              |
+|-----------------------|------------|----------------------------------------------------------|----------------------------------------------------------|
+| getPostureSetting     | GET        | /api/v1/orchestrator/posture-settings/{userId}           | Obtiene la configuración postural del usuario            |
+| createPostureSetting  | POST       | /api/v1/orchestrator/posture-settings                    | Crea una nueva configuración postural                    |
+| updatePostureSetting  | PUT        | /api/v1/orchestrator/posture-settings/{settingId}        | Actualiza la configuración postural existente            |
+| deletePostureSetting  | DELETE     | /api/v1/orchestrator/posture-settings/{settingId}        | Elimina la configuración postural                        |
+
+Controlador: `CalibrationController`
+
+| Método             | Verbo HTTP | Ruta                                               | Descripción                                      |
+|--------------------|------------|----------------------------------------------------|--------------------------------------------------|
+| getUserCalibration | GET        | /api/v1/orchestrator/calibrations/{userId}         | Obtiene la calibración del usuario               |
+| createCalibration  | POST       | /api/v1/orchestrator/calibrations                  | Crea una nueva calibración                       |
+| updateCalibration  | PUT        | /api/v1/orchestrator/calibrations/{calibrationId}  | Actualiza la calibración existente               |
+| deleteCalibration  | DELETE     | /api/v1/orchestrator/calibrations/{calibrationId}  | Elimina la calibración                           |
+
 #### 5.1.3 Application Layer
+
+En el **Application Layer** del Bounded Context de **Orquestrador (Orchestrator)** se implementan los servicios de aplicación que orquestan los casos de uso principales relacionados con la gestión de configuraciones y calibraciones: creación, actualización y eliminación de configuraciones de alertas, ajustes posturales y parámetros de calibración, así como la recuperación de estas configuraciones para su uso en el sistema de monitoreo. Los servicios de comandos (`CommandServiceImpl`) gestionan las operaciones de modificación del dominio, mientras que los servicios de consultas (`QueryServiceImpl`) se centran en la recuperación eficiente de la información de configuración.
+
+**Justificación**
+
+La separación de la lógica en servicios de Command y Query sigue el patrón CQRS, permitiendo un diseño más claro, mantenible y escalable. Esta división facilita la optimización independiente de las operaciones de lectura y escritura, soporta la integración con otros bounded contexts como Monitoring (para aplicar configuraciones) y User Management (para la gestión de perfiles), y permite la evolución futura del sistema con bajo acoplamiento. Además, garantiza la consistencia y trazabilidad de las configuraciones personalizadas de cada usuario.
+
+`AlertsSettingCommandServiceImpl`
+
+Descripción: Implementación del servicio de comandos encargado de gestionar el ciclo de vida de las configuraciones de alertas del usuario.
+
+| Método                                       | Descripción                                                  |
+|----------------------------------------------|--------------------------------------------------------------|
+| handle(CreateAlertsSettingCommand)           | Crea una nueva configuración de alertas para un usuario.     |
+| handle(UpdateAlertsSettingCommand)           | Actualiza una configuración de alertas existente.            |
+| handle(DeleteAlertsSettingCommand)           | Elimina una configuración de alertas del sistema.            |
+
+`PostureSettingCommandServiceImpl`
+
+Descripción: Implementación del servicio de comandos encargado de gestionar el ciclo de vida de las configuraciones posturales del usuario.
+
+| Método                                        | Descripción                                                  |
+|-----------------------------------------------|--------------------------------------------------------------|
+| handle(CreatePostureSettingCommand)           | Crea una nueva configuración postural para un usuario.       |
+| handle(UpdatePostureSettingCommand)           | Actualiza una configuración postural existente.              |
+| handle(DeletePostureSettingCommand)           | Elimina una configuración postural del sistema.              |
+
+`CalibrationCommandServiceImpl`
+
+Descripción: Implementación del servicio de comandos encargado de gestionar el ciclo de vida de las calibraciones del usuario.
+
+| Método                                   | Descripción                                              |
+|------------------------------------------|----------------------------------------------------------|
+| handle(CreateCalibrationCommand)         | Crea una nueva calibración para un usuario.              |
+| handle(UpdateCalibrationCommand)         | Actualiza una calibración existente.                     |
+| handle(DeleteCalibrationCommand)         | Elimina una calibración del sistema.                     |
+
+`AlertsSettingQueryServiceImpl`
+
+Descripción: Implementación del servicio de consultas encargado de recuperar información de configuraciones de alertas.
+
+| Método                                 | Descripción                                                  |
+|----------------------------------------|--------------------------------------------------------------|
+| handle(GetUserAlertSettingQuery)       | Recupera la configuración de alertas de un usuario específico. |
+
+`PostureSettingQueryServiceImpl`
+
+Descripción: Implementación del servicio de consultas encargado de recuperar información de configuraciones posturales.
+
+| Método                                  | Descripción                                                  |
+|-----------------------------------------|--------------------------------------------------------------|
+| handle(GetUserPostureSettingQuery)      | Recupera la configuración postural de un usuario específico.   |
+
+`CalibrationQueryServiceImpl`
+
+Descripción: Implementación del servicio de consultas encargado de recuperar información de calibraciones.
+
+| Método                             | Descripción                                              |
+|------------------------------------|----------------------------------------------------------|
+| handle(GetUserCalibrationQuery)    | Recupera la calibración de un usuario específico.        |
+
 #### 5.1.4 Infrastructure Layer
+
+
+
 #### 5.1.6 Bounded Context Software Architecture Component Level Diagrams
 #### 5.1.7 Bounded Context Software Architecture Code Level Diagrams
 ##### 5.1.7.1 Bounded Context Domain Layer Class Diagrams
+
+![domain-orquestrator-class-diagram.png](images/chapter-5/domain-orquestrator-class-diagram.png)
+
 ##### 5.1.7.2 Bounded Context Database Design Diagram
 
 ### 5.2 Bounded Context: Monitoreo
