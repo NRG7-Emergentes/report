@@ -172,6 +172,24 @@ El enlace a github del reporte del proyecto es el siguiente: [https://github.com
       - [5.5.7 Bounded Context Software Architecture Container Level Diagrams](#557-bounded-context-software-architecture-code-level-diagrams)
           - [5.5.7.1 Bounded Context Domain Layer Class Diagrams](#5571-bounded-context-domain-layer-class-diagrams)
           - [5.5.7.2 Bounded Context Database Design Diagram](#5572-bounded-context-database-design-diagram)
+- [Capítulo VI: Solution UX Design](#capítulo-vi-solution-ux-design)
+  - [6.1 Style Guidelines](#61-style-guidelines)
+    - [6.1.1 General Style Guidelines](#611-general-style-guidelines)
+    - [6.1.2 Web, Mobile & Devices Style Guidelines](#612-web-mobile--devices-style-guidelines)
+  - [6.2 Information Architecture](#62-information-architecture)
+    - [6.2.2 Labeling Systems](#622-labeling-systems)
+    - [6.2.3 Searching Systems](#623-searching-systems)
+    - [6.2.4 SEO Tags and Meta Tags](#624-seo-tags-and-meta-tags)
+    - [6.2.5 Navigation Systems](#625-navigation-systems)
+  - [6.3 Landing Page UI Design](#63-landing-page-ui-design)
+    - [6.3.1 Landing Page Wireframe](#631-landing-page-wireframe)
+    - [6.3.2 Landing Page Mock-up](#632-landing-page-mock-up)
+  - [6.4 Applications UX/UI Design](#64-applications-uxui-design)
+    - [6.4.1 Applications Wireframes](#641-applications-wireframes)
+    - [6.4.2 Applications Wireflow Diagrams](#642-applications-wireflow-diagrams)
+    - [6.4.3 Applications Mock-ups](#643-applications-mock-ups)
+    - [6.4.4 Applications User Flow Diagrams](#644-applications-user-flow-diagrams)
+  - [6.5 Applications Prototyping](#65-applications-prototyping)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -4018,7 +4036,99 @@ En el diagrama de base, se observa la tabla users y roles, así como la relació
 <img src="images/chapter-5/IAM-DB.png" alt="Diagrama de Base de Datos - Bounded Context IAM"/>
 
 
+## Capítulo VI: Solution UX Design
 
+### 6.1 Style Guidelines
+
+#### 6.1.1 General Style Guidelines
+
+#### 6.1.2 Web, Mobile & Devices Style Guidelines
+
+### 6.2 Information Architecture
+
+#### 6.2.2 Labeling Systems
+
+#### 6.2.3 Searching Systems
+
+#### 6.2.4 SEO Tags and Meta Tags
+
+#### 6.2.5 Navigation Systems
+
+### 6.3 Landing Page UI Design
+
+#### 6.3.1 Landing Page Wireframe
+
+#### 6.3.2 Landing Page Mock-up
+
+### 6.4 Applications UX/UI Design
+
+#### 6.4.1 Applications Wireframes
+
+**Wireframes Web:**
+
+Los wireframes de la aplicación web de ErgoVision presentan las interfaces de registro/login, perfil editable, dashboard con resúmenes semanales, estadísticas visuales, configuración de notificaciones, calibración del sistema de cámara, monitoreo en tiempo real con detección de postura activa, y pantallas de pausas con ejercicios sugeridos y temporizadores para descansos programados.
+
+<img src="images/chapter-6/WireframesWeb.png" alt="Wireframes Web">
+
+**Wireframes Móvil:**
+
+Los wireframes de la aplicación móvil de ErgoVision muestran el flujo completo de ErgoVision desde autenticación (login/registro con datos personales y antropométricos), pasando por gestión de perfil, visualización de estadísticas con gráficos de postura y tiempos de descanso, historial de sesiones, hasta detalles específicos de cada sesión con porcentajes de postura correcta y pausas realizadas.
+
+<img src="images/chapter-6/WireframesMovil.png" alt="Wireframes Movil">
+
+Figma: [Link de Figma](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
+
+#### 6.4.2 Applications Wireflow Diagrams
+
+Los wireflow diagrams de ErgoVision representan la secuencia de interacciones y pantallas que los usuarios experimentarán al navegar por la aplicación.
+
+Figma: [Link de Figma](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
+
+**Edición de Datos de Usuario:** Este wireflow corresponde a cuando un usuario quiere modificar sus datos personales luego de haberse registrado.
+
+- **Web:**
+
+<img src="images/chapter-6/Wireflow1Web.png" alt="Wireflow 1 Web">
+
+- **Móvil:**
+
+<img src="images/chapter-6/Wireflow1Movil.png" alt="Wireflow 1 Movil">
+
+**Creación de Cuenta:** Este wireflow corresponde a cuando un usuario no tiene una cuenta creada y debe registrarse para empezar a utilizar la aplicación.
+
+- **Web:**
+
+<img src="images/chapter-6/Wireflow2Web.png" alt="Wireflow 2 Web">
+
+- **Móvil:**
+
+<img src="images/chapter-6/Wireflow2Movil.png" alt="Wireflow 2 Movil">
+
+**Visualización de Historial Detallado:** Este wireflow corresponde a cuando un usuario quiere visualizar los detalles de sus sesiones de monitoreo pasadas en el historial.
+
+- **Web:**
+
+<img src="images/chapter-6/Wireflow3Web.png" alt="Wireflow 3 Web">
+
+- **Móvil:**
+
+<img src="images/chapter-6/Wireflow3Movil.png" alt="Wireflow 3 Movil">
+
+**Visualización de Estadísticas:** Este wireflow corresponde a cuando un usuario quiere visualizar las estadisticas sobre tiempos de buenas/malas posturas que ha tenido en lo que va utilizando la aplicación.
+
+- **Web:**
+
+<img src="images/chapter-6/Wireflow4Web.png" alt="Wireflow 4 Web">
+
+- **Móvil:**
+
+<img src="images/chapter-6/Wireflow4Movil.png" alt="Wireflow 4 Movil">
+
+#### 6.4.3 Applications Mock-ups
+
+#### 6.4.4 Applications User Flow Diagrams
+
+### 6.5 Applications Prototyping
 
 
 
