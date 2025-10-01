@@ -126,6 +126,52 @@ El enlace a github del reporte del proyecto es el siguiente: [https://github.com
     - [4.3.2 Software Architecture Context Level Diagrams](#432-software-architecture-context-level-diagrams)
     - [4.3.3 Software Architecture Container Level Diagrams](#433-software-architecture-container-level-diagrams)
     - [4.3.4 Software Architecture Deployment Diagrams](#434-software-architecture-deployment-diagrams)
+- [Capítulo V: Tactical-Level Software Design](#capítulo-v-tactical-level-software-design)
+  - [5.1 Bounded Context: Orquestrador](#51-bounded-context-orquestrator)
+    - [5.1.1 Domain Layer](#511-domain-layer)
+    - [5.1.2 Interface Layer](#521-domain-layer)
+    - [5.1.3 Application Layer](#513-application-layer)
+    - [5.1.4 Infrastructure Layer](#514-infrastructure-layer)
+    - [5.1.6 Bounded Context Software Architecture Component Level Diagrams](#516-bounded-context-software-architecture-component-level-diagrams)
+    - [5.1.7 Bounded Context Software Architecture Container Level Diagrams](#517-bounded-context-software-architecture-code-level-diagrams)
+        - [5.1.7.1 Bounded Context Domain Layer Class Diagrams](#5171-bounded-context-domain-layer-class-diagrams)
+        - [5.1.7.2 Bounded Context Database Design Diagram](#5172-bounded-context-database-design-diagram)
+  - [5.2 Bounded Context: Monitoreo](#52-bounded-context-monitoreo)
+      - [5.2.1 Domain Layer](#521-domain-layer)
+      - [5.2.2 Interface Layer](#522-interface-layer)
+      - [5.2.3 Application Layer](#523-application-layer)
+      - [5.2.4 Infrastructure Layer](#524-infrastructure-layer)
+      - [5.2.6 Bounded Context Software Architecture Component Level Diagrams](#526-bounded-context-software-architecture-component-level-diagrams)
+      - [5.2.7 Bounded Context Software Architecture Container Level Diagrams](#527-bounded-context-software-architecture-code-level-diagrams)
+          - [5.2.7.1 Bounded Context Domain Layer Class Diagrams](#5271-bounded-context-domain-layer-class-diagrams)
+          - [5.2.7.2 Bounded Context Database Design Diagram](#5272-bounded-context-database-design-diagram)
+  - [5.3 Bounded Context: Estadísticas](#53-bounded-context-estadísticas)
+      - [5.3.1 Domain Layer](#531-domain-layer)
+      - [5.3.2 Interface Layer](#532-interface-layer)
+      - [5.3.3 Application Layer](#533-application-layer)
+      - [5.3.4 Infrastructure Layer](#534-infrastructure-layer)
+      - [5.3.6 Bounded Context Software Architecture Component Level Diagrams](#536-bounded-context-software-architecture-component-level-diagrams)
+      - [5.3.7 Bounded Context Software Architecture Container Level Diagrams](#537-bounded-context-software-architecture-code-level-diagrams)
+          - [5.3.7.1 Bounded Context Domain Layer Class Diagrams](#5371-bounded-context-domain-layer-class-diagrams)
+          - [5.3.7.2 Bounded Context Database Design Diagram](#5372-bounded-context-database-design-diagram)
+  - [5.4 Bounded Context: Notificaciones](#54-bounded-context-notificaciones)
+      - [5.4.1 Domain Layer](#541-domain-layer)
+      - [5.4.2 Interface Layer](#542-interface-layer)
+      - [5.4.3 Application Layer](#543-application-layer)
+      - [5.4.4 Infrastructure Layer](#544-infrastructure-layer)
+      - [5.4.6 Bounded Context Software Architecture Component Level Diagrams](#546-bounded-context-software-architecture-component-level-diagrams)
+      - [5.4.7 Bounded Context Software Architecture Container Level Diagrams](#547-bounded-context-software-architecture-code-level-diagrams)
+          - [5.4.7.1 Bounded Context Domain Layer Class Diagrams](#5471-bounded-context-domain-layer-class-diagrams)
+          - [5.4.7.2 Bounded Context Database Design Diagram](#5472-bounded-context-database-design-diagram)
+  - [5.5 Bounded Context: Identity Access Management (IAM)](#55-bounded-context-identity-access-managementiam)
+      - [5.5.1 Domain Layer](#551-domain-layer)
+      - [5.5.2 Interface Layer](#552-interface-layer)
+      - [5.5.3 Application Layer](#553-application-layer)
+      - [5.5.4 Infrastructure Layer](#554-infrastructure-layer)
+      - [5.5.6 Bounded Context Software Architecture Component Level Diagrams](#556-bounded-context-software-architecture-component-level-diagrams)
+      - [5.5.7 Bounded Context Software Architecture Container Level Diagrams](#557-bounded-context-software-architecture-code-level-diagrams)
+          - [5.5.7.1 Bounded Context Domain Layer Class Diagrams](#5571-bounded-context-domain-layer-class-diagrams)
+          - [5.5.7.2 Bounded Context Database Design Diagram](#5572-bounded-context-database-design-diagram)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -511,7 +557,6 @@ Jóvenes que dedican largas horas al estudio en computadora, ya sea en clases vi
 - **Ocupación:** Estudiantes de colegio, universidad, posgrado o cursos online
 - **Uso de tecnología:** Acostumbrados a apps académicas (Moodle, Google Classroom, Zoom, Notion) y redes sociales.
 - **Necesidades:** Prevenir dolores y fatiga por largas jornadas de estudio, contar con alertas sencillas y no invasivas, mejorar hábitos posturales para mantener el rendimiento académico.
-
 
 ## Capítulo II: Requirements Elicitation & Analysis
 
@@ -2713,6 +2758,1272 @@ El diseño del bounded context Notificaciones se centra únicamente en gestionar
 #### 4.3.4 Software Architecture Deployment Diagrams
 
 ![nrg7-deployment.png](images/chapter-4/nrg7-deployment.png)
+
+## Capítulo V: Tactical-Level Software Design
+
+### 5.1 Bounded Context: Orquestrator
+#### 5.1.1 Domain Layer
+#### 5.1.2 Interface Layer
+#### 5.1.3 Application Layer
+#### 5.1.4 Infrastructure Layer
+#### 5.1.6 Bounded Context Software Architecture Component Level Diagrams
+#### 5.1.7 Bounded Context Software Architecture Code Level Diagrams
+##### 5.1.7.1 Bounded Context Domain Layer Class Diagrams
+##### 5.1.7.2 Bounded Context Database Design Diagram
+
+### 5.2 Bounded Context: Monitoreo
+#### 5.2.1 Domain Layer
+
+En la **Capa de Dominio** del Bounded Context de **Monitoreo (Monitoring)**, los principales agregados son `MonitoringSession`, `PostureEvent`, y `ActiveBreak`. Estos encapsulan los conceptos de negocio necesarios para gestionar la captura estructurada de la actividad postural de los usuarios: seguimiento de sesiones de monitoreo, registro de eventos relevantes sobre la postura y control de pausas activas durante el proceso.
+
+La lógica de dominio para el manejo de sesiones y eventos se concentra en el servicio de dominio `MonitoringService`, que aplica las reglas de negocio relacionadas con el ciclo de vida de una sesión, la validación de eventos posturales y la administración de pausas activas, garantizando que la información se registre de manera coherente y consistente para su posterior análisis y retroalimentación.
+
+Agregado `MonitoringSession`
+
+Descripción: Representa una sesión de monitoreo iniciada por el usuario.
+
+| Atributo  | Tipo               | Visibilidad | Descripción                                                   |
+|-----------|--------------------|-------------|---------------------------------------------------------------|
+| id        | Long               | Privado     | Identificador único de la sesión.                             |
+| userId    | Long               | Privado     | Identificador del usuario asociado a la sesión.               |
+| startTime | LocalDateTime      | Privado     | Fecha y hora de inicio de la sesión.                          |
+| endTime   | LocalDateTime      | Privado     | Fecha y hora de finalización de la sesión.                    |
+| status    | SessionStatus      | Privado     | Estado actual de la sesión (eenum: ACTIVE, PAUSED, FINISHED). |
+| events    | List<PostureEvent> | Privado     | Lista de eventos posturales registrados.                      |
+| breaks    | List<ActiveBreak>  | Privado     | Lista de pausas activas durante la sesión.                    |
+
+| Método                                  | Tipo de Retorno | Visibilidad | Descripción                            |
+|-----------------------------------------|-----------------|-------------|----------------------------------------|
+| startSession()                          | void            | Público     | Inicia una nueva sesión de monitoreo.  |
+| pauseSession()                          | void            | Público     | Pausa la sesión de monitoreo.          |
+| resumeSession()                         | void            | Público     | Reanuda una sesión pausada.            |
+| endSession()                            | void            | Público     | Finaliza la sesión de monitoreo.       |
+| addPostureEvent(PostureEvent event)     | void            | Público     | Agrega un evento postural a la sesión. |
+| addActiveBreak(ActiveBreak activeBreak) | void            | Público     | Agrega una pausa activa a la sesión.   |
+
+Agregado `PostuireEvent`
+
+Descripción: Registra los eventos de postura durante la sesión.
+
+| Atributo    | Tipo                    | Visibilidad | Descripción                                                |
+|-------------|-------------------------|-------------|------------------------------------------------------------|
+| id          | Long                    | Privado     | Identificador único del evento.                            |
+| sessionId   | Long                    | Privado     | Identificador de la sesión asociada.                       |
+| timestamp   | LocalDateTime           | Privado     | Fecha y hora del evento.                                   |
+| postureType | PostureType             | Privado     | Tipo de postura detectada (enum: CORRECT, INCORRECT)       |
+| landmarks   | List<LandmarksSnapshot> | Privado     | Lista de puntos clave del cuerpo en el momento del evento. |
+
+| Método                                             | Tipo de Retorno | Visibilidad | Descripción                            |
+|----------------------------------------------------|-----------------|-------------|----------------------------------------|
+| markAsCorrect()                                    | void            | Público     | Marca el evento como postura correcta. |
+| markAsIncorrect()                                  | void            | Público     | Marca el evento como postura incorrect |
+| attachLandmarks(List<LandmarksSnapshot> landmarks) | void            | Público     | Adjunta puntos clave al evento.        |
+
+Agregado `ActiveBreak`
+
+Descripción: Gestiona pausas activas dentro de una sesión.
+
+| Atributo    | Tipo                    | Visibilidad | Descripción                                               |
+|-------------|-------------------------|-------------|-----------------------------------------------------------|
+| id          | Long                    | Privado     | Identificador único de la pausa activa.                   |
+| sessionId   | Long                    | Privado     | Identificador de la sesión asociada.                      |
+| startTime   | LocalDateTime           | Privado     | Fecha y hora de inicio de la pausa.                       |
+| endTime     | LocalDateTime           | Privado     | Fecha y hora de finalización de la pausa.                 |
+| status      | BreakStatus             | Privado     | Estado de la pausa (enum: ONGOING, SCHEDULED , FINISHED). |
+
+
+| Método       | Tipo de Retorno | Visibilidad | Descripción               |
+|--------------|-----------------|-------------|---------------------------|
+| startBreak() | void            | Público     | Inicia una pausa activa.  |
+| endBreak()   | void            | Público     | Finaliza la pausa activa. |
+
+Objeto de Valor: LandmarksSnapshot
+
+Descripción: Captura de puntos clave del cuerpo en un momento específico.
+
+| Nombre          | Descripción                                                   |
+|-----------------|---------------------------------------------------------------|
+| points          | Mapa de puntos clave (nombre del punto -> coordenadas 2D/3D). |
+| confidenceScore | Nivel de confianza en la detección de puntos (0.0 - 1.0).     |
+
+Objeto de Valor: SessionStatus
+
+Descripción: Enum que define los posibles estados de una sesión de monitoreo.
+
+| Nombre   | Descripción                           |
+|----------|---------------------------------------|
+| ACTIVE   | La sesión está en curso.              |
+| PAUSED   | La sesión está temporalmente pausada. |
+| FINISHED | La sesión ha finalizado.              |
+
+Objeto de Valor: PostureType
+
+Descripción: Enum que define los tipos de postura detectados.
+
+| Nombre    | Descripción                     |
+|-----------|---------------------------------|
+| CORRECT   | Postura considerada correcta.   |
+| INCORRECT | Postura considerada incorrecta. |
+
+Objeto de Valor: BreakStatus
+
+Descripción: Enum que define los estados de una pausa activa.
+
+| Nombre    | Descripción                                    |
+|-----------|------------------------------------------------|
+| ONGOING   | La pausa está en curso.                        |
+| SCHEDULED | La pausa está programada pero no ha comenzado. |
+| FINISHED  | La pausa ha finalizado.                        |
+
+Servicio de Dominio: `MonitoringCommandService`
+
+Descripción: Encargado de acciones que cambian el estado del sistema.
+
+| Método                                                                                   | Tipo de Retorno   | Descripción                                                  |
+|------------------------------------------------------------------------------------------|-------------------|--------------------------------------------------------------|
+| `createSession(Long userId)`                                                             | MonitoringSession | Crea e inicia una nueva sesión de monitoreo para un usuario. |
+| `addPostureEvent(Long sessionId, PostureEvent event, List<LandmarksSnapshot> landmarks)` | void              | Registra un evento postural en una sesión activa.            |
+| `scheduleActiveBreak(Long sessionId, LocalDateTime startTime, LocalDateTime endTime)`    | ActiveBreak       | Programa una pausa activa dentro de una sesión de monitoreo. |
+| `startBreak(Long breakId)`                                                               | void              | Inicia una pausa activa previamente programada.              |
+| `endBreak(Long breakId)`                                                                 | void              | Finaliza una pausa activa en curso.                          |
+| `endSession(Long sessionId)`                                                             | void              | Finaliza formalmente una sesión de monitoreo activa.         |
+
+Servicio de Dominio: `MonitoringQueryService`
+
+Descripción: Encargado de consultas y recuperación de datos, sin modificar el estado.
+
+| Método                             | Tipo de Retorno           | Descripción                                                             |
+|------------------------------------|---------------------------|-------------------------------------------------------------------------|
+| `getSession(Long sessionId)`       | MonitoringSession         | Recupera los detalles de una sesión específica.                         |
+| `getSessionsByUser(Long userId)`   | List<MonitoringSession>   | Obtiene todas las sesiones asociadas a un usuario.                      |
+| `getActiveBreaks(Long sessionId)`  | List<ActiveBreak>         | Recupera todas las pausas activas de una sesión determinada.            |
+| `getPostureEvents(Long sessionId)` | List<PostureEvent>        | Consulta los eventos posturales de una sesión.                          |
+| `getUserStatistics(Long userId)`   | MonitoringStatistics (VO) | Calcula métricas agregadas (tiempo en buena/mala postura, pausas, etc.) |
+
+#### 5.2.2 Interface Layer
+
+En la Capa de Interfaz del Bounded Context de Monitoring, se expone el controlador MonitoringController, el cual ofrece endpoints RESTful para la gestión de sesiones de monitoreo, registro de eventos posturales y pausas activas. Estos endpoints permiten iniciar, pausar y finalizar sesiones, registrar eventos de postura detectados en tiempo real desde el frontend, y administrar las pausas activas que contribuyen al bienestar del usuario durante su jornada.
+
+**Justificación:**
+
+Esta capa cumple el propósito de desacoplar la lógica de dominio del acceso externo al sistema, proporcionando una API clara, coherente y segura para que el frontend (web o móvil) pueda interactuar con el backend de manera uniforme. Asimismo, habilita la integración con otros bounded contexts como Orchestrator (para configuraciones iniciales) y Notifications (para emitir alertas de postura o pausas). Gracias a esta capa, se garantiza la trazabilidad de las sesiones de monitoreo, la persistencia confiable de eventos y la gestión adecuada de las interrupciones activas, alineando la experiencia del usuario con los objetivos de ergonomía y salud de la plataforma.
+
+Controlador: `MonitoringController`
+
+| Método            | Verbo HTTP | Ruta                                           | Descripción                              |
+|-------------------|------------|------------------------------------------------|------------------------------------------|
+| startSession      | POST       | /api/v1/monitoring/sessions/{userId}           | Inicia una nueva sesión                  |
+| pauseSession      | PATCH      | /api/v1/monitoring/sessions/{sessionId}/pause  | Pausa la sesión actual                   |
+| resumeSession     | PATCH      | /api/v1/monitoring/sessions/{sessionId}/resume | Reanuda la sesión pausada                |
+| endSession        | PATCH      | /api/v1/monitoring/sessions/{sessionId}/end    | Finaliza la sesión actual                |
+| getSession        | GET        | /api/v1/monitoring/sessions/{sessionId}        | Obtiene detalles de la sesión            |
+| getSessionsByUser | GET        | /api/v1/monitoring/sessions/user/{userId}      | Obtiene todas las sesiones de un usuario |
+| addPostureEvent   | POST       | /api/v1/monitoring/sessions/{sessionId}/events | Registra un evento postural              |
+| getPostureEvents  | GET        | /api/v1/monitoring/sessions/{sessionId}/events | Obtiene eventos posturales de la sesión  |
+| scheduleBreak     | POST       | /api/v1/monitoring/sessions/{sessionId}/breaks | Programa una pausa activa                |
+| getBreaks         | GET        | /api/v1/monitoring/sessions/{sessionId}/breaks | Obtiene pausas activas de la sesión      |
+| startBreak        | PATCH      | /api/v1/monitoring/breaks/{breakId}/start      | Inicia una pausa activa programada       |
+| endBreak          | PATCH      | /api/v1/monitoring/breaks/{breakId}/end        | Finaliza una pausa activa en curso       |
+
+#### 5.2.3 Application Layer
+
+En el Application Layer del Bounded Context de Monitoring se implementan los servicios de aplicación que orquestan los casos de uso principales: creación y finalización de sesiones de monitoreo, registro de eventos posturales, programación de pausas activas y consultas sobre sesiones, pausas y métricas. El MonitoringCommandService gestiona las operaciones de modificación del dominio, mientras que el MonitoringQueryService se centra en la recuperación de información estructurada y estadísticas de uso.
+
+**Justificación**
+
+Dividir la lógica en servicios de Command y Query asegura un diseño más claro, mantenible y escalable, siguiendo el patrón CQRS. Esta separación permite optimizar las operaciones de lectura y escritura de manera independiente, facilitar la integración con bounded contexts como Notifications o Statistics, y soportar la evolución futura del sistema con bajo acoplamiento.
+
+`MonitoringCommandServiceImpl`
+
+Descripción: Implementación del servicio de comandos encargado de gestionar el ciclo de vida de las sesiones de monitoreo, los eventos posturales y las pausas activas.
+
+| Método                                 | Descripción                                                  |
+|----------------------------------------|--------------------------------------------------------------|
+| handle(CreateMonitoringSessionCommand) | Crea e inicia una nueva sesión de monitoreo para un usuario. |
+| handle(EndMonitoringSessionCommand)    | Finaliza una sesión de monitoreo activa.                     |
+| handle(AddPostureEventCommand)         | Registra un nuevo evento postural dentro de una sesión.      |
+| handle(ScheduleActiveBreakCommand)     | Programa una pausa activa dentro de una sesión de monitoreo. |
+| handle(StartActiveBreakCommand)        | Inicia una pausa activa programada.                          |
+| handle(EndActiveBreakCommand)          | Finaliza una pausa activa en curso.                          |
+
+`MonitoringQueryServiceImpl`
+
+Descripción: Implementación del servicio de consultas encargado de recuperar información de sesiones de monitoreo, pausas activas y eventos posturales asociados a los usuarios.
+
+| Método                                 | Descripción                                                                                                   |
+|----------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| handle(GetMonitoringSessionByIdQuery)  | Recupera los detalles de una sesión de monitoreo por su ID.                                                   |
+| handle(GetSessionsByUserQuery)         | Obtiene todas las sesiones de monitoreo asociadas a un usuario.                                               |
+| handle(GetActiveBreaksBySessionQuery)  | Lista las pausas activas programadas o finalizadas de una sesión.                                             |
+| handle(GetPostureEventsBySessionQuery) | Recupera todos los eventos posturales registrados durante una sesión.                                         |
+| handle(GetMonitoringStatisticsQuery)   | Obtiene métricas agregadas del historial de sesiones (duración promedio, frecuencia de malas posturas, etc.). |
+
+#### 5.2.4 Infrastructure Layer
+
+
+En la Capa de Infraestructura del Bounded Context de Posture Monitoring se implementan los repositorios que permiten la persistencia y recuperación de datos relacionados con las sesiones de monitoreo, eventos posturales y pausas activas. Esta capa actúa como puente entre la lógica de dominio y la base de datos, asegurando que los objetos del dominio se almacenen y consulten de manera eficiente y consistente.
+
+**Justificación**
+
+Separar la persistencia en la capa de infraestructura garantiza el desacoplamiento entre la lógica del dominio y la tecnología de almacenamiento. Esto permite flexibilidad en la elección del motor de base de datos (SQL, NoSQL u otro), facilita pruebas unitarias mediante repositorios en memoria y asegura que la lógica de negocio no dependa de detalles técnicos.
+
+`MonitoringSessionRepository`
+
+Descripción: Administra la persistencia y recuperación de entidades relacionadas con sesiones de monitoreo.
+
+| Método                          | Descripción                                          |
+|---------------------------------|------------------------------------------------------|
+| save(MonitoringSession session) | Persiste una nueva sesión o actualiza una existente. |
+| findById(Long sessionId)        | Recupera una sesión por su identificador.            |
+| findByUser(Long userId)         | Obtiene todas las sesiones asociadas a un usuario.   |
+| delete(Long sessionId)          | Elimina una sesión registrada.                       |
+
+`PostureEventRepository`
+
+Descripción: Gestiona la persistencia de los eventos posturales capturados durante las sesiones.
+
+| Método                             | Descripción                                                   |
+|------------------------------------|---------------------------------------------------------------|
+| save(PostureEvent event)           | Persiste un evento postural detectado.                        |
+| findBySession(Long sessionId)      | Recupera todos los eventos asociados a una sesión específica. |
+| findCriticalEvents(Long sessionId) | Obtiene eventos de postura clasificados como críticos.        |
+
+`ActiveBreakRepository`
+
+Descripción: Administra las pausas activas programadas, iniciadas o finalizadas dentro de una sesión de monitoreo.
+
+| Método                        | Descripción                                            |
+|-------------------------------|--------------------------------------------------------|
+| save(ActiveBreak break)       | Registra o actualiza una pausa activa.                 |
+| findById(Long breakId)        | Recupera una pausa activa por su ID.                   |
+| findBySession(Long sessionId) | Lista todas las pausas activas asociadas a una sesión. |
+| delete(Long breakId)          | Elimina una pausa activa de la base de datos.          |
+
+#### 5.2.6 Bounded Context Software Architecture Component Level Diagrams
+#### 5.2.7 Bounded Context Software Architecture Code Level Diagrams
+##### 5.2.7.1 Bounded Context Domain Layer Class Diagrams
+
+<img src="images/chapter-5/monitoring-class-diagram.png" alt="Monitoring Domain Class Diagram">
+
+##### 5.2.7.2 Bounded Context Database Design Diagram
+
+<img src="images/chapter-5/monitoring-database-diagram.png" alt="Monitoring Database Design Diagram">
+
+### 5.3 Bounded Context: Estadísticas
+#### 5.3.1 Domain Layer
+
+En la capa de dominio del bounded context de Estadísticas, los principales agregados son `Reporte` y `Métrica`. Estos encapsulan la lógica de negocio para la gestión de datos históricos de posturas, el cálculo de métricas relevantes y la generación de reportes visuales para los usuarios.
+
+**Agregado `Reporte`**
+**Descripción:** Representa el agregado raíz “Reporte”, que contiene la información consolidada de un período de monitoreo y las métricas asociadas.
+
+| Atributo       | Tipo         | Visibilidad | Descripción                                                |
+|----------------|--------------|-------------|------------------------------------------------------------|
+| id             | Long         | Privado     | Identificador único del reporte.                           |
+| userId         | Long         | Privado     | Identificador del usuario al que pertenece el reporte.     |
+| generationDate | Date         | Privado     | Fecha de inicio del período del reporte.                   |
+| period         | Periodo      | Privado     | Objeto de valor que define el rango de fechas del reporte. |
+| metrics        | Set<Métrica> | Privado     | Conjunto de métricas asociadas al reporte.                 |
+
+
+| Método                        | Tipo de Retorno | Visibilidad | Descripción                             |
+|-------------------------------|-----------------|-------------|-----------------------------------------|
+| addDataset(Dataset dataset)   | void            | Público     | Asocia un conjunto de datos al estudio. |
+| definePurpose(String purpose) | void            | Público     | Establece el propósito del estudio.     |
+| defineScope(String scope)     | void            | Público     | Define el alcance del estudio.          |
+
+---
+
+**Entidad: Dataset**
+**Descripción:** Representa un conjunto de datos utilizado dentro del estudio estadístico.
+
+| Atributo  | Tipo           | Visibilidad | Descripción                          |
+|-----------|----------------|-------------|--------------------------------------|
+| id        | Long           | Privado     | Identificador único del dataset.     |
+| name      | String         | Privado     | Nombre del dataset.                  |
+| variables | List<Variable> | Privado     | Variables estadísticas que contiene. |
+
+| Método                    | Tipo de Retorno | Visibilidad | Descripción                             |
+|---------------------------|-----------------|-------------|-----------------------------------------|
+| addVariable(Variable var) | void            | Público     | Añade una variable al dataset.          |
+| getVariables()            | List<Variable>  | Público     | Devuelve todas las variables asociadas. |
+
+---
+
+*Objeto de Valor: Variable**
+**Descripción:** Representa una variable estadística dentro de un conjunto de datos.
+
+| Nombre | Tipo         | Descripción                                   |
+|--------|--------------|-----------------------------------------------|
+| name   | String       | Nombre de la variable.                        |
+| type   | VariableType | Tipo de variable (cualitativa, cuantitativa). |
+
+---
+
+**Servicios de Dominio**
+
+* **Servicio: StudyCommandService**
+  **Descripción:** Define operaciones para la creación y gestión de estudios estadísticos.
+
+| Método                               | Tipo de Retorno | Descripción                        |
+|--------------------------------------|-----------------|------------------------------------|
+| handle(CreateStudyCommand command)   | Study           | Crea un nuevo estudio estadístico. |
+| handle(AssignDatasetCommand command) | void            | Asigna un dataset a un estudio.    |
+
+---
+
+* **Servicio: StudyQueryService**
+  **Descripción:** Permite consultar información de los estudios estadísticos registrados.
+
+| Método                           | Tipo de Retorno | Descripción                              |
+|----------------------------------|-----------------|------------------------------------------|
+| handle(GetAllStudiesQuery query) | List<Study>     | Obtiene todos los estudios estadísticos. |
+| handle(GetStudyByIdQuery query)  | Study           | Busca un estudio por su ID.              |
+
+---
+* **Servicio: DatasetCommandService**
+  **Descripción:** Define operaciones sobre la gestión de datasets.
+
+| Método                               | Tipo de Retorno | Descripción                       |
+|--------------------------------------|-----------------|-----------------------------------|
+| handle(CreateDatasetCommand command) | Dataset         | Crea un nuevo conjunto de datos.  |
+| handle(AddVariableCommand command)   | void            | Agrega una variable a un dataset. |
+
+---
+
+* **Servicio: DatasetQueryService**
+  **Descripción:** Permite obtener información sobre datasets registrados.
+
+| Método                            | Tipo de Retorno | Descripción                             |
+|-----------------------------------|-----------------|-----------------------------------------|
+| handle(GetAllDatasetsQuery query) | List<Dataset>   | Obtiene todos los datasets registrados. |
+| handle(GetDatasetByIdQuery query) | Dataset         | Busca un dataset por ID.                |
+
+#### 5.3.2 Interface Layer
+En la Capa de Interfaz del Bounded Context de Estadística, se expone el controlador StatisticsController, el cual ofrece endpoints RESTful para la gestión de estudios estadísticos, conjuntos de datos y variables. Estos endpoints permiten crear estudios, registrar datasets, añadir variables, y consultar resultados de análisis. También se habilita la ejecución de operaciones estadísticas básicas que integran datos provenientes del frontend (web o móvil) y facilitan la interacción con otros bounded contexts como Reports (para la generación de informes) y Visualization (para la representación gráfica de los resultados).
+
+**Justificación:**
+Esta capa cumple el propósito de desacoplar la lógica de dominio del acceso externo al sistema, proporcionando una API clara, coherente y segura para que el frontend pueda interactuar con el backend de manera uniforme. Asimismo, habilita la integración con otros bounded contexts y garantiza la trazabilidad de los estudios, la persistencia confiable de los datasets y la correcta administración de variables y resultados, alineando la experiencia del usuario con los objetivos de análisis estadístico de la plataforma.
+
+**Controlador: `StatisticsController`**
+
+| Método             | Verbo HTTP | Ruta                                              | Descripción                                         |
+|--------------------|------------|---------------------------------------------------|-----------------------------------------------------|
+| createStudy        | POST       | /api/v1/statistics/studies                        | Crea un nuevo estudio estadístico                   |
+| getStudyById       | GET        | /api/v1/statistics/studies/{studyId}              | Obtiene los detalles de un estudio                  |
+| getAllStudies      | GET        | /api/v1/statistics/studies                        | Lista todos los estudios registrados                |
+| addDataset         | POST       | /api/v1/statistics/studies/{studyId}/datasets     | Asigna un dataset a un estudio                      |
+| getDatasetsByStudy | GET        | /api/v1/statistics/studies/{studyId}/datasets     | Obtiene todos los datasets asociados a un estudio   |
+| createDataset      | POST       | /api/v1/statistics/datasets                       | Crea un nuevo conjunto de datos                     |
+| getDatasetById     | GET        | /api/v1/statistics/datasets/{datasetId}           | Obtiene detalles de un dataset                      |
+| addVariable        | POST       | /api/v1/statistics/datasets/{datasetId}/variables | Añade una variable a un dataset                     |
+| getVariables       | GET        | /api/v1/statistics/datasets/{datasetId}/variables | Lista todas las variables de un dataset             |
+| runAnalysis        | POST       | /api/v1/statistics/studies/{studyId}/analysis     | Ejecuta un análisis sobre un estudio y sus datasets |
+| getAnalysisResults | GET        | /api/v1/statistics/studies/{studyId}/results      | Obtiene resultados de análisis realizados           |
+
+#### 5.3.3 Application Layer
+
+En el Application Layer del Bounded Context de **Estadística** se implementan los servicios de aplicación que orquestan los casos de uso principales:
+- creación y gestión de estudios,
+- registro de conjuntos de datos y variables,
+- ejecución de análisis,
+- y consultas sobre resultados y métricas estadísticas.
+
+El `StatisticsCommandService` gestiona las operaciones de modificación del dominio, mientras que el `StatisticsQueryService` se centra en la recuperación de información estructurada y resultados de análisis.
+**Justificación**
+Dividir la lógica en servicios de **Command** y **Query** asegura un diseño más claro, mantenible y escalable, siguiendo el patrón **CQRS**.  
+Esta separación permite optimizar las operaciones de lectura y escritura de manera independiente, facilitar la integración con bounded contexts como **Reports** o **Visualization**, y soportar la evolución futura del sistema con bajo acoplamiento.
+
+---
+
+*  **StatisticsCommandServiceImpl**
+
+**Descripción:** Implementación del servicio de comandos encargado de gestionar el ciclo de vida de los estudios, datasets y variables, así como la ejecución de análisis.
+
+| Método                       | Descripción                                                    |
+|------------------------------|----------------------------------------------------------------|
+| handle(CreateStudyCommand)   | Crea un nuevo estudio estadístico.                             |
+| handle(AddDatasetCommand)    | Asigna un dataset a un estudio.                                |
+| handle(CreateDatasetCommand) | Crea un nuevo conjunto de datos independiente.                 |
+| handle(AddVariableCommand)   | Añade una variable a un dataset.                               |
+| handle(RunAnalysisCommand)   | Ejecuta un análisis sobre un estudio y sus datasets asociados. |
+
+---
+
+* **StatisticsQueryServiceImpl**
+
+**Descripción:** Implementación del servicio de consultas encargado de recuperar información de estudios, datasets, variables y resultados de análisis.
+
+| Método                             | Descripción                                                  |
+|------------------------------------|--------------------------------------------------------------|
+| handle(GetStudyByIdQuery)          | Recupera los detalles de un estudio por su ID.               |
+| handle(GetAllStudiesQuery)         | Lista todos los estudios registrados.                        |
+| handle(GetDatasetsByStudyQuery)    | Obtiene todos los datasets asociados a un estudio.           |
+| handle(GetVariablesByDatasetQuery) | Lista las variables pertenecientes a un dataset.             |
+| handle(GetAnalysisResultsQuery)    | Obtiene los resultados de análisis realizados en un estudio. |
+
+#### 5.3.4 Infrastructure Layer
+
+En la Capa de Infraestructura del Bounded Context de **Estadística** se implementan los repositorios que permiten la persistencia y recuperación de datos relacionados con los estudios, conjuntos de datos, variables y resultados de análisis. Esta capa actúa como puente entre la lógica de dominio y la base de datos, asegurando que los objetos del dominio se almacenen y consulten de manera eficiente y consistente.
+
+**Justificación**
+
+Separar la persistencia en la capa de infraestructura garantiza el **desacoplamiento** entre la lógica del dominio y la tecnología de almacenamiento.  
+Esto permite flexibilidad en la elección del motor de base de datos, facilita pruebas unitarias mediante repositorios en memoria y asegura que la lógica de negocio no dependa de detalles técnicos.
+
+---
+
+* **StudyRepository**
+
+**Descripción:** Administra la persistencia y recuperación de entidades relacionadas con los estudios estadísticos.
+
+| Método                 | Descripción                                          |
+|------------------------|------------------------------------------------------|
+| save(Study study)      | Persiste un nuevo estudio o actualiza uno existente. |
+| findById(Long studyId) | Recupera un estudio por su identificador.            |
+| findAll()              | Lista todos los estudios registrados.                |
+| delete(Long studyId)   | Elimina un estudio registrado.                       |
+
+---
+
+* **DatasetRepository**
+
+**Descripción:** Gestiona la persistencia de los conjuntos de datos asociados a los estudios.
+
+| Método                    | Descripción                                          |
+|---------------------------|------------------------------------------------------|
+| save(Dataset dataset)     | Persiste un nuevo dataset o actualiza uno existente. |
+| findById(Long datasetId)  | Recupera un dataset por su ID.                       |
+| findByStudy(Long studyId) | Obtiene todos los datasets asociados a un estudio.   |
+| delete(Long datasetId)    | Elimina un dataset registrado.                       |
+
+---
+
+* **VariableRepository**
+
+**Descripción:** Administra la persistencia de las variables incluidas en los datasets.
+
+| Método                        | Descripción                                            |
+|-------------------------------|--------------------------------------------------------|
+| save(Variable variable)       | Persiste una nueva variable o actualiza una existente. |
+| findById(Long variableId)     | Recupera una variable por su identificador.            |
+| findByDataset(Long datasetId) | Lista todas las variables asociadas a un dataset.      |
+| delete(Long variableId)       | Elimina una variable registrada.                       |
+
+---
+
+* **AnalysisResultRepository**
+
+**Descripción:** Gestiona la persistencia de los resultados obtenidos tras ejecutar análisis estadísticos.
+
+| Método                      | Descripción                                          |
+|-----------------------------|------------------------------------------------------|
+| save(AnalysisResult result) | Registra o actualiza un resultado de análisis.       |
+| findById(Long resultId)     | Recupera un resultado por su identificador.          |
+| findByStudy(Long studyId)   | Obtiene todos los resultados asociados a un estudio. |
+| delete(Long resultId)       | Elimina un resultado de análisis registrado.         |
+
+###### 5.3.6. Bounded Context Software Architecture Component Level Diagrams
+###### 5.3.7. Bounded Context Software Architecture Code Level Diagrams
+
+#### 5.3.6 Bounded Context Software Architecture Component Level Diagrams
+#### 5.3.7 Bounded Context Software Architecture Code Level Diagrams
+##### 5.3.7.1 Bounded Context Domain Layer Class Diagrams
+##### 5.3.7.2 Bounded Context Database Design Diagram
+
+### 5.4 Bounded Context: Notificaciones
+#### 5.4.1 Domain Layer
+
+<p>
+    En la <strong>Capa de Dominio</strong> del <strong>Bounded Context de Notificaciones</strong>,
+    los principales agregados son <code>Notification</code> y <code>UserPreferences</code>.
+    Estos encapsulan los conceptos de negocio necesarios para gestionar mensajes en toda la
+    plataforma: creación, validación, priorización y entrega según la configuración de cada usuario.
+  </p>
+
+  <p>
+    La lógica de dominio para el envío y validación de notificaciones se concentra en el servicio
+    de dominio <code>NotificationService</code>, que aplica las reglas de negocio (prioridades,
+    preferencias de usuario, persistencia).
+  </p>
+
+  <hr />
+
+<h6>Agregado: <code>Notification</code></h6>
+  <p><strong>Descripción:</strong> Representa una notificación generada por el sistema para un usuario específico.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Atributo</th>
+        <th>Tipo</th>
+        <th>Visibilidad</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>id</td><td>Long</td><td>Privado</td><td>Identificador único de la notificación.</td></tr>
+      <tr><td>userId</td><td>Long</td><td>Privado</td><td>Identificador del usuario destinatario.</td></tr>
+      <tr><td>title</td><td>String</td><td>Privado</td><td>Título corto de la notificación.</td></tr>
+      <tr><td>message</td><td>String</td><td>Privado</td><td>Contenido principal de la notificación.</td></tr>
+      <tr><td>type</td><td>NotificationType</td><td>Privado</td><td>Categoría de la notificación (INFO, REMINDER, ALERT).</td></tr>
+      <tr><td>status</td><td>NotificationStatus</td><td>Privado</td><td>Estado de entrega/lectura (PENDING, SENT, FAILED, READ).</td></tr>
+      <tr><td>channel</td><td>DeliveryChannel</td><td>Privado</td><td>Medio de entrega (PUSH, SMS).</td></tr>
+      <tr><td>timestamp</td><td>LocalDateTime</td><td>Privado</td><td>Fecha y hora de creación.</td></tr>
+    </tbody>
+  </table>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Método</th>
+        <th>Tipo de Retorno</th>
+        <th>Visibilidad</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>send()</td><td>void</td><td>Público</td><td>Inicia el envío de la notificación usando el canal configurado.</td></tr>
+      <tr><td>markAsRead()</td><td>void</td><td>Público</td><td>Marca la notificación como leída por el usuario.</td></tr>
+      <tr><td>isRead()</td><td>Boolean</td><td>Público</td><td>Indica si la notificación ha sido leída.</td></tr>
+      <tr><td>resend()</td><td>void</td><td>Público</td><td>Intenta reenviar una notificación fallida.</td></tr>
+    </tbody>
+  </table>
+
+  <hr />
+
+<h6>Agregado: <code>UserPreferences</code></h6>
+  <p><strong>Descripción:</strong> Encapsula la configuración de entrega de notificaciones personalizable por el usuario.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Atributo</th>
+        <th>Tipo</th>
+        <th>Visibilidad</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>userId</td><td>Long</td><td>Privado</td><td>Identificador del usuario.</td></tr>
+      <tr><td>preferredChannels</td><td>List&lt;DeliveryChannel&gt;</td><td>Privado</td><td>Canales de entrega preferidos (PUSH, SMS).</td></tr>
+      <tr><td>frequency</td><td>FrequencyType</td><td>Privado</td><td>Frecuencia de entrega (IMMEDIATE, DAILY, WEEKLY).</td></tr>
+      <tr><td>doNotDisturb</td><td>Boolean</td><td>Privado</td><td>Habilita/deshabilita notificaciones en ciertos horarios.</td></tr>
+    </tbody>
+  </table>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Método</th>
+        <th>Tipo de Retorno</th>
+        <th>Visibilidad</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>getPreferences()</td><td>UserPreferences</td><td>Público</td><td>Devuelve las preferencias del usuario.</td></tr>
+      <tr><td>updatePreferences()</td><td>void</td><td>Público</td><td>Actualiza las preferencias de notificación.</td></tr>
+      <tr><td>isChannelAllowed(DeliveryChannel)</td><td>Boolean</td><td>Público</td><td>Verifica si un canal está habilitado.</td></tr>
+    </tbody>
+  </table>
+
+  <hr />
+
+<h6>Objeto de Valor: <code>NotificationType</code></h6>
+  <table>
+    <thead>
+      <tr><th>Nombre</th><th>Descripción</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>INFO</td><td>Notificación informativa general.</td></tr>
+      <tr><td>REMINDER</td><td>Recordatorio de tareas, eventos o actividades programadas.</td></tr>
+      <tr><td>ALERT</td><td>Notificación de alta prioridad (ej. alerta crítica o evento urgente).</td></tr>
+    </tbody>
+  </table>
+
+  <hr />
+
+<h6>Objeto de Valor: <code>DeliveryChannel</code></h6>
+  <table>
+    <thead>
+      <tr><th>Nombre</th><th>Descripción</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>PUSH</td><td>Notificación push a clientes web/móvil.</td></tr>
+      <tr><td>SMS</td><td>Entrega por mensaje de texto (SMS).</td></tr>
+    </tbody>
+  </table>
+
+  <hr />
+
+<h6>Objeto de Valor: <code>NotificationStatus</code></h6>
+  <table>
+    <thead>
+      <tr><th>Nombre</th><th>Descripción</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>PENDING</td><td>En cola para procesamiento.</td></tr>
+      <tr><td>SENT</td><td>Entregado exitosamente al canal correspondiente.</td></tr>
+      <tr><td>FAILED</td><td>Entrega fallida (posible reintento).</td></tr>
+      <tr><td>READ</td><td>Marcado como leído por el usuario.</td></tr>
+    </tbody>
+  </table>
+
+  <hr />
+
+<h6>Servicio de Dominio: <code>NotificationService</code></h6>
+  <p><strong>Descripción:</strong> Encapsula las reglas de negocio para construir, validar, priorizar, persistir y despachar notificaciones según las preferencias del usuario y las políticas del sistema.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Método</th>
+        <th>Tipo de Retorno</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>sendNotification(Notification n)</td><td>void</td><td>Envía la notificación respetando preferencias, prioridad y canales disponibles.</td></tr>
+      <tr><td>validateType(Notification n)</td><td>Boolean</td><td>Verifica que el tipo de notificación sea permitido y esté correctamente formado.</td></tr>
+      <tr><td>applyUserPreferences(UserPreferences up)</td><td>void</td><td>Ajusta la lógica de entrega (canales, frecuencia, DND) antes del despacho.</td></tr>
+      <tr><td>persist(Notification n)</td><td>void</td><td>Almacena la notificación en el historial para auditoría y UI.</td></tr>
+      <tr><td>retryDelivery(Notification n)</td><td>void</td><td>Reintenta la entrega de notificaciones fallidas.</td></tr>
+    </tbody>
+  </table>
+
+#### 5.4.2 Interface Layer
+
+<p>
+  En la <strong>Capa de Interfaz</strong> del <strong>Bounded Context de Notificaciones</strong>, se expone el 
+  controlador <code>NotificationController</code>, el cual ofrece endpoints RESTful para la gestión de 
+  notificaciones. Estos incluyen listar notificaciones, consultar detalles, marcarlas como leídas, 
+  reenviarlas en caso de fallo y crear nuevas notificaciones respetando las preferencias de usuario.
+</p>
+
+<p><strong>Justificación:</strong></p>
+<p>
+  Esta capa cumple el propósito de desacoplar la lógica de dominio del acceso externo al sistema, 
+  proporcionando una API clara, coherente y segura que puede ser consumida por la aplicación móvil, 
+  la interfaz web y otros bounded contexts como <em>Analytics</em> o <em>Monitoring</em>. 
+  Asimismo, habilita la integración con funcionalidades como notificaciones emergentes, recordatorios configurados 
+  y resúmenes personalizados. Gracias a esta capa se asegura la trazabilidad de las notificaciones, 
+  la correcta aplicación de preferencias de usuario y la entrega oportuna mediante canales soportados.
+</p>
+
+<p><strong>Controlador:</strong> <code>NotificationController</code></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Verbo HTTP</th>
+      <th>Ruta</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>getUserNotifications</td>
+      <td>GET</td>
+      <td>/api/v1/notifications/user/{userId}</td>
+      <td>Devuelve todas las notificaciones de un usuario, considerando filtros de estado y tipo.</td>
+    </tr>
+    <tr>
+      <td>getNotificationById</td>
+      <td>GET</td>
+      <td>/api/v1/notifications/{notificationId}</td>
+      <td>Obtiene los detalles de una notificación específica.</td>
+    </tr>
+    <tr>
+      <td>markAsRead</td>
+      <td>PATCH</td>
+      <td>/api/v1/notifications/{notificationId}/read</td>
+      <td>Marca una notificación como leída.</td>
+    </tr>
+    <tr>
+      <td>sendNotification</td>
+      <td>POST</td>
+      <td>/api/v1/notifications</td>
+      <td>Crea y envía una nueva notificación a un usuario o grupo según sus preferencias.</td>
+    </tr>
+    <tr>
+      <td>resendNotification</td>
+      <td>PATCH</td>
+      <td>/api/v1/notifications/{notificationId}/resend</td>
+      <td>Reintenta enviar una notificación fallida.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### 5.4.3 Application Layer
+
+<p>
+  En el <strong>Application Layer</strong> del <strong>Bounded Context de Notificaciones</strong>, se implementan los servicios 
+  de aplicación que orquestan los principales casos de uso: creación, envío, reenvío y actualización de notificaciones, 
+  así como su recuperación y filtrado según estado, usuario o prioridad. 
+</p>
+
+<p>
+  El <code>NotificationCommandService</code> gestiona las operaciones de modificación del dominio, como la creación, 
+  validación y envío de notificaciones, además de marcar como leídas o reenviar en caso de fallo. 
+  Por otro lado, el <code>NotificationQueryService</code> se centra en la recuperación de información estructurada, 
+  devolviendo notificaciones según filtros de estado o tipo. 
+  Adicionalmente, los <code>Command Handlers</code> y <code>Event Handlers</code> permiten mantener un flujo reactivo 
+  y bajo acoplamiento con otros bounded contexts de la plataforma.
+</p>
+
+<p><strong>Justificación</strong></p>
+<p>
+  Dividir la lógica en servicios de Command y Query asegura un diseño más claro, mantenible y escalable, siguiendo 
+  el patrón CQRS. Esta separación permite optimizar las operaciones de lectura y escritura de manera independiente, 
+  responder a eventos del dominio de forma inmediata y extender la lógica de negocio sin afectar el núcleo de la aplicación.
+</p>
+
+<hr>
+
+<p><code>NotificationCommandServiceImpl</code></p>
+<p><strong>Descripción:</strong> Implementación del servicio de comandos encargado de gestionar el ciclo de vida de las notificaciones.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>handle(SendNotificationCommand)</td>
+      <td>Crea y envía una nueva notificación para un usuario o grupo.</td>
+    </tr>
+    <tr>
+      <td>handle(MarkNotificationAsReadCommand)</td>
+      <td>Actualiza el estado de una notificación a "leída".</td>
+    </tr>
+    <tr>
+      <td>handle(ResendNotificationCommand)</td>
+      <td>Reintenta el envío de una notificación que falló previamente.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<p><code>NotificationQueryServiceImpl</code></p>
+<p><strong>Descripción:</strong> Implementación del servicio de consultas encargado de recuperar notificaciones.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>handle(GetUserNotificationsQuery)</td>
+      <td>Devuelve todas las notificaciones de un usuario específico.</td>
+    </tr>
+    <tr>
+      <td>handle(GetUnreadNotificationsQuery)</td>
+      <td>Obtiene únicamente las notificaciones no leídas.</td>
+    </tr>
+    <tr>
+      <td>handle(GetNotificationsByStatusQuery)</td>
+      <td>Filtra notificaciones según su estado (leídas, enviadas, fallidas, etc.).</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Command Handlers</h3>
+<ul>
+  <li><strong>SendNotificationCommandHandler:</strong> Ejecuta la lógica de creación y envío de notificaciones.</li>
+  <li><strong>MarkNotificationAsReadCommandHandler:</strong> Coordina el marcado de notificaciones como leídas.</li>
+  <li><strong>ResendNotificationCommandHandler:</strong> Gestiona el reenvío de notificaciones en estado fallido.</li>
+</ul>
+
+<h3>Event Handlers</h3>
+<ul>
+  <li><strong>TaskAssignedEventHandler:</strong> Envía automáticamente una notificación al usuario asignado a una tarea.</li>
+  <li><strong>GroupJoinedEventHandler:</strong> Notifica a los miembros cuando un usuario se une a un grupo.</li>
+  <li><strong>DeadlineReminderEventHandler:</strong> Genera recordatorios cuando una tarea está próxima a vencer.</li>
+</ul>
+
+#### 5.4.4 Infrastructure Layer
+
+<p>
+  En la <strong>Infrastructure Layer</strong> del contexto de <strong>Notificaciones</strong>, se concentran las implementaciones concretas 
+  que permiten al sistema interactuar con la base de datos y con servicios externos de mensajería. 
+  Esta capa materializa los contratos definidos en el <em>Domain Layer</em>, garantizando la persistencia de notificaciones, 
+  el acceso a preferencias de usuario y la entrega real de mensajes (push o SMS).
+</p>
+
+<p>
+  Se implementan los repositorios <code>NotificationRepository</code> y <code>UserPreferencesRepository</code>, además de adaptadores 
+  para integrarse con proveedores externos como <strong>Firebase Cloud Messaging</strong> y un servicio de <strong>SMS Gateway</strong>. 
+  De esta manera, la lógica de negocio en capas superiores se mantiene desacoplada de las dependencias tecnológicas.
+</p>
+
+<h3>Justificación:</h3>
+<p>
+  Separar la infraestructura de la lógica de dominio permite reemplazar motores de base de datos o proveedores externos 
+  sin afectar la lógica central. Esto asegura un sistema modular, mantenible y fácilmente testeable, 
+  donde la infraestructura es intercambiable y configurable según las necesidades del proyecto.
+</p>
+
+<hr>
+
+<h3>Repository: <code>NotificationRepositoryImpl</code></h3>
+<p><strong>Descripción:</strong> Implementación concreta del repositorio de notificaciones, que maneja operaciones de lectura y escritura en la base de datos relacional.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>findByUserId(Long userId)</td>
+      <td>List&lt;Notification&gt;</td>
+      <td>Public</td>
+      <td>Obtiene todas las notificaciones de un usuario desde la base de datos.</td>
+    </tr>
+    <tr>
+      <td>findUnreadByUserId(Long userId)</td>
+      <td>List&lt;Notification&gt;</td>
+      <td>Public</td>
+      <td>Recupera las notificaciones no leídas de un usuario.</td>
+    </tr>
+    <tr>
+      <td>save(Notification notification)</td>
+      <td>void</td>
+      <td>Public</td>
+      <td>Guarda una nueva notificación en la base de datos.</td>
+    </tr>
+    <tr>
+      <td>updateStatus(Long notificationId, String status)</td>
+      <td>void</td>
+      <td>Public</td>
+      <td>Actualiza el estado de una notificación en la base de datos.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Repository: <code>UserPreferencesRepositoryImpl</code></h3>
+<p><strong>Descripción:</strong> Implementación del repositorio que administra las preferencias de notificación de cada usuario.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>findByUserId(Long userId)</td>
+      <td>UserPreferences</td>
+      <td>Public</td>
+      <td>Obtiene las preferencias de notificación configuradas por un usuario.</td>
+    </tr>
+    <tr>
+      <td>update(Long userId, UserPreferences preferences)</td>
+      <td>void</td>
+      <td>Public</td>
+      <td>Actualiza las preferencias de notificación en la base de datos.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Adapter: <code>FirebaseNotificationAdapter</code></h3>
+<p><strong>Descripción:</strong> Adaptador que envía notificaciones push a través de Firebase Cloud Messaging.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sendPush(Notification notification, String deviceToken)</td>
+      <td>void</td>
+      <td>Public</td>
+      <td>Envía una notificación push a un dispositivo registrado.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Adapter: <code>SmsNotificationAdapter</code></h3>
+<p><strong>Descripción:</strong> Adaptador que se encarga de enviar notificaciones por SMS usando un servicio externo de mensajería.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sendSms(Notification notification, String phoneNumber)</td>
+      <td>void</td>
+      <td>Public</td>
+      <td>Envía una notificación vía SMS al número de teléfono del usuario.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Adapter: <code>NotificationDispatcher</code></h3>
+<p><strong>Descripción:</strong> Componente orquestador que decide, según las preferencias del usuario, si la notificación se envía por push o SMS.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>dispatch(Notification notification, UserPreferences preferences)</td>
+      <td>void</td>
+      <td>Public</td>
+      <td>Determina el canal adecuado (push o SMS) y envía la notificación.</td>
+    </tr>
+  </tbody>
+</table>
+
+##### 5.4.6. Bounded Context Software Architecture Component Level Diagrams
+
+<p>
+  Este diagrama de componentes representa un sistema monolítico encargado de la gestión y envío de notificaciones dentro de la plataforma <strong>ErgoVision</strong>. Una <strong>Single-Page Application (SPA)</strong>, implementada con Angular, interactúa con una <strong>aplicación Web API</strong> desarrollada en Spring Boot mediante llamadas HTTP (REST).
+</p>
+<p>
+  La SPA se comunica con el <code>NotificationController</code>, que expone endpoints REST para consultar, crear o actualizar notificaciones. Este controlador delega las operaciones a dos servicios principales: <code>NotificationQueryService</code>, responsable de la recuperación de notificaciones, y <code>NotificationCommandService</code>, encargado de la creación, validación y envío de nuevas notificaciones.
+</p>
+<p>
+  Ambos servicios acceden a los repositorios <code>NotificationRepository</code> y <code>UserPreferencesRepository</code>, que emplean JPA para realizar operaciones de lectura y escritura en una base de datos MySQL. La información gestionada incluye tanto las notificaciones como las preferencias de los usuarios sobre los canales de comunicación.
+</p>
+<p>
+  Cuando se genera una notificación, el <code>NotificationCommandService</code> delega la tarea de envío al <code>NotificationDispatcher</code>, un componente orquestador que selecciona el canal adecuado según las preferencias de cada usuario. Actualmente, el sistema soporta dos adaptadores de salida: <code>FirebaseNotificationAdapter</code> para el envío de notificaciones push mediante Firebase Cloud Messaging, y <code>SmsNotificationAdapter</code> para el envío de mensajes de texto a través de un <strong>SMS Gateway</strong> externo.
+</p>
+<img src="images/chapter-5/nrg7-notificationcomponent.png" alt="Diagrama de Componentes de Arquitectura de Software - Bounded Context Notificaciones"/>
+
+##### 5.4.7. Bounded Context Software Architecture Code Level Diagrams
+
+#### 5.4.6 Bounded Context Software Architecture Component Level Diagrams
+#### 5.4.7 Bounded Context Software Architecture Code Level Diagrams
+##### 5.4.7.1 Bounded Context Domain Layer Class Diagrams
+##### 5.4.7.2 Bounded Context Database Design Diagram
+
+### 5.5 Bounded Context: Identity Access Management(IAM)
+#### 5.5.1 Domain Layer
+
+<p>
+  En la <strong>Capa de Dominio</strong> del <strong>Bounded Context de Identity and Access Management (IAM)</strong>, 
+  los principales agregados y entidades son <code>User</code> y <code>Role</code>. 
+  Estos encapsulan la lógica de negocio para la gestión de autenticación, autorización y asignación de roles en la aplicación.
+</p>
+
+<hr />
+
+<h5>Agregado: <code>User</code></h5>
+<p><strong>Descripción:</strong> Representa el agregado raíz "Usuario", que contiene los datos de la cuenta y sus roles asociados.</p>
+
+<table>
+  <thead>
+    <tr><th>Atributo</th><th>Tipo</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>email</td><td>String</td><td>Privado</td><td>Correo electrónico del usuario.</td></tr>
+    <tr><td>password</td><td>String</td><td>Privado</td><td>Contraseña del usuario.</td></tr>
+    <tr><td>roles</td><td>Set&lt;Role&gt;</td><td>Privado</td><td>Conjunto de roles asociados al usuario.</td></tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Tipo de Retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>addRole(Role role)</td><td>void</td><td>Público</td><td>Añade un rol al usuario.</td></tr>
+    <tr><td>addRoles(List&lt;Role&gt; roles)</td><td>void</td><td>Público</td><td>Añade múltiples roles al usuario.</td></tr>
+    <tr><td>getSerializedRoles()</td><td>List&lt;String&gt;</td><td>Público</td><td>Devuelve los roles del usuario como lista serializada.</td></tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h5>Entidad: <code>Role</code></h5>
+<p><strong>Descripción:</strong> Representa un rol dentro del sistema, asociado a un objeto de valor <code>Roles</code>.</p>
+
+<table>
+  <thead>
+    <tr><th>Atributo</th><th>Tipo</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>id</td><td>Long</td><td>Privado</td><td>Identificador único del rol.</td></tr>
+    <tr><td>name</td><td>Roles</td><td>Privado</td><td>Nombre del rol como value object.</td></tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Tipo de Retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>getStringName()</td><td>String</td><td>Público</td><td>Obtiene el nombre del rol como texto.</td></tr>
+    <tr><td>getDefaultRole()</td><td>Role</td><td>Público</td><td>Retorna el rol por defecto (ej: ROLE_ADMIN).</td></tr>
+    <tr><td>toRoleFromName(String name)</td><td>Role</td><td>Público</td><td>Crea un rol a partir de un nombre string.</td></tr>
+    <tr><td>validateRoleSet(List&lt;Role&gt; roles)</td><td>List&lt;Role&gt;</td><td>Público</td><td>Valida una lista de roles y asigna uno por defecto si está vacía.</td></tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h5>Objeto de Valor: <code>Roles</code></h5>
+<p><strong>Descripción:</strong> Enumeración que define los roles disponibles en el sistema.</p>
+
+<table>
+  <thead><tr><th>Nombre</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>ROLE_ADMIN</td><td>Administrador del sistema.</td></tr>
+    <tr><td>ROLE_WORKER</td><td>Trabajador que utiliza el sistema de monitoreo postural.</td></tr>
+    <tr><td>ROLE_STUDENT</td><td>Estudiante que utiliza el sistema de monitoreo postural.</td></tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h5>Servicios de Dominio</h5>
+
+<h6>Servicio: <code>RoleCommandService</code></h6>
+<p><strong>Descripción:</strong> Define operaciones para la creación e inicialización de roles.</p>
+<table>
+  <thead><tr><th>Método</th><th>Tipo de Retorno</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>handle(SeedRolesCommand command)</td><td>void</td><td>Maneja la creación inicial de roles en el sistema.</td></tr>
+  </tbody>
+</table>
+
+<h6>Servicio: <code>RoleQueryService</code></h6>
+<p><strong>Descripción:</strong> Permite consultar información de roles registrados.</p>
+<table>
+  <thead><tr><th>Método</th><th>Tipo de Retorno</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>handle(GetAllRolesQuery query)</td><td>List&lt;Role&gt;</td><td>Obtiene todos los roles registrados.</td></tr>
+    <tr><td>handle(GetRoleByNameQuery query)</td><td>Role</td><td>Busca un rol por su nombre.</td></tr>
+  </tbody>
+</table>
+
+<h6>Servicio: <code>UserCommandService</code></h6>
+<p><strong>Descripción:</strong> Define operaciones para registro y autenticación de usuarios.</p>
+<table>
+  <thead><tr><th>Método</th><th>Tipo de Retorno</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>handle(SignInCommand command)</td><td>User</td><td>Autentica a un usuario y devuelve su información con token.</td></tr>
+    <tr><td>handle(SignUpCommand command)</td><td>User</td><td>Registra un nuevo usuario</td></tr>
+  </tbody>
+</table>
+
+<h6>Servicio: <code>UserQueryService</code></h6>
+<p><strong>Descripción:</strong> Permite obtener información y verificar la existencia de usuarios.</p>
+<table>
+  <thead><tr><th>Método</th><th>Tipo de Retorno</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>handle(GetUserByIdQuery query)</td><td>User</td><td>Busca un usuario por ID.</td></tr>
+    <tr><td>handle(GetUserByUsernameQuery query)</td><td>User</td><td>Busca un usuario por nombre de usuario.</td></tr>
+  </tbody>
+</table>
+
+#### 5.5.2 Interface Layer
+
+<p>
+  El <strong>Interface Layer</strong> sirve como la capa de comunicación entre el mundo exterior 
+  (como los controladores HTTP) y la lógica del dominio. 
+  Este nivel contiene los controladores responsables de gestionar las solicitudes de los usuarios, 
+  como el inicio de sesión, registro y obtención de información de usuarios.
+</p>
+
+<h6>Controlador: <code>AuthenticationController</code></h6>
+<p><strong>Descripción:</strong> 
+El controlador <code>AuthenticationController</code> se encarga de manejar las solicitudes relacionadas con la autenticación de los usuarios. 
+A través de sus métodos, permite realizar el inicio de sesión y registro de usuarios, ya sea estudiantes o trabajadores.
+</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>signIn(SignInResource signInResource)</td><td>Maneja la solicitud de inicio de sesión.</td><td>POST /sign-in</td><td>Devuelve el recurso de usuario autenticado.</td></tr>
+    <tr><td>signUpStudent(SignUpStudentResource signUpStudentResource)</td><td>Maneja la solicitud de registro para estudiantes.</td><td>POST /sign-up/student</td><td>Devuelve el recurso del usuario creado.</td></tr>
+    <tr><td>signUpWorker(SignUpWorkerResource signUpWorkerResource)</td><td>Maneja la solicitud de registro para trabajadores.</td><td>POST /sign-up/worker</td><td>Devuelve el recurso del usuario creado.</td></tr>
+  </tbody>
+</table>
+
+<h6>Controlador: <code>RolesController</code></h6>
+<p><strong>Descripción:</strong> 
+El controlador <code>RolesController</code> permite obtener la lista de todos los roles disponibles en el sistema.
+</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>getAllRoles()</td><td>Devuelve todos los roles.</td><td>GET /roles</td><td>Lista de recursos de roles.</td></tr>
+  </tbody>
+</table>
+
+<h6>Controlador: <code>UsersController</code></h6>
+<p><strong>Descripción:</strong> 
+El controlador <code>UsersController</code> gestiona las solicitudes para obtener información sobre los usuarios registrados en el sistema.
+</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>getAllUsers()</td><td>Devuelve todos los usuarios.</td><td>GET /users</td><td>Lista de recursos de usuarios.</td></tr>
+    <tr><td>getUserById(Long userId)</td><td>Devuelve un usuario por su ID.</td><td>GET /users/{userId}</td><td>Recurso de usuario por ID.</td></tr>
+  </tbody>
+</table>
+
+#### 5.5.3 Application Layer
+
+<p>
+  El <strong>Application Layer</strong> contiene la lógica necesaria para procesar las operaciones relacionadas con las entidades, 
+  como la creación de roles y usuarios, y la gestión de sus acciones. 
+  Esta capa maneja la lógica del negocio que no forma parte del dominio central, 
+  sino que orquesta las acciones entre diferentes componentes del sistema.
+</p>
+
+<h6>Clase: <code>RoleCommandServiceImpl</code></h6>
+<p><strong>Descripción:</strong> La clase <code>RoleCommandServiceImpl</code> se encarga de manejar los comandos relacionados con los roles.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>handle(SeedRolesCommand command)</td><td>Maneja el comando para crear roles si no existen.</td><td>POST /roles/seed</td><td>Devuelve la lista de roles creados.</td></tr>
+  </tbody>
+</table>
+
+<h6>Clase: <code>UserCommandServiceImpl</code></h6>
+<p><strong>Descripción:</strong> La clase <code>UserCommandServiceImpl</code> maneja los comandos relacionados con los usuarios.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>handle(SignInCommand command)</td><td>Maneja el inicio de sesión de un usuario.</td><td>POST /sign-in</td><td>Devuelve el recurso de usuario autenticado.</td></tr>
+    <tr><td>handle(SignUpCommand command)</td><td>Maneja el registro de un usuario</td><td>POST /sign-up/</td><td>Devuelve el recurso del usuario creado.</td></tr>
+  </tbody>
+</table>
+
+<h6>Clase: <code>RoleQueryServiceImpl</code></h6>
+<p><strong>Descripción:</strong> La clase <code>RoleQueryServiceImpl</code> maneja las consultas relacionadas con los roles.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>handle(GetAllRolesQuery query)</td><td>Devuelve todos los roles.</td><td>GET /roles</td><td>Lista de recursos de roles.</td></tr>
+    <tr><td>handle(GetRoleByNameQuery query)</td><td>Devuelve un rol por su nombre.</td><td>GET /roles/{name}</td><td>Recurso de rol.</td></tr>
+  </tbody>
+</table>
+
+<h6>Clase: <code>UserQueryServiceImpl</code></h6>
+<p><strong>Descripción:</strong> La clase <code>UserQueryServiceImpl</code> maneja las consultas relacionadas con los usuarios.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>handle(GetUserByIdQuery query)</td><td>Devuelve un usuario por su ID.</td><td>GET /users/{userId}</td><td>Recurso de usuario por ID.</td></tr>
+    <tr><td>handle(GetUserByUsernameQuery query)</td><td>Devuelve un usuario por su correo electrónico.</td><td>GET /users/username/{email}</td><td>Recurso de usuario.</td></tr>
+  </tbody>
+</table>
+
+<h6>Clase: <code>ApplicationInitializer</code></h6>
+<p><strong>Descripción:</strong> La clase <code>ApplicationInitializer</code> escucha el evento 
+<code>ApplicationReadyEvent</code> y ejecuta procesos de inicialización como la creación de roles por defecto o la carga de configuraciones iniciales.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>Evento</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>onApplicationReady(ApplicationReadyEvent event)</td>
+      <td>Ejecuta procesos de inicialización al arrancar la aplicación.</td>
+      <td>ApplicationReadyEvent</td>
+      <td>Confirma la inicialización (por ejemplo, roles creados, usuario admin creado).</td>
+    </tr>
+  </tbody>
+</table>
+
+#### 5.5.4 Infrastructure Layer
+
+<p>
+  La capa de <strong>Infrastructure</strong> se encarga de la interacción con fuentes externas de datos, 
+  como bases de datos, APIs de terceros o cualquier recurso fuera del ámbito de la lógica de negocio del sistema. 
+  En este caso, los repositorios <code>UserRepository</code> y <code>RoleRepository</code> son responsables de la persistencia de los datos.
+</p>
+
+<h6>Repositorio: <code>UserRepository</code></h6>
+<p><strong>Descripción:</strong> Repositorio que maneja las operaciones de persistencia relacionadas con los usuarios en la base de datos.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>findByEmail(String email)</td><td>Busca un usuario en la base de datos utilizando su correo electrónico.</td><td>GET /users/email/{email}</td><td>Devuelve un Optional&lt;User&gt;.</td></tr>
+    <tr><td>existsByEmail(String email)</td><td>Verifica si un usuario con el correo especificado ya existe.</td><td>GET /users/exists/email/{email}</td><td>Devuelve un boolean.</td></tr>
+    <tr><td>existsById(Long userId)</td><td>Verifica si un usuario con el ID especificado ya existe.</td><td>GET /users/exists/{userId}</td><td>Devuelve un boolean.</td></tr>
+  </tbody>
+</table>
+
+<h6>Repositorio: <code>RoleRepository</code></h6>
+<p><strong>Descripción:</strong> Repositorio encargado de gestionar la persistencia de los roles del sistema.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>findByName(Roles name)</td><td>Busca un rol en la base de datos por su nombre.</td><td>GET /roles/{name}</td><td>Devuelve un Optional&lt;Role&gt;.</td></tr>
+    <tr><td>existsByName(Roles name)</td><td>Verifica si un rol con el nombre especificado ya existe.</td><td>GET /roles/exists/{name}</td><td>Devuelve un boolean.</td></tr>
+  </tbody>
+</table>
+
+#### 5.5.6 Bounded Context Software Architecture Component Level Diagrams
+
+El diagrama de componentes del sistema ErgoVision presenta una arquitectura con cinco bounded contexts, Landing Page en HTML/CSS/JS, Web App en Angular y Mobile App en Kotlin, conectados a través de un REST API en Spring Boot con PostgreSQL e integrando servicios externos de Google MediaPipe para detección postural y Firebase Cloud Messaging para notificaciones push.
+
+<img src="images/chapter-5/ComponentDiagram.png" alt="Component Diagram">
+
+#### 5.5.7 Bounded Context Software Architecture Code Level Diagrams
+##### 5.5.7.1 Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases muestra cómo se relacionan las entidades User y Role, así como los objetos de valor asociados a ellas.
+
+<img src="images/chapter-5/IAM-DC.png" alt="Diagrama de Clases - Bounded Context IAM"/>
+
+##### 5.5.7.2 Bounded Context Database Design Diagram
+
+En el diagrama de base, se observa la tabla users y roles, así como la relación entre estas.
+
+<img src="images/chapter-5/IAM-DB.png" alt="Diagrama de Base de Datos - Bounded Context IAM"/>
+
+
+
+
+
+
+
+
 
 ## Conclusiones
 
