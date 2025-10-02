@@ -3273,216 +3273,168 @@ Descripción: Administra las pausas activas programadas, iniciadas o finalizadas
 ### 5.3 Bounded Context: Estadísticas
 #### 5.3.1 Domain Layer
 
-En la capa de dominio del bounded context de Estadísticas, los principales agregados son `Reporte` y `Métrica`. Estos encapsulan la lógica de negocio para la gestión de datos históricos de posturas, el cálculo de métricas relevantes y la generación de reportes visuales para los usuarios.
+En la **Capa de Dominio** del Bounded Context de **Statistics**, los principales agregados son `StatisticsReport`, `PostureMetrics`, `BreakMetrics` y `SessionMetrics`. Estos encapsulan los conceptos de negocio necesarios para calcular y consolidar reportes estadísticos relacionados con el tiempo de postura, pausas activas y duración de sesiones.
 
-**Agregado `Reporte`**
-**Descripción:** Representa el agregado raíz “Reporte”, que contiene la información consolidada de un período de monitoreo y las métricas asociadas.
+La lógica de dominio se concentra en el servicio de dominio `StatisticsService`, que aplica las reglas de negocio para calcular métricas como el tiempo promedio de buena postura, el porcentaje de mala postura, las pausas tomadas y la duración de la última sesión, asegurando consistencia en los cálculos y coherencia en la presentación de resultados.
 
-| Atributo       | Tipo         | Visibilidad | Descripción                                                |
-|----------------|--------------|-------------|------------------------------------------------------------|
-| id             | Long         | Privado     | Identificador único del reporte.                           |
-| userId         | Long         | Privado     | Identificador del usuario al que pertenece el reporte.     |
-| generationDate | Date         | Privado     | Fecha de inicio del período del reporte.                   |
-| period         | Periodo      | Privado     | Objeto de valor que define el rango de fechas del reporte. |
-| metrics        | Set<Métrica> | Privado     | Conjunto de métricas asociadas al reporte.                 |
+**Agregado `StatisticsReport`**
+**Descripción:** Representa un reporte consolidado de estadísticas para un usuario en un período específico.
+
+| Atributo    | Tipo           | Visibilidad | Descripción                                            |
+|-------------|----------------|-------------|--------------------------------------------------------|
+| id          | Long           | Privado     | Identificador único del reporte.                       |
+| userId      | Long           | Privado     | Identificador del usuario al que pertenece el reporte. |
+| period      | Periodo        | Privado     | Intervalo del reporte (SEMANA, GENERAL).               |
+| posture     | PostureMetrics | Privado     | Métricas relacionadas con la postura.                  |
+| breaks      | BreakMetrics   | Privado     | Métricas relacionadas con las pausas activas.          |
+| sessions    | SessionMetrics | Privado     | Métricas relacionadas con las sesiones de monitoreo.   |
+| generatedAt | Date           | Privado     | Fecha y hora de generación del reporte.                |
 
 
-| Método                        | Tipo de Retorno | Visibilidad | Descripción                             |
-|-------------------------------|-----------------|-------------|-----------------------------------------|
-| addDataset(Dataset dataset)   | void            | Público     | Asocia un conjunto de datos al estudio. |
-| definePurpose(String purpose) | void            | Público     | Establece el propósito del estudio.     |
-| defineScope(String scope)     | void            | Público     | Define el alcance del estudio.          |
-
----
-
-**Entidad: Dataset**
-**Descripción:** Representa un conjunto de datos utilizado dentro del estudio estadístico.
-
-| Atributo  | Tipo           | Visibilidad | Descripción                          |
-|-----------|----------------|-------------|--------------------------------------|
-| id        | Long           | Privado     | Identificador único del dataset.     |
-| name      | String         | Privado     | Nombre del dataset.                  |
-| variables | List<Variable> | Privado     | Variables estadísticas que contiene. |
-
-| Método                    | Tipo de Retorno | Visibilidad | Descripción                             |
-|---------------------------|-----------------|-------------|-----------------------------------------|
-| addVariable(Variable var) | void            | Público     | Añade una variable al dataset.          |
-| getVariables()            | List<Variable>  | Público     | Devuelve todas las variables asociadas. |
+| Método                    | Tipo de Retorno | Visibilidad | Descripción                              |
+|---------------------------|-----------------|-------------|------------------------------------------|
+| calculatePostureMetrics() | PostureMetrics  | Público     | Calcula métricas de postura.             |
+| calculateBreakMetrics()   | BreakMetrics    | Público     | Calcula métricas de pausas activas.      |
+| calculateSessionMetrics() | SessionMetrics  | Público     | Calcula métricas de sesiones.            |
+| generateSummary()         | String          | Público     | Devuelve un resumen textual del reporte. |
 
 ---
 
-*Objeto de Valor: Variable**
-**Descripción:** Representa una variable estadística dentro de un conjunto de datos.
+*Objeto de Valor: `PostureMetrics`**
+**Descripción:** Contiene métricas relacionadas con la postura del usuario.
 
-| Nombre | Tipo         | Descripción                                   |
-|--------|--------------|-----------------------------------------------|
-| name   | String       | Nombre de la variable.                        |
-| type   | VariableType | Tipo de variable (cualitativa, cuantitativa). |
-
----
-
-**Servicios de Dominio**
-
-* **Servicio: StudyCommandService**
-  **Descripción:** Define operaciones para la creación y gestión de estudios estadísticos.
-
-| Método                               | Tipo de Retorno | Descripción                        |
-|--------------------------------------|-----------------|------------------------------------|
-| handle(CreateStudyCommand command)   | Study           | Crea un nuevo estudio estadístico. |
-| handle(AssignDatasetCommand command) | void            | Asigna un dataset a un estudio.    |
+| Nombre               | Tipo   | Descripción                                          |
+|----------------------|--------|------------------------------------------------------|
+| avgGoodPostureTime   | Double | Tiempo promedio de buena postura (minutos/hora/día). |
+| badPosturePercentage | Double | Porcentaje de mala postura respecto al total.        |
 
 ---
 
-* **Servicio: StudyQueryService**
-  **Descripción:** Permite consultar información de los estudios estadísticos registrados.
+*Objeto de Valor: `BreakMetrics`**
+**Descripción:** Contiene métricas de pausas activas y descansos.
 
-| Método                           | Tipo de Retorno | Descripción                              |
-|----------------------------------|-----------------|------------------------------------------|
-| handle(GetAllStudiesQuery query) | List<Study>     | Obtiene todos los estudios estadísticos. |
-| handle(GetStudyByIdQuery query)  | Study           | Busca un estudio por su ID.              |
-
----
-* **Servicio: DatasetCommandService**
-  **Descripción:** Define operaciones sobre la gestión de datasets.
-
-| Método                               | Tipo de Retorno | Descripción                       |
-|--------------------------------------|-----------------|-----------------------------------|
-| handle(CreateDatasetCommand command) | Dataset         | Crea un nuevo conjunto de datos.  |
-| handle(AddVariableCommand command)   | void            | Agrega una variable a un dataset. |
+| Nombre           | Tipo   | Descripción                                            |
+|------------------|--------|--------------------------------------------------------|
+| totalBreaks      | int    | Número total de pausas registradas.                    |
+| avgBreakDuration | Double | Duración promedio de una pausa activa (minutos/horas). |
+| avgRestTime      | Double | Tiempo promedio de descanso entre sesiones.            |
 
 ---
 
-* **Servicio: DatasetQueryService**
-  **Descripción:** Permite obtener información sobre datasets registrados.
+*Objeto de Valor: `SessionMetrics`**
+**Descripción:** Contiene métricas de pausas activas y descansos.
 
-| Método                            | Tipo de Retorno | Descripción                             |
-|-----------------------------------|-----------------|-----------------------------------------|
-| handle(GetAllDatasetsQuery query) | List<Dataset>   | Obtiene todos los datasets registrados. |
-| handle(GetDatasetByIdQuery query) | Dataset         | Busca un dataset por ID.                |
+| Nombre              | Tipo   | Descripción                                |
+|---------------------|--------|--------------------------------------------|
+| lastSessionDuration | Double | Duración de la última sesión de monitoreo. |
+| totalSessions       | int    | Cantidad total de sesiones registradas.    |
+
+---
+*Objeto de Valor: `ReportPeriod`**
+**Descripción:** Enum que define los períodos de un reporte.
+
+| Nombre | Descripción                |
+|--------|----------------------------|
+| WEEKLY | Estadísticas de la semana. |
+| WEEKLY | Estadísticas históricas.   |
+
+---
+
+**Servicios de Dominio:** `StatisticsService`
+ **Descripción:** Encargado de generar los reportes estadísticos a partir de los datos del BC de Monitoring.
+
+| Método                                                    | Tipo de Retorno  | Descripción                                                               |
+|-----------------------------------------------------------|------------------|---------------------------------------------------------------------------|
+| generateReport(Long userId, ReportPeriod period)          | StatisticsReport | Genera un reporte de estadísticas para un usuario en un período definido. |
+| calculatePostureMetrics(Long userId, ReportPeriod period) | PostureMetrics   | Calcula métricas de postura.                                              |
+| calculateBreakMetrics(Long userId, ReportPeriod period)   | BreakMetrics     | Calcula métricas de pausas activas y descansos.                           |
+| calculateSessionMetrics(Long userId, ReportPeriod period) | SessionMetrics   | Calcula métricas de sesiones, incluida la última sesión registrada.       |
 
 #### 5.3.2 Interface Layer
-En la Capa de Interfaz del Bounded Context de Estadística, se expone el controlador StatisticsController, el cual ofrece endpoints RESTful para la gestión de estudios estadísticos, conjuntos de datos y variables. Estos endpoints permiten crear estudios, registrar datasets, añadir variables, y consultar resultados de análisis. También se habilita la ejecución de operaciones estadísticas básicas que integran datos provenientes del frontend (web o móvil) y facilitan la interacción con otros bounded contexts como Reports (para la generación de informes) y Visualization (para la representación gráfica de los resultados).
+En la Capa de Interfaz del Bounded Context de Statistics, se expone el controlador `StatisticsController`, el cual ofrece endpoints RESTful para la generación y consulta de reportes.
 
 **Justificación:**
-Esta capa cumple el propósito de desacoplar la lógica de dominio del acceso externo al sistema, proporcionando una API clara, coherente y segura para que el frontend pueda interactuar con el backend de manera uniforme. Asimismo, habilita la integración con otros bounded contexts y garantiza la trazabilidad de los estudios, la persistencia confiable de los datasets y la correcta administración de variables y resultados, alineando la experiencia del usuario con los objetivos de análisis estadístico de la plataforma.
+Esta capa desacopla la lógica de dominio del acceso externo, permitiendo a aplicaciones web, móviles u otros bounded contexts consumir los reportes de manera uniforme. Facilita la integración con **Monitoring** para extraer información base y asegura que las métricas se entreguen listas para su visualización o análisis por el usuario.
 
 **Controlador: `StatisticsController`**
 
-| Método             | Verbo HTTP | Ruta                                              | Descripción                                         |
-|--------------------|------------|---------------------------------------------------|-----------------------------------------------------|
-| createStudy        | POST       | /api/v1/statistics/studies                        | Crea un nuevo estudio estadístico                   |
-| getStudyById       | GET        | /api/v1/statistics/studies/{studyId}              | Obtiene los detalles de un estudio                  |
-| getAllStudies      | GET        | /api/v1/statistics/studies                        | Lista todos los estudios registrados                |
-| addDataset         | POST       | /api/v1/statistics/studies/{studyId}/datasets     | Asigna un dataset a un estudio                      |
-| getDatasetsByStudy | GET        | /api/v1/statistics/studies/{studyId}/datasets     | Obtiene todos los datasets asociados a un estudio   |
-| createDataset      | POST       | /api/v1/statistics/datasets                       | Crea un nuevo conjunto de datos                     |
-| getDatasetById     | GET        | /api/v1/statistics/datasets/{datasetId}           | Obtiene detalles de un dataset                      |
-| addVariable        | POST       | /api/v1/statistics/datasets/{datasetId}/variables | Añade una variable a un dataset                     |
-| getVariables       | GET        | /api/v1/statistics/datasets/{datasetId}/variables | Lista todas las variables de un dataset             |
-| runAnalysis        | POST       | /api/v1/statistics/studies/{studyId}/analysis     | Ejecuta un análisis sobre un estudio y sus datasets |
-| getAnalysisResults | GET        | /api/v1/statistics/studies/{studyId}/results      | Obtiene resultados de análisis realizados           |
+| Método            | Verbo HTTP | Ruta                                 | Descripción                            |
+|-------------------|------------|--------------------------------------|----------------------------------------|
+| getWeeklyReport   | GET        | /api/v1/statistics/{userId}/weekly   | Genera y retorna el reporte semanal.   |
+| getGeneralReport  | GET        | /api/v1/statistics/{userId}/general  | Genera y retorna el reporte histórico. |
+| getPostureMetrics | GET        | /api/v1/statistics/{userId}/posture  | Retorna métricas de postura.           |
+| getBreakMetrics   | GET        | /api/v1/statistics/{userId}/breaks   | Retorna métricas de pausas activas.    |
+| getSessionMetrics | GET        | /api/v1/statistics/{userId}/sessions | Retorna métricas de sesiones.          |
+
 
 #### 5.3.3 Application Layer
 
-En el Application Layer del Bounded Context de **Estadística** se implementan los servicios de aplicación que orquestan los casos de uso principales:
-- creación y gestión de estudios,
-- registro de conjuntos de datos y variables,
-- ejecución de análisis,
-- y consultas sobre resultados y métricas estadísticas.
+En el Application Layer de Statistics se implementan los servicios de aplicación que orquestan los cálculos y consultas sobre reportes.
 
-El `StatisticsCommandService` gestiona las operaciones de modificación del dominio, mientras que el `StatisticsQueryService` se centra en la recuperación de información estructurada y resultados de análisis.
+
 **Justificación**
-Dividir la lógica en servicios de **Command** y **Query** asegura un diseño más claro, mantenible y escalable, siguiendo el patrón **CQRS**.  
-Esta separación permite optimizar las operaciones de lectura y escritura de manera independiente, facilitar la integración con bounded contexts como **Reports** o **Visualization**, y soportar la evolución futura del sistema con bajo acoplamiento.
+
+Separar los servicios de **Command** y **Query** siguiendo el patrón **CQRS** permite claridad en el diseño:
+
+ * **Commands**: generan y actualizan reportes.
+ * **Queries**: consultan métricas específicas.
 
 ---
+`StatisticsCommandServiceImpl`
+**Descripción:** Implementación del servicio de comandos encargado de generar reportes estadísticos para los usuarios.
 
-*  **StatisticsCommandServiceImpl**
+| Método                                  | Descripción                                              |
+|-----------------------------------------|----------------------------------------------------------|
+| handle(GenerateStatisticsReportCommand) | Genera un reporte consolidado para un usuario y período. |
 
-**Descripción:** Implementación del servicio de comandos encargado de gestionar el ciclo de vida de los estudios, datasets y variables, así como la ejecución de análisis.
 
-| Método                       | Descripción                                                    |
-|------------------------------|----------------------------------------------------------------|
-| handle(CreateStudyCommand)   | Crea un nuevo estudio estadístico.                             |
-| handle(AddDatasetCommand)    | Asigna un dataset a un estudio.                                |
-| handle(CreateDatasetCommand) | Crea un nuevo conjunto de datos independiente.                 |
-| handle(AddVariableCommand)   | Añade una variable a un dataset.                               |
-| handle(RunAnalysisCommand)   | Ejecuta un análisis sobre un estudio y sus datasets asociados. |
+`StatisticsQueryServiceImpl`
 
----
+**Descripción:** Implementación del servicio de consultas encargado de recuperar métricas específicas relacionadas con postura, pausas y sesiones.
 
-* **StatisticsQueryServiceImpl**
+| Método                         | Descripción                                                         |
+|--------------------------------|---------------------------------------------------------------------|
+| handle(GetWeeklyReportQuery)   | Recupera métricas semanales.                                        |
+| handle(GetGeneralReportQuery)  | Recupera métricas históricas.                                       |
+| handle(GetPostureMetricsQuery) | Obtiene métricas de postura.                                        |
+| handle(GetBreakMetricsQuery)   | Obtiene métricas de pausas activas y descansos.                     |
+| handle(GetSessionMetricsQuery) | Obtiene métricas de sesiones, incluida la última sesión registrada. |
 
-**Descripción:** Implementación del servicio de consultas encargado de recuperar información de estudios, datasets, variables y resultados de análisis.
 
-| Método                             | Descripción                                                  |
-|------------------------------------|--------------------------------------------------------------|
-| handle(GetStudyByIdQuery)          | Recupera los detalles de un estudio por su ID.               |
-| handle(GetAllStudiesQuery)         | Lista todos los estudios registrados.                        |
-| handle(GetDatasetsByStudyQuery)    | Obtiene todos los datasets asociados a un estudio.           |
-| handle(GetVariablesByDatasetQuery) | Lista las variables pertenecientes a un dataset.             |
-| handle(GetAnalysisResultsQuery)    | Obtiene los resultados de análisis realizados en un estudio. |
 
 #### 5.3.4 Infrastructure Layer
 
-En la Capa de Infraestructura del Bounded Context de **Estadística** se implementan los repositorios que permiten la persistencia y recuperación de datos relacionados con los estudios, conjuntos de datos, variables y resultados de análisis. Esta capa actúa como puente entre la lógica de dominio y la base de datos, asegurando que los objetos del dominio se almacenen y consulten de manera eficiente y consistente.
+En la **Capa de Infraestructura** del Bounded Context de Statistics se implementan los adaptadores para conectarse al BC de Monitoring y, opcionalmente, persistir reportes ya generados para evitar recálculo.
 
 **Justificación**
 
-Separar la persistencia en la capa de infraestructura garantiza el **desacoplamiento** entre la lógica del dominio y la tecnología de almacenamiento.  
-Esto permite flexibilidad en la elección del motor de base de datos, facilita pruebas unitarias mediante repositorios en memoria y asegura que la lógica de negocio no dependa de detalles técnicos.
+Separar la infraestructura asegura independencia de las tecnologías externas (bases de datos, APIs externas) y flexibilidad en la consulta de datos de *Monitoring*. Esto también permite caching de reportes, optimizando la eficiencia.
 
 ---
 
-* **StudyRepository**
+`StatisticsReportRepository`
 
-**Descripción:** Administra la persistencia y recuperación de entidades relacionadas con los estudios estadísticos.
+**Descripción:** Gestiona la persistencia de los reportes estadísticos generados.
 
-| Método                 | Descripción                                          |
-|------------------------|------------------------------------------------------|
-| save(Study study)      | Persiste un nuevo estudio o actualiza uno existente. |
-| findById(Long studyId) | Recupera un estudio por su identificador.            |
-| findAll()              | Lista todos los estudios registrados.                |
-| delete(Long studyId)   | Elimina un estudio registrado.                       |
-
----
-
-* **DatasetRepository**
-
-**Descripción:** Gestiona la persistencia de los conjuntos de datos asociados a los estudios.
-
-| Método                    | Descripción                                          |
-|---------------------------|------------------------------------------------------|
-| save(Dataset dataset)     | Persiste un nuevo dataset o actualiza uno existente. |
-| findById(Long datasetId)  | Recupera un dataset por su ID.                       |
-| findByStudy(Long studyId) | Obtiene todos los datasets asociados a un estudio.   |
-| delete(Long datasetId)    | Elimina un dataset registrado.                       |
+| Método                                                | Descripción                                                 |
+|-------------------------------------------------------|-------------------------------------------------------------|
+| save(StatisticsReport report)                         | Persiste un reporte generado.                               |
+| findById(Long reportId)                               | Recupera un reporte por su ID.                              |
+| findByUserAndPeriod(Long userId, ReportPeriod period) | Recupera un reporte generado para un usuario en un período. |
 
 ---
 
-* **VariableRepository**
+`MonitoringAdapter`
 
-**Descripción:** Administra la persistencia de las variables incluidas en los datasets.
+**Descripción:** Adaptador para interactuar con el Bounded Context de Monitoring y recuperar datos necesarios para cálculos estadísticos.
 
-| Método                        | Descripción                                            |
-|-------------------------------|--------------------------------------------------------|
-| save(Variable variable)       | Persiste una nueva variable o actualiza una existente. |
-| findById(Long variableId)     | Recupera una variable por su identificador.            |
-| findByDataset(Long datasetId) | Lista todas las variables asociadas a un dataset.      |
-| delete(Long variableId)       | Elimina una variable registrada.                       |
+| Método                                  | Descripción                                                      |
+|-----------------------------------------|------------------------------------------------------------------|
+| fetchPostureEvents(Long userId, Period) | Consulta los eventos de postura desde Monitoring.                |
+| fetchBreaks(Long userId, Period)        | Consulta las pausas activas desde Monitoring.                    |
+| fetchSessions(Long userId, Period)      | Consulta las sesiones de monitoreo desde Monitoring.             |
+| fetchLastSession(Long userId)           | Recupera la última sesión de monitoreo registrada en Monitoring. |
 
----
-
-* **AnalysisResultRepository**
-
-**Descripción:** Gestiona la persistencia de los resultados obtenidos tras ejecutar análisis estadísticos.
-
-| Método                      | Descripción                                          |
-|-----------------------------|------------------------------------------------------|
-| save(AnalysisResult result) | Registra o actualiza un resultado de análisis.       |
-| findById(Long resultId)     | Recupera un resultado por su identificador.          |
-| findByStudy(Long studyId)   | Obtiene todos los resultados asociados a un estudio. |
-| delete(Long resultId)       | Elimina un resultado de análisis registrado.         |
 
 ###### 5.3.6. Bounded Context Software Architecture Component Level Diagrams
 ###### 5.3.7. Bounded Context Software Architecture Code Level Diagrams
