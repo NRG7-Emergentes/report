@@ -3791,6 +3791,8 @@ Objetivos principales:
 ### 6.1.2. Web, Mobile & Devices Style Guidelines
 
 ## 6.2. Information Architecture
+La Arquitectura de la Información cumple un papel esencial en la creación de experiencias digitales claras y funcionales, al definir cómo se estructura, nombra y conecta el contenido dentro de las plataformas web y móvil. En esta sección, el equipo presenta las decisiones estratégicas que sustentan la organización de la información, garantizando que los usuarios puedan orientarse fácilmente, comprender la lógica de navegación y acceder sin dificultad a los recursos o funciones que buscan.
+
 ### 6.2.1. Labeling Systems
 ### 6.2.2. Searching Systems
 ### 6.2.3. SEO Tags and Meta Tags
