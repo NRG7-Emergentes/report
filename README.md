@@ -3859,6 +3859,42 @@ Estas etiquetas se mantendrán coherentes en todas las plataformas y vistas, ase
 
 ### 6.2.3. Searching Systems
 ### 6.2.4. SEO Tags and Meta Tags
+<p>
+Esta sección define la estrategia de optimización para motores de búsqueda (SEO) y tiendas de aplicaciones (ASO) de ErgoVision, orientada a maximizar la visibilidad del proyecto tanto en entornos web como móviles. El objetivo es asegurar que los usuarios puedan encontrar fácilmente la plataforma al buscar soluciones relacionadas con ergonomía, bienestar laboral y monitoreo postural.
+</p>
+
+<p>
+Las etiquetas propuestas buscan reflejar la esencia de ErgoVision: una herramienta digital centrada en la salud, la prevención y la productividad consciente, brindando una experiencia accesible y confiable en todos los dispositivos.
+</p>
+
+<h3>Para Landing Page Web</h3>
+<ul>
+  <li><strong>Title:</strong> ErgoVision – Mejora tu bienestar postural con tecnología inteligente</li>
+  <li><strong>Meta Description:</strong> Plataforma digital diseñada para promover hábitos ergonómicos saludables. Descubre cómo ErgoVision puede ayudarte a prevenir la fatiga y mejorar tu postura mediante recordatorios, monitoreo y pausas activas personalizadas.</li>
+  <li><strong>Meta Keywords:</strong> ergonomía, bienestar postural, salud digital, prevención de fatiga, pausas activas, monitoreo ergonómico, hábitos saludables, postura correcta</li>
+  <li><strong>Meta Author:</strong> Equipo ErgoVision</li>
+</ul>
+
+<h3>Para Página Web (Plataforma Web Interactiva)</h3>
+<ul>
+  <li><strong>Title:</strong> ErgoVision Web – Monitoreo en tiempo real y análisis ergonómico</li>
+  <li><strong>Meta Description:</strong> Accede a tu panel de control de ErgoVision, donde podrás visualizar tu historial ergonómico, revisar estadísticas personalizadas y gestionar tus hábitos de pausa activa. Optimiza tu jornada laboral con herramientas de bienestar inteligente.</li>
+  <li><strong>Meta Keywords:</strong> ergonomía en el trabajo, análisis postural, productividad saludable, monitoreo de postura, bienestar digital, panel ergonómico, hábitos laborales</li>
+  <li><strong>Meta Author:</strong> Equipo ErgoVision</li>
+</ul>
+
+<h3>Para Mobile App (App Store / Play Store)</h3>
+<ul>
+  <li><strong>App Title:</strong> ErgoVision: Monitoreo Ergonómico y Bienestar Postural</li>
+  <li><strong>App Keywords:</strong> ergonomía, postura, salud, pausas activas, bienestar, trabajo saludable, productividad, fatiga, monitoreo</li>
+  <li><strong>App Subtitle:</strong> Cuida tu postura y bienestar mientras trabajas o estudias.</li>
+  <li><strong>App Description:</strong> ErgoVision es una aplicación inteligente que te ayuda a mantener una postura correcta, prevenir la fatiga y mejorar tu bienestar diario. Ofrece monitoreo ergonómico en tiempo real, recordatorios de pausas activas y estadísticas personalizadas. ¡Optimiza tu rutina y cuida tu cuerpo con ErgoVision!</li>
+</ul>
+
+<p>
+Estas configuraciones SEO y ASO garantizan una comunicación clara y atractiva en todos los puntos de contacto digitales, fortaleciendo la identidad de ErgoVision como una solución moderna, accesible y comprometida con la salud y el bienestar de sus usuarios.
+</p>
+
 ### 6.2.5. Navigation Systems
 
 ## 6.3. Landing Page UI Design
