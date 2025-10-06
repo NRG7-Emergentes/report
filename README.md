@@ -3858,6 +3858,88 @@ La propuesta de etiquetado para las principales secciones de ErgoVision es la si
 Estas etiquetas se mantendrán coherentes en todas las plataformas y vistas, asegurando que cada término represente de forma precisa la funcionalidad o información que agrupa. Además, se prioriza el uso de sustantivos directos y familiares para los usuarios, promoviendo una comunicación efectiva y una navegación libre de confusión dentro del ecosistema ErgoVision.
 
 ### 6.2.3. Searching Systems
+
+<p>
+El sistema de búsqueda en <strong>ErgoVision</strong> ha sido diseñado para que los usuarios puedan acceder a información relevante de manera rápida y sin complicaciones. El objetivo es evitar la sensación de pérdida dentro del volumen de datos recopilados por el sistema, especialmente en los módulos de <em>historial de monitoreo</em> y <em>estadísticas de bienestar</em>. 
+A través de diferentes medios de ayuda, filtros y opciones visuales, se garantiza una experiencia eficiente y centrada en el usuario.
+</p>
+
+<hr />
+
+<h4>Barra de búsqueda en el Historial Detallado</h4>
+<p>
+En la sección de <strong>Historial Detallado</strong>, los usuarios contarán con una <strong>barra de búsqueda avanzada</strong> que permitirá localizar sesiones específicas de monitoreo basadas en criterios como fecha, duración, nivel de corrección postural o incidencias detectadas. 
+Esta barra se ubicará en la parte superior del historial y ofrecerá resultados dinámicos que se actualizarán en tiempo real conforme el usuario escriba.
+</p>
+
+<ul>
+  <li><strong>Filtros disponibles:</strong> fecha de sesión, tipo de postura, duración de monitoreo, alertas recibidas.</li>
+  <li><strong>Presentación de resultados:</strong> se mostrará una lista cronológica con tarjetas informativas que incluirán los datos clave de cada sesión (fecha, tiempo, incidencias y nivel de desempeño).</li>
+</ul>
+
+<hr />
+
+<h4>Búsqueda en Estadísticas</h4>
+<p>
+En la sección de <strong>Visualización de Estadísticas</strong>, el usuario podrá aplicar filtros para observar tendencias específicas en su desempeño ergonómico. 
+El sistema permitirá seleccionar periodos de tiempo (semanal, mensual, personalizado) y tipos de métricas, como <em>tiempo de buena postura</em> o <em>número de correcciones diarias</em>.
+</p>
+
+<ul>
+  <li><strong>Filtros disponibles:</strong> rango de fechas, tipo de métrica, frecuencia de pausas activas.</li>
+  <li><strong>Presentación de resultados:</strong> gráficos interactivos que se actualizarán en función de los filtros aplicados, con valores destacados y comparativos.</li>
+</ul>
+
+<hr />
+
+<h4>Filtrado en Monitoreo Activo</h4>
+<p>
+Durante el <strong>inicio de monitoreo</strong>, el usuario podrá visualizar un registro en tiempo real de sus eventos posturales. 
+Aunque el monitoreo es continuo, el sistema ofrecerá una vista filtrable para mostrar únicamente las <em>alertas recientes</em> o las <em>correcciones realizadas</em> dentro de una sesión específica. 
+Esto permitirá analizar patrones de comportamiento sin necesidad de revisar todo el flujo de datos.
+</p>
+
+<ul>
+  <li><strong>Filtros disponibles:</strong> tipo de evento (alerta o corrección), intervalo de tiempo, nivel de desviación postural.</li>
+  <li><strong>Presentación de resultados:</strong> lista de eventos en tiempo real con indicadores visuales por color según la gravedad de la desviación.</li>
+</ul>
+
+<hr />
+
+<h4>Búsqueda en Pausas Activas</h4>
+<p>
+En la sección de <strong>Pausa Activa</strong>, los usuarios podrán buscar y filtrar ejercicios o rutinas recomendadas según el tipo de molestia o zona corporal afectada. 
+Esto facilitará la selección de pausas más adecuadas para su situación actual.
+</p>
+
+<ul>
+  <li><strong>Filtros disponibles:</strong> tipo de ejercicio, duración, nivel de intensidad, zona corporal (cuello, espalda, muñeca, etc.).</li>
+  <li><strong>Presentación de resultados:</strong> catálogo visual con tarjetas de ejercicios, cada una mostrando imagen, nombre y duración.</li>
+</ul>
+
+<hr />
+
+<h4>Gestión de Perfil y Datos de Usuario</h4>
+<p>
+En las secciones de <strong>Edición de datos de usuario</strong> y <strong>Mi Perfil</strong>, el sistema permitirá realizar búsquedas internas de configuraciones o campos específicos, como datos personales o preferencias ergonómicas. 
+Esto facilitará la personalización de la experiencia sin recorrer todas las secciones manualmente.
+</p>
+
+<ul>
+  <li><strong>Filtros disponibles:</strong> nombre de campo, categoría de configuración (notificaciones, datos biométricos, preferencias de monitoreo).</li>
+  <li><strong>Presentación de resultados:</strong> lista editable con campos resaltados según la palabra clave buscada.</li>
+</ul>
+
+<hr />
+
+<h4>Accesibilidad y Experiencia de Búsqueda</h4>
+<p>
+Todos los sistemas de búsqueda de <strong>ErgoVision</strong> seguirán los principios de <em>claridad, consistencia y velocidad de respuesta</em>. 
+El usuario siempre visualizará un mensaje de ayuda o sugerencias automáticas al no encontrar resultados, reduciendo la frustración y promoviendo una navegación guiada. 
+Además, las búsquedas estarán disponibles mediante texto y comandos de voz para mejorar la accesibilidad general.
+</p>
+
+
 ### 6.2.4. SEO Tags and Meta Tags
 <p>
 Esta sección define la estrategia de optimización para motores de búsqueda (SEO) y tiendas de aplicaciones (ASO) de ErgoVision, orientada a maximizar la visibilidad del proyecto tanto en entornos web como móviles. El objetivo es asegurar que los usuarios puedan encontrar fácilmente la plataforma al buscar soluciones relacionadas con ergonomía, bienestar laboral y monitoreo postural.
