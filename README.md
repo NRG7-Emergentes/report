@@ -3793,10 +3793,23 @@ Objetivos principales:
 ## 6.2. Information Architecture
 La Arquitectura de la Información cumple un papel esencial en la creación de experiencias digitales claras y funcionales, al definir cómo se estructura, nombra y conecta el contenido dentro de las plataformas web y móvil. En esta sección, el equipo presenta las decisiones estratégicas que sustentan la organización de la información, garantizando que los usuarios puedan orientarse fácilmente, comprender la lógica de navegación y acceder sin dificultad a los recursos o funciones que buscan.
 
-### 6.2.1. Labeling Systems
-### 6.2.2. Searching Systems
-### 6.2.3. SEO Tags and Meta Tags
-### 6.2.4. Navigation Systems
+### 6.2.1. Organization Systems
+
+En esta sección, el equipo describe cómo se aplicarán los sistemas de organización de la información dentro de ErgoVision, con el propósito de optimizar la experiencia del usuario y facilitar el acceso rápido y claro a las funcionalidades principales. La estructura propuesta busca mantener una navegación fluida, intuitiva y coherente tanto en la interfaz web como en la aplicación móvil.
+
+- Jerárquica (Visual Hierarchy): Este sistema se aplicará en la Landing Page y en las pantallas principales de la aplicación para resaltar los elementos más relevantes, como botones de acción, indicadores de análisis ergonómico y accesos a reportes o configuraciones. Se empleará el uso estratégico de tamaños, contrastes de color y espaciado para guiar la atención del usuario hacia las tareas más importantes.
+
+- Organización Secuencial (Step-by-Step): Se implementará en los procesos de evaluación ergonómica y configuración de perfil, donde el usuario deberá seguir una serie de pasos lógicos (por ejemplo, registrar su espacio de trabajo, ingresar medidas posturales y visualizar resultados). Este enfoque permitirá una experiencia guiada y estructurada, reduciendo la complejidad cognitiva y ayudando a completar tareas con claridad.
+
+- Organización Matricial: Se aplicará en secciones que involucren la comparación de datos o métricas, como los reportes de desempeño ergonómico y la visualización de estadísticas entre diferentes periodos o usuarios. Este sistema permitirá observar múltiples variables de forma simultánea, facilitando el análisis y la toma de decisiones basadas en los resultados obtenidos.
+
+Con esta estructura, ErgoVision garantiza una presentación organizada, priorizada y adaptable de la información, que favorece tanto la comprensión como la interacción eficiente del usuario con las distintas funcionalidades de la plataforma.
+
+### 6.2.2. Labeling Systems
+
+### 6.2.3. Searching Systems
+### 6.2.4. SEO Tags and Meta Tags
+### 6.2.5. Navigation Systems
 
 ## 6.3. Landing Page UI Design
 ### 6.3.1. Landing Page Wireframe
