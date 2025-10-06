@@ -3790,6 +3790,112 @@ Objetivos principales:
 
 ### 6.1.2. Web, Mobile & Devices Style Guidelines
 
+<h4>Web Style Guide</h3>
+
+<h4>Componentes</h4>
+<ul>
+  <li>
+    <strong>Botones:</strong>
+    <ul>
+      <li><em>Primario:</em> fondo <code>#2b7fff</code> con texto blanco (<code>#ffffff</code>) para destacar acciones principales.</li>
+      <li><em>Secundario:</em> fondo <code>#256ad6</code> con texto <code>#ffffff</code> para acciones complementarias.</li>
+      <li><em>Deshabilitado:</em> fondo <code>#9ca5ae</code> con opacidad reducida.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Formularios:</strong>
+    <ul>
+      <li>Campos con bordes redondeados y validaciones visuales para estados <em>focus</em>, <em>error</em> y <em>success</em>.</li>
+      <li>Las etiquetas se ubican sobre el campo, priorizando la legibilidad.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Cards:</strong>
+    <ul>
+      <li>Tarjetas con fondo blanco (<code>#ffffff</code>), sombra sutil (<code>#a5aab1</code>) y bordes suaves.</li>
+      <li>Se usan para mostrar información resumida como historial o métricas posturales.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Tablas y Gráficos:</strong>
+    <ul>
+      <li>Líneas internas grises suaves y jerarquía tipográfica en cabeceras.</li>
+      <li>Los gráficos emplean tonos azules y grises para transmitir calma visual.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4>Comportamiento de Componentes</h4>
+<ul>
+  <li>Transiciones suaves (150 ms) para estados <em>hover</em>, <em>active</em> y <em>focus</em>.</li>
+  <li>Evita animaciones excesivas que distraigan al usuario durante el monitoreo.</li>
+  <li>Mensajes emergentes discretos y con tono informativo.</li>
+</ul>
+
+<h4>Responsive Design</h4>
+<ul>
+  <li>Diseño adaptable desde 1024 px (desktop) hasta 360 px (mobile).</li>
+  <li>Distribución en cuadrículas flexibles que priorizan la legibilidad y el contenido clave.</li>
+  <li>Contraste mínimo AA garantizado según las normas <strong>WCAG 2.1</strong>.</li>
+</ul>
+
+<h4>Íconos e Ilustraciones</h4>
+<ul>
+  <li>Íconos lineales monocromáticos (color <code>#5a6472</code> o <code>#ffffff</code> sobre fondos oscuros).</li>
+  <li>Ilustraciones simples en tonos neutros, usadas solo en la landing page.</li>
+  <li>Evita elementos decorativos innecesarios para mantener la estética profesional y ergonómica.</li>
+</ul>
+
+
+<h4>Mobile Style Guide</h3>
+
+<h4>Componentes</h4>
+<ul>
+  <li>
+    <strong>Botones:</strong>
+    <ul>
+      <li>Áreas táctiles amplias (mínimo 48 px). Conservan la jerarquía de color de la versión web.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Formularios:</strong>
+    <ul>
+      <li>Campos optimizados para teclado móvil, con mensajes de error claros y botones de acción grandes.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Cards:</strong>
+    <ul>
+      <li>Diseño compacto, apilado verticalmente, con tipografía jerárquica y colores de contraste.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4>Gestos</h4>
+<ul>
+  <li><strong>Tap:</strong> acción principal (selección o confirmación).</li>
+  <li><strong>Swipe vertical:</strong> desplazamiento entre secciones como historial o estadísticas.</li>
+  <li><strong>Swipe horizontal:</strong> navegación entre pantallas o inicio/pausa del monitoreo.</li>
+  <li><strong>Long Press:</strong> acceso a opciones secundarias, como detalles de historial.</li>
+</ul>
+
+<h4>Responsive Design</h4>
+<ul>
+  <li>Adaptación fluida a smartphones y tablets (360–768 px).</li>
+  <li>Tipografía legible <strong>Lato</strong>, mínimo 14 px.</li>
+  <li>Uso de espacios amplios para reducir la carga visual y favorecer la precisión táctil.</li>
+  <li>Prioriza accesos rápidos a: “Iniciar Monitoreo”, “Pausa Activa”, “Historial” y “Mi Perfil”.</li>
+</ul>
+
+<h4>Consistencia Visual</h4>
+<ul>
+  <li><strong>Colores:</strong> #121720, #141e2d, #2b7fff, #256ad6, #ffffff.</li>
+  <li><strong>Tipografía:</strong> Lato — limpia, moderna y ergonómica.</li>
+  <li><strong>Iconografía:</strong> Minimalista y funcional, trazos finos en alto contraste.</li>
+  <li><strong>Tono general:</strong> Profesional, calmado y centrado en el bienestar físico y visual del usuario.</li>
+</ul>
+
+
 ## 6.2. Information Architecture
 La Arquitectura de la Información cumple un papel esencial en la creación de experiencias digitales claras y funcionales, al definir cómo se estructura, nombra y conecta el contenido dentro de las plataformas web y móvil. En esta sección, el equipo presenta las decisiones estratégicas que sustentan la organización de la información, garantizando que los usuarios puedan orientarse fácilmente, comprender la lógica de navegación y acceder sin dificultad a los recursos o funciones que buscan.
 
