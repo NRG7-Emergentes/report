@@ -3770,6 +3770,24 @@ La tipografía Lato, de estilo sans-serif, fue elegida por su claridad, modernid
 
 ![nrg7-typography.png](images/chapter-6/nrg7-typography.png)
 
+**Principios de Diseño: Simplicidad y Claridad**
+
+El diseño de ErgoVision se rige por principios de simplicidad, claridad y enfoque ergonómico, que buscan reducir la fatiga visual y cognitiva del usuario, al tiempo que mantienen una estética moderna y profesional.
+
+Objetivos principales:
+
+- Interfaz minimalista: Priorizar la información esencial y eliminar distracciones visuales, destacando solo los componentes funcionales relevantes.
+
+- Uso estratégico del espacio en blanco: Facilita la lectura y comprensión, creando una sensación de equilibrio y confort visual.
+
+- Flujos de usuarios intuitivos: Los procesos deben ser directos y naturales, alineados con las rutinas de trabajo y descanso del usuario.
+
+- Jerarquía visual coherente: Diferenciar los niveles de información mediante tamaño, color y posición, guiando la atención del usuario de forma orgánica.
+
+- Iconografía comprensible: Usar íconos claros y universales para representar acciones o estados, reduciendo la necesidad de texto adicional.
+
+- Lenguaje accesible y respetuoso: Emplear un tono sereno, profesional y cercano, que inspire confianza sin perder formalidad.
+
 ### 6.1.2. Web, Mobile & Devices Style Guidelines
 
 ## 6.2. Information Architecture
