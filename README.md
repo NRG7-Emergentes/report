@@ -936,6 +936,15 @@ Para el segmento de estudiantes remotos, las seis entrevistas revelan que la may
 
 #### 2.3.1 User Personas
 
+En esta sección se presentan las User Personas desarrolladas a partir del análisis de las entrevistas y la investigación de mercado. Estas representaciones ficticias de nuestros usuarios objetivo nos ayudan a comprender mejor sus necesidades, comportamientos y motivaciones, facilitando el diseño de soluciones centradas en el usuario.
+
+**User Persona: Trabajador Remoto**
+
+![nrg7-UPERSONA1.png](images/chapter-2/nrg7-UPERSONA1.png)
+
+**User Persona: Estudiante Remoto**
+
+![nrg7-UPERSONA2.png](images/chapter-2/nrg7-UPERSONA2.png)
 #### 2.3.2 User Task Matrix
 
 **Segmento 1: Trabajadores Remotos:**
