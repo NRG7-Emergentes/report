@@ -3750,6 +3750,34 @@ Posteriormente, se especificaron los requisitos mediante escenarios To-Be, histo
 
 Finalmente, con Attribute-Driven Design y Domain-Driven Design, se estructuró la arquitectura en bounded contexts, context mapping y diagramas de software, asegurando escalabilidad, calidad y mantenibilidad.
 
+### Capítulo VI: Solution UX Design
+
+## 6.1. Style Guidelines
+El objetivo de estas directrices es asegurar que todas las interfaces de usuario (UI) de ErgoVision mantengan una identidad visual coherente, profesional y accesible, alineada con la misión del proyecto de promover el bienestar postural y la salud ergonómica a través de la tecnología. Estas guías establecen los principios visuales y funcionales que regirán el diseño tanto del entorno web como de la aplicación móvil, garantizando consistencia en el uso de colores, tipografías, iconografía y componentes visuales.
+
+Al seguir estas directrices, ErgoVision busca ofrecer una experiencia centrada en el usuario, intuitiva y clara, que refleje confianza, bienestar y modernidad. Cada elemento visual ha sido concebido para apoyar la comprensión de la información, reducir la carga cognitiva y facilitar la interacción del usuario con las funciones de monitoreo, análisis y mejora postural.
+
+### 6.1.1. General Style Guidelines
+### 6.1.2. Web, Mobile & Devices Style Guidelines
+
+## 6.2. Information Architecture
+### 6.2.1. Labeling Systems
+### 6.2.2. Searching Systems
+### 6.2.3. SEO Tags and Meta Tags
+### 6.2.4. Navigation Systems
+
+## 6.3. Landing Page UI Design
+### 6.3.1. Landing Page Wireframe
+### 6.3.2. Landing Page Mock-up
+
+## 6.4. Applications UX/UI Design
+### 6.4.1. Applications Wireframes
+### 6.4.2. Applications Wireflow Diagrams
+### 6.4.3. Applications Mock-ups
+### 6.4.4. Applications User Flow Diagrams
+
+## 6.5. Applications Prototyping
+
 ## Bibliografía
 
 Lazo, R. V. H., & Quispe, Y. C. (2024). _Trastornos musculoesqueléticos asociados al teletrabajo en abogados peruanos: un estudio transversal._ Medicina y Seguridad del Trabajo, 70(275), 103-112. [https://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0465-546X2024000400005](https://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0465-546X2024000400005)
