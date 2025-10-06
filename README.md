@@ -3897,7 +3897,57 @@ Estas configuraciones SEO y ASO garantizan una comunicación clara y atractiva e
 
 ### 6.2.5. Navigation Systems
 
+<p>
+La estructura de navegación de <strong>ErgoVision</strong> está diseñada para ofrecer una experiencia de usuario fluida, clara y accesible, permitiendo que tanto nuevos usuarios como recurrentes puedan orientarse fácilmente dentro de la plataforma. 
+La navegación busca guiar a los usuarios hacia sus objetivos principales monitorear su postura, analizar su progreso y promover hábitos saludables de manera intuitiva y sin fricciones.
+</p>
+
+<hr />
+
+<h4>Landing Page</h4>
+<p>
+La <strong>Landing Page</strong> presenta una navegación superior fija que permite explorar los principales apartados informativos y de conversión. Incluye los siguientes elementos:
+</p>
+<ul>
+  <li><strong>Inicio:</strong> Acceso directo al encabezado principal y presentación del producto.</li>
+  <li><strong>Sobre ErgoVision:</strong> Sección que explica la misión, visión y propósito del proyecto.</li>
+  <li><strong>Características:</strong> Detalle de las funcionalidades principales de la plataforma, como monitoreo postural, pausas activas y estadísticas de bienestar.</li>
+  <li><strong>Beneficios:</strong> Explicación de los impactos positivos en la salud y productividad del usuario.</li>
+  <li><strong>Equipo:</strong> Presentación del equipo de desarrollo y colaboradores del proyecto.</li>
+  <li><strong>Contacto:</strong> Enlace para comunicarse con el equipo de soporte o solicitar más información.</li>
+</ul>
+
+<hr />
+
+<h4>Web Application</h4>
+<p>
+En la <strong>versión web de ErgoVision</strong>, se utilizará una <strong>barra lateral de navegación persistente</strong>, que facilitará el acceso a las funcionalidades clave de monitoreo y gestión de usuario:
+</p>
+<ul>
+  <li><strong>Dashboard:</strong> Vista general del estado postural actual y acceso rápido a las métricas principales.</li>
+  <li><strong>Historial Detallado:</strong> Registro cronológico de sesiones y eventos de monitoreo.</li>
+  <li><strong>Estadísticas:</strong> Gráficos e indicadores sobre el progreso del usuario en el tiempo.</li>
+  <li><strong>Monitoreo:</strong> Sección para iniciar, pausar o detener el seguimiento postural.</li>
+  <li><strong>Pausas Activas:</strong> Ejercicios y recordatorios programados para reducir la fatiga.</li>
+  <li><strong>Perfil de Usuario:</strong> Edición de datos personales y preferencias ergonómicas.</li>
+  <li><strong>Configuración:</strong> Ajustes del sistema, notificaciones SMS y preferencias visuales.</li>
+</ul>
+
+<hr />
+
+<h4>Mobile Application</h4>
+<p>
+La <strong>aplicación móvil</strong> prioriza la usabilidad en pantallas pequeñas mediante una <strong>navegación por pestañas inferiores (bottom navigation bar)</strong>, complementada con un <strong>menú lateral desplegable</strong> para secciones secundarias. Las secciones principales incluyen:
+</p>
+<ul>
+  <li><strong>Inicio:</strong> Estado postural actual y acceso rápido a monitoreo.</li>
+  <li><strong>Estadísticas:</strong> Visualización compacta de métricas y progreso.</li>
+  <li><strong>Pausas:</strong> Acceso directo a ejercicios guiados y recordatorios activos.</li>
+  <li><strong>Perfil:</strong> Configuración personal, historial resumido y ajustes de usuario.</li>
+</ul>
+
 ## 6.3. Landing Page UI Design
+
 ### 6.3.1. Landing Page Wireframe
 ### 6.3.2. Landing Page Mock-up
 
