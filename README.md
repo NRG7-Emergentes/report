@@ -3807,6 +3807,56 @@ Con esta estructura, ErgoVision garantiza una presentación organizada, prioriza
 
 ### 6.2.2. Labeling Systems
 
+El sistema de etiquetado en ErgoVision se diseña con el propósito de garantizar que los usuarios comprendan de forma inmediata la función y el contenido de cada sección. Las etiquetas se seleccionan utilizando un lenguaje claro, conciso y accesible, evitando tecnicismos innecesarios y priorizando la simplicidad visual y semántica.<br>
+Este enfoque busca reducir la carga cognitiva, permitir una navegación intuitiva y asegurar una experiencia uniforme entre las versiones web y móvil.
+
+La propuesta de etiquetado para las principales secciones de ErgoVision es la siguiente:
+
+<table>
+  <thead>
+    <tr>
+      <th>Sección</th>
+      <th>Etiqueta Propuesta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Creación e inicio de sesión</td>
+      <td>“Iniciar Sesión”</td>
+    </tr>
+    <tr>
+      <td>Registro de nuevo usuario</td>
+      <td>“Crear Cuenta”</td>
+    </tr>
+    <tr>
+      <td>Edición de datos de usuario</td>
+      <td>“Editar Perfil”</td>
+    </tr>
+    <tr>
+      <td>Visualización de historial detallado</td>
+      <td>“Historial”</td>
+    </tr>
+    <tr>
+      <td>Visualización de estadísticas</td>
+      <td>“Estadísticas”</td>
+    </tr>
+    <tr>
+      <td>Inicio de monitoreo ergonómico</td>
+      <td>“Monitoreo”</td>
+    </tr>
+    <tr>
+      <td>Ejecución de pausa activa</td>
+      <td>“Pausa Activa”</td>
+    </tr>
+    <tr>
+      <td>Perfil de usuario</td>
+      <td>“Mi Perfil”</td>
+    </tr>
+  </tbody>
+</table>
+
+Estas etiquetas se mantendrán coherentes en todas las plataformas y vistas, asegurando que cada término represente de forma precisa la funcionalidad o información que agrupa. Además, se prioriza el uso de sustantivos directos y familiares para los usuarios, promoviendo una comunicación efectiva y una navegación libre de confusión dentro del ecosistema ErgoVision.
+
 ### 6.2.3. Searching Systems
 ### 6.2.4. SEO Tags and Meta Tags
 ### 6.2.5. Navigation Systems
