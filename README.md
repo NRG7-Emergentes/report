@@ -3758,6 +3758,18 @@ El objetivo de estas directrices es asegurar que todas las interfaces de usuario
 Al seguir estas directrices, ErgoVision busca ofrecer una experiencia centrada en el usuario, intuitiva y clara, que refleje confianza, bienestar y modernidad. Cada elemento visual ha sido concebido para apoyar la comprensión de la información, reducir la carga cognitiva y facilitar la interacción del usuario con las funciones de monitoreo, análisis y mejora postural.
 
 ### 6.1.1. General Style Guidelines
+
+#### **Colores:**
+
+Para ErgoVision, una plataforma dedicada al monitoreo postural y al bienestar ergonómico, la selección de colores busca transmitir profesionalismo, confianza y bienestar, reflejando el equilibrio entre tecnología y salud. La paleta combina tonos fríos y sobrios con acentos vibrantes, reforzando una experiencia visual moderna y centrada en el usuario.
+
+![nrg7-styleguidelines.png](images/chapter-6/nrg7-styleguidelines.png)
+
+#### **Tipografía:**
+La tipografía Lato, de estilo sans-serif, fue elegida por su claridad, modernidad y legibilidad, cualidades fundamentales en una aplicación que busca mejorar el bienestar físico mediante la tecnología. Sus formas redondeadas y proporciones balanceadas aportan una sensación de cercanía y comodidad visual, mientras su versatilidad permite mantener coherencia entre los textos informativos, métricas de monitoreo y mensajes de alerta.
+
+![nrg7-typography.png](images/chapter-6/nrg7-typography.png)
+
 ### 6.1.2. Web, Mobile & Devices Style Guidelines
 
 ## 6.2. Information Architecture
