@@ -2779,14 +2779,275 @@ El diseño del bounded context Notificaciones se centra únicamente en gestionar
 
 ## Capítulo V: Tactical-Level Software Design
 
-### 5.1 Bounded Context: Orquestrator
+### 5.1 Bounded Context: Orquestrador
 #### 5.1.1 Domain Layer
+
+En la **Capa de Dominio** del Bounded Context de **Orquestrador (Orchestrator)**, los principales agregados son `AlertSetting`, `PostureSetting`, y `Calibration`. Estos encapsulan los conceptos de negocio necesarios para gestionar la configuración y calibración del sistema de monitoreo postural: configuraciones de alertas, ajustes de detección postural y parámetros de calibración personalizados.
+
+La lógica de dominio para el manejo de configuraciones y calibraciones se concentra en servicios de dominio especializados que aplican las reglas de negocio relacionadas con la gestión de preferencias del usuario, validación de parámetros de calibración y consistencia en las configuraciones del sistema.
+
+Agregado `AlertSetting`
+
+Descripción: Gestiona la configuración de alertas del monitoreo.
+
+| Atributo             | Tipo    | Visibilidad | Descripción                                                   |
+|----------------------|---------|-------------|---------------------------------------------------------------|
+| id                   | Long    | Privado     | Identificador único de la configuración.                      |
+| visualAlertsEnabled  | Boolean | Privado     | Indica si las alertas visuales están habilitadas.             |
+| soundAlertsEnabled   | Boolean | Privado     | Indica si las alertas sonoras están habilitadas.              |
+| alertVolume          | Integer | Privado     | Volumen de las alertas sonoras (0-100).                       |
+| alertInterval        | Integer | Privado     | Intervalo entre alertas consecutivas (segundos).              |
+| createdAt            | Date    | Privado     | Fecha de creación del registro.                               |
+| updatedAt            | Date    | Privado     | Fecha de última actualización.                                |
+
+| Método                             | Tipo de Retorno | Visibilidad | Descripción                        |
+|------------------------------------|-----------------|-------------|------------------------------------|
+| enableVisualAlerts()               | void            | Público     | Habilita las alertas visuales.     |
+| disableVisualAlerts()              | void            | Público     | Deshabilita las alertas visuales.  |
+| enableSoundAlerts()                | void            | Público     | Habilita las alertas sonoras.      |
+| disableSoundAlerts()               | void            | Público     | Deshabilita las alertas sonoras.   |
+| adjustVolume(Integer volume)       | void            | Público     | Ajusta el volumen (0-100).         |
+| setAlertInterval(Integer interval) | void            | Público     | Define el intervalo entre alertas. |
+
+Agregado `PostureSetting`
+
+Descripción: Configura los parámetros de detección postural.
+
+| Atributo               | Tipo    | Visibilidad | Descripción                                                   |
+|------------------------|---------|-------------|---------------------------------------------------------------|
+| id                     | Long    | Privado     | Identificador único de la configuración.                      |
+| postureSensitivity     | Integer | Privado     | Sensibilidad general de detección (0-100).                    |
+| shoulderAngleThreshold | Integer | Privado     | Umbral angular para detección de hombros.                     |
+| headAngleThreshold     | Integer | Privado     | Umbral angular para detección de cabeza.                      |
+| samplingFrequency      | Integer | Privado     | Frecuencia de muestreo (segundos).                            |
+| showSkeleton           | Boolean | Privado     | Muestra/oculta el esqueleto en la interfaz.                   |
+| createdAt              | Date    | Privado     | Fecha de creación del registro.                               |
+| updatedAt              | Date    | Privado     | Fecha de última actualización.                                |
+
+| Método                              | Tipo de Retorno | Visibilidad | Descripción                                      |
+|-------------------------------------|-----------------|-------------|--------------------------------------------------|
+| adjustSensitivity(Integer level)    | void            | Público     | Ajusta la sensibilidad de detección.             |
+| setShoulderThreshold(Integer angle) | void            | Público     | Define umbral angular para hombros.              |
+| setHeadThreshold(Integer angle)     | void            | Público     | Define umbral angular para cabeza.               |
+| setSamplingFrequency(Integer freq)  | void            | Público     | Establece frecuencia de muestreo.                |
+| toggleSkeletonVisibility()          | void            | Público     | Alterna visibilidad del esqueleto.               |
+
+Agregado `Calibration`
+
+Descripción: Almacena y gestiona los resultados de calibración del usuario.
+
+| Atributo           | Tipo               | Visibilidad | Descripción                                                   |
+|--------------------|--------------------|-------------|---------------------------------------------------------------|
+| id                 | Long               | Privado     | Identificador único de la calibración.                        |
+| userId             | Long               | Privado     | Identificador del usuario asociado.                           |
+| calibrationDate    | Date               | Privado     | Fecha de realización de la calibración.                       |
+| referenceLandmarks | ReferenceLandmarks | Privado     | Puntos de referencia corporales establecidos.                 |
+| postureThresholds  | PostureThresholds  | Privado     | Umbrales posturales personalizados.                           |
+| cameraDistance     | Float              | Privado     | Distancia estimada a la cámara.                               |
+| cameraVisibility   | Integer            | Privado     | Nivel de visibilidad de la cámara (0-100).                    |
+| cameraResolution   | String             | Privado     | Resolución de cámara utilizada.                               |
+| calibrationScore   | Integer            | Privado     | Puntuación de calidad de calibración (0-100).                 |
+| createdAt          | Date               | Privado     | Fecha de creación del registro.                               |
+| updatedAt          | Date               | Privado     | Fecha de última actualización.                                |
+
+| Método                                                  | Tipo de Retorno | Visibilidad | Descripción                             |
+|---------------------------------------------------------|-----------------|-------------|-----------------------------------------|
+| updateLandmarks(ReferenceLandmarks landmarks)           | void            | Público     | Actualiza los puntos de referencia.     |
+| adjustThresholds(PostureThresholds thresholds)          | void            | Público     | Modifica los umbrales posturales.       |
+| setCameraParameters(Float distance, Integer visibility) | void            | Público     | Configura parámetros de cámara.         |
+| validateCalibration()                                   | Boolean         | Público     | Valida la integridad de la calibración. |
+
+Entidad `ReferenceLandmarks`
+
+Descripción: Representa los puntos de referencia corporales para calibración.
+
+| Atributo  | Tipo           | Visibilidad | Descripción                           |
+|-----------|----------------|-------------|---------------------------------------|
+| landmarks | List<Landmark> | Privado     | Colección de puntos clave del cuerpo. |
+
+Objeto de Valor `Landmark`
+
+Descripción: Representa un punto clave del cuerpo en el espacio 3D.
+
+| Atributo   | Tipo    | Descripción                             |
+|------------|---------|-----------------------------------------|
+| x          | Integer | Coordenada X en el espacio.             |
+| y          | Integer | Coordenada Y en el espacio.             |
+| z          | Integer | Coordenada Z en el espacio.             |
+| visibility | Integer | Nivel de visibilidad/confianza (0-100). |
+
+Objeto de Valor `PostureThresholds`
+
+Descripción: Define los umbrales angulares para detección de postura.
+
+| Atributo      | Tipo    | Descripción                          |
+|---------------|---------|--------------------------------------|
+| shoulderAngle | Integer | Umbral para ángulo de hombros.       |
+| neckAngle     | Integer | Umbral para ángulo de cuello.        |
+| backAngle     | Integer | Umbral para ángulo de espalda.       |
+| headTilt      | Integer | Umbral para inclinación de cabeza.   |
+
+Servicio de Dominio: `AlertsSettingCommandService`
+
+Descripción: Gestiona las operaciones de escritura para configuraciones de alertas.
+
+| Método                                       | Tipo de Retorno | Descripción                                               |
+|----------------------------------------------|-----------------|-----------------------------------------------------------|
+| handle(CreateAlertsSettingCommand command)   | void            | Crea una nueva configuración de alertas.                  |
+| handle(UpdateAlertsSettingCommand command)   | void            | Actualiza una configuración existente.                    |
+| handle(DeleteAlertsSettingCommand command)   | void            | Elimina una configuración de alertas.                     |
+
+Servicio de Dominio: `PostureSettingCommandService`
+
+Descripción: Gestiona las operaciones de escritura para configuraciones posturales.
+
+| Método                                        | Tipo de Retorno | Descripción                                               |
+|-----------------------------------------------|-----------------|-----------------------------------------------------------|
+| handle(CreatePostureSettingCommand command)   | void            | Crea una nueva configuración postural.                    |
+| handle(UpdatePostureSettingCommand command)   | void            | Actualiza una configuración existente.                    |
+| handle(DeletePostureSettingCommand command)   | void            | Elimina una configuración postural.                       |
+
+Servicio de Dominio: `CalibrationCommandService`
+
+Descripción: Gestiona las operaciones de escritura para calibraciones.
+
+| Método                                   | Tipo de Retorno | Descripción                                       |
+|------------------------------------------|-----------------|---------------------------------------------------|
+| handle(CreateCalibrationCommand command) | void            | Crea una nueva calibración.                       |
+| handle(UpdateCalibrationCommand command) | void            | Actualiza una calibración existente.              |
+| handle(DeleteCalibrationCommand command) | void            | Elimina una calibración.                          |
+
+Servicio de Dominio: `AlertsSettingQueryService`
+
+Descripción: Gestiona las consultas de configuraciones de alertas.
+
+| Método                                 | Tipo de Retorno | Descripción                                       |
+|----------------------------------------|-----------------|---------------------------------------------------|
+| handle(GetUserAlertSettingQuery query) | AlertSetting    | Recupera la configuración de alertas del usuario. |
+
+Servicio de Dominio: `PostureSettingQueryService`
+
+Descripción: Gestiona las consultas de configuraciones posturales.
+
+| Método                                   | Tipo de Retorno | Descripción                                     |
+|------------------------------------------|-----------------|-------------------------------------------------|
+| handle(GetUserPostureSettingQuery query) | PostureSetting  | Recupera la configuración postural del usuario. |
+
+Servicio de Dominio: `CalibrationQueryService`
+
+Descripción: Gestiona las consultas de calibraciones.
+
+| Método                                | Tipo de Retorno | Descripción                          |
+|---------------------------------------|-----------------|--------------------------------------|
+| handle(GetUserCalibrationQuery query) | Calibration     | Recupera la calibración del usuario. |
+
 #### 5.1.2 Interface Layer
+
+En la **Capa de Interfaz** del Bounded Context de **Orquestrador (Orchestrator)**, se exponen los controladores `AlertsSettingController`, `PostureSettingController` y `CalibrationController`, los cuales ofrecen endpoints RESTful para la gestión integral de configuraciones y calibraciones del sistema. Estos endpoints permiten al frontend obtener y modificar las configuraciones personalizadas de alertas, ajustes posturales y parámetros de calibración que son fundamentales para el correcto funcionamiento del monitoreo postural.
+
+**Justificación:**
+
+Esta capa sirve como puente entre la interfaz de usuario y la lógica de negocio del sistema de orquestración, proporcionando una API robusta y segura para la personalización completa de la experiencia de monitoreo. Permite desacoplar la configuración del usuario del núcleo de monitoreo, facilitando la integración con otros bounded contexts como Monitoring (para aplicar configuraciones) y User Management (para la gestión de perfiles). Gracias a esta capa, se garantiza la consistencia en las configuraciones, la trazabilidad de los cambios y la capacidad de personalización que requiere el sistema para adaptarse a las necesidades específicas de cada usuario.
+
+Controlador: `AlertsSettingController`
+
+| Método               | Verbo HTTP | Ruta                                                    | Descripción                                              |
+|----------------------|------------|---------------------------------------------------------|----------------------------------------------------------|
+| getAlertsSetting     | GET        | /api/v1/orchestrator/alerts-settings/{userId}           | Obtiene la configuración de alertas del usuario          |
+| createAlertsSetting  | POST       | /api/v1/orchestrator/alerts-settings                    | Crea una nueva configuración de alertas                  |
+| updateAlertsSetting  | PUT        | /api/v1/orchestrator/alerts-settings/{settingId}        | Actualiza la configuración de alertas existente          |
+| deleteAlertsSetting  | DELETE     | /api/v1/orchestrator/alerts-settings/{settingId}        | Elimina la configuración de alertas                      |
+
+Controlador: `PostureSettingController`
+
+| Método                | Verbo HTTP | Ruta                                                     | Descripción                                              |
+|-----------------------|------------|----------------------------------------------------------|----------------------------------------------------------|
+| getPostureSetting     | GET        | /api/v1/orchestrator/posture-settings/{userId}           | Obtiene la configuración postural del usuario            |
+| createPostureSetting  | POST       | /api/v1/orchestrator/posture-settings                    | Crea una nueva configuración postural                    |
+| updatePostureSetting  | PUT        | /api/v1/orchestrator/posture-settings/{settingId}        | Actualiza la configuración postural existente            |
+| deletePostureSetting  | DELETE     | /api/v1/orchestrator/posture-settings/{settingId}        | Elimina la configuración postural                        |
+
+Controlador: `CalibrationController`
+
+| Método             | Verbo HTTP | Ruta                                               | Descripción                                      |
+|--------------------|------------|----------------------------------------------------|--------------------------------------------------|
+| getUserCalibration | GET        | /api/v1/orchestrator/calibrations/{userId}         | Obtiene la calibración del usuario               |
+| createCalibration  | POST       | /api/v1/orchestrator/calibrations                  | Crea una nueva calibración                       |
+| updateCalibration  | PUT        | /api/v1/orchestrator/calibrations/{calibrationId}  | Actualiza la calibración existente               |
+| deleteCalibration  | DELETE     | /api/v1/orchestrator/calibrations/{calibrationId}  | Elimina la calibración                           |
+
 #### 5.1.3 Application Layer
+
+En el **Application Layer** del Bounded Context de **Orquestrador (Orchestrator)** se implementan los servicios de aplicación que orquestan los casos de uso principales relacionados con la gestión de configuraciones y calibraciones: creación, actualización y eliminación de configuraciones de alertas, ajustes posturales y parámetros de calibración, así como la recuperación de estas configuraciones para su uso en el sistema de monitoreo. Los servicios de comandos (`CommandServiceImpl`) gestionan las operaciones de modificación del dominio, mientras que los servicios de consultas (`QueryServiceImpl`) se centran en la recuperación eficiente de la información de configuración.
+
+**Justificación**
+
+La separación de la lógica en servicios de Command y Query sigue el patrón CQRS, permitiendo un diseño más claro, mantenible y escalable. Esta división facilita la optimización independiente de las operaciones de lectura y escritura, soporta la integración con otros bounded contexts como Monitoring (para aplicar configuraciones) y User Management (para la gestión de perfiles), y permite la evolución futura del sistema con bajo acoplamiento. Además, garantiza la consistencia y trazabilidad de las configuraciones personalizadas de cada usuario.
+
+`AlertsSettingCommandServiceImpl`
+
+Descripción: Implementación del servicio de comandos encargado de gestionar el ciclo de vida de las configuraciones de alertas del usuario.
+
+| Método                                       | Descripción                                                  |
+|----------------------------------------------|--------------------------------------------------------------|
+| handle(CreateAlertsSettingCommand)           | Crea una nueva configuración de alertas para un usuario.     |
+| handle(UpdateAlertsSettingCommand)           | Actualiza una configuración de alertas existente.            |
+| handle(DeleteAlertsSettingCommand)           | Elimina una configuración de alertas del sistema.            |
+
+`PostureSettingCommandServiceImpl`
+
+Descripción: Implementación del servicio de comandos encargado de gestionar el ciclo de vida de las configuraciones posturales del usuario.
+
+| Método                                        | Descripción                                                  |
+|-----------------------------------------------|--------------------------------------------------------------|
+| handle(CreatePostureSettingCommand)           | Crea una nueva configuración postural para un usuario.       |
+| handle(UpdatePostureSettingCommand)           | Actualiza una configuración postural existente.              |
+| handle(DeletePostureSettingCommand)           | Elimina una configuración postural del sistema.              |
+
+`CalibrationCommandServiceImpl`
+
+Descripción: Implementación del servicio de comandos encargado de gestionar el ciclo de vida de las calibraciones del usuario.
+
+| Método                                   | Descripción                                              |
+|------------------------------------------|----------------------------------------------------------|
+| handle(CreateCalibrationCommand)         | Crea una nueva calibración para un usuario.              |
+| handle(UpdateCalibrationCommand)         | Actualiza una calibración existente.                     |
+| handle(DeleteCalibrationCommand)         | Elimina una calibración del sistema.                     |
+
+`AlertsSettingQueryServiceImpl`
+
+Descripción: Implementación del servicio de consultas encargado de recuperar información de configuraciones de alertas.
+
+| Método                                 | Descripción                                                  |
+|----------------------------------------|--------------------------------------------------------------|
+| handle(GetUserAlertSettingQuery)       | Recupera la configuración de alertas de un usuario específico. |
+
+`PostureSettingQueryServiceImpl`
+
+Descripción: Implementación del servicio de consultas encargado de recuperar información de configuraciones posturales.
+
+| Método                                  | Descripción                                                  |
+|-----------------------------------------|--------------------------------------------------------------|
+| handle(GetUserPostureSettingQuery)      | Recupera la configuración postural de un usuario específico.   |
+
+`CalibrationQueryServiceImpl`
+
+Descripción: Implementación del servicio de consultas encargado de recuperar información de calibraciones.
+
+| Método                             | Descripción                                              |
+|------------------------------------|----------------------------------------------------------|
+| handle(GetUserCalibrationQuery)    | Recupera la calibración de un usuario específico.        |
+
 #### 5.1.4 Infrastructure Layer
+
+
+
 #### 5.1.6 Bounded Context Software Architecture Component Level Diagrams
 #### 5.1.7 Bounded Context Software Architecture Code Level Diagrams
 ##### 5.1.7.1 Bounded Context Domain Layer Class Diagrams
+
+![domain-orquestrator-class-diagram.png](images/chapter-5/domain-orquestrator-class-diagram.png)
+
 ##### 5.1.7.2 Bounded Context Database Design Diagram
 
 ### 5.2 Bounded Context: Monitoreo
@@ -3030,216 +3291,168 @@ Descripción: Administra las pausas activas programadas, iniciadas o finalizadas
 ### 5.3 Bounded Context: Estadísticas
 #### 5.3.1 Domain Layer
 
-En la capa de dominio del bounded context de Estadísticas, los principales agregados son `Reporte` y `Métrica`. Estos encapsulan la lógica de negocio para la gestión de datos históricos de posturas, el cálculo de métricas relevantes y la generación de reportes visuales para los usuarios.
+En la **Capa de Dominio** del Bounded Context de **Statistics**, los principales agregados son `StatisticsReport`, `PostureMetrics`, `BreakMetrics` y `SessionMetrics`. Estos encapsulan los conceptos de negocio necesarios para calcular y consolidar reportes estadísticos relacionados con el tiempo de postura, pausas activas y duración de sesiones.
 
-**Agregado `Reporte`**
-**Descripción:** Representa el agregado raíz “Reporte”, que contiene la información consolidada de un período de monitoreo y las métricas asociadas.
+La lógica de dominio se concentra en el servicio de dominio `StatisticsService`, que aplica las reglas de negocio para calcular métricas como el tiempo promedio de buena postura, el porcentaje de mala postura, las pausas tomadas y la duración de la última sesión, asegurando consistencia en los cálculos y coherencia en la presentación de resultados.
 
-| Atributo       | Tipo         | Visibilidad | Descripción                                                |
-|----------------|--------------|-------------|------------------------------------------------------------|
-| id             | Long         | Privado     | Identificador único del reporte.                           |
-| userId         | Long         | Privado     | Identificador del usuario al que pertenece el reporte.     |
-| generationDate | Date         | Privado     | Fecha de inicio del período del reporte.                   |
-| period         | Periodo      | Privado     | Objeto de valor que define el rango de fechas del reporte. |
-| metrics        | Set<Métrica> | Privado     | Conjunto de métricas asociadas al reporte.                 |
+**Agregado `StatisticsReport`**
+**Descripción:** Representa un reporte consolidado de estadísticas para un usuario en un período específico.
+
+| Atributo    | Tipo           | Visibilidad | Descripción                                            |
+|-------------|----------------|-------------|--------------------------------------------------------|
+| id          | Long           | Privado     | Identificador único del reporte.                       |
+| userId      | Long           | Privado     | Identificador del usuario al que pertenece el reporte. |
+| period      | Periodo        | Privado     | Intervalo del reporte (SEMANA, GENERAL).               |
+| posture     | PostureMetrics | Privado     | Métricas relacionadas con la postura.                  |
+| breaks      | BreakMetrics   | Privado     | Métricas relacionadas con las pausas activas.          |
+| sessions    | SessionMetrics | Privado     | Métricas relacionadas con las sesiones de monitoreo.   |
+| generatedAt | Date           | Privado     | Fecha y hora de generación del reporte.                |
 
 
-| Método                        | Tipo de Retorno | Visibilidad | Descripción                             |
-|-------------------------------|-----------------|-------------|-----------------------------------------|
-| addDataset(Dataset dataset)   | void            | Público     | Asocia un conjunto de datos al estudio. |
-| definePurpose(String purpose) | void            | Público     | Establece el propósito del estudio.     |
-| defineScope(String scope)     | void            | Público     | Define el alcance del estudio.          |
-
----
-
-**Entidad: Dataset**
-**Descripción:** Representa un conjunto de datos utilizado dentro del estudio estadístico.
-
-| Atributo  | Tipo           | Visibilidad | Descripción                          |
-|-----------|----------------|-------------|--------------------------------------|
-| id        | Long           | Privado     | Identificador único del dataset.     |
-| name      | String         | Privado     | Nombre del dataset.                  |
-| variables | List<Variable> | Privado     | Variables estadísticas que contiene. |
-
-| Método                    | Tipo de Retorno | Visibilidad | Descripción                             |
-|---------------------------|-----------------|-------------|-----------------------------------------|
-| addVariable(Variable var) | void            | Público     | Añade una variable al dataset.          |
-| getVariables()            | List<Variable>  | Público     | Devuelve todas las variables asociadas. |
+| Método                    | Tipo de Retorno | Visibilidad | Descripción                              |
+|---------------------------|-----------------|-------------|------------------------------------------|
+| calculatePostureMetrics() | PostureMetrics  | Público     | Calcula métricas de postura.             |
+| calculateBreakMetrics()   | BreakMetrics    | Público     | Calcula métricas de pausas activas.      |
+| calculateSessionMetrics() | SessionMetrics  | Público     | Calcula métricas de sesiones.            |
+| generateSummary()         | String          | Público     | Devuelve un resumen textual del reporte. |
 
 ---
 
-*Objeto de Valor: Variable**
-**Descripción:** Representa una variable estadística dentro de un conjunto de datos.
+*Objeto de Valor: `PostureMetrics`**
+**Descripción:** Contiene métricas relacionadas con la postura del usuario.
 
-| Nombre | Tipo         | Descripción                                   |
-|--------|--------------|-----------------------------------------------|
-| name   | String       | Nombre de la variable.                        |
-| type   | VariableType | Tipo de variable (cualitativa, cuantitativa). |
-
----
-
-**Servicios de Dominio**
-
-* **Servicio: StudyCommandService**
-  **Descripción:** Define operaciones para la creación y gestión de estudios estadísticos.
-
-| Método                               | Tipo de Retorno | Descripción                        |
-|--------------------------------------|-----------------|------------------------------------|
-| handle(CreateStudyCommand command)   | Study           | Crea un nuevo estudio estadístico. |
-| handle(AssignDatasetCommand command) | void            | Asigna un dataset a un estudio.    |
+| Nombre               | Tipo   | Descripción                                          |
+|----------------------|--------|------------------------------------------------------|
+| avgGoodPostureTime   | Double | Tiempo promedio de buena postura (minutos/hora/día). |
+| badPosturePercentage | Double | Porcentaje de mala postura respecto al total.        |
 
 ---
 
-* **Servicio: StudyQueryService**
-  **Descripción:** Permite consultar información de los estudios estadísticos registrados.
+*Objeto de Valor: `BreakMetrics`**
+**Descripción:** Contiene métricas de pausas activas y descansos.
 
-| Método                           | Tipo de Retorno | Descripción                              |
-|----------------------------------|-----------------|------------------------------------------|
-| handle(GetAllStudiesQuery query) | List<Study>     | Obtiene todos los estudios estadísticos. |
-| handle(GetStudyByIdQuery query)  | Study           | Busca un estudio por su ID.              |
-
----
-* **Servicio: DatasetCommandService**
-  **Descripción:** Define operaciones sobre la gestión de datasets.
-
-| Método                               | Tipo de Retorno | Descripción                       |
-|--------------------------------------|-----------------|-----------------------------------|
-| handle(CreateDatasetCommand command) | Dataset         | Crea un nuevo conjunto de datos.  |
-| handle(AddVariableCommand command)   | void            | Agrega una variable a un dataset. |
+| Nombre           | Tipo   | Descripción                                            |
+|------------------|--------|--------------------------------------------------------|
+| totalBreaks      | int    | Número total de pausas registradas.                    |
+| avgBreakDuration | Double | Duración promedio de una pausa activa (minutos/horas). |
+| avgRestTime      | Double | Tiempo promedio de descanso entre sesiones.            |
 
 ---
 
-* **Servicio: DatasetQueryService**
-  **Descripción:** Permite obtener información sobre datasets registrados.
+*Objeto de Valor: `SessionMetrics`**
+**Descripción:** Contiene métricas de pausas activas y descansos.
 
-| Método                            | Tipo de Retorno | Descripción                             |
-|-----------------------------------|-----------------|-----------------------------------------|
-| handle(GetAllDatasetsQuery query) | List<Dataset>   | Obtiene todos los datasets registrados. |
-| handle(GetDatasetByIdQuery query) | Dataset         | Busca un dataset por ID.                |
+| Nombre              | Tipo   | Descripción                                |
+|---------------------|--------|--------------------------------------------|
+| lastSessionDuration | Double | Duración de la última sesión de monitoreo. |
+| totalSessions       | int    | Cantidad total de sesiones registradas.    |
+
+---
+*Objeto de Valor: `ReportPeriod`**
+**Descripción:** Enum que define los períodos de un reporte.
+
+| Nombre | Descripción                |
+|--------|----------------------------|
+| WEEKLY | Estadísticas de la semana. |
+| WEEKLY | Estadísticas históricas.   |
+
+---
+
+**Servicios de Dominio:** `StatisticsService`
+ **Descripción:** Encargado de generar los reportes estadísticos a partir de los datos del BC de Monitoring.
+
+| Método                                                    | Tipo de Retorno  | Descripción                                                               |
+|-----------------------------------------------------------|------------------|---------------------------------------------------------------------------|
+| generateReport(Long userId, ReportPeriod period)          | StatisticsReport | Genera un reporte de estadísticas para un usuario en un período definido. |
+| calculatePostureMetrics(Long userId, ReportPeriod period) | PostureMetrics   | Calcula métricas de postura.                                              |
+| calculateBreakMetrics(Long userId, ReportPeriod period)   | BreakMetrics     | Calcula métricas de pausas activas y descansos.                           |
+| calculateSessionMetrics(Long userId, ReportPeriod period) | SessionMetrics   | Calcula métricas de sesiones, incluida la última sesión registrada.       |
 
 #### 5.3.2 Interface Layer
-En la Capa de Interfaz del Bounded Context de Estadística, se expone el controlador StatisticsController, el cual ofrece endpoints RESTful para la gestión de estudios estadísticos, conjuntos de datos y variables. Estos endpoints permiten crear estudios, registrar datasets, añadir variables, y consultar resultados de análisis. También se habilita la ejecución de operaciones estadísticas básicas que integran datos provenientes del frontend (web o móvil) y facilitan la interacción con otros bounded contexts como Reports (para la generación de informes) y Visualization (para la representación gráfica de los resultados).
+En la Capa de Interfaz del Bounded Context de Statistics, se expone el controlador `StatisticsController`, el cual ofrece endpoints RESTful para la generación y consulta de reportes.
 
 **Justificación:**
-Esta capa cumple el propósito de desacoplar la lógica de dominio del acceso externo al sistema, proporcionando una API clara, coherente y segura para que el frontend pueda interactuar con el backend de manera uniforme. Asimismo, habilita la integración con otros bounded contexts y garantiza la trazabilidad de los estudios, la persistencia confiable de los datasets y la correcta administración de variables y resultados, alineando la experiencia del usuario con los objetivos de análisis estadístico de la plataforma.
+Esta capa desacopla la lógica de dominio del acceso externo, permitiendo a aplicaciones web, móviles u otros bounded contexts consumir los reportes de manera uniforme. Facilita la integración con **Monitoring** para extraer información base y asegura que las métricas se entreguen listas para su visualización o análisis por el usuario.
 
 **Controlador: `StatisticsController`**
 
-| Método             | Verbo HTTP | Ruta                                              | Descripción                                         |
-|--------------------|------------|---------------------------------------------------|-----------------------------------------------------|
-| createStudy        | POST       | /api/v1/statistics/studies                        | Crea un nuevo estudio estadístico                   |
-| getStudyById       | GET        | /api/v1/statistics/studies/{studyId}              | Obtiene los detalles de un estudio                  |
-| getAllStudies      | GET        | /api/v1/statistics/studies                        | Lista todos los estudios registrados                |
-| addDataset         | POST       | /api/v1/statistics/studies/{studyId}/datasets     | Asigna un dataset a un estudio                      |
-| getDatasetsByStudy | GET        | /api/v1/statistics/studies/{studyId}/datasets     | Obtiene todos los datasets asociados a un estudio   |
-| createDataset      | POST       | /api/v1/statistics/datasets                       | Crea un nuevo conjunto de datos                     |
-| getDatasetById     | GET        | /api/v1/statistics/datasets/{datasetId}           | Obtiene detalles de un dataset                      |
-| addVariable        | POST       | /api/v1/statistics/datasets/{datasetId}/variables | Añade una variable a un dataset                     |
-| getVariables       | GET        | /api/v1/statistics/datasets/{datasetId}/variables | Lista todas las variables de un dataset             |
-| runAnalysis        | POST       | /api/v1/statistics/studies/{studyId}/analysis     | Ejecuta un análisis sobre un estudio y sus datasets |
-| getAnalysisResults | GET        | /api/v1/statistics/studies/{studyId}/results      | Obtiene resultados de análisis realizados           |
+| Método            | Verbo HTTP | Ruta                                 | Descripción                            |
+|-------------------|------------|--------------------------------------|----------------------------------------|
+| getWeeklyReport   | GET        | /api/v1/statistics/{userId}/weekly   | Genera y retorna el reporte semanal.   |
+| getGeneralReport  | GET        | /api/v1/statistics/{userId}/general  | Genera y retorna el reporte histórico. |
+| getPostureMetrics | GET        | /api/v1/statistics/{userId}/posture  | Retorna métricas de postura.           |
+| getBreakMetrics   | GET        | /api/v1/statistics/{userId}/breaks   | Retorna métricas de pausas activas.    |
+| getSessionMetrics | GET        | /api/v1/statistics/{userId}/sessions | Retorna métricas de sesiones.          |
+
 
 #### 5.3.3 Application Layer
 
-En el Application Layer del Bounded Context de **Estadística** se implementan los servicios de aplicación que orquestan los casos de uso principales:
-- creación y gestión de estudios,
-- registro de conjuntos de datos y variables,
-- ejecución de análisis,
-- y consultas sobre resultados y métricas estadísticas.
+En el Application Layer de Statistics se implementan los servicios de aplicación que orquestan los cálculos y consultas sobre reportes.
 
-El `StatisticsCommandService` gestiona las operaciones de modificación del dominio, mientras que el `StatisticsQueryService` se centra en la recuperación de información estructurada y resultados de análisis.
+
 **Justificación**
-Dividir la lógica en servicios de **Command** y **Query** asegura un diseño más claro, mantenible y escalable, siguiendo el patrón **CQRS**.  
-Esta separación permite optimizar las operaciones de lectura y escritura de manera independiente, facilitar la integración con bounded contexts como **Reports** o **Visualization**, y soportar la evolución futura del sistema con bajo acoplamiento.
+
+Separar los servicios de **Command** y **Query** siguiendo el patrón **CQRS** permite claridad en el diseño:
+
+ * **Commands**: generan y actualizan reportes.
+ * **Queries**: consultan métricas específicas.
 
 ---
+`StatisticsCommandServiceImpl`
+**Descripción:** Implementación del servicio de comandos encargado de generar reportes estadísticos para los usuarios.
 
-*  **StatisticsCommandServiceImpl**
+| Método                                  | Descripción                                              |
+|-----------------------------------------|----------------------------------------------------------|
+| handle(GenerateStatisticsReportCommand) | Genera un reporte consolidado para un usuario y período. |
 
-**Descripción:** Implementación del servicio de comandos encargado de gestionar el ciclo de vida de los estudios, datasets y variables, así como la ejecución de análisis.
 
-| Método                       | Descripción                                                    |
-|------------------------------|----------------------------------------------------------------|
-| handle(CreateStudyCommand)   | Crea un nuevo estudio estadístico.                             |
-| handle(AddDatasetCommand)    | Asigna un dataset a un estudio.                                |
-| handle(CreateDatasetCommand) | Crea un nuevo conjunto de datos independiente.                 |
-| handle(AddVariableCommand)   | Añade una variable a un dataset.                               |
-| handle(RunAnalysisCommand)   | Ejecuta un análisis sobre un estudio y sus datasets asociados. |
+`StatisticsQueryServiceImpl`
 
----
+**Descripción:** Implementación del servicio de consultas encargado de recuperar métricas específicas relacionadas con postura, pausas y sesiones.
 
-* **StatisticsQueryServiceImpl**
+| Método                         | Descripción                                                         |
+|--------------------------------|---------------------------------------------------------------------|
+| handle(GetWeeklyReportQuery)   | Recupera métricas semanales.                                        |
+| handle(GetGeneralReportQuery)  | Recupera métricas históricas.                                       |
+| handle(GetPostureMetricsQuery) | Obtiene métricas de postura.                                        |
+| handle(GetBreakMetricsQuery)   | Obtiene métricas de pausas activas y descansos.                     |
+| handle(GetSessionMetricsQuery) | Obtiene métricas de sesiones, incluida la última sesión registrada. |
 
-**Descripción:** Implementación del servicio de consultas encargado de recuperar información de estudios, datasets, variables y resultados de análisis.
 
-| Método                             | Descripción                                                  |
-|------------------------------------|--------------------------------------------------------------|
-| handle(GetStudyByIdQuery)          | Recupera los detalles de un estudio por su ID.               |
-| handle(GetAllStudiesQuery)         | Lista todos los estudios registrados.                        |
-| handle(GetDatasetsByStudyQuery)    | Obtiene todos los datasets asociados a un estudio.           |
-| handle(GetVariablesByDatasetQuery) | Lista las variables pertenecientes a un dataset.             |
-| handle(GetAnalysisResultsQuery)    | Obtiene los resultados de análisis realizados en un estudio. |
 
 #### 5.3.4 Infrastructure Layer
 
-En la Capa de Infraestructura del Bounded Context de **Estadística** se implementan los repositorios que permiten la persistencia y recuperación de datos relacionados con los estudios, conjuntos de datos, variables y resultados de análisis. Esta capa actúa como puente entre la lógica de dominio y la base de datos, asegurando que los objetos del dominio se almacenen y consulten de manera eficiente y consistente.
+En la **Capa de Infraestructura** del Bounded Context de Statistics se implementan los adaptadores para conectarse al BC de Monitoring y, opcionalmente, persistir reportes ya generados para evitar recálculo.
 
 **Justificación**
 
-Separar la persistencia en la capa de infraestructura garantiza el **desacoplamiento** entre la lógica del dominio y la tecnología de almacenamiento.  
-Esto permite flexibilidad en la elección del motor de base de datos, facilita pruebas unitarias mediante repositorios en memoria y asegura que la lógica de negocio no dependa de detalles técnicos.
+Separar la infraestructura asegura independencia de las tecnologías externas (bases de datos, APIs externas) y flexibilidad en la consulta de datos de *Monitoring*. Esto también permite caching de reportes, optimizando la eficiencia.
 
 ---
 
-* **StudyRepository**
+`StatisticsReportRepository`
 
-**Descripción:** Administra la persistencia y recuperación de entidades relacionadas con los estudios estadísticos.
+**Descripción:** Gestiona la persistencia de los reportes estadísticos generados.
 
-| Método                 | Descripción                                          |
-|------------------------|------------------------------------------------------|
-| save(Study study)      | Persiste un nuevo estudio o actualiza uno existente. |
-| findById(Long studyId) | Recupera un estudio por su identificador.            |
-| findAll()              | Lista todos los estudios registrados.                |
-| delete(Long studyId)   | Elimina un estudio registrado.                       |
-
----
-
-* **DatasetRepository**
-
-**Descripción:** Gestiona la persistencia de los conjuntos de datos asociados a los estudios.
-
-| Método                    | Descripción                                          |
-|---------------------------|------------------------------------------------------|
-| save(Dataset dataset)     | Persiste un nuevo dataset o actualiza uno existente. |
-| findById(Long datasetId)  | Recupera un dataset por su ID.                       |
-| findByStudy(Long studyId) | Obtiene todos los datasets asociados a un estudio.   |
-| delete(Long datasetId)    | Elimina un dataset registrado.                       |
+| Método                                                | Descripción                                                 |
+|-------------------------------------------------------|-------------------------------------------------------------|
+| save(StatisticsReport report)                         | Persiste un reporte generado.                               |
+| findById(Long reportId)                               | Recupera un reporte por su ID.                              |
+| findByUserAndPeriod(Long userId, ReportPeriod period) | Recupera un reporte generado para un usuario en un período. |
 
 ---
 
-* **VariableRepository**
+`MonitoringAdapter`
 
-**Descripción:** Administra la persistencia de las variables incluidas en los datasets.
+**Descripción:** Adaptador para interactuar con el Bounded Context de Monitoring y recuperar datos necesarios para cálculos estadísticos.
 
-| Método                        | Descripción                                            |
-|-------------------------------|--------------------------------------------------------|
-| save(Variable variable)       | Persiste una nueva variable o actualiza una existente. |
-| findById(Long variableId)     | Recupera una variable por su identificador.            |
-| findByDataset(Long datasetId) | Lista todas las variables asociadas a un dataset.      |
-| delete(Long variableId)       | Elimina una variable registrada.                       |
+| Método                                  | Descripción                                                      |
+|-----------------------------------------|------------------------------------------------------------------|
+| fetchPostureEvents(Long userId, Period) | Consulta los eventos de postura desde Monitoring.                |
+| fetchBreaks(Long userId, Period)        | Consulta las pausas activas desde Monitoring.                    |
+| fetchSessions(Long userId, Period)      | Consulta las sesiones de monitoreo desde Monitoring.             |
+| fetchLastSession(Long userId)           | Recupera la última sesión de monitoreo registrada en Monitoring. |
 
----
-
-* **AnalysisResultRepository**
-
-**Descripción:** Gestiona la persistencia de los resultados obtenidos tras ejecutar análisis estadísticos.
-
-| Método                      | Descripción                                          |
-|-----------------------------|------------------------------------------------------|
-| save(AnalysisResult result) | Registra o actualiza un resultado de análisis.       |
-| findById(Long resultId)     | Recupera un resultado por su identificador.          |
-| findByStudy(Long studyId)   | Obtiene todos los resultados asociados a un estudio. |
-| delete(Long resultId)       | Elimina un resultado de análisis registrado.         |
 
 ###### 5.3.6. Bounded Context Software Architecture Component Level Diagrams
 ###### 5.3.7. Bounded Context Software Architecture Code Level Diagrams
@@ -4155,6 +4368,403 @@ A través del Lean UX se identificaron problemas, supuestos e hipótesis, valida
 Posteriormente, se especificaron los requisitos mediante escenarios To-Be, historias de usuario, impact mapping y backlog, alineando funcionalidades con los objetivos del proyecto.
 
 Finalmente, con Attribute-Driven Design y Domain-Driven Design, se estructuró la arquitectura en bounded contexts, context mapping y diagramas de software, asegurando escalabilidad, calidad y mantenibilidad.
+
+### Capítulo VI: Solution UX Design
+
+## 6.1. Style Guidelines
+El objetivo de estas directrices es asegurar que todas las interfaces de usuario (UI) de ErgoVision mantengan una identidad visual coherente, profesional y accesible, alineada con la misión del proyecto de promover el bienestar postural y la salud ergonómica a través de la tecnología. Estas guías establecen los principios visuales y funcionales que regirán el diseño tanto del entorno web como de la aplicación móvil, garantizando consistencia en el uso de colores, tipografías, iconografía y componentes visuales.
+
+Al seguir estas directrices, ErgoVision busca ofrecer una experiencia centrada en el usuario, intuitiva y clara, que refleje confianza, bienestar y modernidad. Cada elemento visual ha sido concebido para apoyar la comprensión de la información, reducir la carga cognitiva y facilitar la interacción del usuario con las funciones de monitoreo, análisis y mejora postural.
+
+### 6.1.1. General Style Guidelines
+
+#### **Colores:**
+
+Para ErgoVision, una plataforma dedicada al monitoreo postural y al bienestar ergonómico, la selección de colores busca transmitir profesionalismo, confianza y bienestar, reflejando el equilibrio entre tecnología y salud. La paleta combina tonos fríos y sobrios con acentos vibrantes, reforzando una experiencia visual moderna y centrada en el usuario.
+
+![nrg7-styleguidelines.png](images/chapter-6/nrg7-styleguidelines.png)
+
+#### **Tipografía:**
+La tipografía Lato, de estilo sans-serif, fue elegida por su claridad, modernidad y legibilidad, cualidades fundamentales en una aplicación que busca mejorar el bienestar físico mediante la tecnología. Sus formas redondeadas y proporciones balanceadas aportan una sensación de cercanía y comodidad visual, mientras su versatilidad permite mantener coherencia entre los textos informativos, métricas de monitoreo y mensajes de alerta.
+
+![nrg7-typography.png](images/chapter-6/nrg7-typography.png)
+
+**Principios de Diseño: Simplicidad y Claridad**
+
+El diseño de ErgoVision se rige por principios de simplicidad, claridad y enfoque ergonómico, que buscan reducir la fatiga visual y cognitiva del usuario, al tiempo que mantienen una estética moderna y profesional.
+
+Objetivos principales:
+
+- Interfaz minimalista: Priorizar la información esencial y eliminar distracciones visuales, destacando solo los componentes funcionales relevantes.
+
+- Uso estratégico del espacio en blanco: Facilita la lectura y comprensión, creando una sensación de equilibrio y confort visual.
+
+- Flujos de usuarios intuitivos: Los procesos deben ser directos y naturales, alineados con las rutinas de trabajo y descanso del usuario.
+
+- Jerarquía visual coherente: Diferenciar los niveles de información mediante tamaño, color y posición, guiando la atención del usuario de forma orgánica.
+
+- Iconografía comprensible: Usar íconos claros y universales para representar acciones o estados, reduciendo la necesidad de texto adicional.
+
+- Lenguaje accesible y respetuoso: Emplear un tono sereno, profesional y cercano, que inspire confianza sin perder formalidad.
+
+### 6.1.2. Web, Mobile & Devices Style Guidelines
+
+<h4>Web Style Guide</h3>
+
+<h4>Componentes</h4>
+<ul>
+  <li>
+    <strong>Botones:</strong>
+    <ul>
+      <li><em>Primario:</em> fondo <code>#2b7fff</code> con texto blanco (<code>#ffffff</code>) para destacar acciones principales.</li>
+      <li><em>Secundario:</em> fondo <code>#256ad6</code> con texto <code>#ffffff</code> para acciones complementarias.</li>
+      <li><em>Deshabilitado:</em> fondo <code>#9ca5ae</code> con opacidad reducida.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Formularios:</strong>
+    <ul>
+      <li>Campos con bordes redondeados y validaciones visuales para estados <em>focus</em>, <em>error</em> y <em>success</em>.</li>
+      <li>Las etiquetas se ubican sobre el campo, priorizando la legibilidad.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Cards:</strong>
+    <ul>
+      <li>Tarjetas con fondo blanco (<code>#ffffff</code>), sombra sutil (<code>#a5aab1</code>) y bordes suaves.</li>
+      <li>Se usan para mostrar información resumida como historial o métricas posturales.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Tablas y Gráficos:</strong>
+    <ul>
+      <li>Líneas internas grises suaves y jerarquía tipográfica en cabeceras.</li>
+      <li>Los gráficos emplean tonos azules y grises para transmitir calma visual.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4>Comportamiento de Componentes</h4>
+<ul>
+  <li>Transiciones suaves (150 ms) para estados <em>hover</em>, <em>active</em> y <em>focus</em>.</li>
+  <li>Evita animaciones excesivas que distraigan al usuario durante el monitoreo.</li>
+  <li>Mensajes emergentes discretos y con tono informativo.</li>
+</ul>
+
+<h4>Responsive Design</h4>
+<ul>
+  <li>Diseño adaptable desde 1024 px (desktop) hasta 360 px (mobile).</li>
+  <li>Distribución en cuadrículas flexibles que priorizan la legibilidad y el contenido clave.</li>
+  <li>Contraste mínimo AA garantizado según las normas <strong>WCAG 2.1</strong>.</li>
+</ul>
+
+<h4>Íconos e Ilustraciones</h4>
+<ul>
+  <li>Íconos lineales monocromáticos (color <code>#5a6472</code> o <code>#ffffff</code> sobre fondos oscuros).</li>
+  <li>Ilustraciones simples en tonos neutros, usadas solo en la landing page.</li>
+  <li>Evita elementos decorativos innecesarios para mantener la estética profesional y ergonómica.</li>
+</ul>
+
+
+<h4>Mobile Style Guide</h3>
+
+<h4>Componentes</h4>
+<ul>
+  <li>
+    <strong>Botones:</strong>
+    <ul>
+      <li>Áreas táctiles amplias (mínimo 48 px). Conservan la jerarquía de color de la versión web.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Formularios:</strong>
+    <ul>
+      <li>Campos optimizados para teclado móvil, con mensajes de error claros y botones de acción grandes.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Cards:</strong>
+    <ul>
+      <li>Diseño compacto, apilado verticalmente, con tipografía jerárquica y colores de contraste.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4>Gestos</h4>
+<ul>
+  <li><strong>Tap:</strong> acción principal (selección o confirmación).</li>
+  <li><strong>Swipe vertical:</strong> desplazamiento entre secciones como historial o estadísticas.</li>
+  <li><strong>Swipe horizontal:</strong> navegación entre pantallas o inicio/pausa del monitoreo.</li>
+  <li><strong>Long Press:</strong> acceso a opciones secundarias, como detalles de historial.</li>
+</ul>
+
+<h4>Responsive Design</h4>
+<ul>
+  <li>Adaptación fluida a smartphones y tablets (360–768 px).</li>
+  <li>Tipografía legible <strong>Lato</strong>, mínimo 14 px.</li>
+  <li>Uso de espacios amplios para reducir la carga visual y favorecer la precisión táctil.</li>
+  <li>Prioriza accesos rápidos a: “Iniciar Monitoreo”, “Pausa Activa”, “Historial” y “Mi Perfil”.</li>
+</ul>
+
+<h4>Consistencia Visual</h4>
+<ul>
+  <li><strong>Colores:</strong> #121720, #141e2d, #2b7fff, #256ad6, #ffffff.</li>
+  <li><strong>Tipografía:</strong> Lato — limpia, moderna y ergonómica.</li>
+  <li><strong>Iconografía:</strong> Minimalista y funcional, trazos finos en alto contraste.</li>
+  <li><strong>Tono general:</strong> Profesional, calmado y centrado en el bienestar físico y visual del usuario.</li>
+</ul>
+
+
+## 6.2. Information Architecture
+La Arquitectura de la Información cumple un papel esencial en la creación de experiencias digitales claras y funcionales, al definir cómo se estructura, nombra y conecta el contenido dentro de las plataformas web y móvil. En esta sección, el equipo presenta las decisiones estratégicas que sustentan la organización de la información, garantizando que los usuarios puedan orientarse fácilmente, comprender la lógica de navegación y acceder sin dificultad a los recursos o funciones que buscan.
+
+### 6.2.1. Organization Systems
+
+En esta sección, el equipo describe cómo se aplicarán los sistemas de organización de la información dentro de ErgoVision, con el propósito de optimizar la experiencia del usuario y facilitar el acceso rápido y claro a las funcionalidades principales. La estructura propuesta busca mantener una navegación fluida, intuitiva y coherente tanto en la interfaz web como en la aplicación móvil.
+
+- Jerárquica (Visual Hierarchy): Este sistema se aplicará en la Landing Page y en las pantallas principales de la aplicación para resaltar los elementos más relevantes, como botones de acción, indicadores de análisis ergonómico y accesos a reportes o configuraciones. Se empleará el uso estratégico de tamaños, contrastes de color y espaciado para guiar la atención del usuario hacia las tareas más importantes.
+
+- Organización Secuencial (Step-by-Step): Se implementará en los procesos de evaluación ergonómica y configuración de perfil, donde el usuario deberá seguir una serie de pasos lógicos (por ejemplo, registrar su espacio de trabajo, ingresar medidas posturales y visualizar resultados). Este enfoque permitirá una experiencia guiada y estructurada, reduciendo la complejidad cognitiva y ayudando a completar tareas con claridad.
+
+- Organización Matricial: Se aplicará en secciones que involucren la comparación de datos o métricas, como los reportes de desempeño ergonómico y la visualización de estadísticas entre diferentes periodos o usuarios. Este sistema permitirá observar múltiples variables de forma simultánea, facilitando el análisis y la toma de decisiones basadas en los resultados obtenidos.
+
+Con esta estructura, ErgoVision garantiza una presentación organizada, priorizada y adaptable de la información, que favorece tanto la comprensión como la interacción eficiente del usuario con las distintas funcionalidades de la plataforma.
+
+### 6.2.2. Labeling Systems
+
+El sistema de etiquetado en ErgoVision se diseña con el propósito de garantizar que los usuarios comprendan de forma inmediata la función y el contenido de cada sección. Las etiquetas se seleccionan utilizando un lenguaje claro, conciso y accesible, evitando tecnicismos innecesarios y priorizando la simplicidad visual y semántica.<br>
+Este enfoque busca reducir la carga cognitiva, permitir una navegación intuitiva y asegurar una experiencia uniforme entre las versiones web y móvil.
+
+La propuesta de etiquetado para las principales secciones de ErgoVision es la siguiente:
+
+<table>
+  <thead>
+    <tr>
+      <th>Sección</th>
+      <th>Etiqueta Propuesta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Creación e inicio de sesión</td>
+      <td>“Iniciar Sesión”</td>
+    </tr>
+    <tr>
+      <td>Registro de nuevo usuario</td>
+      <td>“Crear Cuenta”</td>
+    </tr>
+    <tr>
+      <td>Edición de datos de usuario</td>
+      <td>“Editar Perfil”</td>
+    </tr>
+    <tr>
+      <td>Visualización de historial detallado</td>
+      <td>“Historial”</td>
+    </tr>
+    <tr>
+      <td>Visualización de estadísticas</td>
+      <td>“Estadísticas”</td>
+    </tr>
+    <tr>
+      <td>Inicio de monitoreo ergonómico</td>
+      <td>“Monitoreo”</td>
+    </tr>
+    <tr>
+      <td>Ejecución de pausa activa</td>
+      <td>“Pausa Activa”</td>
+    </tr>
+    <tr>
+      <td>Perfil de usuario</td>
+      <td>“Mi Perfil”</td>
+    </tr>
+  </tbody>
+</table>
+
+Estas etiquetas se mantendrán coherentes en todas las plataformas y vistas, asegurando que cada término represente de forma precisa la funcionalidad o información que agrupa. Además, se prioriza el uso de sustantivos directos y familiares para los usuarios, promoviendo una comunicación efectiva y una navegación libre de confusión dentro del ecosistema ErgoVision.
+
+### 6.2.3. Searching Systems
+
+<p>
+El sistema de búsqueda en <strong>ErgoVision</strong> ha sido diseñado para que los usuarios puedan acceder a información relevante de manera rápida y sin complicaciones. El objetivo es evitar la sensación de pérdida dentro del volumen de datos recopilados por el sistema, especialmente en los módulos de <em>historial de monitoreo</em> y <em>estadísticas de bienestar</em>. 
+A través de diferentes medios de ayuda, filtros y opciones visuales, se garantiza una experiencia eficiente y centrada en el usuario.
+</p>
+
+<hr />
+
+<h4>Barra de búsqueda en el Historial Detallado</h4>
+<p>
+En la sección de <strong>Historial Detallado</strong>, los usuarios contarán con una <strong>barra de búsqueda avanzada</strong> que permitirá localizar sesiones específicas de monitoreo basadas en criterios como fecha, duración, nivel de corrección postural o incidencias detectadas. 
+Esta barra se ubicará en la parte superior del historial y ofrecerá resultados dinámicos que se actualizarán en tiempo real conforme el usuario escriba.
+</p>
+
+<ul>
+  <li><strong>Filtros disponibles:</strong> fecha de sesión, tipo de postura, duración de monitoreo, alertas recibidas.</li>
+  <li><strong>Presentación de resultados:</strong> se mostrará una lista cronológica con tarjetas informativas que incluirán los datos clave de cada sesión (fecha, tiempo, incidencias y nivel de desempeño).</li>
+</ul>
+
+<hr />
+
+<h4>Búsqueda en Estadísticas</h4>
+<p>
+En la sección de <strong>Visualización de Estadísticas</strong>, el usuario podrá aplicar filtros para observar tendencias específicas en su desempeño ergonómico. 
+El sistema permitirá seleccionar periodos de tiempo (semanal, mensual, personalizado) y tipos de métricas, como <em>tiempo de buena postura</em> o <em>número de correcciones diarias</em>.
+</p>
+
+<ul>
+  <li><strong>Filtros disponibles:</strong> rango de fechas, tipo de métrica, frecuencia de pausas activas.</li>
+  <li><strong>Presentación de resultados:</strong> gráficos interactivos que se actualizarán en función de los filtros aplicados, con valores destacados y comparativos.</li>
+</ul>
+
+<hr />
+
+<h4>Filtrado en Monitoreo Activo</h4>
+<p>
+Durante el <strong>inicio de monitoreo</strong>, el usuario podrá visualizar un registro en tiempo real de sus eventos posturales. 
+Aunque el monitoreo es continuo, el sistema ofrecerá una vista filtrable para mostrar únicamente las <em>alertas recientes</em> o las <em>correcciones realizadas</em> dentro de una sesión específica. 
+Esto permitirá analizar patrones de comportamiento sin necesidad de revisar todo el flujo de datos.
+</p>
+
+<ul>
+  <li><strong>Filtros disponibles:</strong> tipo de evento (alerta o corrección), intervalo de tiempo, nivel de desviación postural.</li>
+  <li><strong>Presentación de resultados:</strong> lista de eventos en tiempo real con indicadores visuales por color según la gravedad de la desviación.</li>
+</ul>
+
+<hr />
+
+<h4>Búsqueda en Pausas Activas</h4>
+<p>
+En la sección de <strong>Pausa Activa</strong>, los usuarios podrán buscar y filtrar ejercicios o rutinas recomendadas según el tipo de molestia o zona corporal afectada. 
+Esto facilitará la selección de pausas más adecuadas para su situación actual.
+</p>
+
+<ul>
+  <li><strong>Filtros disponibles:</strong> tipo de ejercicio, duración, nivel de intensidad, zona corporal (cuello, espalda, muñeca, etc.).</li>
+  <li><strong>Presentación de resultados:</strong> catálogo visual con tarjetas de ejercicios, cada una mostrando imagen, nombre y duración.</li>
+</ul>
+
+<hr />
+
+<h4>Gestión de Perfil y Datos de Usuario</h4>
+<p>
+En las secciones de <strong>Edición de datos de usuario</strong> y <strong>Mi Perfil</strong>, el sistema permitirá realizar búsquedas internas de configuraciones o campos específicos, como datos personales o preferencias ergonómicas. 
+Esto facilitará la personalización de la experiencia sin recorrer todas las secciones manualmente.
+</p>
+
+<ul>
+  <li><strong>Filtros disponibles:</strong> nombre de campo, categoría de configuración (notificaciones, datos biométricos, preferencias de monitoreo).</li>
+  <li><strong>Presentación de resultados:</strong> lista editable con campos resaltados según la palabra clave buscada.</li>
+</ul>
+
+<hr />
+
+<h4>Accesibilidad y Experiencia de Búsqueda</h4>
+<p>
+Todos los sistemas de búsqueda de <strong>ErgoVision</strong> seguirán los principios de <em>claridad, consistencia y velocidad de respuesta</em>. 
+El usuario siempre visualizará un mensaje de ayuda o sugerencias automáticas al no encontrar resultados, reduciendo la frustración y promoviendo una navegación guiada. 
+Además, las búsquedas estarán disponibles mediante texto y comandos de voz para mejorar la accesibilidad general.
+</p>
+
+
+### 6.2.4. SEO Tags and Meta Tags
+<p>
+Esta sección define la estrategia de optimización para motores de búsqueda (SEO) y tiendas de aplicaciones (ASO) de ErgoVision, orientada a maximizar la visibilidad del proyecto tanto en entornos web como móviles. El objetivo es asegurar que los usuarios puedan encontrar fácilmente la plataforma al buscar soluciones relacionadas con ergonomía, bienestar laboral y monitoreo postural.
+</p>
+
+<p>
+Las etiquetas propuestas buscan reflejar la esencia de ErgoVision: una herramienta digital centrada en la salud, la prevención y la productividad consciente, brindando una experiencia accesible y confiable en todos los dispositivos.
+</p>
+
+<h3>Para Landing Page Web</h3>
+<ul>
+  <li><strong>Title:</strong> ErgoVision – Mejora tu bienestar postural con tecnología inteligente</li>
+  <li><strong>Meta Description:</strong> Plataforma digital diseñada para promover hábitos ergonómicos saludables. Descubre cómo ErgoVision puede ayudarte a prevenir la fatiga y mejorar tu postura mediante recordatorios, monitoreo y pausas activas personalizadas.</li>
+  <li><strong>Meta Keywords:</strong> ergonomía, bienestar postural, salud digital, prevención de fatiga, pausas activas, monitoreo ergonómico, hábitos saludables, postura correcta</li>
+  <li><strong>Meta Author:</strong> Equipo ErgoVision</li>
+</ul>
+
+<h3>Para Página Web (Plataforma Web Interactiva)</h3>
+<ul>
+  <li><strong>Title:</strong> ErgoVision Web – Monitoreo en tiempo real y análisis ergonómico</li>
+  <li><strong>Meta Description:</strong> Accede a tu panel de control de ErgoVision, donde podrás visualizar tu historial ergonómico, revisar estadísticas personalizadas y gestionar tus hábitos de pausa activa. Optimiza tu jornada laboral con herramientas de bienestar inteligente.</li>
+  <li><strong>Meta Keywords:</strong> ergonomía en el trabajo, análisis postural, productividad saludable, monitoreo de postura, bienestar digital, panel ergonómico, hábitos laborales</li>
+  <li><strong>Meta Author:</strong> Equipo ErgoVision</li>
+</ul>
+
+<h3>Para Mobile App (App Store / Play Store)</h3>
+<ul>
+  <li><strong>App Title:</strong> ErgoVision: Monitoreo Ergonómico y Bienestar Postural</li>
+  <li><strong>App Keywords:</strong> ergonomía, postura, salud, pausas activas, bienestar, trabajo saludable, productividad, fatiga, monitoreo</li>
+  <li><strong>App Subtitle:</strong> Cuida tu postura y bienestar mientras trabajas o estudias.</li>
+  <li><strong>App Description:</strong> ErgoVision es una aplicación inteligente que te ayuda a mantener una postura correcta, prevenir la fatiga y mejorar tu bienestar diario. Ofrece monitoreo ergonómico en tiempo real, recordatorios de pausas activas y estadísticas personalizadas. ¡Optimiza tu rutina y cuida tu cuerpo con ErgoVision!</li>
+</ul>
+
+<p>
+Estas configuraciones SEO y ASO garantizan una comunicación clara y atractiva en todos los puntos de contacto digitales, fortaleciendo la identidad de ErgoVision como una solución moderna, accesible y comprometida con la salud y el bienestar de sus usuarios.
+</p>
+
+### 6.2.5. Navigation Systems
+
+<p>
+La estructura de navegación de <strong>ErgoVision</strong> está diseñada para ofrecer una experiencia de usuario fluida, clara y accesible, permitiendo que tanto nuevos usuarios como recurrentes puedan orientarse fácilmente dentro de la plataforma. 
+La navegación busca guiar a los usuarios hacia sus objetivos principales monitorear su postura, analizar su progreso y promover hábitos saludables de manera intuitiva y sin fricciones.
+</p>
+
+<hr />
+
+<h4>Landing Page</h4>
+<p>
+La <strong>Landing Page</strong> presenta una navegación superior fija que permite explorar los principales apartados informativos y de conversión. Incluye los siguientes elementos:
+</p>
+<ul>
+  <li><strong>Inicio:</strong> Acceso directo al encabezado principal y presentación del producto.</li>
+  <li><strong>Sobre ErgoVision:</strong> Sección que explica la misión, visión y propósito del proyecto.</li>
+  <li><strong>Características:</strong> Detalle de las funcionalidades principales de la plataforma, como monitoreo postural, pausas activas y estadísticas de bienestar.</li>
+  <li><strong>Beneficios:</strong> Explicación de los impactos positivos en la salud y productividad del usuario.</li>
+  <li><strong>Equipo:</strong> Presentación del equipo de desarrollo y colaboradores del proyecto.</li>
+  <li><strong>Contacto:</strong> Enlace para comunicarse con el equipo de soporte o solicitar más información.</li>
+</ul>
+
+<hr />
+
+<h4>Web Application</h4>
+<p>
+En la <strong>versión web de ErgoVision</strong>, se utilizará una <strong>barra lateral de navegación persistente</strong>, que facilitará el acceso a las funcionalidades clave de monitoreo y gestión de usuario:
+</p>
+<ul>
+  <li><strong>Dashboard:</strong> Vista general del estado postural actual y acceso rápido a las métricas principales.</li>
+  <li><strong>Historial Detallado:</strong> Registro cronológico de sesiones y eventos de monitoreo.</li>
+  <li><strong>Estadísticas:</strong> Gráficos e indicadores sobre el progreso del usuario en el tiempo.</li>
+  <li><strong>Monitoreo:</strong> Sección para iniciar, pausar o detener el seguimiento postural.</li>
+  <li><strong>Pausas Activas:</strong> Ejercicios y recordatorios programados para reducir la fatiga.</li>
+  <li><strong>Perfil de Usuario:</strong> Edición de datos personales y preferencias ergonómicas.</li>
+  <li><strong>Configuración:</strong> Ajustes del sistema, notificaciones SMS y preferencias visuales.</li>
+</ul>
+
+<hr />
+
+<h4>Mobile Application</h4>
+<p>
+La <strong>aplicación móvil</strong> prioriza la usabilidad en pantallas pequeñas mediante una <strong>navegación por pestañas inferiores (bottom navigation bar)</strong>, complementada con un <strong>menú lateral desplegable</strong> para secciones secundarias. Las secciones principales incluyen:
+</p>
+<ul>
+  <li><strong>Inicio:</strong> Estado postural actual y acceso rápido a monitoreo.</li>
+  <li><strong>Estadísticas:</strong> Visualización compacta de métricas y progreso.</li>
+  <li><strong>Pausas:</strong> Acceso directo a ejercicios guiados y recordatorios activos.</li>
+  <li><strong>Perfil:</strong> Configuración personal, historial resumido y ajustes de usuario.</li>
+</ul>
+
+## 6.3. Landing Page UI Design
+
+### 6.3.1. Landing Page Wireframe
+### 6.3.2. Landing Page Mock-up
+
+## 6.4. Applications UX/UI Design
+### 6.4.1. Applications Wireframes
+### 6.4.2. Applications Wireflow Diagrams
+### 6.4.3. Applications Mock-ups
+### 6.4.4. Applications User Flow Diagrams
+
+## 6.5. Applications Prototyping
 
 ## Bibliografía
 
