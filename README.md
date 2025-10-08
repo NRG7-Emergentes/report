@@ -3025,6 +3025,11 @@ Descripción: Implementación del servicio de consultas encargado de recuperar i
 
 
 #### 5.1.6 Bounded Context Software Architecture Component Level Diagrams
+
+El diagrama de componentes del sistema ErgoVision presenta una arquitectura con cinco bounded contexts, Landing Page en HTML/CSS/JS, Web App en Angular y Mobile App en Kotlin, conectados a través de un REST API en Spring Boot con PostgreSQL e integrando servicios externos de Google MediaPipe para detección postural y Firebase Cloud Messaging para notificaciones push.
+
+<img src="images/chapter-5/ComponentDiagram.png" alt="Component Diagram">
+
 #### 5.1.7 Bounded Context Software Architecture Code Level Diagrams
 ##### 5.1.7.1 Bounded Context Domain Layer Class Diagrams
 
@@ -3261,6 +3266,11 @@ Descripción: Administra las pausas activas programadas, iniciadas o finalizadas
 | delete(Long breakId)          | Elimina una pausa activa de la base de datos.          |
 
 #### 5.2.6 Bounded Context Software Architecture Component Level Diagrams
+
+El diagrama de componentes del sistema ErgoVision presenta una arquitectura con cinco bounded contexts, Landing Page en HTML/CSS/JS, Web App en Angular y Mobile App en Kotlin, conectados a través de un REST API en Spring Boot con PostgreSQL e integrando servicios externos de Google MediaPipe para detección postural y Firebase Cloud Messaging para notificaciones push.
+
+<img src="images/chapter-5/ComponentDiagram.png" alt="Component Diagram">
+
 #### 5.2.7 Bounded Context Software Architecture Code Level Diagrams
 ##### 5.2.7.1 Bounded Context Domain Layer Class Diagrams
 
@@ -3366,7 +3376,6 @@ Esta capa desacopla la lógica de dominio del acceso externo, permitiendo a apli
 | getBreakMetrics   | GET        | /api/v1/statistics/{userId}/breaks   | Retorna métricas de pausas activas.    |
 | getSessionMetrics | GET        | /api/v1/statistics/{userId}/sessions | Retorna métricas de sesiones.          |
 
-
 #### 5.3.3 Application Layer
 
 En el Application Layer de Statistics se implementan los servicios de aplicación que orquestan los cálculos y consultas sobre reportes.
@@ -3399,8 +3408,6 @@ Separar los servicios de **Command** y **Query** siguiendo el patrón **CQRS** p
 | handle(GetPostureMetricsQuery) | Obtiene métricas de postura.                                        |
 | handle(GetBreakMetricsQuery)   | Obtiene métricas de pausas activas y descansos.                     |
 | handle(GetSessionMetricsQuery) | Obtiene métricas de sesiones, incluida la última sesión registrada. |
-
-
 
 #### 5.3.4 Infrastructure Layer
 
@@ -3440,6 +3447,11 @@ Separar la infraestructura asegura independencia de las tecnologías externas (b
 ###### 5.3.7. Bounded Context Software Architecture Code Level Diagrams
 
 #### 5.3.6 Bounded Context Software Architecture Component Level Diagrams
+
+El diagrama de componentes del sistema ErgoVision presenta una arquitectura con cinco bounded contexts, Landing Page en HTML/CSS/JS, Web App en Angular y Mobile App en Kotlin, conectados a través de un REST API en Spring Boot con PostgreSQL e integrando servicios externos de Google MediaPipe para detección postural y Firebase Cloud Messaging para notificaciones push.
+
+<img src="images/chapter-5/ComponentDiagram.png" alt="Component Diagram">
+
 #### 5.3.7 Bounded Context Software Architecture Code Level Diagrams
 ##### 5.3.7.1 Bounded Context Domain Layer Class Diagrams
 ##### 5.3.7.2 Bounded Context Database Design Diagram
