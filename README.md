@@ -4262,22 +4262,27 @@ Al seguir estas directrices, ErgoVision busca ofrecer una experiencia centrada e
 
 **Branding:**  
 
-(IMAGEN Y EXPLICACIÓN DEL LOGO)
+El logo de ErgoVision es un logo simple y minimalista. El color principal es el azul, el cual será el color principal que se usará para la Landing Page, Aplicación web y Aplicación Móvil.
+
+<img src="images/chapter-6/Logo1.png" alt="Logo1">
 
 **Colores:**
 
 Para ErgoVision, una plataforma dedicada al monitoreo postural y al bienestar ergonómico, la selección de colores busca transmitir profesionalismo, confianza y bienestar, reflejando el equilibrio entre tecnología y salud. La paleta combina tonos fríos y sobrios con acentos vibrantes, reforzando una experiencia visual moderna y centrada en el usuario.
 
-![nrg7-styleguidelines.png](images/chapter-6/nrg7-styleguidelines.png)
+<img src="images/chapter-6/Colores.png" alt="Colores">
 
 **Tipografía:**  
-La tipografía Lato, de estilo sans-serif, fue elegida por su claridad, modernidad y legibilidad, cualidades fundamentales en una aplicación que busca mejorar el bienestar físico mediante la tecnología. Sus formas redondeadas y proporciones balanceadas aportan una sensación de cercanía y comodidad visual, mientras su versatilidad permite mantener coherencia entre los textos informativos, métricas de monitoreo y mensajes de alerta.
 
-![nrg7-typography.png](images/chapter-6/nrg7-typography.png)
+La tipografía Inter, fue elegida por su claridad, modernidad y legibilidad, cualidades fundamentales en una aplicación que busca mejorar el bienestar físico mediante la tecnología. Sus formas redondeadas y proporciones balanceadas aportan una sensación de cercanía y comodidad visual, mientras su versatilidad permite mantener coherencia entre los textos informativos, métricas de monitoreo y mensajes de alerta.
+
+<img src="images/chapter-6/Tipografia.png" alt="Tipografia">
 
 **Espaciado:** 
 
-(IMAGEN Y DESCRIPCION DEL ESPACIADO)
+Para el espacio entre los elemento, títulos y textos se usará un interlineado de múltiplos de 4px para asegurar la legibilidad en todas las aplicaciones.
+
+<img src="images/chapter-6/Interlineado.png" alt="Interlineado">
 
 **Principios de Diseño: Simplicidad y Claridad**
 
