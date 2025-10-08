@@ -4000,7 +4000,7 @@ El controlador <code>UsersController</code> gestiona las solicitudes para obtene
 
 #### 5.5.6 Bounded Context Software Architecture Component Level Diagrams
 
-El diagrama de componentes del sistema ErgoVision presenta una arquitectura con cinco bounded contexts, Landing Page en HTML/CSS/JS, Web App en Angular y Mobile App en Kotlin, conectados a través de un REST API en Spring Boot con PostgreSQL e integrando servicios externos de Google MediaPipe para detección postural y Firebase Cloud Messaging para notificaciones push.
+El diagrama de componentes del sistema ErgoVision presenta una arquitectura con cinco bounded contexts, Landing Page en HTML/CSS/JS, Web App en Angular y Mobile App en Kotlin, conectados a la base de datos PostgreSQL e integrando servicios externos de Google MediaPipe para detección postural y Firebase Cloud Messaging para notificaciones push.
 
 <img src="images/chapter-5/ComponentDiagram.png" alt="Component Diagram">
 
