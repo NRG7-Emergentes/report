@@ -4651,12 +4651,28 @@ La <strong>aplicación móvil</strong> prioriza la usabilidad en pantallas peque
 
 #### 6.3.1 Landing Page Wireframe
 
-(IMAGENES DE WIREFRAMES DESKTOP Y RESPONSIVE DE LA LANDING)
+Para tener una primera idea de cómo lucirá nuetra landing page, se realizaron los Wireframes tanto para pantallas de escritorio como para dispositivos móviles, asegurando un correcto tamaño y distribución de los elementos y textos.
+
+ **Wireframes Desktop**  
+ 
+<img src="images/chapter-6/LandingPageDesktopWireframes.png" alt="LandingPageDesktopWireframes" width="1920px">
+
+ **Wireframes Móvil**  
+<img src="images/chapter-6/LandingPageResponsiveWireframes.png" alt="LandingPageResponsiveWireframes">
+
 Link del Figma: [Figma](https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=0-1&t=tUt2TuwoHmFV3ka1-1)
 
 #### 6.3.2 Landing Page Mock-up
 
-(IMAGENES DE MOCKUPS DESKTOP Y RESPONSIVE DE LA LANDING CON EXPLICACIÓN CORTA)
+Posterior a la versión final de los Wireframes, se realizaron los Mockups de la Landing Page, nuevamente, tanto para pantallas de escritorio como para dispositivos móviles, siguiendo la guia de estilos establecida.
+
+ **Mockups Desktop**  
+ 
+<img src="images/chapter-6/LandingPageDesktopMockups.png" alt="LandingPageDesktopMockups">
+
+ **Mockups Móvil**  
+<img src="images/chapter-6/LandingPageResponsiveMockups.png" alt="LandingPageResponsiveMockups">
+
 Link del Figma: [Figma](https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=0-1&t=tUt2TuwoHmFV3ka1-1)
 
 ### 6.4 Applications UX/UI Design
