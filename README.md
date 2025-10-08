@@ -10,11 +10,11 @@
 
 ### **Ingeniería de software**
 
-## Informe de -
+## Informe del Trabajo Parcial
 
 ### **Nombre del startup:** NRG7
 
-### **Nombre del producto:** -
+### **Nombre del producto:** ErgoVision
 
 ## **Integrantes**
 
@@ -26,7 +26,7 @@
 | **Godofredo Quispe Tipo**                 | u202120772 |
 | **Pasquale Barrenechea Gianluca Santino** | U202112078 |
 
-**Agosto 2025**
+**Octubre 2025**
 
 ## Registro de Versiones del Informe
 
@@ -60,9 +60,21 @@
     </tr>
     <tr>
       <td>0.4</td>
-      <td>20-09-2025</td>
+      <td>30-09-2025</td>
       <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipon y Espinoza Delgado Bárbara Antonella </td>
       <td>Desarrollo de los items: Startup Profile, Strategic-Level Attribute-Driven Design, Strategic-Level Domain-Driven Design, Software Architecture y Conclusiones </td>
+    </tr>
+    <tr>
+      <td>0.5</td>
+      <td>20-09-2025</td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipon y Espinoza Delgado Bárbara Antonella </td>
+      <td>Desarrollo de los items: Tactical-Level Software Design para IAM, Notificaciones, Orquestrador, Estadisticas y Monitoreo. </td>
+    </tr>
+    <tr>
+      <td>0.6</td>
+      <td>08-09-2025</td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipon y Espinoza Delgado Bárbara Antonella </td>
+      <td>Desarrollo de los items: Style Guidelines, Information Architecture, Landing Page UI Design, Applications Wireframes y Applications Wireflow Diagrams </td>
     </tr>
   </tbody>
 </table>
@@ -70,6 +82,12 @@
 ## Project Report Collaboration Insights
 
 El enlace a github del reporte del proyecto es el siguiente: [https://github.com/NRG7-Emergentes/report](https://github.com/NRG7-Emergentes/report).
+
+**TB1:**  
+<img src="https://github.com/NRG7-Emergentes/report/blob/6cb90733b46f82fc0e94a6ba3d723cd0741fbbfb/images/misc/CommitsTB1.png" alt="TB1 Commits">
+
+**TP:**  
+<img src="https://github.com/NRG7-Emergentes/report/blob/6cb90733b46f82fc0e94a6ba3d723cd0741fbbfb/images/misc/CommitsTP.png" alt="TP Commits">
 
 ## Contenido
 
@@ -154,17 +172,17 @@ del ABET – EAC - Student Outcome 3.
       <td><strong>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería.</strong></td>
       <td>
         <b>TB1:</b><br>
-        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta primera entrega comuniqué oralmente ideas y dudas para la realización la realización del event storming los bounded contexts durante las reuniones grupales en discord, además, comunique activamente sobre la entrega de las tareas que se me asignaron semanalmente.<br>
-        - <b>Gianluca Santino Pasquale Barrenechea:</b> Durante las reuniones grupales en Discord, comuniqué de manera efectiva las ideas y avances relacionados con la realización del Event Storming y los Bounded Contexts. Además, mantuve una comunicación activa sobre la entrega de las tareas asignadas semanalmente, asegurando que todos los miembros del equipo estuvieran informados y alineados con los objetivos del proyecto.<br>
-        - <b>Godofredo Quispe Tipo:</b> Comuniqué oralmente ideas de cómo realizar partes del proyecto y expuse los resultados obtenidos, facilitando la revisión de la información por parte de los diferentes miembros del equipo.<br>
-        - <b>Gabriel Alexander Casas Sanchez:</b> Exposición de los atributos de calidad, el propósito del proyecto y dirigí el proceso de eventstorming, simplifique los términos técnicos a un lenguaje común para la correcta compresión de los asistentes. <br>
+        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta primera entrega comuniqué oralmente ideas y dudas para la realización la realización del event storming los bounded contexts durante las reuniones grupales en discord, además, comunique activamente sobre la entrega de las tareas que se me asignaron semanalmente.<br><br>
+        - <b>Gianluca Santino Pasquale Barrenechea:</b> Durante las reuniones grupales en Discord, comuniqué de manera efectiva las ideas y avances relacionados con la realización del Event Storming y los Bounded Contexts. Además, mantuve una comunicación activa sobre la entrega de las tareas asignadas semanalmente, asegurando que todos los miembros del equipo estuvieran informados y alineados con los objetivos del proyecto.<br><br>
+        - <b>Godofredo Quispe Tipo:</b> Comuniqué oralmente ideas de cómo realizar partes del proyecto y expuse los resultados obtenidos, facilitando la revisión de la información por parte de los diferentes miembros del equipo.<br><br>
+        - <b>Gabriel Alexander Casas Sanchez:</b> Exposición de los atributos de calidad, el propósito del proyecto y dirigí el proceso de eventstorming, simplifique los términos técnicos a un lenguaje común para la correcta compresión de los asistentes. <br><br>
         - <b>Juan Diego Astonitas Diaz:</b> Expuse el proyecto en clase para la retroalimentacion del profesor, además de ser lider del proyecto para poder orientarlo al exito <br><br>
         <b>TP:</b><br>
-        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta segunda entrega comuniqué oralmente ideas y dudas para la elaboración de los wireframes y wireflows durante las reuniones grupales en discord, además, comunique activamente sobre la entrega de las tareas que se me asignaron semanalmente.<br>
-        - <b>Gianluca Santino Pasquale Barrenechea:</b> <br>
-        - <b>Godofredo Quispe Tipo:</b> <br>
-        - <b>Gabriel Alexander Casas Sanchez:</b> <br>
-        - <b>Juan Diego Astonitas Diaz:</b> <br>
+        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta segunda entrega comuniqué oralmente ideas y dudas para la elaboración de los wireframes y wireflows durante las reuniones grupales en discord, además, comunique activamente sobre la entrega de las tareas que se me asignaron semanalmente.<br><br>
+        - <b>Gianluca Santino Pasquale Barrenechea:</b><br><br>
+        - <b>Godofredo Quispe Tipo:</b><br><br>
+        - <b>Gabriel Alexander Casas Sanchez:</b><br><br>
+        - <b>Juan Diego Astonitas Diaz:</b> <br><br>
        </td>
       <td>
         <b>TB1:</b> El equipo ha demostrado un nivel de desarrollo satisfactorio y homogéneo en esta competencia. Todos los miembros participaron activamente en las reuniones de Discord, comunicando ideas, avances y asignaciones de manera clara y efectiva. Se evidencia una comunicación colaborativa que facilitó la alineación del grupo y la revisión de la información. <br><br>
@@ -175,17 +193,17 @@ del ABET – EAC - Student Outcome 3.
       <td><strong>Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto eningeniería.</strong></td>
       <td>
          <b>TB1:</b><br>
-        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta primera entrega realicé en el informe la redacción de las hipótesis, el Lean UX Canvas, la entrevista a uno de los segmentos objetivos y el bounded context canvas asignado, además, comuniqué mis avances diarios en el grupo.<br>
-        - <b>Gianluca Santino Pasquale Barrenechea:</b> En la primera entrega del informe, me encargué de redactar las hipótesis, el Lean UX Canvas, la entrevista a uno de los segmentos objetivos y el Bounded Context Canvas asignado. Además, mantuve una comunicación constante sobre mis avances diarios en el grupo, asegurando que todos los miembros estuvieran al tanto del progreso del proyecto.<br>
-        - <b>Godofredo Quispe Tipo:</b> A través de un análisis de competidores y una serie de entrevistas a usuarios clave, elaboré un informe detallado que presentaba un panorama objetivo del mercado. Con base en esta documentación, formulé y comuniqué estrategias y tácticas frente a competidores, lo que sirvió como guía para la toma de decisiones en el desarrollo del producto.<br>
-        - <b>Gabriel Alexander Casas Sanchez:</b> Desarrollé los problem statement assumptions, task matrix, empathy mapping, atribute driven design process. Busque presentar los conceptos de manera clara y estructurada para facilitar la comprensión. <br>
+        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta primera entrega realicé en el informe la redacción de las hipótesis, el Lean UX Canvas, la entrevista a uno de los segmentos objetivos y el bounded context canvas asignado, además, comuniqué mis avances diarios en el grupo.<br><br>
+        - <b>Gianluca Santino Pasquale Barrenechea:</b> En la primera entrega del informe, me encargué de redactar las hipótesis, el Lean UX Canvas, la entrevista a uno de los segmentos objetivos y el Bounded Context Canvas asignado. Además, mantuve una comunicación constante sobre mis avances diarios en el grupo, asegurando que todos los miembros estuvieran al tanto del progreso del proyecto.<br><br>
+        - <b>Godofredo Quispe Tipo:</b> A través de un análisis de competidores y una serie de entrevistas a usuarios clave, elaboré un informe detallado que presentaba un panorama objetivo del mercado. Con base en esta documentación, formulé y comuniqué estrategias y tácticas frente a competidores, lo que sirvió como guía para la toma de decisiones en el desarrollo del producto.<br><br>
+        - <b>Gabriel Alexander Casas Sanchez:</b> Desarrollé los problem statement assumptions, task matrix, empathy mapping, atribute driven design process. Busque presentar los conceptos de manera clara y estructurada para facilitar la comprensión. <br><br>
         - <b>Juan Diego Astonitas Diaz:</b> Desarrolle las user y technical stories describiendo la funcionalidad de nuestra solucion  <br><br>
         <b>TP:</b><br>
-        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta Segunda entrega realicé en el informe la redacción de las tablas de cada capa del Bounded Context IAM y Diagramas, además, comuniqué mis avances diarios en el grupo de Whatsapp.<br>
-        - <b>Gianluca Santino Pasquale Barrenechea:</b> <br>
-        - <b>Godofredo Quispe Tipo:</b> <br>
-        - <b>Gabriel Alexander Casas Sanchez:</b> <br>
-        - <b>Juan Diego Astonitas Diaz:</b> <br>
+        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta Segunda entrega realicé en el informe la redacción de las tablas de cada capa del Bounded Context IAM y Diagramas, además, comuniqué mis avances diarios en el grupo de Whatsapp.<br><br>
+        - <b>Gianluca Santino Pasquale Barrenechea:</b> <br><br>
+        - <b>Godofredo Quispe Tipo:</b> <br><br>
+        - <b>Gabriel Alexander Casas Sanchez:</b> <br><br>
+        - <b>Juan Diego Astonitas Diaz:</b> <br><br>
       </td>
       <td>
         <b>TB1:</b> En conjunto, las contribuciones escritas fueron fundamentales para sentar una base documental sólida, guiar la toma de decisiones y cumplir efectivamente los objetivos del proyecto.<br><br>
@@ -2738,6 +2756,9 @@ A través del Lean UX se identificaron problemas, supuestos e hipótesis, valida
 Posteriormente, se especificaron los requisitos mediante escenarios To-Be, historias de usuario, impact mapping y backlog, alineando funcionalidades con los objetivos del proyecto.
 
 Finalmente, con Attribute-Driven Design y Domain-Driven Design, se estructuró la arquitectura en bounded contexts, context mapping y diagramas de software, asegurando escalabilidad, calidad y mantenibilidad.
+
+**TP:**  
+Para esta segunda entrega, se repartieron los bounded contexts y se definieron las capas de Dominio, Aplicación, Infraestructura e Interface, Se realizaron los diagramas de clases y bases de datos para cada uno y los Diagramas de Contexto generales. Ademas, se llevó a cabo la realización de la guia de estilo para nuestras aplicaciones, el diseño UX/UI de la Landing Page y los wireframes y Wireflows tanto de la aplicación web como móvil. 
 
 ## Bibliografía
 
