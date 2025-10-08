@@ -177,6 +177,7 @@ El enlace a github del reporte del proyecto es el siguiente: [https://github.com
     - [6.1.1 General Style Guidelines](#611-general-style-guidelines)
     - [6.1.2 Web, Mobile & Devices Style Guidelines](#612-web-mobile--devices-style-guidelines)
   - [6.2 Information Architecture](#62-information-architecture)
+    - [6.2.1 Organization Systems](#621-organization-systems)
     - [6.2.2 Labeling Systems](#622-labeling-systems)
     - [6.2.3 Searching Systems](#623-searching-systems)
     - [6.2.4 SEO Tags and Meta Tags](#624-seo-tags-and-meta-tags)
@@ -4253,141 +4254,30 @@ En el diagrama de base, se observa la tabla users y roles, así como la relació
 
 ### 6.1 Style Guidelines
 
-#### 6.1.1 General Style Guidelines
-
-#### 6.1.2 Web, Mobile & Devices Style Guidelines
-
-### 6.2 Information Architecture
-
-#### 6.2.2 Labeling Systems
-
-#### 6.2.3 Searching Systems
-
-#### 6.2.4 SEO Tags and Meta Tags
-
-#### 6.2.5 Navigation Systems
-
-### 6.3 Landing Page UI Design
-
-#### 6.3.1 Landing Page Wireframe
-
-#### 6.3.2 Landing Page Mock-up
-
-### 6.4 Applications UX/UI Design
-
-#### 6.4.1 Applications Wireframes
-
-**Wireframes Web:**
-
-Los wireframes de la aplicación web de ErgoVision presentan las interfaces de registro/login, perfil editable, dashboard con resúmenes semanales, estadísticas visuales, configuración de notificaciones, calibración del sistema de cámara, monitoreo en tiempo real con detección de postura activa, y pantallas de pausas con ejercicios sugeridos y temporizadores para descansos programados.
-
-<img src="images/chapter-6/WireframesWeb.png" alt="Wireframes Web">
-
-**Wireframes Móvil:**
-
-Los wireframes de la aplicación móvil de ErgoVision muestran el flujo completo de ErgoVision desde autenticación (login/registro con datos personales y antropométricos), pasando por gestión de perfil, visualización de estadísticas con gráficos de postura y tiempos de descanso, historial de sesiones, hasta detalles específicos de cada sesión con porcentajes de postura correcta y pausas realizadas.
-
-<img src="images/chapter-6/WireframesMovil.png" alt="Wireframes Movil">
-
-Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
-
-#### 6.4.2 Applications Wireflow Diagrams
-
-Los wireflow diagrams de ErgoVision representan la secuencia de interacciones y pantallas que los usuarios experimentarán al navegar por la aplicación.
-
-Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
-
-**Edición de Datos de Usuario:** Este wireflow corresponde a cuando un usuario quiere modificar sus datos personales luego de haberse registrado.
-
-- **Web:**
-
-<img src="images/chapter-6/Wireflow1Web.png" alt="Wireflow 1 Web">
-
-- **Móvil:**
-
-<img src="images/chapter-6/Wireflow1Movil.png" alt="Wireflow 1 Movil">
-
-**Creación de Cuenta:** Este wireflow corresponde a cuando un usuario no tiene una cuenta creada y debe registrarse para empezar a utilizar la aplicación.
-
-- **Web:**
-
-<img src="images/chapter-6/Wireflow2Web.png" alt="Wireflow 2 Web">
-
-- **Móvil:**
-
-<img src="images/chapter-6/Wireflow2Movil.png" alt="Wireflow 2 Movil">
-
-**Visualización de Historial Detallado:** Este wireflow corresponde a cuando un usuario quiere visualizar los detalles de sus sesiones de monitoreo pasadas en el historial.
-
-- **Web:**
-
-<img src="images/chapter-6/Wireflow3Web.png" alt="Wireflow 3 Web">
-
-- **Móvil:**
-
-<img src="images/chapter-6/Wireflow3Movil.png" alt="Wireflow 3 Movil">
-
-**Visualización de Estadísticas:** Este wireflow corresponde a cuando un usuario quiere visualizar las estadisticas sobre tiempos de buenas/malas posturas que ha tenido en lo que va utilizando la aplicación.
-
-- **Web:**
-
-<img src="images/chapter-6/Wireflow4Web.png" alt="Wireflow 4 Web">
-
-- **Móvil:**
-
-<img src="images/chapter-6/Wireflow4Movil.png" alt="Wireflow 4 Movil">
-
-**Inicio de Monitoreo:** Este wireflow corresponde a cuando un usuario quiere iniciar una sesión de monitoreo postural en tiempo real.
- - **Web:**
-
-<img src="images/chapter-6/Wireflow5Web.png" alt="Wireflow 5 Web">
-
-**Inicio de Pausa Activa:** Este wireflow corresponde a cuando se activa automáticamente o un usuario quiere iniciar una pausa activa con ejercicios sugeridos por la aplicación.
- - **Web:**
-
-<img src="images/chapter-6/Wireflow6Web.png" alt="Wireflow 6 Web">
-
-**Calibración del Sistema de Cámara:** Este wireflow corresponde a cuando un usuario quiere calibrar el sistema de cámara para mejorar la detección postural.
- - **Web:**
-
-<img src="images/chapter-6/Wireflow7Web.png" alt="Wireflow 7 Web">
-
-#### 6.4.3 Applications Mock-ups
-
-#### 6.4.4 Applications User Flow Diagrams
-
-### 6.5 Applications Prototyping
-
-## Conclusiones
-
-**TB1:**  
-El proyecto ErgoVision logró desarrollar una solución innovadora para prevenir problemas posturales en trabajadores y estudiantes remotos, integrando tecnologías de visión por computadora y un enfoque centrado en el usuario.
-
-A través del Lean UX se identificaron problemas, supuestos e hipótesis, validando tempranamente las necesidades de los usuarios. El análisis competitivo, entrevistas y herramientas de needfinding aportaron información clave para definir personas, escenarios y tareas.
-
-Posteriormente, se especificaron los requisitos mediante escenarios To-Be, historias de usuario, impact mapping y backlog, alineando funcionalidades con los objetivos del proyecto.
-
-Finalmente, con Attribute-Driven Design y Domain-Driven Design, se estructuró la arquitectura en bounded contexts, context mapping y diagramas de software, asegurando escalabilidad, calidad y mantenibilidad.
-
-### Capítulo VI: Solution UX Design
-
-## 6.1. Style Guidelines
 El objetivo de estas directrices es asegurar que todas las interfaces de usuario (UI) de ErgoVision mantengan una identidad visual coherente, profesional y accesible, alineada con la misión del proyecto de promover el bienestar postural y la salud ergonómica a través de la tecnología. Estas guías establecen los principios visuales y funcionales que regirán el diseño tanto del entorno web como de la aplicación móvil, garantizando consistencia en el uso de colores, tipografías, iconografía y componentes visuales.
 
 Al seguir estas directrices, ErgoVision busca ofrecer una experiencia centrada en el usuario, intuitiva y clara, que refleje confianza, bienestar y modernidad. Cada elemento visual ha sido concebido para apoyar la comprensión de la información, reducir la carga cognitiva y facilitar la interacción del usuario con las funciones de monitoreo, análisis y mejora postural.
 
-### 6.1.1. General Style Guidelines
+#### 6.1.1 General Style Guidelines
 
-#### **Colores:**
+**Branding:**  
+
+(IMAGEN Y EXPLICACIÓN DEL LOGO)
+
+**Colores:**
 
 Para ErgoVision, una plataforma dedicada al monitoreo postural y al bienestar ergonómico, la selección de colores busca transmitir profesionalismo, confianza y bienestar, reflejando el equilibrio entre tecnología y salud. La paleta combina tonos fríos y sobrios con acentos vibrantes, reforzando una experiencia visual moderna y centrada en el usuario.
 
 ![nrg7-styleguidelines.png](images/chapter-6/nrg7-styleguidelines.png)
 
-#### **Tipografía:**
+**Tipografía:**  
 La tipografía Lato, de estilo sans-serif, fue elegida por su claridad, modernidad y legibilidad, cualidades fundamentales en una aplicación que busca mejorar el bienestar físico mediante la tecnología. Sus formas redondeadas y proporciones balanceadas aportan una sensación de cercanía y comodidad visual, mientras su versatilidad permite mantener coherencia entre los textos informativos, métricas de monitoreo y mensajes de alerta.
 
 ![nrg7-typography.png](images/chapter-6/nrg7-typography.png)
+
+**Espaciado:** 
+
+(IMAGEN Y DESCRIPCION DEL ESPACIADO)
 
 **Principios de Diseño: Simplicidad y Claridad**
 
@@ -4406,8 +4296,8 @@ Objetivos principales:
 - Iconografía comprensible: Usar íconos claros y universales para representar acciones o estados, reduciendo la necesidad de texto adicional.
 
 - Lenguaje accesible y respetuoso: Emplear un tono sereno, profesional y cercano, que inspire confianza sin perder formalidad.
-
-### 6.1.2. Web, Mobile & Devices Style Guidelines
+  
+#### 6.1.2 Web, Mobile & Devices Style Guidelines
 
 <h4>Web Style Guide</h3>
 
@@ -4514,11 +4404,11 @@ Objetivos principales:
   <li><strong>Tono general:</strong> Profesional, calmado y centrado en el bienestar físico y visual del usuario.</li>
 </ul>
 
+### 6.2 Information Architecture
 
-## 6.2. Information Architecture
 La Arquitectura de la Información cumple un papel esencial en la creación de experiencias digitales claras y funcionales, al definir cómo se estructura, nombra y conecta el contenido dentro de las plataformas web y móvil. En esta sección, el equipo presenta las decisiones estratégicas que sustentan la organización de la información, garantizando que los usuarios puedan orientarse fácilmente, comprender la lógica de navegación y acceder sin dificultad a los recursos o funciones que buscan.
 
-### 6.2.1. Organization Systems
+#### 6.2.1. Organization Systems
 
 En esta sección, el equipo describe cómo se aplicarán los sistemas de organización de la información dentro de ErgoVision, con el propósito de optimizar la experiencia del usuario y facilitar el acceso rápido y claro a las funcionalidades principales. La estructura propuesta busca mantener una navegación fluida, intuitiva y coherente tanto en la interfaz web como en la aplicación móvil.
 
@@ -4530,8 +4420,7 @@ En esta sección, el equipo describe cómo se aplicarán los sistemas de organiz
 
 Con esta estructura, ErgoVision garantiza una presentación organizada, priorizada y adaptable de la información, que favorece tanto la comprensión como la interacción eficiente del usuario con las distintas funcionalidades de la plataforma.
 
-### 6.2.2. Labeling Systems
-
+#### 6.2.2 Labeling Systems
 El sistema de etiquetado en ErgoVision se diseña con el propósito de garantizar que los usuarios comprendan de forma inmediata la función y el contenido de cada sección. Las etiquetas se seleccionan utilizando un lenguaje claro, conciso y accesible, evitando tecnicismos innecesarios y priorizando la simplicidad visual y semántica.<br>
 Este enfoque busca reducir la carga cognitiva, permitir una navegación intuitiva y asegurar una experiencia uniforme entre las versiones web y móvil.
 
@@ -4582,7 +4471,7 @@ La propuesta de etiquetado para las principales secciones de ErgoVision es la si
 
 Estas etiquetas se mantendrán coherentes en todas las plataformas y vistas, asegurando que cada término represente de forma precisa la funcionalidad o información que agrupa. Además, se prioriza el uso de sustantivos directos y familiares para los usuarios, promoviendo una comunicación efectiva y una navegación libre de confusión dentro del ecosistema ErgoVision.
 
-### 6.2.3. Searching Systems
+#### 6.2.3 Searching Systems
 
 <p>
 El sistema de búsqueda en <strong>ErgoVision</strong> ha sido diseñado para que los usuarios puedan acceder a información relevante de manera rápida y sin complicaciones. El objetivo es evitar la sensación de pérdida dentro del volumen de datos recopilados por el sistema, especialmente en los módulos de <em>historial de monitoreo</em> y <em>estadísticas de bienestar</em>. 
@@ -4664,8 +4553,8 @@ El usuario siempre visualizará un mensaje de ayuda o sugerencias automáticas a
 Además, las búsquedas estarán disponibles mediante texto y comandos de voz para mejorar la accesibilidad general.
 </p>
 
+#### 6.2.4 SEO Tags and Meta Tags
 
-### 6.2.4. SEO Tags and Meta Tags
 <p>
 Esta sección define la estrategia de optimización para motores de búsqueda (SEO) y tiendas de aplicaciones (ASO) de ErgoVision, orientada a maximizar la visibilidad del proyecto tanto en entornos web como móviles. El objetivo es asegurar que los usuarios puedan encontrar fácilmente la plataforma al buscar soluciones relacionadas con ergonomía, bienestar laboral y monitoreo postural.
 </p>
@@ -4702,7 +4591,7 @@ Las etiquetas propuestas buscan reflejar la esencia de ErgoVision: una herramien
 Estas configuraciones SEO y ASO garantizan una comunicación clara y atractiva en todos los puntos de contacto digitales, fortaleciendo la identidad de ErgoVision como una solución moderna, accesible y comprometida con la salud y el bienestar de sus usuarios.
 </p>
 
-### 6.2.5. Navigation Systems
+#### 6.2.5 Navigation Systems
 
 <p>
 La estructura de navegación de <strong>ErgoVision</strong> está diseñada para ofrecer una experiencia de usuario fluida, clara y accesible, permitiendo que tanto nuevos usuarios como recurrentes puedan orientarse fácilmente dentro de la plataforma. 
@@ -4753,18 +4642,113 @@ La <strong>aplicación móvil</strong> prioriza la usabilidad en pantallas peque
   <li><strong>Perfil:</strong> Configuración personal, historial resumido y ajustes de usuario.</li>
 </ul>
 
-## 6.3. Landing Page UI Design
+### 6.3 Landing Page UI Design
 
-### 6.3.1. Landing Page Wireframe
-### 6.3.2. Landing Page Mock-up
+#### 6.3.1 Landing Page Wireframe
 
-## 6.4. Applications UX/UI Design
-### 6.4.1. Applications Wireframes
-### 6.4.2. Applications Wireflow Diagrams
-### 6.4.3. Applications Mock-ups
-### 6.4.4. Applications User Flow Diagrams
+(IMAGENES DE WIREFRAMES DESKTOP Y RESPONSIVE DE LA LANDING)
+Link del Figma: [Figma](https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=0-1&t=tUt2TuwoHmFV3ka1-1)
 
-## 6.5. Applications Prototyping
+#### 6.3.2 Landing Page Mock-up
+
+(IMAGENES DE MOCKUPS DESKTOP Y RESPONSIVE DE LA LANDING CON EXPLICACIÓN CORTA)
+Link del Figma: [Figma](https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=0-1&t=tUt2TuwoHmFV3ka1-1)
+
+### 6.4 Applications UX/UI Design
+
+#### 6.4.1 Applications Wireframes
+
+**Wireframes Web:**
+
+Los wireframes de la aplicación web de ErgoVision presentan las interfaces de registro/login, perfil editable, dashboard con resúmenes semanales, estadísticas visuales, configuración de notificaciones, calibración del sistema de cámara, monitoreo en tiempo real con detección de postura activa, y pantallas de pausas con ejercicios sugeridos y temporizadores para descansos programados.
+
+<img src="images/chapter-6/WireframesWeb.png" alt="Wireframes Web">
+
+**Wireframes Móvil:**
+
+Los wireframes de la aplicación móvil de ErgoVision muestran el flujo completo de ErgoVision desde autenticación (login/registro con datos personales y antropométricos), pasando por gestión de perfil, visualización de estadísticas con gráficos de postura y tiempos de descanso, historial de sesiones, hasta detalles específicos de cada sesión con porcentajes de postura correcta y pausas realizadas.
+
+<img src="images/chapter-6/WireframesMovil.png" alt="Wireframes Movil">
+
+Link del Figma: [Figma](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
+
+#### 6.4.2 Applications Wireflow Diagrams
+
+Los wireflow diagrams de ErgoVision representan la secuencia de interacciones y pantallas que los usuarios experimentarán al navegar por la aplicación.
+
+Link del Figma: [Figma](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
+
+**Edición de Datos de Usuario:** Este wireflow corresponde a cuando un usuario quiere modificar sus datos personales luego de haberse registrado.
+
+- **Web:**
+
+<img src="images/chapter-6/Wireflow1Web.png" alt="Wireflow 1 Web">
+
+- **Móvil:**
+
+<img src="images/chapter-6/Wireflow1Movil.png" alt="Wireflow 1 Movil">
+
+**Creación de Cuenta:** Este wireflow corresponde a cuando un usuario no tiene una cuenta creada y debe registrarse para empezar a utilizar la aplicación.
+
+- **Web:**
+
+<img src="images/chapter-6/Wireflow2Web.png" alt="Wireflow 2 Web">
+
+- **Móvil:**
+
+<img src="images/chapter-6/Wireflow2Movil.png" alt="Wireflow 2 Movil">
+
+**Visualización de Historial Detallado:** Este wireflow corresponde a cuando un usuario quiere visualizar los detalles de sus sesiones de monitoreo pasadas en el historial.
+
+- **Web:**
+
+<img src="images/chapter-6/Wireflow3Web.png" alt="Wireflow 3 Web">
+
+- **Móvil:**
+
+<img src="images/chapter-6/Wireflow3Movil.png" alt="Wireflow 3 Movil">
+
+**Visualización de Estadísticas:** Este wireflow corresponde a cuando un usuario quiere visualizar las estadisticas sobre tiempos de buenas/malas posturas que ha tenido en lo que va utilizando la aplicación.
+
+- **Web:**
+
+<img src="images/chapter-6/Wireflow4Web.png" alt="Wireflow 4 Web">
+
+- **Móvil:**
+
+<img src="images/chapter-6/Wireflow4Movil.png" alt="Wireflow 4 Movil">
+
+**Inicio de Monitoreo:** Este wireflow corresponde a cuando un usuario quiere iniciar una sesión de monitoreo postural en tiempo real.
+ - **Web:**
+
+<img src="images/chapter-6/Wireflow5Web.png" alt="Wireflow 5 Web">
+
+**Inicio de Pausa Activa:** Este wireflow corresponde a cuando se activa automáticamente o un usuario quiere iniciar una pausa activa con ejercicios sugeridos por la aplicación.
+ - **Web:**
+
+<img src="images/chapter-6/Wireflow6Web.png" alt="Wireflow 6 Web">
+
+**Calibración del Sistema de Cámara:** Este wireflow corresponde a cuando un usuario quiere calibrar el sistema de cámara para mejorar la detección postural.
+ - **Web:**
+
+<img src="images/chapter-6/Wireflow7Web.png" alt="Wireflow 7 Web">
+
+#### 6.4.3 Applications Mock-ups
+
+#### 6.4.4 Applications User Flow Diagrams
+
+### 6.5 Applications Prototyping
+
+## Conclusiones
+
+**TB1:**  
+El proyecto ErgoVision logró desarrollar una solución innovadora para prevenir problemas posturales en trabajadores y estudiantes remotos, integrando tecnologías de visión por computadora y un enfoque centrado en el usuario.
+
+A través del Lean UX se identificaron problemas, supuestos e hipótesis, validando tempranamente las necesidades de los usuarios. El análisis competitivo, entrevistas y herramientas de needfinding aportaron información clave para definir personas, escenarios y tareas.
+
+Posteriormente, se especificaron los requisitos mediante escenarios To-Be, historias de usuario, impact mapping y backlog, alineando funcionalidades con los objetivos del proyecto.
+
+Finalmente, con Attribute-Driven Design y Domain-Driven Design, se estructuró la arquitectura en bounded contexts, context mapping y diagramas de software, asegurando escalabilidad, calidad y mantenibilidad.
 
 ## Bibliografía
 
