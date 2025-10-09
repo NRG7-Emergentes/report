@@ -4660,7 +4660,7 @@ Para tener una primera idea de cómo lucirá nuetra landing page, se realizaron 
  **Wireframes Móvil**  
 <img src="images/chapter-6/LandingPageResponsiveWireframes.png" alt="LandingPageResponsiveWireframes">
 
-Link del Figma: [Figma](https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=0-1&t=tUt2TuwoHmFV3ka1-1)
+Link del Figma: [https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=0-1&t=tUt2TuwoHmFV3ka1-1]
 
 #### 6.3.2 Landing Page Mock-up
 
@@ -4673,7 +4673,7 @@ Posterior a la versión final de los Wireframes, se realizaron los Mockups de la
  **Mockups Móvil**  
 <img src="images/chapter-6/LandingPageResponsiveMockups.png" alt="LandingPageResponsiveMockups">
 
-Link del Figma: [Figma](https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=0-1&t=tUt2TuwoHmFV3ka1-1)
+Link del Figma: [https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=0-1&t=tUt2TuwoHmFV3ka1-1]
 
 ### 6.4 Applications UX/UI Design
 
@@ -4691,13 +4691,13 @@ Los wireframes de la aplicación móvil de ErgoVision muestran el flujo completo
 
 <img src="images/chapter-6/WireframesMovil.png" alt="Wireframes Movil">
 
-Link del Figma: [Figma](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
+Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1]
 
 #### 6.4.2 Applications Wireflow Diagrams
 
 Los wireflow diagrams de ErgoVision representan la secuencia de interacciones y pantallas que los usuarios experimentarán al navegar por la aplicación.
 
-Link del Figma: [Figma](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
+Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1]
 
 **Edición de Datos de Usuario:** Este wireflow corresponde a cuando un usuario quiere modificar sus datos personales luego de haberse registrado.
 
