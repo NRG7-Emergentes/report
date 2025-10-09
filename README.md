@@ -3454,7 +3454,12 @@ El diagrama de componentes del sistema ErgoVision presenta una arquitectura con 
 
 #### 5.3.7 Bounded Context Software Architecture Code Level Diagrams
 ##### 5.3.7.1 Bounded Context Domain Layer Class Diagrams
+
+<img src="images/chapter-5/statistics-class-diagram.png" alt="Statistics Domain Class Diagram">
+
 ##### 5.3.7.2 Bounded Context Database Design Diagram
+
+<img src="images/chapter-5/statistics-database-diagram.png" alt="Statistics Domain Class Diagram">
 
 ### 5.4 Bounded Context: Notificaciones
 #### 5.4.1 Domain Layer
