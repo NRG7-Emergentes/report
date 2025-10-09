@@ -2761,15 +2761,321 @@ El diseño del bounded context Notificaciones se centra únicamente en gestionar
 
 ## Capítulo V: Tactical-Level Software Design
 
-### 5.1 Bounded Context: Orquestrator
+### 5.1 Bounded Context: Orquestrador
 #### 5.1.1 Domain Layer
+
+En la **Capa de Dominio** del Bounded Context de **Orquestrador (Orchestrator)**, los principales agregados son `AlertSetting`, `PostureSetting`, y `Calibration`. Estos encapsulan los conceptos de negocio necesarios para gestionar la configuración y calibración del sistema de monitoreo postural: configuraciones de alertas, ajustes de detección postural y parámetros de calibración personalizados.
+
+La lógica de dominio para el manejo de configuraciones y calibraciones se concentra en servicios de dominio especializados que aplican las reglas de negocio relacionadas con la gestión de preferencias del usuario, validación de parámetros de calibración y consistencia en las configuraciones del sistema.
+
+Agregado `AlertSetting`
+
+Descripción: Gestiona la configuración de alertas del monitoreo.
+
+| Atributo             | Tipo    | Visibilidad | Descripción                                                   |
+|----------------------|---------|-------------|---------------------------------------------------------------|
+| id                   | Long    | Privado     | Identificador único de la configuración.                      |
+| visualAlertsEnabled  | Boolean | Privado     | Indica si las alertas visuales están habilitadas.             |
+| soundAlertsEnabled   | Boolean | Privado     | Indica si las alertas sonoras están habilitadas.              |
+| alertVolume          | Integer | Privado     | Volumen de las alertas sonoras (0-100).                       |
+| alertInterval        | Integer | Privado     | Intervalo entre alertas consecutivas (segundos).              |
+| createdAt            | Date    | Privado     | Fecha de creación del registro.                               |
+| updatedAt            | Date    | Privado     | Fecha de última actualización.                                |
+
+| Método                             | Tipo de Retorno | Visibilidad | Descripción                        |
+|------------------------------------|-----------------|-------------|------------------------------------|
+| enableVisualAlerts()               | void            | Público     | Habilita las alertas visuales.     |
+| disableVisualAlerts()              | void            | Público     | Deshabilita las alertas visuales.  |
+| enableSoundAlerts()                | void            | Público     | Habilita las alertas sonoras.      |
+| disableSoundAlerts()               | void            | Público     | Deshabilita las alertas sonoras.   |
+| adjustVolume(Integer volume)       | void            | Público     | Ajusta el volumen (0-100).         |
+| setAlertInterval(Integer interval) | void            | Público     | Define el intervalo entre alertas. |
+
+Agregado `PostureSetting`
+
+Descripción: Configura los parámetros de detección postural.
+
+| Atributo               | Tipo    | Visibilidad | Descripción                                                   |
+|------------------------|---------|-------------|---------------------------------------------------------------|
+| id                     | Long    | Privado     | Identificador único de la configuración.                      |
+| postureSensitivity     | Integer | Privado     | Sensibilidad general de detección (0-100).                    |
+| shoulderAngleThreshold | Integer | Privado     | Umbral angular para detección de hombros.                     |
+| headAngleThreshold     | Integer | Privado     | Umbral angular para detección de cabeza.                      |
+| samplingFrequency      | Integer | Privado     | Frecuencia de muestreo (segundos).                            |
+| showSkeleton           | Boolean | Privado     | Muestra/oculta el esqueleto en la interfaz.                   |
+| createdAt              | Date    | Privado     | Fecha de creación del registro.                               |
+| updatedAt              | Date    | Privado     | Fecha de última actualización.                                |
+
+| Método                              | Tipo de Retorno | Visibilidad | Descripción                                      |
+|-------------------------------------|-----------------|-------------|--------------------------------------------------|
+| adjustSensitivity(Integer level)    | void            | Público     | Ajusta la sensibilidad de detección.             |
+| setShoulderThreshold(Integer angle) | void            | Público     | Define umbral angular para hombros.              |
+| setHeadThreshold(Integer angle)     | void            | Público     | Define umbral angular para cabeza.               |
+| setSamplingFrequency(Integer freq)  | void            | Público     | Establece frecuencia de muestreo.                |
+| toggleSkeletonVisibility()          | void            | Público     | Alterna visibilidad del esqueleto.               |
+
+Agregado `Calibration`
+
+Descripción: Almacena y gestiona los resultados de calibración del usuario.
+
+| Atributo           | Tipo               | Visibilidad | Descripción                                                   |
+|--------------------|--------------------|-------------|---------------------------------------------------------------|
+| id                 | Long               | Privado     | Identificador único de la calibración.                        |
+| userId             | Long               | Privado     | Identificador del usuario asociado.                           |
+| calibrationDate    | Date               | Privado     | Fecha de realización de la calibración.                       |
+| referenceLandmarks | ReferenceLandmarks | Privado     | Puntos de referencia corporales establecidos.                 |
+| postureThresholds  | PostureThresholds  | Privado     | Umbrales posturales personalizados.                           |
+| cameraDistance     | Float              | Privado     | Distancia estimada a la cámara.                               |
+| cameraVisibility   | Integer            | Privado     | Nivel de visibilidad de la cámara (0-100).                    |
+| cameraResolution   | String             | Privado     | Resolución de cámara utilizada.                               |
+| calibrationScore   | Integer            | Privado     | Puntuación de calidad de calibración (0-100).                 |
+| createdAt          | Date               | Privado     | Fecha de creación del registro.                               |
+| updatedAt          | Date               | Privado     | Fecha de última actualización.                                |
+
+| Método                                                  | Tipo de Retorno | Visibilidad | Descripción                             |
+|---------------------------------------------------------|-----------------|-------------|-----------------------------------------|
+| updateLandmarks(ReferenceLandmarks landmarks)           | void            | Público     | Actualiza los puntos de referencia.     |
+| adjustThresholds(PostureThresholds thresholds)          | void            | Público     | Modifica los umbrales posturales.       |
+| setCameraParameters(Float distance, Integer visibility) | void            | Público     | Configura parámetros de cámara.         |
+| validateCalibration()                                   | Boolean         | Público     | Valida la integridad de la calibración. |
+
+Entidad `ReferenceLandmarks`
+
+Descripción: Representa los puntos de referencia corporales para calibración.
+
+| Atributo  | Tipo           | Visibilidad | Descripción                           |
+|-----------|----------------|-------------|---------------------------------------|
+| landmarks | List<Landmark> | Privado     | Colección de puntos clave del cuerpo. |
+
+Objeto de Valor `Landmark`
+
+Descripción: Representa un punto clave del cuerpo en el espacio 3D.
+
+| Atributo   | Tipo    | Descripción                             |
+|------------|---------|-----------------------------------------|
+| x          | Integer | Coordenada X en el espacio.             |
+| y          | Integer | Coordenada Y en el espacio.             |
+| z          | Integer | Coordenada Z en el espacio.             |
+| visibility | Integer | Nivel de visibilidad/confianza (0-100). |
+
+Objeto de Valor `PostureThresholds`
+
+Descripción: Define los umbrales angulares para detección de postura.
+
+| Atributo      | Tipo    | Descripción                          |
+|---------------|---------|--------------------------------------|
+| shoulderAngle | Integer | Umbral para ángulo de hombros.       |
+| neckAngle     | Integer | Umbral para ángulo de cuello.        |
+| backAngle     | Integer | Umbral para ángulo de espalda.       |
+| headTilt      | Integer | Umbral para inclinación de cabeza.   |
+
+Servicio de Dominio: `AlertsSettingCommandService`
+
+Descripción: Gestiona las operaciones de escritura para configuraciones de alertas.
+
+| Método                                       | Tipo de Retorno | Descripción                                               |
+|----------------------------------------------|-----------------|-----------------------------------------------------------|
+| handle(CreateAlertsSettingCommand command)   | void            | Crea una nueva configuración de alertas.                  |
+| handle(UpdateAlertsSettingCommand command)   | void            | Actualiza una configuración existente.                    |
+| handle(DeleteAlertsSettingCommand command)   | void            | Elimina una configuración de alertas.                     |
+
+Servicio de Dominio: `PostureSettingCommandService`
+
+Descripción: Gestiona las operaciones de escritura para configuraciones posturales.
+
+| Método                                        | Tipo de Retorno | Descripción                                               |
+|-----------------------------------------------|-----------------|-----------------------------------------------------------|
+| handle(CreatePostureSettingCommand command)   | void            | Crea una nueva configuración postural.                    |
+| handle(UpdatePostureSettingCommand command)   | void            | Actualiza una configuración existente.                    |
+| handle(DeletePostureSettingCommand command)   | void            | Elimina una configuración postural.                       |
+
+Servicio de Dominio: `CalibrationCommandService`
+
+Descripción: Gestiona las operaciones de escritura para calibraciones.
+
+| Método                                   | Tipo de Retorno | Descripción                                       |
+|------------------------------------------|-----------------|---------------------------------------------------|
+| handle(CreateCalibrationCommand command) | void            | Crea una nueva calibración.                       |
+| handle(UpdateCalibrationCommand command) | void            | Actualiza una calibración existente.              |
+| handle(DeleteCalibrationCommand command) | void            | Elimina una calibración.                          |
+
+Servicio de Dominio: `AlertsSettingQueryService`
+
+Descripción: Gestiona las consultas de configuraciones de alertas.
+
+| Método                                 | Tipo de Retorno | Descripción                                       |
+|----------------------------------------|-----------------|---------------------------------------------------|
+| handle(GetUserAlertSettingQuery query) | AlertSetting    | Recupera la configuración de alertas del usuario. |
+
+Servicio de Dominio: `PostureSettingQueryService`
+
+Descripción: Gestiona las consultas de configuraciones posturales.
+
+| Método                                   | Tipo de Retorno | Descripción                                     |
+|------------------------------------------|-----------------|-------------------------------------------------|
+| handle(GetUserPostureSettingQuery query) | PostureSetting  | Recupera la configuración postural del usuario. |
+
+Servicio de Dominio: `CalibrationQueryService`
+
+Descripción: Gestiona las consultas de calibraciones.
+
+| Método                                | Tipo de Retorno | Descripción                          |
+|---------------------------------------|-----------------|--------------------------------------|
+| handle(GetUserCalibrationQuery query) | Calibration     | Recupera la calibración del usuario. |
+
 #### 5.1.2 Interface Layer
+
+En la **Capa de Interfaz** del Bounded Context de **Orquestrador (Orchestrator)**, se exponen los controladores `AlertsSettingController`, `PostureSettingController` y `CalibrationController`, los cuales ofrecen endpoints RESTful para la gestión integral de configuraciones y calibraciones del sistema. Estos endpoints permiten al frontend obtener y modificar las configuraciones personalizadas de alertas, ajustes posturales y parámetros de calibración que son fundamentales para el correcto funcionamiento del monitoreo postural.
+
+**Justificación:**
+
+Esta capa sirve como puente entre la interfaz de usuario y la lógica de negocio del sistema de orquestración, proporcionando una API robusta y segura para la personalización completa de la experiencia de monitoreo. Permite desacoplar la configuración del usuario del núcleo de monitoreo, facilitando la integración con otros bounded contexts como Monitoring (para aplicar configuraciones) y User Management (para la gestión de perfiles). Gracias a esta capa, se garantiza la consistencia en las configuraciones, la trazabilidad de los cambios y la capacidad de personalización que requiere el sistema para adaptarse a las necesidades específicas de cada usuario.
+
+Controlador: `AlertsSettingController`
+
+| Método               | Verbo HTTP | Ruta                                                    | Descripción                                              |
+|----------------------|------------|---------------------------------------------------------|----------------------------------------------------------|
+| getAlertsSetting     | GET        | /api/v1/orchestrator/alerts-settings/{userId}           | Obtiene la configuración de alertas del usuario          |
+| createAlertsSetting  | POST       | /api/v1/orchestrator/alerts-settings                    | Crea una nueva configuración de alertas                  |
+| updateAlertsSetting  | PUT        | /api/v1/orchestrator/alerts-settings/{settingId}        | Actualiza la configuración de alertas existente          |
+| deleteAlertsSetting  | DELETE     | /api/v1/orchestrator/alerts-settings/{settingId}        | Elimina la configuración de alertas                      |
+
+Controlador: `PostureSettingController`
+
+| Método                | Verbo HTTP | Ruta                                                     | Descripción                                              |
+|-----------------------|------------|----------------------------------------------------------|----------------------------------------------------------|
+| getPostureSetting     | GET        | /api/v1/orchestrator/posture-settings/{userId}           | Obtiene la configuración postural del usuario            |
+| createPostureSetting  | POST       | /api/v1/orchestrator/posture-settings                    | Crea una nueva configuración postural                    |
+| updatePostureSetting  | PUT        | /api/v1/orchestrator/posture-settings/{settingId}        | Actualiza la configuración postural existente            |
+| deletePostureSetting  | DELETE     | /api/v1/orchestrator/posture-settings/{settingId}        | Elimina la configuración postural                        |
+
+Controlador: `CalibrationController`
+
+| Método             | Verbo HTTP | Ruta                                               | Descripción                                      |
+|--------------------|------------|----------------------------------------------------|--------------------------------------------------|
+| getUserCalibration | GET        | /api/v1/orchestrator/calibrations/{userId}         | Obtiene la calibración del usuario               |
+| createCalibration  | POST       | /api/v1/orchestrator/calibrations                  | Crea una nueva calibración                       |
+| updateCalibration  | PUT        | /api/v1/orchestrator/calibrations/{calibrationId}  | Actualiza la calibración existente               |
+| deleteCalibration  | DELETE     | /api/v1/orchestrator/calibrations/{calibrationId}  | Elimina la calibración                           |
+
 #### 5.1.3 Application Layer
+
+En el **Application Layer** del Bounded Context de **Orquestrador (Orchestrator)** se implementan los servicios de aplicación que orquestan los casos de uso principales relacionados con la gestión de configuraciones y calibraciones: creación, actualización y eliminación de configuraciones de alertas, ajustes posturales y parámetros de calibración, así como la recuperación de estas configuraciones para su uso en el sistema de monitoreo. Los servicios de comandos (`CommandServiceImpl`) gestionan las operaciones de modificación del dominio, mientras que los servicios de consultas (`QueryServiceImpl`) se centran en la recuperación eficiente de la información de configuración.
+
+**Justificación**
+
+La separación de la lógica en servicios de Command y Query sigue el patrón CQRS, permitiendo un diseño más claro, mantenible y escalable. Esta división facilita la optimización independiente de las operaciones de lectura y escritura, soporta la integración con otros bounded contexts como Monitoring (para aplicar configuraciones) y User Management (para la gestión de perfiles), y permite la evolución futura del sistema con bajo acoplamiento. Además, garantiza la consistencia y trazabilidad de las configuraciones personalizadas de cada usuario.
+
+`AlertsSettingCommandServiceImpl`
+
+Descripción: Implementación del servicio de comandos encargado de gestionar el ciclo de vida de las configuraciones de alertas del usuario.
+
+| Método                                       | Descripción                                                  |
+|----------------------------------------------|--------------------------------------------------------------|
+| handle(CreateAlertsSettingCommand)           | Crea una nueva configuración de alertas para un usuario.     |
+| handle(UpdateAlertsSettingCommand)           | Actualiza una configuración de alertas existente.            |
+| handle(DeleteAlertsSettingCommand)           | Elimina una configuración de alertas del sistema.            |
+
+`PostureSettingCommandServiceImpl`
+
+Descripción: Implementación del servicio de comandos encargado de gestionar el ciclo de vida de las configuraciones posturales del usuario.
+
+| Método                                        | Descripción                                                  |
+|-----------------------------------------------|--------------------------------------------------------------|
+| handle(CreatePostureSettingCommand)           | Crea una nueva configuración postural para un usuario.       |
+| handle(UpdatePostureSettingCommand)           | Actualiza una configuración postural existente.              |
+| handle(DeletePostureSettingCommand)           | Elimina una configuración postural del sistema.              |
+
+`CalibrationCommandServiceImpl`
+
+Descripción: Implementación del servicio de comandos encargado de gestionar el ciclo de vida de las calibraciones del usuario.
+
+| Método                                   | Descripción                                              |
+|------------------------------------------|----------------------------------------------------------|
+| handle(CreateCalibrationCommand)         | Crea una nueva calibración para un usuario.              |
+| handle(UpdateCalibrationCommand)         | Actualiza una calibración existente.                     |
+| handle(DeleteCalibrationCommand)         | Elimina una calibración del sistema.                     |
+
+`AlertsSettingQueryServiceImpl`
+
+Descripción: Implementación del servicio de consultas encargado de recuperar información de configuraciones de alertas.
+
+| Método                                 | Descripción                                                  |
+|----------------------------------------|--------------------------------------------------------------|
+| handle(GetUserAlertSettingQuery)       | Recupera la configuración de alertas de un usuario específico. |
+
+`PostureSettingQueryServiceImpl`
+
+Descripción: Implementación del servicio de consultas encargado de recuperar información de configuraciones posturales.
+
+| Método                                  | Descripción                                                  |
+|-----------------------------------------|--------------------------------------------------------------|
+| handle(GetUserPostureSettingQuery)      | Recupera la configuración postural de un usuario específico.   |
+
+`CalibrationQueryServiceImpl`
+
+Descripción: Implementación del servicio de consultas encargado de recuperar información de calibraciones.
+
+| Método                             | Descripción                                              |
+|------------------------------------|----------------------------------------------------------|
+| handle(GetUserCalibrationQuery)    | Recupera la calibración de un usuario específico.        |
+
 #### 5.1.4 Infrastructure Layer
+
+En la **Capa de Infraestructura** del Bounded Context de **Orquestrador (Orchestrator)** se implementan los repositorios que permiten la persistencia y recuperación de datos relacionados con las configuraciones de alertas, ajustes posturales y calibraciones de usuarios. Esta capa actúa como puente entre la lógica de dominio y la base de datos PostgreSQL, asegurando que los objetos del dominio se almacenen y consulten de manera eficiente y consistente.
+
+**Justificación**
+
+Separar la persistencia en la capa de infraestructura garantiza el desacoplamiento entre la lógica del dominio y la tecnología de almacenamiento. Utilizando Spring Data JPA se simplifica la implementación de repositorios, mientras que la serialización JSON para objetos de valor complejos permite flexibilidad en el esquema de datos. Esta arquitectura facilita pruebas unitarias mediante repositorios en memoria y asegura que la lógica de negocio no dependa de detalles técnicos específicos de la base de datos.
+
+`AlertSettingRepository`
+
+Descripción: Administra la persistencia y recuperación de entidades relacionadas con configuraciones de alertas.
+
+| Método                           | Descripción                                                   |
+|----------------------------------|---------------------------------------------------------------|
+| save(AlertSetting alertSetting)  | Persiste una nueva configuración o actualiza una existente.   |
+| findById(Long settingId)         | Recupera una configuración por su identificador.              |
+| findByUserId(Long userId)        | Obtiene la configuración de alertas asociada a un usuario.    |
+| delete(Long settingId)           | Elimina una configuración de alertas registrada.              |
+
+`PostureSettingRepository`
+
+Descripción: Gestiona la persistencia de las configuraciones posturales personalizadas.
+
+| Método                               | Descripción                                                   |
+|--------------------------------------|---------------------------------------------------------------|
+| save(PostureSetting postureSetting)  | Persiste una configuración postural detectada.                |
+| findById(Long settingId)             | Recupera una configuración por su ID.                         |
+| findByUserId(Long userId)            | Obtiene la configuración postural asociada a un usuario.      |
+| delete(Long settingId)               | Elimina una configuración postural de la base de datos.       |
+
+`CalibrationRepository`
+
+Descripción: Administra las calibraciones realizadas por los usuarios del sistema.
+
+| Método                         | Descripción                                                   |
+|--------------------------------|---------------------------------------------------------------|
+| save(Calibration calibration)  | Registra o actualiza una calibración.                         |
+| findById(Long calibrationId)   | Recupera una calibración por su ID.                           |
+| findByUserId(Long userId)      | Obtiene la calibración asociada a un usuario.                 |
+| findLatestByUserId(Long userId)| Recupera la calibración más reciente de un usuario.           |
+| delete(Long calibrationId)     | Elimina una calibración de la base de datos.                  |
+
 #### 5.1.6 Bounded Context Software Architecture Component Level Diagrams
+
+El diagrama de componentes del sistema ErgoVision presenta una arquitectura con cinco bounded contexts, Landing Page en HTML/CSS/JS, Web App en Angular y Mobile App en Kotlin, conectados a través de un REST API en Spring Boot con PostgreSQL e integrando servicios externos de Google MediaPipe para detección postural y Firebase Cloud Messaging para notificaciones push.
+
+<img src="images/chapter-5/ComponentDiagram.png" alt="Component Diagram">
+
 #### 5.1.7 Bounded Context Software Architecture Code Level Diagrams
 ##### 5.1.7.1 Bounded Context Domain Layer Class Diagrams
+
+![domain-orquestrator-class-diagram.png](images/chapter-5/domain-orquestrator-class-diagram.png)
+
 ##### 5.1.7.2 Bounded Context Database Design Diagram
+
+![oquestrator-database-diagram.png](images/chapter-5/oquestrator-database-diagram.png)
 
 ### 5.2 Bounded Context: Monitoreo
 #### 5.2.1 Domain Layer
@@ -3000,6 +3306,11 @@ Descripción: Administra las pausas activas programadas, iniciadas o finalizadas
 | delete(Long breakId)          | Elimina una pausa activa de la base de datos.          |
 
 #### 5.2.6 Bounded Context Software Architecture Component Level Diagrams
+
+El diagrama de componentes del sistema ErgoVision presenta una arquitectura con cinco bounded contexts, Landing Page en HTML/CSS/JS, Web App en Angular y Mobile App en Kotlin, conectados a través de un REST API en Spring Boot con PostgreSQL e integrando servicios externos de Google MediaPipe para detección postural y Firebase Cloud Messaging para notificaciones push.
+
+<img src="images/chapter-5/ComponentDiagram.png" alt="Component Diagram">
+
 #### 5.2.7 Bounded Context Software Architecture Code Level Diagrams
 ##### 5.2.7.1 Bounded Context Domain Layer Class Diagrams
 
@@ -3012,224 +3323,183 @@ Descripción: Administra las pausas activas programadas, iniciadas o finalizadas
 ### 5.3 Bounded Context: Estadísticas
 #### 5.3.1 Domain Layer
 
-En la capa de dominio del bounded context de Estadísticas, los principales agregados son `Reporte` y `Métrica`. Estos encapsulan la lógica de negocio para la gestión de datos históricos de posturas, el cálculo de métricas relevantes y la generación de reportes visuales para los usuarios.
+En la **Capa de Dominio** del Bounded Context de **Statistics**, los principales agregados son `StatisticsReport`, `PostureMetrics`, `BreakMetrics` y `SessionMetrics`. Estos encapsulan los conceptos de negocio necesarios para calcular y consolidar reportes estadísticos relacionados con el tiempo de postura, pausas activas y duración de sesiones.
 
-**Agregado `Reporte`**
-**Descripción:** Representa el agregado raíz “Reporte”, que contiene la información consolidada de un período de monitoreo y las métricas asociadas.
+La lógica de dominio se concentra en el servicio de dominio `StatisticsService`, que aplica las reglas de negocio para calcular métricas como el tiempo promedio de buena postura, el porcentaje de mala postura, las pausas tomadas y la duración de la última sesión, asegurando consistencia en los cálculos y coherencia en la presentación de resultados.
 
-| Atributo       | Tipo         | Visibilidad | Descripción                                                |
-|----------------|--------------|-------------|------------------------------------------------------------|
-| id             | Long         | Privado     | Identificador único del reporte.                           |
-| userId         | Long         | Privado     | Identificador del usuario al que pertenece el reporte.     |
-| generationDate | Date         | Privado     | Fecha de inicio del período del reporte.                   |
-| period         | Periodo      | Privado     | Objeto de valor que define el rango de fechas del reporte. |
-| metrics        | Set<Métrica> | Privado     | Conjunto de métricas asociadas al reporte.                 |
+**Agregado `StatisticsReport`**
+**Descripción:** Representa un reporte consolidado de estadísticas para un usuario en un período específico.
+
+| Atributo    | Tipo           | Visibilidad | Descripción                                            |
+|-------------|----------------|-------------|--------------------------------------------------------|
+| id          | Long           | Privado     | Identificador único del reporte.                       |
+| userId      | Long           | Privado     | Identificador del usuario al que pertenece el reporte. |
+| period      | Periodo        | Privado     | Intervalo del reporte (SEMANA, GENERAL).               |
+| posture     | PostureMetrics | Privado     | Métricas relacionadas con la postura.                  |
+| breaks      | BreakMetrics   | Privado     | Métricas relacionadas con las pausas activas.          |
+| sessions    | SessionMetrics | Privado     | Métricas relacionadas con las sesiones de monitoreo.   |
+| generatedAt | Date           | Privado     | Fecha y hora de generación del reporte.                |
 
 
-| Método                        | Tipo de Retorno | Visibilidad | Descripción                             |
-|-------------------------------|-----------------|-------------|-----------------------------------------|
-| addDataset(Dataset dataset)   | void            | Público     | Asocia un conjunto de datos al estudio. |
-| definePurpose(String purpose) | void            | Público     | Establece el propósito del estudio.     |
-| defineScope(String scope)     | void            | Público     | Define el alcance del estudio.          |
-
----
-
-**Entidad: Dataset**
-**Descripción:** Representa un conjunto de datos utilizado dentro del estudio estadístico.
-
-| Atributo  | Tipo           | Visibilidad | Descripción                          |
-|-----------|----------------|-------------|--------------------------------------|
-| id        | Long           | Privado     | Identificador único del dataset.     |
-| name      | String         | Privado     | Nombre del dataset.                  |
-| variables | List<Variable> | Privado     | Variables estadísticas que contiene. |
-
-| Método                    | Tipo de Retorno | Visibilidad | Descripción                             |
-|---------------------------|-----------------|-------------|-----------------------------------------|
-| addVariable(Variable var) | void            | Público     | Añade una variable al dataset.          |
-| getVariables()            | List<Variable>  | Público     | Devuelve todas las variables asociadas. |
+| Método                    | Tipo de Retorno | Visibilidad | Descripción                              |
+|---------------------------|-----------------|-------------|------------------------------------------|
+| calculatePostureMetrics() | PostureMetrics  | Público     | Calcula métricas de postura.             |
+| calculateBreakMetrics()   | BreakMetrics    | Público     | Calcula métricas de pausas activas.      |
+| calculateSessionMetrics() | SessionMetrics  | Público     | Calcula métricas de sesiones.            |
+| generateSummary()         | String          | Público     | Devuelve un resumen textual del reporte. |
 
 ---
 
-*Objeto de Valor: Variable**
-**Descripción:** Representa una variable estadística dentro de un conjunto de datos.
+*Objeto de Valor: `PostureMetrics`**
+**Descripción:** Contiene métricas relacionadas con la postura del usuario.
 
-| Nombre | Tipo         | Descripción                                   |
-|--------|--------------|-----------------------------------------------|
-| name   | String       | Nombre de la variable.                        |
-| type   | VariableType | Tipo de variable (cualitativa, cuantitativa). |
-
----
-
-**Servicios de Dominio**
-
-* **Servicio: StudyCommandService**
-  **Descripción:** Define operaciones para la creación y gestión de estudios estadísticos.
-
-| Método                               | Tipo de Retorno | Descripción                        |
-|--------------------------------------|-----------------|------------------------------------|
-| handle(CreateStudyCommand command)   | Study           | Crea un nuevo estudio estadístico. |
-| handle(AssignDatasetCommand command) | void            | Asigna un dataset a un estudio.    |
+| Nombre               | Tipo   | Descripción                                          |
+|----------------------|--------|------------------------------------------------------|
+| avgGoodPostureTime   | Double | Tiempo promedio de buena postura (minutos/hora/día). |
+| badPosturePercentage | Double | Porcentaje de mala postura respecto al total.        |
 
 ---
 
-* **Servicio: StudyQueryService**
-  **Descripción:** Permite consultar información de los estudios estadísticos registrados.
+*Objeto de Valor: `BreakMetrics`**
+**Descripción:** Contiene métricas de pausas activas y descansos.
 
-| Método                           | Tipo de Retorno | Descripción                              |
-|----------------------------------|-----------------|------------------------------------------|
-| handle(GetAllStudiesQuery query) | List<Study>     | Obtiene todos los estudios estadísticos. |
-| handle(GetStudyByIdQuery query)  | Study           | Busca un estudio por su ID.              |
-
----
-* **Servicio: DatasetCommandService**
-  **Descripción:** Define operaciones sobre la gestión de datasets.
-
-| Método                               | Tipo de Retorno | Descripción                       |
-|--------------------------------------|-----------------|-----------------------------------|
-| handle(CreateDatasetCommand command) | Dataset         | Crea un nuevo conjunto de datos.  |
-| handle(AddVariableCommand command)   | void            | Agrega una variable a un dataset. |
+| Nombre           | Tipo   | Descripción                                            |
+|------------------|--------|--------------------------------------------------------|
+| totalBreaks      | int    | Número total de pausas registradas.                    |
+| avgBreakDuration | Double | Duración promedio de una pausa activa (minutos/horas). |
+| avgRestTime      | Double | Tiempo promedio de descanso entre sesiones.            |
 
 ---
 
-* **Servicio: DatasetQueryService**
-  **Descripción:** Permite obtener información sobre datasets registrados.
+*Objeto de Valor: `SessionMetrics`**
+**Descripción:** Contiene métricas de pausas activas y descansos.
 
-| Método                            | Tipo de Retorno | Descripción                             |
-|-----------------------------------|-----------------|-----------------------------------------|
-| handle(GetAllDatasetsQuery query) | List<Dataset>   | Obtiene todos los datasets registrados. |
-| handle(GetDatasetByIdQuery query) | Dataset         | Busca un dataset por ID.                |
+| Nombre              | Tipo   | Descripción                                |
+|---------------------|--------|--------------------------------------------|
+| lastSessionDuration | Double | Duración de la última sesión de monitoreo. |
+| totalSessions       | int    | Cantidad total de sesiones registradas.    |
+
+---
+*Objeto de Valor: `ReportPeriod`**
+**Descripción:** Enum que define los períodos de un reporte.
+
+| Nombre | Descripción                |
+|--------|----------------------------|
+| WEEKLY | Estadísticas de la semana. |
+| WEEKLY | Estadísticas históricas.   |
+
+---
+
+**Servicios de Dominio:** `StatisticsService`
+ **Descripción:** Encargado de generar los reportes estadísticos a partir de los datos del BC de Monitoring.
+
+| Método                                                    | Tipo de Retorno  | Descripción                                                               |
+|-----------------------------------------------------------|------------------|---------------------------------------------------------------------------|
+| generateReport(Long userId, ReportPeriod period)          | StatisticsReport | Genera un reporte de estadísticas para un usuario en un período definido. |
+| calculatePostureMetrics(Long userId, ReportPeriod period) | PostureMetrics   | Calcula métricas de postura.                                              |
+| calculateBreakMetrics(Long userId, ReportPeriod period)   | BreakMetrics     | Calcula métricas de pausas activas y descansos.                           |
+| calculateSessionMetrics(Long userId, ReportPeriod period) | SessionMetrics   | Calcula métricas de sesiones, incluida la última sesión registrada.       |
 
 #### 5.3.2 Interface Layer
-En la Capa de Interfaz del Bounded Context de Estadística, se expone el controlador StatisticsController, el cual ofrece endpoints RESTful para la gestión de estudios estadísticos, conjuntos de datos y variables. Estos endpoints permiten crear estudios, registrar datasets, añadir variables, y consultar resultados de análisis. También se habilita la ejecución de operaciones estadísticas básicas que integran datos provenientes del frontend (web o móvil) y facilitan la interacción con otros bounded contexts como Reports (para la generación de informes) y Visualization (para la representación gráfica de los resultados).
+En la Capa de Interfaz del Bounded Context de Statistics, se expone el controlador `StatisticsController`, el cual ofrece endpoints RESTful para la generación y consulta de reportes.
 
 **Justificación:**
-Esta capa cumple el propósito de desacoplar la lógica de dominio del acceso externo al sistema, proporcionando una API clara, coherente y segura para que el frontend pueda interactuar con el backend de manera uniforme. Asimismo, habilita la integración con otros bounded contexts y garantiza la trazabilidad de los estudios, la persistencia confiable de los datasets y la correcta administración de variables y resultados, alineando la experiencia del usuario con los objetivos de análisis estadístico de la plataforma.
+Esta capa desacopla la lógica de dominio del acceso externo, permitiendo a aplicaciones web, móviles u otros bounded contexts consumir los reportes de manera uniforme. Facilita la integración con **Monitoring** para extraer información base y asegura que las métricas se entreguen listas para su visualización o análisis por el usuario.
 
 **Controlador: `StatisticsController`**
 
-| Método             | Verbo HTTP | Ruta                                              | Descripción                                         |
-|--------------------|------------|---------------------------------------------------|-----------------------------------------------------|
-| createStudy        | POST       | /api/v1/statistics/studies                        | Crea un nuevo estudio estadístico                   |
-| getStudyById       | GET        | /api/v1/statistics/studies/{studyId}              | Obtiene los detalles de un estudio                  |
-| getAllStudies      | GET        | /api/v1/statistics/studies                        | Lista todos los estudios registrados                |
-| addDataset         | POST       | /api/v1/statistics/studies/{studyId}/datasets     | Asigna un dataset a un estudio                      |
-| getDatasetsByStudy | GET        | /api/v1/statistics/studies/{studyId}/datasets     | Obtiene todos los datasets asociados a un estudio   |
-| createDataset      | POST       | /api/v1/statistics/datasets                       | Crea un nuevo conjunto de datos                     |
-| getDatasetById     | GET        | /api/v1/statistics/datasets/{datasetId}           | Obtiene detalles de un dataset                      |
-| addVariable        | POST       | /api/v1/statistics/datasets/{datasetId}/variables | Añade una variable a un dataset                     |
-| getVariables       | GET        | /api/v1/statistics/datasets/{datasetId}/variables | Lista todas las variables de un dataset             |
-| runAnalysis        | POST       | /api/v1/statistics/studies/{studyId}/analysis     | Ejecuta un análisis sobre un estudio y sus datasets |
-| getAnalysisResults | GET        | /api/v1/statistics/studies/{studyId}/results      | Obtiene resultados de análisis realizados           |
+| Método            | Verbo HTTP | Ruta                                 | Descripción                            |
+|-------------------|------------|--------------------------------------|----------------------------------------|
+| getWeeklyReport   | GET        | /api/v1/statistics/{userId}/weekly   | Genera y retorna el reporte semanal.   |
+| getGeneralReport  | GET        | /api/v1/statistics/{userId}/general  | Genera y retorna el reporte histórico. |
+| getPostureMetrics | GET        | /api/v1/statistics/{userId}/posture  | Retorna métricas de postura.           |
+| getBreakMetrics   | GET        | /api/v1/statistics/{userId}/breaks   | Retorna métricas de pausas activas.    |
+| getSessionMetrics | GET        | /api/v1/statistics/{userId}/sessions | Retorna métricas de sesiones.          |
 
 #### 5.3.3 Application Layer
 
-En el Application Layer del Bounded Context de **Estadística** se implementan los servicios de aplicación que orquestan los casos de uso principales:
-- creación y gestión de estudios,
-- registro de conjuntos de datos y variables,
-- ejecución de análisis,
-- y consultas sobre resultados y métricas estadísticas.
+En el Application Layer de Statistics se implementan los servicios de aplicación que orquestan los cálculos y consultas sobre reportes.
 
-El `StatisticsCommandService` gestiona las operaciones de modificación del dominio, mientras que el `StatisticsQueryService` se centra en la recuperación de información estructurada y resultados de análisis.
+
 **Justificación**
-Dividir la lógica en servicios de **Command** y **Query** asegura un diseño más claro, mantenible y escalable, siguiendo el patrón **CQRS**.  
-Esta separación permite optimizar las operaciones de lectura y escritura de manera independiente, facilitar la integración con bounded contexts como **Reports** o **Visualization**, y soportar la evolución futura del sistema con bajo acoplamiento.
+
+Separar los servicios de **Command** y **Query** siguiendo el patrón **CQRS** permite claridad en el diseño:
+
+ * **Commands**: generan y actualizan reportes.
+ * **Queries**: consultan métricas específicas.
 
 ---
+`StatisticsCommandServiceImpl`
+**Descripción:** Implementación del servicio de comandos encargado de generar reportes estadísticos para los usuarios.
 
-*  **StatisticsCommandServiceImpl**
+| Método                                  | Descripción                                              |
+|-----------------------------------------|----------------------------------------------------------|
+| handle(GenerateStatisticsReportCommand) | Genera un reporte consolidado para un usuario y período. |
 
-**Descripción:** Implementación del servicio de comandos encargado de gestionar el ciclo de vida de los estudios, datasets y variables, así como la ejecución de análisis.
 
-| Método                       | Descripción                                                    |
-|------------------------------|----------------------------------------------------------------|
-| handle(CreateStudyCommand)   | Crea un nuevo estudio estadístico.                             |
-| handle(AddDatasetCommand)    | Asigna un dataset a un estudio.                                |
-| handle(CreateDatasetCommand) | Crea un nuevo conjunto de datos independiente.                 |
-| handle(AddVariableCommand)   | Añade una variable a un dataset.                               |
-| handle(RunAnalysisCommand)   | Ejecuta un análisis sobre un estudio y sus datasets asociados. |
+`StatisticsQueryServiceImpl`
 
----
+**Descripción:** Implementación del servicio de consultas encargado de recuperar métricas específicas relacionadas con postura, pausas y sesiones.
 
-* **StatisticsQueryServiceImpl**
-
-**Descripción:** Implementación del servicio de consultas encargado de recuperar información de estudios, datasets, variables y resultados de análisis.
-
-| Método                             | Descripción                                                  |
-|------------------------------------|--------------------------------------------------------------|
-| handle(GetStudyByIdQuery)          | Recupera los detalles de un estudio por su ID.               |
-| handle(GetAllStudiesQuery)         | Lista todos los estudios registrados.                        |
-| handle(GetDatasetsByStudyQuery)    | Obtiene todos los datasets asociados a un estudio.           |
-| handle(GetVariablesByDatasetQuery) | Lista las variables pertenecientes a un dataset.             |
-| handle(GetAnalysisResultsQuery)    | Obtiene los resultados de análisis realizados en un estudio. |
+| Método                         | Descripción                                                         |
+|--------------------------------|---------------------------------------------------------------------|
+| handle(GetWeeklyReportQuery)   | Recupera métricas semanales.                                        |
+| handle(GetGeneralReportQuery)  | Recupera métricas históricas.                                       |
+| handle(GetPostureMetricsQuery) | Obtiene métricas de postura.                                        |
+| handle(GetBreakMetricsQuery)   | Obtiene métricas de pausas activas y descansos.                     |
+| handle(GetSessionMetricsQuery) | Obtiene métricas de sesiones, incluida la última sesión registrada. |
 
 #### 5.3.4 Infrastructure Layer
 
-En la Capa de Infraestructura del Bounded Context de **Estadística** se implementan los repositorios que permiten la persistencia y recuperación de datos relacionados con los estudios, conjuntos de datos, variables y resultados de análisis. Esta capa actúa como puente entre la lógica de dominio y la base de datos, asegurando que los objetos del dominio se almacenen y consulten de manera eficiente y consistente.
+En la **Capa de Infraestructura** del Bounded Context de Statistics se implementan los adaptadores para conectarse al BC de Monitoring y, opcionalmente, persistir reportes ya generados para evitar recálculo.
 
 **Justificación**
 
-Separar la persistencia en la capa de infraestructura garantiza el **desacoplamiento** entre la lógica del dominio y la tecnología de almacenamiento.  
-Esto permite flexibilidad en la elección del motor de base de datos, facilita pruebas unitarias mediante repositorios en memoria y asegura que la lógica de negocio no dependa de detalles técnicos.
+Separar la infraestructura asegura independencia de las tecnologías externas (bases de datos, APIs externas) y flexibilidad en la consulta de datos de *Monitoring*. Esto también permite caching de reportes, optimizando la eficiencia.
 
 ---
 
-* **StudyRepository**
+`StatisticsReportRepository`
 
-**Descripción:** Administra la persistencia y recuperación de entidades relacionadas con los estudios estadísticos.
+**Descripción:** Gestiona la persistencia de los reportes estadísticos generados.
 
-| Método                 | Descripción                                          |
-|------------------------|------------------------------------------------------|
-| save(Study study)      | Persiste un nuevo estudio o actualiza uno existente. |
-| findById(Long studyId) | Recupera un estudio por su identificador.            |
-| findAll()              | Lista todos los estudios registrados.                |
-| delete(Long studyId)   | Elimina un estudio registrado.                       |
-
----
-
-* **DatasetRepository**
-
-**Descripción:** Gestiona la persistencia de los conjuntos de datos asociados a los estudios.
-
-| Método                    | Descripción                                          |
-|---------------------------|------------------------------------------------------|
-| save(Dataset dataset)     | Persiste un nuevo dataset o actualiza uno existente. |
-| findById(Long datasetId)  | Recupera un dataset por su ID.                       |
-| findByStudy(Long studyId) | Obtiene todos los datasets asociados a un estudio.   |
-| delete(Long datasetId)    | Elimina un dataset registrado.                       |
+| Método                                                | Descripción                                                 |
+|-------------------------------------------------------|-------------------------------------------------------------|
+| save(StatisticsReport report)                         | Persiste un reporte generado.                               |
+| findById(Long reportId)                               | Recupera un reporte por su ID.                              |
+| findByUserAndPeriod(Long userId, ReportPeriod period) | Recupera un reporte generado para un usuario en un período. |
 
 ---
 
-* **VariableRepository**
+`MonitoringAdapter`
 
-**Descripción:** Administra la persistencia de las variables incluidas en los datasets.
+**Descripción:** Adaptador para interactuar con el Bounded Context de Monitoring y recuperar datos necesarios para cálculos estadísticos.
 
-| Método                        | Descripción                                            |
-|-------------------------------|--------------------------------------------------------|
-| save(Variable variable)       | Persiste una nueva variable o actualiza una existente. |
-| findById(Long variableId)     | Recupera una variable por su identificador.            |
-| findByDataset(Long datasetId) | Lista todas las variables asociadas a un dataset.      |
-| delete(Long variableId)       | Elimina una variable registrada.                       |
+| Método                                  | Descripción                                                      |
+|-----------------------------------------|------------------------------------------------------------------|
+| fetchPostureEvents(Long userId, Period) | Consulta los eventos de postura desde Monitoring.                |
+| fetchBreaks(Long userId, Period)        | Consulta las pausas activas desde Monitoring.                    |
+| fetchSessions(Long userId, Period)      | Consulta las sesiones de monitoreo desde Monitoring.             |
+| fetchLastSession(Long userId)           | Recupera la última sesión de monitoreo registrada en Monitoring. |
 
----
-
-* **AnalysisResultRepository**
-
-**Descripción:** Gestiona la persistencia de los resultados obtenidos tras ejecutar análisis estadísticos.
-
-| Método                      | Descripción                                          |
-|-----------------------------|------------------------------------------------------|
-| save(AnalysisResult result) | Registra o actualiza un resultado de análisis.       |
-| findById(Long resultId)     | Recupera un resultado por su identificador.          |
-| findByStudy(Long studyId)   | Obtiene todos los resultados asociados a un estudio. |
-| delete(Long resultId)       | Elimina un resultado de análisis registrado.         |
 
 ###### 5.3.6. Bounded Context Software Architecture Component Level Diagrams
 ###### 5.3.7. Bounded Context Software Architecture Code Level Diagrams
 
 #### 5.3.6 Bounded Context Software Architecture Component Level Diagrams
+
+El diagrama de componentes del sistema ErgoVision presenta una arquitectura con cinco bounded contexts, Landing Page en HTML/CSS/JS, Web App en Angular y Mobile App en Kotlin, conectados a través de un REST API en Spring Boot con PostgreSQL e integrando servicios externos de Google MediaPipe para detección postural y Firebase Cloud Messaging para notificaciones push.
+
+<img src="images/chapter-5/ComponentDiagram.png" alt="Component Diagram">
+
 #### 5.3.7 Bounded Context Software Architecture Code Level Diagrams
 ##### 5.3.7.1 Bounded Context Domain Layer Class Diagrams
+
+<img src="images/chapter-5/statistics-class-diagram.png" alt="Statistics Domain Class Diagram">
+
 ##### 5.3.7.2 Bounded Context Database Design Diagram
+
+<img src="images/chapter-5/statistics-database-diagram.png" alt="Statistics Domain Class Diagram">
 
 ### 5.4 Bounded Context: Notificaciones
 #### 5.4.1 Domain Layer
@@ -3687,28 +3957,23 @@ Esto permite flexibilidad en la elección del motor de base de datos, facilita p
   </tbody>
 </table>
 
-##### 5.4.6. Bounded Context Software Architecture Component Level Diagrams
-
-<p>
-  Este diagrama de componentes representa un sistema monolítico encargado de la gestión y envío de notificaciones dentro de la plataforma <strong>ErgoVision</strong>. Una <strong>Single-Page Application (SPA)</strong>, implementada con Angular, interactúa con una <strong>aplicación Web API</strong> desarrollada en Spring Boot mediante llamadas HTTP (REST).
-</p>
-<p>
-  La SPA se comunica con el <code>NotificationController</code>, que expone endpoints REST para consultar, crear o actualizar notificaciones. Este controlador delega las operaciones a dos servicios principales: <code>NotificationQueryService</code>, responsable de la recuperación de notificaciones, y <code>NotificationCommandService</code>, encargado de la creación, validación y envío de nuevas notificaciones.
-</p>
-<p>
-  Ambos servicios acceden a los repositorios <code>NotificationRepository</code> y <code>UserPreferencesRepository</code>, que emplean JPA para realizar operaciones de lectura y escritura en una base de datos MySQL. La información gestionada incluye tanto las notificaciones como las preferencias de los usuarios sobre los canales de comunicación.
-</p>
-<p>
-  Cuando se genera una notificación, el <code>NotificationCommandService</code> delega la tarea de envío al <code>NotificationDispatcher</code>, un componente orquestador que selecciona el canal adecuado según las preferencias de cada usuario. Actualmente, el sistema soporta dos adaptadores de salida: <code>FirebaseNotificationAdapter</code> para el envío de notificaciones push mediante Firebase Cloud Messaging, y <code>SmsNotificationAdapter</code> para el envío de mensajes de texto a través de un <strong>SMS Gateway</strong> externo.
-</p>
-<img src="images/chapter-5/nrg7-notificationcomponent.png" alt="Diagrama de Componentes de Arquitectura de Software - Bounded Context Notificaciones"/>
-
-##### 5.4.7. Bounded Context Software Architecture Code Level Diagrams
-
 #### 5.4.6 Bounded Context Software Architecture Component Level Diagrams
+El diagrama de componentes del sistema ErgoVision presenta una arquitectura con cinco bounded contexts, Landing Page en HTML/CSS/JS, Web App en Angular y Mobile App en Kotlin, conectados a través de un REST API en Spring Boot con PostgreSQL e integrando servicios externos de Google MediaPipe para detección postural y Firebase Cloud Messaging para notificaciones push.
+
+<img src="images/chapter-5/ComponentDiagram.png" alt="Component Diagram">
+
 #### 5.4.7 Bounded Context Software Architecture Code Level Diagrams
 ##### 5.4.7.1 Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases muestra cómo se relacionan los elementos del bounded context de Notificaciones.
+
+<img src="images/chapter-5/noti-dc.png" alt="Notifications domain layer class diagram">
+
 ##### 5.4.7.2 Bounded Context Database Design Diagram
+
+En el diagrama de base, se observa las tablas y la relación entre estas.
+
+<img src="images/chapter-5/noti-bd.png" alt="Notifications database design diagram">
 
 ### 5.5 Bounded Context: Identity Access Management(IAM)
 #### 5.5.1 Domain Layer
