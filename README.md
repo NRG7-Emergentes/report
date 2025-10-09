@@ -3022,7 +3022,45 @@ Descripción: Implementación del servicio de consultas encargado de recuperar i
 
 #### 5.1.4 Infrastructure Layer
 
+En la **Capa de Infraestructura** del Bounded Context de **Orquestrador (Orchestrator)** se implementan los repositorios que permiten la persistencia y recuperación de datos relacionados con las configuraciones de alertas, ajustes posturales y calibraciones de usuarios. Esta capa actúa como puente entre la lógica de dominio y la base de datos PostgreSQL, asegurando que los objetos del dominio se almacenen y consulten de manera eficiente y consistente.
 
+**Justificación**
+
+Separar la persistencia en la capa de infraestructura garantiza el desacoplamiento entre la lógica del dominio y la tecnología de almacenamiento. Utilizando Spring Data JPA se simplifica la implementación de repositorios, mientras que la serialización JSON para objetos de valor complejos permite flexibilidad en el esquema de datos. Esta arquitectura facilita pruebas unitarias mediante repositorios en memoria y asegura que la lógica de negocio no dependa de detalles técnicos específicos de la base de datos.
+
+`AlertSettingRepository`
+
+Descripción: Administra la persistencia y recuperación de entidades relacionadas con configuraciones de alertas.
+
+| Método                           | Descripción                                                   |
+|----------------------------------|---------------------------------------------------------------|
+| save(AlertSetting alertSetting)  | Persiste una nueva configuración o actualiza una existente.   |
+| findById(Long settingId)         | Recupera una configuración por su identificador.              |
+| findByUserId(Long userId)        | Obtiene la configuración de alertas asociada a un usuario.    |
+| delete(Long settingId)           | Elimina una configuración de alertas registrada.              |
+
+`PostureSettingRepository`
+
+Descripción: Gestiona la persistencia de las configuraciones posturales personalizadas.
+
+| Método                               | Descripción                                                   |
+|--------------------------------------|---------------------------------------------------------------|
+| save(PostureSetting postureSetting)  | Persiste una configuración postural detectada.                |
+| findById(Long settingId)             | Recupera una configuración por su ID.                         |
+| findByUserId(Long userId)            | Obtiene la configuración postural asociada a un usuario.      |
+| delete(Long settingId)               | Elimina una configuración postural de la base de datos.       |
+
+`CalibrationRepository`
+
+Descripción: Administra las calibraciones realizadas por los usuarios del sistema.
+
+| Método                         | Descripción                                                   |
+|--------------------------------|---------------------------------------------------------------|
+| save(Calibration calibration)  | Registra o actualiza una calibración.                         |
+| findById(Long calibrationId)   | Recupera una calibración por su ID.                           |
+| findByUserId(Long userId)      | Obtiene la calibración asociada a un usuario.                 |
+| findLatestByUserId(Long userId)| Recupera la calibración más reciente de un usuario.           |
+| delete(Long calibrationId)     | Elimina una calibración de la base de datos.                  |
 
 #### 5.1.6 Bounded Context Software Architecture Component Level Diagrams
 
@@ -3036,6 +3074,8 @@ El diagrama de componentes del sistema ErgoVision presenta una arquitectura con 
 ![domain-orquestrator-class-diagram.png](images/chapter-5/domain-orquestrator-class-diagram.png)
 
 ##### 5.1.7.2 Bounded Context Database Design Diagram
+
+![oquestrator-database-diagram.png](images/chapter-5/oquestrator-database-diagram.png)
 
 ### 5.2 Bounded Context: Monitoreo
 #### 5.2.1 Domain Layer
