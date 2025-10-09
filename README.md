@@ -3917,28 +3917,23 @@ El diagrama de componentes del sistema ErgoVision presenta una arquitectura con 
   </tbody>
 </table>
 
-##### 5.4.6. Bounded Context Software Architecture Component Level Diagrams
-
-<p>
-  Este diagrama de componentes representa un sistema monolítico encargado de la gestión y envío de notificaciones dentro de la plataforma <strong>ErgoVision</strong>. Una <strong>Single-Page Application (SPA)</strong>, implementada con Angular, interactúa con una <strong>aplicación Web API</strong> desarrollada en Spring Boot mediante llamadas HTTP (REST).
-</p>
-<p>
-  La SPA se comunica con el <code>NotificationController</code>, que expone endpoints REST para consultar, crear o actualizar notificaciones. Este controlador delega las operaciones a dos servicios principales: <code>NotificationQueryService</code>, responsable de la recuperación de notificaciones, y <code>NotificationCommandService</code>, encargado de la creación, validación y envío de nuevas notificaciones.
-</p>
-<p>
-  Ambos servicios acceden a los repositorios <code>NotificationRepository</code> y <code>UserPreferencesRepository</code>, que emplean JPA para realizar operaciones de lectura y escritura en una base de datos MySQL. La información gestionada incluye tanto las notificaciones como las preferencias de los usuarios sobre los canales de comunicación.
-</p>
-<p>
-  Cuando se genera una notificación, el <code>NotificationCommandService</code> delega la tarea de envío al <code>NotificationDispatcher</code>, un componente orquestador que selecciona el canal adecuado según las preferencias de cada usuario. Actualmente, el sistema soporta dos adaptadores de salida: <code>FirebaseNotificationAdapter</code> para el envío de notificaciones push mediante Firebase Cloud Messaging, y <code>SmsNotificationAdapter</code> para el envío de mensajes de texto a través de un <strong>SMS Gateway</strong> externo.
-</p>
-<img src="images/chapter-5/nrg7-notificationcomponent.png" alt="Diagrama de Componentes de Arquitectura de Software - Bounded Context Notificaciones"/>
-
-##### 5.4.7. Bounded Context Software Architecture Code Level Diagrams
-
 #### 5.4.6 Bounded Context Software Architecture Component Level Diagrams
+El diagrama de componentes del sistema ErgoVision presenta una arquitectura con cinco bounded contexts, Landing Page en HTML/CSS/JS, Web App en Angular y Mobile App en Kotlin, conectados a través de un REST API en Spring Boot con PostgreSQL e integrando servicios externos de Google MediaPipe para detección postural y Firebase Cloud Messaging para notificaciones push.
+
+<img src="images/chapter-5/ComponentDiagram.png" alt="Component Diagram">
+
 #### 5.4.7 Bounded Context Software Architecture Code Level Diagrams
 ##### 5.4.7.1 Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases muestra cómo se relacionan los elementos del bounded context de Notificaciones.
+
+<img src="images/chapter-5/noti-dc.png" alt="Notifications domain layer class diagram">
+
 ##### 5.4.7.2 Bounded Context Database Design Diagram
+
+En el diagrama de base, se observa las tablas y la relación entre estas.
+
+<img src="images/chapter-5/noti-bd.png" alt="Notifications database design diagram">
 
 ### 5.5 Bounded Context: Identity Access Management(IAM)
 #### 5.5.1 Domain Layer
