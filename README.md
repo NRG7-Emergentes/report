@@ -172,6 +172,25 @@ El enlace a github del reporte del proyecto es el siguiente: [https://github.com
       - [5.5.7 Bounded Context Software Architecture Container Level Diagrams](#557-bounded-context-software-architecture-code-level-diagrams)
           - [5.5.7.1 Bounded Context Domain Layer Class Diagrams](#5571-bounded-context-domain-layer-class-diagrams)
           - [5.5.7.2 Bounded Context Database Design Diagram](#5572-bounded-context-database-design-diagram)
+- [Capítulo VI: Solution UX Design](#capítulo-vi-solution-ux-design)
+  - [6.1 Style Guidelines](#61-style-guidelines)
+    - [6.1.1 General Style Guidelines](#611-general-style-guidelines)
+    - [6.1.2 Web, Mobile & Devices Style Guidelines](#612-web-mobile--devices-style-guidelines)
+  - [6.2 Information Architecture](#62-information-architecture)
+    - [6.2.1 Organization Systems](#621-organization-systems)
+    - [6.2.2 Labeling Systems](#622-labeling-systems)
+    - [6.2.3 Searching Systems](#623-searching-systems)
+    - [6.2.4 SEO Tags and Meta Tags](#624-seo-tags-and-meta-tags)
+    - [6.2.5 Navigation Systems](#625-navigation-systems)
+  - [6.3 Landing Page UI Design](#63-landing-page-ui-design)
+    - [6.3.1 Landing Page Wireframe](#631-landing-page-wireframe)
+    - [6.3.2 Landing Page Mock-up](#632-landing-page-mock-up)
+  - [6.4 Applications UX/UI Design](#64-applications-uxui-design)
+    - [6.4.1 Applications Wireframes](#641-applications-wireframes)
+    - [6.4.2 Applications Wireflow Diagrams](#642-applications-wireflow-diagrams)
+    - [6.4.3 Applications Mock-ups](#643-applications-mock-ups)
+    - [6.4.4 Applications User Flow Diagrams](#644-applications-user-flow-diagrams)
+  - [6.5 Applications Prototyping](#65-applications-prototyping)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -4283,12 +4302,515 @@ En el diagrama de base, se observa la tabla users y roles, así como la relació
 <img src="images/chapter-5/IAM-DB.png" alt="Diagrama de Base de Datos - Bounded Context IAM"/>
 
 
+## Capítulo VI: Solution UX Design
+
+### 6.1 Style Guidelines
+
+El objetivo de estas directrices es asegurar que todas las interfaces de usuario (UI) de ErgoVision mantengan una identidad visual coherente, profesional y accesible, alineada con la misión del proyecto de promover el bienestar postural y la salud ergonómica a través de la tecnología. Estas guías establecen los principios visuales y funcionales que regirán el diseño tanto del entorno web como de la aplicación móvil, garantizando consistencia en el uso de colores, tipografías, iconografía y componentes visuales.
+
+Al seguir estas directrices, ErgoVision busca ofrecer una experiencia centrada en el usuario, intuitiva y clara, que refleje confianza, bienestar y modernidad. Cada elemento visual ha sido concebido para apoyar la comprensión de la información, reducir la carga cognitiva y facilitar la interacción del usuario con las funciones de monitoreo, análisis y mejora postural.
+
+#### 6.1.1 General Style Guidelines
+
+**Branding:**  
+
+El logo de ErgoVision es un logo simple y minimalista. El color principal es el azul, el cual será el color principal que se usará para la Landing Page, Aplicación web y Aplicación Móvil.
+
+<img src="images/chapter-6/Logo1.png" alt="Logo1">
+
+**Colores:**
+
+Para ErgoVision, una plataforma dedicada al monitoreo postural y al bienestar ergonómico, la selección de colores busca transmitir profesionalismo, confianza y bienestar, reflejando el equilibrio entre tecnología y salud. La paleta combina tonos fríos y sobrios con acentos vibrantes, reforzando una experiencia visual moderna y centrada en el usuario.
+
+<img src="images/chapter-6/Colores.png" alt="Colores">
+
+**Tipografía:**  
+
+La tipografía Inter, fue elegida por su claridad, modernidad y legibilidad, cualidades fundamentales en una aplicación que busca mejorar el bienestar físico mediante la tecnología. Sus formas redondeadas y proporciones balanceadas aportan una sensación de cercanía y comodidad visual, mientras su versatilidad permite mantener coherencia entre los textos informativos, métricas de monitoreo y mensajes de alerta.
+
+<img src="images/chapter-6/Tipografia.png" alt="Tipografia">
+
+**Espaciado:** 
+
+Para el espacio entre los elemento, títulos y textos se usará un interlineado de múltiplos de 4px para asegurar la legibilidad en todas las aplicaciones.
+
+<img src="images/chapter-6/Interlineado.png" alt="Interlineado">
+
+**Principios de Diseño: Simplicidad y Claridad**
+
+El diseño de ErgoVision se rige por principios de simplicidad, claridad y enfoque ergonómico, que buscan reducir la fatiga visual y cognitiva del usuario, al tiempo que mantienen una estética moderna y profesional.
+
+Objetivos principales:
+
+- Interfaz minimalista: Priorizar la información esencial y eliminar distracciones visuales, destacando solo los componentes funcionales relevantes.
+
+- Uso estratégico del espacio en blanco: Facilita la lectura y comprensión, creando una sensación de equilibrio y confort visual.
+
+- Flujos de usuarios intuitivos: Los procesos deben ser directos y naturales, alineados con las rutinas de trabajo y descanso del usuario.
+
+- Jerarquía visual coherente: Diferenciar los niveles de información mediante tamaño, color y posición, guiando la atención del usuario de forma orgánica.
+
+- Iconografía comprensible: Usar íconos claros y universales para representar acciones o estados, reduciendo la necesidad de texto adicional.
+
+- Lenguaje accesible y respetuoso: Emplear un tono sereno, profesional y cercano, que inspire confianza sin perder formalidad.
+  
+#### 6.1.2 Web, Mobile & Devices Style Guidelines
+
+<h4>Web Style Guide</h3>
+
+<h4>Componentes</h4>
+<ul>
+  <li>
+    <strong>Botones:</strong>
+    <ul>
+      <li><em>Primario:</em> fondo <code>#2b7fff</code> con texto blanco (<code>#ffffff</code>) para destacar acciones principales.</li>
+      <li><em>Secundario:</em> fondo <code>#256ad6</code> con texto <code>#ffffff</code> para acciones complementarias.</li>
+      <li><em>Deshabilitado:</em> fondo <code>#9ca5ae</code> con opacidad reducida.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Formularios:</strong>
+    <ul>
+      <li>Campos con bordes redondeados y validaciones visuales para estados <em>focus</em>, <em>error</em> y <em>success</em>.</li>
+      <li>Las etiquetas se ubican sobre el campo, priorizando la legibilidad.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Cards:</strong>
+    <ul>
+      <li>Tarjetas con fondo blanco (<code>#ffffff</code>), sombra sutil (<code>#a5aab1</code>) y bordes suaves.</li>
+      <li>Se usan para mostrar información resumida como historial o métricas posturales.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Tablas y Gráficos:</strong>
+    <ul>
+      <li>Líneas internas grises suaves y jerarquía tipográfica en cabeceras.</li>
+      <li>Los gráficos emplean tonos azules y grises para transmitir calma visual.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4>Comportamiento de Componentes</h4>
+<ul>
+  <li>Transiciones suaves (150 ms) para estados <em>hover</em>, <em>active</em> y <em>focus</em>.</li>
+  <li>Evita animaciones excesivas que distraigan al usuario durante el monitoreo.</li>
+  <li>Mensajes emergentes discretos y con tono informativo.</li>
+</ul>
+
+<h4>Responsive Design</h4>
+<ul>
+  <li>Diseño adaptable desde 1024 px (desktop) hasta 360 px (mobile).</li>
+  <li>Distribución en cuadrículas flexibles que priorizan la legibilidad y el contenido clave.</li>
+  <li>Contraste mínimo AA garantizado según las normas <strong>WCAG 2.1</strong>.</li>
+</ul>
+
+<h4>Íconos e Ilustraciones</h4>
+<ul>
+  <li>Íconos lineales monocromáticos (color <code>#5a6472</code> o <code>#ffffff</code> sobre fondos oscuros).</li>
+  <li>Ilustraciones simples en tonos neutros, usadas solo en la landing page.</li>
+  <li>Evita elementos decorativos innecesarios para mantener la estética profesional y ergonómica.</li>
+</ul>
 
 
+<h4>Mobile Style Guide</h3>
 
+<h4>Componentes</h4>
+<ul>
+  <li>
+    <strong>Botones:</strong>
+    <ul>
+      <li>Áreas táctiles amplias (mínimo 48 px). Conservan la jerarquía de color de la versión web.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Formularios:</strong>
+    <ul>
+      <li>Campos optimizados para teclado móvil, con mensajes de error claros y botones de acción grandes.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Cards:</strong>
+    <ul>
+      <li>Diseño compacto, apilado verticalmente, con tipografía jerárquica y colores de contraste.</li>
+    </ul>
+  </li>
+</ul>
 
+<h4>Gestos</h4>
+<ul>
+  <li><strong>Tap:</strong> acción principal (selección o confirmación).</li>
+  <li><strong>Swipe vertical:</strong> desplazamiento entre secciones como historial o estadísticas.</li>
+  <li><strong>Swipe horizontal:</strong> navegación entre pantallas o inicio/pausa del monitoreo.</li>
+  <li><strong>Long Press:</strong> acceso a opciones secundarias, como detalles de historial.</li>
+</ul>
 
+<h4>Responsive Design</h4>
+<ul>
+  <li>Adaptación fluida a smartphones y tablets (360–768 px).</li>
+  <li>Tipografía legible <strong>Lato</strong>, mínimo 14 px.</li>
+  <li>Uso de espacios amplios para reducir la carga visual y favorecer la precisión táctil.</li>
+  <li>Prioriza accesos rápidos a: “Iniciar Monitoreo”, “Pausa Activa”, “Historial” y “Mi Perfil”.</li>
+</ul>
 
+<h4>Consistencia Visual</h4>
+<ul>
+  <li><strong>Colores:</strong> #121720, #141e2d, #2b7fff, #256ad6, #ffffff.</li>
+  <li><strong>Tipografía:</strong> Lato — limpia, moderna y ergonómica.</li>
+  <li><strong>Iconografía:</strong> Minimalista y funcional, trazos finos en alto contraste.</li>
+  <li><strong>Tono general:</strong> Profesional, calmado y centrado en el bienestar físico y visual del usuario.</li>
+</ul>
+
+### 6.2 Information Architecture
+
+La Arquitectura de la Información cumple un papel esencial en la creación de experiencias digitales claras y funcionales, al definir cómo se estructura, nombra y conecta el contenido dentro de las plataformas web y móvil. En esta sección, el equipo presenta las decisiones estratégicas que sustentan la organización de la información, garantizando que los usuarios puedan orientarse fácilmente, comprender la lógica de navegación y acceder sin dificultad a los recursos o funciones que buscan.
+
+#### 6.2.1. Organization Systems
+
+En esta sección, el equipo describe cómo se aplicarán los sistemas de organización de la información dentro de ErgoVision, con el propósito de optimizar la experiencia del usuario y facilitar el acceso rápido y claro a las funcionalidades principales. La estructura propuesta busca mantener una navegación fluida, intuitiva y coherente tanto en la interfaz web como en la aplicación móvil.
+
+- Jerárquica (Visual Hierarchy): Este sistema se aplicará en la Landing Page y en las pantallas principales de la aplicación para resaltar los elementos más relevantes, como botones de acción, indicadores de análisis ergonómico y accesos a reportes o configuraciones. Se empleará el uso estratégico de tamaños, contrastes de color y espaciado para guiar la atención del usuario hacia las tareas más importantes.
+
+- Organización Secuencial (Step-by-Step): Se implementará en los procesos de evaluación ergonómica y configuración de perfil, donde el usuario deberá seguir una serie de pasos lógicos (por ejemplo, registrar su espacio de trabajo, ingresar medidas posturales y visualizar resultados). Este enfoque permitirá una experiencia guiada y estructurada, reduciendo la complejidad cognitiva y ayudando a completar tareas con claridad.
+
+- Organización Matricial: Se aplicará en secciones que involucren la comparación de datos o métricas, como los reportes de desempeño ergonómico y la visualización de estadísticas entre diferentes periodos o usuarios. Este sistema permitirá observar múltiples variables de forma simultánea, facilitando el análisis y la toma de decisiones basadas en los resultados obtenidos.
+
+Con esta estructura, ErgoVision garantiza una presentación organizada, priorizada y adaptable de la información, que favorece tanto la comprensión como la interacción eficiente del usuario con las distintas funcionalidades de la plataforma.
+
+#### 6.2.2 Labeling Systems
+El sistema de etiquetado en ErgoVision se diseña con el propósito de garantizar que los usuarios comprendan de forma inmediata la función y el contenido de cada sección. Las etiquetas se seleccionan utilizando un lenguaje claro, conciso y accesible, evitando tecnicismos innecesarios y priorizando la simplicidad visual y semántica.<br>
+Este enfoque busca reducir la carga cognitiva, permitir una navegación intuitiva y asegurar una experiencia uniforme entre las versiones web y móvil.
+
+La propuesta de etiquetado para las principales secciones de ErgoVision es la siguiente:
+
+<table>
+  <thead>
+    <tr>
+      <th>Sección</th>
+      <th>Etiqueta Propuesta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Creación e inicio de sesión</td>
+      <td>“Iniciar Sesión”</td>
+    </tr>
+    <tr>
+      <td>Registro de nuevo usuario</td>
+      <td>“Crear Cuenta”</td>
+    </tr>
+    <tr>
+      <td>Edición de datos de usuario</td>
+      <td>“Editar Perfil”</td>
+    </tr>
+    <tr>
+      <td>Visualización de historial detallado</td>
+      <td>“Historial”</td>
+    </tr>
+    <tr>
+      <td>Visualización de estadísticas</td>
+      <td>“Estadísticas”</td>
+    </tr>
+    <tr>
+      <td>Inicio de monitoreo ergonómico</td>
+      <td>“Monitoreo”</td>
+    </tr>
+    <tr>
+      <td>Ejecución de pausa activa</td>
+      <td>“Pausa Activa”</td>
+    </tr>
+    <tr>
+      <td>Perfil de usuario</td>
+      <td>“Mi Perfil”</td>
+    </tr>
+  </tbody>
+</table>
+
+Estas etiquetas se mantendrán coherentes en todas las plataformas y vistas, asegurando que cada término represente de forma precisa la funcionalidad o información que agrupa. Además, se prioriza el uso de sustantivos directos y familiares para los usuarios, promoviendo una comunicación efectiva y una navegación libre de confusión dentro del ecosistema ErgoVision.
+
+#### 6.2.3 Searching Systems
+
+<p>
+El sistema de búsqueda en <strong>ErgoVision</strong> ha sido diseñado para que los usuarios puedan acceder a información relevante de manera rápida y sin complicaciones. El objetivo es evitar la sensación de pérdida dentro del volumen de datos recopilados por el sistema, especialmente en los módulos de <em>historial de monitoreo</em> y <em>estadísticas de bienestar</em>. 
+A través de diferentes medios de ayuda, filtros y opciones visuales, se garantiza una experiencia eficiente y centrada en el usuario.
+</p>
+
+<hr />
+
+<h4>Barra de búsqueda en el Historial Detallado</h4>
+<p>
+En la sección de <strong>Historial Detallado</strong>, los usuarios contarán con una <strong>barra de búsqueda avanzada</strong> que permitirá localizar sesiones específicas de monitoreo basadas en criterios como fecha, duración, nivel de corrección postural o incidencias detectadas. 
+Esta barra se ubicará en la parte superior del historial y ofrecerá resultados dinámicos que se actualizarán en tiempo real conforme el usuario escriba.
+</p>
+
+<ul>
+  <li><strong>Filtros disponibles:</strong> fecha de sesión, tipo de postura, duración de monitoreo, alertas recibidas.</li>
+  <li><strong>Presentación de resultados:</strong> se mostrará una lista cronológica con tarjetas informativas que incluirán los datos clave de cada sesión (fecha, tiempo, incidencias y nivel de desempeño).</li>
+</ul>
+
+<hr />
+
+<h4>Búsqueda en Estadísticas</h4>
+<p>
+En la sección de <strong>Visualización de Estadísticas</strong>, el usuario podrá aplicar filtros para observar tendencias específicas en su desempeño ergonómico. 
+El sistema permitirá seleccionar periodos de tiempo (semanal, mensual, personalizado) y tipos de métricas, como <em>tiempo de buena postura</em> o <em>número de correcciones diarias</em>.
+</p>
+
+<ul>
+  <li><strong>Filtros disponibles:</strong> rango de fechas, tipo de métrica, frecuencia de pausas activas.</li>
+  <li><strong>Presentación de resultados:</strong> gráficos interactivos que se actualizarán en función de los filtros aplicados, con valores destacados y comparativos.</li>
+</ul>
+
+<hr />
+
+<h4>Filtrado en Monitoreo Activo</h4>
+<p>
+Durante el <strong>inicio de monitoreo</strong>, el usuario podrá visualizar un registro en tiempo real de sus eventos posturales. 
+Aunque el monitoreo es continuo, el sistema ofrecerá una vista filtrable para mostrar únicamente las <em>alertas recientes</em> o las <em>correcciones realizadas</em> dentro de una sesión específica. 
+Esto permitirá analizar patrones de comportamiento sin necesidad de revisar todo el flujo de datos.
+</p>
+
+<ul>
+  <li><strong>Filtros disponibles:</strong> tipo de evento (alerta o corrección), intervalo de tiempo, nivel de desviación postural.</li>
+  <li><strong>Presentación de resultados:</strong> lista de eventos en tiempo real con indicadores visuales por color según la gravedad de la desviación.</li>
+</ul>
+
+<hr />
+
+<h4>Búsqueda en Pausas Activas</h4>
+<p>
+En la sección de <strong>Pausa Activa</strong>, los usuarios podrán buscar y filtrar ejercicios o rutinas recomendadas según el tipo de molestia o zona corporal afectada. 
+Esto facilitará la selección de pausas más adecuadas para su situación actual.
+</p>
+
+<ul>
+  <li><strong>Filtros disponibles:</strong> tipo de ejercicio, duración, nivel de intensidad, zona corporal (cuello, espalda, muñeca, etc.).</li>
+  <li><strong>Presentación de resultados:</strong> catálogo visual con tarjetas de ejercicios, cada una mostrando imagen, nombre y duración.</li>
+</ul>
+
+<hr />
+
+<h4>Gestión de Perfil y Datos de Usuario</h4>
+<p>
+En las secciones de <strong>Edición de datos de usuario</strong> y <strong>Mi Perfil</strong>, el sistema permitirá realizar búsquedas internas de configuraciones o campos específicos, como datos personales o preferencias ergonómicas. 
+Esto facilitará la personalización de la experiencia sin recorrer todas las secciones manualmente.
+</p>
+
+<ul>
+  <li><strong>Filtros disponibles:</strong> nombre de campo, categoría de configuración (notificaciones, datos biométricos, preferencias de monitoreo).</li>
+  <li><strong>Presentación de resultados:</strong> lista editable con campos resaltados según la palabra clave buscada.</li>
+</ul>
+
+<hr />
+
+<h4>Accesibilidad y Experiencia de Búsqueda</h4>
+<p>
+Todos los sistemas de búsqueda de <strong>ErgoVision</strong> seguirán los principios de <em>claridad, consistencia y velocidad de respuesta</em>. 
+El usuario siempre visualizará un mensaje de ayuda o sugerencias automáticas al no encontrar resultados, reduciendo la frustración y promoviendo una navegación guiada. 
+Además, las búsquedas estarán disponibles mediante texto y comandos de voz para mejorar la accesibilidad general.
+</p>
+
+#### 6.2.4 SEO Tags and Meta Tags
+
+<p>
+Esta sección define la estrategia de optimización para motores de búsqueda (SEO) y tiendas de aplicaciones (ASO) de ErgoVision, orientada a maximizar la visibilidad del proyecto tanto en entornos web como móviles. El objetivo es asegurar que los usuarios puedan encontrar fácilmente la plataforma al buscar soluciones relacionadas con ergonomía, bienestar laboral y monitoreo postural.
+</p>
+
+<p>
+Las etiquetas propuestas buscan reflejar la esencia de ErgoVision: una herramienta digital centrada en la salud, la prevención y la productividad consciente, brindando una experiencia accesible y confiable en todos los dispositivos.
+</p>
+
+<h3>Para Landing Page Web</h3>
+<ul>
+  <li><strong>Title:</strong> ErgoVision – Mejora tu bienestar postural con tecnología inteligente</li>
+  <li><strong>Meta Description:</strong> Plataforma digital diseñada para promover hábitos ergonómicos saludables. Descubre cómo ErgoVision puede ayudarte a prevenir la fatiga y mejorar tu postura mediante recordatorios, monitoreo y pausas activas personalizadas.</li>
+  <li><strong>Meta Keywords:</strong> ergonomía, bienestar postural, salud digital, prevención de fatiga, pausas activas, monitoreo ergonómico, hábitos saludables, postura correcta</li>
+  <li><strong>Meta Author:</strong> Equipo ErgoVision</li>
+</ul>
+
+<h3>Para Página Web (Plataforma Web Interactiva)</h3>
+<ul>
+  <li><strong>Title:</strong> ErgoVision Web – Monitoreo en tiempo real y análisis ergonómico</li>
+  <li><strong>Meta Description:</strong> Accede a tu panel de control de ErgoVision, donde podrás visualizar tu historial ergonómico, revisar estadísticas personalizadas y gestionar tus hábitos de pausa activa. Optimiza tu jornada laboral con herramientas de bienestar inteligente.</li>
+  <li><strong>Meta Keywords:</strong> ergonomía en el trabajo, análisis postural, productividad saludable, monitoreo de postura, bienestar digital, panel ergonómico, hábitos laborales</li>
+  <li><strong>Meta Author:</strong> Equipo ErgoVision</li>
+</ul>
+
+<h3>Para Mobile App (App Store / Play Store)</h3>
+<ul>
+  <li><strong>App Title:</strong> ErgoVision: Monitoreo Ergonómico y Bienestar Postural</li>
+  <li><strong>App Keywords:</strong> ergonomía, postura, salud, pausas activas, bienestar, trabajo saludable, productividad, fatiga, monitoreo</li>
+  <li><strong>App Subtitle:</strong> Cuida tu postura y bienestar mientras trabajas o estudias.</li>
+  <li><strong>App Description:</strong> ErgoVision es una aplicación inteligente que te ayuda a mantener una postura correcta, prevenir la fatiga y mejorar tu bienestar diario. Ofrece monitoreo ergonómico en tiempo real, recordatorios de pausas activas y estadísticas personalizadas. ¡Optimiza tu rutina y cuida tu cuerpo con ErgoVision!</li>
+</ul>
+
+<p>
+Estas configuraciones SEO y ASO garantizan una comunicación clara y atractiva en todos los puntos de contacto digitales, fortaleciendo la identidad de ErgoVision como una solución moderna, accesible y comprometida con la salud y el bienestar de sus usuarios.
+</p>
+
+#### 6.2.5 Navigation Systems
+
+<p>
+La estructura de navegación de <strong>ErgoVision</strong> está diseñada para ofrecer una experiencia de usuario fluida, clara y accesible, permitiendo que tanto nuevos usuarios como recurrentes puedan orientarse fácilmente dentro de la plataforma. 
+La navegación busca guiar a los usuarios hacia sus objetivos principales monitorear su postura, analizar su progreso y promover hábitos saludables de manera intuitiva y sin fricciones.
+</p>
+
+<hr />
+
+<h4>Landing Page</h4>
+<p>
+La <strong>Landing Page</strong> presenta una navegación superior fija que permite explorar los principales apartados informativos y de conversión. Incluye los siguientes elementos:
+</p>
+<ul>
+  <li><strong>Inicio:</strong> Acceso directo al encabezado principal y presentación del producto.</li>
+  <li><strong>Sobre ErgoVision:</strong> Sección que explica la misión, visión y propósito del proyecto.</li>
+  <li><strong>Características:</strong> Detalle de las funcionalidades principales de la plataforma, como monitoreo postural, pausas activas y estadísticas de bienestar.</li>
+  <li><strong>Beneficios:</strong> Explicación de los impactos positivos en la salud y productividad del usuario.</li>
+  <li><strong>Equipo:</strong> Presentación del equipo de desarrollo y colaboradores del proyecto.</li>
+  <li><strong>Contacto:</strong> Enlace para comunicarse con el equipo de soporte o solicitar más información.</li>
+</ul>
+
+<hr />
+
+<h4>Web Application</h4>
+<p>
+En la <strong>versión web de ErgoVision</strong>, se utilizará una <strong>barra lateral de navegación persistente</strong>, que facilitará el acceso a las funcionalidades clave de monitoreo y gestión de usuario:
+</p>
+<ul>
+  <li><strong>Dashboard:</strong> Vista general del estado postural actual y acceso rápido a las métricas principales.</li>
+  <li><strong>Historial Detallado:</strong> Registro cronológico de sesiones y eventos de monitoreo.</li>
+  <li><strong>Estadísticas:</strong> Gráficos e indicadores sobre el progreso del usuario en el tiempo.</li>
+  <li><strong>Monitoreo:</strong> Sección para iniciar, pausar o detener el seguimiento postural.</li>
+  <li><strong>Pausas Activas:</strong> Ejercicios y recordatorios programados para reducir la fatiga.</li>
+  <li><strong>Perfil de Usuario:</strong> Edición de datos personales y preferencias ergonómicas.</li>
+  <li><strong>Configuración:</strong> Ajustes del sistema, notificaciones SMS y preferencias visuales.</li>
+</ul>
+
+<hr />
+
+<h4>Mobile Application</h4>
+<p>
+La <strong>aplicación móvil</strong> prioriza la usabilidad en pantallas pequeñas mediante una <strong>navegación por pestañas inferiores (bottom navigation bar)</strong>, complementada con un <strong>menú lateral desplegable</strong> para secciones secundarias. Las secciones principales incluyen:
+</p>
+<ul>
+  <li><strong>Inicio:</strong> Estado postural actual y acceso rápido a monitoreo.</li>
+  <li><strong>Estadísticas:</strong> Visualización compacta de métricas y progreso.</li>
+  <li><strong>Pausas:</strong> Acceso directo a ejercicios guiados y recordatorios activos.</li>
+  <li><strong>Perfil:</strong> Configuración personal, historial resumido y ajustes de usuario.</li>
+</ul>
+
+### 6.3 Landing Page UI Design
+
+#### 6.3.1 Landing Page Wireframe
+
+Para tener una primera idea de cómo lucirá nuetra landing page, se realizaron los Wireframes tanto para pantallas de escritorio como para dispositivos móviles, asegurando un correcto tamaño y distribución de los elementos y textos.
+
+ **Wireframes Desktop**  
+ 
+<img src="images/chapter-6/LandingPageDesktopWireframes.png" alt="LandingPageDesktopWireframes" width="1920px">
+
+ **Wireframes Móvil**  
+<img src="images/chapter-6/LandingPageResponsiveWireframes.png" alt="LandingPageResponsiveWireframes">
+
+Link del Figma: [https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=0-1&t=tUt2TuwoHmFV3ka1-1]
+
+#### 6.3.2 Landing Page Mock-up
+
+Posterior a la versión final de los Wireframes, se realizaron los Mockups de la Landing Page, nuevamente, tanto para pantallas de escritorio como para dispositivos móviles, siguiendo la guia de estilos establecida.
+
+ **Mockups Desktop**  
+ 
+<img src="images/chapter-6/LandingPageDesktopMockups.png" alt="LandingPageDesktopMockups">
+
+ **Mockups Móvil**  
+<img src="images/chapter-6/LandingPageResponsiveMockups.png" alt="LandingPageResponsiveMockups">
+
+Link del Figma: [https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=0-1&t=tUt2TuwoHmFV3ka1-1]
+
+### 6.4 Applications UX/UI Design
+
+#### 6.4.1 Applications Wireframes
+
+**Wireframes Web:**
+
+Los wireframes de la aplicación web de ErgoVision presentan las interfaces de registro/login, perfil editable, dashboard con resúmenes semanales, estadísticas visuales, configuración de notificaciones, calibración del sistema de cámara, monitoreo en tiempo real con detección de postura activa, y pantallas de pausas con ejercicios sugeridos y temporizadores para descansos programados.
+
+<img src="images/chapter-6/WireframesWeb.png" alt="Wireframes Web">
+
+**Wireframes Móvil:**
+
+Los wireframes de la aplicación móvil de ErgoVision muestran el flujo completo de ErgoVision desde autenticación (login/registro con datos personales y antropométricos), pasando por gestión de perfil, visualización de estadísticas con gráficos de postura y tiempos de descanso, historial de sesiones, hasta detalles específicos de cada sesión con porcentajes de postura correcta y pausas realizadas.
+
+<img src="images/chapter-6/WireframesMovil.png" alt="Wireframes Movil">
+
+Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1]
+
+#### 6.4.2 Applications Wireflow Diagrams
+
+Los wireflow diagrams de ErgoVision representan la secuencia de interacciones y pantallas que los usuarios experimentarán al navegar por la aplicación.
+
+Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1]
+
+**Edición de Datos de Usuario:** Este wireflow corresponde a cuando un usuario quiere modificar sus datos personales luego de haberse registrado.
+
+- **Web:**
+
+<img src="images/chapter-6/Wireflow1Web.png" alt="Wireflow 1 Web">
+
+- **Móvil:**
+
+<img src="images/chapter-6/Wireflow1Movil.png" alt="Wireflow 1 Movil">
+
+**Creación de Cuenta:** Este wireflow corresponde a cuando un usuario no tiene una cuenta creada y debe registrarse para empezar a utilizar la aplicación.
+
+- **Web:**
+
+<img src="images/chapter-6/Wireflow2Web.png" alt="Wireflow 2 Web">
+
+- **Móvil:**
+
+<img src="images/chapter-6/Wireflow2Movil.png" alt="Wireflow 2 Movil">
+
+**Visualización de Historial Detallado:** Este wireflow corresponde a cuando un usuario quiere visualizar los detalles de sus sesiones de monitoreo pasadas en el historial.
+
+- **Web:**
+
+<img src="images/chapter-6/Wireflow3Web.png" alt="Wireflow 3 Web">
+
+- **Móvil:**
+
+<img src="images/chapter-6/Wireflow3Movil.png" alt="Wireflow 3 Movil">
+
+**Visualización de Estadísticas:** Este wireflow corresponde a cuando un usuario quiere visualizar las estadisticas sobre tiempos de buenas/malas posturas que ha tenido en lo que va utilizando la aplicación.
+
+- **Web:**
+
+<img src="images/chapter-6/Wireflow4Web.png" alt="Wireflow 4 Web">
+
+- **Móvil:**
+
+<img src="images/chapter-6/Wireflow4Movil.png" alt="Wireflow 4 Movil">
+
+**Inicio de Monitoreo:** Este wireflow corresponde a cuando un usuario quiere iniciar una sesión de monitoreo postural en tiempo real.
+ - **Web:**
+
+<img src="images/chapter-6/Wireflow5Web.png" alt="Wireflow 5 Web">
+
+**Inicio de Pausa Activa:** Este wireflow corresponde a cuando se activa automáticamente o un usuario quiere iniciar una pausa activa con ejercicios sugeridos por la aplicación.
+ - **Web:**
+
+<img src="images/chapter-6/Wireflow6Web.png" alt="Wireflow 6 Web">
+
+**Calibración del Sistema de Cámara:** Este wireflow corresponde a cuando un usuario quiere calibrar el sistema de cámara para mejorar la detección postural.
+ - **Web:**
+
+<img src="images/chapter-6/Wireflow7Web.png" alt="Wireflow 7 Web">
+
+#### 6.4.3 Applications Mock-ups
+
+#### 6.4.4 Applications User Flow Diagrams
+
+### 6.5 Applications Prototyping
 
 ## Conclusiones
 
