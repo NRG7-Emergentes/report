@@ -179,7 +179,7 @@ del ABET – EAC - Student Outcome 3.
         - <b>Juan Diego Astonitas Diaz:</b> Expuse el proyecto en clase para la retroalimentacion del profesor, además de ser lider del proyecto para poder orientarlo al exito <br><br>
         <b>TP:</b><br>
         - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta segunda entrega comuniqué oralmente ideas y dudas para la elaboración de los wireframes y wireflows durante las reuniones grupales en discord, además, comunique activamente sobre la entrega de las tareas que se me asignaron semanalmente.<br><br>
-        - <b>Gianluca Santino Pasquale Barrenechea:</b><br><br>
+        - <b>Gianluca Santino Pasquale Barrenechea: Para esta segunda entrega comuniqué oralmente el enfoque y las decisiones tomadas para el desarrollo de las style guidelines y la information architecture del proyecto. Expliqué la estructura visual, la selección de componentes y la organización de la información durante las reuniones grupales en Discord, asegurando que todos los miembros comprendieran y aplicaran los lineamientos definidos en el diseño de la plataforma.</b><br><br>
         - <b>Godofredo Quispe Tipo:</b><br><br>
         - <b>Gabriel Alexander Casas Sanchez:</b><br><br>
         - <b>Juan Diego Astonitas Diaz:</b> <br><br>
@@ -200,7 +200,7 @@ del ABET – EAC - Student Outcome 3.
         - <b>Juan Diego Astonitas Diaz:</b> Desarrolle las user y technical stories describiendo la funcionalidad de nuestra solucion  <br><br>
         <b>TP:</b><br>
         - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta Segunda entrega realicé en el informe la redacción de las tablas de cada capa del Bounded Context IAM y Diagramas, además, comuniqué mis avances diarios en el grupo de Whatsapp.<br><br>
-        - <b>Gianluca Santino Pasquale Barrenechea:</b> <br><br>
+        - <b>Gianluca Santino Pasquale Barrenechea: Para esta segunda entrega realicé en el informe la redacción de la sección de style guidelines y la arquitectura de la información, detallando la estructura visual, los componentes principales y la organización de la plataforma. </b> <br><br>
         - <b>Godofredo Quispe Tipo:</b> <br><br>
         - <b>Gabriel Alexander Casas Sanchez:</b> <br><br>
         - <b>Juan Diego Astonitas Diaz:</b> <br><br>
