@@ -276,7 +276,7 @@ del ABET – EAC - Student Outcome 3.
 
 - ¿Cuál es el problema?
 
-El problema principal es la adopción prolongada de posturas incorrectas y la proximidad excesiva a la pantalla durante actividades frente a la computadora, conductas que, al ser imperceptibles para el usuario en el momento,  afectan negativamente la salud y productividad a largo plazo
+El problema principal es la adopción prolongada de posturas incorrectas y la proximidad excesiva a la pantalla durante actividades frente a la computadora, conductas que, al ser imperceptibles para el usuario, afectan negativamente la salud y productividad a largo plazo (Crisol-Deza, Zurita-Borja & Crisol-Deza, 2024).
 
 - ¿Cuál es la relación con la persona en cuestión?
 
@@ -304,13 +304,13 @@ El cliente utiliza el producto en su espacio fijo de trabajo o estudio, específ
 
 - ¿Quienes se ven involucrados en el problema?
 
-El problema surge en el entorno inmediato de trabajo del usuario, específicamente en su estación de computadora personal ubicada en el hogar u oficina. Se manifiesta en la interacción física entre el usuario y su puesto de trabajo, donde la disposición del espacio y los hábitos individuales propician las malas posturas.
+El problema surge en el entorno inmediato de trabajo del usuario, específicamente en su estación de computadora personal ubicada en el hogar u oficina. Se manifiesta en la interacción física entre el usuario y su puesto de trabajo, donde la disposición del espacio y los hábitos individuales propician las malas posturas (Lazo, R. y Quispe, Y., 2024).
 
 **Why**
 
 - ¿Cuáles son las causas del problema?
 
-Las causas principales del problema radican en la falta de conciencia postural inmediata y la ausencia de retroalimentación correctiva en tiempo real, agravadas por entornos de trabajo no ergonómicos y la inmersión mental en las tareas digitales.
+Las causas principales del problema radican en la falta de conciencia postural inmediata y la ausencia de retroalimentación correctiva en tiempo real, agravadas por entornos de trabajo no ergonómicos y la inmersión mental en las tareas digitales (García-Salirrosas & Sánchez-Poma, 2021).
 
 **How**
 
@@ -322,7 +322,7 @@ Los clientes usan nuestro producto bajo condiciones de iluminación ambiental no
 
 - ¿Cuál es la magnitud del problema?
 
-La magnitud del problema es considerable, dado que un estudio reciente sobre el teletrabajo en Perú encontró que el 75% de los participantes reportaron haber sufrido dolores en cuello, espalda y extremidades superiores. Esto evidencia una alta prevalencia de dolencias musculoesqueléticas directamente asociadas a posturas incorrectas y forzadas durante largos períodos frente a la computadora.
+La magnitud del problema es considerable, dado que un estudio reciente sobre el teletrabajo en Perú encontró que el 99% de los participantes reportaron haber sufrido dolores en cuello, espalda y extremidades superiores. Esto evidencia una alta prevalencia de dolencias musculoesqueléticas directamente asociadas a posturas incorrectas y forzadas durante largos períodos frente a la computadora (Asencios Román et al., 2021).
 
 #### 1.2.2 Lean UX Process
 
@@ -2762,6 +2762,10 @@ Finalmente, con Attribute-Driven Design y Domain-Driven Design, se estructuró l
 Para esta segunda entrega, se repartieron los bounded contexts y se definieron las capas de Dominio, Aplicación, Infraestructura e Interface, Se realizaron los diagramas de clases y bases de datos para cada uno y los Diagramas de Contexto generales. Ademas, se llevó a cabo la realización de la guia de estilo para nuestras aplicaciones, el diseño UX/UI de la Landing Page y los wireframes y Wireflows tanto de la aplicación web como móvil. 
 
 ## Bibliografía
+
+Asencios Román, E. A., Carreño Loza, F. A., Chilon Cruz, L., & Jiménez Toro, K. (2021). Frecuencia de dolor músculo-esquelético en personas que realizan teletrabajo en Lima entre los meses de abril a agosto del 2020. Universidad Peruana Cayetano Heredia. [https://repositorio.upch.edu.pe/handle/20.500.12866/9434](https://repositorio.upch.edu.pe/handle/20.500.12866/9434)
+
+García-Salirrosas, E. E., & Sánchez-Poma, R. A. (2021). Prevalencia de trastornos musculoesqueléticos en docentes universitarios que realizan teletrabajo en tiempos de COVID-19. Anales de la Facultad de Medicina, 81(3), 301-307. [https://doi.org/10.15381/anales.v81i3.18841](https://doi.org/10.15381/anales.v81i3.18841)
 
 Lazo, R. V. H., & Quispe, Y. C. (2024). _Trastornos musculoesqueléticos asociados al teletrabajo en abogados peruanos: un estudio transversal._ Medicina y Seguridad del Trabajo, 70(275), 103-112. [https://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0465-546X2024000400005](https://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0465-546X2024000400005)
 
