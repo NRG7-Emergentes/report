@@ -2782,6 +2782,10 @@ García-Salirrosas, E. E., & Sánchez-Poma, R. A. (2021). Prevalencia de trastor
 
 Lazo, R. V. H., & Quispe, Y. C. (2024). _Trastornos musculoesqueléticos asociados al teletrabajo en abogados peruanos: un estudio transversal._ Medicina y Seguridad del Trabajo, 70(275), 103-112. [https://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0465-546X2024000400005](https://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0465-546X2024000400005)
 
+Gothelf, J., & Seiden, J. (2021). Lean UX. «O’Reilly Media, Inc.»
+
+Evans, E. (2003). Domain-Driven design: Tackling Complexity in the Heart of Software. Addison-Wesley.
+
 ## Anexos
 
 ⦁	As-Is and To-Be Scenario Mapping Miro: [https://miro.com/welcomeonboard/L3dRdFduVmtGMDZIYTkvT1NMaE16SmNpbkRQQkFZT0dKWFUwWGJyMXl2NE1JdGZ4TUhobXJRWUIydXlhS1YvRHJBdTdYMWRHWTdpRHZmbFczRUpqQXROMnV3Tm5iYXVzQ25DbUFKWG1CNitrK2g1VjRXODEza0t5djRTcGhONllhWWluRVAxeXRuUUgwWDl3Mk1qRGVRPT0hdjE=?share_link_id=734363133602](https://miro.com/welcomeonboard/L3dRdFduVmtGMDZIYTkvT1NMaE16SmNpbkRQQkFZT0dKWFUwWGJyMXl2NE1JdGZ4TUhobXJRWUIydXlhS1YvRHJBdTdYMWRHWTdpRHZmbFczRUpqQXROMnV3Tm5iYXVzQ25DbUFKWG1CNitrK2g1VjRXODEza0t5djRTcGhONllhWWluRVAxeXRuUUgwWDl3Mk1qRGVRPT0hdjE=?share_link_id=734363133602)
@@ -2796,7 +2800,13 @@ Lazo, R. V. H., & Quispe, Y. C. (2024). _Trastornos musculoesqueléticos asociad
 
 ⦁	Needfinding Interviews[https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/ESJ0SpDkAMBIp7F1FRM-3zYBa0b84g6SPKV2JWffqscDcg?e=IZbyLt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/ESJ0SpDkAMBIp7F1FRM-3zYBa0b84g6SPKV2JWffqscDcg?e=IZbyLt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
-⦁	Video Expo TB1: []()
+⦁	Plantilla Lean UX Canvas:
 
-⦁	Video Expo TP: []()
+![lean-canvas-template.webp](images/misc/lean-canvas-template.webp)
+
+⦁	Plantilla Bounded Context Canvas:
+![bounded-context-canvas.jpg](images/misc/bounded-context-canvas.jpg)
+
+⦁	Plantilla As-Is y To-Be Scenario Mapping:
+![as-is-to-be-tamplate.jpg](images/misc/as-is-to-be-tamplate.jpg)
 
