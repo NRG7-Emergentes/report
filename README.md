@@ -10,7 +10,9 @@
 
 ### **Ingeniería de software**
 
+
 ## Informe del Trabajo Parcial
+
 
 ### **Nombre del startup:** NRG7
 
@@ -26,7 +28,9 @@
 | **Godofredo Quispe Tipo**                 | u202120772 |
 | **Pasquale Barrenechea Gianluca Santino** | U202112078 |
 
+
 **Octubre 2025**
+
 
 ## Registro de Versiones del Informe
 
@@ -95,13 +99,25 @@
 
 El enlace a github del reporte del proyecto es el siguiente: [https://github.com/NRG7-Emergentes/report](https://github.com/NRG7-Emergentes/report).
 
-**TB1:**  
+![tb1-pulse.png](images/misc/tb1-pulse.png)
 
-<img src="https://github.com/NRG7-Emergentes/report/blob/6cb90733b46f82fc0e94a6ba3d723cd0741fbbfb/images/misc/CommitsTB1.png" alt="TB1 Commits">
+![tb1-contributors-1.png](images/misc/tb1-contributors-1.png)
 
-**TP:**  
+![tb1-contributors-2.png](images/misc/tb1-contributors-2.png)
 
-<img src="https://github.com/NRG7-Emergentes/report/blob/6cb90733b46f82fc0e94a6ba3d723cd0741fbbfb/images/misc/CommitsTP.png" alt="TP Commits">
+![tb1-network-1.png](images/misc/tb1-network-1.png)
+
+![tb1-network-2.png](images/misc/tb1-network-2.png)
+
+Para esta primera entrega se desarollaron los cpaítulos del 1 al 4, en la captura adjuntada se evidencia del trabajo colaborativo de github. Todos los integrantes del grupo trabajaron en el proyecto.
+
+Recapitulando los commits se dividieron de la siguiente manera:
+
+- Juan Astonitas (NeoRise456): 18 commits
+- Gabriel Casas (Al3xiel): 10 commits
+- Gianluca Pasquale (cwassointt): 6 commits
+- Godofredo Quispe (GodofredoGT): 6 commits
+- Bárbara Espinoza (MesSobble): 11 commits
 
 ## Contenido
 
@@ -2329,7 +2345,7 @@ Los escenarios refinados de atributos de calidad de ErgoVision representan una e
 | Atributo de Calidad | Estímulo                                              | Escenario Refinado                                           | Evaluación Esperada                      |
 |---------------------|-------------------------------------------------------|--------------------------------------------------------------|------------------------------------------|
 | Rendimiento         | Usuario habilita la cámara para iniciar monitoreo.    | El sistema procesa video y muestra esqueleto en <200 ms.     | 95% de las pruebas cumplen con ≤200 ms.  |
-| Usabilidad          | Usuario recibe notificación de postura incorrecta.    | El sistema despliega alerta clara y entendible en <3 s.      | 90% de usuarios comprenden y reaccionan. |
+| Usabilidad          | Usuario recibe notificación de postura incorrecta.    | El sistema despliega alerta clara y entendible en < 3 s.     | 90% de usuarios comprenden y reaccionan. |
 | Disponibilidad      | Usuario utiliza la app durante una jornada de 8 h.    | El sistema mantiene monitoreo continuo sin interrupciones.   | Uptime ≥99.5% en jornadas de 8h.         |
 | Escalabilidad       | La base de usuarios crece de 100 a 10,000 en 6 meses. | El sistema mantiene tiempos de respuesta ≤500 ms.            | Respuesta ≤500 ms con 10k usuarios.      |
 | Fiabilidad          | El sistema detecta un fallo en la conexión de cámara. | El sistema informa al usuario y reconecta en <10 s.          | Reconexión exitosa en ≥95% de casos.     |
