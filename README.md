@@ -183,13 +183,12 @@ del ABET – EAC - Student Outcome 3.
         - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta segunda entrega comuniqué oralmente ideas y dudas para la elaboración de los wireframes y wireflows durante las reuniones grupales en discord, además, comunique activamente sobre la entrega de las tareas que se me asignaron semanalmente.<br><br>
         - <b>Gianluca Santino Pasquale Barrenechea: Para esta segunda entrega comuniqué oralmente el enfoque y las decisiones tomadas para el desarrollo de las style guidelines y la information architecture del proyecto. Expliqué la estructura visual, la selección de componentes y la organización de la información durante las reuniones grupales en Discord, asegurando que todos los miembros comprendieran y aplicaran los lineamientos definidos en el diseño de la plataforma.</b><br><br>
         - <b>Godofredo Quispe Tipo:</b> Para esta entrega comuniqué oralmente ideas y dudas para la elaboración del bounded context de estadisticas y los wireframer de Landing Pages<br><br>
-        - <b>Gabriel Alexander Casas Sanchez:</b> Para esta entrega busque comunicar todas mis ideas sobre las opciones de diseño (arquitectura de bounded context y UI) de manera clara y sencilla para asegurarme el entendimiento de todos mis compañeros.
-<br><br>
-        - <b>Juan Diego Astonitas Diaz:</b> <br><br>
+        - <b>Gabriel Alexander Casas Sanchez:</b> Para esta entrega busque comunicar todas mis ideas sobre las opciones de diseño (arquitectura de bounded context y UI) de manera clara y sencilla para asegurarme el entendimiento de todos mis compañeros.<br><br>
+        - <b>Juan Diego Astonitas Diaz:</b> Para esta entrega comunique las ideas fundamentales de la solucion para poder plasmarlas en en diseño de la arquitectura con DDD <br><br>
        </td>
       <td>
         <b>TB1:</b> El equipo ha demostrado un nivel de desarrollo satisfactorio y homogéneo en esta competencia. Todos los miembros participaron activamente en las reuniones de Discord, comunicando ideas, avances y asignaciones de manera clara y efectiva. Se evidencia una comunicación colaborativa que facilitó la alineación del grupo y la revisión de la información. <br><br>
-        <b>TP:</b>
+        <b>TP: </b> Durante el TP, el equipo mantuvo una comunicación oral clara y objetiva en las reuniones de Discord, alineando la elaboración de wireframes/wireflows, las style guidelines y la arquitectura de la información. Cada integrante expuso y justificó decisiones sobre bounded contexts, diseño de UI y la definición arquitectónica con DDD, resolviendo dudas para asegurar un entendimiento compartido. Esta coordinación constante permitió integrar criterios de distintas especialidades y niveles, garantizando coherencia en el diseño y avance oportuno de las tareas.<br><br>
       </td>
     </tr>
     <tr>
@@ -205,12 +204,12 @@ del ABET – EAC - Student Outcome 3.
         - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta Segunda entrega realicé en el informe la redacción de las tablas de cada capa del Bounded Context IAM y Diagramas, además, comuniqué mis avances diarios en el grupo de Whatsapp.<br><br>
         - <b>Gianluca Santino Pasquale Barrenechea: Para esta segunda entrega realicé en el informe la redacción de la sección de style guidelines y la arquitectura de la información, detallando la estructura visual, los componentes principales y la organización de la plataforma. </b> <br><br>
         - <b>Godofredo Quispe Tipo:</b> Para esta segunda entrega, he preparado una redacción clara y concisa de la infraestructura y la descripción de los bounded contexts, asegurando que toda la audiencia comprenda la arquitectura del sistema.<br><br>
-        - <b>Gabriel Alexander Casas Sanchez:</b> Para esta entregabusque que todas las descripciones y decisiones de arquitectura con respecto al bounded context que desarrolle se entiendad de manera clara, para asi evitar fallos de comunicación entre mis compañeros<br><br>
-        - <b>Juan Diego Astonitas Diaz:</b> <br><br>
+        - <b>Gabriel Alexander Casas Sanchez:</b> Para esta entrega busque que todas las descripciones y decisiones de arquitectura con respecto al bounded context que desarrolle se entiendad de manera clara, para asi evitar fallos de comunicación entre mis compañeros<br><br>
+        - <b>Juan Diego Astonitas Diaz: </b> Comunique el diseño y funcionalidad base de la solucion a mis compañeros para poder hacer los wireframes y wireflows <br><br>
       </td>
       <td>
         <b>TB1:</b> En conjunto, las contribuciones escritas fueron fundamentales para sentar una base documental sólida, guiar la toma de decisiones y cumplir efectivamente los objetivos del proyecto.<br><br>
-        <b>TP:</b>
+        <b>TP: </b> Durante el TP, el equipo articuló de forma clara y objetiva la documentación técnica clave, incluyendo tablas y diagramas del Bounded Context IAM, style guidelines, arquitectura de la información, infraestructura y la descripción de bounded contexts, asegurando consistencia terminológica y trazabilidad de decisiones. Las redacciones se orientaron a audiencias de distintas especialidades y niveles, facilitando la comprensión de la arquitectura, la justificación de componentes y la alineación entre diseño y desarrollo. Este trabajo escrito permitió elaborar coherentemente wireframes y wireflows, reducir malentendidos y consolidar una base documental robusta para la evolución del proyecto.<br><br>
       </td>
     </tr>
   </tbody>
