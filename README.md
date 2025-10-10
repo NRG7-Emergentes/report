@@ -10,7 +10,9 @@
 
 ### **Ingeniería de software**
 
-## Informe de TB1
+
+## Informe del Trabajo Parcial
+
 
 ### **Nombre del startup:** NRG7
 
@@ -26,7 +28,9 @@
 | **Godofredo Quispe Tipo**                 | u202120772 |
 | **Pasquale Barrenechea Gianluca Santino** | U202112078 |
 
-**Septiembre 2025**
+
+**Octubre 2025**
+
 
 ## Registro de Versiones del Informe
 
@@ -43,26 +47,50 @@
     <tr>
       <td>0.1</td>
       <td>05-09-2025</td>
-      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipon y Espinoza Delgado Bárbara Antonella </td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
       <td>Desarrollo de los items: Antecedentes y problemática, Lean UX Process y Segmentos objetivo</td>
     </tr>
     <tr>
       <td>0.2</td>
       <td>09-09-2025</td>
-      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipon y Espinoza Delgado Bárbara Antonella </td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
       <td>Desarrollo de los items: Competidores, Diseño de entrevistas, Registro de entrevistas, Análisis de entrevistas, Needfinding, y ubiquitous language</td>
     </tr>
     <tr>
       <td>0.3</td>
       <td>17-09-2025</td>
-      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipon y Espinoza Delgado Bárbara Antonella </td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
       <td>Desarrollo de los items: To-Be scenario Mapping, User Stories, Impact Mapping y Product Backlog</td>
     </tr>
     <tr>
       <td>0.4</td>
-      <td>20-09-2025</td>
-      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipon y Espinoza Delgado Bárbara Antonella </td>
+      <td>30-09-2025</td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
       <td>Desarrollo de los items: Startup Profile, Strategic-Level Attribute-Driven Design, Strategic-Level Domain-Driven Design, Software Architecture y Conclusiones </td>
+    </tr>
+    <tr>
+      <td>0.5</td>
+      <td>20-09-2025</td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
+      <td>Desarrollo de los items: Tactical-Level Software Design para IAM, Notificaciones, Orquestrador, Estadisticas y Monitoreo. </td>
+    </tr>
+    <tr>
+      <td>0.6</td>
+      <td>08-09-2025</td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
+      <td>Desarrollo de los items: Style Guidelines, Information Architecture, Landing Page UI Design, Applications Wireframes y Applications Wireflow Diagrams </td>
+    </tr>
+<tr>
+      <td>1.0</td>
+      <td>08-10-2025</td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
+      <td>Desarrollo de los capitulos 5 y 6 </td>
+    </tr>
+<tr>
+      <td>1.1</td>
+      <td>10-10-2025</td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
+      <td>Agregar Anexos y bibliografia </td>
     </tr>
   </tbody>
 </table>
@@ -146,6 +174,71 @@ Recapitulando los commits se dividieron de la siguiente manera:
     - [4.3.2 Software Architecture Context Level Diagrams](#432-software-architecture-context-level-diagrams)
     - [4.3.3 Software Architecture Container Level Diagrams](#433-software-architecture-container-level-diagrams)
     - [4.3.4 Software Architecture Deployment Diagrams](#434-software-architecture-deployment-diagrams)
+- [Capítulo V: Tactical-Level Software Design](#capítulo-v-tactical-level-software-design)
+  - [5.1 Bounded Context: Orquestrador](#51-bounded-context-orquestrator)
+    - [5.1.1 Domain Layer](#511-domain-layer)
+    - [5.1.2 Interface Layer](#521-domain-layer)
+    - [5.1.3 Application Layer](#513-application-layer)
+    - [5.1.4 Infrastructure Layer](#514-infrastructure-layer)
+    - [5.1.6 Bounded Context Software Architecture Component Level Diagrams](#516-bounded-context-software-architecture-component-level-diagrams)
+    - [5.1.7 Bounded Context Software Architecture Container Level Diagrams](#517-bounded-context-software-architecture-code-level-diagrams)
+        - [5.1.7.1 Bounded Context Domain Layer Class Diagrams](#5171-bounded-context-domain-layer-class-diagrams)
+        - [5.1.7.2 Bounded Context Database Design Diagram](#5172-bounded-context-database-design-diagram)
+  - [5.2 Bounded Context: Monitoreo](#52-bounded-context-monitoreo)
+      - [5.2.1 Domain Layer](#521-domain-layer)
+      - [5.2.2 Interface Layer](#522-interface-layer)
+      - [5.2.3 Application Layer](#523-application-layer)
+      - [5.2.4 Infrastructure Layer](#524-infrastructure-layer)
+      - [5.2.6 Bounded Context Software Architecture Component Level Diagrams](#526-bounded-context-software-architecture-component-level-diagrams)
+      - [5.2.7 Bounded Context Software Architecture Container Level Diagrams](#527-bounded-context-software-architecture-code-level-diagrams)
+          - [5.2.7.1 Bounded Context Domain Layer Class Diagrams](#5271-bounded-context-domain-layer-class-diagrams)
+          - [5.2.7.2 Bounded Context Database Design Diagram](#5272-bounded-context-database-design-diagram)
+  - [5.3 Bounded Context: Estadísticas](#53-bounded-context-estadísticas)
+      - [5.3.1 Domain Layer](#531-domain-layer)
+      - [5.3.2 Interface Layer](#532-interface-layer)
+      - [5.3.3 Application Layer](#533-application-layer)
+      - [5.3.4 Infrastructure Layer](#534-infrastructure-layer)
+      - [5.3.6 Bounded Context Software Architecture Component Level Diagrams](#536-bounded-context-software-architecture-component-level-diagrams)
+      - [5.3.7 Bounded Context Software Architecture Container Level Diagrams](#537-bounded-context-software-architecture-code-level-diagrams)
+          - [5.3.7.1 Bounded Context Domain Layer Class Diagrams](#5371-bounded-context-domain-layer-class-diagrams)
+          - [5.3.7.2 Bounded Context Database Design Diagram](#5372-bounded-context-database-design-diagram)
+  - [5.4 Bounded Context: Notificaciones](#54-bounded-context-notificaciones)
+      - [5.4.1 Domain Layer](#541-domain-layer)
+      - [5.4.2 Interface Layer](#542-interface-layer)
+      - [5.4.3 Application Layer](#543-application-layer)
+      - [5.4.4 Infrastructure Layer](#544-infrastructure-layer)
+      - [5.4.6 Bounded Context Software Architecture Component Level Diagrams](#546-bounded-context-software-architecture-component-level-diagrams)
+      - [5.4.7 Bounded Context Software Architecture Container Level Diagrams](#547-bounded-context-software-architecture-code-level-diagrams)
+          - [5.4.7.1 Bounded Context Domain Layer Class Diagrams](#5471-bounded-context-domain-layer-class-diagrams)
+          - [5.4.7.2 Bounded Context Database Design Diagram](#5472-bounded-context-database-design-diagram)
+  - [5.5 Bounded Context: Identity Access Management (IAM)](#55-bounded-context-identity-access-managementiam)
+      - [5.5.1 Domain Layer](#551-domain-layer)
+      - [5.5.2 Interface Layer](#552-interface-layer)
+      - [5.5.3 Application Layer](#553-application-layer)
+      - [5.5.4 Infrastructure Layer](#554-infrastructure-layer)
+      - [5.5.6 Bounded Context Software Architecture Component Level Diagrams](#556-bounded-context-software-architecture-component-level-diagrams)
+      - [5.5.7 Bounded Context Software Architecture Container Level Diagrams](#557-bounded-context-software-architecture-code-level-diagrams)
+          - [5.5.7.1 Bounded Context Domain Layer Class Diagrams](#5571-bounded-context-domain-layer-class-diagrams)
+          - [5.5.7.2 Bounded Context Database Design Diagram](#5572-bounded-context-database-design-diagram)
+- [Capítulo VI: Solution UX Design](#capítulo-vi-solution-ux-design)
+  - [6.1 Style Guidelines](#61-style-guidelines)
+    - [6.1.1 General Style Guidelines](#611-general-style-guidelines)
+    - [6.1.2 Web, Mobile & Devices Style Guidelines](#612-web-mobile--devices-style-guidelines)
+  - [6.2 Information Architecture](#62-information-architecture)
+    - [6.2.1 Organization Systems](#621-organization-systems)
+    - [6.2.2 Labeling Systems](#622-labeling-systems)
+    - [6.2.3 Searching Systems](#623-searching-systems)
+    - [6.2.4 SEO Tags and Meta Tags](#624-seo-tags-and-meta-tags)
+    - [6.2.5 Navigation Systems](#625-navigation-systems)
+  - [6.3 Landing Page UI Design](#63-landing-page-ui-design)
+    - [6.3.1 Landing Page Wireframe](#631-landing-page-wireframe)
+    - [6.3.2 Landing Page Mock-up](#632-landing-page-mock-up)
+  - [6.4 Applications UX/UI Design](#64-applications-uxui-design)
+    - [6.4.1 Applications Wireframes](#641-applications-wireframes)
+    - [6.4.2 Applications Wireflow Diagrams](#642-applications-wireflow-diagrams)
+    - [6.4.3 Applications Mock-ups](#643-applications-mock-ups)
+    - [6.4.4 Applications User Flow Diagrams](#644-applications-user-flow-diagrams)
+  - [6.5 Applications Prototyping](#65-applications-prototyping)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -174,28 +267,42 @@ del ABET – EAC - Student Outcome 3.
       <td><strong>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería.</strong></td>
       <td>
         <b>TB1:</b><br>
-        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta primera entrega comuniqué oralmente ideas y dudas para la realización la realización del event storming los bounded contexts durante las reuniones grupales en discord, además, comunique activamente sobre la entrega de las tareas que se me asignaron semanalmente.<br>
-        - <b>Gianluca Santino Pasquale Barrenechea:</b> Durante las reuniones grupales en Discord, comuniqué de manera efectiva las ideas y avances relacionados con la realización del Event Storming y los Bounded Contexts. Además, mantuve una comunicación activa sobre la entrega de las tareas asignadas semanalmente, asegurando que todos los miembros del equipo estuvieran informados y alineados con los objetivos del proyecto.<br>
-        - <b>Godofredo Quispe Tipo:</b> Comuniqué oralmente ideas de cómo realizar partes del proyecto y expuse los resultados obtenidos, facilitando la revisión de la información por parte de los diferentes miembros del equipo.<br>
-        - <b>Gabriel Alexander Casas Sanchez:</b> Exposición de los atributos de calidad, el propósito del proyecto y dirigí el proceso de eventstorming, simplifique los términos técnicos a un lenguaje común para la correcta compresión de los asistentes. <br>
-        - <b>Juan Diego Astonitas Diaz:</b> Expuse el proyecto en clase para la retroalimentacion del profesor, además de ser lider del proyecto para poder orientarlo al exito <br>
+        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta primera entrega comuniqué oralmente ideas y dudas para la realización la realización del event storming los bounded contexts durante las reuniones grupales en discord, además, comunique activamente sobre la entrega de las tareas que se me asignaron semanalmente.<br><br>
+        - <b>Gianluca Santino Pasquale Barrenechea:</b> Durante las reuniones grupales en Discord, comuniqué de manera efectiva las ideas y avances relacionados con la realización del Event Storming y los Bounded Contexts. Además, mantuve una comunicación activa sobre la entrega de las tareas asignadas semanalmente, asegurando que todos los miembros del equipo estuvieran informados y alineados con los objetivos del proyecto.<br><br>
+        - <b>Godofredo Quispe Tipo:</b> Comuniqué oralmente ideas de cómo realizar partes del proyecto y expuse los resultados obtenidos, facilitando la revisión de la información por parte de los diferentes miembros del equipo.<br><br>
+        - <b>Gabriel Alexander Casas Sanchez:</b> Exposición de los atributos de calidad, el propósito del proyecto y dirigí el proceso de eventstorming, simplifique los términos técnicos a un lenguaje común para la correcta compresión de los asistentes. <br><br>
+        - <b>Juan Diego Astonitas Diaz:</b> Expuse el proyecto en clase para la retroalimentacion del profesor, además de ser lider del proyecto para poder orientarlo al exito <br><br>
+        <b>TP:</b><br>
+        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta segunda entrega comuniqué oralmente ideas y dudas para la elaboración de los wireframes y wireflows durante las reuniones grupales en discord, además, comunique activamente sobre la entrega de las tareas que se me asignaron semanalmente.<br><br>
+        - <b>Gianluca Santino Pasquale Barrenechea: Para esta segunda entrega comuniqué oralmente el enfoque y las decisiones tomadas para el desarrollo de las style guidelines y la information architecture del proyecto. Expliqué la estructura visual, la selección de componentes y la organización de la información durante las reuniones grupales en Discord, asegurando que todos los miembros comprendieran y aplicaran los lineamientos definidos en el diseño de la plataforma.</b><br><br>
+        - <b>Godofredo Quispe Tipo:</b> Para esta entrega comuniqué oralmente ideas y dudas para la elaboración del bounded context de estadisticas y los wireframer de Landing Pages<br><br>
+        - <b>Gabriel Alexander Casas Sanchez:</b> Para esta entrega busque comunicar todas mis ideas sobre las opciones de diseño (arquitectura de bounded context y UI) de manera clara y sencilla para asegurarme el entendimiento de todos mis compañeros.<br><br>
+        - <b>Juan Diego Astonitas Diaz:</b> Para esta entrega comunique las ideas fundamentales de la solucion para poder plasmarlas en en diseño de la arquitectura con DDD <br><br>
        </td>
       <td>
-        - El equipo ha demostrado un nivel de desarrollo satisfactorio y homogéneo en esta competencia. Todos los miembros participaron activamente en las reuniones de Discord, comunicando ideas, avances y asignaciones de manera clara y efectiva. Se evidencia una comunicación colaborativa que facilitó la alineación del grupo y la revisión de la información.
+        <b>TB1:</b> El equipo ha demostrado un nivel de desarrollo satisfactorio y homogéneo en esta competencia. Todos los miembros participaron activamente en las reuniones de Discord, comunicando ideas, avances y asignaciones de manera clara y efectiva. Se evidencia una comunicación colaborativa que facilitó la alineación del grupo y la revisión de la información. <br><br>
+        <b>TP: </b> Durante el TP, el equipo mantuvo una comunicación oral clara y objetiva en las reuniones de Discord, alineando la elaboración de wireframes/wireflows, las style guidelines y la arquitectura de la información. Cada integrante expuso y justificó decisiones sobre bounded contexts, diseño de UI y la definición arquitectónica con DDD, resolviendo dudas para asegurar un entendimiento compartido. Esta coordinación constante permitió integrar criterios de distintas especialidades y niveles, garantizando coherencia en el diseño y avance oportuno de las tareas.<br><br>
       </td>
     </tr>
     <tr>
       <td><strong>Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto eningeniería.</strong></td>
       <td>
          <b>TB1:</b><br>
-        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta primera entrega realicé en el informe la redacción de las hipótesis, el Lean UX Canvas, la entrevista a uno de los segmentos objetivos y el bounded context canvas asignado, además, comuniqué mis avances diarios en el grupo.<br>
-        - <b>Gianluca Santino Pasquale Barrenechea:</b> En la primera entrega del informe, me encargué de redactar las hipótesis, el Lean UX Canvas, la entrevista a uno de los segmentos objetivos y el Bounded Context Canvas asignado. Además, mantuve una comunicación constante sobre mis avances diarios en el grupo, asegurando que todos los miembros estuvieran al tanto del progreso del proyecto.<br>
-        - <b>Godofredo Quispe Tipo:</b> A través de un análisis de competidores y una serie de entrevistas a usuarios clave, elaboré un informe detallado que presentaba un panorama objetivo del mercado. Con base en esta documentación, formulé y comuniqué estrategias y tácticas frente a competidores, lo que sirvió como guía para la toma de decisiones en el desarrollo del producto.<br>
-        - <b>Gabriel Alexander Casas Sanchez:</b> Desarrollé los problem statement assumptions, task matrix, empathy mapping, atribute driven design process. Busque presentar los conceptos de manera clara y estructurada para facilitar la comprensión. <br>
-        - <b>Juan Diego Astonitas Diaz:</b> Desarrolle las user y technical stories describiendo la funcionalidad de nuestra solucion  <br>
+        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta primera entrega realicé en el informe la redacción de las hipótesis, el Lean UX Canvas, la entrevista a uno de los segmentos objetivos y el bounded context canvas asignado, además, comuniqué mis avances diarios en el grupo.<br><br>
+        - <b>Gianluca Santino Pasquale Barrenechea:</b> En la primera entrega del informe, me encargué de redactar las hipótesis, el Lean UX Canvas, la entrevista a uno de los segmentos objetivos y el Bounded Context Canvas asignado. Además, mantuve una comunicación constante sobre mis avances diarios en el grupo, asegurando que todos los miembros estuvieran al tanto del progreso del proyecto.<br><br>
+        - <b>Godofredo Quispe Tipo:</b> A través de un análisis de competidores y una serie de entrevistas a usuarios clave, elaboré un informe detallado que presentaba un panorama objetivo del mercado. Con base en esta documentación, formulé y comuniqué estrategias y tácticas frente a competidores, lo que sirvió como guía para la toma de decisiones en el desarrollo del producto.<br><br>
+        - <b>Gabriel Alexander Casas Sanchez:</b> Desarrollé los problem statement assumptions, task matrix, empathy mapping, atribute driven design process. Busque presentar los conceptos de manera clara y estructurada para facilitar la comprensión. <br><br>
+        - <b>Juan Diego Astonitas Diaz:</b> Desarrolle las user y technical stories describiendo la funcionalidad de nuestra solucion  <br><br>
+        <b>TP:</b><br>
+        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta Segunda entrega realicé en el informe la redacción de las tablas de cada capa del Bounded Context IAM y Diagramas, además, comuniqué mis avances diarios en el grupo de Whatsapp.<br><br>
+        - <b>Gianluca Santino Pasquale Barrenechea: Para esta segunda entrega realicé en el informe la redacción de la sección de style guidelines y la arquitectura de la información, detallando la estructura visual, los componentes principales y la organización de la plataforma. </b> <br><br>
+        - <b>Godofredo Quispe Tipo:</b> Para esta segunda entrega, he preparado una redacción clara y concisa de la infraestructura y la descripción de los bounded contexts, asegurando que toda la audiencia comprenda la arquitectura del sistema.<br><br>
+        - <b>Gabriel Alexander Casas Sanchez:</b> Para esta entrega busque que todas las descripciones y decisiones de arquitectura con respecto al bounded context que desarrolle se entiendad de manera clara, para asi evitar fallos de comunicación entre mis compañeros<br><br>
+        - <b>Juan Diego Astonitas Diaz: </b> Comunique el diseño y funcionalidad base de la solucion a mis compañeros para poder hacer los wireframes y wireflows <br><br>
       </td>
       <td>
-        - En conjunto, las contribuciones escritas fueron fundamentales para sentar una base documental sólida, guiar la toma de decisiones y cumplir efectivamente los objetivos del proyecto.
+        <b>TB1:</b> En conjunto, las contribuciones escritas fueron fundamentales para sentar una base documental sólida, guiar la toma de decisiones y cumplir efectivamente los objetivos del proyecto.<br><br>
+        <b>TP: </b> Durante el TP, el equipo articuló de forma clara y objetiva la documentación técnica clave, incluyendo tablas y diagramas del Bounded Context IAM, style guidelines, arquitectura de la información, infraestructura y la descripción de bounded contexts, asegurando consistencia terminológica y trazabilidad de decisiones. Las redacciones se orientaron a audiencias de distintas especialidades y niveles, facilitando la comprensión de la arquitectura, la justificación de componentes y la alineación entre diseño y desarrollo. Este trabajo escrito permitió elaborar coherentemente wireframes y wireflows, reducir malentendidos y consolidar una base documental robusta para la evolución del proyecto.<br><br>
       </td>
     </tr>
   </tbody>
@@ -249,7 +356,7 @@ del ABET – EAC - Student Outcome 3.
     <th colspan="2">Bárbara Espinoza Delgado</th>
   </tr>
   <tr>
-    <td> <img src="images/chapter-1/barbara-pfp.jpeg" alt="Barbara Espinoza Photo" style="width: 500px; height: auto;"> </td>
+    <td> <img src="images/chapter-1/Messo.jpeg" alt="Barbara Espinoza Photo" style="width: 500px; height: auto;"> </td>
     <td> Mi nombre es Bárbara Antonella Espinoza Delgado, mi código de estudiante es u201911727 ,tengo 23 años, soy estudiante de Ingeniería de Software de 8vo ciclo. Tengo experiencia en trabajos en equipo y me considero una persona puntual con la realización y entrega de las tareas pendientes.
  </td>
   </tr>
@@ -263,7 +370,7 @@ del ABET – EAC - Student Outcome 3.
 
 - ¿Cuál es el problema?
 
-El problema principal es la adopción prolongada de posturas incorrectas y la proximidad excesiva a la pantalla durante actividades frente a la computadora, conductas que, al ser imperceptibles para el usuario en el momento,  afectan negativamente la salud y productividad a largo plazo
+El problema principal es la adopción prolongada de posturas incorrectas y la proximidad excesiva a la pantalla durante actividades frente a la computadora, conductas que, al ser imperceptibles para el usuario, afectan negativamente la salud y productividad a largo plazo (Crisol-Deza, Zurita-Borja & Crisol-Deza, 2024).
 
 - ¿Cuál es la relación con la persona en cuestión?
 
@@ -291,13 +398,13 @@ El cliente utiliza el producto en su espacio fijo de trabajo o estudio, específ
 
 - ¿Quienes se ven involucrados en el problema?
 
-El problema surge en el entorno inmediato de trabajo del usuario, específicamente en su estación de computadora personal ubicada en el hogar u oficina. Se manifiesta en la interacción física entre el usuario y su puesto de trabajo, donde la disposición del espacio y los hábitos individuales propician las malas posturas.
+El problema surge en el entorno inmediato de trabajo del usuario, específicamente en su estación de computadora personal ubicada en el hogar u oficina. Se manifiesta en la interacción física entre el usuario y su puesto de trabajo, donde la disposición del espacio y los hábitos individuales propician las malas posturas (Lazo, R. y Quispe, Y., 2024).
 
 **Why**
 
 - ¿Cuáles son las causas del problema?
 
-Las causas principales del problema radican en la falta de conciencia postural inmediata y la ausencia de retroalimentación correctiva en tiempo real, agravadas por entornos de trabajo no ergonómicos y la inmersión mental en las tareas digitales.
+Las causas principales del problema radican en la falta de conciencia postural inmediata y la ausencia de retroalimentación correctiva en tiempo real, agravadas por entornos de trabajo no ergonómicos y la inmersión mental en las tareas digitales (García-Salirrosas & Sánchez-Poma, 2021).
 
 **How**
 
@@ -309,7 +416,7 @@ Los clientes usan nuestro producto bajo condiciones de iluminación ambiental no
 
 - ¿Cuál es la magnitud del problema?
 
-La magnitud del problema es considerable, dado que un estudio reciente sobre el teletrabajo en Perú encontró que el 75% de los participantes reportaron haber sufrido dolores en cuello, espalda y extremidades superiores. Esto evidencia una alta prevalencia de dolencias musculoesqueléticas directamente asociadas a posturas incorrectas y forzadas durante largos períodos frente a la computadora.
+La magnitud del problema es considerable, dado que un estudio reciente sobre el teletrabajo en Perú encontró que el 99% de los participantes reportaron haber sufrido dolores en cuello, espalda y extremidades superiores. Esto evidencia una alta prevalencia de dolencias musculoesqueléticas directamente asociadas a posturas incorrectas y forzadas durante largos períodos frente a la computadora (Asencios Román et al., 2021).
 
 #### 1.2.2 Lean UX Process
 
@@ -531,7 +638,6 @@ Jóvenes que dedican largas horas al estudio en computadora, ya sea en clases vi
 - **Ocupación:** Estudiantes de colegio, universidad, posgrado o cursos online
 - **Uso de tecnología:** Acostumbrados a apps académicas (Moodle, Google Classroom, Zoom, Notion) y redes sociales.
 - **Necesidades:** Prevenir dolores y fatiga por largas jornadas de estudio, contar con alertas sencillas y no invasivas, mejorar hábitos posturales para mantener el rendimiento académico.
-
 
 ## Capítulo II: Requirements Elicitation & Analysis
 
@@ -766,7 +872,7 @@ A continuación, se presenta un análisis competitivo que examina a las principa
 
 #### 2.2.2 Registro de entrevistas
 
-En esta sección registramos los puntos e ideas más importantes de las entrevistas realizadas a los trabajadores y estudiantes remotos. Los detalles completos de las entrevistas, incluyendo las grabaciones, se encuentran disponibles en el siguiente enlace: [Needfinding Interviews](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/ESJ0SpDkAMBIp7F1FRM-3zYBa0b84g6SPKV2JWffqscDcg?e=IZbyLt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+En esta sección registramos los puntos e ideas más importantes de las entrevistas realizadas a los trabajadores y estudiantes remotos. Los detalles completos de las entrevistas, incluyendo las grabaciones, se encuentran disponibles en el siguiente enlace: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/ESJ0SpDkAMBIp7F1FRM-3zYBa0b84g6SPKV2JWffqscDcg?e=IZbyLt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/ESJ0SpDkAMBIp7F1FRM-3zYBa0b84g6SPKV2JWffqscDcg?e=IZbyLt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 A continuación se presentan los detalles clave de las entrevistas realizadas a los trabajadores:
 
@@ -984,6 +1090,15 @@ Para el segmento de estudiantes remotos, las seis entrevistas revelan que la may
 
 #### 2.3.1 User Personas
 
+En esta sección se presentan las User Personas desarrolladas a partir del análisis de las entrevistas y la investigación de mercado. Estas representaciones ficticias de nuestros usuarios objetivo nos ayudan a comprender mejor sus necesidades, comportamientos y motivaciones, facilitando el diseño de soluciones centradas en el usuario.
+
+**User Persona: Trabajador Remoto**
+
+![nrg7-UPERSONA1.png](images/chapter-2/nrg7-UPERSONA1.png)
+
+**User Persona: Estudiante Remoto**
+
+![nrg7-UPERSONA2.png](images/chapter-2/nrg7-UPERSONA2.png)
 #### 2.3.2 User Task Matrix
 
 **Segmento 1: Trabajadores Remotos:**
@@ -2734,6 +2849,2040 @@ El diseño del bounded context Notificaciones se centra únicamente en gestionar
 
 ![nrg7-deployment.png](images/chapter-4/nrg7-deployment.png)
 
+## Capítulo V: Tactical-Level Software Design
+
+### 5.1 Bounded Context: Orquestrador
+#### 5.1.1 Domain Layer
+
+En la **Capa de Dominio** del Bounded Context de **Orquestrador (Orchestrator)**, los principales agregados son `AlertSetting`, `PostureSetting`, y `Calibration`. Estos encapsulan los conceptos de negocio necesarios para gestionar la configuración y calibración del sistema de monitoreo postural: configuraciones de alertas, ajustes de detección postural y parámetros de calibración personalizados.
+
+La lógica de dominio para el manejo de configuraciones y calibraciones se concentra en servicios de dominio especializados que aplican las reglas de negocio relacionadas con la gestión de preferencias del usuario, validación de parámetros de calibración y consistencia en las configuraciones del sistema.
+
+Agregado `AlertSetting`
+
+Descripción: Gestiona la configuración de alertas del monitoreo.
+
+| Atributo             | Tipo    | Visibilidad | Descripción                                                   |
+|----------------------|---------|-------------|---------------------------------------------------------------|
+| id                   | Long    | Privado     | Identificador único de la configuración.                      |
+| visualAlertsEnabled  | Boolean | Privado     | Indica si las alertas visuales están habilitadas.             |
+| soundAlertsEnabled   | Boolean | Privado     | Indica si las alertas sonoras están habilitadas.              |
+| alertVolume          | Integer | Privado     | Volumen de las alertas sonoras (0-100).                       |
+| alertInterval        | Integer | Privado     | Intervalo entre alertas consecutivas (segundos).              |
+| createdAt            | Date    | Privado     | Fecha de creación del registro.                               |
+| updatedAt            | Date    | Privado     | Fecha de última actualización.                                |
+
+| Método                             | Tipo de Retorno | Visibilidad | Descripción                        |
+|------------------------------------|-----------------|-------------|------------------------------------|
+| enableVisualAlerts()               | void            | Público     | Habilita las alertas visuales.     |
+| disableVisualAlerts()              | void            | Público     | Deshabilita las alertas visuales.  |
+| enableSoundAlerts()                | void            | Público     | Habilita las alertas sonoras.      |
+| disableSoundAlerts()               | void            | Público     | Deshabilita las alertas sonoras.   |
+| adjustVolume(Integer volume)       | void            | Público     | Ajusta el volumen (0-100).         |
+| setAlertInterval(Integer interval) | void            | Público     | Define el intervalo entre alertas. |
+
+Agregado `PostureSetting`
+
+Descripción: Configura los parámetros de detección postural.
+
+| Atributo               | Tipo    | Visibilidad | Descripción                                                   |
+|------------------------|---------|-------------|---------------------------------------------------------------|
+| id                     | Long    | Privado     | Identificador único de la configuración.                      |
+| postureSensitivity     | Integer | Privado     | Sensibilidad general de detección (0-100).                    |
+| shoulderAngleThreshold | Integer | Privado     | Umbral angular para detección de hombros.                     |
+| headAngleThreshold     | Integer | Privado     | Umbral angular para detección de cabeza.                      |
+| samplingFrequency      | Integer | Privado     | Frecuencia de muestreo (segundos).                            |
+| showSkeleton           | Boolean | Privado     | Muestra/oculta el esqueleto en la interfaz.                   |
+| createdAt              | Date    | Privado     | Fecha de creación del registro.                               |
+| updatedAt              | Date    | Privado     | Fecha de última actualización.                                |
+
+| Método                              | Tipo de Retorno | Visibilidad | Descripción                                      |
+|-------------------------------------|-----------------|-------------|--------------------------------------------------|
+| adjustSensitivity(Integer level)    | void            | Público     | Ajusta la sensibilidad de detección.             |
+| setShoulderThreshold(Integer angle) | void            | Público     | Define umbral angular para hombros.              |
+| setHeadThreshold(Integer angle)     | void            | Público     | Define umbral angular para cabeza.               |
+| setSamplingFrequency(Integer freq)  | void            | Público     | Establece frecuencia de muestreo.                |
+| toggleSkeletonVisibility()          | void            | Público     | Alterna visibilidad del esqueleto.               |
+
+Agregado `Calibration`
+
+Descripción: Almacena y gestiona los resultados de calibración del usuario.
+
+| Atributo           | Tipo               | Visibilidad | Descripción                                                   |
+|--------------------|--------------------|-------------|---------------------------------------------------------------|
+| id                 | Long               | Privado     | Identificador único de la calibración.                        |
+| userId             | Long               | Privado     | Identificador del usuario asociado.                           |
+| calibrationDate    | Date               | Privado     | Fecha de realización de la calibración.                       |
+| referenceLandmarks | ReferenceLandmarks | Privado     | Puntos de referencia corporales establecidos.                 |
+| postureThresholds  | PostureThresholds  | Privado     | Umbrales posturales personalizados.                           |
+| cameraDistance     | Float              | Privado     | Distancia estimada a la cámara.                               |
+| cameraVisibility   | Integer            | Privado     | Nivel de visibilidad de la cámara (0-100).                    |
+| cameraResolution   | String             | Privado     | Resolución de cámara utilizada.                               |
+| calibrationScore   | Integer            | Privado     | Puntuación de calidad de calibración (0-100).                 |
+| createdAt          | Date               | Privado     | Fecha de creación del registro.                               |
+| updatedAt          | Date               | Privado     | Fecha de última actualización.                                |
+
+| Método                                                  | Tipo de Retorno | Visibilidad | Descripción                             |
+|---------------------------------------------------------|-----------------|-------------|-----------------------------------------|
+| updateLandmarks(ReferenceLandmarks landmarks)           | void            | Público     | Actualiza los puntos de referencia.     |
+| adjustThresholds(PostureThresholds thresholds)          | void            | Público     | Modifica los umbrales posturales.       |
+| setCameraParameters(Float distance, Integer visibility) | void            | Público     | Configura parámetros de cámara.         |
+| validateCalibration()                                   | Boolean         | Público     | Valida la integridad de la calibración. |
+
+Entidad `ReferenceLandmarks`
+
+Descripción: Representa los puntos de referencia corporales para calibración.
+
+| Atributo  | Tipo           | Visibilidad | Descripción                           |
+|-----------|----------------|-------------|---------------------------------------|
+| landmarks | List<Landmark> | Privado     | Colección de puntos clave del cuerpo. |
+
+Objeto de Valor `Landmark`
+
+Descripción: Representa un punto clave del cuerpo en el espacio 3D.
+
+| Atributo   | Tipo    | Descripción                             |
+|------------|---------|-----------------------------------------|
+| x          | Integer | Coordenada X en el espacio.             |
+| y          | Integer | Coordenada Y en el espacio.             |
+| z          | Integer | Coordenada Z en el espacio.             |
+| visibility | Integer | Nivel de visibilidad/confianza (0-100). |
+
+Objeto de Valor `PostureThresholds`
+
+Descripción: Define los umbrales angulares para detección de postura.
+
+| Atributo      | Tipo    | Descripción                          |
+|---------------|---------|--------------------------------------|
+| shoulderAngle | Integer | Umbral para ángulo de hombros.       |
+| neckAngle     | Integer | Umbral para ángulo de cuello.        |
+| backAngle     | Integer | Umbral para ángulo de espalda.       |
+| headTilt      | Integer | Umbral para inclinación de cabeza.   |
+
+Servicio de Dominio: `AlertsSettingCommandService`
+
+Descripción: Gestiona las operaciones de escritura para configuraciones de alertas.
+
+| Método                                       | Tipo de Retorno | Descripción                                               |
+|----------------------------------------------|-----------------|-----------------------------------------------------------|
+| handle(CreateAlertsSettingCommand command)   | void            | Crea una nueva configuración de alertas.                  |
+| handle(UpdateAlertsSettingCommand command)   | void            | Actualiza una configuración existente.                    |
+| handle(DeleteAlertsSettingCommand command)   | void            | Elimina una configuración de alertas.                     |
+
+Servicio de Dominio: `PostureSettingCommandService`
+
+Descripción: Gestiona las operaciones de escritura para configuraciones posturales.
+
+| Método                                        | Tipo de Retorno | Descripción                                               |
+|-----------------------------------------------|-----------------|-----------------------------------------------------------|
+| handle(CreatePostureSettingCommand command)   | void            | Crea una nueva configuración postural.                    |
+| handle(UpdatePostureSettingCommand command)   | void            | Actualiza una configuración existente.                    |
+| handle(DeletePostureSettingCommand command)   | void            | Elimina una configuración postural.                       |
+
+Servicio de Dominio: `CalibrationCommandService`
+
+Descripción: Gestiona las operaciones de escritura para calibraciones.
+
+| Método                                   | Tipo de Retorno | Descripción                                       |
+|------------------------------------------|-----------------|---------------------------------------------------|
+| handle(CreateCalibrationCommand command) | void            | Crea una nueva calibración.                       |
+| handle(UpdateCalibrationCommand command) | void            | Actualiza una calibración existente.              |
+| handle(DeleteCalibrationCommand command) | void            | Elimina una calibración.                          |
+
+Servicio de Dominio: `AlertsSettingQueryService`
+
+Descripción: Gestiona las consultas de configuraciones de alertas.
+
+| Método                                 | Tipo de Retorno | Descripción                                       |
+|----------------------------------------|-----------------|---------------------------------------------------|
+| handle(GetUserAlertSettingQuery query) | AlertSetting    | Recupera la configuración de alertas del usuario. |
+
+Servicio de Dominio: `PostureSettingQueryService`
+
+Descripción: Gestiona las consultas de configuraciones posturales.
+
+| Método                                   | Tipo de Retorno | Descripción                                     |
+|------------------------------------------|-----------------|-------------------------------------------------|
+| handle(GetUserPostureSettingQuery query) | PostureSetting  | Recupera la configuración postural del usuario. |
+
+Servicio de Dominio: `CalibrationQueryService`
+
+Descripción: Gestiona las consultas de calibraciones.
+
+| Método                                | Tipo de Retorno | Descripción                          |
+|---------------------------------------|-----------------|--------------------------------------|
+| handle(GetUserCalibrationQuery query) | Calibration     | Recupera la calibración del usuario. |
+
+#### 5.1.2 Interface Layer
+
+En la **Capa de Interfaz** del Bounded Context de **Orquestrador (Orchestrator)**, se exponen los controladores `AlertsSettingController`, `PostureSettingController` y `CalibrationController`, los cuales ofrecen endpoints RESTful para la gestión integral de configuraciones y calibraciones del sistema. Estos endpoints permiten al frontend obtener y modificar las configuraciones personalizadas de alertas, ajustes posturales y parámetros de calibración que son fundamentales para el correcto funcionamiento del monitoreo postural.
+
+**Justificación:**
+
+Esta capa sirve como puente entre la interfaz de usuario y la lógica de negocio del sistema de orquestración, proporcionando una API robusta y segura para la personalización completa de la experiencia de monitoreo. Permite desacoplar la configuración del usuario del núcleo de monitoreo, facilitando la integración con otros bounded contexts como Monitoring (para aplicar configuraciones) y User Management (para la gestión de perfiles). Gracias a esta capa, se garantiza la consistencia en las configuraciones, la trazabilidad de los cambios y la capacidad de personalización que requiere el sistema para adaptarse a las necesidades específicas de cada usuario.
+
+Controlador: `AlertsSettingController`
+
+| Método               | Verbo HTTP | Ruta                                                    | Descripción                                              |
+|----------------------|------------|---------------------------------------------------------|----------------------------------------------------------|
+| getAlertsSetting     | GET        | /api/v1/orchestrator/alerts-settings/{userId}           | Obtiene la configuración de alertas del usuario          |
+| createAlertsSetting  | POST       | /api/v1/orchestrator/alerts-settings                    | Crea una nueva configuración de alertas                  |
+| updateAlertsSetting  | PUT        | /api/v1/orchestrator/alerts-settings/{settingId}        | Actualiza la configuración de alertas existente          |
+| deleteAlertsSetting  | DELETE     | /api/v1/orchestrator/alerts-settings/{settingId}        | Elimina la configuración de alertas                      |
+
+Controlador: `PostureSettingController`
+
+| Método                | Verbo HTTP | Ruta                                                     | Descripción                                              |
+|-----------------------|------------|----------------------------------------------------------|----------------------------------------------------------|
+| getPostureSetting     | GET        | /api/v1/orchestrator/posture-settings/{userId}           | Obtiene la configuración postural del usuario            |
+| createPostureSetting  | POST       | /api/v1/orchestrator/posture-settings                    | Crea una nueva configuración postural                    |
+| updatePostureSetting  | PUT        | /api/v1/orchestrator/posture-settings/{settingId}        | Actualiza la configuración postural existente            |
+| deletePostureSetting  | DELETE     | /api/v1/orchestrator/posture-settings/{settingId}        | Elimina la configuración postural                        |
+
+Controlador: `CalibrationController`
+
+| Método             | Verbo HTTP | Ruta                                               | Descripción                                      |
+|--------------------|------------|----------------------------------------------------|--------------------------------------------------|
+| getUserCalibration | GET        | /api/v1/orchestrator/calibrations/{userId}         | Obtiene la calibración del usuario               |
+| createCalibration  | POST       | /api/v1/orchestrator/calibrations                  | Crea una nueva calibración                       |
+| updateCalibration  | PUT        | /api/v1/orchestrator/calibrations/{calibrationId}  | Actualiza la calibración existente               |
+| deleteCalibration  | DELETE     | /api/v1/orchestrator/calibrations/{calibrationId}  | Elimina la calibración                           |
+
+#### 5.1.3 Application Layer
+
+En el **Application Layer** del Bounded Context de **Orquestrador (Orchestrator)** se implementan los servicios de aplicación que orquestan los casos de uso principales relacionados con la gestión de configuraciones y calibraciones: creación, actualización y eliminación de configuraciones de alertas, ajustes posturales y parámetros de calibración, así como la recuperación de estas configuraciones para su uso en el sistema de monitoreo. Los servicios de comandos (`CommandServiceImpl`) gestionan las operaciones de modificación del dominio, mientras que los servicios de consultas (`QueryServiceImpl`) se centran en la recuperación eficiente de la información de configuración.
+
+**Justificación**
+
+La separación de la lógica en servicios de Command y Query sigue el patrón CQRS, permitiendo un diseño más claro, mantenible y escalable. Esta división facilita la optimización independiente de las operaciones de lectura y escritura, soporta la integración con otros bounded contexts como Monitoring (para aplicar configuraciones) y User Management (para la gestión de perfiles), y permite la evolución futura del sistema con bajo acoplamiento. Además, garantiza la consistencia y trazabilidad de las configuraciones personalizadas de cada usuario.
+
+`AlertsSettingCommandServiceImpl`
+
+Descripción: Implementación del servicio de comandos encargado de gestionar el ciclo de vida de las configuraciones de alertas del usuario.
+
+| Método                                       | Descripción                                                  |
+|----------------------------------------------|--------------------------------------------------------------|
+| handle(CreateAlertsSettingCommand)           | Crea una nueva configuración de alertas para un usuario.     |
+| handle(UpdateAlertsSettingCommand)           | Actualiza una configuración de alertas existente.            |
+| handle(DeleteAlertsSettingCommand)           | Elimina una configuración de alertas del sistema.            |
+
+`PostureSettingCommandServiceImpl`
+
+Descripción: Implementación del servicio de comandos encargado de gestionar el ciclo de vida de las configuraciones posturales del usuario.
+
+| Método                                        | Descripción                                                  |
+|-----------------------------------------------|--------------------------------------------------------------|
+| handle(CreatePostureSettingCommand)           | Crea una nueva configuración postural para un usuario.       |
+| handle(UpdatePostureSettingCommand)           | Actualiza una configuración postural existente.              |
+| handle(DeletePostureSettingCommand)           | Elimina una configuración postural del sistema.              |
+
+`CalibrationCommandServiceImpl`
+
+Descripción: Implementación del servicio de comandos encargado de gestionar el ciclo de vida de las calibraciones del usuario.
+
+| Método                                   | Descripción                                              |
+|------------------------------------------|----------------------------------------------------------|
+| handle(CreateCalibrationCommand)         | Crea una nueva calibración para un usuario.              |
+| handle(UpdateCalibrationCommand)         | Actualiza una calibración existente.                     |
+| handle(DeleteCalibrationCommand)         | Elimina una calibración del sistema.                     |
+
+`AlertsSettingQueryServiceImpl`
+
+Descripción: Implementación del servicio de consultas encargado de recuperar información de configuraciones de alertas.
+
+| Método                                 | Descripción                                                  |
+|----------------------------------------|--------------------------------------------------------------|
+| handle(GetUserAlertSettingQuery)       | Recupera la configuración de alertas de un usuario específico. |
+
+`PostureSettingQueryServiceImpl`
+
+Descripción: Implementación del servicio de consultas encargado de recuperar información de configuraciones posturales.
+
+| Método                                  | Descripción                                                  |
+|-----------------------------------------|--------------------------------------------------------------|
+| handle(GetUserPostureSettingQuery)      | Recupera la configuración postural de un usuario específico.   |
+
+`CalibrationQueryServiceImpl`
+
+Descripción: Implementación del servicio de consultas encargado de recuperar información de calibraciones.
+
+| Método                             | Descripción                                              |
+|------------------------------------|----------------------------------------------------------|
+| handle(GetUserCalibrationQuery)    | Recupera la calibración de un usuario específico.        |
+
+#### 5.1.4 Infrastructure Layer
+
+En la **Capa de Infraestructura** del Bounded Context de **Orquestrador (Orchestrator)** se implementan los repositorios que permiten la persistencia y recuperación de datos relacionados con las configuraciones de alertas, ajustes posturales y calibraciones de usuarios. Esta capa actúa como puente entre la lógica de dominio y la base de datos PostgreSQL, asegurando que los objetos del dominio se almacenen y consulten de manera eficiente y consistente.
+
+**Justificación**
+
+Separar la persistencia en la capa de infraestructura garantiza el desacoplamiento entre la lógica del dominio y la tecnología de almacenamiento. Utilizando Spring Data JPA se simplifica la implementación de repositorios, mientras que la serialización JSON para objetos de valor complejos permite flexibilidad en el esquema de datos. Esta arquitectura facilita pruebas unitarias mediante repositorios en memoria y asegura que la lógica de negocio no dependa de detalles técnicos específicos de la base de datos.
+
+`AlertSettingRepository`
+
+Descripción: Administra la persistencia y recuperación de entidades relacionadas con configuraciones de alertas.
+
+| Método                           | Descripción                                                   |
+|----------------------------------|---------------------------------------------------------------|
+| save(AlertSetting alertSetting)  | Persiste una nueva configuración o actualiza una existente.   |
+| findById(Long settingId)         | Recupera una configuración por su identificador.              |
+| findByUserId(Long userId)        | Obtiene la configuración de alertas asociada a un usuario.    |
+| delete(Long settingId)           | Elimina una configuración de alertas registrada.              |
+
+`PostureSettingRepository`
+
+Descripción: Gestiona la persistencia de las configuraciones posturales personalizadas.
+
+| Método                               | Descripción                                                   |
+|--------------------------------------|---------------------------------------------------------------|
+| save(PostureSetting postureSetting)  | Persiste una configuración postural detectada.                |
+| findById(Long settingId)             | Recupera una configuración por su ID.                         |
+| findByUserId(Long userId)            | Obtiene la configuración postural asociada a un usuario.      |
+| delete(Long settingId)               | Elimina una configuración postural de la base de datos.       |
+
+`CalibrationRepository`
+
+Descripción: Administra las calibraciones realizadas por los usuarios del sistema.
+
+| Método                         | Descripción                                                   |
+|--------------------------------|---------------------------------------------------------------|
+| save(Calibration calibration)  | Registra o actualiza una calibración.                         |
+| findById(Long calibrationId)   | Recupera una calibración por su ID.                           |
+| findByUserId(Long userId)      | Obtiene la calibración asociada a un usuario.                 |
+| findLatestByUserId(Long userId)| Recupera la calibración más reciente de un usuario.           |
+| delete(Long calibrationId)     | Elimina una calibración de la base de datos.                  |
+
+#### 5.1.6 Bounded Context Software Architecture Component Level Diagrams
+
+El diagrama de componentes del sistema ErgoVision presenta una arquitectura con cinco bounded contexts, Landing Page en HTML/CSS/JS, Web App en Angular y Mobile App en Kotlin, conectados a través de un REST API en Spring Boot con PostgreSQL e integrando servicios externos de Google MediaPipe para detección postural y Firebase Cloud Messaging para notificaciones push.
+
+<img src="images/chapter-5/ComponentDiagram.png" alt="Component Diagram">
+
+#### 5.1.7 Bounded Context Software Architecture Code Level Diagrams
+##### 5.1.7.1 Bounded Context Domain Layer Class Diagrams
+
+![domain-orquestrator-class-diagram.png](images/chapter-5/domain-orquestrator-class-diagram.png)
+
+##### 5.1.7.2 Bounded Context Database Design Diagram
+
+![oquestrator-database-diagram.png](images/chapter-5/oquestrator-database-diagram.png)
+
+### 5.2 Bounded Context: Monitoreo
+#### 5.2.1 Domain Layer
+
+En la **Capa de Dominio** del Bounded Context de **Monitoreo (Monitoring)**, los principales agregados son `MonitoringSession`, `PostureEvent`, y `ActiveBreak`. Estos encapsulan los conceptos de negocio necesarios para gestionar la captura estructurada de la actividad postural de los usuarios: seguimiento de sesiones de monitoreo, registro de eventos relevantes sobre la postura y control de pausas activas durante el proceso.
+
+La lógica de dominio para el manejo de sesiones y eventos se concentra en el servicio de dominio `MonitoringService`, que aplica las reglas de negocio relacionadas con el ciclo de vida de una sesión, la validación de eventos posturales y la administración de pausas activas, garantizando que la información se registre de manera coherente y consistente para su posterior análisis y retroalimentación.
+
+Agregado `MonitoringSession`
+
+Descripción: Representa una sesión de monitoreo iniciada por el usuario.
+
+| Atributo  | Tipo               | Visibilidad | Descripción                                                   |
+|-----------|--------------------|-------------|---------------------------------------------------------------|
+| id        | Long               | Privado     | Identificador único de la sesión.                             |
+| userId    | Long               | Privado     | Identificador del usuario asociado a la sesión.               |
+| startTime | LocalDateTime      | Privado     | Fecha y hora de inicio de la sesión.                          |
+| endTime   | LocalDateTime      | Privado     | Fecha y hora de finalización de la sesión.                    |
+| status    | SessionStatus      | Privado     | Estado actual de la sesión (eenum: ACTIVE, PAUSED, FINISHED). |
+| events    | List<PostureEvent> | Privado     | Lista de eventos posturales registrados.                      |
+| breaks    | List<ActiveBreak>  | Privado     | Lista de pausas activas durante la sesión.                    |
+
+| Método                                  | Tipo de Retorno | Visibilidad | Descripción                            |
+|-----------------------------------------|-----------------|-------------|----------------------------------------|
+| startSession()                          | void            | Público     | Inicia una nueva sesión de monitoreo.  |
+| pauseSession()                          | void            | Público     | Pausa la sesión de monitoreo.          |
+| resumeSession()                         | void            | Público     | Reanuda una sesión pausada.            |
+| endSession()                            | void            | Público     | Finaliza la sesión de monitoreo.       |
+| addPostureEvent(PostureEvent event)     | void            | Público     | Agrega un evento postural a la sesión. |
+| addActiveBreak(ActiveBreak activeBreak) | void            | Público     | Agrega una pausa activa a la sesión.   |
+
+Agregado `PostuireEvent`
+
+Descripción: Registra los eventos de postura durante la sesión.
+
+| Atributo    | Tipo                    | Visibilidad | Descripción                                                |
+|-------------|-------------------------|-------------|------------------------------------------------------------|
+| id          | Long                    | Privado     | Identificador único del evento.                            |
+| sessionId   | Long                    | Privado     | Identificador de la sesión asociada.                       |
+| timestamp   | LocalDateTime           | Privado     | Fecha y hora del evento.                                   |
+| postureType | PostureType             | Privado     | Tipo de postura detectada (enum: CORRECT, INCORRECT)       |
+| landmarks   | List<LandmarksSnapshot> | Privado     | Lista de puntos clave del cuerpo en el momento del evento. |
+
+| Método                                             | Tipo de Retorno | Visibilidad | Descripción                            |
+|----------------------------------------------------|-----------------|-------------|----------------------------------------|
+| markAsCorrect()                                    | void            | Público     | Marca el evento como postura correcta. |
+| markAsIncorrect()                                  | void            | Público     | Marca el evento como postura incorrect |
+| attachLandmarks(List<LandmarksSnapshot> landmarks) | void            | Público     | Adjunta puntos clave al evento.        |
+
+Agregado `ActiveBreak`
+
+Descripción: Gestiona pausas activas dentro de una sesión.
+
+| Atributo    | Tipo                    | Visibilidad | Descripción                                               |
+|-------------|-------------------------|-------------|-----------------------------------------------------------|
+| id          | Long                    | Privado     | Identificador único de la pausa activa.                   |
+| sessionId   | Long                    | Privado     | Identificador de la sesión asociada.                      |
+| startTime   | LocalDateTime           | Privado     | Fecha y hora de inicio de la pausa.                       |
+| endTime     | LocalDateTime           | Privado     | Fecha y hora de finalización de la pausa.                 |
+| status      | BreakStatus             | Privado     | Estado de la pausa (enum: ONGOING, SCHEDULED , FINISHED). |
+
+
+| Método       | Tipo de Retorno | Visibilidad | Descripción               |
+|--------------|-----------------|-------------|---------------------------|
+| startBreak() | void            | Público     | Inicia una pausa activa.  |
+| endBreak()   | void            | Público     | Finaliza la pausa activa. |
+
+Objeto de Valor: LandmarksSnapshot
+
+Descripción: Captura de puntos clave del cuerpo en un momento específico.
+
+| Nombre          | Descripción                                                   |
+|-----------------|---------------------------------------------------------------|
+| points          | Mapa de puntos clave (nombre del punto -> coordenadas 2D/3D). |
+| confidenceScore | Nivel de confianza en la detección de puntos (0.0 - 1.0).     |
+
+Objeto de Valor: SessionStatus
+
+Descripción: Enum que define los posibles estados de una sesión de monitoreo.
+
+| Nombre   | Descripción                           |
+|----------|---------------------------------------|
+| ACTIVE   | La sesión está en curso.              |
+| PAUSED   | La sesión está temporalmente pausada. |
+| FINISHED | La sesión ha finalizado.              |
+
+Objeto de Valor: PostureType
+
+Descripción: Enum que define los tipos de postura detectados.
+
+| Nombre    | Descripción                     |
+|-----------|---------------------------------|
+| CORRECT   | Postura considerada correcta.   |
+| INCORRECT | Postura considerada incorrecta. |
+
+Objeto de Valor: BreakStatus
+
+Descripción: Enum que define los estados de una pausa activa.
+
+| Nombre    | Descripción                                    |
+|-----------|------------------------------------------------|
+| ONGOING   | La pausa está en curso.                        |
+| SCHEDULED | La pausa está programada pero no ha comenzado. |
+| FINISHED  | La pausa ha finalizado.                        |
+
+Servicio de Dominio: `MonitoringCommandService`
+
+Descripción: Encargado de acciones que cambian el estado del sistema.
+
+| Método                                                                                   | Tipo de Retorno   | Descripción                                                  |
+|------------------------------------------------------------------------------------------|-------------------|--------------------------------------------------------------|
+| `createSession(Long userId)`                                                             | MonitoringSession | Crea e inicia una nueva sesión de monitoreo para un usuario. |
+| `addPostureEvent(Long sessionId, PostureEvent event, List<LandmarksSnapshot> landmarks)` | void              | Registra un evento postural en una sesión activa.            |
+| `scheduleActiveBreak(Long sessionId, LocalDateTime startTime, LocalDateTime endTime)`    | ActiveBreak       | Programa una pausa activa dentro de una sesión de monitoreo. |
+| `startBreak(Long breakId)`                                                               | void              | Inicia una pausa activa previamente programada.              |
+| `endBreak(Long breakId)`                                                                 | void              | Finaliza una pausa activa en curso.                          |
+| `endSession(Long sessionId)`                                                             | void              | Finaliza formalmente una sesión de monitoreo activa.         |
+
+Servicio de Dominio: `MonitoringQueryService`
+
+Descripción: Encargado de consultas y recuperación de datos, sin modificar el estado.
+
+| Método                             | Tipo de Retorno           | Descripción                                                             |
+|------------------------------------|---------------------------|-------------------------------------------------------------------------|
+| `getSession(Long sessionId)`       | MonitoringSession         | Recupera los detalles de una sesión específica.                         |
+| `getSessionsByUser(Long userId)`   | List<MonitoringSession>   | Obtiene todas las sesiones asociadas a un usuario.                      |
+| `getActiveBreaks(Long sessionId)`  | List<ActiveBreak>         | Recupera todas las pausas activas de una sesión determinada.            |
+| `getPostureEvents(Long sessionId)` | List<PostureEvent>        | Consulta los eventos posturales de una sesión.                          |
+| `getUserStatistics(Long userId)`   | MonitoringStatistics (VO) | Calcula métricas agregadas (tiempo en buena/mala postura, pausas, etc.) |
+
+#### 5.2.2 Interface Layer
+
+En la Capa de Interfaz del Bounded Context de Monitoring, se expone el controlador MonitoringController, el cual ofrece endpoints RESTful para la gestión de sesiones de monitoreo, registro de eventos posturales y pausas activas. Estos endpoints permiten iniciar, pausar y finalizar sesiones, registrar eventos de postura detectados en tiempo real desde el frontend, y administrar las pausas activas que contribuyen al bienestar del usuario durante su jornada.
+
+**Justificación:**
+
+Esta capa cumple el propósito de desacoplar la lógica de dominio del acceso externo al sistema, proporcionando una API clara, coherente y segura para que el frontend (web o móvil) pueda interactuar con el backend de manera uniforme. Asimismo, habilita la integración con otros bounded contexts como Orchestrator (para configuraciones iniciales) y Notifications (para emitir alertas de postura o pausas). Gracias a esta capa, se garantiza la trazabilidad de las sesiones de monitoreo, la persistencia confiable de eventos y la gestión adecuada de las interrupciones activas, alineando la experiencia del usuario con los objetivos de ergonomía y salud de la plataforma.
+
+Controlador: `MonitoringController`
+
+| Método            | Verbo HTTP | Ruta                                           | Descripción                              |
+|-------------------|------------|------------------------------------------------|------------------------------------------|
+| startSession      | POST       | /api/v1/monitoring/sessions/{userId}           | Inicia una nueva sesión                  |
+| pauseSession      | PATCH      | /api/v1/monitoring/sessions/{sessionId}/pause  | Pausa la sesión actual                   |
+| resumeSession     | PATCH      | /api/v1/monitoring/sessions/{sessionId}/resume | Reanuda la sesión pausada                |
+| endSession        | PATCH      | /api/v1/monitoring/sessions/{sessionId}/end    | Finaliza la sesión actual                |
+| getSession        | GET        | /api/v1/monitoring/sessions/{sessionId}        | Obtiene detalles de la sesión            |
+| getSessionsByUser | GET        | /api/v1/monitoring/sessions/user/{userId}      | Obtiene todas las sesiones de un usuario |
+| addPostureEvent   | POST       | /api/v1/monitoring/sessions/{sessionId}/events | Registra un evento postural              |
+| getPostureEvents  | GET        | /api/v1/monitoring/sessions/{sessionId}/events | Obtiene eventos posturales de la sesión  |
+| scheduleBreak     | POST       | /api/v1/monitoring/sessions/{sessionId}/breaks | Programa una pausa activa                |
+| getBreaks         | GET        | /api/v1/monitoring/sessions/{sessionId}/breaks | Obtiene pausas activas de la sesión      |
+| startBreak        | PATCH      | /api/v1/monitoring/breaks/{breakId}/start      | Inicia una pausa activa programada       |
+| endBreak          | PATCH      | /api/v1/monitoring/breaks/{breakId}/end        | Finaliza una pausa activa en curso       |
+
+#### 5.2.3 Application Layer
+
+En el Application Layer del Bounded Context de Monitoring se implementan los servicios de aplicación que orquestan los casos de uso principales: creación y finalización de sesiones de monitoreo, registro de eventos posturales, programación de pausas activas y consultas sobre sesiones, pausas y métricas. El MonitoringCommandService gestiona las operaciones de modificación del dominio, mientras que el MonitoringQueryService se centra en la recuperación de información estructurada y estadísticas de uso.
+
+**Justificación**
+
+Dividir la lógica en servicios de Command y Query asegura un diseño más claro, mantenible y escalable, siguiendo el patrón CQRS. Esta separación permite optimizar las operaciones de lectura y escritura de manera independiente, facilitar la integración con bounded contexts como Notifications o Statistics, y soportar la evolución futura del sistema con bajo acoplamiento.
+
+`MonitoringCommandServiceImpl`
+
+Descripción: Implementación del servicio de comandos encargado de gestionar el ciclo de vida de las sesiones de monitoreo, los eventos posturales y las pausas activas.
+
+| Método                                 | Descripción                                                  |
+|----------------------------------------|--------------------------------------------------------------|
+| handle(CreateMonitoringSessionCommand) | Crea e inicia una nueva sesión de monitoreo para un usuario. |
+| handle(EndMonitoringSessionCommand)    | Finaliza una sesión de monitoreo activa.                     |
+| handle(AddPostureEventCommand)         | Registra un nuevo evento postural dentro de una sesión.      |
+| handle(ScheduleActiveBreakCommand)     | Programa una pausa activa dentro de una sesión de monitoreo. |
+| handle(StartActiveBreakCommand)        | Inicia una pausa activa programada.                          |
+| handle(EndActiveBreakCommand)          | Finaliza una pausa activa en curso.                          |
+
+`MonitoringQueryServiceImpl`
+
+Descripción: Implementación del servicio de consultas encargado de recuperar información de sesiones de monitoreo, pausas activas y eventos posturales asociados a los usuarios.
+
+| Método                                 | Descripción                                                                                                   |
+|----------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| handle(GetMonitoringSessionByIdQuery)  | Recupera los detalles de una sesión de monitoreo por su ID.                                                   |
+| handle(GetSessionsByUserQuery)         | Obtiene todas las sesiones de monitoreo asociadas a un usuario.                                               |
+| handle(GetActiveBreaksBySessionQuery)  | Lista las pausas activas programadas o finalizadas de una sesión.                                             |
+| handle(GetPostureEventsBySessionQuery) | Recupera todos los eventos posturales registrados durante una sesión.                                         |
+| handle(GetMonitoringStatisticsQuery)   | Obtiene métricas agregadas del historial de sesiones (duración promedio, frecuencia de malas posturas, etc.). |
+
+#### 5.2.4 Infrastructure Layer
+
+
+En la Capa de Infraestructura del Bounded Context de Posture Monitoring se implementan los repositorios que permiten la persistencia y recuperación de datos relacionados con las sesiones de monitoreo, eventos posturales y pausas activas. Esta capa actúa como puente entre la lógica de dominio y la base de datos, asegurando que los objetos del dominio se almacenen y consulten de manera eficiente y consistente.
+
+**Justificación**
+
+Separar la persistencia en la capa de infraestructura garantiza el desacoplamiento entre la lógica del dominio y la tecnología de almacenamiento. Esto permite flexibilidad en la elección del motor de base de datos (SQL, NoSQL u otro), facilita pruebas unitarias mediante repositorios en memoria y asegura que la lógica de negocio no dependa de detalles técnicos.
+
+`MonitoringSessionRepository`
+
+Descripción: Administra la persistencia y recuperación de entidades relacionadas con sesiones de monitoreo.
+
+| Método                          | Descripción                                          |
+|---------------------------------|------------------------------------------------------|
+| save(MonitoringSession session) | Persiste una nueva sesión o actualiza una existente. |
+| findById(Long sessionId)        | Recupera una sesión por su identificador.            |
+| findByUser(Long userId)         | Obtiene todas las sesiones asociadas a un usuario.   |
+| delete(Long sessionId)          | Elimina una sesión registrada.                       |
+
+`PostureEventRepository`
+
+Descripción: Gestiona la persistencia de los eventos posturales capturados durante las sesiones.
+
+| Método                             | Descripción                                                   |
+|------------------------------------|---------------------------------------------------------------|
+| save(PostureEvent event)           | Persiste un evento postural detectado.                        |
+| findBySession(Long sessionId)      | Recupera todos los eventos asociados a una sesión específica. |
+| findCriticalEvents(Long sessionId) | Obtiene eventos de postura clasificados como críticos.        |
+
+`ActiveBreakRepository`
+
+Descripción: Administra las pausas activas programadas, iniciadas o finalizadas dentro de una sesión de monitoreo.
+
+| Método                        | Descripción                                            |
+|-------------------------------|--------------------------------------------------------|
+| save(ActiveBreak break)       | Registra o actualiza una pausa activa.                 |
+| findById(Long breakId)        | Recupera una pausa activa por su ID.                   |
+| findBySession(Long sessionId) | Lista todas las pausas activas asociadas a una sesión. |
+| delete(Long breakId)          | Elimina una pausa activa de la base de datos.          |
+
+#### 5.2.6 Bounded Context Software Architecture Component Level Diagrams
+
+El diagrama de componentes del sistema ErgoVision presenta una arquitectura con cinco bounded contexts, Landing Page en HTML/CSS/JS, Web App en Angular y Mobile App en Kotlin, conectados a través de un REST API en Spring Boot con PostgreSQL e integrando servicios externos de Google MediaPipe para detección postural y Firebase Cloud Messaging para notificaciones push.
+
+<img src="images/chapter-5/ComponentDiagram.png" alt="Component Diagram">
+
+#### 5.2.7 Bounded Context Software Architecture Code Level Diagrams
+##### 5.2.7.1 Bounded Context Domain Layer Class Diagrams
+
+<img src="images/chapter-5/monitoring-class-diagram.png" alt="Monitoring Domain Class Diagram">
+
+##### 5.2.7.2 Bounded Context Database Design Diagram
+
+<img src="images/chapter-5/monitoring-database-diagram.png" alt="Monitoring Database Design Diagram">
+
+### 5.3 Bounded Context: Estadísticas
+#### 5.3.1 Domain Layer
+
+En la **Capa de Dominio** del Bounded Context de **Statistics**, los principales agregados son `StatisticsReport`, `PostureMetrics`, `BreakMetrics` y `SessionMetrics`. Estos encapsulan los conceptos de negocio necesarios para calcular y consolidar reportes estadísticos relacionados con el tiempo de postura, pausas activas y duración de sesiones.
+
+La lógica de dominio se concentra en el servicio de dominio `StatisticsService`, que aplica las reglas de negocio para calcular métricas como el tiempo promedio de buena postura, el porcentaje de mala postura, las pausas tomadas y la duración de la última sesión, asegurando consistencia en los cálculos y coherencia en la presentación de resultados.
+
+**Agregado `StatisticsReport`**
+**Descripción:** Representa un reporte consolidado de estadísticas para un usuario en un período específico.
+
+| Atributo    | Tipo           | Visibilidad | Descripción                                            |
+|-------------|----------------|-------------|--------------------------------------------------------|
+| id          | Long           | Privado     | Identificador único del reporte.                       |
+| userId      | Long           | Privado     | Identificador del usuario al que pertenece el reporte. |
+| period      | Periodo        | Privado     | Intervalo del reporte (SEMANA, GENERAL).               |
+| posture     | PostureMetrics | Privado     | Métricas relacionadas con la postura.                  |
+| breaks      | BreakMetrics   | Privado     | Métricas relacionadas con las pausas activas.          |
+| sessions    | SessionMetrics | Privado     | Métricas relacionadas con las sesiones de monitoreo.   |
+| generatedAt | Date           | Privado     | Fecha y hora de generación del reporte.                |
+
+
+| Método                    | Tipo de Retorno | Visibilidad | Descripción                              |
+|---------------------------|-----------------|-------------|------------------------------------------|
+| calculatePostureMetrics() | PostureMetrics  | Público     | Calcula métricas de postura.             |
+| calculateBreakMetrics()   | BreakMetrics    | Público     | Calcula métricas de pausas activas.      |
+| calculateSessionMetrics() | SessionMetrics  | Público     | Calcula métricas de sesiones.            |
+| generateSummary()         | String          | Público     | Devuelve un resumen textual del reporte. |
+
+---
+
+*Objeto de Valor: `PostureMetrics`**
+**Descripción:** Contiene métricas relacionadas con la postura del usuario.
+
+| Nombre               | Tipo   | Descripción                                          |
+|----------------------|--------|------------------------------------------------------|
+| avgGoodPostureTime   | Double | Tiempo promedio de buena postura (minutos/hora/día). |
+| badPosturePercentage | Double | Porcentaje de mala postura respecto al total.        |
+
+---
+
+*Objeto de Valor: `BreakMetrics`**
+**Descripción:** Contiene métricas de pausas activas y descansos.
+
+| Nombre           | Tipo   | Descripción                                            |
+|------------------|--------|--------------------------------------------------------|
+| totalBreaks      | int    | Número total de pausas registradas.                    |
+| avgBreakDuration | Double | Duración promedio de una pausa activa (minutos/horas). |
+| avgRestTime      | Double | Tiempo promedio de descanso entre sesiones.            |
+
+---
+
+*Objeto de Valor: `SessionMetrics`**
+**Descripción:** Contiene métricas de pausas activas y descansos.
+
+| Nombre              | Tipo   | Descripción                                |
+|---------------------|--------|--------------------------------------------|
+| lastSessionDuration | Double | Duración de la última sesión de monitoreo. |
+| totalSessions       | int    | Cantidad total de sesiones registradas.    |
+
+---
+*Objeto de Valor: `ReportPeriod`**
+**Descripción:** Enum que define los períodos de un reporte.
+
+| Nombre | Descripción                |
+|--------|----------------------------|
+| WEEKLY | Estadísticas de la semana. |
+| WEEKLY | Estadísticas históricas.   |
+
+---
+
+**Servicios de Dominio:** `StatisticsService`
+ **Descripción:** Encargado de generar los reportes estadísticos a partir de los datos del BC de Monitoring.
+
+| Método                                                    | Tipo de Retorno  | Descripción                                                               |
+|-----------------------------------------------------------|------------------|---------------------------------------------------------------------------|
+| generateReport(Long userId, ReportPeriod period)          | StatisticsReport | Genera un reporte de estadísticas para un usuario en un período definido. |
+| calculatePostureMetrics(Long userId, ReportPeriod period) | PostureMetrics   | Calcula métricas de postura.                                              |
+| calculateBreakMetrics(Long userId, ReportPeriod period)   | BreakMetrics     | Calcula métricas de pausas activas y descansos.                           |
+| calculateSessionMetrics(Long userId, ReportPeriod period) | SessionMetrics   | Calcula métricas de sesiones, incluida la última sesión registrada.       |
+
+#### 5.3.2 Interface Layer
+En la Capa de Interfaz del Bounded Context de Statistics, se expone el controlador `StatisticsController`, el cual ofrece endpoints RESTful para la generación y consulta de reportes.
+
+**Justificación:**
+Esta capa desacopla la lógica de dominio del acceso externo, permitiendo a aplicaciones web, móviles u otros bounded contexts consumir los reportes de manera uniforme. Facilita la integración con **Monitoring** para extraer información base y asegura que las métricas se entreguen listas para su visualización o análisis por el usuario.
+
+**Controlador: `StatisticsController`**
+
+| Método            | Verbo HTTP | Ruta                                 | Descripción                            |
+|-------------------|------------|--------------------------------------|----------------------------------------|
+| getWeeklyReport   | GET        | /api/v1/statistics/{userId}/weekly   | Genera y retorna el reporte semanal.   |
+| getGeneralReport  | GET        | /api/v1/statistics/{userId}/general  | Genera y retorna el reporte histórico. |
+| getPostureMetrics | GET        | /api/v1/statistics/{userId}/posture  | Retorna métricas de postura.           |
+| getBreakMetrics   | GET        | /api/v1/statistics/{userId}/breaks   | Retorna métricas de pausas activas.    |
+| getSessionMetrics | GET        | /api/v1/statistics/{userId}/sessions | Retorna métricas de sesiones.          |
+
+#### 5.3.3 Application Layer
+
+En el Application Layer de Statistics se implementan los servicios de aplicación que orquestan los cálculos y consultas sobre reportes.
+
+
+**Justificación**
+
+Separar los servicios de **Command** y **Query** siguiendo el patrón **CQRS** permite claridad en el diseño:
+
+ * **Commands**: generan y actualizan reportes.
+ * **Queries**: consultan métricas específicas.
+
+---
+`StatisticsCommandServiceImpl`
+**Descripción:** Implementación del servicio de comandos encargado de generar reportes estadísticos para los usuarios.
+
+| Método                                  | Descripción                                              |
+|-----------------------------------------|----------------------------------------------------------|
+| handle(GenerateStatisticsReportCommand) | Genera un reporte consolidado para un usuario y período. |
+
+
+`StatisticsQueryServiceImpl`
+
+**Descripción:** Implementación del servicio de consultas encargado de recuperar métricas específicas relacionadas con postura, pausas y sesiones.
+
+| Método                         | Descripción                                                         |
+|--------------------------------|---------------------------------------------------------------------|
+| handle(GetWeeklyReportQuery)   | Recupera métricas semanales.                                        |
+| handle(GetGeneralReportQuery)  | Recupera métricas históricas.                                       |
+| handle(GetPostureMetricsQuery) | Obtiene métricas de postura.                                        |
+| handle(GetBreakMetricsQuery)   | Obtiene métricas de pausas activas y descansos.                     |
+| handle(GetSessionMetricsQuery) | Obtiene métricas de sesiones, incluida la última sesión registrada. |
+
+#### 5.3.4 Infrastructure Layer
+
+En la **Capa de Infraestructura** del Bounded Context de Statistics se implementan los adaptadores para conectarse al BC de Monitoring y, opcionalmente, persistir reportes ya generados para evitar recálculo.
+
+**Justificación**
+
+Separar la infraestructura asegura independencia de las tecnologías externas (bases de datos, APIs externas) y flexibilidad en la consulta de datos de *Monitoring*. Esto también permite caching de reportes, optimizando la eficiencia.
+
+---
+
+`StatisticsReportRepository`
+
+**Descripción:** Gestiona la persistencia de los reportes estadísticos generados.
+
+| Método                                                | Descripción                                                 |
+|-------------------------------------------------------|-------------------------------------------------------------|
+| save(StatisticsReport report)                         | Persiste un reporte generado.                               |
+| findById(Long reportId)                               | Recupera un reporte por su ID.                              |
+| findByUserAndPeriod(Long userId, ReportPeriod period) | Recupera un reporte generado para un usuario en un período. |
+
+---
+
+`MonitoringAdapter`
+
+**Descripción:** Adaptador para interactuar con el Bounded Context de Monitoring y recuperar datos necesarios para cálculos estadísticos.
+
+| Método                                  | Descripción                                                      |
+|-----------------------------------------|------------------------------------------------------------------|
+| fetchPostureEvents(Long userId, Period) | Consulta los eventos de postura desde Monitoring.                |
+| fetchBreaks(Long userId, Period)        | Consulta las pausas activas desde Monitoring.                    |
+| fetchSessions(Long userId, Period)      | Consulta las sesiones de monitoreo desde Monitoring.             |
+| fetchLastSession(Long userId)           | Recupera la última sesión de monitoreo registrada en Monitoring. |
+
+
+###### 5.3.6. Bounded Context Software Architecture Component Level Diagrams
+###### 5.3.7. Bounded Context Software Architecture Code Level Diagrams
+
+#### 5.3.6 Bounded Context Software Architecture Component Level Diagrams
+
+El diagrama de componentes del sistema ErgoVision presenta una arquitectura con cinco bounded contexts, Landing Page en HTML/CSS/JS, Web App en Angular y Mobile App en Kotlin, conectados a través de un REST API en Spring Boot con PostgreSQL e integrando servicios externos de Google MediaPipe para detección postural y Firebase Cloud Messaging para notificaciones push.
+
+<img src="images/chapter-5/ComponentDiagram.png" alt="Component Diagram">
+
+#### 5.3.7 Bounded Context Software Architecture Code Level Diagrams
+##### 5.3.7.1 Bounded Context Domain Layer Class Diagrams
+
+<img src="images/chapter-5/statistics-class-diagram.png" alt="Statistics Domain Class Diagram">
+
+##### 5.3.7.2 Bounded Context Database Design Diagram
+
+<img src="images/chapter-5/statistics-database-diagram.png" alt="Statistics Domain Class Diagram">
+
+### 5.4 Bounded Context: Notificaciones
+#### 5.4.1 Domain Layer
+
+<p>
+    En la <strong>Capa de Dominio</strong> del <strong>Bounded Context de Notificaciones</strong>,
+    los principales agregados son <code>Notification</code> y <code>UserPreferences</code>.
+    Estos encapsulan los conceptos de negocio necesarios para gestionar mensajes en toda la
+    plataforma: creación, validación, priorización y entrega según la configuración de cada usuario.
+  </p>
+
+  <p>
+    La lógica de dominio para el envío y validación de notificaciones se concentra en el servicio
+    de dominio <code>NotificationService</code>, que aplica las reglas de negocio (prioridades,
+    preferencias de usuario, persistencia).
+  </p>
+
+  <hr />
+
+<h6>Agregado: <code>Notification</code></h6>
+  <p><strong>Descripción:</strong> Representa una notificación generada por el sistema para un usuario específico.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Atributo</th>
+        <th>Tipo</th>
+        <th>Visibilidad</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>id</td><td>Long</td><td>Privado</td><td>Identificador único de la notificación.</td></tr>
+      <tr><td>userId</td><td>Long</td><td>Privado</td><td>Identificador del usuario destinatario.</td></tr>
+      <tr><td>title</td><td>String</td><td>Privado</td><td>Título corto de la notificación.</td></tr>
+      <tr><td>message</td><td>String</td><td>Privado</td><td>Contenido principal de la notificación.</td></tr>
+      <tr><td>type</td><td>NotificationType</td><td>Privado</td><td>Categoría de la notificación (INFO, REMINDER, ALERT).</td></tr>
+      <tr><td>status</td><td>NotificationStatus</td><td>Privado</td><td>Estado de entrega/lectura (PENDING, SENT, FAILED, READ).</td></tr>
+      <tr><td>channel</td><td>DeliveryChannel</td><td>Privado</td><td>Medio de entrega (PUSH, SMS).</td></tr>
+      <tr><td>timestamp</td><td>LocalDateTime</td><td>Privado</td><td>Fecha y hora de creación.</td></tr>
+    </tbody>
+  </table>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Método</th>
+        <th>Tipo de Retorno</th>
+        <th>Visibilidad</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>send()</td><td>void</td><td>Público</td><td>Inicia el envío de la notificación usando el canal configurado.</td></tr>
+      <tr><td>markAsRead()</td><td>void</td><td>Público</td><td>Marca la notificación como leída por el usuario.</td></tr>
+      <tr><td>isRead()</td><td>Boolean</td><td>Público</td><td>Indica si la notificación ha sido leída.</td></tr>
+      <tr><td>resend()</td><td>void</td><td>Público</td><td>Intenta reenviar una notificación fallida.</td></tr>
+    </tbody>
+  </table>
+
+  <hr />
+
+<h6>Agregado: <code>UserPreferences</code></h6>
+  <p><strong>Descripción:</strong> Encapsula la configuración de entrega de notificaciones personalizable por el usuario.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Atributo</th>
+        <th>Tipo</th>
+        <th>Visibilidad</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>userId</td><td>Long</td><td>Privado</td><td>Identificador del usuario.</td></tr>
+      <tr><td>preferredChannels</td><td>List&lt;DeliveryChannel&gt;</td><td>Privado</td><td>Canales de entrega preferidos (PUSH, SMS).</td></tr>
+      <tr><td>frequency</td><td>FrequencyType</td><td>Privado</td><td>Frecuencia de entrega (IMMEDIATE, DAILY, WEEKLY).</td></tr>
+      <tr><td>doNotDisturb</td><td>Boolean</td><td>Privado</td><td>Habilita/deshabilita notificaciones en ciertos horarios.</td></tr>
+    </tbody>
+  </table>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Método</th>
+        <th>Tipo de Retorno</th>
+        <th>Visibilidad</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>getPreferences()</td><td>UserPreferences</td><td>Público</td><td>Devuelve las preferencias del usuario.</td></tr>
+      <tr><td>updatePreferences()</td><td>void</td><td>Público</td><td>Actualiza las preferencias de notificación.</td></tr>
+      <tr><td>isChannelAllowed(DeliveryChannel)</td><td>Boolean</td><td>Público</td><td>Verifica si un canal está habilitado.</td></tr>
+    </tbody>
+  </table>
+
+  <hr />
+
+<h6>Objeto de Valor: <code>NotificationType</code></h6>
+  <table>
+    <thead>
+      <tr><th>Nombre</th><th>Descripción</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>INFO</td><td>Notificación informativa general.</td></tr>
+      <tr><td>REMINDER</td><td>Recordatorio de tareas, eventos o actividades programadas.</td></tr>
+      <tr><td>ALERT</td><td>Notificación de alta prioridad (ej. alerta crítica o evento urgente).</td></tr>
+    </tbody>
+  </table>
+
+  <hr />
+
+<h6>Objeto de Valor: <code>DeliveryChannel</code></h6>
+  <table>
+    <thead>
+      <tr><th>Nombre</th><th>Descripción</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>PUSH</td><td>Notificación push a clientes web/móvil.</td></tr>
+      <tr><td>SMS</td><td>Entrega por mensaje de texto (SMS).</td></tr>
+    </tbody>
+  </table>
+
+  <hr />
+
+<h6>Objeto de Valor: <code>NotificationStatus</code></h6>
+  <table>
+    <thead>
+      <tr><th>Nombre</th><th>Descripción</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>PENDING</td><td>En cola para procesamiento.</td></tr>
+      <tr><td>SENT</td><td>Entregado exitosamente al canal correspondiente.</td></tr>
+      <tr><td>FAILED</td><td>Entrega fallida (posible reintento).</td></tr>
+      <tr><td>READ</td><td>Marcado como leído por el usuario.</td></tr>
+    </tbody>
+  </table>
+
+  <hr />
+
+<h6>Servicio de Dominio: <code>NotificationService</code></h6>
+  <p><strong>Descripción:</strong> Encapsula las reglas de negocio para construir, validar, priorizar, persistir y despachar notificaciones según las preferencias del usuario y las políticas del sistema.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Método</th>
+        <th>Tipo de Retorno</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>sendNotification(Notification n)</td><td>void</td><td>Envía la notificación respetando preferencias, prioridad y canales disponibles.</td></tr>
+      <tr><td>validateType(Notification n)</td><td>Boolean</td><td>Verifica que el tipo de notificación sea permitido y esté correctamente formado.</td></tr>
+      <tr><td>applyUserPreferences(UserPreferences up)</td><td>void</td><td>Ajusta la lógica de entrega (canales, frecuencia, DND) antes del despacho.</td></tr>
+      <tr><td>persist(Notification n)</td><td>void</td><td>Almacena la notificación en el historial para auditoría y UI.</td></tr>
+      <tr><td>retryDelivery(Notification n)</td><td>void</td><td>Reintenta la entrega de notificaciones fallidas.</td></tr>
+    </tbody>
+  </table>
+
+#### 5.4.2 Interface Layer
+
+<p>
+  En la <strong>Capa de Interfaz</strong> del <strong>Bounded Context de Notificaciones</strong>, se expone el 
+  controlador <code>NotificationController</code>, el cual ofrece endpoints RESTful para la gestión de 
+  notificaciones. Estos incluyen listar notificaciones, consultar detalles, marcarlas como leídas, 
+  reenviarlas en caso de fallo y crear nuevas notificaciones respetando las preferencias de usuario.
+</p>
+
+<p><strong>Justificación:</strong></p>
+<p>
+  Esta capa cumple el propósito de desacoplar la lógica de dominio del acceso externo al sistema, 
+  proporcionando una API clara, coherente y segura que puede ser consumida por la aplicación móvil, 
+  la interfaz web y otros bounded contexts como <em>Analytics</em> o <em>Monitoring</em>. 
+  Asimismo, habilita la integración con funcionalidades como notificaciones emergentes, recordatorios configurados 
+  y resúmenes personalizados. Gracias a esta capa se asegura la trazabilidad de las notificaciones, 
+  la correcta aplicación de preferencias de usuario y la entrega oportuna mediante canales soportados.
+</p>
+
+<p><strong>Controlador:</strong> <code>NotificationController</code></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Verbo HTTP</th>
+      <th>Ruta</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>getUserNotifications</td>
+      <td>GET</td>
+      <td>/api/v1/notifications/user/{userId}</td>
+      <td>Devuelve todas las notificaciones de un usuario, considerando filtros de estado y tipo.</td>
+    </tr>
+    <tr>
+      <td>getNotificationById</td>
+      <td>GET</td>
+      <td>/api/v1/notifications/{notificationId}</td>
+      <td>Obtiene los detalles de una notificación específica.</td>
+    </tr>
+    <tr>
+      <td>markAsRead</td>
+      <td>PATCH</td>
+      <td>/api/v1/notifications/{notificationId}/read</td>
+      <td>Marca una notificación como leída.</td>
+    </tr>
+    <tr>
+      <td>sendNotification</td>
+      <td>POST</td>
+      <td>/api/v1/notifications</td>
+      <td>Crea y envía una nueva notificación a un usuario o grupo según sus preferencias.</td>
+    </tr>
+    <tr>
+      <td>resendNotification</td>
+      <td>PATCH</td>
+      <td>/api/v1/notifications/{notificationId}/resend</td>
+      <td>Reintenta enviar una notificación fallida.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### 5.4.3 Application Layer
+
+<p>
+  En el <strong>Application Layer</strong> del <strong>Bounded Context de Notificaciones</strong>, se implementan los servicios 
+  de aplicación que orquestan los principales casos de uso: creación, envío, reenvío y actualización de notificaciones, 
+  así como su recuperación y filtrado según estado, usuario o prioridad. 
+</p>
+
+<p>
+  El <code>NotificationCommandService</code> gestiona las operaciones de modificación del dominio, como la creación, 
+  validación y envío de notificaciones, además de marcar como leídas o reenviar en caso de fallo. 
+  Por otro lado, el <code>NotificationQueryService</code> se centra en la recuperación de información estructurada, 
+  devolviendo notificaciones según filtros de estado o tipo. 
+  Adicionalmente, los <code>Command Handlers</code> y <code>Event Handlers</code> permiten mantener un flujo reactivo 
+  y bajo acoplamiento con otros bounded contexts de la plataforma.
+</p>
+
+<p><strong>Justificación</strong></p>
+<p>
+  Dividir la lógica en servicios de Command y Query asegura un diseño más claro, mantenible y escalable, siguiendo 
+  el patrón CQRS. Esta separación permite optimizar las operaciones de lectura y escritura de manera independiente, 
+  responder a eventos del dominio de forma inmediata y extender la lógica de negocio sin afectar el núcleo de la aplicación.
+</p>
+
+<hr>
+
+<p><code>NotificationCommandServiceImpl</code></p>
+<p><strong>Descripción:</strong> Implementación del servicio de comandos encargado de gestionar el ciclo de vida de las notificaciones.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>handle(SendNotificationCommand)</td>
+      <td>Crea y envía una nueva notificación para un usuario o grupo.</td>
+    </tr>
+    <tr>
+      <td>handle(MarkNotificationAsReadCommand)</td>
+      <td>Actualiza el estado de una notificación a "leída".</td>
+    </tr>
+    <tr>
+      <td>handle(ResendNotificationCommand)</td>
+      <td>Reintenta el envío de una notificación que falló previamente.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<p><code>NotificationQueryServiceImpl</code></p>
+<p><strong>Descripción:</strong> Implementación del servicio de consultas encargado de recuperar notificaciones.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>handle(GetUserNotificationsQuery)</td>
+      <td>Devuelve todas las notificaciones de un usuario específico.</td>
+    </tr>
+    <tr>
+      <td>handle(GetUnreadNotificationsQuery)</td>
+      <td>Obtiene únicamente las notificaciones no leídas.</td>
+    </tr>
+    <tr>
+      <td>handle(GetNotificationsByStatusQuery)</td>
+      <td>Filtra notificaciones según su estado (leídas, enviadas, fallidas, etc.).</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Command Handlers</h3>
+<ul>
+  <li><strong>SendNotificationCommandHandler:</strong> Ejecuta la lógica de creación y envío de notificaciones.</li>
+  <li><strong>MarkNotificationAsReadCommandHandler:</strong> Coordina el marcado de notificaciones como leídas.</li>
+  <li><strong>ResendNotificationCommandHandler:</strong> Gestiona el reenvío de notificaciones en estado fallido.</li>
+</ul>
+
+<h3>Event Handlers</h3>
+<ul>
+  <li><strong>TaskAssignedEventHandler:</strong> Envía automáticamente una notificación al usuario asignado a una tarea.</li>
+  <li><strong>GroupJoinedEventHandler:</strong> Notifica a los miembros cuando un usuario se une a un grupo.</li>
+  <li><strong>DeadlineReminderEventHandler:</strong> Genera recordatorios cuando una tarea está próxima a vencer.</li>
+</ul>
+
+#### 5.4.4 Infrastructure Layer
+
+<p>
+  En la <strong>Infrastructure Layer</strong> del contexto de <strong>Notificaciones</strong>, se concentran las implementaciones concretas 
+  que permiten al sistema interactuar con la base de datos y con servicios externos de mensajería. 
+  Esta capa materializa los contratos definidos en el <em>Domain Layer</em>, garantizando la persistencia de notificaciones, 
+  el acceso a preferencias de usuario y la entrega real de mensajes (push o SMS).
+</p>
+
+<p>
+  Se implementan los repositorios <code>NotificationRepository</code> y <code>UserPreferencesRepository</code>, además de adaptadores 
+  para integrarse con proveedores externos como <strong>Firebase Cloud Messaging</strong> y un servicio de <strong>SMS Gateway</strong>. 
+  De esta manera, la lógica de negocio en capas superiores se mantiene desacoplada de las dependencias tecnológicas.
+</p>
+
+<h3>Justificación:</h3>
+<p>
+  Separar la infraestructura de la lógica de dominio permite reemplazar motores de base de datos o proveedores externos 
+  sin afectar la lógica central. Esto asegura un sistema modular, mantenible y fácilmente testeable, 
+  donde la infraestructura es intercambiable y configurable según las necesidades del proyecto.
+</p>
+
+<hr>
+
+<h3>Repository: <code>NotificationRepositoryImpl</code></h3>
+<p><strong>Descripción:</strong> Implementación concreta del repositorio de notificaciones, que maneja operaciones de lectura y escritura en la base de datos relacional.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>findByUserId(Long userId)</td>
+      <td>List&lt;Notification&gt;</td>
+      <td>Public</td>
+      <td>Obtiene todas las notificaciones de un usuario desde la base de datos.</td>
+    </tr>
+    <tr>
+      <td>findUnreadByUserId(Long userId)</td>
+      <td>List&lt;Notification&gt;</td>
+      <td>Public</td>
+      <td>Recupera las notificaciones no leídas de un usuario.</td>
+    </tr>
+    <tr>
+      <td>save(Notification notification)</td>
+      <td>void</td>
+      <td>Public</td>
+      <td>Guarda una nueva notificación en la base de datos.</td>
+    </tr>
+    <tr>
+      <td>updateStatus(Long notificationId, String status)</td>
+      <td>void</td>
+      <td>Public</td>
+      <td>Actualiza el estado de una notificación en la base de datos.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Repository: <code>UserPreferencesRepositoryImpl</code></h3>
+<p><strong>Descripción:</strong> Implementación del repositorio que administra las preferencias de notificación de cada usuario.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>findByUserId(Long userId)</td>
+      <td>UserPreferences</td>
+      <td>Public</td>
+      <td>Obtiene las preferencias de notificación configuradas por un usuario.</td>
+    </tr>
+    <tr>
+      <td>update(Long userId, UserPreferences preferences)</td>
+      <td>void</td>
+      <td>Public</td>
+      <td>Actualiza las preferencias de notificación en la base de datos.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Adapter: <code>FirebaseNotificationAdapter</code></h3>
+<p><strong>Descripción:</strong> Adaptador que envía notificaciones push a través de Firebase Cloud Messaging.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sendPush(Notification notification, String deviceToken)</td>
+      <td>void</td>
+      <td>Public</td>
+      <td>Envía una notificación push a un dispositivo registrado.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Adapter: <code>SmsNotificationAdapter</code></h3>
+<p><strong>Descripción:</strong> Adaptador que se encarga de enviar notificaciones por SMS usando un servicio externo de mensajería.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sendSms(Notification notification, String phoneNumber)</td>
+      <td>void</td>
+      <td>Public</td>
+      <td>Envía una notificación vía SMS al número de teléfono del usuario.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Adapter: <code>NotificationDispatcher</code></h3>
+<p><strong>Descripción:</strong> Componente orquestador que decide, según las preferencias del usuario, si la notificación se envía por push o SMS.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>dispatch(Notification notification, UserPreferences preferences)</td>
+      <td>void</td>
+      <td>Public</td>
+      <td>Determina el canal adecuado (push o SMS) y envía la notificación.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### 5.4.6 Bounded Context Software Architecture Component Level Diagrams
+El diagrama de componentes del sistema ErgoVision presenta una arquitectura con cinco bounded contexts, Landing Page en HTML/CSS/JS, Web App en Angular y Mobile App en Kotlin, conectados a través de un REST API en Spring Boot con PostgreSQL e integrando servicios externos de Google MediaPipe para detección postural y Firebase Cloud Messaging para notificaciones push.
+
+<img src="images/chapter-5/ComponentDiagram.png" alt="Component Diagram">
+
+#### 5.4.7 Bounded Context Software Architecture Code Level Diagrams
+##### 5.4.7.1 Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases muestra cómo se relacionan los elementos del bounded context de Notificaciones.
+
+<img src="images/chapter-5/noti-dc.png" alt="Notifications domain layer class diagram">
+
+##### 5.4.7.2 Bounded Context Database Design Diagram
+
+En el diagrama de base, se observa las tablas y la relación entre estas.
+
+<img src="images/chapter-5/noti-bd.png" alt="Notifications database design diagram">
+
+### 5.5 Bounded Context: Identity Access Management(IAM)
+#### 5.5.1 Domain Layer
+
+<p>
+  En la <strong>Capa de Dominio</strong> del <strong>Bounded Context de Identity and Access Management (IAM)</strong>, 
+  los principales agregados y entidades son <code>User</code> y <code>Role</code>. 
+  Estos encapsulan la lógica de negocio para la gestión de autenticación, autorización y asignación de roles en la aplicación.
+</p>
+
+<hr />
+
+<h5>Agregado: <code>User</code></h5>
+<p><strong>Descripción:</strong> Representa el agregado raíz "Usuario", que contiene los datos de la cuenta y sus roles asociados.</p>
+
+<table>
+  <thead>
+    <tr><th>Atributo</th><th>Tipo</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>email</td><td>String</td><td>Privado</td><td>Correo electrónico del usuario.</td></tr>
+    <tr><td>password</td><td>String</td><td>Privado</td><td>Contraseña del usuario.</td></tr>
+    <tr><td>roles</td><td>Set&lt;Role&gt;</td><td>Privado</td><td>Conjunto de roles asociados al usuario.</td></tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Tipo de Retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>addRole(Role role)</td><td>void</td><td>Público</td><td>Añade un rol al usuario.</td></tr>
+    <tr><td>addRoles(List&lt;Role&gt; roles)</td><td>void</td><td>Público</td><td>Añade múltiples roles al usuario.</td></tr>
+    <tr><td>getSerializedRoles()</td><td>List&lt;String&gt;</td><td>Público</td><td>Devuelve los roles del usuario como lista serializada.</td></tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h5>Entidad: <code>Role</code></h5>
+<p><strong>Descripción:</strong> Representa un rol dentro del sistema, asociado a un objeto de valor <code>Roles</code>.</p>
+
+<table>
+  <thead>
+    <tr><th>Atributo</th><th>Tipo</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>id</td><td>Long</td><td>Privado</td><td>Identificador único del rol.</td></tr>
+    <tr><td>name</td><td>Roles</td><td>Privado</td><td>Nombre del rol como value object.</td></tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Tipo de Retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>getStringName()</td><td>String</td><td>Público</td><td>Obtiene el nombre del rol como texto.</td></tr>
+    <tr><td>getDefaultRole()</td><td>Role</td><td>Público</td><td>Retorna el rol por defecto (ej: ROLE_ADMIN).</td></tr>
+    <tr><td>toRoleFromName(String name)</td><td>Role</td><td>Público</td><td>Crea un rol a partir de un nombre string.</td></tr>
+    <tr><td>validateRoleSet(List&lt;Role&gt; roles)</td><td>List&lt;Role&gt;</td><td>Público</td><td>Valida una lista de roles y asigna uno por defecto si está vacía.</td></tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h5>Objeto de Valor: <code>Roles</code></h5>
+<p><strong>Descripción:</strong> Enumeración que define los roles disponibles en el sistema.</p>
+
+<table>
+  <thead><tr><th>Nombre</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>ROLE_ADMIN</td><td>Administrador del sistema.</td></tr>
+    <tr><td>ROLE_WORKER</td><td>Trabajador que utiliza el sistema de monitoreo postural.</td></tr>
+    <tr><td>ROLE_STUDENT</td><td>Estudiante que utiliza el sistema de monitoreo postural.</td></tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h5>Servicios de Dominio</h5>
+
+<h6>Servicio: <code>RoleCommandService</code></h6>
+<p><strong>Descripción:</strong> Define operaciones para la creación e inicialización de roles.</p>
+<table>
+  <thead><tr><th>Método</th><th>Tipo de Retorno</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>handle(SeedRolesCommand command)</td><td>void</td><td>Maneja la creación inicial de roles en el sistema.</td></tr>
+  </tbody>
+</table>
+
+<h6>Servicio: <code>RoleQueryService</code></h6>
+<p><strong>Descripción:</strong> Permite consultar información de roles registrados.</p>
+<table>
+  <thead><tr><th>Método</th><th>Tipo de Retorno</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>handle(GetAllRolesQuery query)</td><td>List&lt;Role&gt;</td><td>Obtiene todos los roles registrados.</td></tr>
+    <tr><td>handle(GetRoleByNameQuery query)</td><td>Role</td><td>Busca un rol por su nombre.</td></tr>
+  </tbody>
+</table>
+
+<h6>Servicio: <code>UserCommandService</code></h6>
+<p><strong>Descripción:</strong> Define operaciones para registro y autenticación de usuarios.</p>
+<table>
+  <thead><tr><th>Método</th><th>Tipo de Retorno</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>handle(SignInCommand command)</td><td>User</td><td>Autentica a un usuario y devuelve su información con token.</td></tr>
+    <tr><td>handle(SignUpCommand command)</td><td>User</td><td>Registra un nuevo usuario</td></tr>
+  </tbody>
+</table>
+
+<h6>Servicio: <code>UserQueryService</code></h6>
+<p><strong>Descripción:</strong> Permite obtener información y verificar la existencia de usuarios.</p>
+<table>
+  <thead><tr><th>Método</th><th>Tipo de Retorno</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>handle(GetUserByIdQuery query)</td><td>User</td><td>Busca un usuario por ID.</td></tr>
+    <tr><td>handle(GetUserByUsernameQuery query)</td><td>User</td><td>Busca un usuario por nombre de usuario.</td></tr>
+  </tbody>
+</table>
+
+#### 5.5.2 Interface Layer
+
+<p>
+  El <strong>Interface Layer</strong> sirve como la capa de comunicación entre el mundo exterior 
+  (como los controladores HTTP) y la lógica del dominio. 
+  Este nivel contiene los controladores responsables de gestionar las solicitudes de los usuarios, 
+  como el inicio de sesión, registro y obtención de información de usuarios.
+</p>
+
+<h6>Controlador: <code>AuthenticationController</code></h6>
+<p><strong>Descripción:</strong> 
+El controlador <code>AuthenticationController</code> se encarga de manejar las solicitudes relacionadas con la autenticación de los usuarios. 
+A través de sus métodos, permite realizar el inicio de sesión y registro de usuarios, ya sea estudiantes o trabajadores.
+</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>signIn(SignInResource signInResource)</td><td>Maneja la solicitud de inicio de sesión.</td><td>POST /sign-in</td><td>Devuelve el recurso de usuario autenticado.</td></tr>
+    <tr><td>signUpStudent(SignUpStudentResource signUpStudentResource)</td><td>Maneja la solicitud de registro para estudiantes.</td><td>POST /sign-up/student</td><td>Devuelve el recurso del usuario creado.</td></tr>
+    <tr><td>signUpWorker(SignUpWorkerResource signUpWorkerResource)</td><td>Maneja la solicitud de registro para trabajadores.</td><td>POST /sign-up/worker</td><td>Devuelve el recurso del usuario creado.</td></tr>
+  </tbody>
+</table>
+
+<h6>Controlador: <code>RolesController</code></h6>
+<p><strong>Descripción:</strong> 
+El controlador <code>RolesController</code> permite obtener la lista de todos los roles disponibles en el sistema.
+</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>getAllRoles()</td><td>Devuelve todos los roles.</td><td>GET /roles</td><td>Lista de recursos de roles.</td></tr>
+  </tbody>
+</table>
+
+<h6>Controlador: <code>UsersController</code></h6>
+<p><strong>Descripción:</strong> 
+El controlador <code>UsersController</code> gestiona las solicitudes para obtener información sobre los usuarios registrados en el sistema.
+</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>getAllUsers()</td><td>Devuelve todos los usuarios.</td><td>GET /users</td><td>Lista de recursos de usuarios.</td></tr>
+    <tr><td>getUserById(Long userId)</td><td>Devuelve un usuario por su ID.</td><td>GET /users/{userId}</td><td>Recurso de usuario por ID.</td></tr>
+  </tbody>
+</table>
+
+#### 5.5.3 Application Layer
+
+<p>
+  El <strong>Application Layer</strong> contiene la lógica necesaria para procesar las operaciones relacionadas con las entidades, 
+  como la creación de roles y usuarios, y la gestión de sus acciones. 
+  Esta capa maneja la lógica del negocio que no forma parte del dominio central, 
+  sino que orquesta las acciones entre diferentes componentes del sistema.
+</p>
+
+<h6>Clase: <code>RoleCommandServiceImpl</code></h6>
+<p><strong>Descripción:</strong> La clase <code>RoleCommandServiceImpl</code> se encarga de manejar los comandos relacionados con los roles.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>handle(SeedRolesCommand command)</td><td>Maneja el comando para crear roles si no existen.</td><td>POST /roles/seed</td><td>Devuelve la lista de roles creados.</td></tr>
+  </tbody>
+</table>
+
+<h6>Clase: <code>UserCommandServiceImpl</code></h6>
+<p><strong>Descripción:</strong> La clase <code>UserCommandServiceImpl</code> maneja los comandos relacionados con los usuarios.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>handle(SignInCommand command)</td><td>Maneja el inicio de sesión de un usuario.</td><td>POST /sign-in</td><td>Devuelve el recurso de usuario autenticado.</td></tr>
+    <tr><td>handle(SignUpCommand command)</td><td>Maneja el registro de un usuario</td><td>POST /sign-up/</td><td>Devuelve el recurso del usuario creado.</td></tr>
+  </tbody>
+</table>
+
+<h6>Clase: <code>RoleQueryServiceImpl</code></h6>
+<p><strong>Descripción:</strong> La clase <code>RoleQueryServiceImpl</code> maneja las consultas relacionadas con los roles.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>handle(GetAllRolesQuery query)</td><td>Devuelve todos los roles.</td><td>GET /roles</td><td>Lista de recursos de roles.</td></tr>
+    <tr><td>handle(GetRoleByNameQuery query)</td><td>Devuelve un rol por su nombre.</td><td>GET /roles/{name}</td><td>Recurso de rol.</td></tr>
+  </tbody>
+</table>
+
+<h6>Clase: <code>UserQueryServiceImpl</code></h6>
+<p><strong>Descripción:</strong> La clase <code>UserQueryServiceImpl</code> maneja las consultas relacionadas con los usuarios.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>handle(GetUserByIdQuery query)</td><td>Devuelve un usuario por su ID.</td><td>GET /users/{userId}</td><td>Recurso de usuario por ID.</td></tr>
+    <tr><td>handle(GetUserByUsernameQuery query)</td><td>Devuelve un usuario por su correo electrónico.</td><td>GET /users/username/{email}</td><td>Recurso de usuario.</td></tr>
+  </tbody>
+</table>
+
+<h6>Clase: <code>ApplicationInitializer</code></h6>
+<p><strong>Descripción:</strong> La clase <code>ApplicationInitializer</code> escucha el evento 
+<code>ApplicationReadyEvent</code> y ejecuta procesos de inicialización como la creación de roles por defecto o la carga de configuraciones iniciales.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>Evento</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>onApplicationReady(ApplicationReadyEvent event)</td>
+      <td>Ejecuta procesos de inicialización al arrancar la aplicación.</td>
+      <td>ApplicationReadyEvent</td>
+      <td>Confirma la inicialización (por ejemplo, roles creados, usuario admin creado).</td>
+    </tr>
+  </tbody>
+</table>
+
+#### 5.5.4 Infrastructure Layer
+
+<p>
+  La capa de <strong>Infrastructure</strong> se encarga de la interacción con fuentes externas de datos, 
+  como bases de datos, APIs de terceros o cualquier recurso fuera del ámbito de la lógica de negocio del sistema. 
+  En este caso, los repositorios <code>UserRepository</code> y <code>RoleRepository</code> son responsables de la persistencia de los datos.
+</p>
+
+<h6>Repositorio: <code>UserRepository</code></h6>
+<p><strong>Descripción:</strong> Repositorio que maneja las operaciones de persistencia relacionadas con los usuarios en la base de datos.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>findByEmail(String email)</td><td>Busca un usuario en la base de datos utilizando su correo electrónico.</td><td>GET /users/email/{email}</td><td>Devuelve un Optional&lt;User&gt;.</td></tr>
+    <tr><td>existsByEmail(String email)</td><td>Verifica si un usuario con el correo especificado ya existe.</td><td>GET /users/exists/email/{email}</td><td>Devuelve un boolean.</td></tr>
+    <tr><td>existsById(Long userId)</td><td>Verifica si un usuario con el ID especificado ya existe.</td><td>GET /users/exists/{userId}</td><td>Devuelve un boolean.</td></tr>
+  </tbody>
+</table>
+
+<h6>Repositorio: <code>RoleRepository</code></h6>
+<p><strong>Descripción:</strong> Repositorio encargado de gestionar la persistencia de los roles del sistema.</p>
+
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th><th>HTTP</th><th>Respuesta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>findByName(Roles name)</td><td>Busca un rol en la base de datos por su nombre.</td><td>GET /roles/{name}</td><td>Devuelve un Optional&lt;Role&gt;.</td></tr>
+    <tr><td>existsByName(Roles name)</td><td>Verifica si un rol con el nombre especificado ya existe.</td><td>GET /roles/exists/{name}</td><td>Devuelve un boolean.</td></tr>
+  </tbody>
+</table>
+
+#### 5.5.6 Bounded Context Software Architecture Component Level Diagrams
+
+El diagrama de componentes del sistema ErgoVision presenta una arquitectura con cinco bounded contexts, Landing Page en HTML/CSS/JS, Web App en Angular y Mobile App en Kotlin, conectados a la base de datos PostgreSQL e integrando servicios externos de Google MediaPipe para detección postural y Firebase Cloud Messaging para notificaciones push.
+
+<img src="images/chapter-5/ComponentDiagram.png" alt="Component Diagram">
+
+#### 5.5.7 Bounded Context Software Architecture Code Level Diagrams
+##### 5.5.7.1 Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases muestra cómo se relacionan las entidades User y Role, así como los objetos de valor asociados a ellas.
+
+<img src="images/chapter-5/IAM-DC.png" alt="Diagrama de Clases - Bounded Context IAM"/>
+
+##### 5.5.7.2 Bounded Context Database Design Diagram
+
+En el diagrama de base, se observa la tabla users y roles, así como la relación entre estas.
+
+<img src="images/chapter-5/IAM-DB.png" alt="Diagrama de Base de Datos - Bounded Context IAM"/>
+
+
+## Capítulo VI: Solution UX Design
+
+### 6.1 Style Guidelines
+
+El objetivo de estas directrices es asegurar que todas las interfaces de usuario (UI) de ErgoVision mantengan una identidad visual coherente, profesional y accesible, alineada con la misión del proyecto de promover el bienestar postural y la salud ergonómica a través de la tecnología. Estas guías establecen los principios visuales y funcionales que regirán el diseño tanto del entorno web como de la aplicación móvil, garantizando consistencia en el uso de colores, tipografías, iconografía y componentes visuales.
+
+Al seguir estas directrices, ErgoVision busca ofrecer una experiencia centrada en el usuario, intuitiva y clara, que refleje confianza, bienestar y modernidad. Cada elemento visual ha sido concebido para apoyar la comprensión de la información, reducir la carga cognitiva y facilitar la interacción del usuario con las funciones de monitoreo, análisis y mejora postural.
+
+#### 6.1.1 General Style Guidelines
+
+**Branding:**  
+
+El logo de ErgoVision es un logo simple y minimalista. El color principal es el azul, el cual será el color principal que se usará para la Landing Page, Aplicación web y Aplicación Móvil.
+
+<img src="images/chapter-6/Logo1.png" alt="Logo1">
+
+**Colores:**
+
+Para ErgoVision, una plataforma dedicada al monitoreo postural y al bienestar ergonómico, la selección de colores busca transmitir profesionalismo, confianza y bienestar, reflejando el equilibrio entre tecnología y salud. La paleta combina tonos fríos y sobrios con acentos vibrantes, reforzando una experiencia visual moderna y centrada en el usuario.
+
+<img src="images/chapter-6/Colores.png" alt="Colores">
+
+**Tipografía:**  
+
+La tipografía Inter, fue elegida por su claridad, modernidad y legibilidad, cualidades fundamentales en una aplicación que busca mejorar el bienestar físico mediante la tecnología. Sus formas redondeadas y proporciones balanceadas aportan una sensación de cercanía y comodidad visual, mientras su versatilidad permite mantener coherencia entre los textos informativos, métricas de monitoreo y mensajes de alerta.
+
+<img src="images/chapter-6/Tipografia.png" alt="Tipografia">
+
+**Espaciado:** 
+
+Para el espacio entre los elemento, títulos y textos se usará un interlineado de múltiplos de 4px para asegurar la legibilidad en todas las aplicaciones.
+
+<img src="images/chapter-6/Interlineado.png" alt="Interlineado">
+
+**Principios de Diseño: Simplicidad y Claridad**
+
+El diseño de ErgoVision se rige por principios de simplicidad, claridad y enfoque ergonómico, que buscan reducir la fatiga visual y cognitiva del usuario, al tiempo que mantienen una estética moderna y profesional.
+
+Objetivos principales:
+
+- Interfaz minimalista: Priorizar la información esencial y eliminar distracciones visuales, destacando solo los componentes funcionales relevantes.
+
+- Uso estratégico del espacio en blanco: Facilita la lectura y comprensión, creando una sensación de equilibrio y confort visual.
+
+- Flujos de usuarios intuitivos: Los procesos deben ser directos y naturales, alineados con las rutinas de trabajo y descanso del usuario.
+
+- Jerarquía visual coherente: Diferenciar los niveles de información mediante tamaño, color y posición, guiando la atención del usuario de forma orgánica.
+
+- Iconografía comprensible: Usar íconos claros y universales para representar acciones o estados, reduciendo la necesidad de texto adicional.
+
+- Lenguaje accesible y respetuoso: Emplear un tono sereno, profesional y cercano, que inspire confianza sin perder formalidad.
+  
+#### 6.1.2 Web, Mobile & Devices Style Guidelines
+
+<h4>Web Style Guide</h3>
+
+<h4>Componentes</h4>
+<ul>
+  <li>
+    <strong>Botones:</strong>
+    <ul>
+      <li><em>Primario:</em> fondo <code>#2b7fff</code> con texto blanco (<code>#ffffff</code>) para destacar acciones principales.</li>
+      <li><em>Secundario:</em> fondo <code>#256ad6</code> con texto <code>#ffffff</code> para acciones complementarias.</li>
+      <li><em>Deshabilitado:</em> fondo <code>#9ca5ae</code> con opacidad reducida.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Formularios:</strong>
+    <ul>
+      <li>Campos con bordes redondeados y validaciones visuales para estados <em>focus</em>, <em>error</em> y <em>success</em>.</li>
+      <li>Las etiquetas se ubican sobre el campo, priorizando la legibilidad.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Cards:</strong>
+    <ul>
+      <li>Tarjetas con fondo blanco (<code>#ffffff</code>), sombra sutil (<code>#a5aab1</code>) y bordes suaves.</li>
+      <li>Se usan para mostrar información resumida como historial o métricas posturales.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Tablas y Gráficos:</strong>
+    <ul>
+      <li>Líneas internas grises suaves y jerarquía tipográfica en cabeceras.</li>
+      <li>Los gráficos emplean tonos azules y grises para transmitir calma visual.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4>Comportamiento de Componentes</h4>
+<ul>
+  <li>Transiciones suaves (150 ms) para estados <em>hover</em>, <em>active</em> y <em>focus</em>.</li>
+  <li>Evita animaciones excesivas que distraigan al usuario durante el monitoreo.</li>
+  <li>Mensajes emergentes discretos y con tono informativo.</li>
+</ul>
+
+<h4>Responsive Design</h4>
+<ul>
+  <li>Diseño adaptable desde 1024 px (desktop) hasta 360 px (mobile).</li>
+  <li>Distribución en cuadrículas flexibles que priorizan la legibilidad y el contenido clave.</li>
+  <li>Contraste mínimo AA garantizado según las normas <strong>WCAG 2.1</strong>.</li>
+</ul>
+
+<h4>Íconos e Ilustraciones</h4>
+<ul>
+  <li>Íconos lineales monocromáticos (color <code>#5a6472</code> o <code>#ffffff</code> sobre fondos oscuros).</li>
+  <li>Ilustraciones simples en tonos neutros, usadas solo en la landing page.</li>
+  <li>Evita elementos decorativos innecesarios para mantener la estética profesional y ergonómica.</li>
+</ul>
+
+
+<h4>Mobile Style Guide</h3>
+
+<h4>Componentes</h4>
+<ul>
+  <li>
+    <strong>Botones:</strong>
+    <ul>
+      <li>Áreas táctiles amplias (mínimo 48 px). Conservan la jerarquía de color de la versión web.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Formularios:</strong>
+    <ul>
+      <li>Campos optimizados para teclado móvil, con mensajes de error claros y botones de acción grandes.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Cards:</strong>
+    <ul>
+      <li>Diseño compacto, apilado verticalmente, con tipografía jerárquica y colores de contraste.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4>Gestos</h4>
+<ul>
+  <li><strong>Tap:</strong> acción principal (selección o confirmación).</li>
+  <li><strong>Swipe vertical:</strong> desplazamiento entre secciones como historial o estadísticas.</li>
+  <li><strong>Swipe horizontal:</strong> navegación entre pantallas o inicio/pausa del monitoreo.</li>
+  <li><strong>Long Press:</strong> acceso a opciones secundarias, como detalles de historial.</li>
+</ul>
+
+<h4>Responsive Design</h4>
+<ul>
+  <li>Adaptación fluida a smartphones y tablets (360–768 px).</li>
+  <li>Tipografía legible <strong>Lato</strong>, mínimo 14 px.</li>
+  <li>Uso de espacios amplios para reducir la carga visual y favorecer la precisión táctil.</li>
+  <li>Prioriza accesos rápidos a: “Iniciar Monitoreo”, “Pausa Activa”, “Historial” y “Mi Perfil”.</li>
+</ul>
+
+<h4>Consistencia Visual</h4>
+<ul>
+  <li><strong>Colores:</strong> #121720, #141e2d, #2b7fff, #256ad6, #ffffff.</li>
+  <li><strong>Tipografía:</strong> Lato — limpia, moderna y ergonómica.</li>
+  <li><strong>Iconografía:</strong> Minimalista y funcional, trazos finos en alto contraste.</li>
+  <li><strong>Tono general:</strong> Profesional, calmado y centrado en el bienestar físico y visual del usuario.</li>
+</ul>
+
+### 6.2 Information Architecture
+
+La Arquitectura de la Información cumple un papel esencial en la creación de experiencias digitales claras y funcionales, al definir cómo se estructura, nombra y conecta el contenido dentro de las plataformas web y móvil. En esta sección, el equipo presenta las decisiones estratégicas que sustentan la organización de la información, garantizando que los usuarios puedan orientarse fácilmente, comprender la lógica de navegación y acceder sin dificultad a los recursos o funciones que buscan.
+
+#### 6.2.1. Organization Systems
+
+En esta sección, el equipo describe cómo se aplicarán los sistemas de organización de la información dentro de ErgoVision, con el propósito de optimizar la experiencia del usuario y facilitar el acceso rápido y claro a las funcionalidades principales. La estructura propuesta busca mantener una navegación fluida, intuitiva y coherente tanto en la interfaz web como en la aplicación móvil.
+
+- Jerárquica (Visual Hierarchy): Este sistema se aplicará en la Landing Page y en las pantallas principales de la aplicación para resaltar los elementos más relevantes, como botones de acción, indicadores de análisis ergonómico y accesos a reportes o configuraciones. Se empleará el uso estratégico de tamaños, contrastes de color y espaciado para guiar la atención del usuario hacia las tareas más importantes.
+
+- Organización Secuencial (Step-by-Step): Se implementará en los procesos de evaluación ergonómica y configuración de perfil, donde el usuario deberá seguir una serie de pasos lógicos (por ejemplo, registrar su espacio de trabajo, ingresar medidas posturales y visualizar resultados). Este enfoque permitirá una experiencia guiada y estructurada, reduciendo la complejidad cognitiva y ayudando a completar tareas con claridad.
+
+- Organización Matricial: Se aplicará en secciones que involucren la comparación de datos o métricas, como los reportes de desempeño ergonómico y la visualización de estadísticas entre diferentes periodos o usuarios. Este sistema permitirá observar múltiples variables de forma simultánea, facilitando el análisis y la toma de decisiones basadas en los resultados obtenidos.
+
+Con esta estructura, ErgoVision garantiza una presentación organizada, priorizada y adaptable de la información, que favorece tanto la comprensión como la interacción eficiente del usuario con las distintas funcionalidades de la plataforma.
+
+#### 6.2.2 Labeling Systems
+El sistema de etiquetado en ErgoVision se diseña con el propósito de garantizar que los usuarios comprendan de forma inmediata la función y el contenido de cada sección. Las etiquetas se seleccionan utilizando un lenguaje claro, conciso y accesible, evitando tecnicismos innecesarios y priorizando la simplicidad visual y semántica.<br>
+Este enfoque busca reducir la carga cognitiva, permitir una navegación intuitiva y asegurar una experiencia uniforme entre las versiones web y móvil.
+
+La propuesta de etiquetado para las principales secciones de ErgoVision es la siguiente:
+
+<table>
+  <thead>
+    <tr>
+      <th>Sección</th>
+      <th>Etiqueta Propuesta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Creación e inicio de sesión</td>
+      <td>“Iniciar Sesión”</td>
+    </tr>
+    <tr>
+      <td>Registro de nuevo usuario</td>
+      <td>“Crear Cuenta”</td>
+    </tr>
+    <tr>
+      <td>Edición de datos de usuario</td>
+      <td>“Editar Perfil”</td>
+    </tr>
+    <tr>
+      <td>Visualización de historial detallado</td>
+      <td>“Historial”</td>
+    </tr>
+    <tr>
+      <td>Visualización de estadísticas</td>
+      <td>“Estadísticas”</td>
+    </tr>
+    <tr>
+      <td>Inicio de monitoreo ergonómico</td>
+      <td>“Monitoreo”</td>
+    </tr>
+    <tr>
+      <td>Ejecución de pausa activa</td>
+      <td>“Pausa Activa”</td>
+    </tr>
+    <tr>
+      <td>Perfil de usuario</td>
+      <td>“Mi Perfil”</td>
+    </tr>
+  </tbody>
+</table>
+
+Estas etiquetas se mantendrán coherentes en todas las plataformas y vistas, asegurando que cada término represente de forma precisa la funcionalidad o información que agrupa. Además, se prioriza el uso de sustantivos directos y familiares para los usuarios, promoviendo una comunicación efectiva y una navegación libre de confusión dentro del ecosistema ErgoVision.
+
+#### 6.2.3 Searching Systems
+
+<p>
+El sistema de búsqueda en <strong>ErgoVision</strong> ha sido diseñado para que los usuarios puedan acceder a información relevante de manera rápida y sin complicaciones. El objetivo es evitar la sensación de pérdida dentro del volumen de datos recopilados por el sistema, especialmente en los módulos de <em>historial de monitoreo</em> y <em>estadísticas de bienestar</em>. 
+A través de diferentes medios de ayuda, filtros y opciones visuales, se garantiza una experiencia eficiente y centrada en el usuario.
+</p>
+
+<hr />
+
+<h4>Barra de búsqueda en el Historial Detallado</h4>
+<p>
+En la sección de <strong>Historial Detallado</strong>, los usuarios contarán con una <strong>barra de búsqueda avanzada</strong> que permitirá localizar sesiones específicas de monitoreo basadas en criterios como fecha, duración, nivel de corrección postural o incidencias detectadas. 
+Esta barra se ubicará en la parte superior del historial y ofrecerá resultados dinámicos que se actualizarán en tiempo real conforme el usuario escriba.
+</p>
+
+<ul>
+  <li><strong>Filtros disponibles:</strong> fecha de sesión, tipo de postura, duración de monitoreo, alertas recibidas.</li>
+  <li><strong>Presentación de resultados:</strong> se mostrará una lista cronológica con tarjetas informativas que incluirán los datos clave de cada sesión (fecha, tiempo, incidencias y nivel de desempeño).</li>
+</ul>
+
+<hr />
+
+<h4>Búsqueda en Estadísticas</h4>
+<p>
+En la sección de <strong>Visualización de Estadísticas</strong>, el usuario podrá aplicar filtros para observar tendencias específicas en su desempeño ergonómico. 
+El sistema permitirá seleccionar periodos de tiempo (semanal, mensual, personalizado) y tipos de métricas, como <em>tiempo de buena postura</em> o <em>número de correcciones diarias</em>.
+</p>
+
+<ul>
+  <li><strong>Filtros disponibles:</strong> rango de fechas, tipo de métrica, frecuencia de pausas activas.</li>
+  <li><strong>Presentación de resultados:</strong> gráficos interactivos que se actualizarán en función de los filtros aplicados, con valores destacados y comparativos.</li>
+</ul>
+
+<hr />
+
+<h4>Filtrado en Monitoreo Activo</h4>
+<p>
+Durante el <strong>inicio de monitoreo</strong>, el usuario podrá visualizar un registro en tiempo real de sus eventos posturales. 
+Aunque el monitoreo es continuo, el sistema ofrecerá una vista filtrable para mostrar únicamente las <em>alertas recientes</em> o las <em>correcciones realizadas</em> dentro de una sesión específica. 
+Esto permitirá analizar patrones de comportamiento sin necesidad de revisar todo el flujo de datos.
+</p>
+
+<ul>
+  <li><strong>Filtros disponibles:</strong> tipo de evento (alerta o corrección), intervalo de tiempo, nivel de desviación postural.</li>
+  <li><strong>Presentación de resultados:</strong> lista de eventos en tiempo real con indicadores visuales por color según la gravedad de la desviación.</li>
+</ul>
+
+<hr />
+
+<h4>Búsqueda en Pausas Activas</h4>
+<p>
+En la sección de <strong>Pausa Activa</strong>, los usuarios podrán buscar y filtrar ejercicios o rutinas recomendadas según el tipo de molestia o zona corporal afectada. 
+Esto facilitará la selección de pausas más adecuadas para su situación actual.
+</p>
+
+<ul>
+  <li><strong>Filtros disponibles:</strong> tipo de ejercicio, duración, nivel de intensidad, zona corporal (cuello, espalda, muñeca, etc.).</li>
+  <li><strong>Presentación de resultados:</strong> catálogo visual con tarjetas de ejercicios, cada una mostrando imagen, nombre y duración.</li>
+</ul>
+
+<hr />
+
+<h4>Gestión de Perfil y Datos de Usuario</h4>
+<p>
+En las secciones de <strong>Edición de datos de usuario</strong> y <strong>Mi Perfil</strong>, el sistema permitirá realizar búsquedas internas de configuraciones o campos específicos, como datos personales o preferencias ergonómicas. 
+Esto facilitará la personalización de la experiencia sin recorrer todas las secciones manualmente.
+</p>
+
+<ul>
+  <li><strong>Filtros disponibles:</strong> nombre de campo, categoría de configuración (notificaciones, datos biométricos, preferencias de monitoreo).</li>
+  <li><strong>Presentación de resultados:</strong> lista editable con campos resaltados según la palabra clave buscada.</li>
+</ul>
+
+<hr />
+
+<h4>Accesibilidad y Experiencia de Búsqueda</h4>
+<p>
+Todos los sistemas de búsqueda de <strong>ErgoVision</strong> seguirán los principios de <em>claridad, consistencia y velocidad de respuesta</em>. 
+El usuario siempre visualizará un mensaje de ayuda o sugerencias automáticas al no encontrar resultados, reduciendo la frustración y promoviendo una navegación guiada. 
+Además, las búsquedas estarán disponibles mediante texto y comandos de voz para mejorar la accesibilidad general.
+</p>
+
+#### 6.2.4 SEO Tags and Meta Tags
+
+<p>
+Esta sección define la estrategia de optimización para motores de búsqueda (SEO) y tiendas de aplicaciones (ASO) de ErgoVision, orientada a maximizar la visibilidad del proyecto tanto en entornos web como móviles. El objetivo es asegurar que los usuarios puedan encontrar fácilmente la plataforma al buscar soluciones relacionadas con ergonomía, bienestar laboral y monitoreo postural.
+</p>
+
+<p>
+Las etiquetas propuestas buscan reflejar la esencia de ErgoVision: una herramienta digital centrada en la salud, la prevención y la productividad consciente, brindando una experiencia accesible y confiable en todos los dispositivos.
+</p>
+
+<h3>Para Landing Page Web</h3>
+<ul>
+  <li><strong>Title:</strong> ErgoVision – Mejora tu bienestar postural con tecnología inteligente</li>
+  <li><strong>Meta Description:</strong> Plataforma digital diseñada para promover hábitos ergonómicos saludables. Descubre cómo ErgoVision puede ayudarte a prevenir la fatiga y mejorar tu postura mediante recordatorios, monitoreo y pausas activas personalizadas.</li>
+  <li><strong>Meta Keywords:</strong> ergonomía, bienestar postural, salud digital, prevención de fatiga, pausas activas, monitoreo ergonómico, hábitos saludables, postura correcta</li>
+  <li><strong>Meta Author:</strong> Equipo ErgoVision</li>
+</ul>
+
+<h3>Para Página Web (Plataforma Web Interactiva)</h3>
+<ul>
+  <li><strong>Title:</strong> ErgoVision Web – Monitoreo en tiempo real y análisis ergonómico</li>
+  <li><strong>Meta Description:</strong> Accede a tu panel de control de ErgoVision, donde podrás visualizar tu historial ergonómico, revisar estadísticas personalizadas y gestionar tus hábitos de pausa activa. Optimiza tu jornada laboral con herramientas de bienestar inteligente.</li>
+  <li><strong>Meta Keywords:</strong> ergonomía en el trabajo, análisis postural, productividad saludable, monitoreo de postura, bienestar digital, panel ergonómico, hábitos laborales</li>
+  <li><strong>Meta Author:</strong> Equipo ErgoVision</li>
+</ul>
+
+<h3>Para Mobile App (App Store / Play Store)</h3>
+<ul>
+  <li><strong>App Title:</strong> ErgoVision: Monitoreo Ergonómico y Bienestar Postural</li>
+  <li><strong>App Keywords:</strong> ergonomía, postura, salud, pausas activas, bienestar, trabajo saludable, productividad, fatiga, monitoreo</li>
+  <li><strong>App Subtitle:</strong> Cuida tu postura y bienestar mientras trabajas o estudias.</li>
+  <li><strong>App Description:</strong> ErgoVision es una aplicación inteligente que te ayuda a mantener una postura correcta, prevenir la fatiga y mejorar tu bienestar diario. Ofrece monitoreo ergonómico en tiempo real, recordatorios de pausas activas y estadísticas personalizadas. ¡Optimiza tu rutina y cuida tu cuerpo con ErgoVision!</li>
+</ul>
+
+<p>
+Estas configuraciones SEO y ASO garantizan una comunicación clara y atractiva en todos los puntos de contacto digitales, fortaleciendo la identidad de ErgoVision como una solución moderna, accesible y comprometida con la salud y el bienestar de sus usuarios.
+</p>
+
+#### 6.2.5 Navigation Systems
+
+<p>
+La estructura de navegación de <strong>ErgoVision</strong> está diseñada para ofrecer una experiencia de usuario fluida, clara y accesible, permitiendo que tanto nuevos usuarios como recurrentes puedan orientarse fácilmente dentro de la plataforma. 
+La navegación busca guiar a los usuarios hacia sus objetivos principales monitorear su postura, analizar su progreso y promover hábitos saludables de manera intuitiva y sin fricciones.
+</p>
+
+<hr />
+
+<h4>Landing Page</h4>
+<p>
+La <strong>Landing Page</strong> presenta una navegación superior fija que permite explorar los principales apartados informativos y de conversión. Incluye los siguientes elementos:
+</p>
+<ul>
+  <li><strong>Inicio:</strong> Acceso directo al encabezado principal y presentación del producto.</li>
+  <li><strong>Sobre ErgoVision:</strong> Sección que explica la misión, visión y propósito del proyecto.</li>
+  <li><strong>Características:</strong> Detalle de las funcionalidades principales de la plataforma, como monitoreo postural, pausas activas y estadísticas de bienestar.</li>
+  <li><strong>Beneficios:</strong> Explicación de los impactos positivos en la salud y productividad del usuario.</li>
+  <li><strong>Equipo:</strong> Presentación del equipo de desarrollo y colaboradores del proyecto.</li>
+  <li><strong>Contacto:</strong> Enlace para comunicarse con el equipo de soporte o solicitar más información.</li>
+</ul>
+
+<hr />
+
+<h4>Web Application</h4>
+<p>
+En la <strong>versión web de ErgoVision</strong>, se utilizará una <strong>barra lateral de navegación persistente</strong>, que facilitará el acceso a las funcionalidades clave de monitoreo y gestión de usuario:
+</p>
+<ul>
+  <li><strong>Dashboard:</strong> Vista general del estado postural actual y acceso rápido a las métricas principales.</li>
+  <li><strong>Historial Detallado:</strong> Registro cronológico de sesiones y eventos de monitoreo.</li>
+  <li><strong>Estadísticas:</strong> Gráficos e indicadores sobre el progreso del usuario en el tiempo.</li>
+  <li><strong>Monitoreo:</strong> Sección para iniciar, pausar o detener el seguimiento postural.</li>
+  <li><strong>Pausas Activas:</strong> Ejercicios y recordatorios programados para reducir la fatiga.</li>
+  <li><strong>Perfil de Usuario:</strong> Edición de datos personales y preferencias ergonómicas.</li>
+  <li><strong>Configuración:</strong> Ajustes del sistema, notificaciones SMS y preferencias visuales.</li>
+</ul>
+
+<hr />
+
+<h4>Mobile Application</h4>
+<p>
+La <strong>aplicación móvil</strong> prioriza la usabilidad en pantallas pequeñas mediante una <strong>navegación por pestañas inferiores (bottom navigation bar)</strong>, complementada con un <strong>menú lateral desplegable</strong> para secciones secundarias. Las secciones principales incluyen:
+</p>
+<ul>
+  <li><strong>Inicio:</strong> Estado postural actual y acceso rápido a monitoreo.</li>
+  <li><strong>Estadísticas:</strong> Visualización compacta de métricas y progreso.</li>
+  <li><strong>Pausas:</strong> Acceso directo a ejercicios guiados y recordatorios activos.</li>
+  <li><strong>Perfil:</strong> Configuración personal, historial resumido y ajustes de usuario.</li>
+</ul>
+
+### 6.3 Landing Page UI Design
+
+#### 6.3.1 Landing Page Wireframe
+
+Para tener una primera idea de cómo lucirá nuetra landing page, se realizaron los Wireframes tanto para pantallas de escritorio como para dispositivos móviles, asegurando un correcto tamaño y distribución de los elementos y textos.
+
+ **Wireframes Desktop**  
+ 
+<img src="images/chapter-6/LandingPageDesktopWireframes.png" alt="LandingPageDesktopWireframes" width="1920px">
+
+ **Wireframes Móvil**  
+<img src="images/chapter-6/LandingPageResponsiveWireframes.png" alt="LandingPageResponsiveWireframes">
+
+Link del Figma: [https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=0-1&t=tUt2TuwoHmFV3ka1-1]
+
+#### 6.3.2 Landing Page Mock-up
+
+Posterior a la versión final de los Wireframes, se realizaron los Mockups de la Landing Page, nuevamente, tanto para pantallas de escritorio como para dispositivos móviles, siguiendo la guia de estilos establecida.
+
+ **Mockups Desktop**  
+ 
+<img src="images/chapter-6/LandingPageDesktopMockups.png" alt="LandingPageDesktopMockups">
+
+ **Mockups Móvil**  
+<img src="images/chapter-6/LandingPageResponsiveMockups.png" alt="LandingPageResponsiveMockups">
+
+Link del Figma: [https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=0-1&t=tUt2TuwoHmFV3ka1-1]
+
+### 6.4 Applications UX/UI Design
+
+#### 6.4.1 Applications Wireframes
+
+**Wireframes Web:**
+
+Los wireframes de la aplicación web de ErgoVision presentan las interfaces de registro/login, perfil editable, dashboard con resúmenes semanales, estadísticas visuales, configuración de notificaciones, calibración del sistema de cámara, monitoreo en tiempo real con detección de postura activa, y pantallas de pausas con ejercicios sugeridos y temporizadores para descansos programados.
+
+<img src="images/chapter-6/WireframesWeb.png" alt="Wireframes Web">
+
+**Wireframes Móvil:**
+
+Los wireframes de la aplicación móvil de ErgoVision muestran el flujo completo de ErgoVision desde autenticación (login/registro con datos personales y antropométricos), pasando por gestión de perfil, visualización de estadísticas con gráficos de postura y tiempos de descanso, historial de sesiones, hasta detalles específicos de cada sesión con porcentajes de postura correcta y pausas realizadas.
+
+<img src="images/chapter-6/WireframesMovil.png" alt="Wireframes Movil">
+
+Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1]
+
+#### 6.4.2 Applications Wireflow Diagrams
+
+Los wireflow diagrams de ErgoVision representan la secuencia de interacciones y pantallas que los usuarios experimentarán al navegar por la aplicación.
+
+Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1]
+
+**Edición de Datos de Usuario:** Este wireflow corresponde a cuando un usuario quiere modificar sus datos personales luego de haberse registrado.
+
+- **Web:**
+
+<img src="images/chapter-6/Wireflow1Web.png" alt="Wireflow 1 Web">
+
+- **Móvil:**
+
+<img src="images/chapter-6/Wireflow1Movil.png" alt="Wireflow 1 Movil">
+
+**Creación de Cuenta:** Este wireflow corresponde a cuando un usuario no tiene una cuenta creada y debe registrarse para empezar a utilizar la aplicación.
+
+- **Web:**
+
+<img src="images/chapter-6/Wireflow2Web.png" alt="Wireflow 2 Web">
+
+- **Móvil:**
+
+<img src="images/chapter-6/Wireflow2Movil.png" alt="Wireflow 2 Movil">
+
+**Visualización de Historial Detallado:** Este wireflow corresponde a cuando un usuario quiere visualizar los detalles de sus sesiones de monitoreo pasadas en el historial.
+
+- **Web:**
+
+<img src="images/chapter-6/Wireflow3Web.png" alt="Wireflow 3 Web">
+
+- **Móvil:**
+
+<img src="images/chapter-6/Wireflow3Movil.png" alt="Wireflow 3 Movil">
+
+**Visualización de Estadísticas:** Este wireflow corresponde a cuando un usuario quiere visualizar las estadisticas sobre tiempos de buenas/malas posturas que ha tenido en lo que va utilizando la aplicación.
+
+- **Web:**
+
+<img src="images/chapter-6/Wireflow4Web.png" alt="Wireflow 4 Web">
+
+- **Móvil:**
+
+<img src="images/chapter-6/Wireflow4Movil.png" alt="Wireflow 4 Movil">
+
+**Inicio de Monitoreo:** Este wireflow corresponde a cuando un usuario quiere iniciar una sesión de monitoreo postural en tiempo real.
+ - **Web:**
+
+<img src="images/chapter-6/Wireflow5Web.png" alt="Wireflow 5 Web">
+
+**Inicio de Pausa Activa:** Este wireflow corresponde a cuando se activa automáticamente o un usuario quiere iniciar una pausa activa con ejercicios sugeridos por la aplicación.
+ - **Web:**
+
+<img src="images/chapter-6/Wireflow6Web.png" alt="Wireflow 6 Web">
+
+**Calibración del Sistema de Cámara:** Este wireflow corresponde a cuando un usuario quiere calibrar el sistema de cámara para mejorar la detección postural.
+ - **Web:**
+
+<img src="images/chapter-6/Wireflow7Web.png" alt="Wireflow 7 Web">
+
+#### 6.4.3 Applications Mock-ups
+
+#### 6.4.4 Applications User Flow Diagrams
+
+### 6.5 Applications Prototyping
+
 ## Conclusiones
 
 **TB1:**  
@@ -2745,8 +4894,42 @@ Posteriormente, se especificaron los requisitos mediante escenarios To-Be, histo
 
 Finalmente, con Attribute-Driven Design y Domain-Driven Design, se estructuró la arquitectura en bounded contexts, context mapping y diagramas de software, asegurando escalabilidad, calidad y mantenibilidad.
 
+**TP:**  
+Para esta segunda entrega, se repartieron los bounded contexts y se definieron las capas de Dominio, Aplicación, Infraestructura e Interface, Se realizaron los diagramas de clases y bases de datos para cada uno y los Diagramas de Contexto generales. Ademas, se llevó a cabo la realización de la guia de estilo para nuestras aplicaciones, el diseño UX/UI de la Landing Page y los wireframes y Wireflows tanto de la aplicación web como móvil. 
+
 ## Bibliografía
+
+Asencios Román, E. A., Carreño Loza, F. A., Chilon Cruz, L., & Jiménez Toro, K. (2021). Frecuencia de dolor músculo-esquelético en personas que realizan teletrabajo en Lima entre los meses de abril a agosto del 2020. Universidad Peruana Cayetano Heredia. [https://repositorio.upch.edu.pe/handle/20.500.12866/9434](https://repositorio.upch.edu.pe/handle/20.500.12866/9434)
+
+García-Salirrosas, E. E., & Sánchez-Poma, R. A. (2021). Prevalencia de trastornos musculoesqueléticos en docentes universitarios que realizan teletrabajo en tiempos de COVID-19. Anales de la Facultad de Medicina, 81(3), 301-307. [https://doi.org/10.15381/anales.v81i3.18841](https://doi.org/10.15381/anales.v81i3.18841)
 
 Lazo, R. V. H., & Quispe, Y. C. (2024). _Trastornos musculoesqueléticos asociados al teletrabajo en abogados peruanos: un estudio transversal._ Medicina y Seguridad del Trabajo, 70(275), 103-112. [https://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0465-546X2024000400005](https://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0465-546X2024000400005)
 
+Gothelf, J., & Seiden, J. (2021). Lean UX. «O’Reilly Media, Inc.»
+
+Evans, E. (2003). Domain-Driven design: Tackling Complexity in the Heart of Software. Addison-Wesley.
+
 ## Anexos
+
+⦁	As-Is and To-Be Scenario Mapping Miro: [https://miro.com/welcomeonboard/L3dRdFduVmtGMDZIYTkvT1NMaE16SmNpbkRQQkFZT0dKWFUwWGJyMXl2NE1JdGZ4TUhobXJRWUIydXlhS1YvRHJBdTdYMWRHWTdpRHZmbFczRUpqQXROMnV3Tm5iYXVzQ25DbUFKWG1CNitrK2g1VjRXODEza0t5djRTcGhONllhWWluRVAxeXRuUUgwWDl3Mk1qRGVRPT0hdjE=?share_link_id=734363133602](https://miro.com/welcomeonboard/L3dRdFduVmtGMDZIYTkvT1NMaE16SmNpbkRQQkFZT0dKWFUwWGJyMXl2NE1JdGZ4TUhobXJRWUIydXlhS1YvRHJBdTdYMWRHWTdpRHZmbFczRUpqQXROMnV3Tm5iYXVzQ25DbUFKWG1CNitrK2g1VjRXODEza0t5djRTcGhONllhWWluRVAxeXRuUUgwWDl3Mk1qRGVRPT0hdjE=?share_link_id=734363133602)
+
+⦁	EventStorming Miro: [https://miro.com/app/board/uXjVJIOOJ5E=/](https://miro.com/app/board/uXjVJIOOJ5E=/).
+
+⦁	Figma Landing Page:[https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=36-22&t=JgpkzDsN9FkcFh1y-1](https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=36-22&t=JgpkzDsN9FkcFh1y-1)
+
+⦁	Figma Wireframes:[https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
+
+⦁	Link del Lean UX Canvas: [https://miro.com/app/board/uXjVJLxX2xg=/?share_link_id=737970760824](https://miro.com/app/board/uXjVJLxX2xg=/?share_link_id=737970760824)
+
+⦁	Needfinding Interviews[https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/ESJ0SpDkAMBIp7F1FRM-3zYBa0b84g6SPKV2JWffqscDcg?e=IZbyLt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/ESJ0SpDkAMBIp7F1FRM-3zYBa0b84g6SPKV2JWffqscDcg?e=IZbyLt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+⦁	Plantilla Lean UX Canvas:
+
+![lean-canvas-template.webp](images/misc/lean-canvas-template.webp)
+
+⦁	Plantilla Bounded Context Canvas:
+![bounded-context-canvas.jpg](images/misc/bounded-context-canvas.jpg)
+
+⦁	Plantilla As-Is y To-Be Scenario Mapping:
+![as-is-to-be-tamplate.jpg](images/misc/as-is-to-be-tamplate.jpg)
+
