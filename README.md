@@ -10,11 +10,11 @@
 
 ### **Ingeniería de software**
 
-## Informe de -
+## Informe del Trabajo Parcial
 
 ### **Nombre del startup:** NRG7
 
-### **Nombre del producto:** -
+### **Nombre del producto:** ErgoVision
 
 ## **Integrantes**
 
@@ -26,7 +26,7 @@
 | **Godofredo Quispe Tipo**                 | u202120772 |
 | **Pasquale Barrenechea Gianluca Santino** | U202112078 |
 
-**Agosto 2025**
+**Octubre 2025**
 
 ## Registro de Versiones del Informe
 
@@ -43,26 +43,50 @@
     <tr>
       <td>0.1</td>
       <td>05-09-2025</td>
-      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipon y Espinoza Delgado Bárbara Antonella </td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
       <td>Desarrollo de los items: Antecedentes y problemática, Lean UX Process y Segmentos objetivo</td>
     </tr>
     <tr>
       <td>0.2</td>
       <td>09-09-2025</td>
-      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipon y Espinoza Delgado Bárbara Antonella </td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
       <td>Desarrollo de los items: Competidores, Diseño de entrevistas, Registro de entrevistas, Análisis de entrevistas, Needfinding, y ubiquitous language</td>
     </tr>
     <tr>
       <td>0.3</td>
       <td>17-09-2025</td>
-      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipon y Espinoza Delgado Bárbara Antonella </td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
       <td>Desarrollo de los items: To-Be scenario Mapping, User Stories, Impact Mapping y Product Backlog</td>
     </tr>
     <tr>
       <td>0.4</td>
-      <td>20-09-2025</td>
-      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipon y Espinoza Delgado Bárbara Antonella </td>
+      <td>30-09-2025</td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
       <td>Desarrollo de los items: Startup Profile, Strategic-Level Attribute-Driven Design, Strategic-Level Domain-Driven Design, Software Architecture y Conclusiones </td>
+    </tr>
+    <tr>
+      <td>0.5</td>
+      <td>20-09-2025</td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
+      <td>Desarrollo de los items: Tactical-Level Software Design para IAM, Notificaciones, Orquestrador, Estadisticas y Monitoreo. </td>
+    </tr>
+    <tr>
+      <td>0.6</td>
+      <td>08-09-2025</td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
+      <td>Desarrollo de los items: Style Guidelines, Information Architecture, Landing Page UI Design, Applications Wireframes y Applications Wireflow Diagrams </td>
+    </tr>
+<tr>
+      <td>1.0</td>
+      <td>08-10-2025</td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
+      <td>Desarrollo de los capitulos 5 y 6 </td>
+    </tr>
+<tr>
+      <td>1.1</td>
+      <td>10-10-2025</td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
+      <td>Agregar Anexos y bibliografia </td>
     </tr>
   </tbody>
 </table>
@@ -70,6 +94,14 @@
 ## Project Report Collaboration Insights
 
 El enlace a github del reporte del proyecto es el siguiente: [https://github.com/NRG7-Emergentes/report](https://github.com/NRG7-Emergentes/report).
+
+**TB1:**  
+
+<img src="https://github.com/NRG7-Emergentes/report/blob/6cb90733b46f82fc0e94a6ba3d723cd0741fbbfb/images/misc/CommitsTB1.png" alt="TB1 Commits">
+
+**TP:**  
+
+<img src="https://github.com/NRG7-Emergentes/report/blob/6cb90733b46f82fc0e94a6ba3d723cd0741fbbfb/images/misc/CommitsTP.png" alt="TP Commits">
 
 ## Contenido
 
@@ -219,28 +251,42 @@ del ABET – EAC - Student Outcome 3.
       <td><strong>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería.</strong></td>
       <td>
         <b>TB1:</b><br>
-        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta primera entrega comuniqué oralmente ideas y dudas para la realización la realización del event storming los bounded contexts durante las reuniones grupales en discord, además, comunique activamente sobre la entrega de las tareas que se me asignaron semanalmente.<br>
-        - <b>Gianluca Santino Pasquale Barrenechea:</b> Durante las reuniones grupales en Discord, comuniqué de manera efectiva las ideas y avances relacionados con la realización del Event Storming y los Bounded Contexts. Además, mantuve una comunicación activa sobre la entrega de las tareas asignadas semanalmente, asegurando que todos los miembros del equipo estuvieran informados y alineados con los objetivos del proyecto.<br>
-        - <b>Godofredo Quispe Tipo:</b> Comuniqué oralmente ideas de cómo realizar partes del proyecto y expuse los resultados obtenidos, facilitando la revisión de la información por parte de los diferentes miembros del equipo.<br>
-        - <b>Gabriel Alexander Casas Sanchez:</b> Exposición de los atributos de calidad, el propósito del proyecto y dirigí el proceso de eventstorming, simplifique los términos técnicos a un lenguaje común para la correcta compresión de los asistentes. <br>
-        - <b>Juan Diego Astonitas Diaz:</b> Expuse el proyecto en clase para la retroalimentacion del profesor, además de ser lider del proyecto para poder orientarlo al exito <br>
+        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta primera entrega comuniqué oralmente ideas y dudas para la realización la realización del event storming los bounded contexts durante las reuniones grupales en discord, además, comunique activamente sobre la entrega de las tareas que se me asignaron semanalmente.<br><br>
+        - <b>Gianluca Santino Pasquale Barrenechea:</b> Durante las reuniones grupales en Discord, comuniqué de manera efectiva las ideas y avances relacionados con la realización del Event Storming y los Bounded Contexts. Además, mantuve una comunicación activa sobre la entrega de las tareas asignadas semanalmente, asegurando que todos los miembros del equipo estuvieran informados y alineados con los objetivos del proyecto.<br><br>
+        - <b>Godofredo Quispe Tipo:</b> Comuniqué oralmente ideas de cómo realizar partes del proyecto y expuse los resultados obtenidos, facilitando la revisión de la información por parte de los diferentes miembros del equipo.<br><br>
+        - <b>Gabriel Alexander Casas Sanchez:</b> Exposición de los atributos de calidad, el propósito del proyecto y dirigí el proceso de eventstorming, simplifique los términos técnicos a un lenguaje común para la correcta compresión de los asistentes. <br><br>
+        - <b>Juan Diego Astonitas Diaz:</b> Expuse el proyecto en clase para la retroalimentacion del profesor, además de ser lider del proyecto para poder orientarlo al exito <br><br>
+        <b>TP:</b><br>
+        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta segunda entrega comuniqué oralmente ideas y dudas para la elaboración de los wireframes y wireflows durante las reuniones grupales en discord, además, comunique activamente sobre la entrega de las tareas que se me asignaron semanalmente.<br><br>
+        - <b>Gianluca Santino Pasquale Barrenechea: Para esta segunda entrega comuniqué oralmente el enfoque y las decisiones tomadas para el desarrollo de las style guidelines y la information architecture del proyecto. Expliqué la estructura visual, la selección de componentes y la organización de la información durante las reuniones grupales en Discord, asegurando que todos los miembros comprendieran y aplicaran los lineamientos definidos en el diseño de la plataforma.</b><br><br>
+        - <b>Godofredo Quispe Tipo:</b> Para esta entrega comuniqué oralmente ideas y dudas para la elaboración del bounded context de estadisticas y los wireframer de Landing Pages<br><br>
+        - <b>Gabriel Alexander Casas Sanchez:</b> Para esta entrega busque comunicar todas mis ideas sobre las opciones de diseño (arquitectura de bounded context y UI) de manera clara y sencilla para asegurarme el entendimiento de todos mis compañeros.<br><br>
+        - <b>Juan Diego Astonitas Diaz:</b> Para esta entrega comunique las ideas fundamentales de la solucion para poder plasmarlas en en diseño de la arquitectura con DDD <br><br>
        </td>
       <td>
-        - El equipo ha demostrado un nivel de desarrollo satisfactorio y homogéneo en esta competencia. Todos los miembros participaron activamente en las reuniones de Discord, comunicando ideas, avances y asignaciones de manera clara y efectiva. Se evidencia una comunicación colaborativa que facilitó la alineación del grupo y la revisión de la información.
+        <b>TB1:</b> El equipo ha demostrado un nivel de desarrollo satisfactorio y homogéneo en esta competencia. Todos los miembros participaron activamente en las reuniones de Discord, comunicando ideas, avances y asignaciones de manera clara y efectiva. Se evidencia una comunicación colaborativa que facilitó la alineación del grupo y la revisión de la información. <br><br>
+        <b>TP: </b> Durante el TP, el equipo mantuvo una comunicación oral clara y objetiva en las reuniones de Discord, alineando la elaboración de wireframes/wireflows, las style guidelines y la arquitectura de la información. Cada integrante expuso y justificó decisiones sobre bounded contexts, diseño de UI y la definición arquitectónica con DDD, resolviendo dudas para asegurar un entendimiento compartido. Esta coordinación constante permitió integrar criterios de distintas especialidades y niveles, garantizando coherencia en el diseño y avance oportuno de las tareas.<br><br>
       </td>
     </tr>
     <tr>
       <td><strong>Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto eningeniería.</strong></td>
       <td>
          <b>TB1:</b><br>
-        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta primera entrega realicé en el informe la redacción de las hipótesis, el Lean UX Canvas, la entrevista a uno de los segmentos objetivos y el bounded context canvas asignado, además, comuniqué mis avances diarios en el grupo.<br>
-        - <b>Gianluca Santino Pasquale Barrenechea:</b> En la primera entrega del informe, me encargué de redactar las hipótesis, el Lean UX Canvas, la entrevista a uno de los segmentos objetivos y el Bounded Context Canvas asignado. Además, mantuve una comunicación constante sobre mis avances diarios en el grupo, asegurando que todos los miembros estuvieran al tanto del progreso del proyecto.<br>
-        - <b>Godofredo Quispe Tipo:</b> A través de un análisis de competidores y una serie de entrevistas a usuarios clave, elaboré un informe detallado que presentaba un panorama objetivo del mercado. Con base en esta documentación, formulé y comuniqué estrategias y tácticas frente a competidores, lo que sirvió como guía para la toma de decisiones en el desarrollo del producto.<br>
-        - <b>Gabriel Alexander Casas Sanchez:</b> Desarrollé los problem statement assumptions, task matrix, empathy mapping, atribute driven design process. Busque presentar los conceptos de manera clara y estructurada para facilitar la comprensión. <br>
-        - <b>Juan Diego Astonitas Diaz:</b> Desarrolle las user y technical stories describiendo la funcionalidad de nuestra solucion  <br>
+        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta primera entrega realicé en el informe la redacción de las hipótesis, el Lean UX Canvas, la entrevista a uno de los segmentos objetivos y el bounded context canvas asignado, además, comuniqué mis avances diarios en el grupo.<br><br>
+        - <b>Gianluca Santino Pasquale Barrenechea:</b> En la primera entrega del informe, me encargué de redactar las hipótesis, el Lean UX Canvas, la entrevista a uno de los segmentos objetivos y el Bounded Context Canvas asignado. Además, mantuve una comunicación constante sobre mis avances diarios en el grupo, asegurando que todos los miembros estuvieran al tanto del progreso del proyecto.<br><br>
+        - <b>Godofredo Quispe Tipo:</b> A través de un análisis de competidores y una serie de entrevistas a usuarios clave, elaboré un informe detallado que presentaba un panorama objetivo del mercado. Con base en esta documentación, formulé y comuniqué estrategias y tácticas frente a competidores, lo que sirvió como guía para la toma de decisiones en el desarrollo del producto.<br><br>
+        - <b>Gabriel Alexander Casas Sanchez:</b> Desarrollé los problem statement assumptions, task matrix, empathy mapping, atribute driven design process. Busque presentar los conceptos de manera clara y estructurada para facilitar la comprensión. <br><br>
+        - <b>Juan Diego Astonitas Diaz:</b> Desarrolle las user y technical stories describiendo la funcionalidad de nuestra solucion  <br><br>
+        <b>TP:</b><br>
+        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta Segunda entrega realicé en el informe la redacción de las tablas de cada capa del Bounded Context IAM y Diagramas, además, comuniqué mis avances diarios en el grupo de Whatsapp.<br><br>
+        - <b>Gianluca Santino Pasquale Barrenechea: Para esta segunda entrega realicé en el informe la redacción de la sección de style guidelines y la arquitectura de la información, detallando la estructura visual, los componentes principales y la organización de la plataforma. </b> <br><br>
+        - <b>Godofredo Quispe Tipo:</b> Para esta segunda entrega, he preparado una redacción clara y concisa de la infraestructura y la descripción de los bounded contexts, asegurando que toda la audiencia comprenda la arquitectura del sistema.<br><br>
+        - <b>Gabriel Alexander Casas Sanchez:</b> Para esta entrega busque que todas las descripciones y decisiones de arquitectura con respecto al bounded context que desarrolle se entiendad de manera clara, para asi evitar fallos de comunicación entre mis compañeros<br><br>
+        - <b>Juan Diego Astonitas Diaz: </b> Comunique el diseño y funcionalidad base de la solucion a mis compañeros para poder hacer los wireframes y wireflows <br><br>
       </td>
       <td>
-        - En conjunto, las contribuciones escritas fueron fundamentales para sentar una base documental sólida, guiar la toma de decisiones y cumplir efectivamente los objetivos del proyecto.
+        <b>TB1:</b> En conjunto, las contribuciones escritas fueron fundamentales para sentar una base documental sólida, guiar la toma de decisiones y cumplir efectivamente los objetivos del proyecto.<br><br>
+        <b>TP: </b> Durante el TP, el equipo articuló de forma clara y objetiva la documentación técnica clave, incluyendo tablas y diagramas del Bounded Context IAM, style guidelines, arquitectura de la información, infraestructura y la descripción de bounded contexts, asegurando consistencia terminológica y trazabilidad de decisiones. Las redacciones se orientaron a audiencias de distintas especialidades y niveles, facilitando la comprensión de la arquitectura, la justificación de componentes y la alineación entre diseño y desarrollo. Este trabajo escrito permitió elaborar coherentemente wireframes y wireflows, reducir malentendidos y consolidar una base documental robusta para la evolución del proyecto.<br><br>
       </td>
     </tr>
   </tbody>
@@ -308,7 +354,7 @@ del ABET – EAC - Student Outcome 3.
 
 - ¿Cuál es el problema?
 
-El problema principal es la adopción prolongada de posturas incorrectas y la proximidad excesiva a la pantalla durante actividades frente a la computadora, conductas que, al ser imperceptibles para el usuario en el momento,  afectan negativamente la salud y productividad a largo plazo
+El problema principal es la adopción prolongada de posturas incorrectas y la proximidad excesiva a la pantalla durante actividades frente a la computadora, conductas que, al ser imperceptibles para el usuario, afectan negativamente la salud y productividad a largo plazo (Crisol-Deza, Zurita-Borja & Crisol-Deza, 2024).
 
 - ¿Cuál es la relación con la persona en cuestión?
 
@@ -336,13 +382,13 @@ El cliente utiliza el producto en su espacio fijo de trabajo o estudio, específ
 
 - ¿Quienes se ven involucrados en el problema?
 
-El problema surge en el entorno inmediato de trabajo del usuario, específicamente en su estación de computadora personal ubicada en el hogar u oficina. Se manifiesta en la interacción física entre el usuario y su puesto de trabajo, donde la disposición del espacio y los hábitos individuales propician las malas posturas.
+El problema surge en el entorno inmediato de trabajo del usuario, específicamente en su estación de computadora personal ubicada en el hogar u oficina. Se manifiesta en la interacción física entre el usuario y su puesto de trabajo, donde la disposición del espacio y los hábitos individuales propician las malas posturas (Lazo, R. y Quispe, Y., 2024).
 
 **Why**
 
 - ¿Cuáles son las causas del problema?
 
-Las causas principales del problema radican en la falta de conciencia postural inmediata y la ausencia de retroalimentación correctiva en tiempo real, agravadas por entornos de trabajo no ergonómicos y la inmersión mental en las tareas digitales.
+Las causas principales del problema radican en la falta de conciencia postural inmediata y la ausencia de retroalimentación correctiva en tiempo real, agravadas por entornos de trabajo no ergonómicos y la inmersión mental en las tareas digitales (García-Salirrosas & Sánchez-Poma, 2021).
 
 **How**
 
@@ -354,7 +400,7 @@ Los clientes usan nuestro producto bajo condiciones de iluminación ambiental no
 
 - ¿Cuál es la magnitud del problema?
 
-La magnitud del problema es considerable, dado que un estudio reciente sobre el teletrabajo en Perú encontró que el 75% de los participantes reportaron haber sufrido dolores en cuello, espalda y extremidades superiores. Esto evidencia una alta prevalencia de dolencias musculoesqueléticas directamente asociadas a posturas incorrectas y forzadas durante largos períodos frente a la computadora.
+La magnitud del problema es considerable, dado que un estudio reciente sobre el teletrabajo en Perú encontró que el 99% de los participantes reportaron haber sufrido dolores en cuello, espalda y extremidades superiores. Esto evidencia una alta prevalencia de dolencias musculoesqueléticas directamente asociadas a posturas incorrectas y forzadas durante largos períodos frente a la computadora (Asencios Román et al., 2021).
 
 #### 1.2.2 Lean UX Process
 
@@ -4823,8 +4869,32 @@ Posteriormente, se especificaron los requisitos mediante escenarios To-Be, histo
 
 Finalmente, con Attribute-Driven Design y Domain-Driven Design, se estructuró la arquitectura en bounded contexts, context mapping y diagramas de software, asegurando escalabilidad, calidad y mantenibilidad.
 
+**TP:**  
+Para esta segunda entrega, se repartieron los bounded contexts y se definieron las capas de Dominio, Aplicación, Infraestructura e Interface, Se realizaron los diagramas de clases y bases de datos para cada uno y los Diagramas de Contexto generales. Ademas, se llevó a cabo la realización de la guia de estilo para nuestras aplicaciones, el diseño UX/UI de la Landing Page y los wireframes y Wireflows tanto de la aplicación web como móvil. 
+
 ## Bibliografía
+
+Asencios Román, E. A., Carreño Loza, F. A., Chilon Cruz, L., & Jiménez Toro, K. (2021). Frecuencia de dolor músculo-esquelético en personas que realizan teletrabajo en Lima entre los meses de abril a agosto del 2020. Universidad Peruana Cayetano Heredia. [https://repositorio.upch.edu.pe/handle/20.500.12866/9434](https://repositorio.upch.edu.pe/handle/20.500.12866/9434)
+
+García-Salirrosas, E. E., & Sánchez-Poma, R. A. (2021). Prevalencia de trastornos musculoesqueléticos en docentes universitarios que realizan teletrabajo en tiempos de COVID-19. Anales de la Facultad de Medicina, 81(3), 301-307. [https://doi.org/10.15381/anales.v81i3.18841](https://doi.org/10.15381/anales.v81i3.18841)
 
 Lazo, R. V. H., & Quispe, Y. C. (2024). _Trastornos musculoesqueléticos asociados al teletrabajo en abogados peruanos: un estudio transversal._ Medicina y Seguridad del Trabajo, 70(275), 103-112. [https://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0465-546X2024000400005](https://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0465-546X2024000400005)
 
 ## Anexos
+
+⦁	As-Is and To-Be Scenario Mapping Miro: [https://miro.com/welcomeonboard/L3dRdFduVmtGMDZIYTkvT1NMaE16SmNpbkRQQkFZT0dKWFUwWGJyMXl2NE1JdGZ4TUhobXJRWUIydXlhS1YvRHJBdTdYMWRHWTdpRHZmbFczRUpqQXROMnV3Tm5iYXVzQ25DbUFKWG1CNitrK2g1VjRXODEza0t5djRTcGhONllhWWluRVAxeXRuUUgwWDl3Mk1qRGVRPT0hdjE=?share_link_id=734363133602](https://miro.com/welcomeonboard/L3dRdFduVmtGMDZIYTkvT1NMaE16SmNpbkRQQkFZT0dKWFUwWGJyMXl2NE1JdGZ4TUhobXJRWUIydXlhS1YvRHJBdTdYMWRHWTdpRHZmbFczRUpqQXROMnV3Tm5iYXVzQ25DbUFKWG1CNitrK2g1VjRXODEza0t5djRTcGhONllhWWluRVAxeXRuUUgwWDl3Mk1qRGVRPT0hdjE=?share_link_id=734363133602)
+
+⦁	EventStorming Miro: [https://miro.com/app/board/uXjVJIOOJ5E=/](https://miro.com/app/board/uXjVJIOOJ5E=/).
+
+⦁	Figma Landing Page:[https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=36-22&t=JgpkzDsN9FkcFh1y-1](https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=36-22&t=JgpkzDsN9FkcFh1y-1)
+
+⦁	Figma Wireframes:[https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
+
+⦁	Link del Lean UX Canvas: [https://miro.com/app/board/uXjVJLxX2xg=/?share_link_id=737970760824](https://miro.com/app/board/uXjVJLxX2xg=/?share_link_id=737970760824)
+
+⦁	Needfinding Interviews[https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/ESJ0SpDkAMBIp7F1FRM-3zYBa0b84g6SPKV2JWffqscDcg?e=IZbyLt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/ESJ0SpDkAMBIp7F1FRM-3zYBa0b84g6SPKV2JWffqscDcg?e=IZbyLt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+⦁	Video Expo TB1: []()
+
+⦁	Video Expo TP: []()
+
