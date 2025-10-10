@@ -76,6 +76,18 @@
       <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
       <td>Desarrollo de los items: Style Guidelines, Information Architecture, Landing Page UI Design, Applications Wireframes y Applications Wireflow Diagrams </td>
     </tr>
+<tr>
+      <td>1.0</td>
+      <td>08-10-2025</td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
+      <td>Desarrollo de los capitulos 5 y 6 </td>
+    </tr>
+<tr>
+      <td>1.1</td>
+      <td>10-10-2025</td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
+      <td>Agregar Anexos y bibliografia </td>
+    </tr>
   </tbody>
 </table>
 
