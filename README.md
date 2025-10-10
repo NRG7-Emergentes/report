@@ -43,37 +43,37 @@
     <tr>
       <td>0.1</td>
       <td>05-09-2025</td>
-      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipon y Espinoza Delgado Bárbara Antonella </td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
       <td>Desarrollo de los items: Antecedentes y problemática, Lean UX Process y Segmentos objetivo</td>
     </tr>
     <tr>
       <td>0.2</td>
       <td>09-09-2025</td>
-      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipon y Espinoza Delgado Bárbara Antonella </td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
       <td>Desarrollo de los items: Competidores, Diseño de entrevistas, Registro de entrevistas, Análisis de entrevistas, Needfinding, y ubiquitous language</td>
     </tr>
     <tr>
       <td>0.3</td>
       <td>17-09-2025</td>
-      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipon y Espinoza Delgado Bárbara Antonella </td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
       <td>Desarrollo de los items: To-Be scenario Mapping, User Stories, Impact Mapping y Product Backlog</td>
     </tr>
     <tr>
       <td>0.4</td>
       <td>30-09-2025</td>
-      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipon y Espinoza Delgado Bárbara Antonella </td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
       <td>Desarrollo de los items: Startup Profile, Strategic-Level Attribute-Driven Design, Strategic-Level Domain-Driven Design, Software Architecture y Conclusiones </td>
     </tr>
     <tr>
       <td>0.5</td>
       <td>20-09-2025</td>
-      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipon y Espinoza Delgado Bárbara Antonella </td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
       <td>Desarrollo de los items: Tactical-Level Software Design para IAM, Notificaciones, Orquestrador, Estadisticas y Monitoreo. </td>
     </tr>
     <tr>
       <td>0.6</td>
       <td>08-09-2025</td>
-      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipon y Espinoza Delgado Bárbara Antonella </td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
       <td>Desarrollo de los items: Style Guidelines, Information Architecture, Landing Page UI Design, Applications Wireframes y Applications Wireflow Diagrams </td>
     </tr>
   </tbody>
@@ -84,9 +84,11 @@
 El enlace a github del reporte del proyecto es el siguiente: [https://github.com/NRG7-Emergentes/report](https://github.com/NRG7-Emergentes/report).
 
 **TB1:**  
+
 <img src="https://github.com/NRG7-Emergentes/report/blob/6cb90733b46f82fc0e94a6ba3d723cd0741fbbfb/images/misc/CommitsTB1.png" alt="TB1 Commits">
 
 **TP:**  
+
 <img src="https://github.com/NRG7-Emergentes/report/blob/6cb90733b46f82fc0e94a6ba3d723cd0741fbbfb/images/misc/CommitsTP.png" alt="TP Commits">
 
 ## Contenido
@@ -180,7 +182,7 @@ del ABET – EAC - Student Outcome 3.
         <b>TP:</b><br>
         - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta segunda entrega comuniqué oralmente ideas y dudas para la elaboración de los wireframes y wireflows durante las reuniones grupales en discord, además, comunique activamente sobre la entrega de las tareas que se me asignaron semanalmente.<br><br>
         - <b>Gianluca Santino Pasquale Barrenechea: Para esta segunda entrega comuniqué oralmente el enfoque y las decisiones tomadas para el desarrollo de las style guidelines y la information architecture del proyecto. Expliqué la estructura visual, la selección de componentes y la organización de la información durante las reuniones grupales en Discord, asegurando que todos los miembros comprendieran y aplicaran los lineamientos definidos en el diseño de la plataforma.</b><br><br>
-        - <b>Godofredo Quispe Tipo:</b><br><br>
+        - <b>Godofredo Quispe Tipo:</b> Para esta entrega comuniqué oralmente ideas y dudas para la elaboración del bounded context de estadisticas y los wireframer de Landing Pages<br><br>
         - <b>Gabriel Alexander Casas Sanchez:</b> Para esta entrega busque comunicar todas mis ideas sobre las opciones de diseño (arquitectura de bounded context y UI) de manera clara y sencilla para asegurarme el entendimiento de todos mis compañeros.
 <br><br>
         - <b>Juan Diego Astonitas Diaz:</b> <br><br>
@@ -202,7 +204,7 @@ del ABET – EAC - Student Outcome 3.
         <b>TP:</b><br>
         - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta Segunda entrega realicé en el informe la redacción de las tablas de cada capa del Bounded Context IAM y Diagramas, además, comuniqué mis avances diarios en el grupo de Whatsapp.<br><br>
         - <b>Gianluca Santino Pasquale Barrenechea: Para esta segunda entrega realicé en el informe la redacción de la sección de style guidelines y la arquitectura de la información, detallando la estructura visual, los componentes principales y la organización de la plataforma. </b> <br><br>
-        - <b>Godofredo Quispe Tipo:</b> <br><br>
+        - <b>Godofredo Quispe Tipo:</b> Para esta segunda entrega, he preparado una redacción clara y concisa de la infraestructura y la descripción de los bounded contexts, asegurando que toda la audiencia comprenda la arquitectura del sistema.<br><br>
         - <b>Gabriel Alexander Casas Sanchez:</b> Para esta entregabusque que todas las descripciones y decisiones de arquitectura con respecto al bounded context que desarrolle se entiendad de manera clara, para asi evitar fallos de comunicación entre mis compañeros<br><br>
         - <b>Juan Diego Astonitas Diaz:</b> <br><br>
       </td>
