@@ -4944,13 +4944,13 @@ Evans, E. (2003). Domain-Driven design: Tackling Complexity in the Heart of Soft
 
 ⦁	EventStorming Miro: [https://miro.com/app/board/uXjVJIOOJ5E=/](https://miro.com/app/board/uXjVJIOOJ5E=/).
 
-⦁	Figma Landing Page:[https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=36-22&t=JgpkzDsN9FkcFh1y-1](https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=36-22&t=JgpkzDsN9FkcFh1y-1)
+⦁	Figma Landing Page: [https:\www.figma.com\design\FRNZ8shiNR4qp3QbvECyw0\LandingPage?node-id=0-1&t=lrMdWwOK4vLaKGb7-1](https:\www.figma.com\design\FRNZ8shiNR4qp3QbvECyw0\LandingPage?node-id=0-1&t=lrMdWwOK4vLaKGb7-1)
 
-⦁	Figma Wireframes:[https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
+⦁	Figma Wireframes: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
 
 ⦁	Link del Lean UX Canvas: [https://miro.com/app/board/uXjVJLxX2xg=/?share_link_id=737970760824](https://miro.com/app/board/uXjVJLxX2xg=/?share_link_id=737970760824)
 
-⦁	Needfinding Interviews[https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/ESJ0SpDkAMBIp7F1FRM-3zYBa0b84g6SPKV2JWffqscDcg?e=IZbyLt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/ESJ0SpDkAMBIp7F1FRM-3zYBa0b84g6SPKV2JWffqscDcg?e=IZbyLt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+⦁	Needfinding Interviews: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/ESJ0SpDkAMBIp7F1FRM-3zYBa0b84g6SPKV2JWffqscDcg?e=IZbyLt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/ESJ0SpDkAMBIp7F1FRM-3zYBa0b84g6SPKV2JWffqscDcg?e=IZbyLt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 ⦁	Plantilla Lean UX Canvas:
 
