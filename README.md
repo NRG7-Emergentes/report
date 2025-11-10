@@ -4908,8 +4908,117 @@ Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?
 
 ### 7.1 Software Configuration Management
 
+En este ítem se definirán todas las reglas y procesos que hemos seguido en el proyecto al momento de crear y desplegar ErgoVision. El objetivo de estas reglas y procesos es garantizar la integridad y consistencia del software, desde el inicio hasta el despliegue y mantenimiento.
+
 #### 7.1.1 Software Development Environment Configuration
+
+
+**Project Management**
+
+Para la organización del proyecto requerimos de un sistema de de asignación de tareas, palataformas y puntos de reunión y un repositorio dónde trabajaremos en conjunto cada avance del proyecto. A continuación se menciona los nombres de los productos y el propósito de uso en el proyecto:
+
+- Centro de organización de trabajo: Github
+- Planificación de tareas: Trello
+- Reuniones con el equipo: Discord
+- Coordinación grupal: WhatsApp
+
+**Requirements Management**
+
+Utilizamos Trello para designar las tareas y actividades de cada integrante del grupo en caso de revisión o cambios.
+
+
+| Herramienta | Descripción                                                                                        | Enlace             |
+| ----------- | --------------------------------------------------------------------------------------------------- | ------------------ |
+| Trello      | Para designar las tareas y actividades de cada integrante del grupo en caso de revisión o cambios. | [https://trello.com](https://trello.com) |
+
+**Product UX/UI Design**
+
+Para el diseño de los wireframes y mockups, además de la realización del prototipo de la mobile application, utilizamos Figma.
+
+
+| Herramienta | Descripción                                                                                    | Enlace                 |
+| ----------- | ----------------------------------------------------------------------------------------------- | ---------------------- |
+| Figma       | Para el diseño de los wireframe y mockups, además de la realización del prototipo de Web App | [https://www.figma.com/](https://www.figma.com/) |
+
+**Software Development**
+
+Empleamos **Angular** para la creación del frontend de la aplicación web, **Flutter** para la app móvil, y **Spring Boot** para la creación de la API REST.  
+
+Para el desarrollo de la **landing page** utilizamos **NextJS**, **Shadcn** y **Tailwind CSS**.
+
+| Herramienta  | Descripción                                                                 | Enlace                                                                           |
+| ------------ | --------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| Angular      | Framework utilizado para la creación del frontend de la aplicación web      | [https://angular.io/](https://angular.io/)                                       |
+| Flutter      | Framework utilizado para la creación de la aplicación móvil multiplataforma | [https://flutter.dev/](https://flutter.dev/)                                     |
+| Spring Boot  | Framework utilizado para la creación de la API REST                         | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot) |
+| NextJS       | Framework utilizado para la creación de la landing page                     | [https://nextjs.org/](https://nextjs.org/)                                       |
+| Shadcn       | Framework utilizado para la creación de la landing page                     | [https://ui.shadcn.com/](https://ui.shadcn.com/)                                 |
+| Tailwind CSS | Framework utilizado para la creación de la landing page                     | [https://tailwindcss.com/](https://tailwindcss.com/)                             |
+
+
+
+**Software Deployment**
+
+Se empleó los siguientes software para desplegar los servicios del proyecto. Base de datos: Neontech, API y Landing Page y Web Application: Render, Mobile Application: Android Studio.
+
+| Herramienta    | Descripción                                                     | Enlace                                                                       |
+| -------------- | --------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| Neontech       | Base de datos utilizada para el proyecto                        | [https://neon.tech/](https://neon.tech/)                                     |
+| Render         | API y Landing Page utilizada para el proyecto                   | [https://render.com/](https://render.com/)                                   |
+| Android Studio | Herramienta utilizada para la creación de la mobile application | [https://developer.android.com/studio](https://developer.android.com/studio) |
+
+**Software Documentation**
+
+Para la documentación del software utilizamos Markdown, y para el trabajo colaborativo Github.
+
+| Herramienta | Descripción                                                      | Enlace                                                                                 |
+| ----------- | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Markdown    | Lenguaje de marcado utilizado para la documentación del proyecto | [https://www.markdownguide.org/](https://www.markdownguide.org/)                       |
+| GitHub      | Para gestionar la documentación del proyecto                     | [https://github.com/NRG7-Emergentes/report](https://github.com/NRG7-Emergentes/report) |
+
+
 #### 7.1.2 Source Code Management
+
+Para la gestión del código fuente, utilizamos los siguientes repositorios:
+
+| Producto           | Repositorio       | Enlace                                                                                                         |
+| ------------------ | ----------------- | -------------------------------------------------------------------------------------------------------------- |
+| Web Application    | synhub-web-app    | [https://github.com/NRG7-Emergentes/ergovision-webapp](https://github.com/NRG7-Emergentes/ergovision-webapp)   |
+| Mobile Application | synhub-mobile-app | [https://github.com/NRG7-Emergentes/ergovision-mobile](https://github.com/NRG7-Emergentes/ergovision-mobile)   |
+| Backend            | synhub-backend    | [https://github.com/NRG7-Emergentes/ergovision-backend](https://github.com/NRG7-Emergentes/ergovision-backend) |
+| Landing Page       | synhub-landing    | [https://github.com/NRG7-Emergentes/landing-page](https://github.com/NRG7-Emergentes/landing-page)             |
+
+
+**Flujo de trabajo GitFlow**
+
+Usaremos el flujo de trabajo planteado por Vincent Driessen en "A successful Git branching model" con los siguientes parámetros:
+
+- Una rama de producción.
+- Una rama de pruebas.
+- Una rama en la que se solucionen los bugs rapidamente y vuelvan a producción.
+- Ramas de features a implementar.
+- Cada cambio en producción debe establecerse como una nueva versión.
+- Para este proyecto en concreto consideramos que los cambios en la rama de producción y de pruebas deben tener autorización de un compa­ñero de equipo.
+
+Teniendo en cuenta la información anterior nos inclinamos por este tipo de organización en los branches:
+
+- **Main branch:** Esta rama esta destinada a la producción de la aplicación, cada cambio deberá tener autorización de un compañero de equipo para evitar cambios sin verificar.
+- **Hotfix branch:** En esta rama se incluirán todas las versiones que poseen errores identificados y que con cada arreglo de este se despliegue otra vez a Main Branch además de implementarla en lo que será Develop Branch.
+- **Develop branch:** Esta rama está destinada a las constantes implementaciones en caliente de los features,
+- **Features branch:** Cada feature poseerá su respectiva rama, una vez que se encuentre correctamente implementada será fusionada con Develop branch.
+
+Con cada deployment de la aplicación debe establecerse como una nueva versión. Nomenclatura de numeración de las versiones:
+
+- **Major changes:** Cuando el código o versión nueva del proyecto a implementar presenta cambios significativos con la versión anterior, estos cambios llegan a ser incompatibles con la versión anterior. Esto se evidenciará en el numero de la versión ej: versión 1.0.0 -> versión 2.0.0.
+- **Minor changes:** Cuando el código o versión nueva del proyecto a implementar presenta cambios con respecto a alguna característica, ya sea añadir o modificar, de la versión anterior; estos cambios no llegan a ser incompatibles con la versión anterior. Esto se evidenciará en el numero de la versión ej: versión 1.1.0 -> versión 1.2.0.
+- **Patch:** Cuando se solucionan bugs menores. Esto se evidenciará en el numero de la versión ej: versión 1.1.3 -> versión 1.1.4.
+
+Sufijos asignados a las versiones:
+
+- **alpha:** versión no estable con características básicas o no funcionales, ejemplo : versión 1.0.0 -alpha.
+- **beta:** versión no apta para la publicación, aún así ya presenta características funcionales en el estado base, ejemplo versión 1.0.0 –beta.
+- **rc:** versión apta para la publicación y uso de los usuarios, es candidata para publicar, ejemplo versión 1.0.0 -rc.
+
 #### 7.1.3 Source Code Style Guide & Conventions
 #### 7.1.4 Software Deployment Configuration
 
