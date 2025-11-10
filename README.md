@@ -4756,6 +4756,20 @@ Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?
 
 #### 6.4.3 Applications Mock-ups
 
+**Mockups Web:**
+
+Los mockups de la aplicación web de ErgoVision presentan las interfaces de registro/login, perfil editable, dashboard con resúmenes semanales, estadísticas visuales, configuración de notificaciones, calibración del sistema de cámara, monitoreo en tiempo real con detección de postura activa, y pantallas de pausas con ejercicios sugeridos y temporizadores para descansos programados.
+
+<img src="images/chapter-6/AppWebMockups.png" alt="Mockups Web">
+
+**Mockups Móvil:**
+
+Los mockups de la aplicación móvil de ErgoVision muestran el flujo completo de ErgoVision desde autenticación (login/registro con datos personales y antropométricos), pasando por gestión de perfil, visualización de estadísticas con gráficos de postura y tiempos de descanso, historial de sesiones, hasta detalles específicos de cada sesión con porcentajes de postura correcta y pausas realizadas.
+
+<img src="images/chapter-6/AppMovilMockups.png" alt="ockups Movil">
+
+Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1]
+
 #### 6.4.4 Applications User Flow Diagrams
 
 ### 6.5 Applications Prototyping
