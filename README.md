@@ -4660,7 +4660,7 @@ Para tener una primera idea de cómo lucirá nuetra landing page, se realizaron 
  **Wireframes Móvil**  
 <img src="images/chapter-6/LandingPageResponsiveWireframes.png" alt="LandingPageResponsiveWireframes">
 
-Link del Figma: [https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=0-1&t=tUt2TuwoHmFV3ka1-1]
+Link del Figma: [https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=0-1&t=tUt2TuwoHmFV3ka1-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
 
 #### 6.3.2 Landing Page Mock-up
 
@@ -4673,7 +4673,7 @@ Posterior a la versión final de los Wireframes, se realizaron los Mockups de la
  **Mockups Móvil**  
 <img src="images/chapter-6/LandingPageResponsiveMockups.png" alt="LandingPageResponsiveMockups">
 
-Link del Figma: [https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=0-1&t=tUt2TuwoHmFV3ka1-1]
+Link del Figma: [https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=0-1&t=tUt2TuwoHmFV3ka1-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
 
 ### 6.4 Applications UX/UI Design
 
@@ -4691,13 +4691,13 @@ Los wireframes de la aplicación móvil de ErgoVision muestran el flujo completo
 
 <img src="images/chapter-6/WireframesMovil.png" alt="Wireframes Movil">
 
-Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1]
+Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
 
 #### 6.4.2 Applications Wireflow Diagrams
 
 Los wireflow diagrams de ErgoVision representan la secuencia de interacciones y pantallas que los usuarios experimentarán al navegar por la aplicación.
 
-Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1]
+Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
 
 **Edición de Datos de Usuario:** Este wireflow corresponde a cuando un usuario quiere modificar sus datos personales luego de haberse registrado.
 
@@ -4768,9 +4768,148 @@ Los mockups de la aplicación móvil de ErgoVision muestran el flujo completo de
 
 <img src="images/chapter-6/AppMovilMockups.png" alt="ockups Movil">
 
-Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1]
+Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
 
 #### 6.4.4 Applications User Flow Diagrams
+
+**USER FLOW 1: REGISTRAR CUENTA**
+
+**User Goal:** Como estudiante/trabajador remoto, quiero registrar mi cuenta para acceder a la aplicación.
+
+<img src="images/chapter-6/PasosUF1.png" alt="Pasos Userflow 1">
+
+**Web Application**
+
+<img src="images/chapter-6/Userflow1Web.png" alt="Userflow 1 Web">
+
+**Mobile Application**
+
+<img src="images/chapter-6/Userflow1Mobile.png" alt="Userflow 1 Mobile">
+
+
+**Descripción:** El user flow inicia cuando el usuario accede a la pantalla inicial de la aplicación y selecciona la opción 'Sign Up' para crear una nueva cuenta. Al acceder, el sistema muestra el formulario de registro donde el usuario completa todos los campos requeridos (nombre, email, contraseña, foto, etc). El sistema valida que el email no esté previamente registrado y que la contraseña cumpla con los requisitos de seguridad. Finalmente, el sistema confirma el registro exitoso y permite al usuario acceder a la aplicación.
+
+
+**USER FLOW 2: INICIAR SESIÓN**
+
+**User Goal:** Como estudiante/trabajador remoto, quiero iniciar sesión para hacer uso de la aplicación.
+
+<img src="images/chapter-6/PasosUF2.png" alt="Pasos Userflow 2">
+
+**Web Application**
+
+<img src="images/chapter-6/Userflow2Web.png" alt="Userflow 2 Web">
+
+**Mobile Application**
+
+<img src="images/chapter-6/Userflow2Mobile.png" alt="Userflow 2 Mobile">
+
+
+**Descripción:** El user flow inicia cuando el usuario se encuentra en la pantalla principal de Sign In. El usuario ingresa su email y contraseña en los campos correspondientes y presiona el botón 'Sign In'. El sistema procesa la autenticación, valida que las credenciales coincidan con los registros de la base de datos, y redirige automáticamente al usuario al dashboard principal donde puede visualizar sus estadísticas y acceder a todas las funcionalidades.
+
+
+**USER FLOW 3: EDITAR PERFIL**
+
+**User Goal:** Como estudiante/trabajador remoto, quiero editar mi perfil para actualizar mi información personal.
+
+<img src="images/chapter-6/PasosUF3.png" alt="Pasos Userflow 3">
+
+**Web Application**
+
+<img src="images/chapter-6/Userflow3Web.png" alt="Userflow 3 Web">
+
+**Mobile Application**
+
+<img src="images/chapter-6/Userflow3Mobile.png" alt="Userflow 3 Mobile">
+
+
+**Descripción:** El user flow inicia cuando el usuario se encuentra en el dashboard principal y accede a su perfil presionando en el menú de navegación la opción correspondiente. Al acceder a la vista de perfil, el sistema muestra la información actual del usuario (nombre, altura, peso, foto de perfil y años). El usuario presiona el botón 'Editar Perfil' y el sistema despliega los campos editables. El usuario modifica la información deseada, valida que los cambios sean correctos y presiona 'Guardar'. El sistema procesa la actualización, confirma que los cambios se guardaron exitosamente y actualiza la vista del perfil con la nueva información.
+
+
+**USER FLOW 4: CAMBIAR MI CONFIGURACIÓN**
+
+**User Goal:** Como estudiante/trabajador remoto, quiero cambiar mi configuración para personalizar la aplicación según mis preferencias.
+
+<img src="images/chapter-6/PasosUF4.png" alt="Pasos Userflow 4">
+
+**Web Application**
+
+<img src="images/chapter-6/Userflow4Web.png" alt="Userflow 4 Web">
+
+**Mobile Application**
+
+<img src="images/chapter-6/Userflow4Mobile.png" alt="Userflow 4 Mobile">
+
+
+**Descripción:** El user flow inicia cuando el usuario se encuentra en el dashboard principal y presiona en el menú de navegación la opción 'Configuración' o el ícono de ajustes. Al acceder, el sistema despliega la pantalla de configuración mostrando todas las opciones disponibles organizadas por categorías. El usuario modifica los valores deseados utilizando dropdowns, sliders o campos de texto. El sistema valida que los valores estén dentro de los rangos permitidos y aplica las configuraciones.
+
+
+**USER FLOW 5: MONITOREAR MI POSTURA**
+
+**User Goal:** Como estudiante/trabajador remoto, quiero monitorear mi postura en tiempo real para recibir alertas y mejorar mi ergonomía.
+
+<img src="images/chapter-6/PasosUF5.png" alt="Pasos Userflow 5">
+
+**Web Application**
+
+<img src="images/chapter-6/Userflow5Web.png" alt="Userflow 5 Web">
+
+
+**User Goal:** Como estudiante/trabajador remoto, quiero monitorear mi postura en tiempo real para recibir alertas y mejorar mi ergonomía.
+
+**Descripción:** El user flow inicia cuando el usuario se encuentra en el dashboard principal y selecciona la opción 'Monitoreo' desde el menú de navegación o presiona el botón prominente de 'Iniciar Monitoreo'. Al acceder, el sistema solicita permisos de cámara si es la primera vez o verifica que los permisos estén activos. Una vez confirmados los permisos, el sistema activa la cámara y muestra la vista de monitoreo en tiempo real donde el usuario puede verse a sí mismo. El sistema comienza a analizar la postura cuando se le de a Start. Durante la sesión, el usuario recibe notificaciones automáticas cuando mantiene una postura incorrecta por tiempo prolongado, permitiéndole corregir su posición inmediatamente.
+
+
+**USER FLOW 6: VISUALIZAR ESTADÍSTICAS DE MIS MONITOREOS**
+
+**User Goal:** Como estudiante/trabajador remoto, quiero visualizar mis estadísticas  para conocer mi progreso ergonómico.
+
+<img src="images/chapter-6/PasosUF6.png" alt="Pasos Userflow 6">
+
+**Web Application**
+
+<img src="images/chapter-6/Userflow6Web.png" alt="Userflow 6 Web">
+
+**Mobile Application**
+
+<img src="images/chapter-6/Userflow6Mobile.png" alt="Userflow 6 Mobile">
+
+
+**Descripción:** El user flow inicia cuando el usuario completa exitosamente el inicio de sesión en la pantalla de Sign In. Al validar las credenciales, el sistema automáticamente redirige al usuario al dashboard principal. Al seleccionar la opción de 'Progress', el sistema recupera y procesa los datos históricos del usuario desde la base de datos y despliega las estadísticas generales de forma visual y organizada mediante un gráfico circular y un gráfico de barras. El usuario puede observar claramente su progreso ergonómico y tendencias de mejora o deterioro en su postura.
+
+
+**USER FLOW 7: VISUALIZAR MI HISTORIAL**
+
+**User Goal:** Como estudiante/trabajador remoto, quiero visualizar mi historial completo de sesiones para revisar mi evolución a lo largo del tiempo.
+
+<img src="images/chapter-6/PasosUF7.png" alt="Pasos Userflow 7">
+
+**Web Application**
+
+<img src="images/chapter-6/Userflow7Web.png" alt="Userflow 7 Web">
+
+**Mobile Application**
+
+<img src="images/chapter-6/Userflow7Mobile.png" alt="Userflow 7 Mobile">
+
+
+**Descripción:** El user flow inicia cuando el usuario se encuentra en el dashboard principal y presiona en el menú de navegación la opción 'Historial' o 'History'. Al acceder a esta sección, el sistema recupera del servidor todas las sesiones de monitoreo que el usuario ha completado previamente y las presenta en una lista cronológica ordenada de más reciente a más antigua. La interfaz muestra para cada sesión información resumida: fecha, duración total, accuracy promedio obtenido, y cantidad de pausas.
+ 
+
+**USER FLOW 8: RECALIBRAR MI CÁMARA**
+
+**User Goal:** Como estudiante/trabajador remoto, quiero recalibrar mi cámara para asegurar un monitoreo preciso de mi postura.
+
+
+<img src="images/chapter-6/PasosUF8.png" alt="Pasos Userflow 8">
+
+
+**Web Application**
+
+<img src="images/chapter-6/Userflow8Web.png" alt="Userflow 8 Web">
+
+
+**Descripción:** El user flow inicia cuando el usuario, ya sea desde el dashboard principal o desde la sección de configuración, identifica y presiona la opción 'Recalibrar'. Al acceder, el sistema despliega la interfaz de calibración que muestra instrucciones visuales claras y paso a paso. El proceso de calibración guía al usuario para que se posicione correctamente frente a la cámara a una distancia adecuada, asegurando que su rostro y torso superior sean visibles en el frame. El sistema muestra el esqueleto para ayudar al posicionamiento. Una vez que el usuario está en la posición correcta, el sistema detecta automáticamente los puntos clave del cuerpo (cabeza, hombros, columna) y ajusta los parámetros de detección según la configuración específica de la cámara del usuario, la distancia detectada, el ángulo de la cámara y las condiciones de iluminación del entorno. El sistema valida que la calibración sea exitosa, guardando automáticamente la configuración para futuras sesiones de monitoreo.
 
 ### 6.5 Applications Prototyping
 
