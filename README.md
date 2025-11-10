@@ -5020,7 +5020,210 @@ Sufijos asignados a las versiones:
 - **rc:** versión apta para la publicación y uso de los usuarios, es candidata para publicar, ejemplo versión 1.0.0 -rc.
 
 #### 7.1.3 Source Code Style Guide & Conventions
+
+Usaremos buenas prácticas en cuanto al código de manera que sea coherente y sostenible.
+
+
+**Flutter**
+
+* **Nomenclatura:**
+
+  * Clases y widgets: *PascalCase*.
+  * Funciones y variables: *camelCase*.
+  * Constantes: *UPPER_SNAKE_CASE*.
+* **Estructura:**
+
+  * Separar la lógica de la UI mediante arquitectura por capas (*UI*, *Providers*, *Services*, *Models*).
+  * Reutilizar componentes visuales y mantener una estructura modular.
+* **Buenas prácticas:**
+
+  * Evitar lógica de negocio dentro de los widgets.
+  * Aplicar `const` donde sea posible para optimizar rendimiento.
+  * Usar `async/await` correctamente para evitar bloqueos en la interfaz.
+
+
+**Angular**
+
+* **Estructura:**
+
+  * Dividir el código en *módulos*, *componentes*, *servicios* y *modelos*.
+  * Aplicar *Lazy Loading* para optimizar la carga de módulos.
+* **Nomenclatura:**
+
+  * Clases y componentes: *PascalCase*.
+  * Variables y métodos: *camelCase*.
+  * Archivos: *kebab-case* (ejemplo: `user-profile.component.ts`).
+* **Buenas prácticas:**
+
+  * Mantener la lógica de negocio en *servicios*, no en componentes.
+  * Utilizar `async pipe` para manejar observables.
+  * Aplicar linters (*ESLint*, *Prettier*) para mantener consistencia en el código.
+
+
+**Spring Boot**
+
+* **Estructura:**
+
+  * Organizar el proyecto por capas: *controller*, *service*, *repository*, *model*.
+  * Utilizar interfaces para los servicios (`UserService → UserServiceImpl`).
+* **Convenciones:**
+
+  * Clases en *PascalCase*.
+  * Métodos en *camelCase* (ejemplo: `getUserById()`).
+  * Endpoints REST en *kebab-case* (ejemplo: `/api/user-data`).
+* **Buenas prácticas:**
+
+  * Validar entradas con anotaciones (`@Valid`, `@NotNull`).
+  * Manejar excepciones de forma global con `@ControllerAdvice`.
+
+
+**Next.js**
+
+* **Rutas:**
+
+  * Usar *kebab-case* en nombres de archivos (ejemplo: `/pages/user/profile.js`).
+  * Definir las *API routes* dentro de `/pages/api/`.
+* **Estilos:**
+
+  * Utilizar *CSS Modules* (`styles.module.css`).
+  * Evitar estilos inline; priorizar componentes estilizados o clases de Tailwind.
+* **Buenas prácticas:**
+
+  * Implementar *SSR* o *SSG* según el caso de uso.
+  * Usar hooks personalizados (`useHookName`) para lógica reutilizable.
+
+
+**Shadcn/UI**
+
+* **Componentes:**
+
+  * Extender estilos base sin sobrescribir el CSS nativo.
+  * Utilizar `clsx` o `tailwind-merge` para combinar clases dinámicas.
+* **Theming:**
+
+  * Definir variables CSS en `:root` para personalización.
+  * Mantener coherencia visual aplicando un sistema de diseño uniforme.
+
+
+
+**Tailwind CSS**
+
+* **Clases:**
+
+  * Ordenar las clases: *Layout > Flex/Grid > Spacing > Typography > Colors > Effects*.
+  * Evitar `@apply` en CSS y usar clases directamente en el HTML.
+* **Responsive:**
+
+  * Usar prefijos (`sm:`, `md:`, `lg:`) para adaptar la interfaz.
+* **Buenas prácticas:**
+
+  * Centralizar la configuración de colores y tipografías en `tailwind.config.js`.
+  * Reutilizar estilos comunes en componentes para mantener consistencia.
+
+
+
+**General**
+
+* **Código:**
+
+  * Comentarios en inglés.
+  * Commits semánticos (`feat:`, `fix:`, `docs:`).
+* **Performance:**
+
+  * Implementar *Lazy Loading* para componentes y recursos.
+  * Reutilizar componentes y evitar duplicación de código.
+  * Optimizar imágenes y recursos estáticos para mejorar tiempos de carga.
+
 #### 7.1.4 Software Deployment Configuration
+
+En esta sección se detallan las consideraciones y pasos necesarios para el despliegue de los productos de **ErgoVision**.
+
+
+
+**Landing Page (Next.js + Render)**
+
+**Consideraciones antes del despliegue:**
+
+* Ejecutar `npm run build` localmente para verificar que no existan errores.
+* Asegurar que las dependencias estén actualizadas y compatibles.
+
+**Requerimientos:**
+
+* Repositorio público en *GitHub*.
+* Cuenta activa en Render  [https://render.com/](https://render.com/) .
+
+**Pasos realizados para el despliegue:**
+
+1. Ingresar al sitio web de Render.
+2. Iniciar sesión en la cuenta de Render.
+3. Seleccionar la opción **“New → Web Service”**.
+4. Autorizar el acceso a los repositorios de GitHub.
+5. Elegir el repositorio de la Landing Page.
+6. Configurar los parámetros de build (`npm install && npm run build`).
+7. Hacer clic en **“Deploy”**.
+8. Verificar la URL pública generada por Render.
+
+
+**Web Application (Angular + Render)**
+
+**Consideraciones antes del despliegue:**
+
+* Verificar la conexión con el backend y endpoints disponibles.
+* Ejecutar `ng build --prod` para generar la versión optimizada.
+
+**Requerimientos:**
+
+* Repositorio público en *GitHub*.
+* Cuenta en Render [https://render.com/](https://render.com/) .
+
+**Pasos realizados para el despliegue:**
+
+1. Ingresar a Render.
+2. Crear un nuevo servicio tipo **Web Service**.
+3. Seleccionar el repositorio del proyecto Angular.
+4. Configurar el comando de build (`ng build --prod`).
+5. Realizar el despliegue y comprobar el funcionamiento en la URL pública.
+
+
+**Mobile Application (Flutter)**
+
+**Consideraciones antes del despliegue:**
+
+* Asegurarse de que la API esté en línea y accesible.
+* Generar el archivo de compilación optimizado (`flutter build apk --release`).
+
+**Requerimientos:**
+
+* Repositorio en *GitHub*.
+* Dispositivo Android o iOS disponible para pruebas.
+
+**Pasos realizados para el despliegue:**
+
+1. Conectar el dispositivo al entorno de desarrollo.
+2. Ejecutar `flutter build apk --release`.
+3. Instalar el APK en el dispositivo móvil.
+4. Verificar la conexión con la API y el correcto funcionamiento.
+
+
+**Backend (Spring Boot + Render)**
+
+**Consideraciones antes del despliegue:**
+
+* Tener la base de datos configurada en **Neontech**.
+* Definir correctamente las variables de entorno en Render.
+
+**Requerimientos:**
+
+* Repositorio del backend en *GitHub*.
+* Archivo `Dockerfile` preparado para el despliegue.
+
+**Pasos realizados para el despliegue:**
+
+1. Crear un nuevo servicio Web en Render.
+2. Importar el repositorio del backend desde GitHub.
+3. Configurar la conexión con Neontech.
+4. Desplegar el proyecto y verificar los endpoints con *Postman* o *Swagger*.
+
 
 ### 7.2 Solution Implementation
 
