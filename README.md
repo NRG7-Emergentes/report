@@ -4944,28 +4944,27 @@ Para el diseño de los wireframes y mockups, además de la realización del prot
 
 Empleamos **Angular** para la creación del frontend de la aplicación web, **Flutter** para la app móvil, y **Spring Boot** para la creación de la API REST.  
 
-Para el desarrollo de la **landing page** utilizamos **NextJS**, **Shadcn** y **Tailwind CSS**.
+Para el desarrollo de la **landing page** utilizamos **HTML** y **Tailwind CSS**.
 
-| Herramienta  | Descripción                                                                 | Enlace                                                                           |
-| ------------ | --------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| Angular      | Framework utilizado para la creación del frontend de la aplicación web      | [https://angular.io/](https://angular.io/)                                       |
-| Flutter      | Framework utilizado para la creación de la aplicación móvil multiplataforma | [https://flutter.dev/](https://flutter.dev/)                                     |
-| Spring Boot  | Framework utilizado para la creación de la API REST                         | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot) |
-| NextJS       | Framework utilizado para la creación de la landing page                     | [https://nextjs.org/](https://nextjs.org/)                                       |
-| Shadcn       | Framework utilizado para la creación de la landing page                     | [https://ui.shadcn.com/](https://ui.shadcn.com/)                                 |
-| Tailwind CSS | Framework utilizado para la creación de la landing page                     | [https://tailwindcss.com/](https://tailwindcss.com/)                             |
-
+| Herramienta  | Descripción                                                                  | Enlace                                                                                                 |
+| ------------ | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| Angular      | Framework utilizado para la creación del frontend de la aplicación web       | [https://angular.io/](https://angular.io/)                                                             |
+| Flutter      | Framework utilizado para la creación de la aplicación móvil multiplataforma  | [https://flutter.dev/](https://flutter.dev/)                                                           |
+| Spring Boot  | Framework utilizado para la creación de la API REST                          | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot)                       |
+| HTML         | Lenguaje de marcado utilizado para el desarrollo de la landing page estática | [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) |
+| Tailwind CSS | Framework utilizado para la maquetación y diseño de la landing page          | [https://tailwindcss.com/](https://tailwindcss.com/)                                                   |
 
 
 **Software Deployment**
 
-Se empleó los siguientes software para desplegar los servicios del proyecto. Base de datos: Neontech, API y Landing Page y Web Application: Render, Mobile Application: Android Studio.
+Se empleó los siguientes software para desplegar los servicios del proyecto. Base de datos: Render, Landing Page: Github Actions, Web Application: Render, Mobile Application: Android Studio.
 
-| Herramienta    | Descripción                                                     | Enlace                                                                       |
-| -------------- | --------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| Neontech       | Base de datos utilizada para el proyecto                        | [https://neon.tech/](https://neon.tech/)                                     |
-| Render         | API y Landing Page utilizada para el proyecto                   | [https://render.com/](https://render.com/)                                   |
-| Android Studio | Herramienta utilizada para la creación de la mobile application | [https://developer.android.com/studio](https://developer.android.com/studio) |
+| Herramienta    | Descripción                                                                                     | Enlace                                                                       |
+| -------------- | ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| Render         | Plataforma utilizada para el despliegue de la base de datos, API, aplicación web y landing page | [https://render.com/](https://render.com/)                                   |
+| Android Studio | Herramienta utilizada para la creación de la mobile application (APK e IPA)                     | [https://developer.android.com/studio](https://developer.android.com/studio) |
+| GitHub Actions | Despliegue de la landing estática                                                               | [https://github.com/features/actions](https://github.com/features/actions)   |
+
 
 **Software Documentation**
 
@@ -4983,10 +4982,10 @@ Para la gestión del código fuente, utilizamos los siguientes repositorios:
 
 | Producto           | Repositorio       | Enlace                                                                                                         |
 | ------------------ | ----------------- | -------------------------------------------------------------------------------------------------------------- |
-| Web Application    | synhub-web-app    | [https://github.com/NRG7-Emergentes/ergovision-webapp](https://github.com/NRG7-Emergentes/ergovision-webapp)   |
-| Mobile Application | synhub-mobile-app | [https://github.com/NRG7-Emergentes/ergovision-mobile](https://github.com/NRG7-Emergentes/ergovision-mobile)   |
-| Backend            | synhub-backend    | [https://github.com/NRG7-Emergentes/ergovision-backend](https://github.com/NRG7-Emergentes/ergovision-backend) |
-| Landing Page       | synhub-landing    | [https://github.com/NRG7-Emergentes/landing-page](https://github.com/NRG7-Emergentes/landing-page)             |
+| Web Application    | ergovision-web-app    | [https://github.com/NRG7-Emergentes/ergovision-webapp](https://github.com/NRG7-Emergentes/ergovision-webapp)   |
+| Mobile Application |  ergovision-mobile-app | [https://github.com/NRG7-Emergentes/ergovision-mobile](https://github.com/NRG7-Emergentes/ergovision-mobile)   |
+| Backend            |  ergovision-backend    | [https://github.com/NRG7-Emergentes/ergovision-backend](https://github.com/NRG7-Emergentes/ergovision-backend) |
+| Landing Page       |  ergovision-landing-page    | [https://github.com/NRG7-Emergentes/landing-page](https://github.com/NRG7-Emergentes/landing-page)             |
 
 
 **Flujo de trabajo GitFlow**
@@ -5076,34 +5075,22 @@ Usaremos buenas prácticas en cuanto al código de manera que sea coherente y so
   * Validar entradas con anotaciones (`@Valid`, `@NotNull`).
   * Manejar excepciones de forma global con `@ControllerAdvice`.
 
+**HTML**
 
-**Next.js**
+* **Estructura:**
 
-* **Rutas:**
+  * Mantener jerarquía semántica correcta (`<header>`, `<main>`, `<section>`, `<footer>`).
+  * Incluir etiquetas meta esenciales (`<meta charset="UTF-8">`, `<meta name="viewport">`).
+* **Convenciones:**
 
-  * Usar *kebab-case* en nombres de archivos (ejemplo: `/pages/user/profile.js`).
-  * Definir las *API routes* dentro de `/pages/api/`.
-* **Estilos:**
-
-  * Utilizar *CSS Modules* (`styles.module.css`).
-  * Evitar estilos inline; priorizar componentes estilizados o clases de Tailwind.
+  * Archivos nombrados en *kebab-case* (ejemplo: `about-us.html`).
+  * Uso de indentación consistente (2 o 4 espacios).
 * **Buenas prácticas:**
 
-  * Implementar *SSR* o *SSG* según el caso de uso.
-  * Usar hooks personalizados (`useHookName`) para lógica reutilizable.
-
-
-**Shadcn/UI**
-
-* **Componentes:**
-
-  * Extender estilos base sin sobrescribir el CSS nativo.
-  * Utilizar `clsx` o `tailwind-merge` para combinar clases dinámicas.
-* **Theming:**
-
-  * Definir variables CSS en `:root` para personalización.
-  * Mantener coherencia visual aplicando un sistema de diseño uniforme.
-
+  * Validar el HTML con [W3C Validator](https://validator.w3.org/).
+  * Evitar el uso de estilos inline; usar clases con Tailwind CSS.
+  * Minimizar el uso de etiquetas obsoletas (`<center>`, `<font>`).
+  * Mantener el contenido accesible con atributos `alt`, `aria-label` y roles semánticos.
 
 
 **Tailwind CSS**
@@ -5139,90 +5126,124 @@ Usaremos buenas prácticas en cuanto al código de manera que sea coherente y so
 En esta sección se detallan las consideraciones y pasos necesarios para el despliegue de los productos de **ErgoVision**.
 
 
-
-**Landing Page (Next.js + Render)**
+**Landing Page (HTML + Github Actions)**
 
 **Consideraciones antes del despliegue:**
 
-* Ejecutar `npm run build` localmente para verificar que no existan errores.
-* Asegurar que las dependencias estén actualizadas y compatibles.
+* Ejecutar el archivo `index.html` localmente para verificar que no existan errores de carga ni conflictos de dependencias.
+* Asegurarse de que todos los archivos asociados (CSS, imágenes y scripts) estén correctamente enlazados en el proyecto.
 
-**Requerimientos:**
+**Requerimientos para realizar el despliegue:**
 
-* Repositorio público en *GitHub*.
-* Cuenta activa en Render  [https://render.com/](https://render.com/) .
+* Repositorio público en **GitHub**.
+* Acceso a la sección de configuración del repositorio.
 
 **Pasos realizados para el despliegue:**
 
-1. Ingresar al sitio web de Render.
-2. Iniciar sesión en la cuenta de Render.
-3. Seleccionar la opción **“New → Web Service”**.
-4. Autorizar el acceso a los repositorios de GitHub.
-5. Elegir el repositorio de la Landing Page.
-6. Configurar los parámetros de build (`npm install && npm run build`).
-7. Hacer clic en **“Deploy”**.
-8. Verificar la URL pública generada por Render.
+1. Ingresar al repositorio público de la *Landing Page* en GitHub.
+2. Ir a la pestaña **Settings**.
+3. Seleccionar la sección **Pages**.
+4. En la opción *Build and deployment*, elegir **GitHub Actions** como fuente (*Source*).
+5. Seleccionar la plantilla **Static HTML** de GitHub Actions.
+6. Hacer un **commit** del flujo de trabajo (`.yml`) de *GitHub Actions* para HTML estático.
+7. Volver a la pestaña **Pages** y esperar a que se genere el enlace público de la página.
+8. Verificar el correcto funcionamiento accediendo al enlace generado.
+
+**Herramientas utilizadas:**
+
+| Herramienta    | Descripción                       | Enlace                                                                     |
+| -------------- | --------------------------------- | -------------------------------------------------------------------------- |
+| GitHub Actions | Despliegue de la landing estática | [https://github.com/features/actions](https://github.com/features/actions) |
 
 
 **Web Application (Angular + Render)**
 
 **Consideraciones antes del despliegue:**
 
-* Verificar la conexión con el backend y endpoints disponibles.
-* Ejecutar `ng build --prod` para generar la versión optimizada.
+* Validar que no existan errores con `ng build --configuration production`.
+* Confirmar la conexión funcional con el backend y las variables de entorno correctamente configuradas.
 
 **Requerimientos:**
 
-* Repositorio público en *GitHub*.
-* Cuenta en Render [https://render.com/](https://render.com/) .
+* Repositorio público del proyecto en GitHub.
+* Cuenta activa en **Render**.
 
 **Pasos realizados para el despliegue:**
 
-1. Ingresar a Render.
-2. Crear un nuevo servicio tipo **Web Service**.
-3. Seleccionar el repositorio del proyecto Angular.
-4. Configurar el comando de build (`ng build --prod`).
-5. Realizar el despliegue y comprobar el funcionamiento en la URL pública.
+1. Ingresar a [Render](https://render.com/).
+2. Iniciar sesión en la cuenta del proyecto.
+3. Seleccionar **New → Web Service**.
+4. Conceder acceso a Render a los repositorios de GitHub.
+5. Elegir el repositorio del proyecto Angular.
+6. Configurar el nombre del servicio, puerto y comandos de *build* (`npm run build`).
+7. Hacer clic en **Deploy**.
+8. Verificar el despliegue en la URL generada por Render.
+
+**Herramientas utilizadas:**
+
+| Herramienta | Descripción                               | Enlace                                     |
+| ----------- | ----------------------------------------- | ------------------------------------------ |
+| Render      | Despliegue de la aplicación web (Angular) | [https://render.com/](https://render.com/) |
+
 
 
 **Mobile Application (Flutter)**
 
 **Consideraciones antes del despliegue:**
 
-* Asegurarse de que la API esté en línea y accesible.
-* Generar el archivo de compilación optimizado (`flutter build apk --release`).
+* Verificar que el *backend* esté disponible externamente.
+* Asegurar que las dependencias (`pubspec.yaml`) estén actualizadas y libres de errores.
 
 **Requerimientos:**
 
-* Repositorio en *GitHub*.
-* Dispositivo Android o iOS disponible para pruebas.
+* Repositorio de desarrollo del proyecto en GitHub.
+* Dispositivo móvil Android o iOS con modo desarrollador habilitado.
 
 **Pasos realizados para el despliegue:**
 
-1. Conectar el dispositivo al entorno de desarrollo.
-2. Ejecutar `flutter build apk --release`.
-3. Instalar el APK en el dispositivo móvil.
-4. Verificar la conexión con la API y el correcto funcionamiento.
+1. Activar el modo desarrollador en el dispositivo móvil.
+2. Activar la depuración por USB o Wi-Fi.
+3. Conectar el dispositivo a la computadora.
+4. Abrir **Android Studio** y seleccionar el proyecto Flutter.
+5. Seleccionar el dispositivo en la lista de ejecución.
+6. Ejecutar el proyecto con el botón **Run**.
+7. Esperar a que la app se compile e instale en el dispositivo.
+8. Comprobar el correcto funcionamiento de la aplicación.
+
+**Herramientas utilizadas:**
+
+| Herramienta    | Descripción                                     | Enlace                                                                       |
+| -------------- | ----------------------------------------------- | ---------------------------------------------------------------------------- |
+| Android Studio | Creación de la *mobile application* (APK e IPA) | [https://developer.android.com/studio](https://developer.android.com/studio) |
+
 
 
 **Backend (Spring Boot + Render)**
 
 **Consideraciones antes del despliegue:**
 
-* Tener la base de datos configurada en **Neontech**.
-* Definir correctamente las variables de entorno en Render.
+* Confirmar la conexión a la base de datos.
+* Validar las variables de entorno y las rutas configuradas correctamente.
 
 **Requerimientos:**
 
-* Repositorio del backend en *GitHub*.
-* Archivo `Dockerfile` preparado para el despliegue.
+* Repositorio público del backend en GitHub.
+* Cuenta activa en Render.
 
 **Pasos realizados para el despliegue:**
 
-1. Crear un nuevo servicio Web en Render.
-2. Importar el repositorio del backend desde GitHub.
-3. Configurar la conexión con Neontech.
-4. Desplegar el proyecto y verificar los endpoints con *Postman* o *Swagger*.
+1. Conectar el backend con la base de datos configurada.
+2. Crear un archivo `Dockerfile` con la configuración necesaria para despliegue.
+3. Acceder a Render y crear un nuevo proyecto de tipo **Web Service**.
+4. Importar el repositorio del backend.
+5. Configurar los parámetros del servicio (puerto, build y start command).
+6. Desplegar el servicio y verificar su conexión con la base de datos.
+
+**Herramientas utilizadas:**
+
+| Herramienta | Descripción                               | Enlace                                     |
+| ----------- | ----------------------------------------- | ------------------------------------------ |
+| Render      | Despliegue de la API REST y base de datos | [https://render.com/](https://render.com/) |
 
 
 ### 7.2 Solution Implementation
