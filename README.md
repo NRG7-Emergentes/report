@@ -4913,6 +4913,25 @@ Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?
 
 ### 6.5 Applications Prototyping
 
+A continuación, se presentarán los prototipos y videos de los prototipos de las aplicaciones web y móvil en Figma.
+
+**Prototipo Web**
+
+- **Link Prototipo:** [https://www.figma.com/proto/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=211-1160&t=PeqxIuqcVqSFgEJf-1&scaling=min-zoom&content-scaling=fixed&page-id=96%3A814&starting-point-node-id=211%3A1160&show-proto-sidebar=1](https://www.figma.com/proto/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=211-1160&t=PeqxIuqcVqSFgEJf-1&scaling=min-zoom&content-scaling=fixed&page-id=96%3A814&starting-point-node-id=211%3A1160&show-proto-sidebar=1)
+
+<img src="images/chapter-6/PWimg.png" alt="Imagen Prototipo Web">
+
+- **Link del video del prototipo:** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u201911727_upc_edu_pe/IQD3koUBm_tqSbEUAIOJMWiEAb-4INdYOqkd5qoXekJ85tg?e=S4Nf6o](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201911727_upc_edu_pe/IQD3koUBm_tqSbEUAIOJMWiEAb-4INdYOqkd5qoXekJ85tg?e=S4Nf6o)
+
+
+**Prototipo Móvil**
+
+- **Link Prototipo:** [https://www.figma.com/proto/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=227-1160&t=9wwJYmCP4WYQHoz2-1&scaling=min-zoom&content-scaling=fixed&page-id=96%3A814&starting-point-node-id=227%3A1160&show-proto-sidebar=1](https://www.figma.com/proto/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=227-1160&t=9wwJYmCP4WYQHoz2-1&scaling=min-zoom&content-scaling=fixed&page-id=96%3A814&starting-point-node-id=227%3A1160&show-proto-sidebar=1)
+
+<img src="images/chapter-6/PMimg.png" alt="Imagen Prototipo Movil">
+
+- **Link del video del prototipo:** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u201911727_upc_edu_pe/IQCC2fs621o3Sb9vxi-Oj1fOAadHM91RhNfpzsU1Nch5fVs?e=vpGJr4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201911727_upc_edu_pe/IQCC2fs621o3Sb9vxi-Oj1fOAadHM91RhNfpzsU1Nch5fVs?e=vpGJr4)
+
 ## Conclusiones
 
 **TB1:**  
