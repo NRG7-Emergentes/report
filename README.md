@@ -5261,6 +5261,32 @@ En esta sección se detallan las consideraciones y pasos necesarios para el desp
 ### 7.3 Validation Interviews
 
 #### 7.3.1 Diseño de Entrevistas
+
+1. ¿Qué tan fácil te resultó orientarte dentro de la aplicación al iniciar por primera vez?
+2. ¿Consideras que los íconos y etiquetas de los menús son claros y te permiten entender rápidamente a qué sección pertenecen?
+3. ¿El diseño general (colores, tipografía, distribución) te parece agradable y coherente con el propósito de la app (bienestar y postura)?
+4. ¿Entendiste fácilmente lo que representan las métricas del dashboard (puntaje promedio, tiempo monitoreado, punto corporal que suele fallar)?
+5. ¿La gráfica de barras semanal te resulta fácil de interpretar visualmente?
+6. ¿Sientes que el dashboard te brinda un resumen útil y suficiente de tu progreso?
+7. ¿Fue sencillo identificar cómo editar tus datos personales (nombre, edad, altura y peso)?
+8. ¿El proceso de edición de información te resultó intuitivo o tuviste que buscar cómo hacerlo?
+9. ¿El diseño del formulario te resultó ordenado y claro?
+10. ¿Te resultó claro cómo acceder al detalle de una sesión específica desde el historial?
+11. ¿La visualización de estadísticas dentro de una sesión (tiempo de buena/mala postura, número de pausas, tiempo promedio de pausas) fue comprensible?
+12. ¿Sientes que la información mostrada es suficiente para analizar tu desempeño en una sesión?
+13. ¿El gráfico de progreso mensual te resultó fácil de interpretar?
+14. ¿Crees que los indicadores de promedio de tiempo, puntaje y pausas activas te ayudan a entender tu mejora a largo plazo?
+15. ¿Te gustaría poder comparar tus resultados de diferentes meses o usuarios dentro de esta vista?
+16. ¿Pudiste identificar claramente las opciones para ajustar la sensibilidad, alertas y notificaciones?
+17. ¿El proceso de calibración te pareció claro y bien explicado paso a paso?
+18. ¿Hubo algún momento en el que no supieras qué hacer durante la calibración?
+19. ¿La interfaz de monitoreo (con cámara, alertas y tiempo de sesión) te pareció clara y fácil de controlar?
+20. ¿Las pausas activas (cronómetro, recomendaciones, finalización) te resultaron visualmente comprensibles y motivadoras para realizar los ejercicios?
+21. ¿La interfaz móvil mantiene la misma claridad y facilidad de uso que la versión web?
+22. ¿Consideras que la reducción de opciones (sin configuración, monitoreo ni calibración) afecta tu experiencia o la hace más simple?
+23. En una escala del 1 al 10, ¿qué tan satisfecho estás con la interfaz general de la aplicación?
+24. ¿Qué cambiarías o mejorarías visualmente o funcionalmente para hacer tu experiencia más fluida?
+
 #### 7.3.2 Registro de Entrevistas
 #### 7.3.3 Evaluaciones según heurísticas
 
