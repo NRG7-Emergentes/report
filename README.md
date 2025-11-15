@@ -5247,6 +5247,186 @@ Esta sección describe el proceso de planificación del Sprint 1, donde el equip
 | Sum of Story Points              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
 ##### 7.2.1.2 Sprint Backlog 1
+
+La sección Sprint Backlog presenta la planificación detallada del trabajo a realizar durante el Sprint, alineada con el objetivo principal establecido. Aquí se muestra el estado de las tareas y su distribución entre los miembros del equipo. Además, se incluye una tabla con las User Stories seleccionadas y los Work-items o Tasks derivados, facilitando la trazabilidad y el control del avance del Sprint.
+
+<table>
+    <tr>
+        <td colspan="1"><strong>Sprint #</strong></td>
+        <td colspan="7"><strong>Sprint 1</strong></td>
+    </tr>
+    <tr>
+        <td colspan="2"><strong>User Story</strong></td>
+        <td colspan="6"><strong>Work-Item/task</strong></td>
+    </tr>
+    <tr>
+        <td colspan="1"><strong>Id</strong></td>
+        <td colspan="1"><strong>Title</strong></td>
+        <td colspan="1"><strong>Id</strong></td>
+        <td colspan="1"><strong>Title</strong></td>
+        <td colspan="1"><strong>Description</strong></td>
+        <td colspan="1"><strong>Estimation(Hrs)</strong></td>
+        <td colspan="1"><strong>Assigned To</strong></td>
+        <td colspan="1"><strong>Status</strong></td>
+    </tr>
+    <tr>
+        <td>US-001</td>
+        <td>Acceso a la Cámara</td>
+        <td>T-001</td>
+        <td>Habilitar el acceso a la cámara</td>
+        <td>Habilitar el acceso a la cámara desde la visa de monitoreo y calibración</td>
+        <td>3</td>
+        <td>Juan Diego Astonitas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-002</td>
+        <td>Visualización del Esqueleto en Tiempo Real</td>
+        <td>T-001</td>
+        <td>Habilitar el esqueleto en la cámara</td>
+        <td>Habilitar el esqueleto al activar la cámara en la aplicación web</td>
+        <td>5</td>
+        <td>Barbara Espinoza</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-009</td>
+        <td>Alertas Visuales para Mala Postura</td>
+        <td>T-001</td>
+        <td>Habilitar alertas visuales</td>
+        <td>Habilitar el uso de alertas visuales</td>
+        <td>5</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-010</td>
+        <td>Alertas Sonoras Personalizables</td>
+        <td>T-001</td>  
+        <td>Habilitar alertas sonoras</td>
+        <td>Habilitar el uso de alertas sonoras</td>
+        <td>5</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-014</td>
+        <td>Panel de Gestión de Alertas</td>
+        <td>T-001</td>
+        <td>Crear la vista de gestión de alertas y calibración</td>
+        <td>Crear la vista de gestión de alertas y calibración</td>
+        <td>5</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-015</td>
+        <td>Calibración Inicial de Postura</td>
+        <td>T-001</td>
+        <td>Crear la vista de calibración de postura</td>
+        <td>Crear la vista de calibración de postura</td>
+        <td>4</td>
+        <td>Juan Diego Astonitas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td rowspan="2">US-021</td>
+        <td rowspan="2">Gráfico de Progreso Semanal</td>
+        <td>T-001</td>
+        <td>Habilitar la vista del gráfico de progreso semanal en web</td>
+        <td>Habilitar la vista del gráfico de progreso semanal en web</td>
+        <td>4</td>
+        <td>Juan Diego Astonitas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Habilitar la vista del gráfico de progreso semanal en móvil</td>
+        <td>Habilitar la vista del gráfico de progreso semanal en móvil</td>
+        <td>4</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td rowspan="2">US-022</td>
+        <td rowspan="2">Historial Detallado de Sesiones</td>
+        <td>T-001</td>
+        <td>Habilitar la vista del historial de sesiones en web</td>
+        <td>Habilitar la vista del historial de sesiones en web</td>
+        <td>4</td>
+        <td>Gianluca Pasquale</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Habilitar la vista del historial de sesiones en móvil</td>
+        <td>Habilitar la vista del historial de sesiones en móvil</td>
+        <td>4</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-025</td>
+        <td>Sugerencias de Ejercicios Generales</td>
+        <td>T-001</td>
+        <td>Mostrar recomendaciones de ejercicios</td>
+        <td>Mostrar recomendaciones de ejercicio en la pantalla de pausa activa</td>
+        <td>4</td>
+        <td>Juan Diego Asstonitas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-026</td>
+        <td>Registro de Nueva Cuenta</td>
+        <td>T-001</td>
+        <td>Registrar nueva cuenta</td>
+        <td>Registrar nueva cuenta</td>
+        <td>2</td>
+        <td>Godofredo Quispe</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-028</td>
+        <td>Inicio de sesión</td>
+        <td>T-001</td>
+        <td>Inicio de sesión</td>
+        <td>Habilitar la pantalla de login</td>
+        <td>2</td>
+        <td>Godofredo Quispe</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-030</td>
+        <td>Edición de Perfil</td>
+        <td>T-001</td>
+        <td>Edición de datos de perfil</td>
+        <td>Habilitar el formulario de edición de datos de perfil</td>
+        <td>2</td>
+        <td>Godofredo Quispe</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>TS-001</td>
+        <td>Integración de MediaPipe Pose</td>
+        <td>T-001</td>
+        <td>Habilitar el uso de Media Pipe</td>
+        <td>Habilitar el servicio de Media Pipe</td>
+        <td>7</td>
+        <td>Juan Diego Astonitas, Barbara Espinoza</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>TS-002</td>
+        <td>Manejo de Permisos de Cámara</td>
+        <td>T-001</td>
+        <td>Habilitar la solicitud de permisos de cámara</td>
+        <td>Habilitar la solicitud de permisos de cámara</td>
+        <td>1</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+</table>
+
 ##### 7.2.1.3 Development Evidence for Sprint Review
 ##### 7.2.1.4 Testing Suite Evidence for Sprint Review
 ##### 7.2.1.5 Execution Evidence for Sprint Review
