@@ -4,6 +4,8 @@
 
 ### **CURSO:** Arquitecturas De Software Emergentes
 
+### **Código de curso**: 1ASI0728
+
 ### **NRC**: 7291
 
 ### **Profesor:** Royer Edelwer Rojas Malasquez
