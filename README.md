@@ -4912,7 +4912,6 @@ En este ítem se definirán todas las reglas y procesos que hemos seguido en el 
 
 #### 7.1.1 Software Development Environment Configuration
 
-
 **Project Management**
 
 Para la organización del proyecto requerimos de un sistema de de asignación de tareas, palataformas y puntos de reunión y un repositorio dónde trabajaremos en conjunto cada avance del proyecto. A continuación se menciona los nombres de los productos y el propósito de uso en el proyecto:
@@ -4926,18 +4925,16 @@ Para la organización del proyecto requerimos de un sistema de de asignación de
 
 Utilizamos Trello para designar las tareas y actividades de cada integrante del grupo en caso de revisión o cambios.
 
-
-| Herramienta | Descripción                                                                                        | Enlace             |
-| ----------- | --------------------------------------------------------------------------------------------------- | ------------------ |
+| Herramienta | Descripción                                                                                        | Enlace                                   |
+|-------------|----------------------------------------------------------------------------------------------------|------------------------------------------|
 | Trello      | Para designar las tareas y actividades de cada integrante del grupo en caso de revisión o cambios. | [https://trello.com](https://trello.com) |
 
 **Product UX/UI Design**
 
 Para el diseño de los wireframes y mockups, además de la realización del prototipo de la mobile application, utilizamos Figma.
 
-
-| Herramienta | Descripción                                                                                    | Enlace                 |
-| ----------- | ----------------------------------------------------------------------------------------------- | ---------------------- |
+| Herramienta | Descripción                                                                                  | Enlace                                           |
+|-------------|----------------------------------------------------------------------------------------------|--------------------------------------------------|
 | Figma       | Para el diseño de los wireframe y mockups, además de la realización del prototipo de Web App | [https://www.figma.com/](https://www.figma.com/) |
 
 **Software Development**
@@ -4947,46 +4944,42 @@ Empleamos **Angular** para la creación del frontend de la aplicación web, **Fl
 Para el desarrollo de la **landing page** utilizamos **HTML** y **Tailwind CSS**.
 
 | Herramienta  | Descripción                                                                  | Enlace                                                                                                 |
-| ------------ | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+|--------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Angular      | Framework utilizado para la creación del frontend de la aplicación web       | [https://angular.io/](https://angular.io/)                                                             |
 | Flutter      | Framework utilizado para la creación de la aplicación móvil multiplataforma  | [https://flutter.dev/](https://flutter.dev/)                                                           |
 | Spring Boot  | Framework utilizado para la creación de la API REST                          | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot)                       |
 | HTML         | Lenguaje de marcado utilizado para el desarrollo de la landing page estática | [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) |
 | Tailwind CSS | Framework utilizado para la maquetación y diseño de la landing page          | [https://tailwindcss.com/](https://tailwindcss.com/)                                                   |
 
-
 **Software Deployment**
 
 Se empleó los siguientes software para desplegar los servicios del proyecto. Base de datos: Render, Landing Page: Github Actions, Web Application: Render, Mobile Application: Android Studio.
 
 | Herramienta    | Descripción                                                                                     | Enlace                                                                       |
-| -------------- | ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+|----------------|-------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | Render         | Plataforma utilizada para el despliegue de la base de datos, API, aplicación web y landing page | [https://render.com/](https://render.com/)                                   |
 | Android Studio | Herramienta utilizada para la creación de la mobile application (APK e IPA)                     | [https://developer.android.com/studio](https://developer.android.com/studio) |
 | GitHub Actions | Despliegue de la landing estática                                                               | [https://github.com/features/actions](https://github.com/features/actions)   |
-
 
 **Software Documentation**
 
 Para la documentación del software utilizamos Markdown, y para el trabajo colaborativo Github.
 
 | Herramienta | Descripción                                                      | Enlace                                                                                 |
-| ----------- | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+|-------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------|
 | Markdown    | Lenguaje de marcado utilizado para la documentación del proyecto | [https://www.markdownguide.org/](https://www.markdownguide.org/)                       |
 | GitHub      | Para gestionar la documentación del proyecto                     | [https://github.com/NRG7-Emergentes/report](https://github.com/NRG7-Emergentes/report) |
-
 
 #### 7.1.2 Source Code Management
 
 Para la gestión del código fuente, utilizamos los siguientes repositorios:
 
-| Producto           | Repositorio       | Enlace                                                                                                         |
-| ------------------ | ----------------- | -------------------------------------------------------------------------------------------------------------- |
-| Web Application    | ergovision-web-app    | [https://github.com/NRG7-Emergentes/ergovision-webapp](https://github.com/NRG7-Emergentes/ergovision-webapp)   |
-| Mobile Application |  ergovision-mobile-app | [https://github.com/NRG7-Emergentes/ergovision-mobile](https://github.com/NRG7-Emergentes/ergovision-mobile)   |
-| Backend            |  ergovision-backend    | [https://github.com/NRG7-Emergentes/ergovision-backend](https://github.com/NRG7-Emergentes/ergovision-backend) |
-| Landing Page       |  ergovision-landing-page    | [https://github.com/NRG7-Emergentes/landing-page](https://github.com/NRG7-Emergentes/landing-page)             |
-
+| Producto           | Repositorio             | Enlace                                                                                                         |
+|--------------------|-------------------------|----------------------------------------------------------------------------------------------------------------|
+| Web Application    | ergovision-web-app      | [https://github.com/NRG7-Emergentes/ergovision-webapp](https://github.com/NRG7-Emergentes/ergovision-webapp)   |
+| Mobile Application | ergovision-mobile-app   | [https://github.com/NRG7-Emergentes/ergovision-mobile](https://github.com/NRG7-Emergentes/ergovision-mobile)   |
+| Backend            | ergovision-backend      | [https://github.com/NRG7-Emergentes/ergovision-backend](https://github.com/NRG7-Emergentes/ergovision-backend) |
+| Landing Page       | ergovision-landing-page | [https://github.com/NRG7-Emergentes/landing-page](https://github.com/NRG7-Emergentes/landing-page)             |
 
 **Flujo de trabajo GitFlow**
 
@@ -5022,101 +5015,89 @@ Sufijos asignados a las versiones:
 
 Usaremos buenas prácticas en cuanto al código de manera que sea coherente y sostenible.
 
-
 **Flutter**
 
 * **Nomenclatura:**
-
   * Clases y widgets: *PascalCase*.
   * Funciones y variables: *camelCase*.
   * Constantes: *UPPER_SNAKE_CASE*.
+  
 * **Estructura:**
-
   * Separar la lógica de la UI mediante arquitectura por capas (*UI*, *Providers*, *Services*, *Models*).
   * Reutilizar componentes visuales y mantener una estructura modular.
+  
 * **Buenas prácticas:**
-
   * Evitar lógica de negocio dentro de los widgets.
   * Aplicar `const` donde sea posible para optimizar rendimiento.
   * Usar `async/await` correctamente para evitar bloqueos en la interfaz.
 
-
 **Angular**
 
 * **Estructura:**
-
   * Dividir el código en *módulos*, *componentes*, *servicios* y *modelos*.
   * Aplicar *Lazy Loading* para optimizar la carga de módulos.
+  
 * **Nomenclatura:**
-
   * Clases y componentes: *PascalCase*.
   * Variables y métodos: *camelCase*.
   * Archivos: *kebab-case* (ejemplo: `user-profile.component.ts`).
+  
 * **Buenas prácticas:**
-
   * Mantener la lógica de negocio en *servicios*, no en componentes.
   * Utilizar `async pipe` para manejar observables.
   * Aplicar linters (*ESLint*, *Prettier*) para mantener consistencia en el código.
 
-
 **Spring Boot**
 
 * **Estructura:**
-
   * Organizar el proyecto por capas: *controller*, *service*, *repository*, *model*.
   * Utilizar interfaces para los servicios (`UserService → UserServiceImpl`).
+  
 * **Convenciones:**
-
   * Clases en *PascalCase*.
   * Métodos en *camelCase* (ejemplo: `getUserById()`).
   * Endpoints REST en *kebab-case* (ejemplo: `/api/user-data`).
+  
 * **Buenas prácticas:**
-
   * Validar entradas con anotaciones (`@Valid`, `@NotNull`).
   * Manejar excepciones de forma global con `@ControllerAdvice`.
 
 **HTML**
 
 * **Estructura:**
-
   * Mantener jerarquía semántica correcta (`<header>`, `<main>`, `<section>`, `<footer>`).
   * Incluir etiquetas meta esenciales (`<meta charset="UTF-8">`, `<meta name="viewport">`).
+  
 * **Convenciones:**
-
   * Archivos nombrados en *kebab-case* (ejemplo: `about-us.html`).
   * Uso de indentación consistente (2 o 4 espacios).
+  
 * **Buenas prácticas:**
-
   * Validar el HTML con [W3C Validator](https://validator.w3.org/).
   * Evitar el uso de estilos inline; usar clases con Tailwind CSS.
   * Minimizar el uso de etiquetas obsoletas (`<center>`, `<font>`).
   * Mantener el contenido accesible con atributos `alt`, `aria-label` y roles semánticos.
 
-
 **Tailwind CSS**
 
 * **Clases:**
-
   * Ordenar las clases: *Layout > Flex/Grid > Spacing > Typography > Colors > Effects*.
   * Evitar `@apply` en CSS y usar clases directamente en el HTML.
+  
 * **Responsive:**
-
   * Usar prefijos (`sm:`, `md:`, `lg:`) para adaptar la interfaz.
+  
 * **Buenas prácticas:**
-
   * Centralizar la configuración de colores y tipografías en `tailwind.config.js`.
   * Reutilizar estilos comunes en componentes para mantener consistencia.
-
-
 
 **General**
 
 * **Código:**
-
   * Comentarios en inglés.
   * Commits semánticos (`feat:`, `fix:`, `docs:`).
+  
 * **Performance:**
-
   * Implementar *Lazy Loading* para componentes y recursos.
   * Reutilizar componentes y evitar duplicación de código.
   * Optimizar imágenes y recursos estáticos para mejorar tiempos de carga.
@@ -5124,7 +5105,6 @@ Usaremos buenas prácticas en cuanto al código de manera que sea coherente y so
 #### 7.1.4 Software Deployment Configuration
 
 En esta sección se detallan las consideraciones y pasos necesarios para el despliegue de los productos de **ErgoVision**.
-
 
 **Landing Page (HTML + Github Actions)**
 
@@ -5152,9 +5132,8 @@ En esta sección se detallan las consideraciones y pasos necesarios para el desp
 **Herramientas utilizadas:**
 
 | Herramienta    | Descripción                       | Enlace                                                                     |
-| -------------- | --------------------------------- | -------------------------------------------------------------------------- |
+|----------------|-----------------------------------|----------------------------------------------------------------------------|
 | GitHub Actions | Despliegue de la landing estática | [https://github.com/features/actions](https://github.com/features/actions) |
-
 
 **Web Application (Angular + Render)**
 
@@ -5182,10 +5161,8 @@ En esta sección se detallan las consideraciones y pasos necesarios para el desp
 **Herramientas utilizadas:**
 
 | Herramienta | Descripción                               | Enlace                                     |
-| ----------- | ----------------------------------------- | ------------------------------------------ |
+|-------------|-------------------------------------------|--------------------------------------------|
 | Render      | Despliegue de la aplicación web (Angular) | [https://render.com/](https://render.com/) |
-
-
 
 **Mobile Application (Flutter)**
 
@@ -5196,27 +5173,28 @@ En esta sección se detallan las consideraciones y pasos necesarios para el desp
 
 **Requerimientos:**
 
-* Repositorio de desarrollo del proyecto en GitHub.
-* Dispositivo móvil Android o iOS con modo desarrollador habilitado.
+* Proyecto creado en Firebase
+* Integración del SDK de Firebase en la app Flutter.
+* Dispositivo móvil (Android o iOS) para pruebas.
 
 **Pasos realizados para el despliegue:**
 
-1. Activar el modo desarrollador en el dispositivo móvil.
-2. Activar la depuración por USB o Wi-Fi.
-3. Conectar el dispositivo a la computadora.
-4. Abrir **Android Studio** y seleccionar el proyecto Flutter.
-5. Seleccionar el dispositivo en la lista de ejecución.
-6. Ejecutar el proyecto con el botón **Run**.
-7. Esperar a que la app se compile e instale en el dispositivo.
-8. Comprobar el correcto funcionamiento de la aplicación.
+1. Instalar y ejecutar la CLI de FlutterFire mediante `dart pub global activate flutterfire_cli`.
+2. En la raiz del proyecto, ejecutar `flutterfire configure` para vincular el proyecto con Firebase.
+3. Configurar las opciones de despliegue en Android Studio (APK para Android, IPA para iOS).
+4. Inicializar Firebase en el main.dart con `await Firebase.initializeApp()`.
+5. Generar el archivo de la aplicación móvil:
+   - Para Android: `flutter build apk --release`
+   - Para iOS: `flutter build ios --release`
+6. Probar la aplicación en un dispositivo físico o emulador.
+7. Subir el archivo generado a Firebase App Distribution para pruebas internas.
 
 **Herramientas utilizadas:**
 
-| Herramienta    | Descripción                                     | Enlace                                                                       |
-| -------------- | ----------------------------------------------- | ---------------------------------------------------------------------------- |
-| Android Studio | Creación de la *mobile application* (APK e IPA) | [https://developer.android.com/studio](https://developer.android.com/studio) |
-
-
+| Herramienta               | Descripción                                     | Enlace                                                                                                 |
+|---------------------------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| Firebase App Distribution | Herramienta para distribución de la aplicación  | [https://firebase.google.com/docs/app-distribution](https://firebase.google.com/docs/app-distribution) |
+| Firebase CLI              | Herramienta para configurar Firebase en Flutter | [https://firebase.google.com/docs/flutter/setup](https://firebase.google.com/docs/flutter/setup)       |
 
 **Backend (Spring Boot + Render)**
 
@@ -5242,9 +5220,8 @@ En esta sección se detallan las consideraciones y pasos necesarios para el desp
 **Herramientas utilizadas:**
 
 | Herramienta | Descripción                               | Enlace                                     |
-| ----------- | ----------------------------------------- | ------------------------------------------ |
+|-------------|-------------------------------------------|--------------------------------------------|
 | Render      | Despliegue de la API REST y base de datos | [https://render.com/](https://render.com/) |
-
 
 ### 7.2 Solution Implementation
 
