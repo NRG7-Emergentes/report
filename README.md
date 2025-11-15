@@ -5288,6 +5288,114 @@ En esta sección se detallan las consideraciones y pasos necesarios para el desp
 24. ¿Qué cambiarías o mejorarías visualmente o funcionalmente para hacer tu experiencia más fluida?
 
 #### 7.3.2 Registro de Entrevistas
+
+<table>
+  <tbody>
+    <tr>
+      <td>Entrevista 1</td>
+      <td>
+        <img src="images/chapter-7/interview1.png" alt="interview 2" width="400" />
+      </td>
+    </tr>
+    <tr>
+      <td>Enlace a la entrevista</td>
+      <td> - </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Flavio Gallardo</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>San Miguel</td>
+    </tr>
+    <tr>
+      <td>Ocupación</td>
+      <td>Estudiante de Ingeniería de Sistemas</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td> 08:13 </td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td> 00:00 </td>
+    </tr>
+    <tr>
+      <td>Análisis</td>
+      <td>
+        El entrevistado encuentra la aplicación bien diseñada, con una interfaz limpia,
+        profesional y fácil de usar. La navegación inicial fue "bastante fácil", destacando
+        la organización del dashboard y los menús laterales, aunque inicialmente tuvo una
+        leve confusión entre 'Stats' e 'History' que se resolvió con la exploración. Los
+        íconos son considerados "bastante obvios" y el diseño general es agradable, con
+        colores no contundentes y tipografía legible que no cansa la vista durante largas
+        sesiones. Las métricas del dashboard son claras, pero sugiere añadir tooltips
+        explicativos. Valora positivamente la utilidad del resumen de progreso y la
+        intuitividad para editar su perfil y acceder a los detalles de las sesiones. La
+        visualización de estadísticas por sesión y el progreso mensual le resultan
+        comprensibles y útiles. Identifica oportunidades de mejora como: tooltips en
+        métricas, feedback visual en tiempo real durante la calibración, poder comparar
+        meses en las estadísticas, notificaciones menos invasivas, hacer las tarjetas de
+        historial completamente clickeables y la opción de un tema oscuro/claro. En una
+        escala del 1 al 10, califica su satisfacción con un 8/10.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Entrevista 2</td>
+      <td>
+        <img src="images/chapter-7/interview2.png" alt="interview 2" width="400"/>
+      </td>
+    </tr>
+    <tr>
+      <td>Enlace a la entrevista</td>
+      <td> - </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Daniela Kin</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>San borja</td>
+    </tr>
+    <tr>
+      <td>Ocupación</td>
+      <td>Estudiante de Comunicaciones</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td> 05:33 </td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td> 00:00 /td>
+    </tr>
+    <tr>
+      <td>Análisis</td>
+      <td>
+        La entrevistada considera la aplicación "muy fácil" de usar desde el inicio, destacando su similitud con plataformas familiares como Google Classroom. El diseño general le parece "moderno y profesional" con un balance adecuado entre seriedad e informalidad. Los elementos de navegación como el sidebar y los íconos son claros, aunque sugiere la opción de colapsar la barra lateral para ganar espacio durante el monitoreo. Las métricas del dashboard son comprensibles, pero recomienda añadir íconos o diagramas para clarificar el "punto corporal que suele fallar". Valora positivamente las visualizaciones de datos como la gráfica semanal y las barras de progreso, pero desea más funcionalidades como filtros en el historial, comparación lado a lado de meses y exportación de datos en CSV/PDF. El proceso de calibración e interfaz de monitoreo le resultan intuitivos, aunque sugiere mensajes más explícitos durante la calibración y notificaciones sonoras más suaves para las pausas. Como mejoras propone: atajos de teclado, integración con apps de productividad, modo de enfoque y gráficos más interactivos. Califica su satisfacción con un 9/10, considerando la interfaz muy funcional y moderna.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
 #### 7.3.3 Evaluaciones según heurísticas
 
 ### 7.4 Video About-the-Product
