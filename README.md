@@ -197,6 +197,12 @@ del ABET – EAC - Student Outcome 3.
         - <b>Godofredo Quispe Tipo:</b> Para esta entrega comuniqué oralmente ideas y dudas para la elaboración del bounded context de estadisticas y los wireframer de Landing Pages<br><br>
         - <b>Gabriel Alexander Casas Sanchez:</b> Para esta entrega busque comunicar todas mis ideas sobre las opciones de diseño (arquitectura de bounded context y UI) de manera clara y sencilla para asegurarme el entendimiento de todos mis compañeros.<br><br>
         - <b>Juan Diego Astonitas Diaz:</b> Para esta entrega comunique las ideas fundamentales de la solucion para poder plasmarlas en en diseño de la arquitectura con DDD <br><br>
+        <b>TB2:</b><br>
+        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta tercera entrega comuniqué oralmente ideas y dudas para la elaboración de los mokcups y userflows y prototipos durante las reuniones grupales en discord, además, comunique activamente sobre la entrega de las tareas que se me asignaron semanalmente.<br><br>
+        - <b>Gianluca Santino Pasquale Barrenechea: </b><br><br>
+        - <b>Godofredo Quispe Tipo:</b> <br><br>
+        - <b>Gabriel Alexander Casas Sanchez:</b><br><br>
+        - <b>Juan Diego Astonitas Diaz:</b> <br><br>
        </td>
       <td>
         <b>TB1:</b> El equipo ha demostrado un nivel de desarrollo satisfactorio y homogéneo en esta competencia. Todos los miembros participaron activamente en las reuniones de Discord, comunicando ideas, avances y asignaciones de manera clara y efectiva. Se evidencia una comunicación colaborativa que facilitó la alineación del grupo y la revisión de la información. <br><br>
@@ -218,6 +224,12 @@ del ABET – EAC - Student Outcome 3.
         - <b>Godofredo Quispe Tipo:</b> Para esta segunda entrega, he preparado una redacción clara y concisa de la infraestructura y la descripción de los bounded contexts, asegurando que toda la audiencia comprenda la arquitectura del sistema.<br><br>
         - <b>Gabriel Alexander Casas Sanchez:</b> Para esta entrega busque que todas las descripciones y decisiones de arquitectura con respecto al bounded context que desarrolle se entiendad de manera clara, para asi evitar fallos de comunicación entre mis compañeros<br><br>
         - <b>Juan Diego Astonitas Diaz: </b> Comunique el diseño y funcionalidad base de la solucion a mis compañeros para poder hacer los wireframes y wireflows <br><br>
+        <b>TB2:</b><br>
+        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta tercera entrega realicé en el informe la redacción de estandares de código en el capítulo 7 y la realización de una entrevista de validación<br><br>
+        - <b>Gianluca Santino Pasquale Barrenechea:</b> <br><br>
+        - <b>Godofredo Quispe Tipo:</b> <br><br>
+        - <b>Gabriel Alexander Casas Sanchez:</b><br><br>
+        - <b>Juan Diego Astonitas Diaz: </b>  <br><br>
       </td>
       <td>
         <b>TB1:</b> En conjunto, las contribuciones escritas fueron fundamentales para sentar una base documental sólida, guiar la toma de decisiones y cumplir efectivamente los objetivos del proyecto.<br><br>
