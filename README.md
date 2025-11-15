@@ -5395,8 +5395,77 @@ En esta sección se detallan las consideraciones y pasos necesarios para el desp
 </table>
 
 
+### 7.3.3 Evaluaciones según heurísticas
 
-#### 7.3.3 Evaluaciones según heurísticas
+Esta sección analiza los hallazgos de las entrevistas aplicando los principios heurísticos de usabilidad. Permite identificar problemas y oportunidades de mejora en la experiencia del usuario.
+
+**Aplicación para evaluar:** ErgoVision
+
+**Tareas que evaluar:**
+
+- Navegación inicial y orientación dentro de la aplicación
+- Comprensión de íconos, etiquetas y métricas del dashboard
+- Proceso de edición de datos personales
+- Acceso y comprensión del historial de sesiones
+- Configuración de sensibilidad y proceso de calibración
+- Interpretación de gráficos y estadísticas de progreso
+- Experiencia en la interfaz de monitoreo en tiempo real
+- Adaptación a dispositivos móviles
+
+**Escala de severidad**
+
+| Valor | Descripción |
+|-------|-------------|
+| 1     | Cosmético   |
+| 2     | Leve        |
+| 3     | Moderado    |
+| 4     | Grave       |
+| 5     | Crítico     |
+
+**Tabla de resumen**
+
+| #Orden | Problema | Escala de Severidad | Heurística / Principio violado(a) |
+|--------|----------|---------------------|-----------------------------------|
+| 1 | Confusión inicial entre las secciones "Stats" vs "History" debido a etiquetas poco diferenciadas | 2 | Reconocimiento antes que recuerdo / Consistencia y estándares |
+| 2 | Falta de feedback en tiempo real durante el proceso de calibración de postura | 3 | Visibilidad del estado del sistema / Retroalimentación |
+| 3 | Ausencia de tooltips explicativos para métricas específicas del dashboard | 2 | Ayuda y documentación / Prevención de errores |
+
+**Problema #1: Confusión inicial entre las secciones "Stats" vs "History" debido a etiquetas poco diferenciadas**
+
+**Heurística violada:** Reconocimiento antes que recuerdo y Consistencia y estándares
+
+**Descripción del problema:**
+
+Ambos entrevistados (Flavio y Daniela) reportaron confusión inicial al diferenciar entre las secciones "Estadísticas" e "Historial". Flavio mencionó: "al principio no sabía bien qué era 'Stats' vs 'History', pero después de explorar un poco se entiende". Daniela también sugirió mejoras en la claridad de las etiquetas. Esta ambigüedad obliga a los usuarios a explorar ambas secciones para comprender su propósito, generando una pequeña curva de aprendizaje innecesaria.
+
+**Recomendación:**
+
+Renombrar las etiquetas para hacerlas más descriptivas, como "Análisis General" para Stats y "Sesiones Recientes" para History. Adicionalmente, incluir subtítulos explicativos breves debajo de cada opción del menú y añadir íconos más distintivos que representen visualmente la diferencia entre datos agregados (estadísticas) y registros individuales (historial).
+
+**Problema #2: Falta de feedback en tiempo real durante el proceso de calibración de postura**
+
+**Heurística violada:** Visibilidad del estado del sistema y Retroalimentación
+
+**Descripción del problema:**
+
+Flavio expresó: "no me quedó claro es cuándo empieza realmente la calibración, si tengo que hacer clic en 'Empezar calibracion' o si ya está midiendo mientras leo las instrucciones" y sugirió "feedback visual en tiempo real que me diga si mi postura está bien durante la calibración". Daniela también mencionó: "Al principio no entendí si debía moverme o quedarme quieto durante la calibración. Un mensaje de 'Permanece quieto durante 5 segundos' hubiera sido útil".
+
+**Recomendación:**
+
+Implementar un sistema de feedback visual inmediato durante la calibración que incluya: indicadores de progreso claros, mensajes instructivos paso a paso, y retroalimentación visual (como semáforos o indicadores de color) que muestren en tiempo real si la postura actual es correcta. Además, añadir un contador regresivo visible para el periodo de calibración.
+
+**Problema #3: Ausencia de tooltips explicativos para métricas específicas del dashboard**
+
+**Heurística violada:** Ayuda y documentación y Prevención de errores
+
+**Descripción del problema:**
+
+Flavio señaló específicamente: "Sería útil que hubiera un tooltip o algo que explique qué significa cada métrica cuando pasas el mouse por encima". Daniela también manifestó confusión con métricas como "el 'punto corporal que suele fallar' me pareció interesante, aunque no estoy seguro si se refiere a hombros, cuello o espalda. Un ícono o diagrama ayudaría". La falta de explicaciones inmediatas obliga a los usuarios a interpretar las métricas por sí mismos.
+
+**Recomendación:**
+
+Implementar tooltips contextuales en todas las métricas y gráficos del dashboard. Estos tooltips deben aparecer al hacer hover sobre cada elemento y proporcionar definiciones concisas de lo que representa cada métrica, cómo se calcula y por qué es relevante para el monitoreo postural. Para métricas anatómicas, incluir diagramas ilustrativos simples.
+
 
 ### 7.4 Video About-the-Product
 
