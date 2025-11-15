@@ -5428,9 +5428,56 @@ La sección Sprint Backlog presenta la planificación detallada del trabajo a re
 </table>
 
 ##### 7.2.1.3 Development Evidence for Sprint Review
+
+En esta sección se presentan los avances alcanzados durante el Sprint en la implementación de los productos del proyecto, incluyendo la Landing Page, la Web Application, los Web Services y la Mobile Application. Se resumen los progresos técnicos más relevantes y se evidencia la evolución del desarrollo mediante una tabla que detalla los commits realizados en cada repositorio, asegurando la trazabilidad y el seguimiento del trabajo ejecutado por el equipo.
+
+**Web Application**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Date |
+|------------|--------|-----------|----------------|---------------------|------|
+|            |        |           |                |                     |      |
+
+**Backend**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Date |
+|------------|--------|-----------|----------------|---------------------|------|
+|            |        |           |                |                     |      |
+
+**Mobile Application**
+
+| Repository        | Branch  | Commit Id | Commit Message                                          | Commit Message Body                                     | Date       |
+|-------------------|---------|-----------|---------------------------------------------------------|---------------------------------------------------------|------------|
+| ergovision-mobile | develop | 6db99962  | feat(sign-in): add login page.                          | feat(sign-in): add login page.                          | 27/20/2025 |
+| ergovision-mobile | develop | 069c6a6b  | feat(sign-in): rename login widget.                     | feat(sign-in): rename login widget.                     | 27/20/2025 |
+| ergovision-mobile | develop | d287caa4  | feat(sign-up): add sign-up view.                        | feat(sign-up): add sign-up view.                        | 27/20/2025 |
+| ergovision-mobile | develop | 2da3b6a1  | feat(navigation): add home view and bottom navbar.      | feat(navigation): add home view and bottom navbar.      | 27/20/2025 |
+| ergovision-mobile | develop | d7dbbfb8  | feat(dashboard): add dashboard view                     | feat(dashboard): add dashboard view                     | 28/20/2025 |
+| ergovision-mobile | develop | f01b8091  | feat(dashboard): add chart widget.                      | feat(dashboard): add chart widget.                      | 28/20/2025 |
+| ergovision-mobile | develop | 7b58a273  | fix(style): fix padding and language style errors.      | fix(style): fix padding and language style errors.      | 28/20/2025 |
+| ergovision-mobile | develop | 2f7cb6f1  | feat(ui): unified titles.                               | feat(ui): unified titles.                               | 28/20/2025 |
+| ergovision-mobile | develop | cc789415  | feat(sessions): add session class.                      | feat(sessions): add session class.                      | 28/20/2025 |
+| ergovision-mobile | develop | 8adec01b  | feat(sessions): add sessions list view with sample data | feat(sessions): add sessions list view with sample data | 28/20/2025 |
+| ergovision-mobile | develop | d5c2eab2  | feat(sessions): enhance spacing and sample data.        | feat(sessions): enhance spacing and sample data.        | 28/20/2025 |
+| ergovision-mobile | develop | 735f36f2  | feat(sessions): add session detail view.                | feat(sessions): add session detail view.                | 29/20/2025 |
+| ergovision-mobile | develop | ad90178b  | feat(sessions): add statistics view.                    | feat(sessions): add statistics view.                    | 29/20/2025 |
+| ergovision-mobile | develop | 74c7dbb9  | feat(dashboard): improve chart layout and styling.      | feat(dashboard): improve chart layout and styling.      | 29/20/2025 |
+| ergovision-mobile | develop | 0ac54d00  | feat(profile): add profile view.                        | feat(profile): add profile view.                        | 29/20/2025 |
+| ergovision-mobile | develop | 5bcf8646  | feat(settings): add settings view.                      | feat(settings): add settings view.                      | 29/20/2025 |
+| ergovision-mobile | develop | f73ead40  | feat(dashboard): add active pause widget.               | feat(dashboard): add active pause widget.               | 30/20/2025 |
+
 ##### 7.2.1.4 Testing Suite Evidence for Sprint Review
+
+No se contemplaron tests en este sprint ya que el enfoque principal fue la creación de la interfaz gráfica y la integración básica de funcionalidades. Sin embargo, se planifica incorporar pruebas unitarias y de integración en los próximos sprints para asegurar la calidad y estabilidad del software a medida que se desarrollen nuevas características y se refinen las existentes.
+
 ##### 7.2.1.5 Execution Evidence for Sprint Review
 ##### 7.2.1.6 Services Documentation Evidence for Sprint Review
+
+En esta sección se presentan los avances logrados en la documentación de los Web Services desarrollados durante el Sprint, evidenciando la correcta implementación y estandarización de los endpoints mediante OpenAPI. Se detallan las acciones disponibles (GET, POST, PUT, DELETE, PATCH), sus parámetros, ejemplos de respuesta y enlaces a la documentación correspondiente, garantizando la trazabilidad, comprensión y correcta integración entre los distintos componentes del sistema.
+
+| Endpoint | Method | Description | Parameters | Request body | Response |
+|----------|--------|-------------|------------|--------------|----------|
+|          |        |             |            |              |          |
+
 ##### 7.2.1.7 Software Deployment Evidence for Sprint Review
 ##### 7.2.1.8 Team Collaboration Insights during Sprint
 
