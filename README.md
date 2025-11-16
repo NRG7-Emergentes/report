@@ -5683,7 +5683,7 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci�
     </tr>
     <tr>
       <td>Enlace a la entrevista</td>
-      <td> - </td>
+      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDUJV5FcWoVTa8rvUkx5yG0AYrDrkurBs_kRNq4hTFPA9k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Q84Tax">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDUJV5FcWoVTa8rvUkx5yG0AYrDrkurBs_kRNq4hTFPA9k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Q84Tax</a>  </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -5743,7 +5743,7 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci�
     </tr>
     <tr>
       <td>Enlace a la entrevista</td>
-      <td> - </td>
+      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDUJV5FcWoVTa8rvUkx5yG0AYrDrkurBs_kRNq4hTFPA9k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Q84Tax">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDUJV5FcWoVTa8rvUkx5yG0AYrDrkurBs_kRNq4hTFPA9k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Q84Tax</a>  </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -5763,11 +5763,11 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci�
     </tr>
     <tr>
       <td>Duración Entrevista</td>
-      <td> 05:33 </td>
+      <td> 05:36 </td>
     </tr>
     <tr>
       <td>Minuto de Inicio</td>
-      <td> 00:00 /td>
+      <td> 08:11 /td>
     </tr>
     <tr>
       <td>Análisis</td>
@@ -5779,25 +5779,27 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci�
 </table>
 
 
+
+
 <table>
   <tbody>
     <tr>
       <td>Entrevista 3</td>
       <td>
-        <img src="images/chapter-7/EntrevistaTyrone.png" alt="EntrevistaTyrone" width="400"/>
+        <img src="images/chapter-7/entrevista-3-E.png" alt="interview 3" width="400"/>
       </td>
     </tr>
     <tr>
       <td>Enlace a la entrevista</td>
-      <td> - </td>
+      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDUJV5FcWoVTa8rvUkx5yG0AYrDrkurBs_kRNq4hTFPA9k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Q84Tax">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDUJV5FcWoVTa8rvUkx5yG0AYrDrkurBs_kRNq4hTFPA9k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Q84Tax</a> </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
-      <td>Tyrone Sotil</td>
+      <td>Bruce Andres, Cipriano Chumbes</td>
     </tr>
     <tr>
       <td>Edad</td>
-      <td>22</td>
+      <td>23</td>
     </tr>
     <tr>
       <td>Distrito</td>
@@ -5805,7 +5807,52 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci�
     </tr>
     <tr>
       <td>Ocupación</td>
-      <td>Trabajador Remoto</td>
+      <td>Estudiante de Ing. de Software</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td> 10:54 </td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td> 13:47 /td>
+    </tr>
+    <tr>
+      <td>Análisis</td>
+      <td>
+        Bruce nos cuenta que la Ergovisión le pareció fácil orientarse. Pudo identificar el flujo y menciona que los íconos son intuitivos. El diseño y los colores están bien; además, los colores oscuros no cansan la vista. Entendió fácilmente el dashboard y la gráfica es sencilla. Menciona que el resumen del dashboard es bueno, ya que le ayudará a mejorar. El proceso de edición le pareció intuitivo. El diseño del formulario es ordenado y claro. La visualización de las estadísticas de buena y mala postura fue comprensible. La información está bien y el gráfico mensual es fácil de interpretar. Las pausas activas le ayudan a mejorar a largo plazo. Le gustaría compartir los resultados y cree que sería bueno, ya que tendría una comparación para validar sus progresos. Identificó las alertas y notificaciones y se acomoda cuando las recibe. La calibración fue sencilla de hacer. La interfaz de monitoreo con alertas le resultó fácil y sencilla de controlar. Las pausas activas le resultaron motivadoras. Respecto a la reducción de opciones, está de acuerdo.Respecto a la calificación, le pone 9/10, ya que desearía más colores oscuros.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+* Segmento Trabajador Remoto
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Entrevista 1</td>
+      <td>
+        <img src="images/chapter-7/entrevista-1T.png" alt="interview 3" width="400"/>
+      </td>
+    </tr>
+    <tr>
+      <td>Enlace a la entrevista</td>
+      <td> <a href=""></a> </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Tyron</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Ocupación</td>
+      <td>Profesor</td>
     </tr>
     <tr>
       <td>Duración Entrevista</td>
@@ -5818,12 +5865,93 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci�
     <tr>
       <td>Análisis</td>
       <td>
-        El entrevistado considera en general la aplicación como una herramienta muy util si se quiere evitar dolores de espalda mientras está en jornada laboral, uno de los principales atributos que resaltó de la aplicación son las métricas y configuraciones, ya que las considera faciles de interpretar y le son de utilidad. Sin embargo, señaló que hay puntos de mejora en las pausas activas donde muchas veces pasaria por alto leer el texto de los ejercicios y que solo lo tomaria en cuenta cuando tenga tiempo de sobra, ademas consideró que la aplicación móvil la siente un poco incompleta en cuanto a funcionalidades comparada a la aplicación web.
+       Tyron califica la aplicación como intuitiva y fácil de usar, destacando que el diseño general, los íconos y las métricas del dashboard son claros y permiten un seguimiento sencillo del progreso, otorgando un 9/10 a la versión web y un 7/10 a la móvil. Su principal recomendación es hacer la aplicación lo más simple y rápida de usar posible, ya que la ve como una herramienta de uso rápido al inicio y fin de sus sesiones; además, sugiere reemplazar el historial por comparativas en la versión móvil para mejorar su utilidad.
       </td>
     </tr>
   </tbody>
 </table>
 
+<table>
+  <tbody>
+    <tr>
+      <td>Entrevista 2</td>
+      <td>
+        <img src="images/chapter-7/entrevista-2T.png" alt="interview 3" width="400"/>
+      </td>
+    </tr>
+    <tr>
+      <td>Enlace a la entrevista</td>
+      <td> <a href=""></a> </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Sebastian  Pacheco</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Ocupación</td>
+      <td>Practicante Software</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td> 14:12 </td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td> 11:38 /td>
+    </tr>
+    <tr>
+      <td>Análisis</td>
+      <td>
+       Pacheco menciona que es sencillo de comprender. El diseño general es coherente, entiende fácilmente las métricas del dashboard, y la gráfica semanal es sencilla de entender. Considera que el resumen es sencillo, e identificar y editar los datos son intuitivos, por lo que se entiende bien. El formulario está ordenado y la visualización de estadísticas es fácil, sencilla y muy asertiva.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Entrevista 3</td>
+      <td>
+        <img src="images/chapter-7/entrevista-3T.png" alt="interview 3" width="400"/>
+      </td>
+    </tr>
+    <tr>
+      <td>Enlace a la entrevista</td>
+      <td> <a href=""></a> </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Ray Carmen Zorrilla</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Ocupación</td>
+      <td>Ingeniero de Software</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td> 10:45 </td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td> 25:44 /td>
+    </tr>
+    <tr>
+      <td>Análisis</td>
+      <td>
+       Ray indica que le parece muy interesante el proyecto de Ergovisión. Respecto a los diseños, están bien, pero podrían mejorar en cuanto a los colores de los íconos. Con lo demás se siente conforme y muestra mucho interés en el proyecto.
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### 7.3.3 Evaluaciones según heurísticas
 
@@ -5854,11 +5982,11 @@ Esta sección analiza los hallazgos de las entrevistas aplicando los principios 
 
 **Tabla de resumen**
 
-| #Orden | Problema | Escala de Severidad | Heurística / Principio violado(a) |
-|--------|----------|---------------------|-----------------------------------|
-| 1 | Confusión inicial entre las secciones "Stats" vs "History" debido a etiquetas poco diferenciadas | 2 | Reconocimiento antes que recuerdo / Consistencia y estándares |
-| 2 | Falta de feedback en tiempo real durante el proceso de calibración de postura | 3 | Visibilidad del estado del sistema / Retroalimentación |
-| 3 | Ausencia de tooltips explicativos para métricas específicas del dashboard | 2 | Ayuda y documentación / Prevención de errores |
+| #Orden | Problema                                                                                         | Escala de Severidad | Heurística / Principio violado(a)                             |
+|--------|--------------------------------------------------------------------------------------------------|---------------------|---------------------------------------------------------------|
+| 1      | Confusión inicial entre las secciones "Stats" vs "History" debido a etiquetas poco diferenciadas | 2                   | Reconocimiento antes que recuerdo / Consistencia y estándares |
+| 2      | Falta de feedback en tiempo real durante el proceso de calibración de postura                    | 3                   | Visibilidad del estado del sistema / Retroalimentación        |
+| 3      | Ausencia de tooltips explicativos para métricas específicas del dashboard                        | 2                   | Ayuda y documentación / Prevención de errores                 |
 
 **Problema #1: Confusión inicial entre las secciones "Stats" vs "History" debido a etiquetas poco diferenciadas**
 
