@@ -5574,9 +5574,43 @@ No se contemplaron tests en este sprint ya que el enfoque principal fue la creac
 
 En esta sección se presentan los avances logrados en la documentación de los Web Services desarrollados durante el Sprint, evidenciando la correcta implementación y estandarización de los endpoints mediante OpenAPI. Se detallan las acciones disponibles (GET, POST, PUT, DELETE, PATCH), sus parámetros, ejemplos de respuesta y enlaces a la documentación correspondiente, garantizando la trazabilidad, comprensión y correcta integración entre los distintos componentes del sistema.
 
-| Endpoint | Method | Description | Parameters | Request body | Response |
+| Endpoint | Method | Description | Parameters | Request Body | Response |
 |----------|--------|-------------|------------|--------------|----------|
-|          |        |             |            |              |          |
+| `/api/v1/orchestrator/alerts-settings/{settingId}` | GET | Get alert settings by ID | `settingId` (path, required, integer) | - | `200`: Alert settings found`, `visualAlertsEnabled`, `soundAlertsEnabled`, `alertVolume`, `alertInterval` |
+| `/api/v1/orchestrator/alerts-settings/{settingId}` | PUT | Update existing alert settings | `settingId` (path, required, integer) | `id` (integer), `userId` (integer), `visualAlertsEnabled` (boolean), `soundAlertsEnabled` (boolean), `alertVolume` (integer), `alertInterval` (integer) | `200`: Alert settings updated successfully |
+| `/api/v1/orchestrator/alerts-settings/{settingId}` | DELETE | Delete alert settings by id | `settingId` (path, required, integer) | - | `200`: 	
+Alert settings deleted successfully |
+| `/api/v1/orchestrator/alerts-settings` | POST | Create new alert settings for a user | - | `userId` (integer), `visualAlertsEnabled` (boolean), `soundAlertsEnabled` (boolean), `alertVolume` (integer), `alertInterval` (integer) | `201`: 	
+Alert settings created successfully <br>`400`: Invalid input data |
+| `/api/v1/orchestrator/alerts-settings/user/{userId}` | GET | Retrieve alert settings for a specific user | `userId` (path, required, integer) | - | `200`: 	
+Alert settings found |
+| `/api/v1/users` | GET | Retrieves all users | - | - | `200`: users retrieved successfully<br>`404`: No users found |
+| `/api/v1/users` | PUT | Update a user | - | `username` (string), `password` (string) | `200`: Updated user object with `id`, `username`, `roles`<br>`400`: Invalid input data |
+| `/api/v1/users/{userId}` | GET | Get a user by ID | `userId` (path, required, integer) | - | `200`: User object |
+| `/api/v1/users/{userId}` | DELETE | Delete a user | `userId` (path, required, integer) | - | `200`: Confirmation message |
+| `/api/v1/users/me` | GET | Get current authenticated user | - | - | `200`: Current user object |
+| `/api/v1/users/email/{username}` | GET | Get a user by username | `username` (path, required, string) | - | `200`: User object |
+| `/api/v1/monitoringSession/{id}` | GET | Get monitoring session by ID | `id` (path, required, integer) | - | `200`: Monitoring session object |
+| `/api/v1/monitoringSession/{id}` | PUT | Update monitoring session | `id` (path, required, integer) | Session update data | `200`: Updated session object |
+| `/api/v1/monitoringSession/{id}` | DELETE | Delete monitoring session | `id` (path, required, integer) | - | `200`: Confirmation message |
+| `/api/v1/monitoringSession` | POST | Create monitoring session | - | `startDate` (string), `endDate` (string), `score` (integer), `goodScore` (integer), `badScore` (integer), `goodPostureTime` (integer), `badPostureTime` (integer), `duration` (integer), `numberOfPauses` (integer), `averageSessionDuration` (integer) | `200`: Created session object |
+| `/api/v1/orchestrator/posture-settings/{settingId}` | GET | Get posture settings by ID | `settingId` (path, required, integer) | - | `200`: Posture settings object |
+| `/api/v1/orchestrator/posture-settings/{settingId}` | PUT | Update posture settings | `settingId` (path, required, integer) | Posture settings data | `200`: Updated posture settings |
+| `/api/v1/orchestrator/posture-settings/{settingId}` | DELETE | Delete posture settings | `settingId` (path, required, integer) | - | `200`: Confirmation message |
+| `/api/v1/orchestrator/posture-settings` | POST | Create posture settings | - | `userId` (integer), `postureCorrectivity` (integer), `monitoringSessionThreshold` (integer), `handAngleTolerance` (integer), `samplingFrequency` (integer), `modelVersion` (string), `postureThresholds` (object with `shoulderAngle`, `neckAngle`, `backAngle`, `headTilt`) | `201`: Created posture settings object<br>`400`: Invalid input data |
+| `/api/v1/orchestrator/posture-settings/user/{userId}` | GET | Get posture settings by user ID | `userId` (path, required, integer) | - | `200`: Posture settings object |
+| `/api/v1/authentication/sign-up` | POST | Sign up user | - | `username` (string), `password` (string), `role` (string, default: "ROLE_ADMIN") | `201`: Created user object with `id`, `username`, `token`, `roles`<br>`400`: Bad request |
+| `/api/v1/authentication/sign-in` | POST | Sign in user | - | `username` (string), `password` (string) | `200`: User object with `id`, `username`, `token`, `roles`<br>`400`: Bad request - Invalid input data<br>`404`: Not Found - User does not exist |
+| `/api/v1/roles` | GET | Get all roles | - | - | `200`: Array of roles with `id`, `name`<br>`401`: Unauthorized - Invalid credentials |
+| `/api/v1/notifications` | POST | Create notification | - | `userId` (integer), `title` (string), `message` (string), `type` (string), `channel` (string), `preferredChannels` (array), `doNotDisturb` (boolean)| `200`: Array of notification target objects with `additionalProps` |
+| `/api/v1/notifications/{notificationId}/resend` | PATCH | Resend notification | `notificationId` (path, required, integer) | - | `200`: Success response |
+| `/api/v1/notifications/{notificationId}/read` | PATCH | Mark notification as read | `notificationId` (path, required, integer) | - | `200`: Success response |
+| `/api/v1/notifications/{notificationId}` | GET | Get notification by ID | `notificationId` (path, required, integer) | - | `200`: Notification object |
+| `/api/v1/notifications/user/{userId}` | GET | Get notifications by user ID | `userId` (path, required, integer) | - | `200`: Array of notifications |
+| `/api/v1/notifications/user/{userId}/unread` | GET | Get unread notifications by user ID | `userId` (path, required, integer) | - | `200`: Notification object with `id`, `userId`, `message`, `type`, `status`, `createdAt`, `readAt` |
+| `/api/v1/notifications/status` | GET | Get notification status |  `status` (query, required, string) | - | `200`: Status object |
+| `/api/v1/notifications/all` | GET | Get all notifications | - | - | `200`: Array of all notifications |
+| `/api/v1/notifications/test/global` | POST | Test global notification | - | `title` (string, default: "Test Global Notification"), `message` (string, default: "Esta es una notificación de prueba global") | `200`: Array of notification target objects with `additionalProps` |
 
 ##### 7.2.1.7 Software Deployment Evidence for Sprint Review
 ##### 7.2.1.8 Team Collaboration Insights during Sprint
