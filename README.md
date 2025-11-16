@@ -5752,6 +5752,52 @@ Alert settings found |
 </table>
 
 
+<table>
+  <tbody>
+    <tr>
+      <td>Entrevista 3</td>
+      <td>
+        <img src="images/chapter-7/EntrevistaTyrone.png" alt="EntrevistaTyrone" width="400"/>
+      </td>
+    </tr>
+    <tr>
+      <td>Enlace a la entrevista</td>
+      <td> - </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Tyrone Sotil</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>San Juan de Lurigancho</td>
+    </tr>
+    <tr>
+      <td>Ocupación</td>
+      <td>Trabajador Remoto</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td> 11:37 </td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td> 00:00 /td>
+    </tr>
+    <tr>
+      <td>Análisis</td>
+      <td>
+        El entrevistado considera en general la aplicación como una herramienta muy util si se quiere evitar dolores de espalda mientras está en jornada laboral, uno de los principales atributos que resaltó de la aplicación son las métricas y configuraciones, ya que las considera faciles de interpretar y le son de utilidad. Sin embargo, señaló que hay puntos de mejora en las pausas activas donde muchas veces pasaria por alto leer el texto de los ejercicios y que solo lo tomaria en cuenta cuando tenga tiempo de sobra, ademas consideró que la aplicación móvil la siente un poco incompleta en cuanto a funcionalidades comparada a la aplicación web.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
 ### 7.3.3 Evaluaciones según heurísticas
 
 Esta sección analiza los hallazgos de las entrevistas aplicando los principios heurísticos de usabilidad. Permite identificar problemas y oportunidades de mejora en la experiencia del usuario.
