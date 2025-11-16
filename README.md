@@ -149,6 +149,16 @@ Recapitulando los commits se dividieron de la siguiente manera:
 
 **TB2:**
 
+![tb2-contributors-1.png](images/misc/tb2/tb2-contributors-1.png)
+
+![tb2-contributors-2.png](images/misc/tb2/tb2-contributors-2.png)
+
+![tb2-network-1.png](images/misc/tb2/tb2-network-1.png)
+
+![tb2-network-2.png](images/misc/tb2/tb2-network-2.png)
+
+
+
 Para esta entrega se desarollaron los cpaítulos del 6 al 7, en la captura adjuntada se evidencia del trabajo colaborativo de github. Todos los integrantes del grupo trabajaron en el proyecto.
 
 - Juan Astonitas (NeoRise456):  commits
