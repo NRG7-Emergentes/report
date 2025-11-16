@@ -4,6 +4,8 @@
 
 ### **CURSO:** Arquitecturas De Software Emergentes
 
+### **Código de curso**: 1ASI0728
+
 ### **NRC**: 7291
 
 ### **Profesor:** Royer Edelwer Rojas Malasquez
@@ -268,6 +270,27 @@ Recapitulando los commits se dividieron de la siguiente manera:
     - [6.4.3 Applications Mock-ups](#643-applications-mock-ups)
     - [6.4.4 Applications User Flow Diagrams](#644-applications-user-flow-diagrams)
   - [6.5 Applications Prototyping](#65-applications-prototyping)
+- [Capítulo VII: Product Implementation, Validation & Deployment](#capítulo-vii-product-implementation-validation--deployment)
+  - [7.1 Software Configuration Management](#71-software-configuration-management)
+    - [7.1.1 Software Development Environment Configuration](#711-software-development-environment-configuration)
+    - [7.1.2 Source Code Management](#712-source-code-management)
+    - [7.1.3 Source Code Style Guide & Conventions](#713-source-code-style-guide--conventions)
+    - [7.1.4 Software Deployment Configuration](#714-software-deployment-configuration)
+  - [7.2 Solution Implementation](#72-solution-implementation)
+    - [7.2.1 Sprint 1](#721-sprint-1)
+      - [7.2.1.1 Sprint Planning 1](#7211-sprint-planning-1)
+      - [7.2.1.2 Sprint Backlog 1](#7212-sprint-backlog-1)
+      - [7.2.1.3 Development Evidence for Sprint Review](#7213-development-evidence-for-sprint-review)
+      - [7.2.1.4 Testing Suite Evidence for Sprint Review](#7214-testing-suite-evidence-for-sprint-review)
+      - [7.2.1.5 Execution Evidence for Sprint Review](#7215-execution-evidence-for-sprint-review)
+      - [7.2.1.6 Services Documentation Evidence for Sprint Review](#7216-services-documentation-evidence-for-sprint-review)
+      - [7.2.1.7 Software Deployment Evidence for Sprint Review](#7217-software-deployment-evidence-for-sprint-review)
+      - [7.2.1.8 Team Collaboration Insights during Sprint](#7218-team-collaboration-insights-during-sprint)
+  - [7.3 Validation Interviews](#73-validation-interviews)
+    - [7.3.1 Diseño de Entrevistas](#731-diseño-de-entrevistas)
+    - [7.3.2 Registro de Entrevistas](#732-registro-de-entrevistas)
+    - [7.3.3 Evaluaciones según heurísticas](#733-evaluaciones-según-heurísticas)
+  - [7.4 Video About-the-Product](#74-video-about-the-product)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -307,10 +330,17 @@ del ABET – EAC - Student Outcome 3.
         - <b>Godofredo Quispe Tipo:</b> Para esta entrega comuniqué oralmente ideas y dudas para la elaboración del bounded context de estadisticas y los wireframer de Landing Pages<br><br>
         - <b>Gabriel Alexander Casas Sanchez:</b> Para esta entrega busque comunicar todas mis ideas sobre las opciones de diseño (arquitectura de bounded context y UI) de manera clara y sencilla para asegurarme el entendimiento de todos mis compañeros.<br><br>
         - <b>Juan Diego Astonitas Diaz:</b> Para esta entrega comunique las ideas fundamentales de la solucion para poder plasmarlas en en diseño de la arquitectura con DDD <br><br>
+        <b>TB2:</b><br>
+        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta tercera entrega comuniqué oralmente ideas y dudas para la elaboración de los mokcups y userflows y prototipos durante las reuniones grupales en discord, además, comunique activamente sobre la entrega de las tareas que se me asignaron semanalmente.<br><br>
+        - <b>Pasquale Barrenechea Gianluca Santino:</b> Para esta entrega presenté la implementación de websockets y la sincronización entre frontend, mobile y backend; mostré las vistas de historial, detalle de sesión y las notificaciones en web y mobile.<br><br>
+        - <b>Godofredo Quispe Tipo:</b> Para este entregable comuniqué los avances e inquietudes sobre funcionalidades, así como el diseño de la interfaz de usuario en reuniones grupales en Discord. <br><br>
+        - <b>Gabriel Alexander Casas Sanchez:Para esta entrega comunique mis ideas sobre los fundamentos de la estructura e interfaz de la aplicación de manera simple y sencilla para que todos los públicos sean capaces de entenderlo</b><br><br>
+        - <b>Astonitas Díaz Juan Diego:</b> Para esta tercera entrega presenté oralmente los avances en la creación de vistas de dashboard y monitoreo; lideré la dirección de la UI frontend y la arquitectura backend; expliqué el algoritmo de detección de mala postura y la integración con Google Mediapipe Pose Landmark.<br><br>
        </td>
       <td>
         <b>TB1:</b> El equipo ha demostrado un nivel de desarrollo satisfactorio y homogéneo en esta competencia. Todos los miembros participaron activamente en las reuniones de Discord, comunicando ideas, avances y asignaciones de manera clara y efectiva. Se evidencia una comunicación colaborativa que facilitó la alineación del grupo y la revisión de la información. <br><br>
         <b>TP: </b> Durante el TP, el equipo mantuvo una comunicación oral clara y objetiva en las reuniones de Discord, alineando la elaboración de wireframes/wireflows, las style guidelines y la arquitectura de la información. Cada integrante expuso y justificó decisiones sobre bounded contexts, diseño de UI y la definición arquitectónica con DDD, resolviendo dudas para asegurar un entendimiento compartido. Esta coordinación constante permitió integrar criterios de distintas especialidades y niveles, garantizando coherencia en el diseño y avance oportuno de las tareas.<br><br>
+        <b>TB2:</b> Durante TB2 el equipo realizó presentaciones orales efectivas que facilitaron la integración técnica y de diseño: Astonitas Díaz explicó avances en dashboard, UI, arquitectura backend y la integración con Google Mediapipe; Casas Sánchez presentó la app móvil, vistas de configuración/calibración e IAM; Pasquale Barrenechea expuso la implementación de websockets y las vistas de historial, sesión y notificaciones; Quispe presentó sign-in/sign-up, profile y actualizaciones del BC Statistics; Espinoza Delgado mostró mockups, userflows, prototipos, el endpoint orquestador y la vista de monitoreo. Estas exposiciones permitieron alinear requisitos, resolver dependencias y acelerar decisiones de implementación entre disciplinas.
       </td>
     </tr>
     <tr>
@@ -328,10 +358,16 @@ del ABET – EAC - Student Outcome 3.
         - <b>Godofredo Quispe Tipo:</b> Para esta segunda entrega, he preparado una redacción clara y concisa de la infraestructura y la descripción de los bounded contexts, asegurando que toda la audiencia comprenda la arquitectura del sistema.<br><br>
         - <b>Gabriel Alexander Casas Sanchez:</b> Para esta entrega busque que todas las descripciones y decisiones de arquitectura con respecto al bounded context que desarrolle se entiendad de manera clara, para asi evitar fallos de comunicación entre mis compañeros<br><br>
         - <b>Juan Diego Astonitas Diaz: </b> Comunique el diseño y funcionalidad base de la solucion a mis compañeros para poder hacer los wireframes y wireflows <br><br>
+        <b>TB2:</b><br>
+        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta tercera entrega realicé en el informe la redacción de estandares de código en el capítulo 7 y la realización de una entrevista de validación<br><br>
+        - <b>Pasquale Barrenechea Gianluca Santino:</b> Documenté la implementación de websockets, los flujos de datos entre clientes y servidor y la especificación de las vistas de historial, detalle de sesión y notificaciones para web y mobile.<br><br>        - <b>Godofredo Quispe Tipo:</b> Para este entregable me encargué de documentar las entrevistas y realizar resúmenes de cada una de estas. <br><br>
+        - <b>Gabriel Alexander Casas Sanchez:En la documentación de este sprint procure que todos los conceptos sean de fácil comprensión, para un correcto entendimiento de todo lo desarrollado en esta entrega.</b><br><br>
+        - <b>Astonitas Díaz Juan Diego:</b> Documenté la creación de vistas de dashboard y monitoreo, elaboré diagramas de arquitectura frontend/backend y redacté la especificación del algoritmo de detección e integración con Mediapipe.<br><br>
       </td>
       <td>
         <b>TB1:</b> En conjunto, las contribuciones escritas fueron fundamentales para sentar una base documental sólida, guiar la toma de decisiones y cumplir efectivamente los objetivos del proyecto.<br><br>
         <b>TP: </b> Durante el TP, el equipo articuló de forma clara y objetiva la documentación técnica clave, incluyendo tablas y diagramas del Bounded Context IAM, style guidelines, arquitectura de la información, infraestructura y la descripción de bounded contexts, asegurando consistencia terminológica y trazabilidad de decisiones. Las redacciones se orientaron a audiencias de distintas especialidades y niveles, facilitando la comprensión de la arquitectura, la justificación de componentes y la alineación entre diseño y desarrollo. Este trabajo escrito permitió elaborar coherentemente wireframes y wireflows, reducir malentendidos y consolidar una base documental robusta para la evolución del proyecto.<br><br>
+        <b>TB2:</b> En TB2 el equipo entregó documentación técnica y materiales de apoyo completos: Astonitas Díaz documentó vistas de dashboard/monitoreo, diagramas de arquitectura y la especificación del algoritmo de detección de postura y su integración con Mediapipe; Casas Sánchez registró la arquitectura y documentación de la app móvil, vistas de calibración y el módulo IAM y preparó el PPT; Pasquale Barrenechea documentó la implementación de websockets, flujos de datos y las vistas de historial, detalle de sesión y notificaciones; Quispe actualizó la documentación de Statistics y IAM/Profile y resumió entrevistas; Espinoza Delgado entregó mockups, userflows, prototipos y la especificación del endpoint orquestador y monitoreo. Estos entregables escritos aseguraron trazabilidad, facilitaron la transferencia de conocimiento y redujeron riesgos de integración.
       </td>
     </tr>
   </tbody>
@@ -4812,7 +4848,7 @@ Para tener una primera idea de cómo lucirá nuetra landing page, se realizaron 
  **Wireframes Móvil**  
 <img src="images/chapter-6/LandingPageResponsiveWireframes.png" alt="LandingPageResponsiveWireframes">
 
-Link del Figma: [https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=0-1&t=tUt2TuwoHmFV3ka1-1]
+Link del Figma: [https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=0-1&t=tUt2TuwoHmFV3ka1-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
 
 #### 6.3.2 Landing Page Mock-up
 
@@ -4825,7 +4861,7 @@ Posterior a la versión final de los Wireframes, se realizaron los Mockups de la
  **Mockups Móvil**  
 <img src="images/chapter-6/LandingPageResponsiveMockups.png" alt="LandingPageResponsiveMockups">
 
-Link del Figma: [https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=0-1&t=tUt2TuwoHmFV3ka1-1]
+Link del Figma: [https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=0-1&t=tUt2TuwoHmFV3ka1-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
 
 ### 6.4 Applications UX/UI Design
 
@@ -4843,13 +4879,13 @@ Los wireframes de la aplicación móvil de ErgoVision muestran el flujo completo
 
 <img src="images/chapter-6/WireframesMovil.png" alt="Wireframes Movil">
 
-Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1]
+Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
 
 #### 6.4.2 Applications Wireflow Diagrams
 
 Los wireflow diagrams de ErgoVision representan la secuencia de interacciones y pantallas que los usuarios experimentarán al navegar por la aplicación.
 
-Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1]
+Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
 
 **Edición de Datos de Usuario:** Este wireflow corresponde a cuando un usuario quiere modificar sus datos personales luego de haberse registrado.
 
@@ -4908,9 +4944,1372 @@ Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?
 
 #### 6.4.3 Applications Mock-ups
 
+**Mockups Web:**
+
+Los mockups de la aplicación web de ErgoVision presentan las interfaces de registro/login, perfil editable, dashboard con resúmenes semanales, estadísticas visuales, configuración de notificaciones, calibración del sistema de cámara, monitoreo en tiempo real con detección de postura activa, y pantallas de pausas con ejercicios sugeridos y temporizadores para descansos programados.
+
+<img src="images/chapter-6/AppWebMockups.png" alt="Mockups Web">
+
+**Mockups Móvil:**
+
+Los mockups de la aplicación móvil de ErgoVision muestran el flujo completo de ErgoVision desde autenticación (login/registro con datos personales y antropométricos), pasando por gestión de perfil, visualización de estadísticas con gráficos de postura y tiempos de descanso, historial de sesiones, hasta detalles específicos de cada sesión con porcentajes de postura correcta y pausas realizadas.
+
+<img src="images/chapter-6/AppMovilMockups.png" alt="ockups Movil">
+
+Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
+
 #### 6.4.4 Applications User Flow Diagrams
 
+**USER FLOW 1: REGISTRAR CUENTA**
+
+**User Goal:** Como estudiante/trabajador remoto, quiero registrar mi cuenta para acceder a la aplicación.
+
+<img src="images/chapter-6/PasosUF1.png" alt="Pasos Userflow 1">
+
+**Web Application**
+
+<img src="images/chapter-6/Userflow1Web.png" alt="Userflow 1 Web">
+
+**Mobile Application**
+
+<img src="images/chapter-6/Userflow1Mobile.png" alt="Userflow 1 Mobile">
+
+
+**Descripción:** El user flow inicia cuando el usuario accede a la pantalla inicial de la aplicación y selecciona la opción 'Sign Up' para crear una nueva cuenta. Al acceder, el sistema muestra el formulario de registro donde el usuario completa todos los campos requeridos (nombre, email, contraseña, foto, etc). El sistema valida que el email no esté previamente registrado y que la contraseña cumpla con los requisitos de seguridad. Finalmente, el sistema confirma el registro exitoso y permite al usuario acceder a la aplicación.
+
+
+**USER FLOW 2: INICIAR SESIÓN**
+
+**User Goal:** Como estudiante/trabajador remoto, quiero iniciar sesión para hacer uso de la aplicación.
+
+<img src="images/chapter-6/PasosUF2.png" alt="Pasos Userflow 2">
+
+**Web Application**
+
+<img src="images/chapter-6/Userflow2Web.png" alt="Userflow 2 Web">
+
+**Mobile Application**
+
+<img src="images/chapter-6/Userflow2Mobile.png" alt="Userflow 2 Mobile">
+
+
+**Descripción:** El user flow inicia cuando el usuario se encuentra en la pantalla principal de Sign In. El usuario ingresa su email y contraseña en los campos correspondientes y presiona el botón 'Sign In'. El sistema procesa la autenticación, valida que las credenciales coincidan con los registros de la base de datos, y redirige automáticamente al usuario al dashboard principal donde puede visualizar sus estadísticas y acceder a todas las funcionalidades.
+
+
+**USER FLOW 3: EDITAR PERFIL**
+
+**User Goal:** Como estudiante/trabajador remoto, quiero editar mi perfil para actualizar mi información personal.
+
+<img src="images/chapter-6/PasosUF3.png" alt="Pasos Userflow 3">
+
+**Web Application**
+
+<img src="images/chapter-6/Userflow3Web.png" alt="Userflow 3 Web">
+
+**Mobile Application**
+
+<img src="images/chapter-6/Userflow3Mobile.png" alt="Userflow 3 Mobile">
+
+
+**Descripción:** El user flow inicia cuando el usuario se encuentra en el dashboard principal y accede a su perfil presionando en el menú de navegación la opción correspondiente. Al acceder a la vista de perfil, el sistema muestra la información actual del usuario (nombre, altura, peso, foto de perfil y años). El usuario presiona el botón 'Editar Perfil' y el sistema despliega los campos editables. El usuario modifica la información deseada, valida que los cambios sean correctos y presiona 'Guardar'. El sistema procesa la actualización, confirma que los cambios se guardaron exitosamente y actualiza la vista del perfil con la nueva información.
+
+
+**USER FLOW 4: CAMBIAR MI CONFIGURACIÓN**
+
+**User Goal:** Como estudiante/trabajador remoto, quiero cambiar mi configuración para personalizar la aplicación según mis preferencias.
+
+<img src="images/chapter-6/PasosUF4.png" alt="Pasos Userflow 4">
+
+**Web Application**
+
+<img src="images/chapter-6/Userflow4Web.png" alt="Userflow 4 Web">
+
+**Mobile Application**
+
+<img src="images/chapter-6/Userflow4Mobile.png" alt="Userflow 4 Mobile">
+
+
+**Descripción:** El user flow inicia cuando el usuario se encuentra en el dashboard principal y presiona en el menú de navegación la opción 'Configuración' o el ícono de ajustes. Al acceder, el sistema despliega la pantalla de configuración mostrando todas las opciones disponibles organizadas por categorías. El usuario modifica los valores deseados utilizando dropdowns, sliders o campos de texto. El sistema valida que los valores estén dentro de los rangos permitidos y aplica las configuraciones.
+
+
+**USER FLOW 5: MONITOREAR MI POSTURA**
+
+**User Goal:** Como estudiante/trabajador remoto, quiero monitorear mi postura en tiempo real para recibir alertas y mejorar mi ergonomía.
+
+<img src="images/chapter-6/PasosUF5.png" alt="Pasos Userflow 5">
+
+**Web Application**
+
+<img src="images/chapter-6/Userflow5Web.png" alt="Userflow 5 Web">
+
+
+**User Goal:** Como estudiante/trabajador remoto, quiero monitorear mi postura en tiempo real para recibir alertas y mejorar mi ergonomía.
+
+**Descripción:** El user flow inicia cuando el usuario se encuentra en el dashboard principal y selecciona la opción 'Monitoreo' desde el menú de navegación o presiona el botón prominente de 'Iniciar Monitoreo'. Al acceder, el sistema solicita permisos de cámara si es la primera vez o verifica que los permisos estén activos. Una vez confirmados los permisos, el sistema activa la cámara y muestra la vista de monitoreo en tiempo real donde el usuario puede verse a sí mismo. El sistema comienza a analizar la postura cuando se le de a Start. Durante la sesión, el usuario recibe notificaciones automáticas cuando mantiene una postura incorrecta por tiempo prolongado, permitiéndole corregir su posición inmediatamente.
+
+
+**USER FLOW 6: VISUALIZAR ESTADÍSTICAS DE MIS MONITOREOS**
+
+**User Goal:** Como estudiante/trabajador remoto, quiero visualizar mis estadísticas  para conocer mi progreso ergonómico.
+
+<img src="images/chapter-6/PasosUF6.png" alt="Pasos Userflow 6">
+
+**Web Application**
+
+<img src="images/chapter-6/Userflow6Web.png" alt="Userflow 6 Web">
+
+**Mobile Application**
+
+<img src="images/chapter-6/Userflow6Mobile.png" alt="Userflow 6 Mobile">
+
+
+**Descripción:** El user flow inicia cuando el usuario completa exitosamente el inicio de sesión en la pantalla de Sign In. Al validar las credenciales, el sistema automáticamente redirige al usuario al dashboard principal. Al seleccionar la opción de 'Progress', el sistema recupera y procesa los datos históricos del usuario desde la base de datos y despliega las estadísticas generales de forma visual y organizada mediante un gráfico circular y un gráfico de barras. El usuario puede observar claramente su progreso ergonómico y tendencias de mejora o deterioro en su postura.
+
+
+**USER FLOW 7: VISUALIZAR MI HISTORIAL**
+
+**User Goal:** Como estudiante/trabajador remoto, quiero visualizar mi historial completo de sesiones para revisar mi evolución a lo largo del tiempo.
+
+<img src="images/chapter-6/PasosUF7.png" alt="Pasos Userflow 7">
+
+**Web Application**
+
+<img src="images/chapter-6/Userflow7Web.png" alt="Userflow 7 Web">
+
+**Mobile Application**
+
+<img src="images/chapter-6/Userflow7Mobile.png" alt="Userflow 7 Mobile">
+
+
+**Descripción:** El user flow inicia cuando el usuario se encuentra en el dashboard principal y presiona en el menú de navegación la opción 'Historial' o 'History'. Al acceder a esta sección, el sistema recupera del servidor todas las sesiones de monitoreo que el usuario ha completado previamente y las presenta en una lista cronológica ordenada de más reciente a más antigua. La interfaz muestra para cada sesión información resumida: fecha, duración total, accuracy promedio obtenido, y cantidad de pausas.
+ 
+
+**USER FLOW 8: RECALIBRAR MI CÁMARA**
+
+**User Goal:** Como estudiante/trabajador remoto, quiero recalibrar mi cámara para asegurar un monitoreo preciso de mi postura.
+
+
+<img src="images/chapter-6/PasosUF8.png" alt="Pasos Userflow 8">
+
+
+**Web Application**
+
+<img src="images/chapter-6/Userflow8Web.png" alt="Userflow 8 Web">
+
+
+**Descripción:** El user flow inicia cuando el usuario, ya sea desde el dashboard principal o desde la sección de configuración, identifica y presiona la opción 'Recalibrar'. Al acceder, el sistema despliega la interfaz de calibración que muestra instrucciones visuales claras y paso a paso. El proceso de calibración guía al usuario para que se posicione correctamente frente a la cámara a una distancia adecuada, asegurando que su rostro y torso superior sean visibles en el frame. El sistema muestra el esqueleto para ayudar al posicionamiento. Una vez que el usuario está en la posición correcta, el sistema detecta automáticamente los puntos clave del cuerpo (cabeza, hombros, columna) y ajusta los parámetros de detección según la configuración específica de la cámara del usuario, la distancia detectada, el ángulo de la cámara y las condiciones de iluminación del entorno. El sistema valida que la calibración sea exitosa, guardando automáticamente la configuración para futuras sesiones de monitoreo.
+
 ### 6.5 Applications Prototyping
+
+A continuación, se presentarán los prototipos y videos de los prototipos de las aplicaciones web y móvil en Figma.
+
+**Prototipo Web**
+
+- **Link Prototipo:** [https://www.figma.com/proto/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=211-1160&t=PeqxIuqcVqSFgEJf-1&scaling=min-zoom&content-scaling=fixed&page-id=96%3A814&starting-point-node-id=211%3A1160&show-proto-sidebar=1](https://www.figma.com/proto/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=211-1160&t=PeqxIuqcVqSFgEJf-1&scaling=min-zoom&content-scaling=fixed&page-id=96%3A814&starting-point-node-id=211%3A1160&show-proto-sidebar=1)
+
+<img src="images/chapter-6/PWimg.png" alt="Imagen Prototipo Web">
+
+- **Link del video del prototipo:** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u201911727_upc_edu_pe/IQD3koUBm_tqSbEUAIOJMWiEAb-4INdYOqkd5qoXekJ85tg?e=S4Nf6o](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201911727_upc_edu_pe/IQD3koUBm_tqSbEUAIOJMWiEAb-4INdYOqkd5qoXekJ85tg?e=S4Nf6o)
+
+**Prototipo Móvil**
+
+- **Link Prototipo:** [https://www.figma.com/proto/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=227-1160&t=9wwJYmCP4WYQHoz2-1&scaling=min-zoom&content-scaling=fixed&page-id=96%3A814&starting-point-node-id=227%3A1160&show-proto-sidebar=1](https://www.figma.com/proto/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=227-1160&t=9wwJYmCP4WYQHoz2-1&scaling=min-zoom&content-scaling=fixed&page-id=96%3A814&starting-point-node-id=227%3A1160&show-proto-sidebar=1)
+
+<img src="images/chapter-6/PMimg.png" alt="Imagen Prototipo Movil">
+
+- **Link del video del prototipo:** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u201911727_upc_edu_pe/IQCC2fs621o3Sb9vxi-Oj1fOAadHM91RhNfpzsU1Nch5fVs?e=vpGJr4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201911727_upc_edu_pe/IQCC2fs621o3Sb9vxi-Oj1fOAadHM91RhNfpzsU1Nch5fVs?e=vpGJr4)  
+
+## Capítulo VII: Product Implementation, Validation & Deployment
+
+### 7.1 Software Configuration Management
+
+En este ítem se definirán todas las reglas y procesos que hemos seguido en el proyecto al momento de crear y desplegar ErgoVision. El objetivo de estas reglas y procesos es garantizar la integridad y consistencia del software, desde el inicio hasta el despliegue y mantenimiento.
+
+#### 7.1.1 Software Development Environment Configuration
+
+**Project Management**
+
+Para la organización del proyecto requerimos de un sistema de de asignación de tareas, palataformas y puntos de reunión y un repositorio dónde trabajaremos en conjunto cada avance del proyecto. A continuación se menciona los nombres de los productos y el propósito de uso en el proyecto:
+
+- Centro de organización de trabajo: Github
+- Planificación de tareas: Trello
+- Reuniones con el equipo: Discord
+- Coordinación grupal: WhatsApp
+
+**Requirements Management**
+
+Utilizamos Trello para designar las tareas y actividades de cada integrante del grupo en caso de revisión o cambios.
+
+| Herramienta | Descripción                                                                                        | Enlace                                   |
+|-------------|----------------------------------------------------------------------------------------------------|------------------------------------------|
+| Trello      | Para designar las tareas y actividades de cada integrante del grupo en caso de revisión o cambios. | [https://trello.com](https://trello.com) |
+
+**Product UX/UI Design**
+
+Para el diseño de los wireframes y mockups, además de la realización del prototipo de la mobile application, utilizamos Figma.
+
+| Herramienta | Descripción                                                                                  | Enlace                                           |
+|-------------|----------------------------------------------------------------------------------------------|--------------------------------------------------|
+| Figma       | Para el diseño de los wireframe y mockups, además de la realización del prototipo de Web App | [https://www.figma.com/](https://www.figma.com/) |
+
+**Software Development**
+
+Empleamos **Angular** para la creación del frontend de la aplicación web, **Flutter** para la app móvil, y **Spring Boot** para la creación de la API REST.  
+
+Para el desarrollo de la **landing page** utilizamos **HTML** y **Tailwind CSS**.
+
+| Herramienta  | Descripción                                                                  | Enlace                                                                                                 |
+|--------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| Angular      | Framework utilizado para la creación del frontend de la aplicación web       | [https://angular.io/](https://angular.io/)                                                             |
+| Flutter      | Framework utilizado para la creación de la aplicación móvil multiplataforma  | [https://flutter.dev/](https://flutter.dev/)                                                           |
+| Spring Boot  | Framework utilizado para la creación de la API REST                          | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot)                       |
+| HTML         | Lenguaje de marcado utilizado para el desarrollo de la landing page estática | [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) |
+| Tailwind CSS | Framework utilizado para la maquetación y diseño de la landing page          | [https://tailwindcss.com/](https://tailwindcss.com/)                                                   |
+
+**Software Deployment**
+
+Se empleó los siguientes software para desplegar los servicios del proyecto. Base de datos: Render, Landing Page: Github Actions, Web Application: Render, Mobile Application: Android Studio.
+
+| Herramienta    | Descripción                                                                                     | Enlace                                                                       |
+|----------------|-------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
+| Render         | Plataforma utilizada para el despliegue de la base de datos, API, aplicación web y landing page | [https://render.com/](https://render.com/)                                   |
+| Android Studio | Herramienta utilizada para la creación de la mobile application (APK e IPA)                     | [https://developer.android.com/studio](https://developer.android.com/studio) |
+| GitHub Actions | Despliegue de la landing estática                                                               | [https://github.com/features/actions](https://github.com/features/actions)   |
+
+**Software Documentation**
+
+Para la documentación del software utilizamos Markdown, y para el trabajo colaborativo Github.
+
+| Herramienta | Descripción                                                      | Enlace                                                                                 |
+|-------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| Markdown    | Lenguaje de marcado utilizado para la documentación del proyecto | [https://www.markdownguide.org/](https://www.markdownguide.org/)                       |
+| GitHub      | Para gestionar la documentación del proyecto                     | [https://github.com/NRG7-Emergentes/report](https://github.com/NRG7-Emergentes/report) |
+
+#### 7.1.2 Source Code Management
+
+Para la gestión del código fuente, utilizamos los siguientes repositorios:
+
+| Producto           | Repositorio             | Enlace                                                                                                         |
+|--------------------|-------------------------|----------------------------------------------------------------------------------------------------------------|
+| Web Application    | ergovision-web-app      | [https://github.com/NRG7-Emergentes/ergovision-webapp](https://github.com/NRG7-Emergentes/ergovision-webapp)   |
+| Mobile Application | ergovision-mobile-app   | [https://github.com/NRG7-Emergentes/ergovision-mobile](https://github.com/NRG7-Emergentes/ergovision-mobile)   |
+| Backend            | ergovision-backend      | [https://github.com/NRG7-Emergentes/ergovision-backend](https://github.com/NRG7-Emergentes/ergovision-backend) |
+| Landing Page       | ergovision-landing-page | [https://github.com/NRG7-Emergentes/landing-page](https://github.com/NRG7-Emergentes/landing-page)             |
+
+**Flujo de trabajo GitFlow**
+
+Usaremos el flujo de trabajo planteado por Vincent Driessen en "A successful Git branching model" con los siguientes parámetros:
+
+- Una rama de producción.
+- Una rama de pruebas.
+- Una rama en la que se solucionen los bugs rapidamente y vuelvan a producción.
+- Ramas de features a implementar.
+- Cada cambio en producción debe establecerse como una nueva versión.
+- Para este proyecto en concreto consideramos que los cambios en la rama de producción y de pruebas deben tener autorización de un compa­ñero de equipo.
+
+Teniendo en cuenta la información anterior nos inclinamos por este tipo de organización en los branches:
+
+- **Main branch:** Esta rama esta destinada a la producción de la aplicación, cada cambio deberá tener autorización de un compañero de equipo para evitar cambios sin verificar.
+- **Hotfix branch:** En esta rama se incluirán todas las versiones que poseen errores identificados y que con cada arreglo de este se despliegue otra vez a Main Branch además de implementarla en lo que será Develop Branch.
+- **Develop branch:** Esta rama está destinada a las constantes implementaciones en caliente de los features,
+- **Features branch:** Cada feature poseerá su respectiva rama, una vez que se encuentre correctamente implementada será fusionada con Develop branch.
+
+Con cada deployment de la aplicación debe establecerse como una nueva versión. Nomenclatura de numeración de las versiones:
+
+- **Major changes:** Cuando el código o versión nueva del proyecto a implementar presenta cambios significativos con la versión anterior, estos cambios llegan a ser incompatibles con la versión anterior. Esto se evidenciará en el numero de la versión ej: versión 1.0.0 -> versión 2.0.0.
+- **Minor changes:** Cuando el código o versión nueva del proyecto a implementar presenta cambios con respecto a alguna característica, ya sea añadir o modificar, de la versión anterior; estos cambios no llegan a ser incompatibles con la versión anterior. Esto se evidenciará en el numero de la versión ej: versión 1.1.0 -> versión 1.2.0.
+- **Patch:** Cuando se solucionan bugs menores. Esto se evidenciará en el numero de la versión ej: versión 1.1.3 -> versión 1.1.4.
+
+Sufijos asignados a las versiones:
+
+- **alpha:** versión no estable con características básicas o no funcionales, ejemplo : versión 1.0.0 -alpha.
+- **beta:** versión no apta para la publicación, aún así ya presenta características funcionales en el estado base, ejemplo versión 1.0.0 –beta.
+- **rc:** versión apta para la publicación y uso de los usuarios, es candidata para publicar, ejemplo versión 1.0.0 -rc.
+
+#### 7.1.3 Source Code Style Guide & Conventions
+
+Usaremos buenas prácticas en cuanto al código de manera que sea coherente y sostenible.
+
+**Flutter**
+
+* **Nomenclatura:**
+  * Clases y widgets: *PascalCase*.
+  * Funciones y variables: *camelCase*.
+  * Constantes: *UPPER_SNAKE_CASE*.
+  
+* **Estructura:**
+  * Separar la lógica de la UI mediante arquitectura por capas (*UI*, *Providers*, *Services*, *Models*).
+  * Reutilizar componentes visuales y mantener una estructura modular.
+  
+* **Buenas prácticas:**
+  * Evitar lógica de negocio dentro de los widgets.
+  * Aplicar `const` donde sea posible para optimizar rendimiento.
+  * Usar `async/await` correctamente para evitar bloqueos en la interfaz.
+
+**Angular**
+
+* **Estructura:**
+  * Dividir el código en *módulos*, *componentes*, *servicios* y *modelos*.
+  * Aplicar *Lazy Loading* para optimizar la carga de módulos.
+  
+* **Nomenclatura:**
+  * Clases y componentes: *PascalCase*.
+  * Variables y métodos: *camelCase*.
+  * Archivos: *kebab-case* (ejemplo: `user-profile.component.ts`).
+  
+* **Buenas prácticas:**
+  * Mantener la lógica de negocio en *servicios*, no en componentes.
+  * Utilizar `async pipe` para manejar observables.
+  * Aplicar linters (*ESLint*, *Prettier*) para mantener consistencia en el código.
+
+**Spring Boot**
+
+* **Estructura:**
+  * Organizar el proyecto por capas: *controller*, *service*, *repository*, *model*.
+  * Utilizar interfaces para los servicios (`UserService → UserServiceImpl`).
+  
+* **Convenciones:**
+  * Clases en *PascalCase*.
+  * Métodos en *camelCase* (ejemplo: `getUserById()`).
+  * Endpoints REST en *kebab-case* (ejemplo: `/api/user-data`).
+  
+* **Buenas prácticas:**
+  * Validar entradas con anotaciones (`@Valid`, `@NotNull`).
+  * Manejar excepciones de forma global con `@ControllerAdvice`.
+
+**HTML**
+
+* **Estructura:**
+  * Mantener jerarquía semántica correcta (`<header>`, `<main>`, `<section>`, `<footer>`).
+  * Incluir etiquetas meta esenciales (`<meta charset="UTF-8">`, `<meta name="viewport">`).
+  
+* **Convenciones:**
+  * Archivos nombrados en *kebab-case* (ejemplo: `about-us.html`).
+  * Uso de indentación consistente (2 o 4 espacios).
+  
+* **Buenas prácticas:**
+  * Validar el HTML con [W3C Validator](https://validator.w3.org/).
+  * Evitar el uso de estilos inline; usar clases con Tailwind CSS.
+  * Minimizar el uso de etiquetas obsoletas (`<center>`, `<font>`).
+  * Mantener el contenido accesible con atributos `alt`, `aria-label` y roles semánticos.
+
+**Tailwind CSS**
+
+* **Clases:**
+  * Ordenar las clases: *Layout > Flex/Grid > Spacing > Typography > Colors > Effects*.
+  * Evitar `@apply` en CSS y usar clases directamente en el HTML.
+  
+* **Responsive:**
+  * Usar prefijos (`sm:`, `md:`, `lg:`) para adaptar la interfaz.
+  
+* **Buenas prácticas:**
+  * Centralizar la configuración de colores y tipografías en `tailwind.config.js`.
+  * Reutilizar estilos comunes en componentes para mantener consistencia.
+
+**General**
+
+* **Código:**
+  * Comentarios en inglés.
+  * Commits semánticos (`feat:`, `fix:`, `docs:`).
+  
+* **Performance:**
+  * Implementar *Lazy Loading* para componentes y recursos.
+  * Reutilizar componentes y evitar duplicación de código.
+  * Optimizar imágenes y recursos estáticos para mejorar tiempos de carga.
+
+#### 7.1.4 Software Deployment Configuration
+
+En esta sección se detallan las consideraciones y pasos necesarios para el despliegue de los productos de **ErgoVision**.
+
+**Landing Page (HTML + Github Actions)**
+
+**Consideraciones antes del despliegue:**
+
+* Ejecutar el archivo `index.html` localmente para verificar que no existan errores de carga ni conflictos de dependencias.
+* Asegurarse de que todos los archivos asociados (CSS, imágenes y scripts) estén correctamente enlazados en el proyecto.
+
+**Requerimientos para realizar el despliegue:**
+
+* Repositorio público en **GitHub**.
+* Acceso a la sección de configuración del repositorio.
+
+**Pasos realizados para el despliegue:**
+
+1. Ingresar al repositorio público de la *Landing Page* en GitHub.
+2. Ir a la pestaña **Settings**.
+3. Seleccionar la sección **Pages**.
+4. En la opción *Build and deployment*, elegir **GitHub Actions** como fuente (*Source*).
+5. Seleccionar la plantilla **Static HTML** de GitHub Actions.
+6. Hacer un **commit** del flujo de trabajo (`.yml`) de *GitHub Actions* para HTML estático.
+7. Volver a la pestaña **Pages** y esperar a que se genere el enlace público de la página.
+8. Verificar el correcto funcionamiento accediendo al enlace generado.
+
+**Herramientas utilizadas:**
+
+| Herramienta    | Descripción                       | Enlace                                                                     |
+|----------------|-----------------------------------|----------------------------------------------------------------------------|
+| GitHub Actions | Despliegue de la landing estática | [https://github.com/features/actions](https://github.com/features/actions) |
+
+**Web Application (Angular + Render)**
+
+**Consideraciones antes del despliegue:**
+
+* Validar que no existan errores con `ng build --configuration production`.
+* Confirmar la conexión funcional con el backend y las variables de entorno correctamente configuradas.
+
+**Requerimientos:**
+
+* Repositorio público del proyecto en GitHub.
+* Cuenta activa en **Render**.
+
+**Pasos realizados para el despliegue:**
+
+1. Ingresar a [Render](https://render.com/).
+2. Iniciar sesión en la cuenta del proyecto.
+3. Seleccionar **New → Web Service**.
+4. Conceder acceso a Render a los repositorios de GitHub.
+5. Elegir el repositorio del proyecto Angular.
+6. Configurar el nombre del servicio, puerto y comandos de *build* (`npm run build`).
+7. Hacer clic en **Deploy**.
+8. Verificar el despliegue en la URL generada por Render.
+
+**Herramientas utilizadas:**
+
+| Herramienta | Descripción                               | Enlace                                     |
+|-------------|-------------------------------------------|--------------------------------------------|
+| Render      | Despliegue de la aplicación web (Angular) | [https://render.com/](https://render.com/) |
+
+**Mobile Application (Flutter)**
+
+**Consideraciones antes del despliegue:**
+
+* Verificar que el *backend* esté disponible externamente.
+* Asegurar que las dependencias (`pubspec.yaml`) estén actualizadas y libres de errores.
+
+**Requerimientos:**
+
+* Proyecto creado en Firebase
+* Integración del SDK de Firebase en la app Flutter.
+* Dispositivo móvil (Android o iOS) para pruebas.
+
+**Pasos realizados para el despliegue:**
+
+1. Instalar y ejecutar la CLI de FlutterFire mediante `dart pub global activate flutterfire_cli`.
+2. En la raiz del proyecto, ejecutar `flutterfire configure` para vincular el proyecto con Firebase.
+3. Configurar las opciones de despliegue en Android Studio (APK para Android, IPA para iOS).
+4. Inicializar Firebase en el main.dart con `await Firebase.initializeApp()`.
+5. Generar el archivo de la aplicación móvil:
+   - Para Android: `flutter build apk --release`
+   - Para iOS: `flutter build ios --release`
+6. Probar la aplicación en un dispositivo físico o emulador.
+7. Subir el archivo generado a Firebase App Distribution para pruebas internas.
+
+**Herramientas utilizadas:**
+
+| Herramienta               | Descripción                                     | Enlace                                                                                                 |
+|---------------------------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| Firebase App Distribution | Herramienta para distribución de la aplicación  | [https://firebase.google.com/docs/app-distribution](https://firebase.google.com/docs/app-distribution) |
+| Firebase CLI              | Herramienta para configurar Firebase en Flutter | [https://firebase.google.com/docs/flutter/setup](https://firebase.google.com/docs/flutter/setup)       |
+
+**Backend (Spring Boot + Render)**
+
+**Consideraciones antes del despliegue:**
+
+* Confirmar la conexión a la base de datos.
+* Validar las variables de entorno y las rutas configuradas correctamente.
+
+**Requerimientos:**
+
+* Repositorio público del backend en GitHub.
+* Cuenta activa en Render.
+
+**Pasos realizados para el despliegue:**
+
+1. Conectar el backend con la base de datos configurada.
+2. Crear un archivo `Dockerfile` con la configuración necesaria para despliegue.
+3. Acceder a Render y crear un nuevo proyecto de tipo **Web Service**.
+4. Importar el repositorio del backend.
+5. Configurar los parámetros del servicio (puerto, build y start command).
+6. Desplegar el servicio y verificar su conexión con la base de datos.
+
+**Herramientas utilizadas:**
+
+| Herramienta | Descripción                               | Enlace                                     |
+|-------------|-------------------------------------------|--------------------------------------------|
+| Render      | Despliegue de la API REST y base de datos | [https://render.com/](https://render.com/) |
+
+### 7.2 Solution Implementation
+
+#### 7.2.1 Sprint 1
+
+Durante este sprint el equipo centro sus esfuerzos en la creación de la primera versión de la aplicación web, backend y aplicación móvil. En esta iteración se prioriza la creación de la interfaz gráfica sobre el desarrollo funcional, sin embargo igualmente se desarrollaron aspectos funcionales como el uso de la cámara la gestión de usuarios.
+
+##### 7.2.1.1 Sprint Planning 1
+
+Esta sección describe el proceso de planificación del Sprint 1, donde el equipo definió los objetivos y entregables a desarrollar. Durante la reunión de Sprint Planning, se establecieron las prioridades del Product Backlog, los responsables de cada tarea y el alcance de las historias de usuario relacionadas con la implementación del Frontend (Mobile App y Web App) y del Backend.
+
+| Sprint #                         | Sprint 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Date                             | 2025-09-25                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Time                             | 21:00 PM                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Location                         | Discord                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Prepared by                      | Astonitas Díaz Juan Diego                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Attendees                        | All team members (Astonitas Díaz Juan Diego, Casas Sanchez Gabriel Alexander, Espinoza Delgado Bárbara Antonella, Godofredo Quispe Tipo, Pasquale Barrenechea Gianluca Santino)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Sprint 1 - Review Summary        | Es el primmer sprint                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | 
+| Sprint 1 - Retrospective Summary | Es el primmer sprint                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Sprint 1 Goal                    | Nuestro enfoque está en entregar la primera versión integrada y navegable de la aplicación web, backend y aplicación móvil, ofreciendo a los usuarios una experiencia inicial que incluya la visualización de la interfaz gráfica, la gestión básica de usuarios y el uso de funcionalidades esenciales como la cámara. Creemos que esto proporcionará visibilidad temprana del producto y permitirá validar la interacción inicial de los usuarios con la plataforma. Esto se confirmará cuando los usuarios puedan acceder a las interfaces, completar flujos básicos como registro e inicio de sesión y utilizar al menos una funcionalidad operativa dentro del ecosistema. |
+| Sprint 1 Velocity                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Sum of Story Points              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+
+##### 7.2.1.2 Sprint Backlog 1
+
+La sección Sprint Backlog presenta la planificación detallada del trabajo a realizar durante el Sprint, alineada con el objetivo principal establecido. Aquí se muestra el estado de las tareas y su distribución entre los miembros del equipo. Además, se incluye una tabla con las User Stories seleccionadas y los Work-items o Tasks derivados, facilitando la trazabilidad y el control del avance del Sprint.
+
+<table>
+    <tr>
+        <td colspan="1"><strong>Sprint #</strong></td>
+        <td colspan="7"><strong>Sprint 1</strong></td>
+    </tr>
+    <tr>
+        <td colspan="2"><strong>User Story</strong></td>
+        <td colspan="6"><strong>Work-Item/task</strong></td>
+    </tr>
+    <tr>
+        <td colspan="1"><strong>Id</strong></td>
+        <td colspan="1"><strong>Title</strong></td>
+        <td colspan="1"><strong>Id</strong></td>
+        <td colspan="1"><strong>Title</strong></td>
+        <td colspan="1"><strong>Description</strong></td>
+        <td colspan="1"><strong>Estimation(Hrs)</strong></td>
+        <td colspan="1"><strong>Assigned To</strong></td>
+        <td colspan="1"><strong>Status</strong></td>
+    </tr>
+    <tr>
+        <td>US-001</td>
+        <td>Acceso a la Cámara</td>
+        <td>T-001</td>
+        <td>Habilitar el acceso a la cámara</td>
+        <td>Habilitar el acceso a la cámara desde la visa de monitoreo y calibración</td>
+        <td>3</td>
+        <td>Juan Diego Astonitas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-002</td>
+        <td>Visualización del Esqueleto en Tiempo Real</td>
+        <td>T-001</td>
+        <td>Habilitar el esqueleto en la cámara</td>
+        <td>Habilitar el esqueleto al activar la cámara en la aplicación web</td>
+        <td>5</td>
+        <td>Barbara Espinoza</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-009</td>
+        <td>Alertas Visuales para Mala Postura</td>
+        <td>T-001</td>
+        <td>Habilitar alertas visuales</td>
+        <td>Habilitar el uso de alertas visuales</td>
+        <td>5</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-010</td>
+        <td>Alertas Sonoras Personalizables</td>
+        <td>T-001</td>  
+        <td>Habilitar alertas sonoras</td>
+        <td>Habilitar el uso de alertas sonoras</td>
+        <td>5</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-014</td>
+        <td>Panel de Gestión de Alertas</td>
+        <td>T-001</td>
+        <td>Crear la vista de gestión de alertas y calibración</td>
+        <td>Crear la vista de gestión de alertas y calibración</td>
+        <td>5</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-015</td>
+        <td>Calibración Inicial de Postura</td>
+        <td>T-001</td>
+        <td>Crear la vista de calibración de postura</td>
+        <td>Crear la vista de calibración de postura</td>
+        <td>4</td>
+        <td>Juan Diego Astonitas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td rowspan="2">US-021</td>
+        <td rowspan="2">Gráfico de Progreso Semanal</td>
+        <td>T-001</td>
+        <td>Habilitar la vista del gráfico de progreso semanal en web</td>
+        <td>Habilitar la vista del gráfico de progreso semanal en web</td>
+        <td>4</td>
+        <td>Juan Diego Astonitas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Habilitar la vista del gráfico de progreso semanal en móvil</td>
+        <td>Habilitar la vista del gráfico de progreso semanal en móvil</td>
+        <td>4</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td rowspan="2">US-022</td>
+        <td rowspan="2">Historial Detallado de Sesiones</td>
+        <td>T-001</td>
+        <td>Habilitar la vista del historial de sesiones en web</td>
+        <td>Habilitar la vista del historial de sesiones en web</td>
+        <td>4</td>
+        <td>Gianluca Pasquale</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Habilitar la vista del historial de sesiones en móvil</td>
+        <td>Habilitar la vista del historial de sesiones en móvil</td>
+        <td>4</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-025</td>
+        <td>Sugerencias de Ejercicios Generales</td>
+        <td>T-001</td>
+        <td>Mostrar recomendaciones de ejercicios</td>
+        <td>Mostrar recomendaciones de ejercicio en la pantalla de pausa activa</td>
+        <td>4</td>
+        <td>Juan Diego Asstonitas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-026</td>
+        <td>Registro de Nueva Cuenta</td>
+        <td>T-001</td>
+        <td>Registrar nueva cuenta</td>
+        <td>Registrar nueva cuenta</td>
+        <td>2</td>
+        <td>Godofredo Quispe</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-028</td>
+        <td>Inicio de sesión</td>
+        <td>T-001</td>
+        <td>Inicio de sesión</td>
+        <td>Habilitar la pantalla de login</td>
+        <td>2</td>
+        <td>Godofredo Quispe</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-030</td>
+        <td>Edición de Perfil</td>
+        <td>T-001</td>
+        <td>Edición de datos de perfil</td>
+        <td>Habilitar el formulario de edición de datos de perfil</td>
+        <td>2</td>
+        <td>Godofredo Quispe</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>TS-001</td>
+        <td>Integración de MediaPipe Pose</td>
+        <td>T-001</td>
+        <td>Habilitar el uso de Media Pipe</td>
+        <td>Habilitar el servicio de Media Pipe</td>
+        <td>7</td>
+        <td>Juan Diego Astonitas, Barbara Espinoza</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>TS-002</td>
+        <td>Manejo de Permisos de Cámara</td>
+        <td>T-001</td>
+        <td>Habilitar la solicitud de permisos de cámara</td>
+        <td>Habilitar la solicitud de permisos de cámara</td>
+        <td>1</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+</table>
+
+##### 7.2.1.3 Development Evidence for Sprint Review
+
+En esta sección se presentan los avances alcanzados durante el Sprint en la implementación de los productos del proyecto, incluyendo la Landing Page, la Web Application, los Web Services y la Mobile Application. Se resumen los progresos técnicos más relevantes y se evidencia la evolución del desarrollo mediante una tabla que detalla los commits realizados en cada repositorio, asegurando la trazabilidad y el seguimiento del trabajo ejecutado por el equipo.
+
+**Web Application**
+
+| Repository        | Branch  | Commit Id | Commit Message                                                                            | Commit Message Body                                                                                                                                                                                | Date        |
+|-------------------|---------|-----------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| ergovision-webapp | develop | 50cb5018  | add initial project setup with Angular, Tailwind CSS, and basic components                | add initial project setup with Angular, Tailwind CSS, and basic components                                                                                                                         | 19/10/2025  |
+| ergovision-webapp | develop | 2bf3bbdc  | chore: add zardui components                                                              | chore: add zardui components                                                                                                                                                                       | 20/10/2025  |
+| ergovision-webapp | develop | 1b615820  | feat: create main dashboard component and update routing, add card and summary components | feat: create main dashboard component and update routing, add card and summary components                                                                                                          | 21/10/2025  |
+| ergovision-webapp | develop | 1bdf23f6  | feat: add MonseCam component and update routing for camera monitoring                     | feat: add MonseCam component and update routing for camera monitoring                                                                                                                              | 22/10/2025  |
+| ergovision-webapp | develop | 6f134eb5  | feat: add monitoring views                                                                | feat: add monitoring views                                                                                                                                                                         | 23/10/2025  |
+| ergovision-webapp | develop | fcb3d854  | feat: create history module with routing for history and session pages                    | feat: create history module with routing for history and session pages                                                                                                                             | 23/10/2025  |
+| ergovision-webapp | develop | e4b87c28  | feat: implement history service for session summaries and details                         | feat: implement history service for session summaries and details                                                                                                                                  | 23/10/2025  |
+| ergovision-webapp | develop | c8d61b00  | feat: add history page component to display session summaries                             | feat: add history page component to display session summaries                                                                                                                                      | 23/10/2025  |
+| ergovision-webapp | develop | 20ea5f51  | feat: add metrics cards component to display session posture and pauses                   | feat: add metrics cards component to display session posture and pauses                                                                                                                            | 23/10/2025  |
+| ergovision-webapp | develop | 9ee5d8d9  | feat: add session card component to display session details                               | feat: add session card component to display session details                                                                                                                                        | 23/10/2025  |
+| ergovision-webapp | develop | 2907d7db  | feat: add session card component to display session details                               | feat: add session card component to display session details                                                                                                                                        | 23/10/2025  |
+| ergovision-webapp | develop | e48d78cd  | feat(settings): add settings view.                                                        | feat(settings): add settings view.                                                                                                                                                                 | 24/10/2025  |
+| ergovision-webapp | develop | 8c999dfd  | feat(settings): add switch component.                                                     | feat(settings): add switch component.                                                                                                                                                              | 24/10/2025  |
+| ergovision-webapp | develop | e004951e  | feat(settings): enhance settings options.                                                 | feat(settings): enhance settings options.                                                                                                                                                          | 24/10/2025  |
+| ergovision-webapp | develop | 3dec4f1e  | feat(settings): add redirection to calibration page.                                      | feat(settings): add redirection to calibration page.                                                                                                                                               | 24/10/2025  |
+| ergovision-webapp | develop | 70c7c1ed  | feat(settings): add camera component.                                                     | feat(settings): add camera component.                                                                                                                                                              | 24/10/2025  |
+| ergovision-webapp | develop | 16f75b20  | feat: add sign-in component.                                                              | feat: add sign-in component.                                                                                                                                                                       | 26/10/2025  |
+| ergovision-webapp | develop | 16611336  | feat: add sign-up component.                                                              | feat: add sign-up component.                                                                                                                                                                       | 26/10/2025  |
+| ergovision-webapp | develop | b915694c  | feat: add profile component.                                                              | feat: add profile component.                                                                                                                                                                       | 26/10/2025  |
+| ergovision-webapp | develop | e459f63b  | feat: enhance session page with detailed posture metrics and progress bar component       | feat: enhance session page with detailed posture metrics and progress bar component                                                                                                                | 27/10/2025  |
+| ergovision-webapp | develop | 57e83944  | feat: implement authentication service and update profile component layout                | feat: implement authentication service and update profile component layout                                                                                                                         | 27/10/2025  |
+| ergovision-webapp | develop | 320476f0  | feat: add NotFound component and update routing                                           | feat: add NotFound component and update routing                                                                                                                                                    | 27/10/2025  |
+| ergovision-webapp | develop | 6b9d111b  | feat: implement authentication guard and update routing for protected routes              | feat: implement authentication guard and update routing for protected routes                                                                                                                       | 27/10/2025  |
+| ergovision-webapp | develop | 5477ec3b  | feat(profile): update profile component path and enhance visuals                          | feat(profile): update profile component path and enhance visuals                                                                                                                                   | 05/11/2025  |
+| ergovision-webapp | develop | 6aa34c4c  | feat: implement websocket notification service and integrate with monitoring components   | feat: implement websocket notification service and integrate with monitoring components                                                                                                            | 09/11/2025  |
+| ergovision-webapp | develop | 3f8f88cb  | feat(dialog): implement customizable dialog component and service                         | feat(dialog): implement customizable dialog component and service                                                                                                                                  | 09/111/2025 |
+| ergovision-webapp | develop | f97b9071  | feat(calibration): add navigation to settings and enhance notification save functionality | feat(calibration): add navigation to settings and enhance notification save functionality                                                                                                          | 10/11/2025  |
+| ergovision-webapp | develop | 058c822b  | feat: implement posture and alert settings management with service integration            | feat: implement posture and alert settings management with service integration                                                                                                                     | 11/11/2025  |
+| ergovision-webapp | develop | 0714f7ca  | feat: add user profile fields to models and create update request                         | Extended User and SignUpResponse models to include name, lastName, age, height, weight, and imageUrl fields. Added a new UpdateUserRequest interface to support updating user profile information. | 12/11/2025  |
+| ergovision-webapp | develop | 7550441a  | services and guards for improved clarity and functionality                                | services and guards for improved clarity and functionality                                                                                                                                         | 14/11/2025  |
+| ergovision-webapp | develop | 758bbdf7  | checks and refactor routes for improved clarity                                           | checks and refactor routes for improved clarity                                                                                                                                                    | 14/11/2025  |
+| ergovision-webapp | develop | 16833c81  | functionality and refactor profile component                                              | functionality and refactor profile component                                                                                                                                                       | 15/11/2025  |
+| ergovision-webapp | develop | dc07195f  | notification service and integrate with monitoring components                             | notification service and integrate with monitoring components                                                                                                                                      | 15/11/2025  |
+| ergovision-webapp | develop | c902f640  | configuration for production deployment and add new dependencies                          | configuration for production deployment and add new dependencies                                                                                                                                   | 15/11/2025  |
+| ergovision-webapp | develop | 32cd614e  | service to use @stomp/stompjs and improve connection handling                             | service to use @stomp/stompjs and improve connection handling                                                                                                                                      | 15/11/2025  |
+
+**Backend**
+
+| Repository         | Branch  | Commit Id | Commit Message                                                                                                             | Commit Message Body                                                                                                        | Date       |
+|--------------------|---------|-----------|----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|------------|
+| ergovision-backend | develop | ca4b4389  | chore: update properties.                                                                                                  | chore: update properties.                                                                                                  | 27/10/2025 |
+| ergovision-backend | develop | d219a931  | chore: update pomxl.                                                                                                       | chore: update pomxl.                                                                                                       | 27/10/2025 |
+| ergovision-backend | develop | ae7c357b  | feat(iam): add aggregates and value objects.                                                                               | feat(iam): add aggregates and value objects.                                                                               | 27/10/2025 |
+| ergovision-backend | develop | a502ce52  | feat(iam): add commands.                                                                                                   | feat(iam): add commands.                                                                                                   | 27/10/2025 |
+| ergovision-backend | develop | b3f6ef27  | feat(iam): add queries.                                                                                                    | feat(iam): add queries.                                                                                                    | 27/10/2025 |
+| ergovision-backend | develop | 4914f9f7  | feat(iam): add repositories.                                                                                               | feat(iam): add repositories.                                                                                               | 27/10/2025 |
+| ergovision-backend | develop | 3e82c9bb  | feat(iam): add query and command service.                                                                                  | feat(iam): add query and command service.                                                                                  | 27/10/2025 |
+| ergovision-backend | develop | 6bba9c09  | feat(iam): add authorization.                                                                                              | feat(iam): add authorization.                                                                                              | 27/10/2025 |
+| ergovision-backend | develop | 531a5920  | feat(iam): add hashing.                                                                                                    | feat(iam): add hashing.                                                                                                    | 27/10/2025 |
+| ergovision-backend | develop | cab833e5  | feat(iam): add tokens.                                                                                                     | feat(iam): add tokens.                                                                                                     | 27/10/2025 |
+| ergovision-backend | develop | ff5f7731  | feat(iam): add token and hashing service.                                                                                  | feat(iam): add token and hashing service.                                                                                  | 27/10/2025 |
+| ergovision-backend | develop | 068cca05  | feat(iam): add seeding event handler.                                                                                      | feat(iam): add seeding event handler.                                                                                      | 27/10/2025 |
+| ergovision-backend | develop | 983c3683  | feat(iam): implement user and role query and command service.                                                              | feat(iam): implement user and role query and command service.                                                              | 27/10/2025 |
+| ergovision-backend | develop | 6c91c4cd  | feat(iam): add resource.                                                                                                   | feat(iam): add resource.                                                                                                   | 27/10/2025 |
+| ergovision-backend | develop | 18a61e07  | feat(iam): add assemblers.                                                                                                 | feat(iam): add assemblers.                                                                                                 | 27/10/2025 |
+| ergovision-backend | develop | db73aa50  | feat(iam): add controllers.                                                                                                | feat(iam): add controllers.                                                                                                | 27/10/2025 |
+| ergovision-backend | develop | 1e217a9c  | feat: add CreateNotificationCommand record                                                                                 | feat: add CreateNotificationCommand record                                                                                 | 31/10/2025 |
+| ergovision-backend | develop | ea30eee6  | feat: implement CreateNotificationCommandService for payload handling                                                      | feat: implement CreateNotificationCommandService for payload handling                                                      | 31/10/2025 |
+| ergovision-backend | develop | beddcc4f  | feat: add DeliveryChannel enum for notification delivery methods                                                           | feat: add DeliveryChannel enum for notification delivery methods                                                           | 31/10/2025 |
+| ergovision-backend | develop | edca4d0e  | feat: add DeadlineReminderEventHandler for handling deadline reminders                                                     | feat: add DeadlineReminderEventHandler for handling deadline reminders                                                     | 31/10/2025 |
+| ergovision-backend | develop | d96df83a  | feat: add FirebaseNotificationAdapter for simulating push notifications                                                    | feat: add FirebaseNotificationAdapter for simulating push notifications                                                    | 31/10/2025 |
+| ergovision-backend | develop | 2aa9aa7d  | feat: add GetNotificationsByStatusQuery for querying notifications by status                                               | feat: add GetNotificationsByStatusQuery for querying notifications by status                                               | 31/10/2025 |
+| ergovision-backend | develop | 17d95c78  | feat: add FrequencyType enum for notification frequency options                                                            | feat: add FrequencyType enum for notification frequency options                                                            | 31/10/2025 |
+| ergovision-backend | develop | 07b27a4f  | feat: add GetUnreadNotificationsQuery for retrieving unread notifications                                                  | feat: add GetUnreadNotificationsQuery for retrieving unread notifications                                                  | 31/10/2025 |
+| ergovision-backend | develop | 835b8113  | feat: add GetUserNotificationsQuery for retrieving user-specific notifications                                             | feat: add GetUserNotificationsQuery for retrieving user-specific notifications                                             | 31/10/2025 |
+| ergovision-backend | develop | 1e27e7be  | feat: add GroupJoinedEventHandler for handling group join events                                                           | feat: add GroupJoinedEventHandler for handling group join events                                                           | 31/10/2025 |
+| ergovision-backend | develop | 99c7934e  | feat: add MarkNotificationAsReadCommand for marking notifications as read                                                  | feat: add MarkNotificationAsReadCommand for marking notifications as read                                                  | 31/10/2025 |
+| ergovision-backend | develop | 262fce3b  | feat: implement NotificationCommandService for handling notification commands                                              | feat: implement NotificationCommandService for handling notification commands                                              | 31/10/2025 |
+| ergovision-backend | develop | e5b3d655  | feat: add Notification class for managing notification details and status                                                  | feat: add Notification class for managing notification details and status                                                  | 31/10/2025 |
+| ergovision-backend | develop | 31ca4746  | feat: add NotificationController for managing notification-related API endpoints                                           | feat: add NotificationController for managing notification-related API endpoints                                           | 31/10/2025 |
+| ergovision-backend | develop | 089830d0  | feat: add NotificationDispatcher for managing notification delivery based on user preferences                              | feat: add NotificationDispatcher for managing notification delivery based on user preferences                              | 31/10/2025 |
+| ergovision-backend | develop | 0cc2d3d2  | feat: add NotificationQueryServiceImpl for querying notifications based on user criteria                                   | feat: add NotificationQueryServiceImpl for querying notifications based on user criteria                                   | 31/10/2025 |
+| ergovision-backend | develop | 0afdda43  | feat: add NotificationResourceFromEntityAssembler for explicit mapping of Notification to NotificationResource             | feat: add NotificationResourceFromEntityAssembler for explicit mapping of Notification to NotificationResource             | 31/10/2025 |
+| ergovision-backend | develop | 1fe58b24  | feat: add NotificationService for managing notification delivery and user preferences                                      | feat: add NotificationService for managing notification delivery and user preferences                                      | 31/10/2025 |
+| ergovision-backend | develop | 99eabd66  | feat: add NotificationStatus enum for managing notification states                                                         | feat: add NotificationStatus enum for managing notification states                                                         | 31/10/2025 |
+| ergovision-backend | develop | eaef21da  | feat: add NotificationType enum for categorizing different notification types                                              | feat: add NotificationType enum for categorizing different notification types                                              | 31/10/2025 |
+| ergovision-backend | develop | cda8715c  | feat: add SendNotificationCommandFromEntityAssembler for transforming CreateNotificationCommand to SendNotificationCommand | feat: add SendNotificationCommandFromEntityAssembler for transforming CreateNotificationCommand to SendNotificationCommand | 31/10/2025 |
+| ergovision-backend | develop | b0e29f19  | feat: add UserPreferences class for managing user notification settings                                                    | feat: add UserPreferences class for managing user notification settings                                                    | 31/10/2025 |
+| ergovision-backend | develop | fcdb2019  | feat: add domain and infrastructure layer for orchestrator settings                                                        | feat: add domain and infrastructure layer for orchestrator settings                                                        | 01/11/2025 |
+| ergovision-backend | develop | ad2ecc11  | feat: add application and interface layer for orchestrator settings                                                        | feat: add application and interface layer for orchestrator settings                                                        | 01/11/2025 |
+| ergovision-backend | develop | 03ab0954  | fix: code in layers                                                                                                        | fix: code in layers                                                                                                        | 01/11/2025 |
+| ergovision-backend | develop | ce689a4c  | feat: add test db                                                                                                          | feat: add test db                                                                                                          | 02/11/2025 |
+| ergovision-backend | develop | 10c55f71  | feat: expand CreateNotificationCommand to include user details and preferences                                             | feat: expand CreateNotificationCommand to include user details and preferences                                             | 07/11/2025 |
+| ergovision-backend | develop | 0337fa20  | feat: enhance Notification entity with additional fields and factory method improvements                                   | feat: enhance Notification entity with additional fields and factory method improvements                                   | 07/11/2025 |
+| ergovision-backend | develop | 9754d20f  | feat: enhance NotificationCommandServiceImpl to include WebSocket integration and persist sent notifications               | feat: enhance NotificationCommandServiceImpl to include WebSocket integration and persist sent notifications               | 07/11/2025 |
+| ergovision-backend | develop | ab4514e9  | feat: add endpoints to retrieve all notifications and filter by status in NotificationController                           | feat: add endpoints to retrieve all notifications and filter by status in NotificationController                           | 07/11/2025 |
+| ergovision-backend | develop | 86072393  | feat: add methods to retrieve all notifications and filter by status in NotificationQueryServiceImpl                       | feat: add methods to retrieve all notifications and filter by status in NotificationQueryServiceImpl                       | 07/11/2025 |
+| ergovision-backend | develop | 004f22b2  | feat: implement NotificationRepositoryAdapter to integrate JPA repository                                                  | feat: implement NotificationRepositoryAdapter to integrate JPA repository                                                  | 07/11/2025 |
+| ergovision-backend | develop | 2837e517  | feat: add NotificationSentRepository for JPA integration of NotificationSent entity                                        | feat: add NotificationSentRepository for JPA integration of NotificationSent entity                                        | 07/11/2025 |
+| ergovision-backend | develop | 3645a748  | feat: add NotificationTestController for testing global notification sending                                               | feat: add NotificationTestController for testing global notification sending                                               | 07/11/2025 |
+| ergovision-backend | develop | d2c1be6d  | feat: add NotificationWebSocketService for handling WebSocket notifications                                                | feat: add NotificationWebSocketService for handling WebSocket notifications                                                | 07/11/2025 |
+| ergovision-backend | develop | 76db0db8  | feat: add WebSocket configuration for message handling                                                                     | feat: add WebSocket configuration for message handling                                                                     | 07/11/2025 |
+| ergovision-backend | develop | 671e40a1  | feat: add WebSocketNotificationController for handling broadcast and private messages                                      | feat: add WebSocketNotificationController for handling broadcast and private messages                                      | 07/11/2025 |
+| ergovision-backend | develop | c54d5bd1  | feat: add Monitoring Session.                                                                                              | feat: add Monitoring Session.                                                                                              | 08/11/2025 |
+| ergovision-backend | develop | 307df69d  | feat: add monitoring session.                                                                                              | feat: add monitoring session.                                                                                              | 08/11/2025 |
+| ergovision-backend | develop | d425ca1e  | feat: add command break event.                                                                                             | feat: add command break event.                                                                                             | 08/11/2025 |
+| ergovision-backend | develop | 00d9e1e4  | feat: add monitoring bc.                                                                                                   | feat: add monitoring bc.                                                                                                   | 08/11/2025 |
+| ergovision-backend | develop | 192e6733  | feat: add monitoring session command implement.                                                                            | feat: add monitoring session command implement.                                                                            | 09/11/2025 |
+| ergovision-backend | develop | 30e8b419  | feat: add monitoring session resource.                                                                                     | feat: add monitoring session resource.                                                                                     | 09/11/2025 |
+| ergovision-backend | develop | 03a3398e  | feat: add create monitoring session resource.                                                                              | feat: add create monitoring session resource.                                                                              | 09/11/2025 |
+| ergovision-backend | develop | 0c7d504f  | feat: add monitoring session resource from entity assembler.                                                               | feat: add monitoring session resource from entity assembler.                                                               | 09/11/2025 |
+| ergovision-backend | develop | eb792579  | feat: add Create Monitoring Session Command From Resource Assembler.                                                       | feat: add Create Monitoring Session Command From Resource Assembler.                                                       | 09/11/2025 |
+| ergovision-backend | develop | 7d733398  | feat: add Update Monitoring Session Command From Resource Assembler.                                                       | feat: add Update Monitoring Session Command From Resource Assembler.                                                       | 09/11/2025 |
+| ergovision-backend | develop | 99cb225d  | feat: add Monitoring Session Controller.                                                                                   | feat: add Monitoring Session Controller.                                                                                   | 09/11/2025 |
+| ergovision-backend | develop | 8e965720  | feat: add NotificationWebSocketController for handling notifications via WebSocket                                         | feat: add NotificationWebSocketController for handling notifications via WebSocket                                         | 09/11/2025 |
+| ergovision-backend | develop | c1ad5cb9  | feat: enhance notification handling and add CORS configuration                                                             | feat: enhance notification handling and add CORS configuration                                                             | 09/11/2025 |
+| ergovision-backend | develop | 651d5c33  | feat: add WebSocket support for notifications and enhance CORS configuration                                               | feat: add WebSocket support for notifications and enhance CORS configuration                                               | 15/11/2025 |
+
+**Mobile Application**
+
+| Repository        | Branch  | Commit Id | Commit Message                                          | Commit Message Body                                     | Date       |
+|-------------------|---------|-----------|---------------------------------------------------------|---------------------------------------------------------|------------|
+| ergovision-mobile | develop | 6db99962  | feat(sign-in): add login page.                          | feat(sign-in): add login page.                          | 27/10/2025 |
+| ergovision-mobile | develop | 069c6a6b  | feat(sign-in): rename login widget.                     | feat(sign-in): rename login widget.                     | 27/10/2025 |
+| ergovision-mobile | develop | d287caa4  | feat(sign-up): add sign-up view.                        | feat(sign-up): add sign-up view.                        | 27/10/2025 |
+| ergovision-mobile | develop | 2da3b6a1  | feat(navigation): add home view and bottom navbar.      | feat(navigation): add home view and bottom navbar.      | 27/10/2025 |
+| ergovision-mobile | develop | d7dbbfb8  | feat(dashboard): add dashboard view                     | feat(dashboard): add dashboard view                     | 28/10/2025 |
+| ergovision-mobile | develop | f01b8091  | feat(dashboard): add chart widget.                      | feat(dashboard): add chart widget.                      | 28/10/2025 |
+| ergovision-mobile | develop | 7b58a273  | fix(style): fix padding and language style errors.      | fix(style): fix padding and language style errors.      | 28/10/2025 |
+| ergovision-mobile | develop | 2f7cb6f1  | feat(ui): unified titles.                               | feat(ui): unified titles.                               | 28/10/2025 |
+| ergovision-mobile | develop | cc789415  | feat(sessions): add session class.                      | feat(sessions): add session class.                      | 28/10/2025 |
+| ergovision-mobile | develop | 8adec01b  | feat(sessions): add sessions list view with sample data | feat(sessions): add sessions list view with sample data | 28/10/2025 |
+| ergovision-mobile | develop | d5c2eab2  | feat(sessions): enhance spacing and sample data.        | feat(sessions): enhance spacing and sample data.        | 28/10/2025 |
+| ergovision-mobile | develop | 735f36f2  | feat(sessions): add session detail view.                | feat(sessions): add session detail view.                | 29/10/2025 |
+| ergovision-mobile | develop | ad90178b  | feat(sessions): add statistics view.                    | feat(sessions): add statistics view.                    | 29/10/2025 |
+| ergovision-mobile | develop | 74c7dbb9  | feat(dashboard): improve chart layout and styling.      | feat(dashboard): improve chart layout and styling.      | 29/10/2025 |
+| ergovision-mobile | develop | 0ac54d00  | feat(profile): add profile view.                        | feat(profile): add profile view.                        | 29/10/2025 |
+| ergovision-mobile | develop | 5bcf8646  | feat(settings): add settings view.                      | feat(settings): add settings view.                      | 29/10/2025 |
+| ergovision-mobile | develop | f73ead40  | feat(dashboard): add active pause widget.               | feat(dashboard): add active pause widget.               | 30/10/2025 |
+
+##### 7.2.1.4 Testing Suite Evidence for Sprint Review
+
+No se contemplaron tests en este sprint ya que el enfoque principal fue la creación de la interfaz gráfica y la integración básica de funcionalidades. Sin embargo, se planifica incorporar pruebas unitarias y de integración en los próximos sprints para asegurar la calidad y estabilidad del software a medida que se desarrollen nuevas características y se refinen las existentes.
+
+##### 7.2.1.5 Execution Evidence for Sprint Review
+
+Las siguientes capturan muestran la ejecución y funcionamiento de los 3 productos desarrollados durante el sprint: la aplicación web, el backend y la aplicación móvil.
+
+Estas capturas demuestran la interconexión entre los componentes del sistema, evidenciando la correcta comunicación entre el frontend y el backend, así como la funcionalidad de las características implementadas.
+
+<img src="images/chapter-7/sprint-1/execution-evidence-1.png" alt="Execution Evidence 1"/>
+
+<img src="images/chapter-7/sprint-1/execution-evidence-2.png" alt="Execution Evidence 2"/>
+
+<img src="images/chapter-7/sprint-1/execution-evidence-3.png" alt="Execution Evidence 3"/>
+
+##### 7.2.1.6 Services Documentation Evidence for Sprint Review
+
+En esta sección se presentan los avances logrados en la documentación de los Web Services desarrollados durante el Sprint, evidenciando la correcta implementación y estandarización de los endpoints mediante OpenAPI. Se detallan las acciones disponibles (GET, POST, PUT, DELETE, PATCH), sus parámetros, ejemplos de respuesta y enlaces a la documentación correspondiente, garantizando la trazabilidad, comprensión y correcta integración entre los distintos componentes del sistema.
+
+| Endpoint                                              | Method | Description                                 | Parameters                                 | Request Body                                                                                                                                                                                                                                                                 | Response                                                                                                                                        |
+|-------------------------------------------------------|--------|---------------------------------------------|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| `/api/v1/orchestrator/alerts-settings/{settingId}`    | GET    | Get alert settings by ID                    | `settingId` (path, required, integer)      | -                                                                                                                                                                                                                                                                            | `200`: Alert settings found`, `visualAlertsEnabled`, `soundAlertsEnabled`, `alertVolume`, `alertInterval`                                       |
+| `/api/v1/orchestrator/alerts-settings/{settingId}`    | PUT    | Update existing alert settings              | `settingId` (path, required, integer)      | `id` (integer), `userId` (integer), `visualAlertsEnabled` (boolean), `soundAlertsEnabled` (boolean), `alertVolume` (integer), `alertInterval` (integer)                                                                                                                      | `200`: Alert settings updated successfully                                                                                                      | 
+| `/api/v1/orchestrator/alerts-settings`                | POST   | Create new alert settings for a user        | -                                          | `userId` (integer), `visualAlertsEnabled` (boolean), `soundAlertsEnabled` (boolean), `alertVolume` (integer), `alertInterval` (integer)                                                                                                                                      | `201`: Alert settings created successfully <br>`400`: Invalid input data 	                                                                      |
+| `/api/v1/orchestrator/alerts-settings/user/{userId}`  | GET    | Retrieve alert settings for a specific user | `userId` (path, required, integer)         | -                                                                                                                                                                                                                                                                            | `200`: Alert settings found 	                                                                                                                   |
+| `/api/v1/users`                                       | GET    | Retrieves all users                         | -                                          | -                                                                                                                                                                                                                                                                            | `200`: users retrieved successfully<br>`404`: No users found                                                                                    |
+| `/api/v1/users`                                       | PUT    | Update a user                               | -                                          | `username` (string), `password` (string)                                                                                                                                                                                                                                     | `200`: Updated user object with `id`, `username`, `roles`<br>`400`: Invalid input data                                                          |
+| `/api/v1/users/{userId}`                              | GET    | Get a user by ID                            | `userId` (path, required, integer)         | -                                                                                                                                                                                                                                                                            | `200`: User object                                                                                                                              |
+| `/api/v1/users/{userId}`                              | DELETE | Delete a user                               | `userId` (path, required, integer)         | -                                                                                                                                                                                                                                                                            | `200`: Confirmation message                                                                                                                     |
+| `/api/v1/users/me`                                    | GET    | Get current authenticated user              | -                                          | -                                                                                                                                                                                                                                                                            | `200`: Current user object                                                                                                                      |
+| `/api/v1/users/email/{username}`                      | GET    | Get a user by username                      | `username` (path, required, string)        | -                                                                                                                                                                                                                                                                            | `200`: User object                                                                                                                              |
+| `/api/v1/monitoringSession/{id}`                      | GET    | Get monitoring session by ID                | `id` (path, required, integer)             | -                                                                                                                                                                                                                                                                            | `200`: Monitoring session object                                                                                                                |
+| `/api/v1/monitoringSession/{id}`                      | PUT    | Update monitoring session                   | `id` (path, required, integer)             | Session update data                                                                                                                                                                                                                                                          | `200`: Updated session object                                                                                                                   |
+| `/api/v1/monitoringSession/{id}`                      | DELETE | Delete monitoring session                   | `id` (path, required, integer)             | -                                                                                                                                                                                                                                                                            | `200`: Confirmation message                                                                                                                     |
+| `/api/v1/monitoringSession`                           | POST   | Create monitoring session                   | -                                          | `startDate` (string), `endDate` (string), `score` (integer), `goodScore` (integer), `badScore` (integer), `goodPostureTime` (integer), `badPostureTime` (integer), `duration` (integer), `numberOfPauses` (integer), `averageSessionDuration` (integer)                      | `200`: Created session object                                                                                                                   |
+| `/api/v1/orchestrator/posture-settings/{settingId}`   | GET    | Get posture settings by ID                  | `settingId` (path, required, integer)      | -                                                                                                                                                                                                                                                                            | `200`: Posture settings object                                                                                                                  |
+| `/api/v1/orchestrator/posture-settings/{settingId}`   | PUT    | Update posture settings                     | `settingId` (path, required, integer)      | Posture settings data                                                                                                                                                                                                                                                        | `200`: Updated posture settings                                                                                                                 |
+| `/api/v1/orchestrator/posture-settings/{settingId}`   | DELETE | Delete posture settings                     | `settingId` (path, required, integer)      | -                                                                                                                                                                                                                                                                            | `200`: Confirmation message                                                                                                                     |
+| `/api/v1/orchestrator/posture-settings`               | POST   | Create posture settings                     | -                                          | `userId` (integer), `postureCorrectivity` (integer), `monitoringSessionThreshold` (integer), `handAngleTolerance` (integer), `samplingFrequency` (integer), `modelVersion` (string), `postureThresholds` (object with `shoulderAngle`, `neckAngle`, `backAngle`, `headTilt`) | `201`: Created posture settings object<br>`400`: Invalid input data                                                                             |
+| `/api/v1/orchestrator/posture-settings/user/{userId}` | GET    | Get posture settings by user ID             | `userId` (path, required, integer)         | -                                                                                                                                                                                                                                                                            | `200`: Posture settings object                                                                                                                  |
+| `/api/v1/authentication/sign-up`                      | POST   | Sign up user                                | -                                          | `username` (string), `password` (string), `role` (string, default: "ROLE_ADMIN")                                                                                                                                                                                             | `201`: Created user object with `id`, `username`, `token`, `roles`<br>`400`: Bad request                                                        |
+| `/api/v1/authentication/sign-in`                      | POST   | Sign in user                                | -                                          | `username` (string), `password` (string)                                                                                                                                                                                                                                     | `200`: User object with `id`, `username`, `token`, `roles`<br>`400`: Bad request - Invalid input data<br>`404`: Not Found - User does not exist |
+| `/api/v1/roles`                                       | GET    | Get all roles                               | -                                          | -                                                                                                                                                                                                                                                                            | `200`: Array of roles with `id`, `name`<br>`401`: Unauthorized - Invalid credentials                                                            |
+| `/api/v1/notifications`                               | POST   | Create notification                         | -                                          | `userId` (integer), `title` (string), `message` (string), `type` (string), `channel` (string), `preferredChannels` (array), `doNotDisturb` (boolean)                                                                                                                         | `200`: Array of notification target objects with `additionalProps`                                                                              |
+| `/api/v1/notifications/{notificationId}/resend`       | PATCH  | Resend notification                         | `notificationId` (path, required, integer) | -                                                                                                                                                                                                                                                                            | `200`: Success response                                                                                                                         |
+| `/api/v1/notifications/{notificationId}/read`         | PATCH  | Mark notification as read                   | `notificationId` (path, required, integer) | -                                                                                                                                                                                                                                                                            | `200`: Success response                                                                                                                         |
+| `/api/v1/notifications/{notificationId}`              | GET    | Get notification by ID                      | `notificationId` (path, required, integer) | -                                                                                                                                                                                                                                                                            | `200`: Notification object                                                                                                                      |
+| `/api/v1/notifications/user/{userId}`                 | GET    | Get notifications by user ID                | `userId` (path, required, integer)         | -                                                                                                                                                                                                                                                                            | `200`: Array of notifications                                                                                                                   |
+| `/api/v1/notifications/user/{userId}/unread`          | GET    | Get unread notifications by user ID         | `userId` (path, required, integer)         | -                                                                                                                                                                                                                                                                            | `200`: Notification object with `id`, `userId`, `message`, `type`, `status`, `createdAt`, `readAt`                                              |
+| `/api/v1/notifications/status`                        | GET    | Get notification status                     | `status` (query, required, string)         | -                                                                                                                                                                                                                                                                            | `200`: Status object                                                                                                                            |
+| `/api/v1/notifications/all`                           | GET    | Get all notifications                       | -                                          | -                                                                                                                                                                                                                                                                            | `200`: Array of all notifications                                                                                                               |
+| `/api/v1/notifications/test/global`                   | POST   | Test global notification                    | -                                          | `title` (string, default: "Test Global Notification"), `message` (string, default: "Esta es una notificación de prueba global")                                                                                                                                              | `200`: Array of notification target objects with `additionalProps`                                                                              |
+
+##### 7.2.1.7 Software Deployment Evidence for Sprint Review
+
+A continuación se presentan las evidencias de despliegue de los tres componentes principales del sistema: la aplicación web, el backend y la aplicación móvil. Estas capturas demuestran que cada componente ha sido correctamente desplegado en sus respectivos entornos, asegurando su disponibilidad y funcionalidad para los usuarios finales.
+
+**Backend:**
+
+Para desplegar la aplicación primero se necesita de una base de datos desplegada, para este caso usamos una base de datos desplegada en render:
+
+<img src="images/chapter-7/sprint-1/deployed-db-1.png" alt="Deployment DB"/>
+
+<img src="images/chapter-7/sprint-1/deployed-db-2.png" alt="Deployment DB"/>
+
+<img src="images/chapter-7/sprint-1/deployed-db-3.png" alt="Deployment DB"/>
+
+Una vez se tiene la base de datos desplegada, se procede a desplegar el backend en render:
+
+<img src="images/chapter-7/sprint-1/deployed-backend-1.png" alt="Deployment Backend"/>
+
+<img src="images/chapter-7/sprint-1/deployed-backend-2.png" alt="Deployment Backend"/>
+
+<img src="images/chapter-7/sprint-1/deployed-backend-3.png" alt="Deployment Backend"/>
+
+Enlace: [https://ergovision-backend.onrender.com/swagger-ui/index.html#](https://ergovision-backend.onrender.com/swagger-ui/index.html#)
+
+**Aplicación Web:**
+
+Para desplegar la aplicación web se utilizo render:
+
+<img src="images/chapter-7/sprint-1/deployed-webapp-1.png" alt="Deployment Webapp"/>
+
+<img src="images/chapter-7/sprint-1/deployed-webapp-2.png" alt="Deployment Webapp"/>
+
+Enlace: [https://ergovision-webapp.onrender.com](https://ergovision-webapp.onrender.com)
+
+**Aplicación Móvil:**
+
+Para desplegar la aplicación Móvil primero debe de crearse el proyecto relacionado en Firebase
+
+<img src="images/chapter-7/sprint-1/deployed-mobile-1.png" alt="Deployment Mobile"/>
+
+<img src="images/chapter-7/sprint-1/deployed-mobile-2.png" alt="Deployment Mobile"/>
+
+Una vez creado el proyecto es necesario instalar la consola de Firebase para realizar el despliegue:
+
+<img src="images/chapter-7/sprint-1/deployed-mobile-3.png" alt="Deployment Mobile"/>
+
+<img src="images/chapter-7/sprint-1/deployed-mobile-4.png" alt="Deployment Mobile"/>
+
+Dentro del proyecto se debera agregar la dependencia `firebase_core` en el archivo `pubspec.yaml` y utilizar el comando `$ flutterfire configure`
+
+<img src="images/chapter-7/sprint-1/deployed-mobile-5.png" alt="Deployment Mobile"/>
+
+Luego se debe inicializar firebase en la aplicación flutter
+
+<img src="images/chapter-7/DepMovil1.png" alt="Deployment Mobile 1"/>
+
+Finalmente crear una build del proyecto y subirla a Firebase App Distribution
+
+<img src="images/chapter-7/DepMovil2.png" alt="Deployment Mobile 2"/>
+
+<img src="images/chapter-7/DepMovil3.png" alt="Deployment Mobile 3"/>
+
+Enlace: [https://appdistribution.firebase.google.com/mobilerequired](https://appdistribution.firebase.google.com/mobilerequired)
+
+##### 7.2.1.8 Team Collaboration Insights during Sprint
+
+Evidencia de los commits por cada repositorio donde se evidencia la participación de todos los integrantes del equipo en el desarrollo de las aplicaciones y servicios:
+
+- **Commits Backend**
+
+<img src="images/chapter-7/sprint-1/CommitsBackendTB2.png" alt="CommitsBackend">
+
+<img src="images/chapter-7/sprint-1/PulseBackendTB2.png" alt="PulseBackend">
+
+- **Commits Web Frontend**
+
+<img src="images/chapter-7/sprint-1/CommitsWebTB2.png" alt="CommitsWeb">
+
+<img src="images/chapter-7/sprint-1/PulseWebTB2.png" alt="PulseWeb">
+
+- **Commits Mobile Frontend**
+
+<img src="images/chapter-7/sprint-1/CommitsMobileTB2.png" alt="CommitsMobile">
+
+<img src="images/chapter-7/sprint-1/PulseMobileTB2.png" alt="PulseMobile">
+
+### 7.3 Validation Interviews
+
+#### 7.3.1 Diseño de Entrevistas
+
+1. ¿Qué tan fácil te resultó orientarte dentro de la aplicación al iniciar por primera vez?
+2. ¿Consideras que los íconos y etiquetas de los menús son claros y te permiten entender rápidamente a qué sección pertenecen?
+3. ¿El diseño general (colores, tipografía, distribución) te parece agradable y coherente con el propósito de la app (bienestar y postura)?
+4. ¿Entendiste fácilmente lo que representan las métricas del dashboard (puntaje promedio, tiempo monitoreado, punto corporal que suele fallar)?
+5. ¿La gráfica de barras semanal te resulta fácil de interpretar visualmente?
+6. ¿Sientes que el dashboard te brinda un resumen útil y suficiente de tu progreso?
+7. ¿Fue sencillo identificar cómo editar tus datos personales (nombre, edad, altura y peso)?
+8. ¿El proceso de edición de información te resultó intuitivo o tuviste que buscar cómo hacerlo?
+9. ¿El diseño del formulario te resultó ordenado y claro?
+10. ¿Te resultó claro cómo acceder al detalle de una sesión específica desde el historial?
+11. ¿La visualización de estadísticas dentro de una sesión (tiempo de buena/mala postura, número de pausas, tiempo promedio de pausas) fue comprensible?
+12. ¿Sientes que la información mostrada es suficiente para analizar tu desempeño en una sesión?
+13. ¿El gráfico de progreso mensual te resultó fácil de interpretar?
+14. ¿Crees que los indicadores de promedio de tiempo, puntaje y pausas activas te ayudan a entender tu mejora a largo plazo?
+15. ¿Te gustaría poder comparar tus resultados de diferentes meses o usuarios dentro de esta vista?
+16. ¿Pudiste identificar claramente las opciones para ajustar la sensibilidad, alertas y notificaciones?
+17. ¿El proceso de calibración te pareció claro y bien explicado paso a paso?
+18. ¿Hubo algún momento en el que no supieras qué hacer durante la calibración?
+19. ¿La interfaz de monitoreo (con cámara, alertas y tiempo de sesión) te pareció clara y fácil de controlar?
+20. ¿Las pausas activas (cronómetro, recomendaciones, finalización) te resultaron visualmente comprensibles y motivadoras para realizar los ejercicios?
+21. ¿La interfaz móvil mantiene la misma claridad y facilidad de uso que la versión web?
+22. ¿Consideras que la reducción de opciones (sin configuración, monitoreo ni calibración) afecta tu experiencia o la hace más simple?
+23. En una escala del 1 al 10, ¿qué tan satisfecho estás con la interfaz general de la aplicación?
+24. ¿Qué cambiarías o mejorarías visualmente o funcionalmente para hacer tu experiencia más fluida?
+
+#### 7.3.2 Registro de Entrevistas
+
+<table>
+  <tbody>
+    <tr>
+      <td>Entrevista 1</td>
+      <td>
+        <img src="images/chapter-7/interview1.png" alt="interview 2" width="400" />
+      </td>
+    </tr>
+    <tr>
+      <td>Enlace a la entrevista</td>
+      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr</a>  </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Flavio Gallardo</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>San Miguel</td>
+    </tr>
+    <tr>
+      <td>Ocupación</td>
+      <td>Estudiante de Ingeniería de Sistemas</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td> 08:13 </td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td> 00:00 </td>
+    </tr>
+    <tr>
+      <td>Análisis</td>
+      <td>
+        El entrevistado encuentra la aplicación bien diseñada, con una interfaz limpia,
+        profesional y fácil de usar. La navegación inicial fue "bastante fácil", destacando
+        la organización del dashboard y los menús laterales, aunque inicialmente tuvo una
+        leve confusión entre 'Stats' e 'History' que se resolvió con la exploración. Los
+        íconos son considerados "bastante obvios" y el diseño general es agradable, con
+        colores no contundentes y tipografía legible que no cansa la vista durante largas
+        sesiones. Las métricas del dashboard son claras, pero sugiere añadir tooltips
+        explicativos. Valora positivamente la utilidad del resumen de progreso y la
+        intuitividad para editar su perfil y acceder a los detalles de las sesiones. La
+        visualización de estadísticas por sesión y el progreso mensual le resultan
+        comprensibles y útiles. Identifica oportunidades de mejora como: tooltips en
+        métricas, feedback visual en tiempo real durante la calibración, poder comparar
+        meses en las estadísticas, notificaciones menos invasivas, hacer las tarjetas de
+        historial completamente clickeables y la opción de un tema oscuro/claro. En una
+        escala del 1 al 10, califica su satisfacción con un 8/10.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Entrevista 2</td>
+      <td>
+        <img src="images/chapter-7/interview2.png" alt="interview 2" width="400"/>
+      </td>
+    </tr>
+    <tr>
+      <td>Enlace a la entrevista</td>
+      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr</a>  </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Daniela Kin</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>San borja</td>
+    </tr>
+    <tr>
+      <td>Ocupación</td>
+      <td>Estudiante de Comunicaciones</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td> 05:36 </td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td> 08:11 /td>
+    </tr>
+    <tr>
+      <td>Análisis</td>
+      <td>
+        La entrevistada considera la aplicación "muy fácil" de usar desde el inicio, destacando su similitud con plataformas familiares como Google Classroom. El diseño general le parece "moderno y profesional" con un balance adecuado entre seriedad e informalidad. Los elementos de navegación como el sidebar y los íconos son claros, aunque sugiere la opción de colapsar la barra lateral para ganar espacio durante el monitoreo. Las métricas del dashboard son comprensibles, pero recomienda añadir íconos o diagramas para clarificar el "punto corporal que suele fallar". Valora positivamente las visualizaciones de datos como la gráfica semanal y las barras de progreso, pero desea más funcionalidades como filtros en el historial, comparación lado a lado de meses y exportación de datos en CSV/PDF. El proceso de calibración e interfaz de monitoreo le resultan intuitivos, aunque sugiere mensajes más explícitos durante la calibración y notificaciones sonoras más suaves para las pausas. Como mejoras propone: atajos de teclado, integración con apps de productividad, modo de enfoque y gráficos más interactivos. Califica su satisfacción con un 9/10, considerando la interfaz muy funcional y moderna.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Entrevista 3</td>
+      <td>
+        <img src="images/chapter-7/entrevista-3-E.png" alt="interview 3" width="400"/>
+      </td>
+    </tr>
+    <tr>
+      <td>Enlace a la entrevista</td>
+      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr</a> </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Bruce Andres, Cipriano Chumbes</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>San Juan de Lurigancho</td>
+    </tr>
+    <tr>
+      <td>Ocupación</td>
+      <td>Estudiante de Ing. de Software</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td> 10:54 </td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td> 13:47 /td>
+    </tr>
+    <tr>
+      <td>Análisis</td>
+      <td>
+        Bruce nos cuenta que la Ergovisión le pareció fácil orientarse. Pudo identificar el flujo y menciona que los íconos son intuitivos. El diseño y los colores están bien; además, los colores oscuros no cansan la vista. Entendió fácilmente el dashboard y la gráfica es sencilla. Menciona que el resumen del dashboard es bueno, ya que le ayudará a mejorar. El proceso de edición le pareció intuitivo. El diseño del formulario es ordenado y claro. La visualización de las estadísticas de buena y mala postura fue comprensible. La información está bien y el gráfico mensual es fácil de interpretar. Las pausas activas le ayudan a mejorar a largo plazo. Le gustaría compartir los resultados y cree que sería bueno, ya que tendría una comparación para validar sus progresos. Identificó las alertas y notificaciones y se acomoda cuando las recibe. La calibración fue sencilla de hacer. La interfaz de monitoreo con alertas le resultó fácil y sencilla de controlar. Las pausas activas le resultaron motivadoras. Respecto a la reducción de opciones, está de acuerdo.Respecto a la calificación, le pone 9/10, ya que desearía más colores oscuros.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+* Segmento Trabajador Remoto
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Entrevista 1</td>
+      <td>
+        <img src="images/chapter-7/entrevista-1T.png" alt="interview 3" width="400"/>
+      </td>
+    </tr>
+    <tr>
+      <td>Enlace a la entrevista</td>
+      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr</a> </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Tyron</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Ocupación</td>
+      <td>Profesor</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td> 11:37 </td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td> 24:01 /td>
+    </tr>
+    <tr>
+      <td>Análisis</td>
+      <td>
+       Tyron califica la aplicación como intuitiva y fácil de usar, destacando que el diseño general, los íconos y las métricas del dashboard son claros y permiten un seguimiento sencillo del progreso, otorgando un 9/10 a la versión web y un 7/10 a la móvil. Su principal recomendación es hacer la aplicación lo más simple y rápida de usar posible, ya que la ve como una herramienta de uso rápido al inicio y fin de sus sesiones; además, sugiere reemplazar el historial por comparativas en la versión móvil para mejorar su utilidad.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Entrevista 2</td>
+      <td>
+        <img src="images/chapter-7/entrevista-2T.png" alt="interview 3" width="400"/>
+      </td>
+    </tr>
+    <tr>
+      <td>Enlace a la entrevista</td>
+      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr</a> </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Sebastian  Pacheco</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Ocupación</td>
+      <td>Practicante Software</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td> 14:12 </td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td> 35:38 /td>
+    </tr>
+    <tr>
+      <td>Análisis</td>
+      <td>
+       Pacheco menciona que es sencillo de comprender. El diseño general es coherente, entiende fácilmente las métricas del dashboard, y la gráfica semanal es sencilla de entender. Considera que el resumen es sencillo, e identificar y editar los datos son intuitivos, por lo que se entiende bien. El formulario está ordenado y la visualización de estadísticas es fácil, sencilla y muy asertiva.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Entrevista 3</td>
+      <td>
+        <img src="images/chapter-7/entrevista-3T.png" alt="interview 3" width="400"/>
+      </td>
+    </tr>
+    <tr>
+      <td>Enlace a la entrevista</td>
+      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr</a> </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Ray Carmen Zorrilla</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Ocupación</td>
+      <td>Ingeniero de Software</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td> 10:45 </td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td> 49:50 /td>
+    </tr>
+    <tr>
+      <td>Análisis</td>
+      <td>
+       Ray indica que le parece muy interesante el proyecto de Ergovisión. Respecto a los diseños, están bien, pero podrían mejorar en cuanto a los colores de los íconos. Con lo demás se siente conforme y muestra mucho interés en el proyecto.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+### 7.3.3 Evaluaciones según heurísticas
+
+Esta sección analiza los hallazgos de las entrevistas aplicando los principios heurísticos de usabilidad. Permite identificar problemas y oportunidades de mejora en la experiencia del usuario.
+
+**Aplicación para evaluar:** ErgoVision
+
+**Tareas que evaluar:**
+
+- Navegación inicial y orientación dentro de la aplicación
+- Comprensión de íconos, etiquetas y métricas del dashboard
+- Proceso de edición de datos personales
+- Acceso y comprensión del historial de sesiones
+- Configuración de sensibilidad y proceso de calibración
+- Interpretación de gráficos y estadísticas de progreso
+- Experiencia en la interfaz de monitoreo en tiempo real
+- Adaptación a dispositivos móviles
+
+**Escala de severidad**
+
+| Valor | Descripción |
+|-------|-------------|
+| 1     | Cosmético   |
+| 2     | Leve        |
+| 3     | Moderado    |
+| 4     | Grave       |
+| 5     | Crítico     |
+
+**Tabla de resumen**
+
+| #Orden | Problema                                                                                         | Escala de Severidad | Heurística / Principio violado(a)                             |
+|--------|--------------------------------------------------------------------------------------------------|---------------------|---------------------------------------------------------------|
+| 1      | Confusión inicial entre las secciones "Stats" vs "History" debido a etiquetas poco diferenciadas | 2                   | Reconocimiento antes que recuerdo / Consistencia y estándares |
+| 2      | Falta de feedback en tiempo real durante el proceso de calibración de postura                    | 3                   | Visibilidad del estado del sistema / Retroalimentación        |
+| 3      | Ausencia de tooltips explicativos para métricas específicas del dashboard                        | 2                   | Ayuda y documentación / Prevención de errores                 |
+
+**Problema #1: Confusión inicial entre las secciones "Stats" vs "History" debido a etiquetas poco diferenciadas**
+
+**Heurística violada:** Reconocimiento antes que recuerdo y Consistencia y estándares
+
+**Descripción del problema:**
+
+Ambos entrevistados (Flavio y Daniela) reportaron confusión inicial al diferenciar entre las secciones "Estadísticas" e "Historial". Flavio mencionó: "al principio no sabía bien qué era 'Stats' vs 'History', pero después de explorar un poco se entiende". Daniela también sugirió mejoras en la claridad de las etiquetas. Esta ambigüedad obliga a los usuarios a explorar ambas secciones para comprender su propósito, generando una pequeña curva de aprendizaje innecesaria.
+
+**Recomendación:**
+
+Renombrar las etiquetas para hacerlas más descriptivas, como "Análisis General" para Stats y "Sesiones Recientes" para History. Adicionalmente, incluir subtítulos explicativos breves debajo de cada opción del menú y añadir íconos más distintivos que representen visualmente la diferencia entre datos agregados (estadísticas) y registros individuales (historial).
+
+**Problema #2: Falta de feedback en tiempo real durante el proceso de calibración de postura**
+
+**Heurística violada:** Visibilidad del estado del sistema y Retroalimentación
+
+**Descripción del problema:**
+
+Flavio expresó: "no me quedó claro es cuándo empieza realmente la calibración, si tengo que hacer clic en 'Empezar calibracion' o si ya está midiendo mientras leo las instrucciones" y sugirió "feedback visual en tiempo real que me diga si mi postura está bien durante la calibración". Daniela también mencionó: "Al principio no entendí si debía moverme o quedarme quieto durante la calibración. Un mensaje de 'Permanece quieto durante 5 segundos' hubiera sido útil".
+
+**Recomendación:**
+
+Implementar un sistema de feedback visual inmediato durante la calibración que incluya: indicadores de progreso claros, mensajes instructivos paso a paso, y retroalimentación visual (como semáforos o indicadores de color) que muestren en tiempo real si la postura actual es correcta. Además, añadir un contador regresivo visible para el periodo de calibración.
+
+**Problema #3: Ausencia de tooltips explicativos para métricas específicas del dashboard**
+
+**Heurística violada:** Ayuda y documentación y Prevención de errores
+
+**Descripción del problema:**
+
+Flavio señaló específicamente: "Sería útil que hubiera un tooltip o algo que explique qué significa cada métrica cuando pasas el mouse por encima". Daniela también manifestó confusión con métricas como "el 'punto corporal que suele fallar' me pareció interesante, aunque no estoy seguro si se refiere a hombros, cuello o espalda. Un ícono o diagrama ayudaría". La falta de explicaciones inmediatas obliga a los usuarios a interpretar las métricas por sí mismos.
+
+**Recomendación:**
+
+Implementar tooltips contextuales en todas las métricas y gráficos del dashboard. Estos tooltips deben aparecer al hacer hover sobre cada elemento y proporcionar definiciones concisas de lo que representa cada métrica, cómo se calcula y por qué es relevante para el monitoreo postural. Para métricas anatómicas, incluir diagramas ilustrativos simples.
+
+
+### 7.4 Video About-the-Product
+
+El siguiente video muestra las características del producto, principalmente el monitoreo para la detección de mala postura y alertar al usuario para corregirla.
+
+<img src="images/chapter-7/about-product.png" alt="about-product"/>
+
+Link del video: <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/IQDSKOs70jnNTaXlrTd7nOAMAfK5DsUR4jI27a3iMGoUnE4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=VUFHgM">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/IQDSKOs70jnNTaXlrTd7nOAMAfK5DsUR4jI27a3iMGoUnE4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=VUFHgM</a>
 
 ## Conclusiones
 
@@ -4924,7 +6323,20 @@ Posteriormente, se especificaron los requisitos mediante escenarios To-Be, histo
 Finalmente, con Attribute-Driven Design y Domain-Driven Design, se estructuró la arquitectura en bounded contexts, context mapping y diagramas de software, asegurando escalabilidad, calidad y mantenibilidad.
 
 **TP:**  
-Para esta segunda entrega, se repartieron los bounded contexts y se definieron las capas de Dominio, Aplicación, Infraestructura e Interface, Se realizaron los diagramas de clases y bases de datos para cada uno y los Diagramas de Contexto generales. Ademas, se llevó a cabo la realización de la guia de estilo para nuestras aplicaciones, el diseño UX/UI de la Landing Page y los wireframes y Wireflows tanto de la aplicación web como móvil. 
+Para la segunda entrega, se repartieron los bounded contexts y se definieron las capas de Dominio, Aplicación, Infraestructura e Interface, Se realizaron los diagramas de clases y bases de datos para cada uno y los Diagramas de Contexto generales. Ademas, se llevó a cabo la realización de la guia de estilo para nuestras aplicaciones, el diseño UX/UI de la Landing Page y los wireframes y Wireflows tanto de la aplicación web como móvil. 
+
+**TB2:**  
+Para esta tercera entrega, se realizó el diseño de interfaces en figma, tanto de web como de movil, tambien se realizaron los userflows y los prototipos de ambas aplicaciones. Ademas, se desarrollaron los servicios y las aplicaciones movil y web y se desplegaron. Finalmente se realizó la evaluación según heuristicas basandonos en las entrevistas de validación a estudiantes y trabajadores remotos. 
+
+
+## Video About the Team
+
+| **Sección**                          | **Descripción**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Resumen del Video**                | Este apartado describe la colaboración de los integrantes en el proyecto, especificando las contribuciones individuales y la consecución de los resultados esperados (outcomes).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Pauta de Secuencias de Contenido** | **00:00:00**: Introducción <br> **00:00:08**: Juan <br> **00:00:58**: Gabriel <br> **00:01:55**: Gianluca <br> **00:03:06**: Barbara <br> **00:03:29**: Godofredo <br> **00:05:17**: Juan <br>  **00:06:42**: Cierre y conclusiones                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Cuadro de Video Representativo**   | <img alt="Imagen de video" height="200" src="images/misc/team-img.png" width="300"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **URL del Video**                    | **Microsoft Stream**: [Link de acceso](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/IQABTmP93aPYTL0lCXqiB0N3AQtikRSiZ-R8ySJVij1LHt4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=6eHf3Z) <br/> **Youtube**:[Link de acceso](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/IQABTmP93aPYTL0lCXqiB0N3AQtikRSiZ-R8ySJVij1LHt4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=6eHf3Z) |
 
 ## Bibliografía
 
