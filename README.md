@@ -5746,7 +5746,7 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci√
     </tr>
     <tr>
       <td>Enlace a la entrevista</td>
-      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDUJV5FcWoVTa8rvUkx5yG0AYrDrkurBs_kRNq4hTFPA9k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Q84Tax">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDUJV5FcWoVTa8rvUkx5yG0AYrDrkurBs_kRNq4hTFPA9k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Q84Tax</a>  </td>
+      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr</a>  </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -5806,7 +5806,7 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci√
     </tr>
     <tr>
       <td>Enlace a la entrevista</td>
-      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDUJV5FcWoVTa8rvUkx5yG0AYrDrkurBs_kRNq4hTFPA9k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Q84Tax">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDUJV5FcWoVTa8rvUkx5yG0AYrDrkurBs_kRNq4hTFPA9k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Q84Tax</a>  </td>
+      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr</a>  </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -5854,7 +5854,7 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci√
     </tr>
     <tr>
       <td>Enlace a la entrevista</td>
-      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDUJV5FcWoVTa8rvUkx5yG0AYrDrkurBs_kRNq4hTFPA9k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Q84Tax">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDUJV5FcWoVTa8rvUkx5yG0AYrDrkurBs_kRNq4hTFPA9k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Q84Tax</a> </td>
+      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr</a> </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -5903,7 +5903,7 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci√
     </tr>
     <tr>
       <td>Enlace a la entrevista</td>
-      <td> <a href=""></a> </td>
+      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr</a> </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -5923,7 +5923,7 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci√
     </tr>
     <tr>
       <td>Minuto de Inicio</td>
-      <td> 00:00 /td>
+      <td> 24:01 /td>
     </tr>
     <tr>
       <td>An√°lisis</td>
@@ -5944,7 +5944,7 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci√
     </tr>
     <tr>
       <td>Enlace a la entrevista</td>
-      <td> <a href=""></a> </td>
+      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr</a> </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -5964,7 +5964,7 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci√
     </tr>
     <tr>
       <td>Minuto de Inicio</td>
-      <td> 11:38 /td>
+      <td> 35:38 /td>
     </tr>
     <tr>
       <td>An√°lisis</td>
@@ -5985,7 +5985,7 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci√
     </tr>
     <tr>
       <td>Enlace a la entrevista</td>
-      <td> <a href=""></a> </td>
+      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr</a> </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -6005,7 +6005,7 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci√
     </tr>
     <tr>
       <td>Minuto de Inicio</td>
-      <td> 25:44 /td>
+      <td> 49:50 /td>
     </tr>
     <tr>
       <td>An√°lisis</td>
