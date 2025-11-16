@@ -6082,6 +6082,12 @@ Implementar tooltips contextuales en todas las métricas y gráficos del dashboa
 
 ### 7.4 Video About-the-Product
 
+El siguiente video muestra las características del producto, principalmente el monitoreo para la detección de mala postura y alertar al usuario para corregirla.
+
+<img src="images/chapter-7/about-product.png" alt="about-product"/>
+
+Link del video: <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/IQDSKOs70jnNTaXlrTd7nOAMAfK5DsUR4jI27a3iMGoUnE4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=VUFHgM">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/IQDSKOs70jnNTaXlrTd7nOAMAfK5DsUR4jI27a3iMGoUnE4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=VUFHgM</a>
+
 
 ## Conclusiones
 
