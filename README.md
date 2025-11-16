@@ -5620,6 +5620,61 @@ En esta sección se presentan los avances logrados en la documentación de los W
 | `/api/v1/notifications/test/global`                   | POST   | Test global notification                    | -                                          | `title` (string, default: "Test Global Notification"), `message` (string, default: "Esta es una notificación de prueba global")                                                                                                                                              | `200`: Array of notification target objects with `additionalProps`                                                                              |
 
 ##### 7.2.1.7 Software Deployment Evidence for Sprint Review
+
+A continuación se presentan las evidencias de despliegue de los tres componentes principales del sistema: la aplicación web, el backend y la aplicación móvil. Estas capturas demuestran que cada componente ha sido correctamente desplegado en sus respectivos entornos, asegurando su disponibilidad y funcionalidad para los usuarios finales.
+
+**Backend:**
+
+Para desplegar la aplicación primero se necesita de una base de datos desplegada, para este caso usamos una base de datos desplegada en render:
+
+<img src="images/chapter-7/sprint-1/deployed-db-1.png" alt="Deployment DB"/>
+
+<img src="images/chapter-7/sprint-1/deployed-db-2.png" alt="Deployment DB"/>
+
+<img src="images/chapter-7/sprint-1/deployed-db-3.png" alt="Deployment DB"/>
+
+Una vez se tiene la base de datos desplegada, se procede a desplegar el backend en render:
+
+<img src="images/chapter-7/sprint-1/deployed-backend-1.png" alt="Deployment Backend"/>
+
+<img src="images/chapter-7/sprint-1/deployed-backend-2.png" alt="Deployment Backend"/>
+
+<img src="images/chapter-7/sprint-1/deployed-backend-3.png" alt="Deployment Backend"/>
+
+Enlace: [https://ergovision-backend.onrender.com/swagger-ui/index.html#](https://ergovision-backend.onrender.com/swagger-ui/index.html#)
+
+**Aplicación Web:**
+
+Para desplegar la aplicación web se utilizo render:
+
+<img src="images/chapter-7/sprint-1/deployed-webapp-1.png" alt="Deployment Webapp"/>
+
+<img src="images/chapter-7/sprint-1/deployed-webapp-2.png" alt="Deployment Webapp"/>
+
+Enlace: [https://ergovision-webapp.onrender.com](https://ergovision-webapp.onrender.com)
+
+**Aplicación Móvil:**
+
+Para desplegar la aplicación Móvil primero debe de crearse el proyecto relacionado en Firebase
+
+<img src="images/chapter-7/sprint-1/deployed-mobile-1.png" alt="Deployment Mobile"/>
+
+<img src="images/chapter-7/sprint-1/deployed-mobile-2.png" alt="Deployment Mobile"/>
+
+Una vez creado el proyecto es necesario instalar la consola de Firebase para realizar el despliegue:
+
+<img src="images/chapter-7/sprint-1/deployed-mobile-3.png" alt="Deployment Mobile"/>
+
+<img src="images/chapter-7/sprint-1/deployed-mobile-4.png" alt="Deployment Mobile"/>
+
+Dentro del proyecto se debera agregar la dependencia `firebase_core` en el archivo `pubspec.yaml` y utilizar el comando `$ flutterfire configure`
+
+<img src="images/chapter-7/sprint-1/deployed-mobile-5.png" alt="Deployment Mobile"/>
+
+Luego se debe inicializar firebase en la aplicación flutter
+
+Finalmente crear una build del proyecto y subirla a Firebase App Distribution
+
 ##### 7.2.1.8 Team Collaboration Insights during Sprint
 
 ### 7.3 Validation Interviews
