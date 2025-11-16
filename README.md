@@ -5673,7 +5673,15 @@ Dentro del proyecto se debera agregar la dependencia `firebase_core` en el archi
 
 Luego se debe inicializar firebase en la aplicación flutter
 
+<img src="images/chapter-7/DepMovil1.png" alt="Deployment Mobile 1"/>
+
 Finalmente crear una build del proyecto y subirla a Firebase App Distribution
+
+<img src="images/chapter-7/DepMovil2.png" alt="Deployment Mobile 2"/>
+
+<img src="images/chapter-7/DepMovil3.png" alt="Deployment Mobile 3"/>
+
+Enlace: [https://appdistribution.firebase.google.com/mobilerequired](https://appdistribution.firebase.google.com/mobilerequired)
 
 ##### 7.2.1.8 Team Collaboration Insights during Sprint
 
