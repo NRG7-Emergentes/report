@@ -12,9 +12,7 @@
 
 ### **Ingeniería de software**
 
-
-## Informe del Trabajo Parcial
-
+## Informe del Trabajo Final
 
 ### **Nombre del startup:** NRG7
 
@@ -149,6 +147,15 @@ Recapitulando los commits se dividieron de la siguiente manera:
 - Godofredo Quispe (GodofredoGT): 12 commits
 - Bárbara Espinoza (MesSobble): 36 commits
 
+**TB2:**
+
+Para esta entrega se desarollaron los cpaítulos del 6 al 7, en la captura adjuntada se evidencia del trabajo colaborativo de github. Todos los integrantes del grupo trabajaron en el proyecto.
+
+- Juan Astonitas (NeoRise456):  commits
+- Gabriel Casas (Al3xiel): 4 commits
+- Gianluca Pasquale (cwassointt): 31 commits
+- Godofredo Quispe (GodofredoGT): 5 commits
+- Bárbara Espinoza (MesSobble): 18 commits
 
 ## Contenido
 
