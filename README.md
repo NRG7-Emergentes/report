@@ -201,7 +201,7 @@ del ABET – EAC - Student Outcome 3.
         - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta tercera entrega comuniqué oralmente ideas y dudas para la elaboración de los mokcups y userflows y prototipos durante las reuniones grupales en discord, además, comunique activamente sobre la entrega de las tareas que se me asignaron semanalmente.<br><br>
         - <b>Gianluca Santino Pasquale Barrenechea: </b><br><br>
         - <b>Godofredo Quispe Tipo:</b> <br><br>
-        - <b>Gabriel Alexander Casas Sanchez:</b><br><br>
+        - <b>Gabriel Alexander Casas Sanchez:Para esta entrega comunique mis ideas sobre los fundamentos de la estructura e interfaz de la aplicación de manera simple y sencilla para que todos los públicos sean capaces de entenderlo</b><br><br>
         - <b>Juan Diego Astonitas Diaz:</b> <br><br>
        </td>
       <td>
@@ -228,7 +228,7 @@ del ABET – EAC - Student Outcome 3.
         - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta tercera entrega realicé en el informe la redacción de estandares de código en el capítulo 7 y la realización de una entrevista de validación<br><br>
         - <b>Gianluca Santino Pasquale Barrenechea:</b> <br><br>
         - <b>Godofredo Quispe Tipo:</b> <br><br>
-        - <b>Gabriel Alexander Casas Sanchez:</b><br><br>
+        - <b>Gabriel Alexander Casas Sanchez:En la documentación de este sprint procure que todos los conceptos sean de fácil comprensión, para un correcto entendimiento de todo lo desarrollado en esta entrega.</b><br><br>
         - <b>Juan Diego Astonitas Diaz: </b>  <br><br>
       </td>
       <td>
