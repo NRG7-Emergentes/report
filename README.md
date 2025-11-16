@@ -5677,6 +5677,26 @@ Finalmente crear una build del proyecto y subirla a Firebase App Distribution
 
 ##### 7.2.1.8 Team Collaboration Insights during Sprint
 
+Evidencia de los commits por cada repositorio donde se evidencia la participación de todos los integrantes del equipo en el desarrollo de las aplicaciones y servicios:
+
+- **Commits Backend**
+
+<img src="images/chapter-7/sprint-1/CommitsBackendTB2.png" alt="CommitsBackend">
+
+<img src="images/chapter-7/sprint-1/PulseBackendTB2.png" alt="PulseBackend">
+
+- **Commits Web Frontend**
+
+<img src="images/chapter-7/sprint-1/CommitsWebTB2.png" alt="CommitsWeb">
+
+<img src="images/chapter-7/sprint-1/PulseWebTB2.png" alt="PulseWeb">
+
+- **Commits Mobile Frontend**
+
+<img src="images/chapter-7/sprint-1/CommitsMobileTB2.png" alt="CommitsMobile">
+
+<img src="images/chapter-7/sprint-1/PulseMobileTB2.png" alt="PulseMobile">
+
 ### 7.3 Validation Interviews
 
 #### 7.3.1 Diseño de Entrevistas
