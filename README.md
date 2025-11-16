@@ -2784,7 +2784,10 @@ Posteriormente, se especificaron los requisitos mediante escenarios To-Be, histo
 Finalmente, con Attribute-Driven Design y Domain-Driven Design, se estructuró la arquitectura en bounded contexts, context mapping y diagramas de software, asegurando escalabilidad, calidad y mantenibilidad.
 
 **TP:**  
-Para esta segunda entrega, se repartieron los bounded contexts y se definieron las capas de Dominio, Aplicación, Infraestructura e Interface, Se realizaron los diagramas de clases y bases de datos para cada uno y los Diagramas de Contexto generales. Ademas, se llevó a cabo la realización de la guia de estilo para nuestras aplicaciones, el diseño UX/UI de la Landing Page y los wireframes y Wireflows tanto de la aplicación web como móvil. 
+Para la segunda entrega, se repartieron los bounded contexts y se definieron las capas de Dominio, Aplicación, Infraestructura e Interface, Se realizaron los diagramas de clases y bases de datos para cada uno y los Diagramas de Contexto generales. Ademas, se llevó a cabo la realización de la guia de estilo para nuestras aplicaciones, el diseño UX/UI de la Landing Page y los wireframes y Wireflows tanto de la aplicación web como móvil. 
+
+**TB2:**  
+Para esta tercera entrega, se realizó el diseño de interfaces en figma, tanto de web como de movil, tambien se realizaron los userflows y los prototipos de ambas aplicaciones. Ademas, se desarrollaron los servicios y las aplicaciones movil y web y se desplegaron. Finalmente se realizó la evaluación según heuristicas basandonos en las entrevistas de validación a estudiantes y trabajadores remotos. 
 
 ## Bibliografía
 
