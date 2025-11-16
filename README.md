@@ -1,35 +1,4 @@
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" width="150" alt="UPC Logo">
 
-# Universidad Peruana de Ciencias Aplicadas
-
-### **CURSO:** Arquitecturas De Software Emergentes
-
-### **Código de curso**: 1ASI0728
-
-### **NRC**: 7291
-
-### **Profesor:** Royer Edelwer Rojas Malasquez
-
-### **Ingeniería de software**
-
-## Informe del Trabajo Final
-
-### **Nombre del startup:** NRG7
-
-### **Nombre del producto:** ErgoVision
-
-## **Integrantes**
-
-| **Nombre**                                | **Codigo** |
-| ----------------------------------------- | ---------- |
-| **Astonitas Díaz Juan Diego**             | U202110237 |
-| **Casas Sanchez Gabriel Alexander**       | U202220033 |
-| **Espinoza Delgado Bárbara Antonella**    | U201911727 |
-| **Godofredo Quispe Tipo**                 | u202120772 |
-| **Pasquale Barrenechea Gianluca Santino** | U202112078 |
-
-
-**Octubre 2025**
 
 
 ## Registro de Versiones del Informe
@@ -157,11 +126,11 @@ Recapitulando los commits se dividieron de la siguiente manera:
 
 ![tb2-network-2.png](images/misc/tb2/tb2-network-2.png)
 
-
+![tb2-pulse.png](images/misc/tb2/tb2-pulse.png)
 
 Para esta entrega se desarollaron los cpaítulos del 6 al 7, en la captura adjuntada se evidencia del trabajo colaborativo de github. Todos los integrantes del grupo trabajaron en el proyecto.
 
-- Juan Astonitas (NeoRise456):  commits
+- Juan Astonitas (NeoRise456): 2 commits
 - Gabriel Casas (Al3xiel): 4 commits
 - Gianluca Pasquale (cwassointt): 31 commits
 - Godofredo Quispe (GodofredoGT): 5 commits
