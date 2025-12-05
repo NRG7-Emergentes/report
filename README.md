@@ -61,6 +61,18 @@
       <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
       <td>Agregar Anexos y bibliografia </td>
     </tr>
+    <tr>
+      <td>2.0</td>
+      <td>30-12-2025</td>
+      <td>Casas Sanchez Gabriel Alexander, Astonitas Díaz Juan Diego, Pasquale Barrenechea Gianluca Santino, Quispe Tipo y Espinoza Delgado Bárbara Antonella </td>
+      <td>Desarrollo del Sprint 2 </td>
+    </tr>
+    <tr>
+      <td>2.1</td>
+      <td>05-12-2025</td>
+      <td>Astonitas Díaz Juan Diego </td>
+      <td>Correccion de links </td>
+    </tr>
   </tbody>
 </table>
 
