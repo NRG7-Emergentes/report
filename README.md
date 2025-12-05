@@ -272,12 +272,22 @@ Para esta entrega se desarollaron los cpaítulos del 6 al 7, en la captura adjun
       - [7.2.1.6 Services Documentation Evidence for Sprint Review](#7216-services-documentation-evidence-for-sprint-review)
       - [7.2.1.7 Software Deployment Evidence for Sprint Review](#7217-software-deployment-evidence-for-sprint-review)
       - [7.2.1.8 Team Collaboration Insights during Sprint](#7218-team-collaboration-insights-during-sprint)
+    - [7.2.1 Sprint 2](#722-sprint-2)
+        - [7.2.1.1 Sprint Planning 2](#7221-sprint-planning-2)
+        - [7.2.1.2 Sprint Backlog 2](#7222-sprint-backlog-2)
+        - [7.2.1.3 Development Evidence for Sprint Review](#7223-development-evidence-for-sprint-review)
+        - [7.2.1.4 Testing Suite Evidence for Sprint Review](#7224-testing-suite-evidence-for-sprint-review)
+        - [7.2.1.5 Execution Evidence for Sprint Review](#7225-execution-evidence-for-sprint-review)
+        - [7.2.1.6 Services Documentation Evidence for Sprint Review](#7226-services-documentation-evidence-for-sprint-review)
+        - [7.2.1.7 Software Deployment Evidence for Sprint Review](#7227-software-deployment-evidence-for-sprint-review)
+        - [7.2.1.8 Team Collaboration Insights during Sprint](#7228-team-collaboration-insights-during-sprint)
   - [7.3 Validation Interviews](#73-validation-interviews)
     - [7.3.1 Diseño de Entrevistas](#731-diseño-de-entrevistas)
     - [7.3.2 Registro de Entrevistas](#732-registro-de-entrevistas)
     - [7.3.3 Evaluaciones según heurísticas](#733-evaluaciones-según-heurísticas)
   - [7.4 Video About-the-Product](#74-video-about-the-product)
 - [Conclusiones](#conclusiones)
+- [Video About the Team](#video-about-the-team)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
 
@@ -322,11 +332,18 @@ del ABET – EAC - Student Outcome 3.
         - <b>Godofredo Quispe Tipo:</b> Para este entregable comuniqué los avances e inquietudes sobre funcionalidades, así como el diseño de la interfaz de usuario en reuniones grupales en Discord. <br><br>
         - <b>Gabriel Alexander Casas Sanchez:Para esta entrega comunique mis ideas sobre los fundamentos de la estructura e interfaz de la aplicación de manera simple y sencilla para que todos los públicos sean capaces de entenderlo</b><br><br>
         - <b>Astonitas Díaz Juan Diego:</b> Para esta tercera entrega presenté oralmente los avances en la creación de vistas de dashboard y monitoreo; lideré la dirección de la UI frontend y la arquitectura backend; expliqué el algoritmo de detección de mala postura y la integración con Google Mediapipe Pose Landmark.<br><br>
+        <b>TF:</b><br>
+        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta última entrega comuniqué oralmente inconvenientes y avances para la elaboración de las pantallas que se me asignaron para desarrollar durante las reuniones grupales en discord, además, comunique activamente sobre la entrega de las tareas que se me asignaron semanalmente.<br><br>
+        - <b>Pasquale Barrenechea Gianluca Santino:</b> Para esta última entrega planie la integración completa del sistema de WebSockets para las aplicaciones web y móvil, detallando su funcionamiento, el flujo de comunicación en tiempo real y la lógica de sincronización entre clientes. También expliqué el diseño e implementación del Bounded Context de Notificaciones y el proceso de autenticación requerido para establecer conexiones seguras mediante WebSocket. Durante las reuniones, comuniqué los desafíos técnicos encontrados y las decisiones adoptadas para garantizar estabilidad, escalabilidad y seguridad en la comunicación en tiempo real.<br><br>
+        - <b>Godofredo Quispe Tipo:</b> Durante la elaboración de este entregable final, comuniqué mis ideas y resultados con el grupo de manera efectiva, asegurando que todos estuvieran al tanto del progreso y los hallazgos. Esto se realizo iante las reuniones que se realizan por discord.<br><br>
+        - <b>Gabriel Alexander Casas Sanchez:</b> Para esta entrega comunique de manera oral todo el proceso que llevaba la construción del manejo de perfiles (IAM) y como se realizó la elaboración de la aplicación móvil. A su vez en las reuniones grupales comunique todos los avances eincoveniente que se presentaron durante el desarrollo de esta última entrega<br><br>
+        - <b>Astonitas Díaz Juan Diego: Para esta entrega comunique oralmente la problematica principal y la solucion propuesta ademas de nustro algoritmo de deteccion de mala postura.</b> <br><br>
        </td>
       <td>
         <b>TB1:</b> El equipo ha demostrado un nivel de desarrollo satisfactorio y homogéneo en esta competencia. Todos los miembros participaron activamente en las reuniones de Discord, comunicando ideas, avances y asignaciones de manera clara y efectiva. Se evidencia una comunicación colaborativa que facilitó la alineación del grupo y la revisión de la información. <br><br>
         <b>TP: </b> Durante el TP, el equipo mantuvo una comunicación oral clara y objetiva en las reuniones de Discord, alineando la elaboración de wireframes/wireflows, las style guidelines y la arquitectura de la información. Cada integrante expuso y justificó decisiones sobre bounded contexts, diseño de UI y la definición arquitectónica con DDD, resolviendo dudas para asegurar un entendimiento compartido. Esta coordinación constante permitió integrar criterios de distintas especialidades y niveles, garantizando coherencia en el diseño y avance oportuno de las tareas.<br><br>
         <b>TB2:</b> Durante TB2 el equipo realizó presentaciones orales efectivas que facilitaron la integración técnica y de diseño: Astonitas Díaz explicó avances en dashboard, UI, arquitectura backend y la integración con Google Mediapipe; Casas Sánchez presentó la app móvil, vistas de configuración/calibración e IAM; Pasquale Barrenechea expuso la implementación de websockets y las vistas de historial, sesión y notificaciones; Quispe presentó sign-in/sign-up, profile y actualizaciones del BC Statistics; Espinoza Delgado mostró mockups, userflows, prototipos, el endpoint orquestador y la vista de monitoreo. Estas exposiciones permitieron alinear requisitos, resolver dependencias y acelerar decisiones de implementación entre disciplinas.
+        <b>TF:</b> Durante la entrega final, el equipo demostró solvencia al comunicar la integración de componentes críticos del sistema. Pasquale Barrenechea y Casas Sanchez explicaron con claridad la lógica de sincronización en tiempo real y la arquitectura móvil/IAM, adaptando el lenguaje técnico para el entendimiento general. Astonitas Díaz articuló la propuesta de valor y el funcionamiento del algoritmo core, mientras que Espinoza Delgado y Quispe Tipo mantuvieron un flujo constante de reportes de estado para la resolución de bloqueos. Esta comunicación efectiva permitió validar la funcionalidad completa de la solución ante la audiencia.
       </td>
     </tr>
     <tr>
@@ -349,11 +366,18 @@ del ABET – EAC - Student Outcome 3.
         - <b>Pasquale Barrenechea Gianluca Santino:</b> Documenté la implementación de websockets, los flujos de datos entre clientes y servidor y la especificación de las vistas de historial, detalle de sesión y notificaciones para web y mobile.<br><br>        - <b>Godofredo Quispe Tipo:</b> Para este entregable me encargué de documentar las entrevistas y realizar resúmenes de cada una de estas. <br><br>
         - <b>Gabriel Alexander Casas Sanchez:En la documentación de este sprint procure que todos los conceptos sean de fácil comprensión, para un correcto entendimiento de todo lo desarrollado en esta entrega.</b><br><br>
         - <b>Astonitas Díaz Juan Diego:</b> Documenté la creación de vistas de dashboard y monitoreo, elaboré diagramas de arquitectura frontend/backend y redacté la especificación del algoritmo de detección e integración con Mediapipe.<br><br>
+        <b>TF:</b><br>
+        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta última  entrega realicé en el informe la documentación de la ejecución de las aplicaciones web y móvil y la documentación de los servicios<br><br>
+        - <b>Pasquale Barrenechea Gianluca Santino:</b> Para esta entrega redacté la documentación completa de la integración de WebSockets, incluyendo el flujo de conexión, autenticación mediante tokens, manejo de eventos en tiempo real y la sincronización entre clientes web y móvil. Además, documenté el diseño y funcionamiento del Bounded Context de Notificaciones, describiendo la estructura del módulo, los endpoints involucrados, la lógica de emisión y recepción de mensajes y los casos de uso principales. Esta documentación permitió asegurar la comprensión del componente por parte de miembros de distintas áreas y facilitó la validación técnica final.<br><br>
+        - <b>Godofredo Quispe Tipo:</b> Durante la elaboración de este proyecto, comuniqué mis ideas y resultados de manera escrita a través de informes, documentos y presentaciones, adaptándome a las necesidades y niveles de comprensión de diferentes audiencias. <br><br>
+        - <b>Gabriel Alexander Casas Sanchez:</b> Para esta última entrega comunique de manera escrita como se desarrollo la aplicación móvil, además de manera activa comunique a mis compañeros los avances realizados para mantenerlos actualizados del ciclo de desarrollo del proyecto<br><br>
+        - <b>Astonitas Díaz Juan Diego: Para esta entrega comunique de forma escrita las actividades del ultimo sprint y la retros pectiva del sprint anterior.</b> <br><br>
       </td>
       <td>
         <b>TB1:</b> En conjunto, las contribuciones escritas fueron fundamentales para sentar una base documental sólida, guiar la toma de decisiones y cumplir efectivamente los objetivos del proyecto.<br><br>
         <b>TP: </b> Durante el TP, el equipo articuló de forma clara y objetiva la documentación técnica clave, incluyendo tablas y diagramas del Bounded Context IAM, style guidelines, arquitectura de la información, infraestructura y la descripción de bounded contexts, asegurando consistencia terminológica y trazabilidad de decisiones. Las redacciones se orientaron a audiencias de distintas especialidades y niveles, facilitando la comprensión de la arquitectura, la justificación de componentes y la alineación entre diseño y desarrollo. Este trabajo escrito permitió elaborar coherentemente wireframes y wireflows, reducir malentendidos y consolidar una base documental robusta para la evolución del proyecto.<br><br>
         <b>TB2:</b> En TB2 el equipo entregó documentación técnica y materiales de apoyo completos: Astonitas Díaz documentó vistas de dashboard/monitoreo, diagramas de arquitectura y la especificación del algoritmo de detección de postura y su integración con Mediapipe; Casas Sánchez registró la arquitectura y documentación de la app móvil, vistas de calibración y el módulo IAM y preparó el PPT; Pasquale Barrenechea documentó la implementación de websockets, flujos de datos y las vistas de historial, detalle de sesión y notificaciones; Quispe actualizó la documentación de Statistics y IAM/Profile y resumió entrevistas; Espinoza Delgado entregó mockups, userflows, prototipos y la especificación del endpoint orquestador y monitoreo. Estos entregables escritos aseguraron trazabilidad, facilitaron la transferencia de conocimiento y redujeron riesgos de integración.
+        <b>TF:</b> En el cierre del proyecto, el grupo produjo documentación técnica de alto nivel y reportes detallados. Se generaron especificaciones precisas sobre la integración de WebSockets y el Bounded Context de Notificaciones (Pasquale), así como guías de ejecución y documentación de servicios (Espinoza). La documentación del desarrollo móvil (Casas) y los reportes de gestión ágil y retrospectiva (Astonitas, Quispe) mostraron coherencia y objetividad. Este registro escrito garantiza la mantenibilidad del proyecto y evidencia el cumplimiento de los estándares de ingeniería de software.      
       </td>
     </tr>
   </tbody>
@@ -416,6 +440,8 @@ del ABET – EAC - Student Outcome 3.
 ### 1.2 Solution Profile
 
 #### 1.2.1 Antecedentes y problemática
+
+La problemática principal radica en la adopción prolongada e inconsciente de posturas incorrectas y la proximidad excesiva a la pantalla durante largas jornadas de trabajo o estudio frente al computador. Esta conducta, intensificada por el auge del teletrabajo y la falta de retroalimentación inmediata en entornos no ergonómicos, deriva en graves dolencias musculoesqueléticas, fatiga visual y una disminución significativa de la productividad, afectando silenciosamente la salud y el bienestar físico a largo plazo de los usuarios. Para identificar los matices de la problematica principal se utilizara la tecnica de las 5w y 2h para definir la situacion actual del problema.
 
 **What**
 
@@ -667,7 +693,7 @@ Validación continua con usuarios reales (profesionales, estudiantes) mediante p
 ##### 1.2.2.4 Lean UX Canvas
 <img src="images/chapter-1/Lean UX Canvas.png">
 
-Link del Lean UX Canvas: [Link Lean UX Canvas](https://miro.com/app/board/uXjVJLxX2xg=/?share_link_id=737970760824)
+Link del Lean UX Canvas: [https://tinyurl.com/3wwn2pbj](https://tinyurl.com/3wwn2pbj)
 ### 1.3 Segmentos objetivo
 ### Segmento Objetivo #1: Trabajadores Remotos
 Personas que trabajan desde casa o espacios de coworking, pasando muchas horas frente a la computadora. Suelen perder la noción del tiempo y descuidar la postura por la carga laboral o la concentración en sus tareas. Buscan una solución tecnológica **discreta y práctica** que les ayude a mantener una buena postura sin interrumpir su productividad.
@@ -923,7 +949,7 @@ A continuación, se presenta un análisis competitivo que examina a las principa
 
 #### 2.2.2 Registro de entrevistas
 
-En esta sección registramos los puntos e ideas más importantes de las entrevistas realizadas a los trabajadores y estudiantes remotos. Los detalles completos de las entrevistas, incluyendo las grabaciones, se encuentran disponibles en el siguiente enlace: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/ESJ0SpDkAMBIp7F1FRM-3zYBa0b84g6SPKV2JWffqscDcg?e=IZbyLt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/ESJ0SpDkAMBIp7F1FRM-3zYBa0b84g6SPKV2JWffqscDcg?e=IZbyLt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+En esta sección registramos los puntos e ideas más importantes de las entrevistas realizadas a los trabajadores y estudiantes remotos. Los detalles completos de las entrevistas, incluyendo las grabaciones, se encuentran disponibles en el siguiente enlace: [https://tinyurl.com/mf2jbp4e](https://tinyurl.com/mf2jbp4e)
 
 A continuación se presentan los detalles clave de las entrevistas realizadas a los trabajadores:
 
@@ -2454,7 +2480,7 @@ En esta etapa, se identificaron los eventos clave que representan las acciones s
     Durante esta etapa, se definen aggregates para cada contexto del sistema, asegurando que representen correctamente las transacciones y operaciones coherentes dentro del sistema.
     <img src="images/chapter-4/paso-9.png" alt="Aggregates">
 
-El enlace al Miro: [https://miro.com/app/board/uXjVJIOOJ5E=/](https://miro.com/app/board/uXjVJIOOJ5E=/).
+El enlace al Miro: [https://tinyurl.com/edptmddy](https://tinyurl.com/edptmddy).
 
 #### 4.2.2 Candidate Context Discovery
 
@@ -4834,7 +4860,7 @@ Para tener una primera idea de cómo lucirá nuetra landing page, se realizaron 
  **Wireframes Móvil**  
 <img src="images/chapter-6/LandingPageResponsiveWireframes.png" alt="LandingPageResponsiveWireframes">
 
-Link del Figma: [https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=0-1&t=tUt2TuwoHmFV3ka1-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
+Link del Figma: [https://tinyurl.com/5fytvzfy](https://tinyurl.com/5fytvzfy)
 
 #### 6.3.2 Landing Page Mock-up
 
@@ -4847,7 +4873,7 @@ Posterior a la versión final de los Wireframes, se realizaron los Mockups de la
  **Mockups Móvil**  
 <img src="images/chapter-6/LandingPageResponsiveMockups.png" alt="LandingPageResponsiveMockups">
 
-Link del Figma: [https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=0-1&t=tUt2TuwoHmFV3ka1-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
+Link del Figma: [https://tinyurl.com/5fytvzfy](https://tinyurl.com/5fytvzfy)
 
 ### 6.4 Applications UX/UI Design
 
@@ -4865,13 +4891,13 @@ Los wireframes de la aplicación móvil de ErgoVision muestran el flujo completo
 
 <img src="images/chapter-6/WireframesMovil.png" alt="Wireframes Movil">
 
-Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
+Link del Figma: [https://tinyurl.com/4x8ta344](https://tinyurl.com/4x8ta344)
 
 #### 6.4.2 Applications Wireflow Diagrams
 
 Los wireflow diagrams de ErgoVision representan la secuencia de interacciones y pantallas que los usuarios experimentarán al navegar por la aplicación.
 
-Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
+Link del Figma: [https://tinyurl.com/4x8ta344](https://tinyurl.com/4x8ta344)
 
 **Edición de Datos de Usuario:** Este wireflow corresponde a cuando un usuario quiere modificar sus datos personales luego de haberse registrado.
 
@@ -4942,7 +4968,7 @@ Los mockups de la aplicación móvil de ErgoVision muestran el flujo completo de
 
 <img src="images/chapter-6/AppMovilMockups.png" alt="ockups Movil">
 
-Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
+Link del Figma: [https://tinyurl.com/3zbsdnn5](https://tinyurl.com/3zbsdnn5)
 
 #### 6.4.4 Applications User Flow Diagrams
 
@@ -5085,25 +5111,27 @@ Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?
 
 **Descripción:** El user flow inicia cuando el usuario, ya sea desde el dashboard principal o desde la sección de configuración, identifica y presiona la opción 'Recalibrar'. Al acceder, el sistema despliega la interfaz de calibración que muestra instrucciones visuales claras y paso a paso. El proceso de calibración guía al usuario para que se posicione correctamente frente a la cámara a una distancia adecuada, asegurando que su rostro y torso superior sean visibles en el frame. El sistema muestra el esqueleto para ayudar al posicionamiento. Una vez que el usuario está en la posición correcta, el sistema detecta automáticamente los puntos clave del cuerpo (cabeza, hombros, columna) y ajusta los parámetros de detección según la configuración específica de la cámara del usuario, la distancia detectada, el ángulo de la cámara y las condiciones de iluminación del entorno. El sistema valida que la calibración sea exitosa, guardando automáticamente la configuración para futuras sesiones de monitoreo.
 
+Link del Figma: [https://tinyurl.com/bdx9zkwm](https://tinyurl.com/bdx9zkwm)
+
 ### 6.5 Applications Prototyping
 
 A continuación, se presentarán los prototipos y videos de los prototipos de las aplicaciones web y móvil en Figma.
 
 **Prototipo Web**
 
-- **Link Prototipo:** [https://www.figma.com/proto/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=211-1160&t=PeqxIuqcVqSFgEJf-1&scaling=min-zoom&content-scaling=fixed&page-id=96%3A814&starting-point-node-id=211%3A1160&show-proto-sidebar=1](https://www.figma.com/proto/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=211-1160&t=PeqxIuqcVqSFgEJf-1&scaling=min-zoom&content-scaling=fixed&page-id=96%3A814&starting-point-node-id=211%3A1160&show-proto-sidebar=1)
+- **Link Prototipo:** [https://tinyurl.com/3ev7ym9s](https://tinyurl.com/3ev7ym9s)
 
 <img src="images/chapter-6/PWimg.png" alt="Imagen Prototipo Web">
 
-- **Link del video del prototipo:** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u201911727_upc_edu_pe/IQD3koUBm_tqSbEUAIOJMWiEAb-4INdYOqkd5qoXekJ85tg?e=S4Nf6o](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201911727_upc_edu_pe/IQD3koUBm_tqSbEUAIOJMWiEAb-4INdYOqkd5qoXekJ85tg?e=S4Nf6o)
+- **Link del video del prototipo:** [https://tinyurl.com/4be4udph](https://tinyurl.com/4be4udph)
 
 **Prototipo Móvil**
 
-- **Link Prototipo:** [https://www.figma.com/proto/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=227-1160&t=9wwJYmCP4WYQHoz2-1&scaling=min-zoom&content-scaling=fixed&page-id=96%3A814&starting-point-node-id=227%3A1160&show-proto-sidebar=1](https://www.figma.com/proto/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=227-1160&t=9wwJYmCP4WYQHoz2-1&scaling=min-zoom&content-scaling=fixed&page-id=96%3A814&starting-point-node-id=227%3A1160&show-proto-sidebar=1)
+- **Link Prototipo:** [https://tinyurl.com/u65f6y83](https://tinyurl.com/u65f6y83)
 
 <img src="images/chapter-6/PMimg.png" alt="Imagen Prototipo Movil">
 
-- **Link del video del prototipo:** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u201911727_upc_edu_pe/IQCC2fs621o3Sb9vxi-Oj1fOAadHM91RhNfpzsU1Nch5fVs?e=vpGJr4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201911727_upc_edu_pe/IQCC2fs621o3Sb9vxi-Oj1fOAadHM91RhNfpzsU1Nch5fVs?e=vpGJr4)  
+- **Link del video del prototipo:** [https://tinyurl.com/4vhfa2jp](https://tinyurl.com/4vhfa2jp)  
 
 ## Capítulo VII: Product Implementation, Validation & Deployment
 
@@ -5906,6 +5934,494 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci�
 
 <img src="images/chapter-7/sprint-1/PulseMobileTB2.png" alt="PulseMobile">
 
+#### 7.2.2 Sprint 2
+
+Este segundo sprint se dedicó a la consolidación y perfeccionamiento integral del ecosistema ErgoVision. Se aseguró la operatividad total y la correcta integración entre la Landing Page, la Web Application, la Mobile App y el Backend. El equipo priorizó la depuración de errores, la optimización del rendimiento y la mejora de la experiencia de usuario (UX), ejecutando pruebas rigurosas para certificar la estabilidad y fiabilidad del sistema de cara a su despliegue oficial.
+
+##### 7.2.2.1 Sprint Planning 2
+
+Esta sección describe el proceso de planificación del Sprint 2, donde el equipo definió los objetivos y entregables a desarrollar. Durante la reunión de Sprint Planning, se establecieron las prioridades del Product Backlog, los responsables de cada tarea y el alcance de las historias de usuario relacionadas con la implementación del Frontend (Mobile App y Web App) y del Backend.
+
+| Sprint #                         | Sprint 2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Date                             | 2025-11-22                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Time                             | 22:00 PM                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Location                         | Discord                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Prepared by                      | Astonitas Díaz Juan Diego                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Attendees                        | All team members (Astonitas Díaz Juan Diego, Casas Sanchez Gabriel Alexander, Espinoza Delgado Bárbara Antonella, Godofredo Quispe Tipo, Pasquale Barrenechea Gianluca Santino)                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Sprint 2 - Review Summary        | Se llego a desarrollar todo lo propuesto dentro del primer sprint sin complicaciones                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | 
+| Sprint 2 - Retrospective Summary | Se realizo autocritica acerca de como se pudo mejorar el flujo de trabajo y la colaboracion del equipo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Sprint 2 Goal                    | El objetivo del Sprint 2 es entregar la version final de todos los productos planteados, teniendo estos que tambien estar desplegados y completamente funcionales. De forma complementaria, se busca fortalecer la comunicación con los usuarios externos mediante la producción de nuevos videos demostrativos para la landing page (video about-the-product y about-the-team), y mejorar la experiencia de uso en la aplicación móvil a través de una nueva implementacion de comunicacion entre movil y api mediante websocket. El éxito del sprint se confirmará cuando los usuaros puedan visualizar correctamente las mejoras en la plataforma diginal. |
+| Sprint 2 Velocity                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Sum of Story Points              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+
+##### 7.2.2.2 Sprint Backlog 2
+
+La sección Sprint Backlog presenta la planificación detallada del trabajo a realizar durante el Sprint, alineada con el objetivo principal establecido. Aquí se muestra el estado de las tareas y su distribución entre los miembros del equipo. Además, se incluye una tabla con las User Stories seleccionadas y los Work-items o Tasks derivados, facilitando la trazabilidad y el control del avance del Sprint.
+
+<table>
+    <tr>
+        <td colspan="1"><strong>Sprint #</strong></td>
+        <td colspan="7"><strong>Sprint 2</strong></td>
+    </tr>
+    <tr>
+        <td colspan="2"><strong>User Story / Tech Story</strong></td>
+        <td colspan="6"><strong>Work-Item/Task</strong></td>
+    </tr>
+    <tr>
+        <td colspan="1"><strong>Id</strong></td>
+        <td colspan="1"><strong>Title</strong></td>
+        <td colspan="1"><strong>Id</strong></td>
+        <td colspan="1"><strong>Title</strong></td>
+        <td colspan="1"><strong>Description</strong></td>
+        <td colspan="1"><strong>Estimation(Hrs)</strong></td>
+        <td colspan="1"><strong>Assigned To</strong></td>
+        <td colspan="1"><strong>Status</strong></td>
+    </tr>
+    <tr>
+        <td rowspan="2">TS-004</td>
+        <td rowspan="2">Algoritmo de Detección de Postura</td>
+        <td>T-001</td>
+        <td>Desarrollo de utilidades geométricas</td>
+        <td>Implementar funciones matemáticas para cálculo de ángulos entre vectores (hombros, cuello) basado en landmarks.</td>
+        <td>4</td>
+        <td>Juan Astonitas</td>
+        <td>To Do</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Integración de umbrales</td>
+        <td>Crear servicio que compare los ángulos calculados contra los umbrales configurados por el usuario.</td>
+        <td>3</td>
+        <td>Juan Astonitas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-003</td>
+        <td>Detección de Postura Encorvada</td>
+        <td>T-001</td>
+        <td>Implementar lógica de encorvamiento</td>
+        <td>Usar el algoritmo base para detectar específicamente cuando los hombros caen por debajo de la línea clavicular.</td>
+        <td>5</td>
+        <td>Juan Astonitas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-004</td>
+        <td>Detección de Proximidad a la Pantalla</td>
+        <td>T-001</td>
+        <td>Cálculo de profundidad Z</td>
+        <td>Implementar la estimación de distancia basada en el tamaño relativo de la cabeza (landmarks faciales) respecto al frame.</td>
+        <td>5</td>
+        <td>Barbara Quezada</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>TS-007</td>
+        <td>Optimización de Rendimiento</td>
+        <td>T-001</td>
+        <td>Web Worker para procesamiento</td>
+        <td>Mover el cálculo matemático pesado a un Web Worker para no congelar la UI principal.</td>
+        <td>4</td>
+        <td>Barbara Quezada</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-006</td>
+        <td>Toggle de Visualización de Esqueleto</td>
+        <td>T-001</td>
+        <td>Control de capa Canvas</td>
+        <td>Crear el botón y la lógica para ocultar/mostrar el canvas de MediaPipe sin detener el análisis.</td>
+        <td>2</td>
+        <td>Barbara Quezada</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-011</td>
+        <td>Personalización de Volumen</td>
+        <td>T-001</td>
+        <td>Componente Slider de Volumen</td>
+        <td>Implementar control de ganancia (GainNode) en el contexto de audio para ajustar volumen de alertas.</td>
+        <td>3</td>
+        <td>Alexander Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-012</td>
+        <td>Selección de Alertas Activas</td>
+        <td>T-001</td>
+        <td>Switches de configuración</td>
+        <td>Interfaz para activar/desactivar independientemente alertas sonoras o visuales.</td>
+        <td>3</td>
+        <td>Alexander Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>TS-016</td>
+        <td>Sincronización de Estados de Alerta</td>
+        <td>T-001</td>
+        <td>Servicio de Estado (State Mgmt)</td>
+        <td>Implementar un store (ej. NgRx/Signals) para que el estado de "Alerta Activa" se refleje en toda la app (header, dashboard).</td>
+        <td>5</td>
+        <td>Alexander Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>TS-021</td>
+        <td>API de Recolección de Datos</td>
+        <td>T-001</td>
+        <td>Endpoint de Eventos</td>
+        <td>Crear endpoint POST /api/events para recibir y guardar cada incidencia de mala postura detectada.</td>
+        <td>4</td>
+        <td>Gianluca Pasquale</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td rowspan="2">US-020</td>
+        <td rowspan="2">Panel Principal de Estadísticas</td>
+        <td>T-001</td>
+        <td>Backend Aggregation</td>
+        <td>Crear consulta SQL/Mongo para agregar datos (promedios, totales) para el dashboard principal.</td>
+        <td>3</td>
+        <td>Gianluca Pasquale</td>
+        <td>To Do</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Frontend Dashboard Widgets</td>
+        <td>Maquetar e integrar los widgets de "Tiempo Total", "Score de Postura" y "Alertas Hoy".</td>
+        <td>4</td>
+        <td>Gianluca Pasquale</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>TS-037</td>
+        <td>Manejo de Sesiones Seguras</td>
+        <td>T-001</td>
+        <td>Implementación JWT</td>
+        <td>Configurar generación de Tokens JWT en backend y manejo de Interceptors en frontend.</td>
+        <td>5</td>
+        <td>Godofredo Quispe</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-027</td>
+        <td>Verificación de Correo Electrónico</td>
+        <td>T-001</td>
+        <td>Vista de Verificación</td>
+        <td>Crear página que capture el token de la URL y lo envíe al backend para validar la cuenta.</td>
+        <td>3</td>
+        <td>Godofredo Quispe</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>TS-032</td>
+        <td>Sistema de Verificación de Email</td>
+        <td>T-001</td>
+        <td>Servicio de Email (Backend)</td>
+        <td>Configurar servidor SMTP (o servicio cloud) y lógica para enviar correos con tokens únicos.</td>
+        <td>4</td>
+        <td>Godofredo Quispe</td>
+        <td>Done</td>
+    </tr>
+</table>
+
+##### 7.2.2.3 Development Evidence for Sprint Review
+
+En esta sección se presentan los avances alcanzados durante el Sprint en la implementación de los productos del proyecto, incluyendo la Landing Page, la Web Application, los Web Services y la Mobile Application. Se resumen los progresos técnicos más relevantes y se evidencia la evolución del desarrollo mediante una tabla que detalla los commits realizados en cada repositorio, asegurando la trazabilidad y el seguimiento del trabajo ejecutado por el equipo.
+
+**Web Application**
+
+| Repository        | Branch  | Commit Id | Commit Message                                                                                          | Commit Message Body                                                                                     | Date       |
+|-------------------|---------|-----------|---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|------------|
+| ergovision-webapp | develop | efe6694   | feat(monitoring): implement monitoring session tracking and data persistence                            | feat(monitoring): implement monitoring session tracking and data persistence.                           | 24/11/2025 |
+| ergovision-webapp | develop | b88b9b1   | feat: add history                                                                                       | feat: add history                                                                                       | 25/11/2025 |
+| ergovision-webapp | develop | 83e5df5   | feat(websocket): enhance notification handling with userId filtering and connection state management    | feat(websocket): enhance notification handling with userId filtering and connection state management    | 26/11/2025 |
+| ergovision-webapp | develop | 02160f3   | feat(websocket): refactor notification service to simplify connection logic and improve userId handling | feat(websocket): refactor notification service to simplify connection logic and improve userId handling | 26/11/2025 |
+| ergovision-webapp | develop | 0454955   | chore: fix package-lock.json                                                                            | chore: fix package-lock.json                                                                            | 26/11/2025 |
+| ergovision-webapp | develop | Id25262   | fix(settings): correct alert settings endpoint URLs                                                     | fix(settings): correct alert settings endpoint URLs                                                     | 26/11/2025 |
+| ergovision-webapp | develop | 477421a   | fix(settings): rename alertInterval to pauseInterval in alert settings                                  | fix(settings): rename alertInterval to pauseInterval in alert settings                                  | 26/11/2025 |
+| ergovision-webapp | develop | OOd3149   | feat(settings): refactor settings page template and rename alertInterval to pauseInterval               | feat(settings): refactor settings page template and rename alertInterval to pauseInterval               | 26/11/2025 |
+| ergovision-webapp | develop | 03efb8e   | feat(settings): add notification settings interfaces for email notifications                            | feat(settings): add notification settings interfaces for email notifications                            | 26/11/2025 |
+| ergovision-webapp | develop | 0954998   | feat(settings): add notification settings methods to orchestrator service                               | feat(settings): add notification settings methods to orchestrator service                               | 26/11/2025 |
+| ergovision-webapp | develop | 5165ea2   | feat(settings): add email notification settings to settings page                                        | feat(settings): add email notification settings to settings page                                        | 26/11/2025 |
+| ergovision-webapp | develop | 255dc26   | feat(calibration): add interfaces for calibration details management                                    | feat(calibration): add interfaces for calibration details management                                    | 29/11/2025 |
+| ergovision-webapp | develop | 8468cd1   | feat(calibration): add methods for retrieving and updating user calibration details                     | feat(calibration): add methods for retrieving and updating user calibration details                     | 29/11/2025 |
+| ergovision-webapp | develop | f2e3a78   | feat(calibration): add methods for retrieving and updating user calibration details                     | feat(calibration): add methods for retrieving and updating user calibration details                     | 29/11/2025 |
+| ergovision-webapp | develop | 8f8ced5   | feat(calibration): implement user calibration details retrieval and scoring                             | feat(calibration): implement user calibration details retrieval and scoring                             | 29/11/2025 |
+| ergovision-webapp | develop | 5e66596   | feat(monitoring): implement monitoring session tracking and data persistence                            | feat(monitoring): implement monitoring session tracking and data persistence                            | 30/11/2025 |
+| ergovision-webapp | develop | a91584a   | feat(authentication): enhance auto sign-in to restore user data from localStorage                       | feat(authentication): enhance auto sign-in to restore user data from localStorage                       | 30/11/2025 |
+| ergovision-webapp | develop | 804b5fe   | feat(settings): update label for posture sensitivity to nose offset sensitivity                         | feat(settings): update label for posture sensitivity to nose offset sensitivity                         | 30/11/2025 |
+| ergovision-webapp | develop | 8408b47   | feat(settings): update label for posture sensitivity to nose offset sensitivity                         | feat(settings): update label for posture sensitivity to nose offset sensitivity                         | 30/11/2025 |
+| ergovision-webapp | develop | d3f5c2e   | feat: add DailyProgress entity class                                                                    | feat: add DailyProgress entity class                                                                    | 01/12/2025 |
+| ergovision-webapp | develop | fbe3a29   | feat: add MonthlyProgress entity class                                                                  | feat: add MonthlyProgress entity class                                                                  | 01/12/2025 |
+| ergovision-webapp | develop | 22e90c8   | feat: add Statistics entity class                                                                       | feat: add Statistics entity class                                                                       | 01/12/2025 |
+| ergovision-webapp | develop | b8d135b   | feat: add integrate statistics data loading in stats page                                               | feat: add integrate statistics data loading in stats page                                               | 01/12/2025 |
+| ergovision-webapp | develop | 8de7015   | feat: add StatsService for statistics API integration                                                   | feat: add StatsService for statistics API integration                                                   | 01/12/2025 |
+| ergovision-webapp | develop | 5859cb7   | feat: add enhance dashboard components with live data and stats                                         | feat: add enhance dashboard components with live data and stats                                         | 01/12/2025 |
+| ergovision-webapp | develop | 25e5dbO   | feat(stats-summary): simplify layout by reducing grid columns and removing unused component             | feat(stats-summary): simplify layout by reducing grid columns and removing unused component             | 01/12/2025 |
+| ergovision-webapp | develop | O1bbab4   | feat(monitoring-active): disable state toast notification display                                       | feat(monitoring-active): disable state toast notification display                                       | 02/12/2025 |
+
+**Backend**
+
+| Repository         | Branch  | Commit Id | Commit Message                                                                                                   | Commit Message Body                                                                                              | Date       |
+|--------------------|---------|-----------|------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|------------|
+| ergovision-backend | develop | 013a622   | feat: change date fields from Instant to Date in monitoring session commands and resources                       | feat: change date fields from Instant to Date in monitoring session commands and resources                       | 24/11/2025 |
+| ergovision-backend | develop | cfbd05c   | feat: add monitoring by user id                                                                                  | feat: add monitoring by user id                                                                                  | 25/11/2025 |
+| ergovision-backend | develop | 389f1de   | chore: update database connection settings for Ergovision                                                        | chore: update database connection settings for Ergovision                                                        | 26/11/2025 |
+| ergovision-backend | develop | f303b36   | feat: add NotificationSetting entity for user notification preferences                                           | feat: add NotificationSetting entity for user notification preferences                                           | 26/11/2025 |
+| ergovision-backend | develop | 097c95b   | feat(settings): add queries for retrieving notification settings by ID and user ID                               | feat(settings): add queries for retrieving notification settings by ID and user ID                               | 26/11/2025 |
+| ergovision-backend | develop | 499f286   | feat(settings): add commands for creating, updating, and deleting notification settings                          | feat(settings): add commands for creating, updating, and deleting notification settings                          | 26/11/2025 |
+| ergovision-backend | develop | c435ceb   | feat(settings): add NotificationSettingRepository for database interactions                                      | feat(settings): add NotificationSettingRepository for database interactions                                      | 26/11/2025 |
+| ergovision-backend | develop | 137504f   | feat(settings): add command and query services for notification settings                                         | feat(settings): add command and query services for notification settings                                         | 26/11/2025 |
+| ergovision-backend | develop | 975e551   | feat(settings): implement command and query services for notification settings                                   | feat(settings): implement command and query services for notification settings                                   | 26/11/2025 |
+| ergovision-backend | develop | d5ee50d   | feat(settings): add notification settings creation on user registration                                          | feat(settings): add notification settings creation on user registration                                          | 26/11/2025 |
+| ergovision-backend | develop | 9daaad3   | feat(settings): add resource classes for creating and updating notification settings                             | feat(settings): add resource classes for creating and updating notification settings                             | 26/11/2025 |
+| ergovision-backend | develop | 34dOf5c   | feat(settings): add assemblers for creating and updating notification settings commands and resources            | feat(settings): add assemblers for creating and updating notification settings commands and resources            | 26/11/2025 |
+| ergovision-backend | develop | 665b928   | feat(settings): implement NotificationSettingController for managing notification settings                       | feat(settings): implement NotificationSettingController for managing notification settings                       | 26/11/2025 |
+| ergovision-backend | develop | 155c158   | feat(calibration): add CalibrationDetails entity for managing calibration data                                   | feat(calibration): add CalibrationDetails entity for managing calibration data                                   | 29/11/2025 |
+| ergovision-backend | develop | 2ead772   | feat(calibration): add CalibrationDetails repository.                                                            | feat(calibration): add CalibrationDetails repository.                                                            | 29/11/2025 |
+| ergovision-backend | develop | ffd6e35   | feat(calibration): add commands for creating, updating, and deleting calibration details                         | feat(calibration): add commands for creating, updating, and deleting calibration details                         | 29/11/2025 |
+| ergovision-backend | develop | f8ea5ff   | feat(calibration): add queries for retrieving calibration details by ID and user                                 | feat(calibration): add queries for retrieving calibration details by ID and user                                 | 29/11/2025 |
+| ergovision-backend | develop | e40f236   | feat(calibration): add CalibrationDetailsCommandService interface for command handling                           | feat(calibration): add CalibrationDetailsCommandService interface for command handling                           | 29/11/2025 |
+| ergovision-backend | develop | 9e9fdd7   | feat(calibration): add CalibrationDetailsQueryService interface for querying calibration details                 | feat(calibration): add CalibrationDetailsQueryService interface for querying calibration details                 | 29/11/2025 |
+| ergovision-backend | develop | 4273aaO   | feat(calibration): implement CalibrationDetailsCommandService for handling create, update, and delete operations | feat(calibration): implement CalibrationDetailsCommandService for handling create, update, and delete operations | 29/11/2025 |
+| ergovision-backend | develop | 2b8aa06   | feat(calibration): implement CalibrationDetailsQueryService for retrieving calibration details by user ID and ID | feat(calibration): implement CalibrationDetailsQueryService for retrieving calibration details by user ID and ID | 29/11/2025 |
+| ergovision-backend | develop | 8a2d8a3   | feat(settings): add default calibration details creation on user creation event                                  | feat(settings): add default calibration details creation on user creation event                                  | 29/11/2025 |
+| ergovision-backend | develop | 15e9512   | feat(calibration): add resource classes for creating and updating calibration details                            | feat(calibration): add resource classes for creating and updating calibration details                            | 29/11/2025 |
+| ergovision-backend | develop | a69187f   | feat(calibration): add assemblers for creating and updating calibration details settings commands and resources  | feat(calibration): add assemblers for creating and updating calibration details settings commands and resources  | 29/11/2025 |
+| ergovision-backend | develop | 816e716   | feat(calibration): implement CalibrationDetailsController for managing calibration details                       | feat(calibration): implement CalibrationDetailsController for managing calibration details                       | 29/11/2025 |
+| ergovision-backend | develop | 31f3199   | feat: add statistics domain, services, and REST controllers                                                      | feat: add statistics domain, services, and REST controllers                                                      | 29/11/2025 |
+| ergovision-backend | develop | 591ef8f   | feat: add query and endpoint for statistics by user ID                                                           | feat: add query and endpoint for statistics by user ID                                                           | 29/11/2025 |
+| ergovision-backend | develop | da108c7   | feat: add userId to MonitoringSession and related queries                                                        | feat: add userId to MonitoringSession and related queries                                                        | 29/11/2025 |
+| ergovision-backend | develop | fca7507   | feat: refactor getByUserId to return single resource                                                             | feat: refactor getByUserId to return single resource                                                             | 29/11/2025 |
+| ergovision-backend | develop | 283253C   | feat: change date fields from Instant to Date in monitoring session commands and resources                       | feat: change date fields from Instant to Date in monitoring session commands and resources                       | 30/11/2025 |
+
+**Mobile Application**
+
+| Repository        | Branch  | Commit Id | Commit Message                                                                                        | Commit Message Body                                                                                   | Date       |
+|-------------------|---------|-----------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|------------|
+| ergovision-mobile | develop | f410855   | feat(user): add User model with JSON serialization                                                    | feat(user): add User model with JSON serialization                                                    | 30/11/2025 |
+| ergovision-mobile | develop | ee43a24   | feat(api): implement ApiClient for HTTP requests with token management                                | feat(api): implement ApiClient for HTTP requests with token management                                | 30/11/2025 |
+| ergovision-mobile | develop | fc065e9   | feat(auth): refactor AuthService to use ApiClient for sign-in and sign-up requests                    | feat(auth): refactor AuthService to use ApiClient for sign-in and sign-up requests                    | 30/11/2025 |
+| ergovision-mobile | develop | aaOc029   | feat(user): add UserService for fetching user profile data                                            | feat(user): add UserService for fetching user profile data                                            | 30/11/2025 |
+| ergovision-mobile | develop | 970fa41   | feat(user): add UserEvent and UserState classes for user profile management                           | feat(user): add UserEvent and UserState classes for user profile management                           | 30/11/2025 |
+| ergovision-mobile | develop | 5dbe3c5   | feat(user): implement UserBloc for managing user profile state                                        | feat(user): implement UserBloc for managing user profile state                                        | 30/11/2025 |
+| ergovision-mobile | develop | 82e640a   | feat(auth): add AuthEvent and AuthState classes for authentication management                         | feat(auth): add AuthEvent and AuthState classes for authentication management                         | 30/11/2025 |
+| ergovision-mobile | develop | 86ec3cc   | feat(auth): implement AuthBloc for managing authentication events and states                          | feat(auth): implement AuthBloc for managing authentication events and states                          | 30/11/2025 |
+| ergovision-mobile | develop | 4658ef6   | feat(app): integrate AuthBloc and UserService into the main application                               | feat(app): integrate AuthBloc and UserService into the main application                               | 30/11/2025 |
+| ergovision-mobile | develop | ebe75c1   | feat(dashboard): replace AuthService with ApiClient for token retrieval                               | feat(dashboard): replace AuthService with ApiClient for token retrieval                               | 30/11/2025 |
+| ergovision-mobile | develop | 03d336b   | feat(websocket): enhance notification listener with userId filtering and singleton usage in dashboard | feat(websocket): enhance notification listener with userId filtering and singleton usage in dashboard | 30/11/2025 |
+| ergovision-mobile | develop | 14ae174   | feat(websocket): refactor notification listener integration and active pause handling                 | feat(websocket): refactor notification listener integration and active pause handling                 | 30/11/2025 |
+| ergovision-mobile | develop | 5fd7c4f   | feat(sign-in): add user profile retrieval after successful sign-in                                    | feat(sign-in): add user profile retrieval after successful sign-in                                    | 30/11/2025 |
+| ergovision-mobile | develop | fad576f   | feat(websocket): add validation for notification with user id.                                        | feat(websocket): add validation for notification with user id.                                        | 30/11/2025 |
+| ergovision-mobile | develop | bfe8f53   | feat(notification): enhance live notification widget with pause tracking and improved UI              | feat(notification): enhance live notification widget with pause tracking and improved UI              | 30/11/2025 |
+| ergovision-mobile | develop | 021e962   | feat(profile): integrate UserBloc for profile management and update functionality                     | feat(profile): integrate UserBloc for profile management and update functionality                     | 30/11/2025 |
+| ergovision-mobile | develop | 267e1a1   | feat: add historial                                                                                   | feat: add historial                                                                                   | 01/12/2025 |
+| ergovision-mobile | develop | fee87af   | feat(history): implement history navigation and session management                                    | feat(history): implement history navigation and session management                                    | 01/12/2025 |
+| ergovision-mobile | develop | b74753b   | feat(dashboard): remove unused UI elements from dashboard and session card                            | feat(dashboard): remove unused UI elements from dashboard and session card                            | 01/12/2025 |
+| ergovision-mobile | develop | d9486f1   | feat: add statistics BLoC and integrate with dashboard                                                | feat: add statistics BLoC and integrate with dashboard                                                | 02/12/2025 |
+| ergovision-mobile | develop | ff7dcf6   | feat: add integrate StatisticsBloc into dashboard and home views                                      | feat: add integrate StatisticsBloc into dashboard and home views                                      | 02/12/2025 |
+| ergovision-mobile | develop | 29c3255   | feat(notification): enhance WebSocket connection handling and add reconnect logic                     | feat(notification): enhance WebSocket connection handling and add reconnect logic                     | 02/12/2025 |
+| ergovision-mobile | develop | 465deb5   | feat(notification): enhance WebSocket connection handling and add reconnect logic                     | feat(notification): enhance WebSocket connection handling and add reconnect logic                     | 02/12/2025 |
+| ergovision-mobile | develop | 6fee465   | feat(notification): improve notification handling with debug logging and immediate state updates      | feat(notification): improve notification handling with debug logging and immediate state updates      | 02/12/2025 |
+
+
+##### 7.2.2.4 Testing Suite Evidence for Sprint Review
+
+Aunque este sprint no incluyó automatización de pruebas para agilizar la entrega de funciones clave, reconocemos la necesidad de una suite de pruebas sólida. En los próximos sprints, implementaremos validaciones integrales (unitarias y funcionales) para certificar el correcto funcionamiento de los servicios y mantener altos estándares de calidad.
+
+##### 7.2.2.5 Execution Evidence for Sprint Review
+
+En esta sección se presentarán capturas de las ultimas funcionalidades desarrolladas siendo ejecutadas y probadas con éxito de cada aplicación.
+
+**Aplicación Web**
+
+Ejecución del apartado de historial en la aplicación web.
+
+<img src="images/chapter-7/ExWeb1.png" alt="Excecution Web1"/>
+
+Ejecución del apartado de detalle de sesión en historial en la aplicación web.
+
+<img src="images/chapter-7/ExWeb2.png" alt="Excecution Web2"/>
+
+Ejecución del apartado de estadisticas de los monitoreos del usuario en la aplicación web.
+
+<img src="images/chapter-7/ExWeb3.png" alt="Excecution Web3"/>
+
+**Aplicación Web**
+
+Ejecución del apartado de historial en la aplicación móvil.
+
+<img src="images/chapter-7/ExMov1.png" alt="Excecution Mov1"/>
+
+Ejecución del apartado de detalle de sesión en historial en la aplicación móvil.
+
+<img src="images/chapter-7/ExMov2.png" alt="Excecution Mov2"/>
+
+Ejecución del apartado de estadisticas de los monitoreos del usuario en la aplicación móvil.
+
+<img src="images/chapter-7/ExMov3.png" alt="Excecution Mov3"/>
+
+**Servicios**
+
+Los servicios pueden ser visualizados y probados en swagger desde el navegador
+
+<img src="images/chapter-7/ExBack.png" alt="Excecution Backend"/>
+
+
+##### 7.2.2.6 Services Documentation Evidence for Sprint Review
+
+En esta sección se presenta la documentación completa de los Servicios de ErgoVision desplegados, evidenciando la correcta implementación y estandarización de los endpoints. La documentación detalla las operaciones disponibles (GET, POST, PUT, DELETE, PATCH), sus parámetros requeridos, ejemplos de cuerpo de solicitud y respuesta, junto con enlaces a la documentación interactiva correspondiente. Esta información garantiza la trazabilidad, comprensión y correcta integración entre los distintos componentes del sistema, facilitando el consumo de los servicios por parte de aplicaciones cliente y otros sistemas externos.
+
+| Endpoint                                                   | Method | Description                                      | Parameters                                 | Request Body                                                                                                                                                                                                                                                                 | Response                                                                                                                                        |
+|------------------------------------------------------------|--------|--------------------------------------------------|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| `/api/v1/orchestrator/alerts-settings/{settingId}`         | GET    | Get alert settings by ID                         | `settingId` (path, required, integer)      | -                                                                                                                                                                                                                                                                            | `200`: Alert settings found`, `visualAlertsEnabled`, `soundAlertsEnabled`, `alertVolume`, `alertInterval`                                       |
+| `/api/v1/orchestrator/alerts-settings/{settingId}`         | PUT    | Update existing alert settings                   | `settingId` (path, required, integer)      | `id` (integer), `userId` (integer), `visualAlertsEnabled` (boolean), `soundAlertsEnabled` (boolean), `alertVolume` (integer), `alertInterval` (integer)                                                                                                                      | `200`: Alert settings updated successfully                                                                                                      | 
+| `/api/v1/orchestrator/alerts-settings/{settingId}`         | DELETE | Delete alert settings                            | `settingId` (path, required, integer)      | -                                                                                                                                                                                                                                                                            | `204`: Alert settings deleted successfully<br>`404`: Alert settings not found                                                                   |
+| `/api/v1/orchestrator/alerts-settings`                     | POST   | Create new alert settings for a user             | -                                          | `userId` (integer), `visualAlertsEnabled` (boolean), `soundAlertsEnabled` (boolean), `alertVolume` (integer), `alertInterval` (integer)                                                                                                                                      | `201`: Alert settings created successfully <br>`400`: Invalid input data 	                                                                      |
+| `/api/v1/orchestrator/alerts-settings/user/{userId}`       | GET    | Retrieve alert settings for a specific user      | `userId` (path, required, integer)         | -                                                                                                                                                                                                                                                                            | `200`: Alert settings found 	                                                                                                                   |
+| `/api/v1/users`                                            | GET    | Retrieves all users                              | -                                          | -                                                                                                                                                                                                                                                                            | `200`: users retrieved successfully<br>`404`: No users found                                                                                    |
+| `/api/v1/users`                                            | PUT    | Update a user                                    | -                                          | `username` (string), `password` (string)                                                                                                                                                                                                                                     | `200`: Updated user object with `id`, `username`, `roles`<br>`400`: Invalid input data                                                          |
+| `/api/v1/users/{userId}`                                   | GET    | Get a user by ID                                 | `userId` (path, required, integer)         | -                                                                                                                                                                                                                                                                            | `200`: User object                                                                                                                              |
+| `/api/v1/users/{userId}`                                   | DELETE | Delete a user                                    | `userId` (path, required, integer)         | -                                                                                                                                                                                                                                                                            | `200`: Confirmation message                                                                                                                     |
+| `/api/v1/users/me`                                         | GET    | Get current authenticated user                   | -                                          | -                                                                                                                                                                                                                                                                            | `200`: Current user object                                                                                                                      |
+| `/api/v1/users/email/{username}`                           | GET    | Get a user by username                           | `username` (path, required, string)        | -                                                                                                                                                                                                                                                                            | `200`: User object                                                                                                                              |
+| `/api/v1/monitoringSession/{id}`                           | GET    | Get monitoring session by ID                     | `id` (path, required, integer)             | -                                                                                                                                                                                                                                                                            | `200`: Monitoring session object                                                                                                                |
+| `/api/v1/monitoringSession/{id}`                           | PUT    | Update monitoring session                        | `id` (path, required, integer)             | Session update data                                                                                                                                                                                                                                                          | `200`: Updated session object                                                                                                                   |
+| `/api/v1/monitoringSession/{id}`                           | DELETE | Delete monitoring session                        | `id` (path, required, integer)             | -                                                                                                                                                                                                                                                                            | `200`: Confirmation message                                                                                                                     |
+| `/api/v1/monitoringSession`                                | POST   | Create monitoring session                        | -                                          | `startDate` (string), `endDate` (string), `score` (integer), `goodScore` (integer), `badScore` (integer), `goodPostureTime` (integer), `badPostureTime` (integer), `duration` (integer), `numberOfPauses` (integer), `averageSessionDuration` (integer)                      | `200`: Created session object                                                                                                                   |
+| `/api/v1/monitoringSession/user/{userId}`                  | GET    | Get all monitoring sessions by user ID           | `userId` (path, required, integer)         | -                                                                                                                                                                                                                                                                            | `200`: Sessions retrieved successfully<br>`404`: No sessions found                                                                              |
+| `/api/v1/monitoringSession/me`                             | GET    | Get all monitoring sessions for current user     | -                                          | -                                                                                                                                                                                                                                                                            | `200`: Sessions retrieved successfully<br>`404`: No sessions found                                                                              |
+| `/api/v1/orchestrator/posture-settings/{settingId}`        | GET    | Get posture settings by ID                       | `settingId` (path, required, integer)      | -                                                                                                                                                                                                                                                                            | `200`: Posture settings object                                                                                                                  |
+| `/api/v1/orchestrator/posture-settings/{settingId}`        | PUT    | Update posture settings                          | `settingId` (path, required, integer)      | Posture settings data                                                                                                                                                                                                                                                        | `200`: Updated posture settings                                                                                                                 |
+| `/api/v1/orchestrator/posture-settings/{settingId}`        | DELETE | Delete posture settings                          | `settingId` (path, required, integer)      | -                                                                                                                                                                                                                                                                            | `200`: Confirmation message                                                                                                                     |
+| `/api/v1/orchestrator/posture-settings`                    | POST   | Create posture settings                          | -                                          | `userId` (integer), `postureCorrectivity` (integer), `monitoringSessionThreshold` (integer), `handAngleTolerance` (integer), `samplingFrequency` (integer), `modelVersion` (string), `postureThresholds` (object with `shoulderAngle`, `neckAngle`, `backAngle`, `headTilt`) | `201`: Created posture settings object<br>`400`: Invalid input data                                                                             |
+| `/api/v1/orchestrator/posture-settings/user/{userId}`      | GET    | Get posture settings by user ID                  | `userId` (path, required, integer)         | -                                                                                                                                                                                                                                                                            | `200`: Posture settings object                                                                                                                  |
+| `/api/v1/orchestrator/notification-settings/{id}`          | GET    | Get notification settings by ID                  | `id` (path, required, integer)             | -                                                                                                                                                                                                                                                                            | `200`: Notification settings object                                                                                                             |
+| `/api/v1/orchestrator/notification-settings/{id}`          | PUT    | Update notification settings                     | `id` (path, required, integer)             | `userId` (integer), `emailNotifications` (boolean)                                                                                                                                                                                                                           | `200`: Notification settings updated successfully                                                                                               |
+| `/api/v1/orchestrator/notification-settings/{id}`          | DELETE | Delete notification settings                     | `id` (path, required, integer)             | -                                                                                                                                                                                                                                                                            | `204`: Notification settings deleted successfully<br>`404`: Notification settings not found                                                     |
+| `/api/v1/orchestrator/notification-settings`               | POST   | Create notification settings                     | -                                          | `userId` (integer), `emailNotifications` (boolean)                                                                                                                                                                                                                           | `201`: Notification settings created successfully<br>`400`: Invalid input data                                                                  |
+| `/api/v1/orchestrator/notification-settings/user/{userId}` | GET    | Get notification settings by user ID             | `userId` (path, required, integer)         | -                                                                                                                                                                                                                                                                            | `200`: Notification settings object                                                                                                             |
+| `/api/v1/authentication/sign-up`                           | POST   | Sign up user                                     | -                                          | `username` (string), `password` (string), `role` (string, default: "ROLE_ADMIN")                                                                                                                                                                                             | `201`: Created user object with `id`, `username`, `token`, `roles`<br>`400`: Bad request                                                        |
+| `/api/v1/authentication/sign-in`                           | POST   | Sign in user                                     | -                                          | `username` (string), `password` (string)                                                                                                                                                                                                                                     | `200`: User object with `id`, `username`, `token`, `roles`<br>`400`: Bad request - Invalid input data<br>`404`: Not Found - User does not exist |
+| `/api/v1/roles`                                            | GET    | Get all roles                                    | -                                          | -                                                                                                                                                                                                                                                                            | `200`: Array of roles with `id`, `name`<br>`401`: Unauthorized - Invalid credentials                                                            |
+| `/api/v1/notifications`                                    | POST   | Create notification                              | -                                          | `userId` (integer), `title` (string), `message` (string), `type` (string), `channel` (string), `preferredChannels` (array), `doNotDisturb` (boolean)                                                                                                                         | `200`: Array of notification target objects with `additionalProps`                                                                              |
+| `/api/v1/notifications/{notificationId}/resend`            | PATCH  | Resend notification                              | `notificationId` (path, required, integer) | -                                                                                                                                                                                                                                                                            | `200`: Success response                                                                                                                         |
+| `/api/v1/notifications/{notificationId}/read`              | PATCH  | Mark notification as read                        | `notificationId` (path, required, integer) | -                                                                                                                                                                                                                                                                            | `200`: Success response                                                                                                                         |
+| `/api/v1/notifications/{notificationId}`                   | GET    | Get notification by ID                           | `notificationId` (path, required, integer) | -                                                                                                                                                                                                                                                                            | `200`: Notification object                                                                                                                      |
+| `/api/v1/notifications/user/{userId}`                      | GET    | Get notifications by user ID                     | `userId` (path, required, integer)         | -                                                                                                                                                                                                                                                                            | `200`: Array of notifications                                                                                                                   |
+| `/api/v1/notifications/user/{userId}/unread`               | GET    | Get unread notifications by user ID              | `userId` (path, required, integer)         | -                                                                                                                                                                                                                                                                            | `200`: Notification object with `id`, `userId`, `message`, `type`, `status`, `createdAt`, `readAt`                                              |
+| `/api/v1/notifications/status`                             | GET    | Get notification status                          | `status` (query, required, string)         | -                                                                                                                                                                                                                                                                            | `200`: Status object                                                                                                                            |
+| `/api/v1/notifications/all`                                | GET    | Get all notifications                            | -                                          | -                                                                                                                                                                                                                                                                            | `200`: Array of all notifications                                                                                                               |
+| `/api/v1/notifications/test/global`                        | POST   | Test global notification                         | -                                          | `title` (string, default: "Test Global Notification"), `message` (string, default: "Esta es una notificación de prueba global")                                                                                                                                              | `200`: Array of notification target objects with `additionalProps`                                                                              |
+| `/api/v1/dailyProgress/{id}`                               | GET    | Get daily progress by ID                         | `id` (path, required, integer)             | -                                                                                                                                                                                                                                                                            | `200`: Daily progress object with `id`, `date`, `averageScore`, `statisticsId`                                                                  |
+| `/api/v1/dailyProgress/{id}`                               | PUT    | Update daily progress                            | `id` (path, required, integer)             | `date` (string), `averageScore` (integer), `statisticsId` (integer)                                                                                                                                                                                                          | `200`: Updated daily progress object                                                                                                            |
+| `/api/v1/dailyProgress/{id}`                               | DELETE | Delete daily progress                            | `id` (path, required, integer)             | -                                                                                                                                                                                                                                                                            | `200`: Confirmation message                                                                                                                     |
+| `/api/v1/dailyProgress`                                    | POST   | Create daily progress                            | -                                          | `date` (string), `averageScore` (integer), `statisticsId` (integer)                                                                                                                                                                                                          | `200`: Created daily progress object                                                                                                            |
+| `/api/v1/statistics/{id}`                                  | GET    | Get statistics by ID                             | `id` (path, required, integer)             | -                                                                                                                                                                                                                                                                            | `200`: Statistics object with `id`, `userId`, `monthlyProgresses`, `dailyProgresses`, `totalAverageScore`, `averageSessionTimeMinutes`, etc.    |
+| `/api/v1/statistics/{id}`                                  | PUT    | Update statistics                                | `id` (path, required, integer)             | Statistics update data                                                                                                                                                                                                                                                       | `200`: Updated statistics object                                                                                                                |
+| `/api/v1/statistics/{id}`                                  | DELETE | Delete statistics                                | `id` (path, required, integer)             | -                                                                                                                                                                                                                                                                            | `200`: Confirmation message                                                                                                                     |
+| `/api/v1/statistics`                                       | POST   | Create statistics                                | -                                          | `userId` (integer), `monthlyProgresses` (array), `dailyProgresses` (array), `totalAverageScore` (integer), `averageSessionTimeMinutes` (integer), `averagePausePerSession` (integer), `totalPostureScore` (integer)                                                          | `200`: Created statistics object                                                                                                                |
+| `/api/v1/statistics/user/{userId}`                         | GET    | Get statistics by user ID                        | `userId` (path, required, integer)         | -                                                                                                                                                                                                                                                                            | `200`: Statistics object                                                                                                                        |
+| `/api/v1/statistics/me`                                    | GET    | Get statistics for current authenticated user    | -                                          | -                                                                                                                                                                                                                                                                            | `200`: Statistics object                                                                                                                        |
+| `/api/v1/monthlyProgress/{id}`                             | GET    | Get monthly progress by ID                       | `id` (path, required, integer)             | -                                                                                                                                                                                                                                                                            | `200`: Monthly progress object with `id`, `month`, `averageScore`, `statisticsId`                                                               |
+| `/api/v1/monthlyProgress/{id}`                             | PUT    | Update monthly progress                          | `id` (path, required, integer)             | `month` (string), `averageScore` (integer), `statisticsId` (integer)                                                                                                                                                                                                         | `200`: Updated monthly progress object                                                                                                          |
+| `/api/v1/monthlyProgress/{id}`                             | DELETE | Delete monthly progress                          | `id` (path, required, integer)             | -                                                                                                                                                                                                                                                                            | `200`: Confirmation message                                                                                                                     |
+| `/api/v1/monthlyProgress`                                  | POST   | Create monthly progress                          | -                                          | `month` (string), `averageScore` (integer), `statisticsId` (integer)                                                                                                                                                                                                         | `200`: Created monthly progress object                                                                                                          |
+| `/api/v1/orchestrator/calibration-details/{calibrationId}` | GET    | Get calibration details by ID                    | `calibrationId` (path, required, integer)  | -                                                                                                                                                                                                                                                                            | `200`: Calibration details object                                                                                                               |
+| `/api/v1/orchestrator/calibration-details/{calibrationId}` | PUT    | Update calibration details                       | `calibrationId` (path, required, integer)  | `userId` (integer), `calibrationFactor` (integer), `confidenceScore` (integer), `cameraVisibility` (integer), `headAngle` (integer)                                                                                                                                          | `200`: Updated calibration details object                                                                                                       |
+| `/api/v1/orchestrator/calibration-details/{calibrationId}` | DELETE | Delete calibration details                       | `calibrationId` (path, required, integer)  | -                                                                                                                                                                                                                                                                            | `204`: Calibration details deleted successfully<br>`404`: Calibration details not found                                                         |
+| `/api/v1/orchestrator/calibration-details`                 | POST   | Create calibration details                       | -                                          | `userId` (integer), `calibrationFactor` (integer), `confidenceScore` (integer), `cameraVisibility` (integer), `headAngle` (integer)                                                                                                                                          | `201`: Calibration details created successfully<br>`400`: Invalid input data                                                                    |
+
+##### 7.2.2.7 Software Deployment Evidence for Sprint Review
+
+
+A continuación se presentan las evidencias de despliegue de los tres componentes principales del sistema: la aplicación web, el backend y la aplicación móvil. Estas capturas demuestran que cada componente ha sido correctamente desplegado en sus respectivos entornos, asegurando su disponibilidad y funcionalidad para los usuarios finales.
+
+**Backend:**
+
+Para desplegar la aplicación primero se necesita de una base de datos desplegada, para este caso usamos una base de datos desplegada en render:
+
+<img src="images/chapter-7/sprint-1/deployed-db-1.png" alt="Deployment DB"/>
+
+<img src="images/chapter-7/sprint-1/deployed-db-2.png" alt="Deployment DB"/>
+
+<img src="images/chapter-7/sprint-1/deployed-db-3.png" alt="Deployment DB"/>
+
+Una vez se tiene la base de datos desplegada, se procede a desplegar el backend en render:
+
+<img src="images/chapter-7/sprint-1/deployed-backend-1.png" alt="Deployment Backend"/>
+
+<img src="images/chapter-7/sprint-1/deployed-backend-2.png" alt="Deployment Backend"/>
+
+<img src="images/chapter-7/sprint-1/deployed-backend-3.png" alt="Deployment Backend"/>
+
+Enlace: [https://ergovision-backend.onrender.com/swagger-ui/index.html#](https://ergovision-backend.onrender.com/swagger-ui/index.html#)
+
+**Aplicación Web:**
+
+Para desplegar la aplicación web se utilizo render:
+
+<img src="images/chapter-7/sprint-1/deployed-webapp-1.png" alt="Deployment Webapp"/>
+
+<img src="images/chapter-7/sprint-1/deployed-webapp-2.png" alt="Deployment Webapp"/>
+
+Enlace: [https://ergovision-webapp.onrender.com](https://ergovision-webapp.onrender.com)
+
+**Aplicación Móvil:**
+
+Para desplegar la aplicación Móvil primero debe de crearse el proyecto relacionado en Firebase
+
+<img src="images/chapter-7/sprint-1/deployed-mobile-1.png" alt="Deployment Mobile"/>
+
+<img src="images/chapter-7/sprint-1/deployed-mobile-2.png" alt="Deployment Mobile"/>
+
+Una vez creado el proyecto es necesario instalar la consola de Firebase para realizar el despliegue:
+
+<img src="images/chapter-7/sprint-1/deployed-mobile-3.png" alt="Deployment Mobile"/>
+
+<img src="images/chapter-7/sprint-1/deployed-mobile-4.png" alt="Deployment Mobile"/>
+
+Dentro del proyecto se debera agregar la dependencia `firebase_core` en el archivo `pubspec.yaml` y utilizar el comando `$ flutterfire configure`
+
+<img src="images/chapter-7/sprint-1/deployed-mobile-5.png" alt="Deployment Mobile"/>
+
+Luego se debe inicializar firebase en la aplicación flutter
+
+<img src="images/chapter-7/DepMovil1.png" alt="Deployment Mobile 1"/>
+
+Finalmente crear una build del proyecto y subirla a Firebase App Distribution
+
+<img src="images/chapter-7/DepMovil2.png" alt="Deployment Mobile 2"/>
+
+<img src="images/chapter-7/DepMovil3.png" alt="Deployment Mobile 3"/>
+
+Enlace: [https://appdistribution.firebase.google.com/mobilerequired](https://appdistribution.firebase.google.com/mobilerequired)
+
+##### 7.2.2.8 Team Collaboration Insights during Sprint
+
+Evidencia de los commits por cada repositorio donde se evidencia la participación de todos los integrantes del equipo en el desarrollo de las aplicaciones y servicios:
+
+- **Commits Backend**
+
+<img src="images/chapter-7/sprint-2/CommitsBackendTF.png" alt="CommitsBackend">
+
+<img src="images/chapter-7/sprint-2/PulseBackendTF.png" alt="PulseBackend">
+
+- **Commits Web Frontend**
+
+<img src="images/chapter-7/sprint-2/CommitsWebTF.png" alt="CommitsWeb">
+
+<img src="images/chapter-7/sprint-2/PulseWebTF.png" alt="PulseWeb">
+
+- **Commits Mobile Frontend**
+
+<img src="images/chapter-7/sprint-2/CommitsMobileTF.png" alt="CommitsMobile">
+
+<img src="images/chapter-7/sprint-2/PulseMobileTF.png" alt="PulseMobile">
+
+
 ### 7.3 Validation Interviews
 
 #### 7.3.1 Diseño de Entrevistas
@@ -5947,7 +6463,7 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci�
     </tr>
     <tr>
       <td>Enlace a la entrevista</td>
-      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr</a>  </td>
+      <td> <a href="https://tinyurl.com/3dyyfkfw">https://tinyurl.com/3dyyfkfw</a>  </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -6007,7 +6523,7 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci�
     </tr>
     <tr>
       <td>Enlace a la entrevista</td>
-      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr</a>  </td>
+      <td> <a href="https://tinyurl.com/3dyyfkfw">https://tinyurl.com/3dyyfkfw</a>  </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -6055,7 +6571,7 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci�
     </tr>
     <tr>
       <td>Enlace a la entrevista</td>
-      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr</a> </td>
+      <td> <a href="https://tinyurl.com/3dyyfkfw">https://tinyurl.com/3dyyfkfw</a> </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -6104,7 +6620,7 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci�
     </tr>
     <tr>
       <td>Enlace a la entrevista</td>
-      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr</a> </td>
+      <td> <a href="https://tinyurl.com/3dyyfkfw">https://tinyurl.com/3dyyfkfw</a> </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -6145,7 +6661,7 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci�
     </tr>
     <tr>
       <td>Enlace a la entrevista</td>
-      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr</a> </td>
+      <td> <a href="https://tinyurl.com/3dyyfkfw">https://tinyurl.com/3dyyfkfw</a> </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -6186,7 +6702,7 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci�
     </tr>
     <tr>
       <td>Enlace a la entrevista</td>
-      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr</a> </td>
+      <td> <a href="https://tinyurl.com/3dyyfkfw">https://tinyurl.com/3dyyfkfw</a> </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -6295,35 +6811,24 @@ El siguiente video muestra las características del producto, principalmente el 
 
 <img src="images/chapter-7/about-product.png" alt="about-product"/>
 
-Link del video: <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/IQDSKOs70jnNTaXlrTd7nOAMAfK5DsUR4jI27a3iMGoUnE4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=VUFHgM">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/IQDSKOs70jnNTaXlrTd7nOAMAfK5DsUR4jI27a3iMGoUnE4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=VUFHgM</a>
+Link del video: <a href="https://tinyurl.com/mvdc8scd">https://tinyurl.com/mvdc8scd</a>
 
 ## Conclusiones
 
-**TB1:**  
-El proyecto ErgoVision logró desarrollar una solución innovadora para prevenir problemas posturales en trabajadores y estudiantes remotos, integrando tecnologías de visión por computadora y un enfoque centrado en el usuario.
+El proyecto ErgoVision, desarrollado por la startup NRG7, ha logrado materializar con éxito una solución tecnológica integral orientada a mitigar los riesgos ergonómicos y físicos asociados al auge del teletrabajo y la educación remota. A través de la implementación de una arquitectura de software robusta basada en atributos de calidad y el uso de inteligencia artificial mediante visión computacional, se ha construido una plataforma multiplataforma capaz de monitorear la postura del usuario en tiempo real, validando la viabilidad técnica y comercial de utilizar herramientas accesibles (como una webcam estándar) para mejorar la salud y productividad del capital humano sin depender de hardware costoso.
 
-A través del Lean UX se identificaron problemas, supuestos e hipótesis, validando tempranamente las necesidades de los usuarios. El análisis competitivo, entrevistas y herramientas de needfinding aportaron información clave para definir personas, escenarios y tareas.
+La ejecución técnica del proyecto demostró la eficacia de aplicar un Diseño Guiado por el Dominio (DDD) y metodologías ágiles para estructurar un sistema complejo y escalable. La segmentación estratégica en Bounded Contexts —como Monitoreo, IAM, Orquestador y Estadísticas— permitió un desarrollo modular que integró exitosamente tecnologías heterogéneas como Google MediaPipe, Spring Boot, Angular y Flutter. Esta sinergia aseguró que procesos críticos, como la detección de landmarks corporales, la sincronización de alertas visuales y sonoras, y la persistencia de métricas de progreso, funcionaran de manera fluida y segura en un entorno de producción desplegado en la nube, cumpliendo con los estándares de rendimiento y seguridad establecidos.
 
-Posteriormente, se especificaron los requisitos mediante escenarios To-Be, historias de usuario, impact mapping y backlog, alineando funcionalidades con los objetivos del proyecto.
-
-Finalmente, con Attribute-Driven Design y Domain-Driven Design, se estructuró la arquitectura en bounded contexts, context mapping y diagramas de software, asegurando escalabilidad, calidad y mantenibilidad.
-
-**TP:**  
-Para la segunda entrega, se repartieron los bounded contexts y se definieron las capas de Dominio, Aplicación, Infraestructura e Interface, Se realizaron los diagramas de clases y bases de datos para cada uno y los Diagramas de Contexto generales. Ademas, se llevó a cabo la realización de la guia de estilo para nuestras aplicaciones, el diseño UX/UI de la Landing Page y los wireframes y Wireflows tanto de la aplicación web como móvil. 
-
-**TB2:**  
-Para esta tercera entrega, se realizó el diseño de interfaces en figma, tanto de web como de movil, tambien se realizaron los userflows y los prototipos de ambas aplicaciones. Ademas, se desarrollaron los servicios y las aplicaciones movil y web y se desplegaron. Finalmente se realizó la evaluación según heuristicas basandonos en las entrevistas de validación a estudiantes y trabajadores remotos. 
-
+Finalmente, las fases de validación y despliegue confirmaron que la propuesta de valor de ErgoVision satisface las necesidades reales de los segmentos objetivo, quienes destacaron la usabilidad de la interfaz y la utilidad de las pausas activas para la prevención de la fatiga. La implementación funcional de los aplicativos web y móvil, sumada a la retroalimentación positiva obtenida en las entrevistas, evidencia no solo el cumplimiento de los objetivos académicos y técnicos del curso, sino también el potencial del producto para evolucionar comercialmente como una herramienta indispensable para el bienestar digital, capaz de fomentar hábitos posturales saludables y sostenibles a largo plazo en entornos laborales y educativos.
 
 ## Video About the Team
 
-| **Sección**                          | **Descripción**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-|--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Resumen del Video**                | Este apartado describe la colaboración de los integrantes en el proyecto, especificando las contribuciones individuales y la consecución de los resultados esperados (outcomes).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| **Pauta de Secuencias de Contenido** | **00:00:00**: Introducción <br> **00:00:08**: Juan <br> **00:00:58**: Gabriel <br> **00:01:55**: Gianluca <br> **00:03:06**: Barbara <br> **00:03:29**: Godofredo <br> **00:05:17**: Juan <br>  **00:06:42**: Cierre y conclusiones                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| **Cuadro de Video Representativo**   | <img alt="Imagen de video" height="200" src="images/misc/team-img.png" width="300"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| **URL del Video**                    | **Microsoft Stream**: [Link de acceso](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/IQABTmP93aPYTL0lCXqiB0N3AQtikRSiZ-R8ySJVij1LHt4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=6eHf3Z) <br/> **Youtube**:[Link de acceso](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/IQABTmP93aPYTL0lCXqiB0N3AQtikRSiZ-R8ySJVij1LHt4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=6eHf3Z) |
-
+| **Sección**                          | **Descripción**                                                                                                                                                                                |
+|--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Resumen del Video**                | Este apartado describe la colaboración de los integrantes en el proyecto, especificando las contribuciones individuales y la consecución de los resultados esperados (outcomes).               |
+| **Pauta de Secuencias de Contenido** | **00:00:00**: Introducción <br> **00:00:02**: Juan <br> **00:00:51**: Gabriel <br> **00:02:11**: Gianluca <br> **00:04:23**: Barbara <br> **00:05:40**: Godofredo <br> **00:08:54**: Juan <br> |
+| **Cuadro de Video Representativo**   | <img alt="Imagen de video" height="200" src="images/misc/team-img.png" width="300"/>                                                                                                           |
+| **URL del Video**                    | **Microsoft Stream**: [https://tinyurl.com/3rmf4xfk](https://tinyurl.com/3rmf4xfk)                                                                                                             |
 ## Bibliografía
 
 Asencios Román, E. A., Carreño Loza, F. A., Chilon Cruz, L., & Jiménez Toro, K. (2021). Frecuencia de dolor músculo-esquelético en personas que realizan teletrabajo en Lima entre los meses de abril a agosto del 2020. Universidad Peruana Cayetano Heredia. [https://repositorio.upch.edu.pe/handle/20.500.12866/9434](https://repositorio.upch.edu.pe/handle/20.500.12866/9434)
@@ -6338,25 +6843,28 @@ Evans, E. (2003). Domain-Driven design: Tackling Complexity in the Heart of Soft
 
 ## Anexos
 
-⦁	As-Is and To-Be Scenario Mapping Miro: [https://miro.com/welcomeonboard/L3dRdFduVmtGMDZIYTkvT1NMaE16SmNpbkRQQkFZT0dKWFUwWGJyMXl2NE1JdGZ4TUhobXJRWUIydXlhS1YvRHJBdTdYMWRHWTdpRHZmbFczRUpqQXROMnV3Tm5iYXVzQ25DbUFKWG1CNitrK2g1VjRXODEza0t5djRTcGhONllhWWluRVAxeXRuUUgwWDl3Mk1qRGVRPT0hdjE=?share_link_id=734363133602](https://miro.com/welcomeonboard/L3dRdFduVmtGMDZIYTkvT1NMaE16SmNpbkRQQkFZT0dKWFUwWGJyMXl2NE1JdGZ4TUhobXJRWUIydXlhS1YvRHJBdTdYMWRHWTdpRHZmbFczRUpqQXROMnV3Tm5iYXVzQ25DbUFKWG1CNitrK2g1VjRXODEza0t5djRTcGhONllhWWluRVAxeXRuUUgwWDl3Mk1qRGVRPT0hdjE=?share_link_id=734363133602)
-
-⦁	EventStorming Miro: [https://miro.com/app/board/uXjVJIOOJ5E=/](https://miro.com/app/board/uXjVJIOOJ5E=/).
-
-⦁	Figma Landing Page: [https:\www.figma.com\design\FRNZ8shiNR4qp3QbvECyw0\LandingPage?node-id=0-1&t=lrMdWwOK4vLaKGb7-1](https:\www.figma.com\design\FRNZ8shiNR4qp3QbvECyw0\LandingPage?node-id=0-1&t=lrMdWwOK4vLaKGb7-1)
-
-⦁	Figma Wireframes: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
-
-⦁	Link del Lean UX Canvas: [https://miro.com/app/board/uXjVJLxX2xg=/?share_link_id=737970760824](https://miro.com/app/board/uXjVJLxX2xg=/?share_link_id=737970760824)
-
-⦁	Needfinding Interviews: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/ESJ0SpDkAMBIp7F1FRM-3zYBa0b84g6SPKV2JWffqscDcg?e=IZbyLt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/ESJ0SpDkAMBIp7F1FRM-3zYBa0b84g6SPKV2JWffqscDcg?e=IZbyLt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
-
-⦁	Plantilla Lean UX Canvas:
+- Link del Lean UX Canvas: [https://tinyurl.com/3wwn2pbj](https://tinyurl.com/3wwn2pbj)
+- Needfinding Interviews: [https://tinyurl.com/mf2jbp4e](https://tinyurl.com/mf2jbp4e)
+- EventStorming Miro: [https://tinyurl.com/edptmddy](https://tinyurl.com/edptmddy)
+- Landing Page Wireframe y Mockup: [https://tinyurl.com/5fytvzfy](https://tinyurl.com/5fytvzfy)
+- App Wireframes: [https://tinyurl.com/4x8ta344](https://tinyurl.com/4x8ta344)
+- App Wireflow: [https://tinyurl.com/4x8ta344](https://tinyurl.com/4x8ta344)
+- Applications Mock-ups: [https://tinyurl.com/3zbsdnn5](https://tinyurl.com/3zbsdnn5)
+- Applications User Flow Diagrams: [https://tinyurl.com/bdx9zkwm](https://tinyurl.com/bdx9zkwm)
+- Applications Prototyping Web: [https://tinyurl.com/3ev7ym9s](https://tinyurl.com/3ev7ym9s)
+- Applications Prototyping Web Video: [https://tinyurl.com/4be4udph](https://tinyurl.com/4be4udph)
+- Applications Prototyping Mobile: [https://tinyurl.com/u65f6y83](https://tinyurl.com/u65f6y83)
+- Applications Prototyping Mobile Video: [https://tinyurl.com/4vhfa2jp](https://tinyurl.com/4vhfa2jp)
+- Link Despliegue Backend: [https://ergovision-backend.onrender.com/swagger-ui/index.html#](https://ergovision-backend.onrender.com/swagger-ui/index.html#)
+- Link Despliegue Frontend: [https://ergovision-webapp.onrender.com](https://ergovision-webapp.onrender.com)
+- Validation interviews: [https://tinyurl.com/3dyyfkfw](https://tinyurl.com/3dyyfkfw)
+- Video About-the-Product: [https://tinyurl.com/mvdc8scd](https://tinyurl.com/mvdc8scd)
+- Video About the Team: [https://tinyurl.com/3rmf4xfk](https://tinyurl.com/3rmf4xfk)
+-	Plantilla Lean UX Canvas:
 
 ![lean-canvas-template.webp](images/misc/lean-canvas-template.webp)
-
-⦁	Plantilla Bounded Context Canvas:
+-	Plantilla Bounded Context Canvas:
 ![bounded-context-canvas.jpg](images/misc/bounded-context-canvas.jpg)
-
-⦁	Plantilla As-Is y To-Be Scenario Mapping:
+-	Plantilla As-Is y To-Be Scenario Mapping:
 ![as-is-to-be-tamplate.jpg](images/misc/as-is-to-be-tamplate.jpg)
 
