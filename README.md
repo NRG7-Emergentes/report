@@ -140,13 +140,35 @@ Recapitulando los commits se dividieron de la siguiente manera:
 
 ![tb2-pulse.png](images/misc/tb2/tb2-pulse.png)
 
-Para esta entrega se desarollaron los cpaítulos del 6 al 7, en la captura adjuntada se evidencia del trabajo colaborativo de github. Todos los integrantes del grupo trabajaron en el proyecto.
+Para esta entrega se desarollaron los capítulos del 6 al 7, en la captura adjuntada se evidencia del trabajo colaborativo de github. Todos los integrantes del grupo trabajaron en el proyecto.
 
 - Juan Astonitas (NeoRise456): 2 commits
 - Gabriel Casas (Al3xiel): 4 commits
 - Gianluca Pasquale (cwassointt): 31 commits
 - Godofredo Quispe (GodofredoGT): 5 commits
 - Bárbara Espinoza (MesSobble): 18 commits
+
+**TF:**
+
+![tf-insight-2.png](images/misc/tf/tf-insight-2.png)
+
+![tf-insight-3.png](images/misc/tf/tf-insight-3.png)
+
+![tf-insight-4.png](images/misc/tf/tf-insight-4.png)
+
+![tf-insight-5.png](images/misc/tf/tf-insight-5.png)
+
+![tf-insight-6.png](images/misc/tf/tf-insight-6.png)
+
+![tf-insight-1.png](images/misc/tf/tf-insight-1.png)
+
+Para esta entrega se desarrollo los capítulo 7, en la captura adjuntada se evidencia del trabajo colaborativo de github. Todos los integrantes del grupo trabajaron en el proyecto.
+
+- Juan Astonitas (NeoRise456): 13 commits
+- Gabriel Casas (Al3xiel): 4 commits
+- Gianluca Pasquale (cwassointt): 1 commits
+- Godofredo Quispe (GodofredoGT): 1 commits
+- Bárbara Espinoza (MesSobble): 1 commits
 
 ## Contenido
 
