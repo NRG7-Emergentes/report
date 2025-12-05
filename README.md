@@ -424,6 +424,8 @@ del ABET – EAC - Student Outcome 3.
 
 #### 1.2.1 Antecedentes y problemática
 
+La problemática principal radica en la adopción prolongada e inconsciente de posturas incorrectas y la proximidad excesiva a la pantalla durante largas jornadas de trabajo o estudio frente al computador. Esta conducta, intensificada por el auge del teletrabajo y la falta de retroalimentación inmediata en entornos no ergonómicos, deriva en graves dolencias musculoesqueléticas, fatiga visual y una disminución significativa de la productividad, afectando silenciosamente la salud y el bienestar físico a largo plazo de los usuarios. Para identificar los matices de la problematica principal se utilizara la tecnica de las 5w y 2h para definir la situacion actual del problema.
+
 **What**
 
 - ¿Cuál es el problema?
