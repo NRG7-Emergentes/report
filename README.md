@@ -322,7 +322,7 @@ del ABET – EAC - Student Outcome 3.
         - <b>Pasquale Barrenechea Gianluca Santino:</b> <br><br>
         - <b>Godofredo Quispe Tipo:</b> <br><br>
         - <b>Gabriel Alexander Casas Sanchez:</b> <br><br>
-        - <b>Astonitas Díaz Juan Diego:</b> <br><br>
+        - <b>Astonitas Díaz Juan Diego: Para esta entrega comunique oralmente la problematica principal y la solucion propuesta ademas de nustro algoritmo de deteccion de mala postura.</b> <br><br>
        </td>
       <td>
         <b>TB1:</b> El equipo ha demostrado un nivel de desarrollo satisfactorio y homogéneo en esta competencia. Todos los miembros participaron activamente en las reuniones de Discord, comunicando ideas, avances y asignaciones de manera clara y efectiva. Se evidencia una comunicación colaborativa que facilitó la alineación del grupo y la revisión de la información. <br><br>
@@ -355,7 +355,7 @@ del ABET – EAC - Student Outcome 3.
         - <b>Pasquale Barrenechea Gianluca Santino:</b> <br><br>       
         - <b>Godofredo Quispe Tipo:</b>  <br><br>
         - <b>Gabriel Alexander Casas Sanchez:</b> <br><br>
-        - <b>Astonitas Díaz Juan Diego:</b> <br><br>
+        - <b>Astonitas Díaz Juan Diego: Para esta entrega comunique de forma escrita las actividades del ultimo sprint y la retros pectiva del sprint anterior.</b> <br><br>
       </td>
       <td>
         <b>TB1:</b> En conjunto, las contribuciones escritas fueron fundamentales para sentar una base documental sólida, guiar la toma de decisiones y cumplir efectivamente los objetivos del proyecto.<br><br>
