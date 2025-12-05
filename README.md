@@ -321,7 +321,7 @@ del ABET – EAC - Student Outcome 3.
         - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta última entrega comuniqué oralmente inconvenientes y avances para la elaboración de las pantallas que se me asignaron para desarrollar durante las reuniones grupales en discord, además, comunique activamente sobre la entrega de las tareas que se me asignaron semanalmente.<br><br>
         - <b>Pasquale Barrenechea Gianluca Santino:</b> Para esta última entrega planie la integración completa del sistema de WebSockets para las aplicaciones web y móvil, detallando su funcionamiento, el flujo de comunicación en tiempo real y la lógica de sincronización entre clientes. También expliqué el diseño e implementación del Bounded Context de Notificaciones y el proceso de autenticación requerido para establecer conexiones seguras mediante WebSocket. Durante las reuniones, comuniqué los desafíos técnicos encontrados y las decisiones adoptadas para garantizar estabilidad, escalabilidad y seguridad en la comunicación en tiempo real.<br><br>
         - <b>Godofredo Quispe Tipo:</b> <br><br>
-        - <b>Gabriel Alexander Casas Sanchez:</b> <br><br>
+        - <b>Gabriel Alexander Casas Sanchez:</b> Para esta entrega comunique de manera oral todo el proceso que llevaba la construción del manejo de perfiles (IAM) y como se realizó la elaboración de la aplicación móvil. A su vez en las reuniones grupales comunique todos los avances eincoveniente que se presentaron durante el desarrollo de esta última entrega<br><br>
         - <b>Astonitas Díaz Juan Diego: Para esta entrega comunique oralmente la problematica principal y la solucion propuesta ademas de nustro algoritmo de deteccion de mala postura.</b> <br><br>
        </td>
       <td>
@@ -354,7 +354,7 @@ del ABET – EAC - Student Outcome 3.
         - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta última  entrega realicé en el informe la documentación de la ejecución de las aplicaciones web y móvil y la documentación de los servicios<br><br>
         - <b>Pasquale Barrenechea Gianluca Santino:</b> Para esta entrega redacté la documentación completa de la integración de WebSockets, incluyendo el flujo de conexión, autenticación mediante tokens, manejo de eventos en tiempo real y la sincronización entre clientes web y móvil. Además, documenté el diseño y funcionamiento del Bounded Context de Notificaciones, describiendo la estructura del módulo, los endpoints involucrados, la lógica de emisión y recepción de mensajes y los casos de uso principales. Esta documentación permitió asegurar la comprensión del componente por parte de miembros de distintas áreas y facilitó la validación técnica final.<br><br>
         - <b>Godofredo Quispe Tipo:</b>  <br><br>
-        - <b>Gabriel Alexander Casas Sanchez:</b> <br><br>
+        - <b>Gabriel Alexander Casas Sanchez:</b> Para esta última entrega comunique de manera escrita como se desarrollo la aplicación móvil, además de manera activa comunique a mis compañeros los avances realizados para mantenerlos actualizados del ciclo de desarrollo del proyecto<br><br>
         - <b>Astonitas Díaz Juan Diego: Para esta entrega comunique de forma escrita las actividades del ultimo sprint y la retros pectiva del sprint anterior.</b> <br><br>
       </td>
       <td>
