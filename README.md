@@ -5902,8 +5902,16 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci�
 <img src="images/chapter-7/sprint-1/PulseMobileTB2.png" alt="PulseMobile">
 
 #### 7.2.2 Sprint 2
+
+Este segundo sprint se dedic처 a la consolidaci처n y perfeccionamiento integral del ecosistema ErgoVision. Se asegur처 la operatividad total y la correcta integraci처n entre la Landing Page, la Web Application, la Mobile App y el Backend. El equipo prioriz처 la depuraci처n de errores, la optimizaci처n del rendimiento y la mejora de la experiencia de usuario (UX), ejecutando pruebas rigurosas para certificar la estabilidad y fiabilidad del sistema de cara a su despliegue oficial.
+
 ##### 7.2.2.1 Sprint Planning 2
+
+
+
 ##### 7.2.2.2 Sprint Backlog 2
+
+
 ##### 7.2.2.3 Development Evidence for Sprint Review
 
 ##### 7.2.2.4 Testing Suite Evidence for Sprint Review
