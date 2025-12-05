@@ -5919,7 +5919,7 @@ Este segundo sprint se dedicó a la consolidación y perfeccionamiento integral 
 
 ##### 7.2.2.1 Sprint Planning 2
 
-
+    
 
 ##### 7.2.2.2 Sprint Backlog 2
 
