@@ -5920,6 +5920,43 @@ Aunque este sprint no incluyó automatización de pruebas para agilizar la entre
 
 ##### 7.2.2.5 Execution Evidence for Sprint Review
 
+En esta sección se presentarán capturas de las ultimas funcionalidades desarrolladas siendo ejecutadas y probadas con éxito de cada aplicación.
+
+**Aplicación Web**
+
+Ejecución del apartado de historial en la aplicación web.
+
+<img src="images/chapter-7/ExWeb1.png" alt="Excecution Web1"/>
+
+Ejecución del apartado de detalle de sesión en historial en la aplicación web.
+
+<img src="images/chapter-7/ExWeb2.png" alt="Excecution Web2"/>
+
+Ejecución del apartado de estadisticas de los monitoreos del usuario en la aplicación web.
+
+<img src="images/chapter-7/ExWeb3.png" alt="Excecution Web3"/>
+
+**Aplicación Web**
+
+Ejecución del apartado de historial en la aplicación móvil.
+
+<img src="images/chapter-7/ExMov1.png" alt="Excecution Mov1"/>
+
+Ejecución del apartado de detalle de sesión en historial en la aplicación móvil.
+
+<img src="images/chapter-7/ExMov2.png" alt="Excecution Mov2"/>
+
+Ejecución del apartado de estadisticas de los monitoreos del usuario en la aplicación móvil.
+
+<img src="images/chapter-7/ExMov3.png" alt="Excecution Mov3"/>
+
+**Servicios**
+
+Los servicios pueden ser visualizados y probados en swagger desde el navegador
+
+<img src="images/chapter-7/ExBack.png" alt="Excecution Backend"/>
+
+
 ##### 7.2.2.6 Services Documentation Evidence for Sprint Review
 
 En esta sección se presenta la documentación completa de los Servicios de ErgoVision desplegados, evidenciando la correcta implementación y estandarización de los endpoints. La documentación detalla las operaciones disponibles (GET, POST, PUT, DELETE, PATCH), sus parámetros requeridos, ejemplos de cuerpo de solicitud y respuesta, junto con enlaces a la documentación interactiva correspondiente. Esta información garantiza la trazabilidad, comprensión y correcta integración entre los distintos componentes del sistema, facilitando el consumo de los servicios por parte de aplicaciones cliente y otros sistemas externos.
