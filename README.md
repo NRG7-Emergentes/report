@@ -6796,21 +6796,11 @@ Link del video: <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u2021
 
 ## Conclusiones
 
-**TB1:**  
-El proyecto ErgoVision logró desarrollar una solución innovadora para prevenir problemas posturales en trabajadores y estudiantes remotos, integrando tecnologías de visión por computadora y un enfoque centrado en el usuario.
+El proyecto ErgoVision, desarrollado por la startup NRG7, ha logrado materializar con éxito una solución tecnológica integral orientada a mitigar los riesgos ergonómicos y físicos asociados al auge del teletrabajo y la educación remota. A través de la implementación de una arquitectura de software robusta basada en atributos de calidad y el uso de inteligencia artificial mediante visión computacional, se ha construido una plataforma multiplataforma capaz de monitorear la postura del usuario en tiempo real, validando la viabilidad técnica y comercial de utilizar herramientas accesibles (como una webcam estándar) para mejorar la salud y productividad del capital humano sin depender de hardware costoso.
 
-A través del Lean UX se identificaron problemas, supuestos e hipótesis, validando tempranamente las necesidades de los usuarios. El análisis competitivo, entrevistas y herramientas de needfinding aportaron información clave para definir personas, escenarios y tareas.
+La ejecución técnica del proyecto demostró la eficacia de aplicar un Diseño Guiado por el Dominio (DDD) y metodologías ágiles para estructurar un sistema complejo y escalable. La segmentación estratégica en Bounded Contexts —como Monitoreo, IAM, Orquestador y Estadísticas— permitió un desarrollo modular que integró exitosamente tecnologías heterogéneas como Google MediaPipe, Spring Boot, Angular y Flutter. Esta sinergia aseguró que procesos críticos, como la detección de landmarks corporales, la sincronización de alertas visuales y sonoras, y la persistencia de métricas de progreso, funcionaran de manera fluida y segura en un entorno de producción desplegado en la nube, cumpliendo con los estándares de rendimiento y seguridad establecidos.
 
-Posteriormente, se especificaron los requisitos mediante escenarios To-Be, historias de usuario, impact mapping y backlog, alineando funcionalidades con los objetivos del proyecto.
-
-Finalmente, con Attribute-Driven Design y Domain-Driven Design, se estructuró la arquitectura en bounded contexts, context mapping y diagramas de software, asegurando escalabilidad, calidad y mantenibilidad.
-
-**TP:**  
-Para la segunda entrega, se repartieron los bounded contexts y se definieron las capas de Dominio, Aplicación, Infraestructura e Interface, Se realizaron los diagramas de clases y bases de datos para cada uno y los Diagramas de Contexto generales. Ademas, se llevó a cabo la realización de la guia de estilo para nuestras aplicaciones, el diseño UX/UI de la Landing Page y los wireframes y Wireflows tanto de la aplicación web como móvil. 
-
-**TB2:**  
-Para esta tercera entrega, se realizó el diseño de interfaces en figma, tanto de web como de movil, tambien se realizaron los userflows y los prototipos de ambas aplicaciones. Ademas, se desarrollaron los servicios y las aplicaciones movil y web y se desplegaron. Finalmente se realizó la evaluación según heuristicas basandonos en las entrevistas de validación a estudiantes y trabajadores remotos. 
-
+Finalmente, las fases de validación y despliegue confirmaron que la propuesta de valor de ErgoVision satisface las necesidades reales de los segmentos objetivo, quienes destacaron la usabilidad de la interfaz y la utilidad de las pausas activas para la prevención de la fatiga. La implementación funcional de los aplicativos web y móvil, sumada a la retroalimentación positiva obtenida en las entrevistas, evidencia no solo el cumplimiento de los objetivos académicos y técnicos del curso, sino también el potencial del producto para evolucionar comercialmente como una herramienta indispensable para el bienestar digital, capaz de fomentar hábitos posturales saludables y sostenibles a largo plazo en entornos laborales y educativos.
 
 ## Video About the Team
 
