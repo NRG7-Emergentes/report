@@ -676,7 +676,7 @@ Validación continua con usuarios reales (profesionales, estudiantes) mediante p
 ##### 1.2.2.4 Lean UX Canvas
 <img src="images/chapter-1/Lean UX Canvas.png">
 
-Link del Lean UX Canvas: [Link Lean UX Canvas](https://miro.com/app/board/uXjVJLxX2xg=/?share_link_id=737970760824)
+Link del Lean UX Canvas: [https://tinyurl.com/3wwn2pbj](https://tinyurl.com/3wwn2pbj)
 ### 1.3 Segmentos objetivo
 ### Segmento Objetivo #1: Trabajadores Remotos
 Personas que trabajan desde casa o espacios de coworking, pasando muchas horas frente a la computadora. Suelen perder la noción del tiempo y descuidar la postura por la carga laboral o la concentración en sus tareas. Buscan una solución tecnológica **discreta y práctica** que les ayude a mantener una buena postura sin interrumpir su productividad.
@@ -932,7 +932,7 @@ A continuación, se presenta un análisis competitivo que examina a las principa
 
 #### 2.2.2 Registro de entrevistas
 
-En esta sección registramos los puntos e ideas más importantes de las entrevistas realizadas a los trabajadores y estudiantes remotos. Los detalles completos de las entrevistas, incluyendo las grabaciones, se encuentran disponibles en el siguiente enlace: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/ESJ0SpDkAMBIp7F1FRM-3zYBa0b84g6SPKV2JWffqscDcg?e=IZbyLt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/ESJ0SpDkAMBIp7F1FRM-3zYBa0b84g6SPKV2JWffqscDcg?e=IZbyLt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+En esta sección registramos los puntos e ideas más importantes de las entrevistas realizadas a los trabajadores y estudiantes remotos. Los detalles completos de las entrevistas, incluyendo las grabaciones, se encuentran disponibles en el siguiente enlace: [https://tinyurl.com/mf2jbp4e](https://tinyurl.com/mf2jbp4e)
 
 A continuación se presentan los detalles clave de las entrevistas realizadas a los trabajadores:
 
@@ -2463,7 +2463,7 @@ En esta etapa, se identificaron los eventos clave que representan las acciones s
     Durante esta etapa, se definen aggregates para cada contexto del sistema, asegurando que representen correctamente las transacciones y operaciones coherentes dentro del sistema.
     <img src="images/chapter-4/paso-9.png" alt="Aggregates">
 
-El enlace al Miro: [https://miro.com/app/board/uXjVJIOOJ5E=/](https://miro.com/app/board/uXjVJIOOJ5E=/).
+El enlace al Miro: [https://tinyurl.com/edptmddy](https://tinyurl.com/edptmddy).
 
 #### 4.2.2 Candidate Context Discovery
 
@@ -4843,7 +4843,7 @@ Para tener una primera idea de cómo lucirá nuetra landing page, se realizaron 
  **Wireframes Móvil**  
 <img src="images/chapter-6/LandingPageResponsiveWireframes.png" alt="LandingPageResponsiveWireframes">
 
-Link del Figma: [https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=0-1&t=tUt2TuwoHmFV3ka1-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
+Link del Figma: [https://tinyurl.com/5fytvzfy](https://tinyurl.com/5fytvzfy)
 
 #### 6.3.2 Landing Page Mock-up
 
@@ -4856,7 +4856,7 @@ Posterior a la versión final de los Wireframes, se realizaron los Mockups de la
  **Mockups Móvil**  
 <img src="images/chapter-6/LandingPageResponsiveMockups.png" alt="LandingPageResponsiveMockups">
 
-Link del Figma: [https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=0-1&t=tUt2TuwoHmFV3ka1-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
+Link del Figma: [https://tinyurl.com/5fytvzfy](https://tinyurl.com/5fytvzfy)
 
 ### 6.4 Applications UX/UI Design
 
@@ -4874,13 +4874,13 @@ Los wireframes de la aplicación móvil de ErgoVision muestran el flujo completo
 
 <img src="images/chapter-6/WireframesMovil.png" alt="Wireframes Movil">
 
-Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
+Link del Figma: [https://tinyurl.com/4x8ta344](https://tinyurl.com/4x8ta344)
 
 #### 6.4.2 Applications Wireflow Diagrams
 
 Los wireflow diagrams de ErgoVision representan la secuencia de interacciones y pantallas que los usuarios experimentarán al navegar por la aplicación.
 
-Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
+Link del Figma: [https://tinyurl.com/4x8ta344](https://tinyurl.com/4x8ta344)
 
 **Edición de Datos de Usuario:** Este wireflow corresponde a cuando un usuario quiere modificar sus datos personales luego de haberse registrado.
 
@@ -4951,7 +4951,7 @@ Los mockups de la aplicación móvil de ErgoVision muestran el flujo completo de
 
 <img src="images/chapter-6/AppMovilMockups.png" alt="ockups Movil">
 
-Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
+Link del Figma: [https://tinyurl.com/3zbsdnn5](https://tinyurl.com/3zbsdnn5)
 
 #### 6.4.4 Applications User Flow Diagrams
 
@@ -5094,25 +5094,27 @@ Link del Figma: [https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?
 
 **Descripción:** El user flow inicia cuando el usuario, ya sea desde el dashboard principal o desde la sección de configuración, identifica y presiona la opción 'Recalibrar'. Al acceder, el sistema despliega la interfaz de calibración que muestra instrucciones visuales claras y paso a paso. El proceso de calibración guía al usuario para que se posicione correctamente frente a la cámara a una distancia adecuada, asegurando que su rostro y torso superior sean visibles en el frame. El sistema muestra el esqueleto para ayudar al posicionamiento. Una vez que el usuario está en la posición correcta, el sistema detecta automáticamente los puntos clave del cuerpo (cabeza, hombros, columna) y ajusta los parámetros de detección según la configuración específica de la cámara del usuario, la distancia detectada, el ángulo de la cámara y las condiciones de iluminación del entorno. El sistema valida que la calibración sea exitosa, guardando automáticamente la configuración para futuras sesiones de monitoreo.
 
+Link del Figma: [https://tinyurl.com/bdx9zkwm](https://tinyurl.com/bdx9zkwm)
+
 ### 6.5 Applications Prototyping
 
 A continuación, se presentarán los prototipos y videos de los prototipos de las aplicaciones web y móvil en Figma.
 
 **Prototipo Web**
 
-- **Link Prototipo:** [https://www.figma.com/proto/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=211-1160&t=PeqxIuqcVqSFgEJf-1&scaling=min-zoom&content-scaling=fixed&page-id=96%3A814&starting-point-node-id=211%3A1160&show-proto-sidebar=1](https://www.figma.com/proto/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=211-1160&t=PeqxIuqcVqSFgEJf-1&scaling=min-zoom&content-scaling=fixed&page-id=96%3A814&starting-point-node-id=211%3A1160&show-proto-sidebar=1)
+- **Link Prototipo:** [https://tinyurl.com/3ev7ym9s](https://tinyurl.com/3ev7ym9s)
 
 <img src="images/chapter-6/PWimg.png" alt="Imagen Prototipo Web">
 
-- **Link del video del prototipo:** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u201911727_upc_edu_pe/IQD3koUBm_tqSbEUAIOJMWiEAb-4INdYOqkd5qoXekJ85tg?e=S4Nf6o](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201911727_upc_edu_pe/IQD3koUBm_tqSbEUAIOJMWiEAb-4INdYOqkd5qoXekJ85tg?e=S4Nf6o)
+- **Link del video del prototipo:** [https://tinyurl.com/4be4udph](https://tinyurl.com/4be4udph)
 
 **Prototipo Móvil**
 
-- **Link Prototipo:** [https://www.figma.com/proto/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=227-1160&t=9wwJYmCP4WYQHoz2-1&scaling=min-zoom&content-scaling=fixed&page-id=96%3A814&starting-point-node-id=227%3A1160&show-proto-sidebar=1](https://www.figma.com/proto/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=227-1160&t=9wwJYmCP4WYQHoz2-1&scaling=min-zoom&content-scaling=fixed&page-id=96%3A814&starting-point-node-id=227%3A1160&show-proto-sidebar=1)
+- **Link Prototipo:** [https://tinyurl.com/u65f6y83](https://tinyurl.com/u65f6y83)
 
 <img src="images/chapter-6/PMimg.png" alt="Imagen Prototipo Movil">
 
-- **Link del video del prototipo:** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u201911727_upc_edu_pe/IQCC2fs621o3Sb9vxi-Oj1fOAadHM91RhNfpzsU1Nch5fVs?e=vpGJr4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201911727_upc_edu_pe/IQCC2fs621o3Sb9vxi-Oj1fOAadHM91RhNfpzsU1Nch5fVs?e=vpGJr4)  
+- **Link del video del prototipo:** [https://tinyurl.com/4vhfa2jp](https://tinyurl.com/4vhfa2jp)  
 
 ## Capítulo VII: Product Implementation, Validation & Deployment
 
@@ -6446,7 +6448,7 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci�
     </tr>
     <tr>
       <td>Enlace a la entrevista</td>
-      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr</a>  </td>
+      <td> <a href="https://tinyurl.com/3dyyfkfw">https://tinyurl.com/3dyyfkfw</a>  </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -6506,7 +6508,7 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci�
     </tr>
     <tr>
       <td>Enlace a la entrevista</td>
-      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr</a>  </td>
+      <td> <a href="https://tinyurl.com/3dyyfkfw">https://tinyurl.com/3dyyfkfw</a>  </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -6554,7 +6556,7 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci�
     </tr>
     <tr>
       <td>Enlace a la entrevista</td>
-      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr</a> </td>
+      <td> <a href="https://tinyurl.com/3dyyfkfw">https://tinyurl.com/3dyyfkfw</a> </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -6603,7 +6605,7 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci�
     </tr>
     <tr>
       <td>Enlace a la entrevista</td>
-      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr</a> </td>
+      <td> <a href="https://tinyurl.com/3dyyfkfw">https://tinyurl.com/3dyyfkfw</a> </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -6644,7 +6646,7 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci�
     </tr>
     <tr>
       <td>Enlace a la entrevista</td>
-      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr</a> </td>
+      <td> <a href="https://tinyurl.com/3dyyfkfw">https://tinyurl.com/3dyyfkfw</a> </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -6685,7 +6687,7 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci�
     </tr>
     <tr>
       <td>Enlace a la entrevista</td>
-      <td> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120772_upc_edu_pe/IQDOGTcglF8UT5nWLYtRdFSYAXe2sNetr-e0XuXLL54QNsQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=leCxpr</a> </td>
+      <td> <a href="https://tinyurl.com/3dyyfkfw">https://tinyurl.com/3dyyfkfw</a> </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -6794,7 +6796,7 @@ El siguiente video muestra las características del producto, principalmente el 
 
 <img src="images/chapter-7/about-product.png" alt="about-product"/>
 
-Link del video: <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/IQDSKOs70jnNTaXlrTd7nOAMAfK5DsUR4jI27a3iMGoUnE4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=VUFHgM">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/IQDSKOs70jnNTaXlrTd7nOAMAfK5DsUR4jI27a3iMGoUnE4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=VUFHgM</a>
+Link del video: <a href="https://tinyurl.com/mvdc8scd">https://tinyurl.com/mvdc8scd</a>
 
 ## Conclusiones
 
@@ -6806,13 +6808,12 @@ Finalmente, las fases de validación y despliegue confirmaron que la propuesta d
 
 ## Video About the Team
 
-| **Sección**                          | **Descripción**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-|--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Resumen del Video**                | Este apartado describe la colaboración de los integrantes en el proyecto, especificando las contribuciones individuales y la consecución de los resultados esperados (outcomes).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| **Pauta de Secuencias de Contenido** | **00:00:00**: Introducción <br> **00:00:08**: Juan <br> **00:00:58**: Gabriel <br> **00:01:55**: Gianluca <br> **00:03:06**: Barbara <br> **00:03:29**: Godofredo <br> **00:05:17**: Juan <br>  **00:06:42**: Cierre y conclusiones                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| **Cuadro de Video Representativo**   | <img alt="Imagen de video" height="200" src="images/misc/team-img.png" width="300"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| **URL del Video**                    | **Microsoft Stream**: [Link de acceso](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/IQABTmP93aPYTL0lCXqiB0N3AQtikRSiZ-R8ySJVij1LHt4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=6eHf3Z) <br/> **Youtube**:[Link de acceso](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/IQABTmP93aPYTL0lCXqiB0N3AQtikRSiZ-R8ySJVij1LHt4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=6eHf3Z) |
-
+| **Sección**                          | **Descripción**                                                                                                                                                                                |
+|--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Resumen del Video**                | Este apartado describe la colaboración de los integrantes en el proyecto, especificando las contribuciones individuales y la consecución de los resultados esperados (outcomes).               |
+| **Pauta de Secuencias de Contenido** | **00:00:00**: Introducción <br> **00:00:02**: Juan <br> **00:00:51**: Gabriel <br> **00:02:11**: Gianluca <br> **00:04:23**: Barbara <br> **00:05:40**: Godofredo <br> **00:08:54**: Juan <br> |
+| **Cuadro de Video Representativo**   | <img alt="Imagen de video" height="200" src="images/misc/team-img.png" width="300"/>                                                                                                           |
+| **URL del Video**                    | **Microsoft Stream**: [https://tinyurl.com/3rmf4xfk](https://tinyurl.com/3rmf4xfk)                                                                                                             |
 ## Bibliografía
 
 Asencios Román, E. A., Carreño Loza, F. A., Chilon Cruz, L., & Jiménez Toro, K. (2021). Frecuencia de dolor músculo-esquelético en personas que realizan teletrabajo en Lima entre los meses de abril a agosto del 2020. Universidad Peruana Cayetano Heredia. [https://repositorio.upch.edu.pe/handle/20.500.12866/9434](https://repositorio.upch.edu.pe/handle/20.500.12866/9434)
@@ -6827,25 +6828,27 @@ Evans, E. (2003). Domain-Driven design: Tackling Complexity in the Heart of Soft
 
 ## Anexos
 
-⦁	As-Is and To-Be Scenario Mapping Miro: [https://miro.com/welcomeonboard/L3dRdFduVmtGMDZIYTkvT1NMaE16SmNpbkRQQkFZT0dKWFUwWGJyMXl2NE1JdGZ4TUhobXJRWUIydXlhS1YvRHJBdTdYMWRHWTdpRHZmbFczRUpqQXROMnV3Tm5iYXVzQ25DbUFKWG1CNitrK2g1VjRXODEza0t5djRTcGhONllhWWluRVAxeXRuUUgwWDl3Mk1qRGVRPT0hdjE=?share_link_id=734363133602](https://miro.com/welcomeonboard/L3dRdFduVmtGMDZIYTkvT1NMaE16SmNpbkRQQkFZT0dKWFUwWGJyMXl2NE1JdGZ4TUhobXJRWUIydXlhS1YvRHJBdTdYMWRHWTdpRHZmbFczRUpqQXROMnV3Tm5iYXVzQ25DbUFKWG1CNitrK2g1VjRXODEza0t5djRTcGhONllhWWluRVAxeXRuUUgwWDl3Mk1qRGVRPT0hdjE=?share_link_id=734363133602)
-
-⦁	EventStorming Miro: [https://miro.com/app/board/uXjVJIOOJ5E=/](https://miro.com/app/board/uXjVJIOOJ5E=/).
-
-⦁	Figma Landing Page:[https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=36-22&t=JgpkzDsN9FkcFh1y-1](https://www.figma.com/design/FRNZ8shiNR4qp3QbvECyw0/LandingPage?node-id=36-22&t=JgpkzDsN9FkcFh1y-1)
-
-⦁	Figma Wireframes:[https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1](https://www.figma.com/design/fhUt25HP4MGhLEtHliG1hy/ErgoVision?node-id=0-1&t=bFgnvM760zhmxcYL-1)
-
-⦁	Link del Lean UX Canvas: [https://miro.com/app/board/uXjVJLxX2xg=/?share_link_id=737970760824](https://miro.com/app/board/uXjVJLxX2xg=/?share_link_id=737970760824)
-
-⦁	Needfinding Interviews[https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/ESJ0SpDkAMBIp7F1FRM-3zYBa0b84g6SPKV2JWffqscDcg?e=IZbyLt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110237_upc_edu_pe/ESJ0SpDkAMBIp7F1FRM-3zYBa0b84g6SPKV2JWffqscDcg?e=IZbyLt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
-
-⦁	Plantilla Lean UX Canvas:
-
+- Link del Lean UX Canvas: [https://tinyurl.com/3wwn2pbj](https://tinyurl.com/3wwn2pbj)
+- Needfinding Interviews: [https://tinyurl.com/mf2jbp4e](https://tinyurl.com/mf2jbp4e)
+- EventStorming Miro: [https://tinyurl.com/edptmddy](https://tinyurl.com/edptmddy)
+- Landing Page Wireframe y Mockup: [https://tinyurl.com/5fytvzfy](https://tinyurl.com/5fytvzfy)
+- App Wireframes: [https://tinyurl.com/4x8ta344](https://tinyurl.com/4x8ta344)
+- App Wireflow: [https://tinyurl.com/4x8ta344](https://tinyurl.com/4x8ta344)
+- Applications Mock-ups: [https://tinyurl.com/3zbsdnn5](https://tinyurl.com/3zbsdnn5)
+- Applications User Flow Diagrams: [https://tinyurl.com/bdx9zkwm](https://tinyurl.com/bdx9zkwm)
+- Applications Prototyping Web: [https://tinyurl.com/3ev7ym9s](https://tinyurl.com/3ev7ym9s)
+- Applications Prototyping Web Video: [https://tinyurl.com/4be4udph](https://tinyurl.com/4be4udph)
+- Applications Prototyping Mobile: [https://tinyurl.com/u65f6y83](https://tinyurl.com/u65f6y83)
+- Applications Prototyping Mobile Video: [https://tinyurl.com/4vhfa2jp](https://tinyurl.com/4vhfa2jp)
+- Link Despliegue Backend: [https://ergovision-backend.onrender.com/swagger-ui/index.html#](https://ergovision-backend.onrender.com/swagger-ui/index.html#)
+- Link Despliegue Frontend: [https://ergovision-webapp.onrender.com](https://ergovision-webapp.onrender.com)
+- Validation interviews: [https://tinyurl.com/3dyyfkfw](https://tinyurl.com/3dyyfkfw)
+- Video About-the-Product: [https://tinyurl.com/mvdc8scd](https://tinyurl.com/mvdc8scd)
+- Video About the Team: [https://tinyurl.com/3rmf4xfk](https://tinyurl.com/3rmf4xfk)
+-	Plantilla Lean UX Canvas:
 ![lean-canvas-template.webp](images/misc/lean-canvas-template.webp)
-
-⦁	Plantilla Bounded Context Canvas:
+-	Plantilla Bounded Context Canvas:
 ![bounded-context-canvas.jpg](images/misc/bounded-context-canvas.jpg)
-
-⦁	Plantilla As-Is y To-Be Scenario Mapping:
+-	Plantilla As-Is y To-Be Scenario Mapping:
 ![as-is-to-be-tamplate.jpg](images/misc/as-is-to-be-tamplate.jpg)
 
