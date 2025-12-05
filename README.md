@@ -272,6 +272,7 @@ Recapitulando los commits se dividieron de la siguiente manera:
     - [7.3.3 Evaluaciones según heurísticas](#733-evaluaciones-según-heurísticas)
   - [7.4 Video About-the-Product](#74-video-about-the-product)
 - [Conclusiones](#conclusiones)
+- [Video About the Team](#video-about-the-team)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
 
