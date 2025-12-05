@@ -6107,6 +6107,105 @@ La sección Sprint Backlog presenta la planificación detallada del trabajo a re
 
 ##### 7.2.2.3 Development Evidence for Sprint Review
 
+En esta sección se presentan los avances alcanzados durante el Sprint en la implementación de los productos del proyecto, incluyendo la Landing Page, la Web Application, los Web Services y la Mobile Application. Se resumen los progresos técnicos más relevantes y se evidencia la evolución del desarrollo mediante una tabla que detalla los commits realizados en cada repositorio, asegurando la trazabilidad y el seguimiento del trabajo ejecutado por el equipo.
+
+**Web Application**
+
+| Repository        | Branch  | Commit Id | Commit Message                                                                                          | Commit Message Body                                                                                     | Date       |
+|-------------------|---------|-----------|---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|------------|
+| ergovision-webapp | develop | efe6694   | feat(monitoring): implement monitoring session tracking and data persistence                            | feat(monitoring): implement monitoring session tracking and data persistence.                           | 24/11/2025 |
+| ergovision-webapp | develop | b88b9b1   | feat: add history                                                                                       | feat: add history                                                                                       | 25/11/2025 |
+| ergovision-webapp | develop | 83e5df5   | feat(websocket): enhance notification handling with userId filtering and connection state management    | feat(websocket): enhance notification handling with userId filtering and connection state management    | 26/11/2025 |
+| ergovision-webapp | develop | 02160f3   | feat(websocket): refactor notification service to simplify connection logic and improve userId handling | feat(websocket): refactor notification service to simplify connection logic and improve userId handling | 26/11/2025 |
+| ergovision-webapp | develop | 0454955   | chore: fix package-lock.json                                                                            | chore: fix package-lock.json                                                                            | 26/11/2025 |
+| ergovision-webapp | develop | Id25262   | fix(settings): correct alert settings endpoint URLs                                                     | fix(settings): correct alert settings endpoint URLs                                                     | 26/11/2025 |
+| ergovision-webapp | develop | 477421a   | fix(settings): rename alertInterval to pauseInterval in alert settings                                  | fix(settings): rename alertInterval to pauseInterval in alert settings                                  | 26/11/2025 |
+| ergovision-webapp | develop | OOd3149   | feat(settings): refactor settings page template and rename alertInterval to pauseInterval               | feat(settings): refactor settings page template and rename alertInterval to pauseInterval               | 26/11/2025 |
+| ergovision-webapp | develop | 03efb8e   | feat(settings): add notification settings interfaces for email notifications                            | feat(settings): add notification settings interfaces for email notifications                            | 26/11/2025 |
+| ergovision-webapp | develop | 0954998   | feat(settings): add notification settings methods to orchestrator service                               | feat(settings): add notification settings methods to orchestrator service                               | 26/11/2025 |
+| ergovision-webapp | develop | 5165ea2   | feat(settings): add email notification settings to settings page                                        | feat(settings): add email notification settings to settings page                                        | 26/11/2025 |
+| ergovision-webapp | develop | 255dc26   | feat(calibration): add interfaces for calibration details management                                    | feat(calibration): add interfaces for calibration details management                                    | 29/11/2025 |
+| ergovision-webapp | develop | 8468cd1   | feat(calibration): add methods for retrieving and updating user calibration details                     | feat(calibration): add methods for retrieving and updating user calibration details                     | 29/11/2025 |
+| ergovision-webapp | develop | f2e3a78   | feat(calibration): add methods for retrieving and updating user calibration details                     | feat(calibration): add methods for retrieving and updating user calibration details                     | 29/11/2025 |
+| ergovision-webapp | develop | 8f8ced5   | feat(calibration): implement user calibration details retrieval and scoring                             | feat(calibration): implement user calibration details retrieval and scoring                             | 29/11/2025 |
+| ergovision-webapp | develop | 5e66596   | feat(monitoring): implement monitoring session tracking and data persistence                            | feat(monitoring): implement monitoring session tracking and data persistence                            | 30/11/2025 |
+| ergovision-webapp | develop | a91584a   | feat(authentication): enhance auto sign-in to restore user data from localStorage                       | feat(authentication): enhance auto sign-in to restore user data from localStorage                       | 30/11/2025 |
+| ergovision-webapp | develop | 804b5fe   | feat(settings): update label for posture sensitivity to nose offset sensitivity                         | feat(settings): update label for posture sensitivity to nose offset sensitivity                         | 30/11/2025 |
+| ergovision-webapp | develop | 8408b47   | feat(settings): update label for posture sensitivity to nose offset sensitivity                         | feat(settings): update label for posture sensitivity to nose offset sensitivity                         | 30/11/2025 |
+| ergovision-webapp | develop | d3f5c2e   | feat: add DailyProgress entity class                                                                    | feat: add DailyProgress entity class                                                                    | 01/12/2025 |
+| ergovision-webapp | develop | fbe3a29   | feat: add MonthlyProgress entity class                                                                  | feat: add MonthlyProgress entity class                                                                  | 01/12/2025 |
+| ergovision-webapp | develop | 22e90c8   | feat: add Statistics entity class                                                                       | feat: add Statistics entity class                                                                       | 01/12/2025 |
+| ergovision-webapp | develop | b8d135b   | feat: add integrate statistics data loading in stats page                                               | feat: add integrate statistics data loading in stats page                                               | 01/12/2025 |
+| ergovision-webapp | develop | 8de7015   | feat: add StatsService for statistics API integration                                                   | feat: add StatsService for statistics API integration                                                   | 01/12/2025 |
+| ergovision-webapp | develop | 5859cb7   | feat: add enhance dashboard components with live data and stats                                         | feat: add enhance dashboard components with live data and stats                                         | 01/12/2025 |
+| ergovision-webapp | develop | 25e5dbO   | feat(stats-summary): simplify layout by reducing grid columns and removing unused component             | feat(stats-summary): simplify layout by reducing grid columns and removing unused component             | 01/12/2025 |
+| ergovision-webapp | develop | O1bbab4   | feat(monitoring-active): disable state toast notification display                                       | feat(monitoring-active): disable state toast notification display                                       | 02/12/2025 |
+
+**Backend**
+
+| Repository         | Branch  | Commit Id | Commit Message                                                                                                   | Commit Message Body                                                                                              | Date       |
+|--------------------|---------|-----------|------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|------------|
+| ergovision-backend | develop | 013a622   | feat: change date fields from Instant to Date in monitoring session commands and resources                       | feat: change date fields from Instant to Date in monitoring session commands and resources                       | 24/11/2025 |
+| ergovision-backend | develop | cfbd05c   | feat: add monitoring by user id                                                                                  | feat: add monitoring by user id                                                                                  | 25/11/2025 |
+| ergovision-backend | develop | 389f1de   | chore: update database connection settings for Ergovision                                                        | chore: update database connection settings for Ergovision                                                        | 26/11/2025 |
+| ergovision-backend | develop | f303b36   | feat: add NotificationSetting entity for user notification preferences                                           | feat: add NotificationSetting entity for user notification preferences                                           | 26/11/2025 |
+| ergovision-backend | develop | 097c95b   | feat(settings): add queries for retrieving notification settings by ID and user ID                               | feat(settings): add queries for retrieving notification settings by ID and user ID                               | 26/11/2025 |
+| ergovision-backend | develop | 499f286   | feat(settings): add commands for creating, updating, and deleting notification settings                          | feat(settings): add commands for creating, updating, and deleting notification settings                          | 26/11/2025 |
+| ergovision-backend | develop | c435ceb   | feat(settings): add NotificationSettingRepository for database interactions                                      | feat(settings): add NotificationSettingRepository for database interactions                                      | 26/11/2025 |
+| ergovision-backend | develop | 137504f   | feat(settings): add command and query services for notification settings                                         | feat(settings): add command and query services for notification settings                                         | 26/11/2025 |
+| ergovision-backend | develop | 975e551   | feat(settings): implement command and query services for notification settings                                   | feat(settings): implement command and query services for notification settings                                   | 26/11/2025 |
+| ergovision-backend | develop | d5ee50d   | feat(settings): add notification settings creation on user registration                                          | feat(settings): add notification settings creation on user registration                                          | 26/11/2025 |
+| ergovision-backend | develop | 9daaad3   | feat(settings): add resource classes for creating and updating notification settings                             | feat(settings): add resource classes for creating and updating notification settings                             | 26/11/2025 |
+| ergovision-backend | develop | 34dOf5c   | feat(settings): add assemblers for creating and updating notification settings commands and resources            | feat(settings): add assemblers for creating and updating notification settings commands and resources            | 26/11/2025 |
+| ergovision-backend | develop | 665b928   | feat(settings): implement NotificationSettingController for managing notification settings                       | feat(settings): implement NotificationSettingController for managing notification settings                       | 26/11/2025 |
+| ergovision-backend | develop | 155c158   | feat(calibration): add CalibrationDetails entity for managing calibration data                                   | feat(calibration): add CalibrationDetails entity for managing calibration data                                   | 29/11/2025 |
+| ergovision-backend | develop | 2ead772   | feat(calibration): add CalibrationDetails repository.                                                            | feat(calibration): add CalibrationDetails repository.                                                            | 29/11/2025 |
+| ergovision-backend | develop | ffd6e35   | feat(calibration): add commands for creating, updating, and deleting calibration details                         | feat(calibration): add commands for creating, updating, and deleting calibration details                         | 29/11/2025 |
+| ergovision-backend | develop | f8ea5ff   | feat(calibration): add queries for retrieving calibration details by ID and user                                 | feat(calibration): add queries for retrieving calibration details by ID and user                                 | 29/11/2025 |
+| ergovision-backend | develop | e40f236   | feat(calibration): add CalibrationDetailsCommandService interface for command handling                           | feat(calibration): add CalibrationDetailsCommandService interface for command handling                           | 29/11/2025 |
+| ergovision-backend | develop | 9e9fdd7   | feat(calibration): add CalibrationDetailsQueryService interface for querying calibration details                 | feat(calibration): add CalibrationDetailsQueryService interface for querying calibration details                 | 29/11/2025 |
+| ergovision-backend | develop | 4273aaO   | feat(calibration): implement CalibrationDetailsCommandService for handling create, update, and delete operations | feat(calibration): implement CalibrationDetailsCommandService for handling create, update, and delete operations | 29/11/2025 |
+| ergovision-backend | develop | 2b8aa06   | feat(calibration): implement CalibrationDetailsQueryService for retrieving calibration details by user ID and ID | feat(calibration): implement CalibrationDetailsQueryService for retrieving calibration details by user ID and ID | 29/11/2025 |
+| ergovision-backend | develop | 8a2d8a3   | feat(settings): add default calibration details creation on user creation event                                  | feat(settings): add default calibration details creation on user creation event                                  | 29/11/2025 |
+| ergovision-backend | develop | 15e9512   | feat(calibration): add resource classes for creating and updating calibration details                            | feat(calibration): add resource classes for creating and updating calibration details                            | 29/11/2025 |
+| ergovision-backend | develop | a69187f   | feat(calibration): add assemblers for creating and updating calibration details settings commands and resources  | feat(calibration): add assemblers for creating and updating calibration details settings commands and resources  | 29/11/2025 |
+| ergovision-backend | develop | 816e716   | feat(calibration): implement CalibrationDetailsController for managing calibration details                       | feat(calibration): implement CalibrationDetailsController for managing calibration details                       | 29/11/2025 |
+| ergovision-backend | develop | 31f3199   | feat: add statistics domain, services, and REST controllers                                                      | feat: add statistics domain, services, and REST controllers                                                      | 29/11/2025 |
+| ergovision-backend | develop | 591ef8f   | feat: add query and endpoint for statistics by user ID                                                           | feat: add query and endpoint for statistics by user ID                                                           | 29/11/2025 |
+| ergovision-backend | develop | da108c7   | feat: add userId to MonitoringSession and related queries                                                        | feat: add userId to MonitoringSession and related queries                                                        | 29/11/2025 |
+| ergovision-backend | develop | fca7507   | feat: refactor getByUserId to return single resource                                                             | feat: refactor getByUserId to return single resource                                                             | 29/11/2025 |
+| ergovision-backend | develop | 283253C   | feat: change date fields from Instant to Date in monitoring session commands and resources                       | feat: change date fields from Instant to Date in monitoring session commands and resources                       | 30/11/2025 |
+
+**Mobile Application**
+
+| Repository        | Branch  | Commit Id | Commit Message                                                                                        | Commit Message Body                                                                                   | Date       |
+|-------------------|---------|-----------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|------------|
+| ergovision-mobile | develop | f410855   | feat(user): add User model with JSON serialization                                                    | feat(user): add User model with JSON serialization                                                    | 30/11/2025 |
+| ergovision-mobile | develop | ee43a24   | feat(api): implement ApiClient for HTTP requests with token management                                | feat(api): implement ApiClient for HTTP requests with token management                                | 30/11/2025 |
+| ergovision-mobile | develop | fc065e9   | feat(auth): refactor AuthService to use ApiClient for sign-in and sign-up requests                    | feat(auth): refactor AuthService to use ApiClient for sign-in and sign-up requests                    | 30/11/2025 |
+| ergovision-mobile | develop | aaOc029   | feat(user): add UserService for fetching user profile data                                            | feat(user): add UserService for fetching user profile data                                            | 30/11/2025 |
+| ergovision-mobile | develop | 970fa41   | feat(user): add UserEvent and UserState classes for user profile management                           | feat(user): add UserEvent and UserState classes for user profile management                           | 30/11/2025 |
+| ergovision-mobile | develop | 5dbe3c5   | feat(user): implement UserBloc for managing user profile state                                        | feat(user): implement UserBloc for managing user profile state                                        | 30/11/2025 |
+| ergovision-mobile | develop | 82e640a   | feat(auth): add AuthEvent and AuthState classes for authentication management                         | feat(auth): add AuthEvent and AuthState classes for authentication management                         | 30/11/2025 |
+| ergovision-mobile | develop | 86ec3cc   | feat(auth): implement AuthBloc for managing authentication events and states                          | feat(auth): implement AuthBloc for managing authentication events and states                          | 30/11/2025 |
+| ergovision-mobile | develop | 4658ef6   | feat(app): integrate AuthBloc and UserService into the main application                               | feat(app): integrate AuthBloc and UserService into the main application                               | 30/11/2025 |
+| ergovision-mobile | develop | ebe75c1   | feat(dashboard): replace AuthService with ApiClient for token retrieval                               | feat(dashboard): replace AuthService with ApiClient for token retrieval                               | 30/11/2025 |
+| ergovision-mobile | develop | 03d336b   | feat(websocket): enhance notification listener with userId filtering and singleton usage in dashboard | feat(websocket): enhance notification listener with userId filtering and singleton usage in dashboard | 30/11/2025 |
+| ergovision-mobile | develop | 14ae174   | feat(websocket): refactor notification listener integration and active pause handling                 | feat(websocket): refactor notification listener integration and active pause handling                 | 30/11/2025 |
+| ergovision-mobile | develop | 5fd7c4f   | feat(sign-in): add user profile retrieval after successful sign-in                                    | feat(sign-in): add user profile retrieval after successful sign-in                                    | 30/11/2025 |
+| ergovision-mobile | develop | fad576f   | feat(websocket): add validation for notification with user id.                                        | feat(websocket): add validation for notification with user id.                                        | 30/11/2025 |
+| ergovision-mobile | develop | bfe8f53   | feat(notification): enhance live notification widget with pause tracking and improved UI              | feat(notification): enhance live notification widget with pause tracking and improved UI              | 30/11/2025 |
+| ergovision-mobile | develop | 021e962   | feat(profile): integrate UserBloc for profile management and update functionality                     | feat(profile): integrate UserBloc for profile management and update functionality                     | 30/11/2025 |
+| ergovision-mobile | develop | 267e1a1   | feat: add historial                                                                                   | feat: add historial                                                                                   | 01/12/2025 |
+| ergovision-mobile | develop | fee87af   | feat(history): implement history navigation and session management                                    | feat(history): implement history navigation and session management                                    | 01/12/2025 |
+| ergovision-mobile | develop | b74753b   | feat(dashboard): remove unused UI elements from dashboard and session card                            | feat(dashboard): remove unused UI elements from dashboard and session card                            | 01/12/2025 |
+| ergovision-mobile | develop | d9486f1   | feat: add statistics BLoC and integrate with dashboard                                                | feat: add statistics BLoC and integrate with dashboard                                                | 02/12/2025 |
+| ergovision-mobile | develop | ff7dcf6   | feat: add integrate StatisticsBloc into dashboard and home views                                      | feat: add integrate StatisticsBloc into dashboard and home views                                      | 02/12/2025 |
+| ergovision-mobile | develop | 29c3255   | feat(notification): enhance WebSocket connection handling and add reconnect logic                     | feat(notification): enhance WebSocket connection handling and add reconnect logic                     | 02/12/2025 |
+| ergovision-mobile | develop | 465deb5   | feat(notification): enhance WebSocket connection handling and add reconnect logic                     | feat(notification): enhance WebSocket connection handling and add reconnect logic                     | 02/12/2025 |
+| ergovision-mobile | develop | 6fee465   | feat(notification): improve notification handling with debug logging and immediate state updates      | feat(notification): improve notification handling with debug logging and immediate state updates      | 02/12/2025 |
+
+
 ##### 7.2.2.4 Testing Suite Evidence for Sprint Review
 
 Aunque este sprint no incluyó automatización de pruebas para agilizar la entrega de funciones clave, reconocemos la necesidad de una suite de pruebas sólida. En los próximos sprints, implementaremos validaciones integrales (unitarias y funcionales) para certificar el correcto funcionamiento de los servicios y mantener altos estándares de calidad.
@@ -6216,7 +6315,92 @@ En esta sección se presenta la documentación completa de los Servicios de Ergo
 
 ##### 7.2.2.7 Software Deployment Evidence for Sprint Review
 
+
+A continuación se presentan las evidencias de despliegue de los tres componentes principales del sistema: la aplicación web, el backend y la aplicación móvil. Estas capturas demuestran que cada componente ha sido correctamente desplegado en sus respectivos entornos, asegurando su disponibilidad y funcionalidad para los usuarios finales.
+
+**Backend:**
+
+Para desplegar la aplicación primero se necesita de una base de datos desplegada, para este caso usamos una base de datos desplegada en render:
+
+<img src="images/chapter-7/sprint-1/deployed-db-1.png" alt="Deployment DB"/>
+
+<img src="images/chapter-7/sprint-1/deployed-db-2.png" alt="Deployment DB"/>
+
+<img src="images/chapter-7/sprint-1/deployed-db-3.png" alt="Deployment DB"/>
+
+Una vez se tiene la base de datos desplegada, se procede a desplegar el backend en render:
+
+<img src="images/chapter-7/sprint-1/deployed-backend-1.png" alt="Deployment Backend"/>
+
+<img src="images/chapter-7/sprint-1/deployed-backend-2.png" alt="Deployment Backend"/>
+
+<img src="images/chapter-7/sprint-1/deployed-backend-3.png" alt="Deployment Backend"/>
+
+Enlace: [https://ergovision-backend.onrender.com/swagger-ui/index.html#](https://ergovision-backend.onrender.com/swagger-ui/index.html#)
+
+**Aplicación Web:**
+
+Para desplegar la aplicación web se utilizo render:
+
+<img src="images/chapter-7/sprint-1/deployed-webapp-1.png" alt="Deployment Webapp"/>
+
+<img src="images/chapter-7/sprint-1/deployed-webapp-2.png" alt="Deployment Webapp"/>
+
+Enlace: [https://ergovision-webapp.onrender.com](https://ergovision-webapp.onrender.com)
+
+**Aplicación Móvil:**
+
+Para desplegar la aplicación Móvil primero debe de crearse el proyecto relacionado en Firebase
+
+<img src="images/chapter-7/sprint-1/deployed-mobile-1.png" alt="Deployment Mobile"/>
+
+<img src="images/chapter-7/sprint-1/deployed-mobile-2.png" alt="Deployment Mobile"/>
+
+Una vez creado el proyecto es necesario instalar la consola de Firebase para realizar el despliegue:
+
+<img src="images/chapter-7/sprint-1/deployed-mobile-3.png" alt="Deployment Mobile"/>
+
+<img src="images/chapter-7/sprint-1/deployed-mobile-4.png" alt="Deployment Mobile"/>
+
+Dentro del proyecto se debera agregar la dependencia `firebase_core` en el archivo `pubspec.yaml` y utilizar el comando `$ flutterfire configure`
+
+<img src="images/chapter-7/sprint-1/deployed-mobile-5.png" alt="Deployment Mobile"/>
+
+Luego se debe inicializar firebase en la aplicación flutter
+
+<img src="images/chapter-7/DepMovil1.png" alt="Deployment Mobile 1"/>
+
+Finalmente crear una build del proyecto y subirla a Firebase App Distribution
+
+<img src="images/chapter-7/DepMovil2.png" alt="Deployment Mobile 2"/>
+
+<img src="images/chapter-7/DepMovil3.png" alt="Deployment Mobile 3"/>
+
+Enlace: [https://appdistribution.firebase.google.com/mobilerequired](https://appdistribution.firebase.google.com/mobilerequired)
+
+
+
 ##### 7.2.2.8 Team Collaboration Insights during Sprint
+
+Evidencia de los commits por cada repositorio donde se evidencia la participación de todos los integrantes del equipo en el desarrollo de las aplicaciones y servicios:
+
+- **Commits Backend**
+
+<img src="images/chapter-7/sprint-2/CommitsBackendTF.png" alt="CommitsBackend">
+
+<img src="images/chapter-7/sprint-2/PulseBackendTF.png" alt="PulseBackend">
+
+- **Commits Web Frontend**
+
+<img src="images/chapter-7/sprint-2/CommitsWebTF.png" alt="CommitsWeb">
+
+<img src="images/chapter-7/sprint-2/PulseWebTF.png" alt="PulseWeb">
+
+- **Commits Mobile Frontend**
+
+<img src="images/chapter-7/sprint-2/CommitsMobileTF.png" alt="CommitsMobile">
+
+<img src="images/chapter-7/sprint-2/PulseMobileTF.png" alt="PulseMobile">
 
 
 ### 7.3 Validation Interviews
