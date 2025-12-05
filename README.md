@@ -1,37 +1,4 @@
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" width="150" alt="UPC Logo">
 
-# Universidad Peruana de Ciencias Aplicadas
-
-### **CURSO:** Arquitecturas De Software Emergentes
-
-### **Código de curso**: 1ASI0728
-
-### **NRC**: 7291
-
-### **Profesor:** Royer Edelwer Rojas Malasquez
-
-### **Ingeniería de software**
-
-
-## Informe del Trabajo Parcial
-
-
-### **Nombre del startup:** NRG7
-
-### **Nombre del producto:** ErgoVision
-
-## **Integrantes**
-
-| **Nombre**                                | **Codigo** |
-| ----------------------------------------- | ---------- |
-| **Astonitas Díaz Juan Diego**             | U202110237 |
-| **Casas Sanchez Gabriel Alexander**       | U202220033 |
-| **Espinoza Delgado Bárbara Antonella**    | U201911727 |
-| **Godofredo Quispe Tipo**                 | u202120772 |
-| **Pasquale Barrenechea Gianluca Santino** | U202112078 |
-
-
-**Octubre 2025**
 
 
 ## Registro de Versiones del Informe
@@ -101,15 +68,17 @@
 
 El enlace a github del reporte del proyecto es el siguiente: [https://github.com/NRG7-Emergentes/report](https://github.com/NRG7-Emergentes/report).
 
-![tb1-pulse.png](images/misc/tb1-pulse.png)
+**TB1:**
 
-![tb1-contributors-1.png](images/misc/tb1-contributors-1.png)
+![tb1-pulse.png](images/misc/tb1/tb1-pulse.png)
 
-![tb1-contributors-2.png](images/misc/tb1-contributors-2.png)
+![tb1-contributors-1.png](images/misc/tb1/tb1-contributors-1.png)
 
-![tb1-network-1.png](images/misc/tb1-network-1.png)
+![tb1-contributors-2.png](images/misc/tb1/tb1-contributors-2.png)
 
-![tb1-network-2.png](images/misc/tb1-network-2.png)
+![tb1-network-1.png](images/misc/tb1/tb1-network-1.png)
+
+![tb1-network-2.png](images/misc/tb1/tb1-network-2.png)
 
 Para esta primera entrega se desarollaron los cpaítulos del 1 al 4, en la captura adjuntada se evidencia del trabajo colaborativo de github. Todos los integrantes del grupo trabajaron en el proyecto.
 
@@ -120,6 +89,52 @@ Recapitulando los commits se dividieron de la siguiente manera:
 - Gianluca Pasquale (cwassointt): 6 commits
 - Godofredo Quispe (GodofredoGT): 6 commits
 - Bárbara Espinoza (MesSobble): 11 commits
+
+**TP:**
+
+![tp-insight-1.png](images/misc/tp/tp-insight-1.png)
+
+![tp-insight-2.png](images/misc/tp/tp-insight-2.png)
+
+![tp-insight-3.png](images/misc/tp/tp-insight-3.png)
+
+![tp-insight-4.png](images/misc/tp/tp-insight-4.png)
+
+![tp-insight-5.png](images/misc/tp/tp-insight-5.png)
+
+![tp-insight-6.png](images/misc/tp/tp-insight-6.png)
+
+![tp-insight-7.png](images/misc/tp/tp-insight-7.png)
+
+Para esta entrega se desarollaron los cpaítulos del 5 al 6, en la captura adjuntada se evidencia del trabajo colaborativo de github. Todos los integrantes del grupo trabajaron en el proyecto.
+
+Recapitulando los commits se dividieron de la siguiente manera:
+
+- Juan Astonitas (NeoRise456): 31 commits
+- Gabriel Casas (Al3xiel): 19 commits
+- Gianluca Pasquale (cwassointt): 31 commits
+- Godofredo Quispe (GodofredoGT): 12 commits
+- Bárbara Espinoza (MesSobble): 36 commits
+
+**TB2:**
+
+![tb2-contributors-1.png](images/misc/tb2/tb2-contributors-1.png)
+
+![tb2-contributors-2.png](images/misc/tb2/tb2-contributors-2.png)
+
+![tb2-network-1.png](images/misc/tb2/tb2-network-1.png)
+
+![tb2-network-2.png](images/misc/tb2/tb2-network-2.png)
+
+![tb2-pulse.png](images/misc/tb2/tb2-pulse.png)
+
+Para esta entrega se desarollaron los cpaítulos del 6 al 7, en la captura adjuntada se evidencia del trabajo colaborativo de github. Todos los integrantes del grupo trabajaron en el proyecto.
+
+- Juan Astonitas (NeoRise456): 2 commits
+- Gabriel Casas (Al3xiel): 4 commits
+- Gianluca Pasquale (cwassointt): 31 commits
+- Godofredo Quispe (GodofredoGT): 5 commits
+- Bárbara Espinoza (MesSobble): 18 commits
 
 ## Contenido
 
@@ -416,7 +431,7 @@ del ABET – EAC - Student Outcome 3.
     <th colspan="2">Bárbara Espinoza Delgado</th>
   </tr>
   <tr>
-    <td> <img src="images/chapter-1/Messo.jpeg" alt="Barbara Espinoza Photo" style="width: 500px; height: auto;"> </td>
+    <td> <img src="images/chapter-1/barbara-pfp.jpeg" alt="Barbara Espinoza Photo" style="width: 500px; height: auto;"> </td>
     <td> Mi nombre es Bárbara Antonella Espinoza Delgado, mi código de estudiante es u201911727 ,tengo 23 años, soy estudiante de Ingeniería de Software de 8vo ciclo. Tengo experiencia en trabajos en equipo y me considero una persona puntual con la realización y entrega de las tareas pendientes.
  </td>
   </tr>
@@ -6846,6 +6861,7 @@ Evans, E. (2003). Domain-Driven design: Tackling Complexity in the Heart of Soft
 - Video About-the-Product: [https://tinyurl.com/mvdc8scd](https://tinyurl.com/mvdc8scd)
 - Video About the Team: [https://tinyurl.com/3rmf4xfk](https://tinyurl.com/3rmf4xfk)
 -	Plantilla Lean UX Canvas:
+
 ![lean-canvas-template.webp](images/misc/lean-canvas-template.webp)
 -	Plantilla Bounded Context Canvas:
 ![bounded-context-canvas.jpg](images/misc/bounded-context-canvas.jpg)
