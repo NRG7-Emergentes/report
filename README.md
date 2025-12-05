@@ -5936,6 +5936,174 @@ Esta sección describe el proceso de planificación del Sprint 2, donde el equip
 
 ##### 7.2.2.2 Sprint Backlog 2
 
+La sección Sprint Backlog presenta la planificación detallada del trabajo a realizar durante el Sprint, alineada con el objetivo principal establecido. Aquí se muestra el estado de las tareas y su distribución entre los miembros del equipo. Además, se incluye una tabla con las User Stories seleccionadas y los Work-items o Tasks derivados, facilitando la trazabilidad y el control del avance del Sprint.
+
+<table>
+    <tr>
+        <td colspan="1"><strong>Sprint #</strong></td>
+        <td colspan="7"><strong>Sprint 2</strong></td>
+    </tr>
+    <tr>
+        <td colspan="2"><strong>User Story / Tech Story</strong></td>
+        <td colspan="6"><strong>Work-Item/Task</strong></td>
+    </tr>
+    <tr>
+        <td colspan="1"><strong>Id</strong></td>
+        <td colspan="1"><strong>Title</strong></td>
+        <td colspan="1"><strong>Id</strong></td>
+        <td colspan="1"><strong>Title</strong></td>
+        <td colspan="1"><strong>Description</strong></td>
+        <td colspan="1"><strong>Estimation(Hrs)</strong></td>
+        <td colspan="1"><strong>Assigned To</strong></td>
+        <td colspan="1"><strong>Status</strong></td>
+    </tr>
+    <tr>
+        <td rowspan="2">TS-004</td>
+        <td rowspan="2">Algoritmo de Detección de Postura</td>
+        <td>T-001</td>
+        <td>Desarrollo de utilidades geométricas</td>
+        <td>Implementar funciones matemáticas para cálculo de ángulos entre vectores (hombros, cuello) basado en landmarks.</td>
+        <td>4</td>
+        <td>Juan Astonitas</td>
+        <td>To Do</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Integración de umbrales</td>
+        <td>Crear servicio que compare los ángulos calculados contra los umbrales configurados por el usuario.</td>
+        <td>3</td>
+        <td>Juan Astonitas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-003</td>
+        <td>Detección de Postura Encorvada</td>
+        <td>T-001</td>
+        <td>Implementar lógica de encorvamiento</td>
+        <td>Usar el algoritmo base para detectar específicamente cuando los hombros caen por debajo de la línea clavicular.</td>
+        <td>5</td>
+        <td>Juan Astonitas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-004</td>
+        <td>Detección de Proximidad a la Pantalla</td>
+        <td>T-001</td>
+        <td>Cálculo de profundidad Z</td>
+        <td>Implementar la estimación de distancia basada en el tamaño relativo de la cabeza (landmarks faciales) respecto al frame.</td>
+        <td>5</td>
+        <td>Barbara Quezada</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>TS-007</td>
+        <td>Optimización de Rendimiento</td>
+        <td>T-001</td>
+        <td>Web Worker para procesamiento</td>
+        <td>Mover el cálculo matemático pesado a un Web Worker para no congelar la UI principal.</td>
+        <td>4</td>
+        <td>Barbara Quezada</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-006</td>
+        <td>Toggle de Visualización de Esqueleto</td>
+        <td>T-001</td>
+        <td>Control de capa Canvas</td>
+        <td>Crear el botón y la lógica para ocultar/mostrar el canvas de MediaPipe sin detener el análisis.</td>
+        <td>2</td>
+        <td>Barbara Quezada</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-011</td>
+        <td>Personalización de Volumen</td>
+        <td>T-001</td>
+        <td>Componente Slider de Volumen</td>
+        <td>Implementar control de ganancia (GainNode) en el contexto de audio para ajustar volumen de alertas.</td>
+        <td>3</td>
+        <td>Alexander Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-012</td>
+        <td>Selección de Alertas Activas</td>
+        <td>T-001</td>
+        <td>Switches de configuración</td>
+        <td>Interfaz para activar/desactivar independientemente alertas sonoras o visuales.</td>
+        <td>3</td>
+        <td>Alexander Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>TS-016</td>
+        <td>Sincronización de Estados de Alerta</td>
+        <td>T-001</td>
+        <td>Servicio de Estado (State Mgmt)</td>
+        <td>Implementar un store (ej. NgRx/Signals) para que el estado de "Alerta Activa" se refleje en toda la app (header, dashboard).</td>
+        <td>5</td>
+        <td>Alexander Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>TS-021</td>
+        <td>API de Recolección de Datos</td>
+        <td>T-001</td>
+        <td>Endpoint de Eventos</td>
+        <td>Crear endpoint POST /api/events para recibir y guardar cada incidencia de mala postura detectada.</td>
+        <td>4</td>
+        <td>Gianluca Pasquale</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td rowspan="2">US-020</td>
+        <td rowspan="2">Panel Principal de Estadísticas</td>
+        <td>T-001</td>
+        <td>Backend Aggregation</td>
+        <td>Crear consulta SQL/Mongo para agregar datos (promedios, totales) para el dashboard principal.</td>
+        <td>3</td>
+        <td>Gianluca Pasquale</td>
+        <td>To Do</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Frontend Dashboard Widgets</td>
+        <td>Maquetar e integrar los widgets de "Tiempo Total", "Score de Postura" y "Alertas Hoy".</td>
+        <td>4</td>
+        <td>Gianluca Pasquale</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>TS-037</td>
+        <td>Manejo de Sesiones Seguras</td>
+        <td>T-001</td>
+        <td>Implementación JWT</td>
+        <td>Configurar generación de Tokens JWT en backend y manejo de Interceptors en frontend.</td>
+        <td>5</td>
+        <td>Godofredo Quispe</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-027</td>
+        <td>Verificación de Correo Electrónico</td>
+        <td>T-001</td>
+        <td>Vista de Verificación</td>
+        <td>Crear página que capture el token de la URL y lo envíe al backend para validar la cuenta.</td>
+        <td>3</td>
+        <td>Godofredo Quispe</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>TS-032</td>
+        <td>Sistema de Verificación de Email</td>
+        <td>T-001</td>
+        <td>Servicio de Email (Backend)</td>
+        <td>Configurar servidor SMTP (o servicio cloud) y lógica para enviar correos con tokens únicos.</td>
+        <td>4</td>
+        <td>Godofredo Quispe</td>
+        <td>Done</td>
+    </tr>
+</table>
 
 ##### 7.2.2.3 Development Evidence for Sprint Review
 
