@@ -317,6 +317,12 @@ del ABET – EAC - Student Outcome 3.
         - <b>Godofredo Quispe Tipo:</b> Para este entregable comuniqué los avances e inquietudes sobre funcionalidades, así como el diseño de la interfaz de usuario en reuniones grupales en Discord. <br><br>
         - <b>Gabriel Alexander Casas Sanchez:Para esta entrega comunique mis ideas sobre los fundamentos de la estructura e interfaz de la aplicación de manera simple y sencilla para que todos los públicos sean capaces de entenderlo</b><br><br>
         - <b>Astonitas Díaz Juan Diego:</b> Para esta tercera entrega presenté oralmente los avances en la creación de vistas de dashboard y monitoreo; lideré la dirección de la UI frontend y la arquitectura backend; expliqué el algoritmo de detección de mala postura y la integración con Google Mediapipe Pose Landmark.<br><br>
+        <b>TF:</b><br>
+        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta última entrega comuniqué oralmente inconvenientes y avances para la elaboración de las pantallas que se me asignaron para desarrollar durante las reuniones grupales en discord, además, comunique activamente sobre la entrega de las tareas que se me asignaron semanalmente.<br><br>
+        - <b>Pasquale Barrenechea Gianluca Santino:</b> <br><br>
+        - <b>Godofredo Quispe Tipo:</b> <br><br>
+        - <b>Gabriel Alexander Casas Sanchez:</b> <br><br>
+        - <b>Astonitas Díaz Juan Diego:</b> <br><br>
        </td>
       <td>
         <b>TB1:</b> El equipo ha demostrado un nivel de desarrollo satisfactorio y homogéneo en esta competencia. Todos los miembros participaron activamente en las reuniones de Discord, comunicando ideas, avances y asignaciones de manera clara y efectiva. Se evidencia una comunicación colaborativa que facilitó la alineación del grupo y la revisión de la información. <br><br>
@@ -344,6 +350,12 @@ del ABET – EAC - Student Outcome 3.
         - <b>Pasquale Barrenechea Gianluca Santino:</b> Documenté la implementación de websockets, los flujos de datos entre clientes y servidor y la especificación de las vistas de historial, detalle de sesión y notificaciones para web y mobile.<br><br>        - <b>Godofredo Quispe Tipo:</b> Para este entregable me encargué de documentar las entrevistas y realizar resúmenes de cada una de estas. <br><br>
         - <b>Gabriel Alexander Casas Sanchez:En la documentación de este sprint procure que todos los conceptos sean de fácil comprensión, para un correcto entendimiento de todo lo desarrollado en esta entrega.</b><br><br>
         - <b>Astonitas Díaz Juan Diego:</b> Documenté la creación de vistas de dashboard y monitoreo, elaboré diagramas de arquitectura frontend/backend y redacté la especificación del algoritmo de detección e integración con Mediapipe.<br><br>
+        <b>TF:</b><br>
+        - <b>Bárbara Antonella Espinoza Delgado:</b> Para esta última  entrega realicé en el informe la documentación de la ejecución de las aplicaciones web y móvil y la documentación de los servicios<br><br>
+        - <b>Pasquale Barrenechea Gianluca Santino:</b> <br><br>       
+        - <b>Godofredo Quispe Tipo:</b>  <br><br>
+        - <b>Gabriel Alexander Casas Sanchez:</b> <br><br>
+        - <b>Astonitas Díaz Juan Diego:</b> <br><br>
       </td>
       <td>
         <b>TB1:</b> En conjunto, las contribuciones escritas fueron fundamentales para sentar una base documental sólida, guiar la toma de decisiones y cumplir efectivamente los objetivos del proyecto.<br><br>
