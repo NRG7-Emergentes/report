@@ -5908,6 +5908,8 @@ Evidencia de los commits por cada repositorio donde se evidencia la participaci�
 
 ##### 7.2.2.4 Testing Suite Evidence for Sprint Review
 
+Aunque este sprint no incluyó automatización de pruebas para agilizar la entrega de funciones clave, reconocemos la necesidad de una suite de pruebas sólida. En los próximos sprints, implementaremos validaciones integrales (unitarias y funcionales) para certificar el correcto funcionamiento de los servicios y mantener altos estándares de calidad.
+
 ##### 7.2.2.5 Execution Evidence for Sprint Review
 
 ##### 7.2.2.6 Services Documentation Evidence for Sprint Review
